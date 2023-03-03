@@ -227,12 +227,12 @@ Der zyklische Ablauf des Unterrichts gestaltet sich also wie folgt:
 ```mermaid
 flowchart TD
     A[/Authentische Problemstellung/] 
-    --> |Perzeption|B[Problems verstehen] 
+    --> |Perzeption|B[Problem verstehen] 
     --> C[Problemanalyse] 
     --> |Generalisierung, Dekomposition, Mustererkennung|D[/Lösungsansatz/] 
     --> E[Algorithmisierung] 
     --> |Algorithmische Grundbausteine, Datenstrukturen| F[/Algorithmus textuell, graphisch/] 
-    --> G[Implementieren - Codieren] 
+    --> G[Implementieren] 
     --> H[/Programm/]
     --> I[Programm ausführen] 
     --> J{Syntax korrekt?}
