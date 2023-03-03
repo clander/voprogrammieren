@@ -1,13 +1,14 @@
 # VO Programmieren - Skript
 
 ## Anforderungen an die LV
-> Im Hochschullehrgang erwerben die Studierenden Kompetenzen und Wissen in Bezug auf mediendidaktische, individuelle und gesellschaftliche Aspekte, Programmierung, Computer- Systeme und Anwendungen. Dabei erarbeiten sie sich Kompetenzen zu den drei zentralen Perspektiven des Frankfurt Dreiecks (technisch-medial, gesellschaftlich-kulturell und interaktionsbezogen) und kombinieren diese mit den nötigen Grundlagen der Medienbildung und Informatik.
-> 
-> Zudem bauen die Studierenden Wissensinhalte und Kompetenzen in Bezug auf wesentliche Themenbereiche des Unterrichts der Digitalen Grundbildung (DigiKomp Kategorien) auf. Sie thematisieren die fachdidaktische Umsetzung dieser Kenntnisse und Fähigkeiten, üben diese ein und bereiten sich auf den Unterricht vor.
+Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
-> Absolvent*innen sind nach Abschluss des Hochschullehrgangs Digitale Grundbildung u.a. in der Lage 
-> ... grundlegende Kenntnisse, Methoden und Fähigkeiten zu entwickeln, die für die Vermittlung von Programmierkompetenzen und das Erarbeiten von Informatischem Denken benötigt werden ...
+Im Hochschullehrgang erwerben die Studierenden Kompetenzen und Wissen in Bezug auf mediendidaktische, individuelle und gesellschaftliche Aspekte, Programmierung, Computer- Systeme und Anwendungen. Dabei erarbeiten sie sich Kompetenzen zu den drei zentralen Perspektiven des Frankfurt Dreiecks (technisch-medial, gesellschaftlich-kulturell und interaktionsbezogen) und kombinieren diese mit den nötigen Grundlagen der Medienbildung und Informatik.
 
+Zudem bauen die Studierenden Wissensinhalte und Kompetenzen in Bezug auf wesentliche Themenbereiche des Unterrichts der Digitalen Grundbildung (DigiKomp Kategorien) auf. Sie thematisieren die fachdidaktische Umsetzung dieser Kenntnisse und Fähigkeiten, üben diese ein und bereiten sich auf den Unterricht vor.
+
+Absolvent*innen sind nach Abschluss des Hochschullehrgangs Digitale Grundbildung u.a. in der Lage 
+... grundlegende Kenntnisse, Methoden und Fähigkeiten zu entwickeln, die für die Vermittlung von Programmierkompetenzen und das Erarbeiten von Informatischem Denken benötigt werden ...
 
 Modul 3
 
@@ -34,7 +35,7 @@ Die Absolvent*innen des Moduls sind in der Lage, ...
 * klassische und agile Entwicklungsmethoden zu nennen und diese im Schulunterricht mit den Schüler*innen in Projekten umzusetzen.
 * ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
 
-## Didaktische Überlegungen
+## Didaktische Überlegungen Teil 1: Lerntheorie zum Programmieren
 
 ### Programmieren lernen und Piaget
 Die Berücksichtigung der kognitiven Entwicklungsstufen nach Piaget können im Rahmen der Gestaltung von Programmierunterricht didaktisch hilfreich sein.
@@ -96,8 +97,7 @@ Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen
 
 Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen.
 
-Dies macht deutlich, dass es im Rahmen der Nutzung von Programmiersprachen im Unterricht sehr schnell zur Überforderung der Lernenden kommen kann.
-
+(https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
 ### Parallelen zur CLT und zu SOLO
 Es fallen zwei offensichtliche Parallelen zu weiteren bekannten Theorien auf: Die Cognitive Load Theorie nach Sweller argumentiert im Rahmen der Theorie der Elementinteraktion sowie der Schemakonstruktion den Lernprozess auf ähnliche Art und Weise.
 
@@ -166,6 +166,7 @@ Instruktion ist aber trotzdem (oder gerade deswegen) wichtig (auch weil Instrukt
   * [...] der Prozess des Entdeckens behutsam gelenkt wird, fehlendes, aber notwendiges Wissen im Bedarfsfall direkt vermittelt wird, die Komplexität des Problems nicht zu hoch ist oder angemessen reduziert wird und variierende Aufgaben für eine hinreichende Generalisierung der Erkenntnis und für die Einübung des Transfers sorgen. ([KL07, Seite 99])
 * Modrow spricht in seiner Dissertation von pragmatisch konstruktivistisch (und ideenorientierten) Lehr-Lern-Situationen
 
+## Didaktische Überlegungen Teil 2: Zentrale Prozesse, Konzepte und Werkzeuge
 ### Modellbildung
 Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wir lösen ein Problem mithilfe des Computers, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen Werkzeuge der Informatik, um Lösungen für das Problem zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. Das wiederum ermöglicht uns Chancen und Grenzen der Nutzung von Informationssystemen zu erkennen, ein korrektes Weltbild aufzubauen, in einer mit IT durchsetzten Welt zu partizipieren sowie vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
 ### Zentrale Konzepte der Programmierung
