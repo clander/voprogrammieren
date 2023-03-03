@@ -222,6 +222,29 @@ Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses sieht mit
 
 Wichtig ist zu verstehen, dass es sich bei den oben genannten drei Punkten um einen Zyklus handelt, der immer wieder durchlaufen wird, solange, bis das Problem gelöst ist. Ausgehend vom Problem (Startzustand), über einen Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand) ergibt sich damit eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise. 
 
+Der zyklische Ablauf des Unterrichts gestaltet sich also wie folgt:
+
+```mermaid
+flowchart TD
+    A[/Authentische Problemstellung/] 
+    --> |Perzeption|B[Problems verstehen] 
+    --> C[Problemanalyse] 
+    --> |Generalisierung, Dekomposition, Mustererkennung|D[/Lösungsansatz/] 
+    --> E[Algorithmisierung] 
+    --> |Algorithmische Grundbausteine, Datenstrukturen| F[/Algorithmus textuell, graphisch/] 
+    --> G[Implementieren - Codieren] 
+    --> H[/Programm/]
+    --> I[Programm ausführen] 
+    --> J{Syntax korrekt?}
+    --> |Nein| G
+    J -->|Ja| K[/ausgeführtes Programm/] 
+    --> L{Semantik korrekt?} 
+    -->|Ja| N[/Fertige Lösung/]
+    L --> |Nein| M[Debugging]-->|Code anpassen|G
+    M -->|Lösungsansatz anpassen|C
+    M --> |Algorithmus anpassen|E
+```
+
 ### Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu werden Techniken wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
@@ -231,7 +254,7 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu werden Tech
 * Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau: immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
 * Lösungsspezifikation: Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung 
 ### Algorithmisierung
-Danach folgt die Beschreibung eines Lösungsalgorithmus. Wir verwenden dazu algorithmische Grundbausteine und passende Datenstrukturen (siehe Thema "Werkzeugkasten" oben). 
+Es folgt die Beschreibung eines Lösungsalgorithmus. Wir verwenden dazu algorithmische Grundbausteine und passende Datenstrukturen (siehe Thema "Werkzeugkasten" oben). 
 
 > Ein Algorithmus (benannt nach Al-Chwarizmi, von arabisch: الخوارزمی al-Ḫwārizmī, deutsch ‚der Choresmier‘) ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt. (https://de.wikipedia.org/wiki/Algorithmus)
 
@@ -239,19 +262,16 @@ Die Beschreibung des Algorithmus erfolgt über einfache (konzeptorientierte) Tex
 * Aktivitätsdiagramme (Flussdiagramme)
 * Struktogramme
 * Zustandsdiagramme
-
+### Implementierung / Codierung
 Nachdem wir unseren Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir ein Werkzeug, das es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglicht, den Algorithmus umzusetzen, auszuführen und zu testen. 
-### Implementierung und Test
+### Test / Simulation
+Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es zu Anpassungen des Lösungsansatzes sowie des Algorithmus (Punkt 2) kommen, was zu weitern Zyklen führt. Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen. 
 
-Die Lösung wird mit entsprechenden Werkzeugen schrittweise implementiert. Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es zu Anpassungen der Problemdefinition (Punkt 1) sowie des Algorithmus (Punkt 2) kommen, was zu weitern Zyklen führt. Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen. 
-
-Wir beginnen mit der Implementierung des Programms mithilfe des gewählten Werkzeugeus (bestimmte Programmiersprache, bestimmte Entwicklungsumgebun). In kurzen Zyklen werden wir nach jeder kurzen Programmiertätigkeit immer wieder das Programm versuchen auszuführen. 
-
-Wenn sich das Programm nicht starten lässt, analysieren wir die Fehlermeldungen des Interpreters / Compilers und bessern Syntaxfehler aus. Wir müssen uns an die Syntax der gewählten Programmiersprache ganz genau halten, sonst versteht der Computer nicht, was er für uns tun soll. 
-
-Wenn sich das Programm jedoch starten lässt, können wir kontrollieren, ob das Programm die richtigen (Teil-)Ergebnisse im Sinne unserer Lösungsspezifikation liefert. Dazu benötigen wir Techniken, die es uns ermöglichen in die Laufzeit eines Programmes hineinzuschauen bzw. Ergebnisse des Programmes anzuzeigen. 
-
-Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert haben wir es ggf. mit einem Bug zu tun, die Semantik passt nicht. Dann können Modifikation in der Problemanaylse, im Algorithmus oder auch in der Implementierung nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. Eine Modifikation im Algorithmus führ zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
+Der Ablauf lässt sich wie folgt kurz beschreiben:
+* Wir beginnen mit der Implementierung des Programms mithilfe des gewählten Werkzeugeus (bestimmte Programmiersprache, bestimmte Entwicklungsumgebun). In kurzen Zyklen werden wir nach jeder kurzen Programmiertätigkeit immer wieder das Programm versuchen auszuführen. 
+* Wenn sich das Programm nicht starten lässt, analysieren wir die Fehlermeldungen des Interpreters / Compilers und bessern Syntaxfehler aus. Wir müssen uns an die Syntax der gewählten Programmiersprache ganz genau halten, sonst versteht der Computer nicht, was er für uns tun soll. 
+* Wenn sich das Programm jedoch starten lässt, können wir kontrollieren, ob das Programm die richtigen (Teil-)Ergebnisse im Sinne unserer Lösungsspezifikation liefert. Dazu benötigen wir Techniken, die es uns ermöglichen in die Laufzeit eines Programmes hineinzuschauen bzw. Ergebnisse des Programmes anzuzeigen. 
+* Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert haben wir es ggf. mit einem Bug zu tun, die Semantik passt nicht. Dann können Modifikation in der Problemanaylse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. Eine Modifikation im Algorithmus führ zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
 
 Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
 ### Referenzen zum Thema Computational Thinking
