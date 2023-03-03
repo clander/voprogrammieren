@@ -258,7 +258,7 @@ Es folgt die Beschreibung eines Lösungsalgorithmus. Wir verwenden dazu algorith
 
 > Ein Algorithmus (benannt nach Al-Chwarizmi, von arabisch: الخوارزمی al-Ḫwārizmī, deutsch ‚der Choresmier‘) ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt. (https://de.wikipedia.org/wiki/Algorithmus)
 
-Die Beschreibung des Algorithmus erfolgt über einfache (konzeptorientierte) Texte oder auch ikonische / grafische Darstellungen. Im Bereich der imperativ-prozeduralen Programmierung eigenen sich 
+Die Beschreibung des Algorithmus erfolgt über formlose (aber konzeptorientierte) Texte, Pseudocode oder auch ikonische / grafische Darstellungen. Im Bereich der imperativ-prozeduralen Programmierung eigenen sich 
 * Aktivitätsdiagramme (Flussdiagramme)
 * Struktogramme
 * Zustandsdiagramme
