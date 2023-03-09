@@ -309,9 +309,12 @@ Pygal (Charting) https://www.pygal.org/en/stable/
 Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
 Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
-### Tutorials
-Python problem- und konzeptorientiert:
+## Tutorials
+### Python problem- und konzeptorientiert:
 https://www.inf-schule.de/imperative-programmierung/python
+
+### Python-Kurs auf openHPI
+https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
 
 ### Python Bakery Videos
 https://youtube.com/playlist?list=PLiK576qSavfIw_0ds6Z4JAzAyyj7b1SNE
