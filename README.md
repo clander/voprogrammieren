@@ -295,7 +295,7 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 ... siehe dazu auch die vielen YouTube-Videos zu Projekten für Python-Anfänger
 ... siehe dazu das Schulbuch 
 ## Unterlagen
-### Python Referenz
+### Python Referenzen
 https://www.w3schools.com/python/default.asp
 https://docs.python.org/3/
 
@@ -310,9 +310,17 @@ Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
 Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
 ## Tutorials
+
+### Offizielles Python Tutorial (de)
+https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ### Python problem- und konzeptorientiert:
 https://www.inf-schule.de/imperative-programmierung/python
 
+### Programmieren in Python Universität Regensburg
+https://www.uni-regensburg.de/assets/physik/fakultaet/IT/Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
+
+### Python 3 - Das umfassende Handbuch
+https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
 ### Python-Kurs auf openHPI
 https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
 
