@@ -295,18 +295,18 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 
 ## Unterlagen
 ### Python Referenzen
-https://www.w3schools.com/python/default.asp
-https://docs.python.org/3/
+- https://www.w3schools.com/python/default.asp
+- https://docs.python.org/3/
 
 ### Python Bibliotheken
-Python Turtle Graphics: https://docs.python.org/3/library/turtle.html
-PyGame (Game Development): https://www.pygame.org/news
-TkInter (GUI): https://docs.python.org/3/library/tkinter.html
-Custom TkInter (GUI): https://github.com/TomSchimansky/CustomTkinter
-Python Standard-Library: https://docs.python.org/3/library/index.html
-Pygal (Charting) https://www.pygal.org/en/stable/
-Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
-Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
+- Python Turtle Graphics: https://docs.python.org/3/library/turtle.html
+- PyGame (Game Development): https://www.pygame.org/news
+- TkInter (GUI): https://docs.python.org/3/library/tkinter.html
+- Custom TkInter (GUI): https://github.com/TomSchimansky/CustomTkinter
+- Python Standard-Library: https://docs.python.org/3/library/index.html
+- Pygal (Charting) https://www.pygal.org/en/stable/
+- Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
+- Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
 ## Tutorials
 
