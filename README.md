@@ -282,18 +282,17 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 
 ## Beispiele für Mini-Projekte für Anfänger
 
-* Einfache Spiele: Schere-Stein-Papier, Wörter raten (Hangman)
+* Einfache Spiele wie Schere-Stein-Papier, Wörter raten (Hangman), Stadt Land Fluss, Zahlen raten
 * Einfache Adventure-Games (Zork)
 * Einfache Chatbots (Elisa)
 * Einfache Textproduktionen wie Madlips, SVG-Grafiken zeichnen, Export-Funktionen
 * Zahlen raten / KI für Zahlen raten (binäre Suche)
 * Einfache Berechnungen mit Entscheidungen und Userinterface (z. B. BMI, PV Anlagenbau)
-* Einfache Automaten (z. B. ein Ticketautomat)
-* Spiele (insb. mit Werkzeugen wie Scratch einfach umzusetzen)
+* Einfache Automaten (z. B. Ticketautomat, Tamagotchi, zelluläre Automaten für Game of Life)
 * Einfache Microcontroller-Projekte (z.B. mit dem Micro:bit, siehe dazu das Schulbuch https://microbit.eeducation.at/wiki/Hauptseite)
 
 ... siehe dazu auch die vielen YouTube-Videos zu Projekten für Python-Anfänger
-... siehe dazu das Schulbuch 
+
 ## Unterlagen
 ### Python Referenzen
 https://www.w3schools.com/python/default.asp
