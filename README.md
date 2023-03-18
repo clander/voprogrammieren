@@ -232,7 +232,7 @@ flowchart TD
     --> |Generalisierung, Dekomposition, Mustererkennung|D[/Lösungsansatz/] 
     --> E[Algorithmisierung] 
     --> |Algorithmische Grundbausteine, Datenstrukturen| F[/Algorithmus textuell, graphisch/] 
-    --> G[Implementieren] 
+    --> G[Implementieren / Codieren] 
     --> H[/Programm/]
     --> I[Programm kompilieren] 
     --> J{Syntax korrekt?}
