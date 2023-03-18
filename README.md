@@ -311,63 +311,63 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 ## Tutorials
 
 ### Offizielles Python Tutorial (de)
-https://py-tutorial-de.readthedocs.io/de/python-3.3/
+- https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ### Python problem- und konzeptorientiert:
-https://www.inf-schule.de/imperative-programmierung/python
+- https://www.inf-schule.de/imperative-programmierung/python
 
 ### Programmieren in Python Universität Regensburg
-https://www.uni-regensburg.de/assets/physik/fakultaet/IT/Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
+- https://www.uni-regensburg.de/assets/physik/fakultaet/IT/- Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
 
 ### Python 3 - Das umfassende Handbuch
-https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
+- https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
 ### Python-Kurs auf openHPI
-https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
+- https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
 
 ### Python Bakery Videos
-https://youtube.com/playlist?list=PLiK576qSavfIw_0ds6Z4JAzAyyj7b1SNE
+- https://youtube.com/playlist?list=PLiK576qSavfIw_0ds6Z4JAzAyyj7b1SNE
 
 ### Python lernen in 4 Stunden
-https://youtu.be/RBpK8C3N-Y8
+- https://youtu.be/RBpK8C3N-Y8
 
 ### EinfachInfoPython Kurs
-https://youtube.com/playlist?list=PLywzm7Lq4JoKvxNR7ROv_gJ09roJ-UDRt
+- https://youtube.com/playlist?list=PLywzm7Lq4JoKvxNR7ROv_gJ09roJ-UDRt
 
 ### Socratia Python Tutorials:
-https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
+- https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
 
 ### Schulbuch mit Projekten für den Microbit
-https://microbit.eeducation.at/wiki/Hauptseite
+- https://microbit.eeducation.at/wiki/Hauptseite
 
 ## Entwicklungsumgebungen und Hilfswerkzeuge
 
 ### Blockbasierte Onlineumgebungen für Python
-https://app.edublocks.org/editor
-https://think.cs.vt.edu/blockpy/
+- https://app.edublocks.org/editor
+- https://think.cs.vt.edu/blockpy/
 
 ### MakeCode
-https://makecode.microbit.org
+- https://makecode.microbit.org
 
 ### Python Kara
-https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
+- https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
 
 ### Python Hamstermodell
-http://www.java-hamster-modell.de/python.html
+- http://www.java-hamster-modell.de/python.html
 
 ### (Didaktische) IDEs
-https://thonny.org
-https://guipy.de/doku.php?id=start
-https://www.tigerjython.ch/de/products/tigerjython-ide
-https://www.jetbrains.com/pycharm/
+- https://thonny.org
+- https://guipy.de/doku.php?id=start
+- https://www.tigerjython.ch/de/products/tigerjython-ide
+- https://www.jetbrains.com/pycharm/
 
 ### Structorizer IDE
-https://help.structorizer.fisch.lu/index.php?menu=44&page=
+- https://help.structorizer.fisch.lu/index.php?menu=44&page=
 
 ### Sbide Structogramm IDE
-https://www.sbide.de/?s=38sVWj
+- https://www.sbide.de/?s=38sVWj
 
 ### Python Tutor
-https://pythontutor.com
+- https://pythontutor.com
 
 ### Diagramme zeichnen
-Mermaid: https://mermaid.live
-PlantUML: https://plantuml.com
+- Mermaid: https://mermaid.live
+- PlantUML: https://plantuml.com
