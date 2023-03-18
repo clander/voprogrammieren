@@ -234,13 +234,14 @@ flowchart TD
     --> |Algorithmische Grundbausteine, Datenstrukturen| F[/Algorithmus textuell, graphisch/] 
     --> G[Implementieren] 
     --> H[/Programm/]
-    --> I[Programm ausführen] 
+    --> I[Programm kompilieren] 
     --> J{Syntax korrekt?}
     --> |Nein| G
-    J -->|Ja| K[/ausgeführtes Programm/] 
-    --> L{Semantik korrekt?} 
-    -->|Ja| N[/Fertige Lösung/]
-    L --> |Nein| M[Debugging]-->|Code anpassen|G
+    J -->|Ja| K[/kompiliertes Programm/] 
+    K --> L[Programm ausführen]
+    --> N{Semantik korrekt?} 
+    -->|Ja| O[/Fertige Lösung/]
+    N --> |Nein| M[Debugging]-->|Code anpassen|G
     M -->|Lösungsansatz anpassen|C
     M --> |Algorithmus anpassen|E
 ```
