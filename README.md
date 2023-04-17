@@ -370,7 +370,7 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 
 # Tutorials
 
-# Offizielles Python Tutorial (de)
+## Offizielles Python Tutorial (de)
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ## Python problem- und konzeptorientiert:
 - https://www.inf-schule.de/imperative-programmierung/python
