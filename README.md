@@ -1,6 +1,6 @@
 # VO Programmieren - Skript
 
-## Anforderungen an die LV
+# Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
 Im Hochschullehrgang erwerben die Studierenden Kompetenzen und Wissen in Bezug auf mediendidaktische, individuelle und gesellschaftliche Aspekte, Programmierung, Computer- Systeme und Anwendungen. Dabei erarbeiten sie sich Kompetenzen zu den drei zentralen Perspektiven des Frankfurt Dreiecks (technisch-medial, gesellschaftlich-kulturell und interaktionsbezogen) und kombinieren diese mit den nötigen Grundlagen der Medienbildung und Informatik.
@@ -35,9 +35,68 @@ Die Absolvent*innen des Moduls sind in der Lage, ...
 * klassische und agile Entwicklungsmethoden zu nennen und diese im Schulunterricht mit den Schüler*innen in Projekten umzusetzen.
 * ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
 
-## Didaktische Überlegungen Teil 1: Lerntheorie zum Programmieren
+# Betroffene Lehrplanteile
 
-### Programmieren lernen und Piaget
+RIS: https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2022_II_267/BGBLA_2022_II_267.html
+
+## 1. Klasse 
+### Kompetenzbereich Produktion: 
+
+Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
+
+Die Schülerinnen und Schüler können
+- (T) eindeutige Handlungsanleitungen (Algorithmen) nachvollziehen, ausführen sowie selbstständig formulieren.
+- (G) verschiedene Darstellungsformen von Inhalten und die Wirkung auf sich und andere beschreiben.
+- (I) mit Daten einfache Berechnungen durchführen sowie in verschiedenen (visuellen) Formaten sammeln und präsentieren.
+- (I) einzeln und gemeinsam Texte und Präsentationen (unter Einbeziehung von Bildern, Grafiken und anderen Objekten) strukturieren und formatieren.
+
+### Anwendungsbereiche
+- Sequenzen und einfache Schleifen
+- Planung, Gestaltung und Auswertung von Umfragen
+
+## 2. Klasse
+### Kompetenzbereich Produktion: 
+Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
+
+Die Schülerinnen und Schüler können
+- (T) darstellen, wie Programme Daten speichern und verarbeiten, indem sie Zahlen oder andere Symbole zur Darstellung von Informationen verwenden.
+- (T) unter Nutzung einer geeigneten Entwicklungsumgebung einfache Programme erstellen, diese testen und debuggen (Fehler erkennen und beheben).
+- (G) die Rechte am geistigen Eigentum beachten und bei der Erstellung oder beim Remixen von Programmen die entsprechenden Urheberrechte angeben.
+- (I) visuelle/audiovisuelle/auditive Inhalte erzeugen, adaptieren und analysieren. Sie können Möglichkeiten der Veröffentlichung benennen.
+
+## 3. Klasse
+### Kompetenzbereich Produktion: 
+Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
+
+Die Schülerinnen und Schüler können
+- (T) an Beispielen Elemente des Computational Thinkings nachvollziehen und diese zur Lösung von Problemen einsetzen. Sie wissen, wie sie Lösungswege in Programmiersprache umsetzen können.
+- (G) verschiedene populäre Medienkulturen benennen sowie Möglichkeiten verschiedener Darstellungsformen von Inhalten erproben.
+- (I) ihre eigenen medialen Produktionen auf Barrierefreiheit überprüfen und ggf. Barrieren beseitigen.
+- (I) Einstellungen in Softwareapplikationen den persönlichen Bedürfnissen entsprechend anpassen.
+
+### Anwendungsbereiche
+- Gezielte bzw. manipulative Darstellungen, zB in Diagrammen, durch Bildausschnitte oder Vertonung
+- Konfigurationsmöglichkeiten von Betriebssystemen und Kommunikationssystemen, um sie barrierefrei zugänglich machen
+
+## 4. Klasse
+### Kompetenzbereich Produktion
+Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
+
+Die Schülerinnen und Schüler können
+- (T) Programme entwerfen und iterativ entwickeln, die Kontrollstrukturen kombinieren, einschließlich verschachtelter Schleifen und zusammengesetzter Konditionale.
+- (G) Möglichkeiten verschiedener Darstellungsformen von Inhalten erproben und deren Einfluss auf die Wahrnehmung des Inhalts hinterfragen.
+- (I) mit bereitgestellten Medien und Software-Applikationen zielgerichtet und kreativ gestaltend kooperieren.
+- (I) einfache Programme oder Webanwendungen mit geeigneten Werkzeugen erstellen, um ein bestimmtes Problem zu lösen oder eine bestimmte Aufgabe zu erfüllen.
+ 
+### Anwendungsbereiche
+- Dokumentation von Programmen
+- Projektplanung inklusive Aufgabenverteilung und Zeitplan
+(Graphische) Notationen, Pseudocode
+- Ästhetische und technische Kompetenzen von Medienkulturen in Projekten
+
+# Didaktische Überlegungen Teil 1: Lerntheorie zum Programmieren
+
+## Programmieren lernen und Piaget
 Die Berücksichtigung der kognitiven Entwicklungsstufen nach Piaget können im Rahmen der Gestaltung von Programmierunterricht didaktisch hilfreich sein.
 
 Dazu ist die Theorie von Raymond Lister interessant, der seine Findings in folgendem Paper publiziert hat: Raymond Lister. 2016. Toward a Developmental Epistemology of Computer Programming. In Proceedings of the 11th Workshop in Primary and Secondary Computing Education (WiPSCE '16). Association for Computing Machinery, New York, NY, USA, 5–16. https://doi.org/10.1145/2978249.2978251
@@ -98,7 +157,7 @@ Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen
 Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen.
 
 (https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
-### Parallelen zur CLT und zu SOLO
+## Parallelen zur CLT und zu SOLO
 Es fallen zwei offensichtliche Parallelen zu weiteren bekannten Theorien auf: Die Cognitive Load Theorie nach Sweller argumentiert im Rahmen der Theorie der Elementinteraktion sowie der Schemakonstruktion den Lernprozess auf ähnliche Art und Weise.
 
 Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von im Prinzip vielen kleinen Lösungselementen. Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern. 
@@ -111,7 +170,7 @@ Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. 
 * unistrukturelle Problemlösungen: Die Lösung zeigt, dass einzelne Programmzeilen passen, zueinander aber in keinem sinnvollen Verhältnis stehen.
 * multistrukturelle Problemlösungen: Die Lösung zeigt, dass mehrere Programmzeilen zusammenpassen und auch zusammen erklärt werden können. Die Erklärungen zu den Lösungen zeigen aber auch, dass die Lernenden Probleme bei der weiteren Abstraktion der Lösung etwa im Sinne der kreativen Zusammensetzung von Lösungsteilen oder im Sinne der Verallgemeinerung der Lösung auf ganze Problemklassen haben.
 * erweitert abstrakte Problemlösungen: Die Lösung entspricht einer Lösung, die auch Experten so erstellen und erklären würden. Die Lösung wird auf Ebene der zentralen betroffenen Schemata erklärt. Sie ist allgemein gültig und kann auf Problemklassen angewendet werden.
-### Gemäßigt konstruktivistische Sicht auf den Lernprozess
+## Gemäßigt konstruktivistische Sicht auf den Lernprozess
 Lernende konstruieren nach konstruktivistischer Auffasung des Lernprozesses aktiv ihre eigene Wirklichkeit indem sie auf kognitive Konflikte mit Assimilation und Akkommodation reagieren und so kognitive Konflikte auflösen. 
 
 * Assimilation: Neues Wissen generieren indem man an bestehende Strukturen im Gedächtnis andockt 
@@ -140,7 +199,7 @@ Das bedeutet also für konstruktivistische Settings (Hubwieser):
 * Lernen erfolgt immer in Kontexten, d. h. situativ.
 * Lernen ist ein sozialer Prozess.
 
-Charakteristike für konstruktivistische Settings:
+Charakteristika für konstruktivistische Settings:
 
 * Handlungsorientierung, entdeckendes Lernen und aktive Beteiligung in möglichst vielen Bereichen des Unterrichts fördern
 * Eigenverantwortung für den Lernprozess fördern
@@ -166,10 +225,10 @@ Instruktion ist aber trotzdem (oder gerade deswegen) wichtig (auch weil Instrukt
   * [...] der Prozess des Entdeckens behutsam gelenkt wird, fehlendes, aber notwendiges Wissen im Bedarfsfall direkt vermittelt wird, die Komplexität des Problems nicht zu hoch ist oder angemessen reduziert wird und variierende Aufgaben für eine hinreichende Generalisierung der Erkenntnis und für die Einübung des Transfers sorgen. ([KL07, Seite 99])
 * Modrow spricht in seiner Dissertation von pragmatisch konstruktivistisch (und ideenorientierten) Lehr-Lern-Situationen
 
-## Didaktische Überlegungen Teil 2: Zentrale Prozesse, Konzepte und Werkzeuge
-### Modellbildung
+# Didaktische Überlegungen Teil 2: Zentrale Prozesse, Konzepte und Werkzeuge
+## Modellbildung
 Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wir lösen ein Problem mithilfe des Computers, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen Werkzeuge der Informatik, um Lösungen für das Problem zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. Das wiederum ermöglicht uns Chancen und Grenzen der Nutzung von Informationssystemen zu erkennen, ein korrektes Weltbild aufzubauen, in einer mit IT durchsetzten Welt zu partizipieren sowie vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
-### Zentrale Konzepte der Programmierung
+## Zentrale Konzepte der Programmierung
 Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich jedoch insbesondere Programmiersprachen.
 
 Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen und damit Lösungen auf unterschiedliche Arten ermöglichen. 
@@ -211,7 +270,7 @@ Wichtig für die Vermittlung solcher Ideen sind u. A. folgende Prinzipien:
     * vorwegnehmendes Lernen (Henne-Ei-Problem)
     * fortsetzendes Lernen auf immer komplexeren Niveaus
 
-### Zentrale Prozesse der Programmierung
+## Zentrale Prozesse der Programmierung
 Methodisch liegt der Fokus weiters auf Problemlösen durch Modellbildung und Simulation.
 
 Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses sieht mit Bezug auf die zentralen Ideen des Computational Thinking dann wie folgt aus:
@@ -246,7 +305,7 @@ flowchart TD
     M --> |Algorithmus anpassen|E
 ```
 
-### Problemanalyse
+## Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu werden Techniken wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
 * Abstraktion: Wir fokussieren auf die für die Lösung absolut notwendigen Lösungselemente und lassen alles andere weg. 
@@ -254,7 +313,7 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu werden Tech
 * Dekomposition: Wir teilen das Problem in verschiedene Teilprobleme. Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
 * Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau: immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
 * Lösungsspezifikation: Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung 
-### Algorithmisierung 
+## Algorithmisierung 
 Es folgt die Beschreibung eines Lösungsalgorithmus. Wir verwenden dazu algorithmische Grundbausteine und passende Datenstrukturen (siehe Thema "Werkzeugkasten" oben). 
 
 > Ein Algorithmus (benannt nach Al-Chwarizmi, von arabisch: الخوارزمی al-Ḫwārizmī, deutsch ‚der Choresmier‘) ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt. (https://de.wikipedia.org/wiki/Algorithmus)
@@ -263,9 +322,9 @@ Die Beschreibung des Algorithmus erfolgt über formlose (aber konzeptorientierte
 * Aktivitätsdiagramme (Flussdiagramme)
 * Struktogramme
 * Zustandsdiagramme
-### Implementierung / Codierung
+## Implementierung / Codierung
 Nachdem wir unseren Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir ein Werkzeug, das es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglicht, den Algorithmus umzusetzen, auszuführen und zu testen. 
-### Test / Simulation
+## Test / Simulation
 Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es zu Anpassungen des Lösungsansatzes sowie des Algorithmus (Punkt 2) kommen, was zu weitern Zyklen führt. Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen. 
 
 Der Ablauf lässt sich wie folgt kurz beschreiben:
@@ -275,13 +334,13 @@ Der Ablauf lässt sich wie folgt kurz beschreiben:
 * Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert haben wir es ggf. mit einem Bug zu tun, die Semantik passt nicht. Dann können Modifikation in der Problemanaylse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. Eine Modifikation im Algorithmus führ zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
 
 Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
-### Referenzen zum Thema Computational Thinking
+## Referenzen zum Thema Computational Thinking
 
 * https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
 * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
 * http://www.icompute-uk.com/news/computational-thinking-2/
 
-## Beispiele für Mini-Projekte für Anfänger
+# Beispiele für Mini-Projekte für Anfänger
 
 * Einfache Spiele wie Schere-Stein-Papier, Wörter raten (Hangman), Stadt Land Fluss, Zahlen raten
 * Einfache Adventure-Games (Zork)
@@ -294,12 +353,12 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 
 ... siehe dazu auch die vielen YouTube-Videos zu Projekten für Python-Anfänger
 
-## Unterlagen
-### Python Referenzen
+# Unterlagen
+## Python Referenzen
 - https://www.w3schools.com/python/default.asp
 - https://docs.python.org/3/
 
-### Python Bibliotheken
+## Python Bibliotheken
 - Python Turtle Graphics: https://docs.python.org/3/library/turtle.html
 - PyGame (Game Development): https://www.pygame.org/news
 - TkInter (GUI): https://docs.python.org/3/library/tkinter.html
@@ -309,66 +368,80 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 - Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
 - Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
-## Tutorials
+# Tutorials
 
-### Offizielles Python Tutorial (de)
+# Offizielles Python Tutorial (de)
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
-### Python problem- und konzeptorientiert:
+## Python problem- und konzeptorientiert:
 - https://www.inf-schule.de/imperative-programmierung/python
 
-### Programmieren in Python Universität Regensburg
+## Programmieren in Python Universität Regensburg
 - https://www.uni-regensburg.de/assets/physik/fakultaet/IT/- Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
 
-### Python 3 - Das umfassende Handbuch
+## Python 3 - Das umfassende Handbuch
 - https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
-### Python-Kurs auf openHPI
+## Python-Kurs auf openHPI
 - https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
 
-### Python Bakery Videos
+## Python Bakery Videos
 - https://youtube.com/playlist?list=PLiK576qSavfIw_0ds6Z4JAzAyyj7b1SNE
 
-### Python lernen in 4 Stunden
+## Python lernen in 4 Stunden
 - https://youtu.be/RBpK8C3N-Y8
 
-### EinfachInfoPython Kurs
+## EinfachInfo Pythonkurs
 - https://youtube.com/playlist?list=PLywzm7Lq4JoKvxNR7ROv_gJ09roJ-UDRt
 
-### Socratia Python Tutorials:
+## Socratia Python Tutorials:
 - https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
 
-### Schulbuch mit Projekten für den Microbit
+## Schulbuch mit Projekten für den micro:bit
 - https://microbit.eeducation.at/wiki/Hauptseite
 
-## Entwicklungsumgebungen und Hilfswerkzeuge
+# Entwicklungsumgebungen und Hilfswerkzeuge
 
-### Blockbasierte Onlineumgebungen für Python
+## Blockbasierte Onlineumgebungen für Python
 - https://app.edublocks.org/editor
 - https://think.cs.vt.edu/blockpy/
 
-### MakeCode
+## MakeCode (mit Python Unterstützung)
 - https://makecode.microbit.org
+    - Features:
+      - Blockbasierte Programmierung
+      - Python-Unterstützung
+      - Viele Tutorials zum Mitmachen / Lernen
+    - Programmierung von Micro:bit incl. Emulator: https://makecode.microbit.org/#
+    - Minecraft: https://minecraft.makecode.com/#
+    - Arcade (Spieleentwicklung): https://arcade.makecode.com 
 
-### Python Kara
+## Python Kara
 - https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
 
-### Python Hamstermodell
+## Python Hamstermodell
 - http://www.java-hamster-modell.de/python.html
 
-### (Didaktische) IDEs
+## (Didaktische) IDEs
 - https://thonny.org
 - https://guipy.de/doku.php?id=start
 - https://www.tigerjython.ch/de/products/tigerjython-ide
 - https://www.jetbrains.com/pycharm/
 
-### Structorizer IDE
+## Structorizer IDE
 - https://help.structorizer.fisch.lu/index.php?menu=44&page=
 
-### Sbide Structogramm IDE
+## Sbide Structogramm IDE
 - https://www.sbide.de/?s=38sVWj
 
-### Python Tutor
+## Python Tutor
 - https://pythontutor.com
 
-### Diagramme zeichnen
+## Diagramme zeichnen
 - Mermaid: https://mermaid.live
 - PlantUML: https://plantuml.com
+
+## Programmieren ohne Computer
+- Computer Spielen einmal anders
+  - https://docplayer.org/15740862-Computer-spielen-einmal-anders.html
+  - https://moodle.tsn.at/course/view.php?id=15831
+  - https://learninglab.tugraz.at/informatischegrundbildung/praesentation-workshop-computer-spielen-einmal-anders/
+  - 
