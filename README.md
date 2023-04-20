@@ -245,6 +245,7 @@ Konkret haben wir es im gewählten Werkzeugkasten uA mit folgenden Ideen und Kon
 * ausgeführtes Programm (Laufzeit)
 * Ausdrücke (z. B. arithmetische oder bool‘sche Ausdrücke)
 * Operatoren und Operanden
+* Werte (Literale)
 * Anweisungen
 * Sequenzen von Anweisungen / Anweisungsblöcke
 * Variablen
@@ -383,7 +384,8 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 ## Python-Kurs auf openHPI
 - https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
 
-## Python Bakery Videos
+## Python Bakery Kurs
+- Kompletter Kurs: https://blockpy.cis.udel.edu/courses/37 bzw. direkt über https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37&embed=False 
 - https://youtube.com/playlist?list=PLiK576qSavfIw_0ds6Z4JAzAyyj7b1SNE
 
 ## Python lernen in 4 Stunden
