@@ -33,33 +33,38 @@ V4
 
 """
 
-wiederholung = True # Bool'sche Schaltervariable
+wiederholung = True #Bool'sche Schaltervariable
 
 while wiederholung == True:
     print("************ BMI-Berechnung ************")
     #(E)ingabe
-    eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an: ") #Input-Funktion mit Parameter und String-Rückgabe
-    eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
-    #print(type(eingabeKilogramm)) # so kann man den Typ der Eingabe sehen
-
-    #(V)erarbeitung
-    ## Typkonvertierung
-    kilogramm = float(eingabeKilogramm)
-    meter = float(eingabeMeter)
-    ## Berechnung
+    eingabeErfolgreich = False # Boo'sche Schaltervariable
+    while(not eingabeErfolgreich):
+        eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
+        eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
+        try:
+            kilogramm = float(eingabeKilogramm)
+            meter = float(eingabeMeter)
+            eingabeErfolgreich = True
+        except:
+            print("Bitte nur Zahlen eingeben!")
+            eingabeErfolgreich = False
+  
+    # (V)erarbeitung
+   
     bmi = kilogramm / meter**2
-    ## Runden auf 2 Stellen
-    bmiGerundet = round(bmi,2) # Runden-Funktion auf 2 Stellen -> Diskussion über Fließkommazahlen und Runden-Problematik
-    ## Interpretation des Ergebnisses
-    interpretation = "" # Variable für das Interpretationsergebnis mit vorerst leerem String
+   
+    bmiGerundet = round(bmi,2) 
+    
+    interpretation = ""
 
-    if bmi < 18.5: # If-Anweisung mit Bedingung in Form eines logischen Ausdrucks mit Kleiner-Operator
-        interpretation = "Untergewicht" # Bedingte Anweisung, eingerückt, wird ausgeführt, wenn Bedingung oben zutrifft
-    elif bmi < 25: # Else-If: zweite Bedingung wird geprüft falls vorherige nicht zutrifft
-        interpretation = "Normalgewicht" # Bedingte Anweisung, eingerückt, wird ausgeführt, wenn Bedingung geprüft wird und zutrifft
-    elif bmi < 30: # Else-If: zweite Bedingung wird geprüft falls vorherige nicht zutrifft
-        interpretation = "Übergewicht" # Bedingte Anweisung, eingerückt, wird ausgeführt, wenn Bedingung geprüft wird und zutrifft
-    else: # Else: falls alle vorhergehenden Bedingungen nicht zutreffen werden nachfolgend eingerückte Anweisungen ausgeführt
+    if bmi < 18.5: 
+        interpretation = "Untergewicht" 
+    elif bmi < 25: 
+        interpretation = "Normalgewicht" 
+    elif bmi < 30: 
+        interpretation = "Übergewicht" 
+    else: 
         interpretation = "Adipositas"
 
     #(A)usgabe
