@@ -1,31 +1,22 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 5
+=============
 
-...
-
-Audience [V5]: Das Programmiererteam
-
-Situation [V5]: zusätzlich zu [V5]: Das Programm soll besser strukturiert werden. Dadurch soll der Code übersichtlicher,
-leichter wartbar, leichter anpassbar werden. Die Codequalität soll sich verbessern, die Funktionalität soll die gleiche bleiben.
-
-...
-
-Standards [V5]:
+---------
+Standards
+---------
 - Das Programm wird durch den Einsatz von Funktionen ein wenig modularisiert werden. 
 - Dadurch werden Teile des Programms wiederverwendbar und besser lesbar.
 
----------
-Konzepte:
----------
-V7
+--------
+Konzepte
+--------
 - Funktionen als Modularisierungstechnik
 
 ---------
-Werkzeug:
+Werkzeuge
 ---------
-V7
 - Funktionen in Python
 - Funktionsparameter in Python
 - Rückgabetypen in Python
@@ -56,10 +47,23 @@ while wiederholung == True:
     eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
     #print(type(eingabeKilogramm)) # so kann man den Typ der Eingabe sehen
 
+    eingabeErfolgreich = False # Boo'sche Schaltervariable
+    while not eingabeErfolgreich:
+        eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
+        eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
+        try:
+            kilogramm = float(eingabeKilogramm)
+            meter = float(eingabeMeter)
+            if kilogramm >= 0 and meter >= 0:
+                eingabeErfolgreich = True
+            else
+                print("Bitte nur positive Zahlen eingeben!")
+                eingabeErfolgreich = False
+        except:
+            print("Bitte nur Zahlen eingeben!")
+            eingabeErfolgreich = False
+
     #(V)erarbeitung
-    ## Typkonvertierung
-    kilogramm = float(eingabeKilogramm)
-    meter = float(eingabeMeter)
     ## Berechnung
     bmi = bmiBerechnen(kilogramm,meter)
     ## Runden auf 2 Stellen

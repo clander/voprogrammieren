@@ -1,30 +1,18 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 2
+=============
 
-Goal: Wir möchten den Benutzern unserer Fitnessgeräte die Möglichkeit geben, ihren BMI
-schnell zu berechnen, bei Bedarf die Ergebnisse zu speichern und den Verlauf der BMI-Berechnungsergebnisse anzuzeigen.
-
-Role: Du bist Programmierer im Unternehmen Fitness4All GmbH. 
-
-Audience: Zielgruppe unserer Produkte sind die Benutzer unserer Fitness-Geräte.
-
-Situation [V2]: Als Mitglied im Programmierteam wirst du damit beauftragt, ein Prorgramm zu schreiben, das den
-Benutzer nach den Werten für die Berechnung des BMI fragt und das Berechnungsergebnis daraufhin ausgibt.
-
-Product [V2]: Als Produkt entwickelst du ein fertiges Python-Programm mit entsprechendem Userinterface.
-
-Standards [V2]:
-- Fertiges Python-Programm mit folgenden Aspekten:
+---------
+Standards
+---------
 - Programm fragt kg und m vom Benutzer ab
 - Programm berechnte BMI korrekt
-- Programm gibt Berechnungsergebnis aus
+- Programm gibt Berechnungsergebnis gerundet aus
 
----------
-Konzepte:
----------
-V2
+--------
+Konzepte
+--------
 - Problemlösungszyklus beim Programmieren
 - EVA-Prinzip
 - User-Interfaces
@@ -36,9 +24,8 @@ V2
 - Abstraktion (Im Sinne des zu entwickelnden System wichtige Elemente identifizieren, Rest weglassen)
 
 ---------
-Werkzeug:
+Werkzeuge
 ---------
-V2
 - Zyklus: Code schreiben - Syntaxfehler beheben - Code ausführen - Funktionalität verbessern und Bugs beheben - Fertiges Programm
 - Input-Funktion mit Parametern
 - Print-Funktion mit Stringinterpolation und String-Konkatenation

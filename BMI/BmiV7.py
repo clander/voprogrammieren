@@ -1,33 +1,24 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 7
+=============
 
-...
-
-Audience [V7]: Das Programmiererteam
-
-Situation [V7]: zusätzlich zu [V5]: Das Programm soll besser strukturiert werden. Dadurch soll der Code übersichtlicher,
-leichter wartbar, leichter anpassbar werden. Die Codequalität soll sich verbessern, die Funktionalität soll die gleiche bleiben.
-
-...
-
-Standards [V7]:
+---------
+Standards
+---------
 - Das Programm wird durch den Einsatz von Funktionen noch stärker modularisiert.
 - Insbesondere werden neben den aus V5 bereits vorhandenen Funktionen 
   für die Berechnung und die Interpretation des BMI auch Funktionen für die Eingabeverarbeitung bereitgestellt.
 
 
----------
-Konzepte:
----------
-V7
+--------
+Konzepte
+--------
 - Weitere Funktionen als Modularisierungstechnik
 
----------
-Werkzeug:
----------
-V7
+--------
+Werkzeug
+--------
 - Funktionen in Python
 - Funktionsparameter in Python
 - Rückgabetypen in Python

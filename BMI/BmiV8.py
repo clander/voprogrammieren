@@ -1,31 +1,24 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 8
+=============
 
-...
-
-Audience [V8]: Die Benutzer
-
-Situation [V8]: zusätzlich zu [V5]: Das Programm soll mit einer grafischen Benutzeroberfläche ausgestattet werden. 
-...
-
-Standards [V8]:
+---------
+Standards
+---------
 - Das Programm kann vollständig über eine grafische Benutzeroberfläche bedient werden.
 
----------
-Konzepte:
----------
-V8
+--------
+Konzepte
+--------
 - GUIs mit Widgets,
 - Layout,
 - Events,
 - Databinding
 
----------
-Werkzeug:
----------
-V8
+--------
+Werkzeug
+--------
 - tkinter GUI-Bibliothek mit
 - Labels
 - Buttons

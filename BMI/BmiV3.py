@@ -1,38 +1,24 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 3
+=============
 
-Goal: Wir möchten den Benutzern unserer Fitnessgeräte die Möglichkeit geben, ihren BMI
-schnell zu berechnen, bei Bedarf die Ergebnisse zu speichern und den Verlauf der BMI-Berechnungsergebnisse anzuzeigen.
-
-Role: Du bist Programmierer im Unternehmen Fitness4All GmbH. 
-
-Audience: Zielgruppe unserer Produkte sind die Benutzer unserer Fitness-Geräte.
-
-Situation [V3]: Als Mitglied im Programmierteam wirst du damit beauftragt, ein Prorgramm zu schreiben, das den
-Benutzer nach den Werten für die Berechnung des BMI fragt und das Berechnungsergebnis daraufhin ausgibt. Das
-Programm soll außerdem den BMI interpretieren und auch das Interpretationsergebnis
-(Untergewicht, Normalgewicht, Übergewicht, Adipositas) ausgeben.
-
-Product [V3]: Als Produkt entwickelst du ein fertiges Python-Programm mit entsprechendem Userinterface.
-
-Standards [V3]:
+---------
+Standards
+---------
 - Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V2]
 - Ausgabe des Interpretationsergebnisses
 
 ---------
-Konzepte:
+Konzepte
 ---------
-V3
 - Alternative
 - Bedingung in Form eines logischen Ausdrucks
 - Bedingungs-Ergebnis in Form von Bool'schen Werten
 
 ---------
-Werkzeug:
+Werkzeug
 ---------
-V3
 - Logische Ausdrücke in Python
 - Bool'sche Ergebnisse in Python
 - Logische Operatoren in Python

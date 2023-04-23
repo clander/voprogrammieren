@@ -1,30 +1,18 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
-
-Goal: Wir möchten den Benutzern unserer Fitnessgeräte die Möglichkeit geben, ihren BMI
-schnell zu berechnen, bei Bedarf die Ergebnisse zu speichern und den Verlauf der BMI-Berechnungsergebnisse anzuzeigen.
-
-Role: Du bist Programmierer im Unternehmen Fitness4All GmbH. 
-
-Audience: Zielgruppe unserer Produkte sind die Benutzer unserer Fitness-Geräte.
-
-Situation [V1]: Als Mitglied im Programmierteam wirst du damit beauftragt, zu recherchieren,
-wie der BMI berechnet und interpretiert wird. Beispielhaft sollst du außerdem einige Berechnungen durchführen.
-
-Product [V1]: Als Produkt entwickelst du ein Programm, das einige BMI-Werte beispielhaft berechnet und ausgibt.
-
-Standards [V1]:
+=============
+BMI VERSION 1
+=============
+---------
+Standards
+---------
 - Formel für den BMI gefunden
 - Interpretation für BMI gefunden
 - Formel an einigen plausiblen Beispielwerten angewendet
 - Python verwendet um einige BMIs zu berechnen und das Ergebnis auszugeben.
 
----------
-Konzepte:
----------
-V1
+--------
+Konzepte
+--------
 - Quellcode
 - Kommentare
 - Ausgeführter Programmcode
@@ -37,9 +25,8 @@ V1
 - Abstraktion (unwesentliche Details weglassen)
 
 ---------
-Werkzeug:
+Werkzeuge
 ---------
-V1
 - Einzeilige Kommenatare in Python mit #
 - Mehrzeilige Kommentare in Pyhton mit Multiline-Strings (3 Anführungszeichen)
 - Thonny-IDE
@@ -55,9 +42,6 @@ V1
 
 
 """
----------
-Lösung V1
----------
 Recherchergebnis entsprechend den Ausführung in https://de.wikipedia.org/wiki/Body-Mass-Index.
 
 Der Body-Mass-Index wird folgendermaßen berechnet:

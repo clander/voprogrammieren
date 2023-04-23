@@ -1,37 +1,24 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 6
+=============
 
-...
-
-Situation [V6]: zusätzlich zu [V4]: Der Benutzer soll zu Beginn des Programms die Wahl zwischen der
-bisherigen BMI-Berechnung und der Eingabe sowie Berechnung einer komplette Messreihe von Daten treffen können.
-Der Benutzer gibt immer eine gerade Anzahl an Werten ein. Der erste Wert entspricht der Masse in Kilogramm,
-der zweite der Größe in Metern. Die Eingabe der Messreihe wird durch die Eingabe eines # beendet.
-Nach der Eingabe der Messreihe überprüft das Programm, ob eine gerade Anzahl an Werten vorliegt. Wenn nein,
-bricht das Programm mit einem enstprechenden Hinweis ab. Wenn alles ok ist, dann berechnet das Programm
-für je zwei Eingabewerte den BMI und gibt den BMI auf die Kommandozeile aus. So soll die Entwicklung des BMI
-über die Zeit der Messreihe für den Benutzer gut sichtbar werden. 
-
-...
-
-Standards [V6]:
+---------
+Standards
+---------
 - Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V5]:
 - Der Benutzer gibt eine Messreihe ein und bekommt für je zwei Eingaben einen BMI-Wert berechnet und ausgegeben.
 
----------
-Konzepte:
----------
-V6
+--------
+Konzepte
+--------
 - Wiederholung
 - Datenstruktur Listen
 - Arbeiten mit Listen - Iteration über Listen
 
----------
-Werkzeug:
----------
-V6
+--------
+Werkzeug
+--------
 - While in Python
 - Listen in Python
 
@@ -64,11 +51,19 @@ if variante == "1":
         eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
         #print(type(eingabeKilogramm)) # so kann man den Typ der Eingabe sehen
 
+        eingabeErfolgreich = False # Boo'sche Schaltervariable
+        while(not eingabeErfolgreich):
+            eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
+            eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
+            try:
+                kilogramm = float(eingabeKilogramm)
+                meter = float(eingabeMeter)
+                eingabeErfolgreich = True
+            except:
+                print("Bitte nur Zahlen eingeben!")
+                eingabeErfolgreich = False
 
         #(V)erarbeitung
-        ## Typkonvertierung
-        kilogramm = float(eingabeKilogramm)
-        meter = float(eingabeMeter)
         ## Berechnung
         bmi = bmiBerechnen(kilogramm,meter)
         ## Runden auf 2 Stellen
@@ -90,13 +85,25 @@ if variante == "1":
 
 elif variante == "2":
     messreihe = [] # Liste anlegen
-    print("Bitte geben Sie die Werte ein!")
+    print("Bitte geben Sie die Messreihe ein!")
     while True:
         eingabe = input()
         if eingabe == "#":
             break
         else:
-            messreihe.append(float(eingabe))
+            eingabeErfolgreich = False
+            while not eingabeErfolgreich:
+                try:
+                    umwandlungZahl = float(eingabe)
+                    if umwandlungZahl >= 0:
+                        eingabeErfolgreich = True
+                        messreihe.append(umwandlungZahl)
+                    else
+                        print("Bitte nur positive Zahlen eingeben!")
+                        eingabe = input()
+                except:
+                    print("Bitte nur Zahlen eingeben!")
+                    eingabe = input()
     if len(messreihe) % 2 != 0:
         print("Sie müssen immer je zwei Werte eingeben, einen für die Masse in kg und einen für die Grösse in m")
     else:

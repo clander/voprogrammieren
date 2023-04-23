@@ -1,33 +1,24 @@
 """
---------------------------------------
-Problemstellung: Body Mass Index (BMI)
---------------------------------------
+=============
+BMI VERSION 4
+=============
 
-...
-
-Situation [V4]: Als Mitglied im Programmierteam wirst du damit beauftragt, ein Programm zu schreiben, das den
-Benutzer nach den Werten für die Berechnung des BMI fragt und das Berechnungsergebnis daraufhin ausgibt. Das
-Programm soll außerdem den BMI interpretieren und auch das Interpretationsergebnis
-(Untergewicht, Normalgewicht, Übergewicht, Adipositas) ausgeben. Der Benutzer soll mehrere Berechnungen durchführen können,
-wenn er mit "J" bestätigt. In allen anderen Fällen soll das Programm beendet werden.
-
-Product [V4]: Als Produkt entwickelst du ein fertiges Python-Programm mit entsprechendem Userinterface.
-
-Standards [V4]:
+---------
+Standards
+---------
 - Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V3]:
-- Wiederholte Berechnung ermöglichen wenn der Benutzer nach einer Berechnung J eingibt.
+- Benutzer wird über Falscheingaben (Zahlen) informiert und bekommt solange die Möglichkeit alles neu einzugeben, bis alles passt.
+- Wiederholte Berechnung ermöglichen, wenn der Benutzer nach einer Berechnung J eingibt.
 
----------
-Konzepte:
----------
-V4
+--------
+Konzepte
+--------
 - Wiederholung
 - Bool'sche Schalter-Variablen
 
 ---------
-Werkzeug:
+Werkzeuge
 ---------
-V4
 - While-Loop in Python
 - Bool'sche Variablen in Python
 
@@ -39,13 +30,17 @@ while wiederholung == True:
     print("************ BMI-Berechnung ************")
     #(E)ingabe
     eingabeErfolgreich = False # Boo'sche Schaltervariable
-    while(not eingabeErfolgreich):
+    while not eingabeErfolgreich:
         eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
         eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
         try:
             kilogramm = float(eingabeKilogramm)
             meter = float(eingabeMeter)
-            eingabeErfolgreich = True
+            if kilogramm >= 0 and meter >= 0:
+                eingabeErfolgreich = True
+            else
+                print("Bitte nur positive Zahlen eingeben!")
+                eingabeErfolgreich = False
         except:
             print("Bitte nur Zahlen eingeben!")
             eingabeErfolgreich = False
