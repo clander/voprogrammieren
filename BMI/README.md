@@ -16,12 +16,15 @@ Für die Software gelten folgende Funktionale Anforderungen:
 - Benutzer:innen bekommen den berechneten (und wenn nötig gerundeten) BMI als Ergebnis.
 - Benutzer:innen bekommen eine Interpretation des BMI als Ergebnis.
 - Benutzer:innen sollen bei Falscheingaben einen Hinweis zur Richtigstellung erhalten und die Eingabe solange wiederholen können, bis alles passt.
+- ...
 ### Bezahl-Version der Software
 - Benutzer:innen sollen nach einer Berechnung die Möglichkeit haben, weitere Berechnungen durchzuführen.
 - Benutzer:innen (z.B. Trainer) sollen die Möglichkeit haben, ganze Messreihen auf einmal einzugeben und dafür den BMI berechnet zu bekommen.
 - Benutzer:innen möchten das Programm über eine grafische Benutzeroberfläche bedienen können.
+- ...
 ### Nicht-Funktionale Anforderungen
 - Die Software soll insb. in den späteren Versionen unter Einsatz von Funktionen und Prozeduren gut modularisiert werden. Das soll die Lesbarkeit bzw. die Wartbarkeit von Code erhöhen, Codeduplikate vermeiden und die Wiederverwendbarkeit erhöhen.
+- ...
 ## Die Bewertungsstandards? (Standards)
 - Funktionalität der Software lt. Anforderungen
 - Qualität des Codes
