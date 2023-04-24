@@ -1,7 +1,6 @@
 import random, sys
 min = 1
 max = 10
-eingabeZahl = -1
 anzahlVersuche = 0
 zufallszahl = random.randrange(min,max)
 gefunden = False
