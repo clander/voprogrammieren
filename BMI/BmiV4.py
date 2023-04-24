@@ -38,7 +38,7 @@ while wiederholung == True:
             meter = float(eingabeMeter)
             if kilogramm >= 0 and meter >= 0:
                 eingabeErfolgreich = True
-            else
+            else:
                 print("Bitte nur positive Zahlen eingeben!")
                 eingabeErfolgreich = False
         except:
@@ -46,13 +46,9 @@ while wiederholung == True:
             eingabeErfolgreich = False
   
     # (V)erarbeitung
-   
     bmi = kilogramm / meter**2
-   
     bmiGerundet = round(bmi,2) 
-    
     interpretation = ""
-
     if bmi < 18.5: 
         interpretation = "Untergewicht" 
     elif bmi < 25: 

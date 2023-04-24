@@ -47,10 +47,6 @@ if variante == "1":
     while wiederholung == True:
         print("************ BMI-Berechnung ************")
         #(E)ingabe
-        eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an: ") #Input-Funktion mit Parameter und String-Rückgabe
-        eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
-        #print(type(eingabeKilogramm)) # so kann man den Typ der Eingabe sehen
-
         eingabeErfolgreich = False # Boo'sche Schaltervariable
         while(not eingabeErfolgreich):
             eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
@@ -98,7 +94,7 @@ elif variante == "2":
                     if umwandlungZahl >= 0:
                         eingabeErfolgreich = True
                         messreihe.append(umwandlungZahl)
-                    else
+                    else:
                         print("Bitte nur positive Zahlen eingeben!")
                         eingabe = input()
                 except:

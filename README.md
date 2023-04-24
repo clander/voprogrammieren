@@ -403,7 +403,7 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 # Entwicklungsumgebungen und Hilfswerkzeuge
 
 ## Blockbasierte Onlineumgebungen für Python
-- https://app.edublocks.org/editor
+- https://app.edublocks.org
 - https://think.cs.vt.edu/blockpy/
 
 ## MakeCode (mit Python Unterstützung)

@@ -42,11 +42,6 @@ wiederholung = True # Bool'sche Schaltervariable
 
 while wiederholung == True:
     print("************ BMI-Berechnung ************")
-    #(E)ingabe
-    eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an: ") #Input-Funktion mit Parameter und String-Rückgabe
-    eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
-    #print(type(eingabeKilogramm)) # so kann man den Typ der Eingabe sehen
-
     eingabeErfolgreich = False # Boo'sche Schaltervariable
     while not eingabeErfolgreich:
         eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
@@ -56,7 +51,7 @@ while wiederholung == True:
             meter = float(eingabeMeter)
             if kilogramm >= 0 and meter >= 0:
                 eingabeErfolgreich = True
-            else
+            else:
                 print("Bitte nur positive Zahlen eingeben!")
                 eingabeErfolgreich = False
         except:
