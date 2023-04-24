@@ -1,10 +1,8 @@
 import random, sys
-
 rucksack = {
   "schluessel": False ,
   "schwert": False
 }
-
 def eingangshalle():
     print("*********************")
     print("*** Eingangshalle ***")
@@ -17,14 +15,15 @@ def eingangshalle():
             if rucksack["schluessel"]:
                 print("Du verwendest den Schlüssel und gehst durch die Tür im Norden")
                 rittersaal()
+                break
             else:
                 print("Die Tür ist versperrt, du kommst da nicht durch!")
         elif eingabe == "s":
             print("Du gehst durch die Tür im Süden und kommst in den ... ")
             speisesaal()
+            break
         else:
             print("Eingabe nicht korrekt. Bitte versuche es erneut.")
-  
 def speisesaal():
     print("******************")
     print("*** Speisesaal ***")
@@ -37,6 +36,7 @@ def speisesaal():
         elif eingabe == "n":
             print("Du gehst durch die Tür im Norden und kommst in die ... ")
             eingangshalle()
+            break
         else:
             print("Eingabe nicht korrekt. Bitte versuche es erneut.")
 
@@ -86,12 +86,13 @@ def rittersaal():
         elif eingabe == "t":
             print("Du gehst durch die Treppe in das Untergeschoss ...")
             kerker()
+            break
         elif eingabe == "s":
             print("Du gehst durch die Tür im Süden und kommst in die ... ")
             eingangshalle()
+            break
         else:
             print("Eingabe nicht korrekt. Bitte versuche es erneut.")
-    
 def kerker():
     print("**************")
     print("*** Kerker ***")
@@ -117,7 +118,10 @@ def kerker():
         print("Du greifst den Drachen an!")
         if rucksack["schwert"]:
             print("Du bekämpfst den Drachen mit dem Schwert und kannst ihn besiegen. Hinter dem Drachen findest du einen Schatz, du wirst reich und setzt dich zur Ruhe!")     
-            gameOver()
+            print("******************")
+            print("Spiel gewonnen")
+            print("******************")
+            exit()
         else:
             print("Du bekämpfst den Drachen mit deinen bloßen Händen und kannst ihn nicht besiegen. Du tritts daher den Rückzug an und gehst zurück durch den Raum im Westen!")
             rittersaal()
@@ -126,13 +130,4 @@ def kerker():
         rittersaal()
     else:
         print("Eingabe nicht korrekt. Bitte versuche es erneut.")
-
-def gameOver():
-    print("******************")
-    print("* Spiel gewonnen *")
-    print("******************")
-    sys.exit()
-
 eingangshalle()
-
-

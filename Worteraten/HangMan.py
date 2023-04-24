@@ -1,4 +1,4 @@
-import random, sys
+import random
 
 wortliste = ["Haus", "Garten", "Zaun", "Mensch", "Dampfschiff", "Katze", "Schule"]
 zufallswort = wortliste[random.randint(0,len(wortliste)-1)]
@@ -23,8 +23,8 @@ while(True):
             print("Du hast leider zuviele Fehlversuche! Spiel beendet!")
             break
     if ratewort.count("_")==0:
-        print(f"Super! Du hast das Wort mit {fehlversuche} Fehlversuch(en) erraten")
+        print("Super! Du hast das Wort mit " + str(fehlversuche) +" Fehlversuch(en) erraten")
         break
     if rateversuche > 10:
         print("Du hast das Wort nicht erraten. Zuviele Versuche!")
-        sys.exit()
+        break
