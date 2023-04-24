@@ -1,8 +1,8 @@
-import random, sys
+import random
 min = 1
 max = 10
 anzahlVersuche = 0
-zufallszahl = random.randrange(min,max)
+zufallszahl = random.randint(min,max)
 gefunden = False
 while not gefunden:    
     eingabe = input(f"Zahl zwischen {min} und {max} eingeben!")
