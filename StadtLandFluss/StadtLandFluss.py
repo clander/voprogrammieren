@@ -1,8 +1,8 @@
 import random
 import time
 
-anzahlDurchläufeEingabe = input("Wieviele Durchläufe möchtest du spielen? ")
-anzahlDurchläufe = int(anzahlDurchläufeEingabe);
+anzahlDurchlaeufeEingabe = input("Wieviele Durchläufe möchtest du spielen? ")
+anzahlDurchlaeufe = int(anzahlDurchlaeufeEingabe);
 dauerDurchlaufEingabe = input("Wieviele Sekunden soll ein Durchlauf dauern? ")
 dauerDurchlauf = int(dauerDurchlaufEingabe);
 
@@ -11,7 +11,7 @@ laenge = len(alphabet)
 
 durchlaufnummer = 1
 
-while durchlaufnummer <= anzahlDurchläufe:
+while durchlaufnummer <= anzahlDurchlaeufe:
     zufallszahl = random.randint(0,laenge-1)
     print(f"Der Buchstabe von Runde \033[96m{durchlaufnummer}\033[0m ist: \033[96m {alphabet[zufallszahl]}\033[0m")
     vergangeneSekunden = 0

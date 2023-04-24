@@ -1,4 +1,4 @@
-import random;
+import random, sys
 
 rucksack = {
   "schluessel": False ,
@@ -64,10 +64,15 @@ def rittersaal():
 
 """)
                 zufallszahl = random.randint(1,20)
+                probierCounter = 0
                 while(True):
                     zahleneingabe = input("Welches Juwel möchstest du als nächstes bewegen?")
                     if zahleneingabe.isnumeric():
                         zahleneingabeZahl = int(zahleneingabe)
+                        probierCounter = probierCounter + 1
+                        if(probierCounter > 10):
+                            print("Die Kiste gibt einen Elektroschock ab. Du hast zu viele Versuche benötigt. Probiere es späer nochmals!")
+                            break
                         if zahleneingabeZahl == zufallszahl:
                             print("Du hast das korrekte Juwel gewählt. Die Truhe öffnet sich und du findest ein Schwert in der Truhe, das du mitnimmst!")
                             rucksack["schwert"] = True
@@ -126,7 +131,7 @@ def gameOver():
     print("******************")
     print("* Spiel gewonnen *")
     print("******************")
-
+    sys.exit()
 
 eingangshalle()
 

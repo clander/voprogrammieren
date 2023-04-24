@@ -36,7 +36,7 @@ while True:
 
 print("*** Statistik ***")
 
-print("- Playerwins: {0:d} Computerwins: {0:d}".format(playerwins,computerwins))
+print("- Playerwins: {0:d} Computerwins: {1:d}".format(playerwins,computerwins))
 
 if playerwins > computerwins:
     print("- Spieler gewinnt!")
