@@ -15,7 +15,7 @@ while not gefunden:
         elif eingabeZahl < zufallszahl:
             print("Leider nicht, die gesucht Zahl ist größer!")
             anzahlVersuche += 1
-        elif eingabeZahl > zufallszahl:
+        else:
             print("Leider nicht, die gesucht Zahl ist kleiner!")
             anzahlVersuche += 1
 print("Auf Wiedersehen!")
