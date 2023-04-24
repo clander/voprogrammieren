@@ -13,7 +13,7 @@ durchlaufnummer = 1
 
 while durchlaufnummer <= anzahlDurchlaeufe:
     zufallszahl = random.randint(0,laenge-1)
-    print(f"Der Buchstabe von Runde \033[96m{durchlaufnummer}\033[0m ist: \033[96m {alphabet[zufallszahl]}\033[0m")
+    print("Der Buchstabe von Runde " + str(durchlaufnummer) + " ist: "+ str(alphabet[zufallszahl]))
     vergangeneSekunden = 0
     t0 = time.time()
     while vergangeneSekunden < dauerDurchlauf:
