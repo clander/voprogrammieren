@@ -1,7 +1,5 @@
 import time, random
 
-from threading import Timer
-
 tendenzZurMuedigkeit = 60
 tendenzZurLangeweile = 50
 tendenzZumHunger = 30
