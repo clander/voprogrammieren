@@ -1,5 +1,4 @@
 import random
-
 wortliste = ["Haus", "Garten", "Zaun", "Mensch", "Dampfschiff", "Katze", "Schule"]
 zufallswort = wortliste[random.randint(0,len(wortliste)-1)]
 ratewort = list("_" * len(zufallswort))
@@ -7,8 +6,9 @@ ratewort = list("_" * len(zufallswort))
 rateversuche = 0
 fehlversuche = 0
 maxfehlversuche = 10
-
-while(True):
+wortErraten = False
+zuvieleFehlversuche = False
+while(not wortErraten and not zuvieleFehlversuche):
     print(ratewort)
     eingabe = input("Rate einen Buchstaben ... ")
     rateversuche = rateversuche + 1
@@ -19,12 +19,9 @@ while(True):
             treffer = True
     if treffer == False:
         fehlversuche = fehlversuche + 1
-        if fehlversuche == maxfehlversuche:
+        if fehlversuche > maxfehlversuche:
             print("Du hast leider zuviele Fehlversuche! Spiel beendet!")
-            break
+            zuvieleFehlversuche = True
     if ratewort.count("_")==0:
         print("Super! Du hast das Wort mit " + str(fehlversuche) +" Fehlversuch(en) erraten")
-        break
-    if rateversuche > 10:
-        print("Du hast das Wort nicht erraten. Zuviele Versuche!")
-        break
+        wortErraten = True
