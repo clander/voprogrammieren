@@ -15,5 +15,8 @@ https://visualgo.net/en
 - Informatik erleben (Uni Klagenfurt): http://informatik-erleben.uni-klu.ac.at
 - Buch: Abenteuer Informatik von Jens Gallenbacher: https://link.springer.com/book/10.1007/978-3-662-53965-1
 - Biber der Informatik-Aufgabenhefte: https://www.ocg.at/node/269
+- IKEA-Bauanleitungen
+- Kochbücher / Kochrezepte
+- Schulbuch "Denken lernen - Probleme lösen mit BBC micro:bit", S. 11 - S. 16, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf 
 
 

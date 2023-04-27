@@ -1,5 +1,20 @@
 # VO Programmieren - Skript
 
+# Plan für den ersten VO-Termin
+1. Handlungsanleitungen
+   1. Dijkstra
+   2. Compuerspielen
+2. Programmieren mit Python und Blockbasiert
+   1. Problemstellung BMI
+   2. Umsetzung in Excel
+   3. Umsetzung in blockbasiertem Python
+3. Programmieren mit micro:bits
+   1. Verweis auf das Buch
+   2. Zahlen-Raten
+   3. Zahlen-Raten KI
+
+
+
 # Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 

@@ -1,19 +1,24 @@
 import random
 
 print("*** Schere, Stein, Papier ***")
-optionen = ["Schere", "Stein", "Papier", "Exit"]
 spielerGewinne = 0
 computerGewinne = 0
 while True:
     spielerwahl = input("Was wählst du? Tippe ein: [Schere]  [Stein]  [Papier]  [Exit] ")
     
-    if spielerwahl not in optionen:
+    if spielerwahl != "Schere" and spielerwahl != "Stein" and spielerwahl != "Papier" and spielerwahl != "Exit":
         print("Es stehen nur folgende Optionen zur Verfügung: [Schere]  [Stein]  [Papier]  [Exit] ")
         continue
     elif spielerwahl == "Exit":
         break
     else:
-        computerwahl = optionen[random.randint(0,2)]
+        zufallszahl = random.randint(0,2)
+        if zufallszahl == 0:
+            computerwahl = "Schere"
+        elif zufallszahl == 1:
+            computerwahl = "Stein"
+        elif zufallszahl == 2:
+            computerwahl = "Papier"
         print("[Spielerwahl] : " + spielerwahl)
         print("[Computerwahl] : " + computerwahl)
         if spielerwahl == computerwahl:
