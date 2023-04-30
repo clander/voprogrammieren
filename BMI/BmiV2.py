@@ -37,25 +37,11 @@ Werkzeuge
 - String-Konkatenation
 
 """
-
-print("************ BMI-Berechnung ************")
-#(E)ingabe
-eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an: ") #Variable, Zuweisung, Input-Funktion mit Parameter und String-Rückgabe
-eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
-#print(type(eingabeKilogramm)) # so kann man den Typ der Eingabe sehen
-
-
-#(V)erarbeitung
-## Typkonvertierung
-kilogramm = float(eingabeKilogramm) # Variable, Zuweisung, Funktionsaufruf mit Rückgabewert
+print('************ BMI-Berechnung ************')
+eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
+eingabeMeter = input('Bitte geben Sie ihre Größe in Meter an: ')
+kilogramm = float(eingabeKilogramm)
 meter = float(eingabeMeter)
-## Berechnung
-bmi = kilogramm / meter**2 # Variable, Zuweisung, Arithmetischer Ausdruck
-## Runden auf 2 Stellen
-bmiGerundet = round(bmi,2) # Variable, Zuweisung, Runden-Funktion auf 2 Stellen -> Diskussion über Fließkommazahlen und Runden-Problematik
-
-
-#(A)usgabe
-print("Der berechnete BMI beträgt " + str(bmiGerundet)) # String-Konkatenation und String-Konvertierung
-#print(f"Der berechnete BMI beträgt {bmiGerundet}") # Alternative Ausgabe mit Format-String
-#print("Der berechnete BMI beträgt {:.2f}".format(bmi)) # Alternative Ausgabe mit format-Funktion
+bmi = kilogramm / (meter * meter)
+bmiGerundet = round(bmi, 2)
+print('Der berechnete BMI beträgt ' + str(bmiGerundet))
