@@ -58,8 +58,6 @@ Adipositas: >= 31
 Folgende funktionalen Anforderungen werden im ersten Spring implementiert:
 - Benutzer:innen können die für die Berechnungen nötigen Daten eingeben.
 - Benutzer:innen bekommen den berechneten (und wenn nötig gerundeten) BMI als Ergebnis.
-
-## Implementierung
 ## Pseudocode
 
 ```pseudocode
@@ -88,9 +86,9 @@ flowchart TD
     I --> J[Gerundeten BMI ausgeben]
     J --> K(Programmende)
 ```
-### Blockbasiert
+## Blockbasierte Implementierung
 ![BMI Iteration 1](bilder/bmiIteration1.png)
-### Python-Code
+## Python-Implementierung
 ```python
 print('************ BMI-Berechnung ************')
 eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
@@ -173,7 +171,7 @@ flowchart TD
     classDef neu fill:#bbb
 ```
 
-## Blockbasiert
+## Blockbasierte Implementierung
 ### Variante mit einfachem If:
 ![BMI Iteration 2_1](bilder/bmiIteration2_1.png)
 ![BMI Iteration 2_2](bilder/bmiIteration2_2.png)
@@ -181,8 +179,8 @@ flowchart TD
 ### Variante mit Else-If:
 ... wie oben, jedoch mit folgender If-Struktur:
 ![BMI Iteration 2_3](bilder/bmiIteration2_2_V2.png)
-## Python
-### Variante mit einfachem If ohne Else-If:
+## Python-Implementierung
+### Variante mit einfachem If:
 ```python
 print('************ BMI-Berechnung ************')
 eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
