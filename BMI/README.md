@@ -144,6 +144,7 @@ flowchart TD
     P -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']:::neu
     P -- Nein --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
     Q --> R:::neu
+    R --> S(Programmende)
 
     classDef neu fill:#bbb
 ```
@@ -166,6 +167,8 @@ flowchart TD
 
     P{BMI >= 31}:::neu -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']:::neu
     Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]:::neu
+
+    R --> S(Programmende)
 
     classDef neu fill:#bbb
 ```
