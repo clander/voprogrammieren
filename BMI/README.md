@@ -145,7 +145,7 @@ flowchart TD
     P -- Nein --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
     Q --> R:::neu
 
-    classDef neu fill:#aaa
+    classDef neu fill:#bbb
 ```
 Alternativer Ablaufplan mit Else-If:
 
@@ -167,7 +167,7 @@ flowchart TD
     P{BMI >= 31}:::neu -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']:::neu
     Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]:::neu
 
-    classDef neu fill:#244
+    classDef neu fill:#bbb
 ```
 
 ## Blockbasiert
