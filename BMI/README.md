@@ -145,7 +145,7 @@ flowchart TD
     P -- Nein --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
     Q --> R:::neu
 
-    classDef neu fill:#444
+    classDef neu fill:#333
 ```
 Alternativer Ablaufplan mit Else-If:
 
