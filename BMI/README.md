@@ -101,7 +101,6 @@ print('Der berechnete BMI beträgt ' + str(bmiGerundet))
 ```
 
 # Sprint 2
-
 ## Sprint Backlog
 Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
 - Benutzer:innen bekommen eine Interpretation des BMI als Ergebnis.
@@ -118,6 +117,7 @@ Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
 - Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
 ```
 Variante:
+```pseudocode
 - Wenn der berechnete BMI < 18:
     * Interpretationsergebnis ist "Untergewicht"
 - Wenn der berechnete BMI zwischen 18 und 26 (excl.):
@@ -129,6 +129,8 @@ Variante:
 - Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
 ```
 ## Ablaufplan
+
+
 ```mermaid
 flowchart TD
     A(Start) --> B[/Texteingabe Kilogramm/]
@@ -160,6 +162,7 @@ flowchart TD
 
     classDef neu fill:#bbb
 ```
+
 Alternativer Ablaufplan mit Else-If:
 
 ```mermaid
