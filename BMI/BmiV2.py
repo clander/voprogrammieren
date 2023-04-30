@@ -6,37 +6,27 @@ BMI VERSION 2
 ---------
 Standards
 ---------
-- Programm fragt kg und m vom Benutzer ab
-- Programm berechnte BMI korrekt
-- Programm gibt Berechnungsergebnis gerundet aus
+- Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V1]
+- Ausgabe des Interpretationsergebnisses
 
---------
+---------
 Konzepte
---------
-- Problemlösungszyklus beim Programmieren
-- EVA-Prinzip
-- User-Interfaces
-- Funktionsaufrufe mit Rückgabewerten
-- Variablen
-- Datentypen
-- Zuweisung
-- Generalisierung (Verallgemeinerung einer spezifischen Berechnung zu einem allgemeingültigen Berechnungsmodell)
-- Abstraktion (Im Sinne des zu entwickelnden System wichtige Elemente identifizieren, Rest weglassen)
+---------
+- Alternative
+- Bedingung in Form eines logischen Ausdrucks
+- Bedingungs-Ergebnis in Form von Bool'schen Werten
 
 ---------
-Werkzeuge
+Werkzeug
 ---------
-- Zyklus: Code schreiben - Syntaxfehler beheben - Code ausführen - Funktionalität verbessern und Bugs beheben - Fertiges Programm
-- Input-Funktion mit Parametern
-- Print-Funktion mit Stringinterpolation und String-Konkatenation
-- Variablen in Python
-- Zuweisungsoperation in Python
-- Wichtige Datentypen für Zahlen und Text in Python
-- Type-Funktion
-- Typumwandlung mit Konstruktorfunktionen
-- String-Konkatenation
+- Logische Ausdrücke in Python
+- Bool'sche Ergebnisse in Python
+- Logische Operatoren in Python
+- If in Python
+- Else-If in Python
 
 """
+
 print('************ BMI-Berechnung ************')
 eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
 eingabeMeter = input('Bitte geben Sie ihre Größe in Meter an: ')
@@ -44,4 +34,24 @@ kilogramm = float(eingabeKilogramm)
 meter = float(eingabeMeter)
 bmi = kilogramm / (meter * meter)
 bmiGerundet = round(bmi, 2)
-print('Der berechnete BMI beträgt ' + str(bmiGerundet))
+interpretation = ""
+if bmi < 18:
+    interpretation = "Untergewicht"
+if bmi >=18 and bmi < 26:
+    interpretation = "Normalgewicht"
+if bmi >=26 and bmi < 31:
+    interpretation = "Übergewicht"
+if bmi >= 31:
+    interpretation = "Adipositas"
+"""
+# Folgende IF-Anweisung ist eine elegantere Variante von oben:
+if bmi < 18:
+    interpretation = "Untergewicht"
+elif bmi < 26:
+    interpretation = "Normalgewicht"
+elif bmi < 31:
+    interpretation = "Übergewicht"
+else:
+    interpretation = "Adipositas"
+"""
+print("Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation)

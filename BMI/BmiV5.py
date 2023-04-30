@@ -6,21 +6,22 @@ BMI VERSION 5
 ---------
 Standards
 ---------
-- Das Programm wird durch den Einsatz von Funktionen ein wenig modularisiert werden. 
-- Dadurch werden Teile des Programms wiederverwendbar und besser lesbar.
+- Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V4]:
+- Der Benutzer gibt eine Messreihe ein und bekommt für je zwei Eingaben einen BMI-Wert berechnet und ausgegeben.
 
 --------
 Konzepte
 --------
-- Funktionen als Modularisierungstechnik
+- Wiederholung
+- Datenstruktur Listen
+- Arbeiten mit Listen - Iteration über Listen
 
----------
-Werkzeuge
----------
-- Funktionen in Python
-- Funktionsparameter in Python
-- Rückgabetypen in Python
-- Type-Hints für die Bekanntmachung von Typen von Parametern und Variablen
+--------
+Werkzeug
+--------
+- While in Python
+- Listen in Python
+
 """
 
 def bmiBerechnen(kg:float,m:float):
@@ -28,52 +29,82 @@ def bmiBerechnen(kg:float,m:float):
 
 def bmiInterpretieren(bmi:float)->str:
     interpretation = ""
-    if bmi < 18.5: # If-Anweisung mit Bedingung in Form eines logischen Ausdrucks mit Kleiner-Operator
-        interpretation = "Untergewicht" # Bedingte Anweisung, eingerückt, wird ausgeführt, wenn Bedingung oben zutrifft
-    elif bmi < 25: # Else-If: zweite Bedingung wird geprüft falls vorherige nicht zutrifft
-        interpretation = "Normalgewicht" # Bedingte Anweisung, eingerückt, wird ausgeführt, wenn Bedingung geprüft wird und zutrifft
-    elif bmi < 30: # Else-If: zweite Bedingung wird geprüft falls vorherige nicht zutrifft
-        interpretation = "Übergewicht" # Bedingte Anweisung, eingerückt, wird ausgeführt, wenn Bedingung geprüft wird und zutrifft
-    else: # Else: falls alle vorhergehenden Bedingungen nicht zutreffen werden nachfolgend eingerückte Anweisungen ausgeführt
+    if bmi < 18.5:
+        interpretation = "Untergewicht"
+    elif bmi < 25:
+        interpretation = "Normalgewicht"
+    elif bmi < 30:
+        interpretation = "Übergewicht"
+    else:
         interpretation = "Adipositas"
     return interpretation
 
-wiederholung = True # Bool'sche Schaltervariable
+variante = input("1) BMI für eine Eingabe berechnen 2) BMIs für eine Messreihe berechnen ")
+if variante == "1":
+    wiederholung = True
 
-while wiederholung == True:
-    print("************ BMI-Berechnung ************")
-    eingabeErfolgreich = False # Boo'sche Schaltervariable
-    while not eingabeErfolgreich:
-        eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
-        eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
-        try:
-            kilogramm = float(eingabeKilogramm)
-            meter = float(eingabeMeter)
-            if kilogramm >= 0 and meter >= 0:
+    while wiederholung == True:
+        print("************ BMI-Berechnung ************")
+        eingabeErfolgreich = False
+        while(not eingabeErfolgreich):
+            eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ")
+            eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
+            try:
+                kilogramm = float(eingabeKilogramm)
+                meter = float(eingabeMeter)
                 eingabeErfolgreich = True
-            else:
-                print("Bitte nur positive Zahlen eingeben!")
+            except:
+                print("Bitte nur Zahlen eingeben!")
                 eingabeErfolgreich = False
-        except:
-            print("Bitte nur Zahlen eingeben!")
+        bmi = bmiBerechnen(kilogramm,meter)
+        bmiGerundet = round(bmi,2)
+        interpretation = bmiInterpretieren(bmi)
+        ausgabe = "Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation
+        print(ausgabe)
+        eingabeWeitereBerechnung = input("Möchten Sie das Programm beenden? J oder j für Ja! ")
+        if eingabeWeitereBerechnung.capitalize() == "J":
+            wiederholung = False
+    print("Vielen Dank, dass Sie unser Programm verwendet haben. Auf wiedersehen!")
+elif variante == "2":
+    messreihe = []
+    print("Bitte geben Sie die Messreihe ein!")
+    while True:
+        eingabe = input()
+        if eingabe == "#":
+            break
+        else:
             eingabeErfolgreich = False
-
-    #(V)erarbeitung
-    ## Berechnung
-    bmi = bmiBerechnen(kilogramm,meter)
-    ## Runden auf 2 Stellen
-    bmiGerundet = round(bmi,2) # Runden-Funktion auf 2 Stellen
-    ## Interpretation des Ergebnisses
-    interpretation = bmiInterpretieren(bmi) # Variable für das Interpretationsergebnis mit vorerst leerem String
-
-    #(A)usgabe
-    print("Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation) # String-Konkatenation und String-Konvertierung
-    #print(f"Der berechnete BMI beträgt {bmiGerundet} --> {interpretation}") # Alternative Ausgabe mit Format-String
-    #print("Der berechnete BMI beträgt {:.2f} --> {}".format(bmi, interpretation)) # Alternative Ausgabe mit format-Funktion
-
-    # Weitere Berechnung oder Programm beenden?
-    eingabeWeitereBerechnung = input("Möchten Sie das Programm beenden? J oder j für Ja! ")
-    if eingabeWeitereBerechnung.capitalize() == "J": # Methoden-Aufruf an String-Objekt, Logischer Ausdruck
-        wiederholung = False
-
-print("Vielen Dank, dass Sie unser Programm verwendet haben. Auf wiedersehen!")
+            while not eingabeErfolgreich:
+                try:
+                    umwandlungZahl = float(eingabe)
+                    if umwandlungZahl >= 0:
+                        eingabeErfolgreich = True
+                        messreihe.append(umwandlungZahl)
+                    else:
+                        print("Bitte nur positive Zahlen eingeben!")
+                        eingabe = input()
+                except:
+                    print("Bitte nur Zahlen eingeben!")
+                    eingabe = input()
+    if len(messreihe) % 2 != 0:
+        print("Sie müssen immer je zwei Werte eingeben, einen für die Masse in kg und einen für die Grösse in m")
+    else:
+        i = 0
+        while i < len(messreihe)-1:
+            kg = messreihe[i]
+            m = messreihe[i+1]
+            bmi = kg / m**2
+            bmiGerundet = round(bmi,2)
+            interpretation = ""
+            if bmi < 18.5:
+                interpretation = "Untergewicht"
+            elif bmi < 25:
+                interpretation = "Normalgewicht"
+            elif bmi < 30:
+                interpretation = "Übergewicht"
+            else:
+                interpretation = "Adipositas"
+            print("BMI für eine Masse von " + str(kg) + "kg und eine Größe von + " + str(m) + " m beträgt " + str(bmiGerundet) + " --> " + str(interpretation))
+            i = i + 2
+else:
+    print("Bitte nur 1 oder 2 angeben!")

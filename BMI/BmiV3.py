@@ -6,52 +6,56 @@ BMI VERSION 3
 ---------
 Standards
 ---------
-- Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V2]
-- Ausgabe des Interpretationsergebnisses
+- Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V2]:
+- Benutzer wird über Falscheingaben (Zahlen) informiert und bekommt solange die Möglichkeit alles neu einzugeben, bis alles passt.
+- Wiederholte Berechnung ermöglichen, wenn der Benutzer nach einer Berechnung J eingibt.
 
----------
+--------
 Konzepte
----------
-- Alternative
-- Bedingung in Form eines logischen Ausdrucks
-- Bedingungs-Ergebnis in Form von Bool'schen Werten
+--------
+- Wiederholung
+- Bool'sche Schalter-Variablen
 
 ---------
-Werkzeug
+Werkzeuge
 ---------
-- Logische Ausdrücke in Python
-- Bool'sche Ergebnisse in Python
-- Logische Operatoren in Python
-- If in Python
-- Else-If in Python
+- While-Loop in Python
+- Bool'sche Variablen in Python
 
 """
+wiederholung = True
+while wiederholung == True:
+    print("************ BMI-Berechnung ************")
+    eingabeErfolgreich = False
+    while not eingabeErfolgreich:
+        eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
+        eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
+        try:
+            kilogramm = float(eingabeKilogramm)
+            meter = float(eingabeMeter)
+            if kilogramm >= 0 and meter >= 0:
+                eingabeErfolgreich = True
+            else:
+                print("Bitte nur positive Zahlen eingeben!")
+                eingabeErfolgreich = False
+        except:
+            print("Bitte nur Zahlen eingeben!")
+            eingabeErfolgreich = False
+    bmi = kilogramm / meter**2
+    bmiGerundet = round(bmi,2) 
+    interpretation = ""
+    if bmi < 18.5: 
+        interpretation = "Untergewicht" 
+    elif bmi < 25: 
+        interpretation = "Normalgewicht" 
+    elif bmi < 30: 
+        interpretation = "Übergewicht" 
+    else: 
+        interpretation = "Adipositas"
+    ausgabe = "Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation
+    print(ausgabe)
+    eingabeWeitereBerechnung = input("Möchten Sie das Programm beenden? J oder j für Ja! ")
+    if eingabeWeitereBerechnung.capitalize() == "J":
+        wiederholung = False
 
-print('************ BMI-Berechnung ************')
-eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
-eingabeMeter = input('Bitte geben Sie ihre Größe in Meter an: ')
-kilogramm = float(eingabeKilogramm)
-meter = float(eingabeMeter)
-bmi = kilogramm / (meter * meter)
-bmiGerundet = round(bmi, 2)
-interpretation = ""
-if bmi < 18:
-    interpretation = "Untergewicht"
-if bmi >=18 and bmi < 26:
-    interpretation = "Normalgewicht"
-if bmi >=26 and bmi < 31:
-    interpretation = "Übergewicht"
-if bmi >= 31:
-    interpretation = "Adipositas"
-"""
-# Folgende IF-Anweisung ist eine elegantere Variante von oben:
-if bmi < 18:
-    interpretation = "Untergewicht"
-elif bmi < 26:
-    interpretation = "Normalgewicht"
-elif bmi < 31:
-    interpretation = "Übergewicht"
-else:
-    interpretation = "Adipositas"
-"""
-print("Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation)
+print("Vielen Dank, dass Sie unser Programm verwendet haben. Auf wiedersehen!")

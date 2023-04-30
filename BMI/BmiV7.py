@@ -6,111 +6,87 @@ BMI VERSION 7
 ---------
 Standards
 ---------
-- Das Programm wird durch den Einsatz von Funktionen noch stärker modularisiert.
-- Insbesondere werden neben den aus V5 bereits vorhandenen Funktionen 
-  für die Berechnung und die Interpretation des BMI auch Funktionen für die Eingabeverarbeitung bereitgestellt.
-
+- Das Programm kann vollständig über eine grafische Benutzeroberfläche bedient werden.
 
 --------
 Konzepte
 --------
-- Weitere Funktionen als Modularisierungstechnik
+- GUIs mit Widgets,
+- Layout,
+- Events,
+- Databinding
 
 --------
 Werkzeug
 --------
-- Funktionen in Python
-- Funktionsparameter in Python
-- Rückgabetypen in Python
-- Type-Hints für die Bekanntmachung von Typen von Parametern und Variablen
+- tkinter GUI-Bibliothek mit
+- Labels
+- Buttons
+- Textfields
+- MessageBox
+- StringVars für Textbinding
+- Gridlayout
 """
 
-# Funktionen
+import tkinter as tk
+from tkinter import messagebox
 
-def bmiBerechnen(kg,m):
-    return kg / m**2
-
-def bmiInterpretieren(bmi:float)->str:
-    interpretation = ""
-    if bmi < 18.5:
-        interpretation = "Untergewicht"
-    elif bmi < 25:
-        interpretation = "Normalgewicht" 
-    elif bmi < 30:
-        interpretation = "Übergewicht"
-    else:
-        interpretation = "Adipositas"
-    return interpretation
-
-def istPositiveKommazahl(numberString:str)->bool:
+def bmiRechnenUndInterpretieren():
     try:
-        if float(numberString) >= 0:
-            return True
+        kg = float(kgTextBinding.get())
+        m = float(mTextBinding.get())
+        bmi = kg / m**m
+        ergebnisTextBinding.set(str(round(bmi,2)))
+        if bmi <= 18:
+            interpretation = "Untergewicht"
+        elif bmi <= 25:
+            interpretation = "Normalgewicht"
+        elif bmi <= 29:
+            interpretation = "Übergewicht"
         else:
-            return False
-    except ValueError:
-        return False
+            interpretation = "Adipositas"
+        ergebnisInterpretationBinding.set(interpretation)
+    except:
+        messagebox.showerror(title="Falscheingabe", message="Bitte Zahlen eingeben!")
 
-def eingabePositiveKommazahl(label:str)->float:
-    while True:
-        eingabe = input(label)
-        if not istPositiveKommazahl(eingabe):
-            print("-> Eingabe muss eine positive Kommazahl sein!")
-            continue
-        else:
-            return float(eingabe)
+# Hauptprogramm
 
-def messreiheEinlesen() -> list[float]:
-    messreihe = [] # type: list[float]
-    print("-> Bitte geben Sie die Werte ein!")
-    while True:
-        eingabe = input()
-        if eingabe == "#":
-            if len(messreihe) < 2 or len(messreihe) % 2 != 0:
-                print("-> Sie müssen eine gerade Anzahl von Zaheln eingeben (immer je zwei Werte)!")
-                continue
-            else:
-                return messreihe
-        else:
-            try:
-                eingabeZahl = float(eingabe)
-                if eingabeZahl >= 0:
-                    messreihe.append(eingabeZahl)
-                else:
-                    print("-> Bitte nur positive Kommazahlen eingeben!")
-            except ValueError:
-                print("-> Bitte nur positive Kommazahlen eingeben!")
+root = tk.Tk() # Hauptfenster
+root.title("BMI Berechnung") # Title Hauptfenster
 
-# Programm
+#Eingabe für kg
+labelKg = tk.Label(root,text="Gewicht in kg:")
+labelKg.grid(row=0,column=0)
+kgTextBinding = tk.StringVar()
+inputKg = tk.Entry(root,textvariable=kgTextBinding)
+inputKg.focus()
+inputKg.grid(row=0,column=1)
 
-ende = False
+#Eingabe für m
+labelM = tk.Label(root,text="Grösse in m:")
+labelM.grid(row=1,column=0)
+mTextBinding = tk.StringVar()
+inputM = tk.Entry(root,textvariable=mTextBinding)
+inputM.grid(row=1,column=1)
 
-while not ende:
-    
-    print("************************************* MENÜ ************************************** ")
-    variante = input("1) BMI für eine Eingabe berechnen 2) BMIs für eine Messreihe berechnen 3) Beenden ")
+#Ergebnis-Label
+ergebnisTextBinding = tk.StringVar()
+ergebnisTextBinding.set("Ergebnis:")
+lblBmiErgebnis = tk.Label(root, textvariable=ergebnisTextBinding)
+lblBmiErgebnis.grid(row=2,columnspan=2)
 
-    if variante == "1":
-        print("************** BMI-Einzelberechnung **************")
-        kg = eingabePositiveKommazahl("-> Bitte geben Sie ihr Gewicht in Kilogramm an: ")
-        m = eingabePositiveKommazahl("-> Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben!): ")
-        bmi = bmiBerechnen(kg,m)
-        interpretation = bmiInterpretieren(bmi)
-        print("[Der berechnete BMI beträgt " + str(round(bmi,2)) + " --> " + interpretation + "]")
-    elif variante == "2":
-        print("************ BMI-Messreihenberechnung ************")
-        messreihe = messreiheEinlesen()
-        i = 0
-        while i < len(messreihe)-1:
-            kg = messreihe[i]
-            m = messreihe[i+1]
-            bmi = bmiBerechnen(kg,m)
-            bmiGerundet = round(bmi,2)
-            interpretation = bmiInterpretieren(bmi)
-            print(f"[BMI für eine Masse von {kg} kg und eine Größe von {m} m beträgt {bmiGerundet} --> {interpretation}]")
-            i = i + 2;
-    elif variante == "3":
-        ende = True
-        print("-> Auf wiedersehen!")
-    else:
-        print("-> Bitte 1, 2 oder 3 wählen!")
+#Interpretation-Label
+ergebnisInterpretationBinding = tk.StringVar()
+ergebnisInterpretationBinding.set("Interpretation:")
+lblInterpretation = tk.Label(root, textvariable=ergebnisInterpretationBinding)
+lblInterpretation.grid(row=3,columnspan=2)
+
+#Button
+btnBerechnen = tk.Button(root, text="BMI berechnen", command=bmiRechnenUndInterpretieren)
+btnBerechnen.grid(row=4,columnspan=2)
+
+#Button
+btnBerechnen = tk.Button(root, text="Beenden", command=quit)
+btnBerechnen.grid(row=5,columnspan=2)
+
+root.mainloop()

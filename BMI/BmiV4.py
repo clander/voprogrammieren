@@ -6,23 +6,36 @@ BMI VERSION 4
 ---------
 Standards
 ---------
-- Fertiges Python-Programm mit folgenden Aspekten zusätzlich zu [V3]:
-- Benutzer wird über Falscheingaben (Zahlen) informiert und bekommt solange die Möglichkeit alles neu einzugeben, bis alles passt.
-- Wiederholte Berechnung ermöglichen, wenn der Benutzer nach einer Berechnung J eingibt.
+- Das Programm wird durch den Einsatz von Funktionen ein wenig modularisiert werden. 
+- Dadurch werden Teile des Programms wiederverwendbar und besser lesbar.
 
 --------
 Konzepte
 --------
-- Wiederholung
-- Bool'sche Schalter-Variablen
+- Funktionen als Modularisierungstechnik
 
 ---------
 Werkzeuge
 ---------
-- While-Loop in Python
-- Bool'sche Variablen in Python
-
+- Funktionen in Python
+- Funktionsparameter in Python
+- Rückgabetypen in Python
+- Type-Hints für die Bekanntmachung von Typen von Parametern und Variablen
 """
+
+def bmiBerechnen(kg:float,m:float):
+    return kg / m**2
+def bmiInterpretieren(bmi:float)->str:
+    interpretation = ""
+    if bmi < 18.5:
+        interpretation = "Untergewicht" 
+    elif bmi < 25: 
+        interpretation = "Normalgewicht"  
+    elif bmi < 30: 
+        interpretation = "Übergewicht" 
+    else:
+        interpretation = "Adipositas"
+    return interpretation
 wiederholung = True
 while wiederholung == True:
     print("************ BMI-Berechnung ************")
@@ -41,21 +54,12 @@ while wiederholung == True:
         except:
             print("Bitte nur Zahlen eingeben!")
             eingabeErfolgreich = False
-    bmi = kilogramm / meter**2
-    bmiGerundet = round(bmi,2) 
-    interpretation = ""
-    if bmi < 18.5: 
-        interpretation = "Untergewicht" 
-    elif bmi < 25: 
-        interpretation = "Normalgewicht" 
-    elif bmi < 30: 
-        interpretation = "Übergewicht" 
-    else: 
-        interpretation = "Adipositas"
+    bmi = bmiBerechnen(kilogramm,meter)
+    bmiGerundet = round(bmi,2)
+    interpretation = bmiInterpretieren(bmi)
     ausgabe = "Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation
     print(ausgabe)
     eingabeWeitereBerechnung = input("Möchten Sie das Programm beenden? J oder j für Ja! ")
-    if eingabeWeitereBerechnung.capitalize() == "J":
+    if eingabeWeitereBerechnung.capitalize() == "J": # Methoden-Aufruf an String-Objekt, Logischer Ausdruck
         wiederholung = False
-
 print("Vielen Dank, dass Sie unser Programm verwendet haben. Auf wiedersehen!")
