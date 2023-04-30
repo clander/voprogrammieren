@@ -89,7 +89,7 @@ flowchart TD
     J --> K(Programmende)
 ```
 ### Blockbasiert
-![BMI Iteration 1](bmiIteration1.png)
+![BMI Iteration 1](bilder/bmiIteration1.png)
 ### Python-Code
 ```python
 print('************ BMI-Berechnung ************')
@@ -145,7 +145,7 @@ flowchart TD
     P -- Nein --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
     Q --> R:::neu
 
-    classDef neu fill:#244
+    classDef neu fill:#444
 ```
 Alternativer Ablaufplan mit Else-If:
 
