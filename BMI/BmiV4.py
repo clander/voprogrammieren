@@ -23,13 +23,10 @@ Werkzeuge
 - Bool'sche Variablen in Python
 
 """
-
-wiederholung = True #Bool'sche Schaltervariable
-
+wiederholung = True
 while wiederholung == True:
     print("************ BMI-Berechnung ************")
-    #(E)ingabe
-    eingabeErfolgreich = False # Boo'sche Schaltervariable
+    eingabeErfolgreich = False
     while not eingabeErfolgreich:
         eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
         eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
@@ -44,8 +41,6 @@ while wiederholung == True:
         except:
             print("Bitte nur Zahlen eingeben!")
             eingabeErfolgreich = False
-  
-    # (V)erarbeitung
     bmi = kilogramm / meter**2
     bmiGerundet = round(bmi,2) 
     interpretation = ""
@@ -57,15 +52,10 @@ while wiederholung == True:
         interpretation = "Übergewicht" 
     else: 
         interpretation = "Adipositas"
-
-    #(A)usgabe
-    print("Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation) # String-Konkatenation und String-Konvertierung
-    #print(f"Der berechnete BMI beträgt {bmiGerundet} --> {interpretation}") # Alternative Ausgabe mit Format-String
-    #print("Der berechnete BMI beträgt {:.2f} --> {}".format(bmi, interpretation)) # Alternative Ausgabe mit format-Funktion
-
-    # Weitere Berechnung oder Programm beenden?
+    ausgabe = "Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation
+    print(ausgabe)
     eingabeWeitereBerechnung = input("Möchten Sie das Programm beenden? J oder j für Ja! ")
-    if eingabeWeitereBerechnung.capitalize() == "J": # Methoden-Aufruf an String-Objekt, Logischer Ausdruck
+    if eingabeWeitereBerechnung.capitalize() == "J":
         wiederholung = False
 
 print("Vielen Dank, dass Sie unser Programm verwendet haben. Auf wiedersehen!")

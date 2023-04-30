@@ -31,7 +31,7 @@ Für die Software gelten folgende funktionale Anforderungen:
 - Zeitmanagement
 - ...
 
-# Iteration 1
+# Sprint 1
 ## Rechercheergebnis zu BMI
 Quelle: https://de.wikipedia.org/wiki/Body-Mass-Index
 
@@ -55,7 +55,7 @@ Normalgewicht: < 25
 Präadipositas: < 31
 Adipositas: >= 31
 ## Sprint Backlog
-Folgende funktionalen Anforderungen werden im ersten Spring implementiert:
+Folgende funktionalen Anforderungen werden im ersten Sprint implementiert:
 - Benutzer:innen können die für die Berechnungen nötigen Daten eingeben.
 - Benutzer:innen bekommen den berechneten (und wenn nötig gerundeten) BMI als Ergebnis.
 ## Pseudocode
@@ -100,18 +100,32 @@ bmiGerundet = round(bmi, 2)
 print('Der berechnete BMI beträgt ' + str(bmiGerundet))
 ```
 
-# Iteration 2
+# Sprint 2
+
+## Sprint Backlog
+Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
+- Benutzer:innen bekommen eine Interpretation des BMI als Ergebnis.
 ## Pseudocode
 ```pseudocode
-- ... wie oben, und dann wie folgt:
 - Wenn der berechnete BMI < 18:
-    - Interpretationsergebnis ist "Untergewicht"
+    * Interpretationsergebnis ist "Untergewicht"
 - Wenn der berechnete BMI zwischen 18 und 26 (excl.):
-    - Interpretationsergebnis ist "Normalgewicht"
+    * Interpretationsergebnis ist "Normalgewicht"
 - Wenn der berechnete BMI zwischen 26 und 31 (excl.):
-    - Interpretationsergebnis ist "Übergewicht"
+    * Interpretationsergebnis ist "Übergewicht"
 - Wenn der berechnete BMI größer oder gleich 31:
-    - Interpretationsergebnis ist "Adipositas"
+    * Interpretationsergebnis ist "Adipositas"
+- Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
+```
+Variante:
+- Wenn der berechnete BMI < 18:
+    * Interpretationsergebnis ist "Untergewicht"
+- Wenn der berechnete BMI zwischen 18 und 26 (excl.):
+    * Interpretationsergebnis ist "Normalgewicht"
+- Wenn der berechnete BMI zwischen 26 und 31 (excl.):
+    * Interpretationsergebnis ist "Übergewicht"
+- Wenn der berechnete BMI größer oder gleich 31:
+    * Interpretationsergebnis ist "Adipositas"
 - Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
 ```
 ## Ablaufplan
@@ -225,4 +239,58 @@ ausgabe = 'Der berechnete BMI beträgt ' + str(bmiGerundet) + ' --> ' + interpre
 print(ausgabe)
 ```
 
+# Sprint 3
+
+## Sprint Backlog
+Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
+- Benutzer:innen sollen bei Falscheingaben einen Hinweis zur Richtigstellung erhalten und die Eingabe so lange wiederholen können, bis alles passt.
+
+Bezahlfunktion:
+- Benutzer:innen sollen nach einer Berechnung die Möglichkeit haben, weitere Berechnungen durchzuführen.
+
+## Blockbasierte Implementierung
+![BMI Iteration 3_1](bilder/bmiIteration3_1.png)
+![BMI Iteration 3_2](bilder/bmiIteration3_2.png)
+![BMI Iteration 3_3](bilder/bmiIteration3_3.png)
+![BMI Iteration 3_3](bilder/bmiIteration3_4.png)
+## Python-Implementierung
+```python
+wiederholung = True
+while wiederholung == True:
+    print("************ BMI-Berechnung ************")
+    eingabeErfolgreich = False
+    while not eingabeErfolgreich:
+        eingabeKilogramm = input("Bitte geben Sie ihr Gewicht in Kilogramm an (Komma als Punkt): ") #Input-Funktion mit Parameter und String-Rückgabe
+        eingabeMeter = input("Bitte geben Sie ihre Größe in Meter an (Komma als Punkt angeben): ")
+        try:
+            kilogramm = float(eingabeKilogramm)
+            meter = float(eingabeMeter)
+            if kilogramm >= 0 and meter >= 0:
+                eingabeErfolgreich = True
+            else:
+                print("Bitte nur positive Zahlen eingeben!")
+                eingabeErfolgreich = False
+        except:
+            print("Bitte nur Zahlen eingeben!")
+            eingabeErfolgreich = False
+    bmi = kilogramm / meter**2
+    bmiGerundet = round(bmi,2) 
+    interpretation = ""
+    if bmi < 18.5: 
+        interpretation = "Untergewicht" 
+    elif bmi < 25: 
+        interpretation = "Normalgewicht" 
+    elif bmi < 30: 
+        interpretation = "Übergewicht" 
+    else: 
+        interpretation = "Adipositas"
+    ausgabe = "Der berechnete BMI beträgt " + str(bmiGerundet) + " --> " + interpretation
+    print(ausgabe)
+    eingabeWeitereBerechnung = input("Möchten Sie das Programm beenden? J oder j für Ja! ")
+    if eingabeWeitereBerechnung.capitalize() == "J":
+        wiederholung = False
+
+print("Vielen Dank, dass Sie unser Programm verwendet haben. Auf wiedersehen!")
+
+```
 
