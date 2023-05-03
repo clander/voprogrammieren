@@ -13,8 +13,6 @@
    2. Zahlen-Raten
    3. Zahlen-Raten KI
 
-
-
 # Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
