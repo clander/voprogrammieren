@@ -1,11 +1,9 @@
 import random
-
 print("*** Schere, Stein, Papier ***")
 spielerGewinne = 0
 computerGewinne = 0
 while True:
     spielerwahl = input("Was wählst du? Tippe ein: [Schere]  [Stein]  [Papier]  [Exit] ")
-    
     if spielerwahl != "Schere" and spielerwahl != "Stein" and spielerwahl != "Papier" and spielerwahl != "Exit":
         print("Es stehen nur folgende Optionen zur Verfügung: [Schere]  [Stein]  [Papier]  [Exit] ")
         continue
@@ -33,7 +31,7 @@ while True:
             print(">Spieler gewinnt")
             spielerGewinne = spielerGewinne + 1
         else:
-            print("[Computer gewinnt]")
+            print(">Computer gewinnt")
             computerGewinne = computerGewinne + 1
 print("")
 print("*************** Statistik ***************")
