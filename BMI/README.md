@@ -254,7 +254,6 @@ Bezahlfunktion:
 
 ## Pseudocode
 ```pseudocode
-A: 
 Solange der Benutzer nicht Nein zu einer wiederholten Berechnung sagt:
     Solange noch keine korrekte Benutzereingabe vorliegt:
         Benutzer gibt kg ein
