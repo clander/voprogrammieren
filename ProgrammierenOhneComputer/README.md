@@ -11,15 +11,17 @@ Die Schülerinnen und Schüler können
 
 Anwendungsbereiche: Sequenzen und einfache Schleifen
 
-## Umsetzungsmöglichkeiten
-### Steuerung von Robotern auf dem Papier 
+## Idee
+Schüler:innen befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme.
+
+Wichtig ist, dass die Handlungsanleitungen  neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, Wiederholungen und bedingte Anweisungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
+
+## Steuerung von Robotern auf dem Papier 
 https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
 
-### Bekannte Algorithmen nachspielen
+## Rollenspiel Bubblesort:
 
-#### Rollenspiel Bubblesort:
-
-* Algorithmus: https://de.wikipedia.org/wiki/Bubblesort
+Algorithmus: https://de.wikipedia.org/wiki/Bubblesort
 
 Einstimmung: Die Lehrperson bringt eine Flasche Limonade oder Mineralwasser und ein paar Gläser in den Unterricht mit. Die Lernenden sollen einschenken und bevor sie trinken, die Bläschen (Bubbles) im Glas beobachten. 
 
@@ -33,15 +35,17 @@ Vorbereitung: Einige Schüler:innen stellen sich als Teilnehmer:innen des Rollen
 
 Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt BubbleSort diesen Namen?
 
-#### Kürzeste-Wege-Algorithmus von Dijkstra
-* Algorithmus: https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
-* Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
+## Kürzeste-Wege-Algorithmus von Dijkstra
 
-**Algorithmus in Pseudocode**:
+Algorithmus: https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
+
+Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
+
+### Pseudocode (Handlungsanleitung)
 
 Vorbereitung: Mit Straßenkreide wird ein Wegenetz in Form eines Graphen (Knoten + Kanten + Kantengewichte + Daten pro Knoten) auf den Asphalt im Schulhof / auf die Tafel gezeichnet
 
-1. **Startaufstellung**:
+1. Schritt: **Startaufstellung**:
 Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Distanz zum Starknoten mit 0 ein. Dieser Startknoten wird zum aktuellen Knoten.
 
 2. Schritt: **Distanzen zu den Nachbarknoten (Relaxierung)**: Für alle Nachbarknoten des aktuellen Knotens, die noch nicht als besucht markiert sind (also noch nicht grün sind), erledigst du folgende Punkte:
@@ -52,20 +56,14 @@ Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Dis
    - Wenn es nicht besuchte Knoten gibt, suchst du denjenigen mit der aktuell kleinsten Entfernung aus. Markiere diesen Knoten als besucht. Dieser Knoten wird der aktuelle Knoten. Fahre mit Schritt 2 fort.
    - Wenn es keine nicht besuchten Knoten mehr gibt (alle Knoten sind grün), dann ist der Algorithmus zu Ende. Du hast nun die kürzesten Wege vom Startknoten aus zu allen restlichen Knoten des Graphen berechnet.
 
-Beispiel
+### Der kürzeste Weg für alle zum Startknoten**
+
+Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Starknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
+### Beispiel-Ablauf:
 
 ![image](/ProgrammierenOhneComputer/bilder/DijkstraGross.gif)
 
-**Der kürzeste Weg für alle zum Startknoten**
-
-Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Starknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
-
-## Weitere interessanter Algorithmus: Kürzeste Wege nach Dijkstra
-- Erklärung auf YouTube: https://www.youtube.com/watch?v=KiOso3VE-vI
-- Wikipedia: https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
-- Multiple Repräsentation: https://visualgo.net/en/sssp
-
-## Visualgo
+## Algorithmenvisualisierungen mit Visualgo
 Auf dieser Plattform finden sich weitere Algorithmen und Datenstrukturen zusammen mit enaktiver, ikonischer und symbolischer Repräsentation:
 
 https://visualgo.net/en
@@ -78,5 +76,3 @@ https://visualgo.net/en
 - IKEA-Bauanleitungen
 - Kochbücher / Kochrezepte
 - Schulbuch "Denken lernen - Probleme lösen mit BBC micro:bit", S. 11 - S. 16, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf 
-
-Wichtig: die Handlungsanleitungen sollten neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, Wiederholungen und bedingte Anweisungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
