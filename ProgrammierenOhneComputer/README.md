@@ -117,14 +117,14 @@ Tabellenvorlage:
 |CPU REGISTERSPEICHER||
 |----------|----------|
 |PZ Programmzähler| AR Akkumulatorregister|
-| | |
+|[              ]|[              ]|
 |BR Befehlsregister| SR Speicheradressenregister|
-| | |
+|[              ]|[              ]|
 
 |CPU EIN- und AUSGABE||
 |----------|----------|
 |E Eingabe| A Ausgaber|
-| | |
+|[              ]|[              ]|
 
 **Vor jedem Programmstart** machst du folgendes:
 1. Schreib den Wert 0 in das PZ.
