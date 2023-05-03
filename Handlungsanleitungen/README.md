@@ -249,7 +249,7 @@ Auf den folgenden Websites gibt es LMC-Implementierungen, mit denen man die Ausf
 
 Weiter Details dazu siehe https://en.wikipedia.org/wiki/Little_man_computer
 
-### Additum-Aufgaben “Computerhirn“
+### Aditum-Aufgaben “Computerhirn“
 Diskutiere mit deinen Klassenkollegen und mit dei- nem Lehrer folgende Fragestellungen und fasse die Ergebnisse der Diskussion zu den einzelnen Punkten in einem kurzen Protokoll zusammen.
 1. Obwohl während der Programmausführung nie- mand wusste was das Programm eigentlich macht, ist am Ende - bei korrekter Ausführung - eine kor- rekte Ausgabe erfolgt. Wie kommt das?
 2. Was bedeutet das für die Denkleistung von Com- putern / Handys / Spielkonsolen usw., die als Von- Neumann-Architekturen ähnlich arbeiten?
