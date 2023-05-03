@@ -387,8 +387,8 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 ## Offizielles Python Tutorial (de)
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ## Python problem- und konzeptorientiert:
-- https://www.inf-schule.de/imperative-programmierung/python
-- https://www.programmierkonzepte.ch/index.php?inhalt_links=navigation.inc.php&inhalt_mitte=home/home.inc.php
+- Inf-Schule (TU Kaiserslautern): https://www.inf-schule.de/imperative-programmierung/python
+- Programmierkonzepte.ch (PH Bern): https://www.programmierkonzepte.ch/index.php?inhalt_links=navigation.inc.php&inhalt_mitte=home/home.inc.php
 
 ## Programmieren in Python Universität Regensburg
 - https://www.uni-regensburg.de/assets/physik/fakultaet/IT/- Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
@@ -399,7 +399,7 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 - https://open.hpi.de/courses/pythonjunior-schule2023/items/6Ac7bKMhDRu1IMOG4SLWvp
 
 ## Python Bakery Kurs
-- Kompletter Kurs: https://blockpy.cis.udel.edu/courses/37 bzw. direkt über https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37&embed=False 
+- Kompletter Kurs mit sehr guten Videos: https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37&embed=False 
 - https://youtube.com/playlist?list=PLiK576qSavfIw_0ds6Z4JAzAyyj7b1SNE
 
 ## Python lernen in 4 Stunden
@@ -460,4 +460,3 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
   - https://docplayer.org/15740862-Computer-spielen-einmal-anders.html
   - https://moodle.tsn.at/course/view.php?id=15831
   - https://learninglab.tugraz.at/informatischegrundbildung/praesentation-workshop-computer-spielen-einmal-anders/
-  - 
