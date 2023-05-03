@@ -1,4 +1,4 @@
-# Enaktive Handlungsanleitungen
+# Handlungsanleitungen
 
 ## Lehrplanbezug
 
@@ -19,7 +19,7 @@ Wichtig ist, dass die Handlungsanleitungen  neben einfachen Anweisungen und Sequ
 ## Steuerung von Robotern auf dem Papier 
 https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
 
-## Rollenspiel Bubblesort:
+## Rollenspiel Bubblesort
 
 Algorithmus: https://de.wikipedia.org/wiki/Bubblesort
 
@@ -56,7 +56,7 @@ Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Dis
    - Wenn es nicht besuchte Knoten gibt, suchst du denjenigen mit der aktuell kleinsten Entfernung aus. Markiere diesen Knoten als besucht. Dieser Knoten wird der aktuelle Knoten. Fahre mit Schritt 2 fort.
    - Wenn es keine nicht besuchten Knoten mehr gibt (alle Knoten sind grün), dann ist der Algorithmus zu Ende. Du hast nun die kürzesten Wege vom Startknoten aus zu allen restlichen Knoten des Graphen berechnet.
 
-### Der kürzeste Weg für alle zum Startknoten**
+### Der kürzeste Weg für alle zum Startknoten
 
 Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Starknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
 ### Beispiel-Ablauf:
@@ -67,6 +67,91 @@ Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewä
 Auf dieser Plattform finden sich weitere Algorithmen und Datenstrukturen zusammen mit enaktiver, ikonischer und symbolischer Repräsentation:
 
 https://visualgo.net/en
+
+## "Computer spielen" einmal anders
+
+### Abkürzungen
+PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregister, SR – Speicheradressenregister, E – Eingabe, A – Ausgabe;
+### Befehlssatz
+|Instruction|Mnemonic|Machine Code|Explanation|Handlungsanleitung|
+|-----------|--------|------------|-----------|-----------------|
+|Load Accumulator|LDA|5xx|Load the contents of the given memory address (xx) into the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und kopiere den Wert von dort in das AR.
+|Store Accumulator|STA|	3xx|	Store the contents of the Accumulator at the given memory address (xx)|Schreibe den Wert aus dem AR in die Speicherstelle mit der Adresse die im SR angegeben ist.|
+|Add|	ADD|	1xx|	Add the contents of the given memory address (xx) to the value in the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und lies dort die Zahl. Addiere dann diese Zahl zur Zahl im AR und schreibe das Ergebnis wieder zurück in das AR.
+|Subtract|	SUB|	2xx|	Subtract the contents of the given memory address (xx) from the value in the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und lies dort die Zahl. Subtrahiere dann diese Zahl von der Zahl im AR und schreibe das Ergebnis wieder zurück in das AR.
+|Input|	INP|	901|	Copy the value from the Input 'mailbox' into the Accumulator|Frag deinen Banknachbarn nach einer Zahl zwischen 0 und 99 und leg die Zahl in E ab. Kopiere dann den Wert aus E in das AR.
+|Output|	OUT|	902|	Copy the value from the Accumulator into the Output 'mailbox'| Kopiere den Wert aus dem AR nach A.
+|Branch|	BRA|	6xx|	Branch (jump) to the instruction at the given memory address (xx)|Schreibe die Zahl die im SR steht in das PZ.
+|Branch if positive|	BRP|	8xx|	If the value in the Accumulator is positive (including zero), then branch to the instruction at the given memory address (xx)|Wenn im AR 0 oder eine positive Zahl steht, dann schreibe die Zahl die im SR steht in das PZ.
+|Branch if zero|	BRZ|	7xx|	If the value in the Accumulator is zero, then branch to the instruction at the given memory address (xx)|Wenn im AR 0 steht dann schreibe die Zahl die im SR steht in das PZ.
+|Halt|	HLT|	000|	Stop execution of the program|Beende die Programmausführung.
+|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value 
+
+### Programmausführung
+Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
+
+**Vor jedem Programmstart** machst du folgendes:
+1. Schreib den Wert 0 in das PZ.
+2. Lösche den Inhalt aller sonstigen Register (AR, BR, SR).
+3. Lösche den Inhalt aus Eingabe und Ausgabe (E, A).
+4. Übertrage das auszuführende Computerprogramm in die Arbeitsspeichertabelle.
+
+Führe das Programm nach folgenden Angaben aus:
+1. **Befehl holen** (FETCH):
+   1. Lies die Zahl im PZ.
+   2. Gehe in deiner Arbeitsspeicher-Tabelle in die Zeile mit der Speicheradresse die der gelesenen Zahl entspricht.
+   3. Schreibe den Befehl der an dieser Speicherstelle angegeben ist in das BR.
+   4. Schreibe die hinter dem Befehl angegebene Speicheradresse in das SR. Wenn hinter dem Befehl nichts angegeben ist, lösche den Inhalt von SR.
+2. **Befehl dekodieren**:
+   1. Lies den Befehl im BR und lies in der Befehlssatz-Tabelle nach
+was zu tun ist. 
+3. **Befehl ausführen**:
+   1. Erhöhe PZ um +1.
+   2. Führe jetzt den Befehl entsprechend den Angaben in der
+Befehlssatz-Tabelle aus.
+4. **Beginne wieder mit Punkt 1** falls du nicht an einem ENDE-Befehl
+   angelangt bist.
+
+### Beispielprogramme
+
+Adition von zwei Zahlen:
+
+|Zeile|Label|Befehl|Operand|
+|-----|-----|------|-------|
+|00|start||
+|01||STA|A|
+|02||INP||
+|03||ADD|A|
+|04||OUT||
+|05||HLT||
+|06||||
+|07|A|DAT|0|
+...
+
+Zwei Nummern eingeben, die höhere zurückgeben:
+|Zeile|Label|Befehl|Operand|
+|-----|-----|------|-------|
+|00||INP||
+|01||STA|FIRST|
+|02||INP||
+|03||STA|SECOND|
+|04||SUB|FIRST|
+|05||BRP|HIGHER|
+|06||LDA|FIRST|
+|07||BRA|DONE|
+|08|HIGHER|LDA|SECOND|
+|09|DONE|OUT||
+|10||HLT||
+|11|FIRST|DAT||
+|12|SECOND|DAT||
+### "Echte" Little-Man-Computers zum Ausführen
+Auf den folgenden Websites gibt es LMC-Implementierungen, mit denen man die Ausführung von Code wie oben ausprobieren kann:
+
+* https://wellingborough.github.io/LMC/LMC0.3.html
+* https://peterhigginson.co.uk/LMC/
+* https://www.101computing.net/LMC/
+
+Weiter Details dazu siehe https://en.wikipedia.org/wiki/Little_man_computer
 
 ## Weitere Ressourcen
 - Denken lernen, Probleme lösen / digi.case: https://men.baa.at/?men=digi.case.dlpl
