@@ -1,6 +1,6 @@
 # Schere-Stein-Papier
 
-## Aufgabe
+## Aufgabe Python-Variante
 Schere-Stein-Papier ist zwar retro aber lustig. Du möchtest dieses Spiel in Python programmieren und später als Discord-Bot bereitstellen.
 
 Für die Software gelten folgende funktionale Anforderungen:
@@ -11,27 +11,16 @@ Der Benutzer / die Benutzerin möchte gegen das Programm ein Schere-Stein-Papier
   - Version 2: Das Programm wählte zufällig Schere, Stein, Papier aus, lässt den Benutzer seine Wahl eingeben und entscheidet, wer gewonnen hat. 
   - Version 3: Das Programm soll am Ende eine Statistik mit den Spieler- bzw. Programmgewinnen anzeigen und es soll ausgeben, wer das Match insgesamt gewonnen hat.
 
-## Variante für Micro:bit
+## Implementierungen
 
-Tutorial auf Englisch: https://github.com/microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
-
-![](/SchereSteinPapier/bilder/sspmicrobit.png)
-(Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 29 - S. 30, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
-
-
-
-
-
-# Implementierungen
-
-## Blockbasierte Implementierung
+### Blockbasierte Implementierung
 ![](/SchereSteinPapier/bilder/ssp1.png)
 ![](/SchereSteinPapier/bilder/ssp2.png)
 ![](/SchereSteinPapier/bilder/ssp3.png)
 ![](/SchereSteinPapier/bilder/ssp4.png)
 ![](/SchereSteinPapier/bilder/ssp5.png)
 
-## Python-Implementierung
+### Python-Implementierung
 
 ```python
 import random
@@ -82,3 +71,13 @@ print("*****************************************")
 
 ```
 
+## Aufgaben-Variante für Micro:bit
+
+
+![](/SchereSteinPapier/bilder/sspmicrobit.png)
+(Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 29 - S. 30, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
+
+### Implementierung für Micro:bit
+Tutorial auf Englisch: https://github.com/microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
+
+todo
