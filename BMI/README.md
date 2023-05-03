@@ -256,24 +256,23 @@ Bezahlfunktion:
 ```pseudocode
 A: 
 Solange der Benutzer nicht Nein zu einer wiederholten Berechnung sagt:
-    B: 
     Solange noch keine korrekte Benutzereingabe vorliegt:
         Benutzer gibt kg ein
         Benutzer gibt m ein
         Wenn kg und m Zahlen sind:
             Wenn kg > 0 und m > 0:
                 korrekte Benutzereingabe liegt vor
-                weiter mit C
             Sonst
                 Ausgabe: Bitte positive Zahlen eingeben
-                Zurück zu B
+                Es liegt keine korrekte Benutzereingabe vor
         Sonst:
             Ausgabe: Bitte Zahlen eingeben
-            Zurück zu B
-    C: 
+            Es liegt keine korrekte Benutzereingabe vor
+    Korrekte Benutzereingabe liegt nun vor
     Berechnung des BMI, Interpretation, Ausgabe
     Frage an den Benutzer, ob er eine wiederholte Berechnung wünscht.
-    Zurück zu A
+    Wenn Nein:
+        Keine wiederholte Berechnung
 Programmende              
 ```
 ## Ablaufplan
