@@ -92,7 +92,39 @@ Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programm
 
 Tabellenvorlage:
 
-todo
+|Arbeitsspeicher||
+|:-------:|:------:|
+|Adresse|Befehl|
+|00|___________|
+|01|___________|
+|02|___________|
+|03|___________|
+|04|___________|
+|05|___________|
+|06|___________|
+|07|___________|
+|08|___________|
+|09|___________|
+|10|___________|
+|11|___________|
+|12|___________|
+|13|___________|
+|14|___________|
+|15|___________|
+|16|___________|
+|...|___________|
+
+|CPU REGISTERSPEICHER||
+|----------|----------|
+|PZ Programmzähler| AR Akkumulatorregister|
+|__________________|__________________|
+|BR Befehlsregister| SR Speicheradressenregister|
+|__________________|__________________|
+
+|CPU EIN- und AUSGABE||
+|----------|----------|
+|E Eingabe| A Ausgaber|
+|__________________|__________________|
 
 **Vor jedem Programmstart** machst du folgendes:
 1. Schreib den Wert 0 in das PZ.
