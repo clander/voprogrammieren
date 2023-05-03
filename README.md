@@ -383,7 +383,6 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 - Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
 # Tutorials
-
 ## Offizielles Python Tutorial (de)
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ## Python problem- und konzeptorientiert:
