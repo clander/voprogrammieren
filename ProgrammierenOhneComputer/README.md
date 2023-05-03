@@ -87,8 +87,8 @@ PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregist
 |Halt|	HLT|	000|	Stop execution of the program|Beende die Programmausführung.
 |Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value | Du kannst die aktuelle Speicheradresse als Datenwert interpertieren.
 
-### Programmausführung
-Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
+### Aufgabe 1: Arbeitstabelle
+Erstelle zunächst eine Tabelle wie in der folgenden Abbildung gezeigt. Mit Hilfe dieser Tabelle wirst du später „Computer spielen“, d.h. in die Computerrolle schlüpfen und diverse Befehle, Zahlen etc. festhalten und ändern.
 
 Tabellenvorlage:
 
@@ -126,6 +126,47 @@ Tabellenvorlage:
 |E Eingabe| A Ausgaber|
 |[ _____________ ]|[ _____________ ]|
 
+### Aufgabe 2: Laden und Ausführung beobachten
+Nun wird dein Lehrer „Computer spielen“ indem er das Programm aus der nächsten Aufgabe lädt und ausführt. Er wird seine Vorgangsweise genau erklären. Beobachte ihn ganz genau, mache dir wo nötig Notizen und stelle nach der Ausführung deine offenen
+Fragen.
+
+### Aufgabe 3: Programm übertragen 
+
+Übertrage eiens der folgenden Programme in deine Arbeitsspeicher-Tabelle (die ersten beiden Ziffern sind Speicheradressen und gehören nicht zum Befehl).
+
+### Aufgabe 4: Programm ausführen
+1. Ausführung des Programms: Führe das in die Tabelle übertragene Programm entsprechend den Anweisungen im Anhang bzw. entsprechend der Vorgangsweise deines Lehrers selbst aus.
+2. Zweck des Programms herausfinden: Versuche den Zweck des Programms herauszufinden. Folgende Teilaufgaben helfen dir dabei:
+   - Führe während der Programmausführung ein ta- bellarisches Protokoll in dem du festhältst, welche Eingabewerte welche Ausgabewerte erzeugen.
+    - Führe das Programm solange immer wieder neu aus bis du mit Sicherheit nachvollziehen kannst (zusammen mit der entsprechenden Protokollie- rung der Ein- und Ausgabewerte), was das Com- puterprogramm kann oder tut.
+    - Vergleiche deine Ergebnisse auch mit den Er- gebnissen deiner Klassenkollegen. Arbeite das Programm dazu ev. nochmals mit denselben Eingabewerten durch die auch deine Kollegen verwendet haben.
+3. Zweck beschreiben: Beschreibe in einem Kurz- aufsatz den Zweck des Programms und gib deine Meinung zur Sinnhaftigkeit des Programmes ab!
+
+### Aufgabe 5: Weitere Programme laden und ausführen
+
+... Beispielprogramme siehe unten, bzw. auch in den Online-LMC-Simulatoren
+
+### Aufgaben “Computerhirn“
+Diskutiere mit deinen Klassenkollegen und mit dei- nem Lehrer folgende Fragestellungen und fasse die Ergebnisse der Diskussion zu den einzelnen Punkten in einem kurzen Protokoll zusammen.
+1. Obwohl während der Programmausführung nie- mand wusste was das Programm eigentlich macht, ist am Ende - bei korrekter Ausführung - eine kor- rekte Ausgabe erfolgt. Wie kommt das?
+2. Was bedeutet das für die Denkleistung von Com- putern / Handys / Spielkonsolen usw., die als Von- Neumann-Architekturen ähnlich arbeiten?
+3. Wer denkt eigentlich wirklich, wenn ein Computer Programme verarbeitet?
+4. Überlege, in welchen Fällen die durchgearbeite- ten Programme trotz korrekter Ausführung falsche Ergebnisse liefern könnten und erläutere warum!
+
+### Aufgaben „Von-Neumann“
+1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über Aufbau und Abläufe einer Von-Neumann-Architektur.
+2. Lege eine neue zweispaltige Tabelle an und ord-
+ne folgende Begrifflichkeiten den entsprechenden Elementen aus den bearbeiteten Basisaufgabenstel- lungen zu: CPU, Steuerwerk, Rechenwerk, Register, Arbeitsspeicher, Speicheradressen, Ein- und Ausga- beeinheit, Bussystem, Von-Neumann-Zyklus, Pro- gramm, Befehl, Daten;
+
+### Aufgaben „EVA“
+1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über das EVA-Prinzip (Eingabe- Verarbeitung-Ausgabe).
+2. Finde heraus, wie in den durchgespielten Program- men (A, B, C) das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest
+3. Finde heraus, wie in den folgenden Programmkate- gorien das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest: Tabellenkalkulation, Computerspiel, Wörterbuch am Handy, Fenstersteuerung in Microsoft Windows, Google-Suche.
+
+### FETCH-DECODE-EXECUTE Zyklus
+
+Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
+
 **Vor jedem Programmstart** machst du folgendes:
 1. Schreib den Wert 0 in das PZ.
 2. Lösche den Inhalt aller sonstigen Register (AR, BR, SR).
@@ -138,19 +179,18 @@ Führe das Programm nach folgenden Angaben aus:
    2. Gehe in deiner Arbeitsspeicher-Tabelle in die Zeile mit der Speicheradresse die der gelesenen Zahl entspricht.
    3. Schreibe den Befehl der an dieser Speicherstelle angegeben ist in das BR.
    4. Schreibe die hinter dem Befehl angegebene Speicheradresse in das SR. Wenn hinter dem Befehl nichts angegeben ist, lösche den Inhalt von SR.
-2. **Befehl dekodieren**:
+2. **Befehl dekodieren** (DECODE):
    1. Lies den Befehl im BR und lies in der Befehlssatz-Tabelle nach
 was zu tun ist. 
-3. **Befehl ausführen**:
+3. **Befehl ausführen** (EXECUTE):
    1. Erhöhe PZ um +1.
    2. Führe jetzt den Befehl entsprechend den Angaben in der
 Befehlssatz-Tabelle aus.
 4. **Beginne wieder mit Punkt 1** falls du nicht an einem ENDE-Befehl
    angelangt bist.
-
 ### Beispielprogramme
 
-Adition von zwei Zahlen:
+Addition von zwei Zahlen:
 
 |Zeile|Label|Befehl|Operand|
 |-----|-----|------|-------|
@@ -164,7 +204,8 @@ Adition von zwei Zahlen:
 |07|A|DAT|0|
 ...
 
-Zwei Nummern eingeben, die höhere zurückgeben:
+Welche ist die größere Zahl?
+
 |Zeile|Label|Befehl|Operand|
 |-----|-----|------|-------|
 |00||INP||
@@ -180,8 +221,40 @@ Zwei Nummern eingeben, die höhere zurückgeben:
 |10||HLT||
 |11|FIRST|DAT||
 |12|SECOND|DAT||
-### "Echte" Little-Man-Computers zum Ausführen
-Auf den folgenden Websites gibt es LMC-Implementierungen, mit denen man die Ausführung von Code wie oben ausprobieren kann:
+
+Countdown:
+
+|Zeile|Label|Befehl|Operand|
+|-----|-----|------|-------|
+|01|    | INP||
+|02|LOOP  |  OUT||
+|03|   |   STA| COUNT
+|04|   |     SUB| ONE
+|05|   |     STA| COUNT
+|06|    |    BRP| LOOP
+|07|     |   HLT
+|08|		
+|09| ONE|     DAT | 1
+|10| COUNT|   DAT 
+
+Weitere mögliche Beispielaufgaben:
+
+siehe https://www.101computing.net/little-man-computer-mini-challenges/
+
+* 3 Zahlen addieren und Ergebnis ausgeben
+* Eine Zahl von einer anderen subtrahieren
+* Minimum / Maximum zweier Zahlen bestimmen
+* Minimum / Maximum dreier Zahlen bestimmen
+* 3 Zahlen aufsteigend sortiert ausgeben
+* Berechnung von |a-b|
+* Countdown von einer eingegebenen Zahl weg
+* Multiplikation zweier Zahlen
+* Division ganzzahlig
+* Rest bei Division (Mod)
+* etc.
+
+### "Echte" Little-Man-Computersimulatoren
+Auf den folgenden Websites gibt es LMC-Implementierungen, mit denen man die Ausführung von Code wie oben enaktiv erfahrbar machen kann:
 
 * https://wellingborough.github.io/LMC/LMC0.3.html
 * https://peterhigginson.co.uk/LMC/
