@@ -105,6 +105,7 @@ print('Der berechnete BMI beträgt ' + str(bmiGerundet))
 Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
 - Benutzer:innen bekommen eine Interpretation des BMI als Ergebnis.
 ## Pseudocode
+Zur Interpretation des berechneten BMI wird wie folgt vorgegangen:
 ```pseudocode
 - Wenn der berechnete BMI < 18:
     * Interpretationsergebnis ist "Untergewicht"
@@ -250,6 +251,58 @@ Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
 
 Bezahlfunktion:
 - Benutzer:innen sollen nach einer Berechnung die Möglichkeit haben, weitere Berechnungen durchzuführen.
+
+## Pseudocode
+```pseudocode
+A: 
+Solange der Benutzer nicht Nein zu einer wiederholten Berechnung sagt:
+    B: 
+    Solange noch keine korrekte Benutzereingabe vorliegt:
+        Benutzer gibt kg ein
+        Benutzer gibt m ein
+        Wenn kg und m Zahlen sind:
+            Wenn kg > 0 und m > 0:
+                korrekte Benutzereingabe liegt vor
+                weiter mit C
+            Sonst
+                Ausgabe: Bitte positive Zahlen eingeben
+                Zurück zu B
+        Sonst:
+            Ausgabe: Bitte Zahlen eingeben
+            Zurück zu B
+    C: 
+    Berechnung des BMI, Interpretation, Ausgabe
+    Frage an den Benutzer, ob er eine wiederholte Berechnung wünscht.
+    Zurück zu A
+Programmende              
+```
+## Ablaufplan
+
+```mermaid
+flowchart TD
+    A(Start) --> X0[wiederholteBerechnung = True]
+    X0 -->X00{wiederholteBerechnung?}
+    X00 --Nein--> S
+    X00 --Ja--> X1[eingabeErfolgreich = False]
+    --> X2{eingabeErfolgreich?} -- Nein --> B[/Texteingabe Kilogramm/]
+    X2--Ja-->H
+    B --> C[kg-Eingabe in Variable speichern]
+    C --> D[/Texteingabe Meter/]
+    D --> E[m-Eingabe in Variable speichern]
+    E --> F[kg-Texteingabe in Zahl konvertieren und Ergebnis in Zahlen-Variable speichern] --> G
+    G[m-Texteingabe in Zahl konvertieren und Ergebnis in Zahlen-Variable speichern]
+    G -->X3{Konvertierung erfolgreich?}-- Nein -->X2
+    X3 -- Ja --> X4{m > 0 und kg > 0?} -- Nein  --> X2
+    X4--Ja-->X6[eingabeErfolgreich=True] -->X2
+
+    H["BMI berechnen, interpretieren und ausgeben wie oben ..."]
+    H --> I[...]
+    I --> J[/Texteingabe weitere Berechnung?/]
+    J -->X7{Benutzer wählt Ja} --Ja--> X00
+    X7 --Nein-->R[wiederholteBerechnung = False]
+    R-->X00
+    S(Programmende) 
+```
 
 ## Blockbasierte Implementierung
 ![BMI Iteration 3_1](bilder/bmiIteration3_1.png)
