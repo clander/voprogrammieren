@@ -90,11 +90,15 @@ PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregist
 ### Programmausführung
 Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
 
+Tabellenvorlage:
+
+todo
+
 **Vor jedem Programmstart** machst du folgendes:
 1. Schreib den Wert 0 in das PZ.
 2. Lösche den Inhalt aller sonstigen Register (AR, BR, SR).
 3. Lösche den Inhalt aus Eingabe und Ausgabe (E, A).
-4. Übertrage das auszuführende Computerprogramm in die Arbeitsspeichertabelle.
+4. Übertrage das auszuführende Computerprogramm in die Arbeitsspeichertabelle und ersetze dabei alle Labels mit den Speicheradressen.
 
 Führe das Programm nach folgenden Angaben aus:
 1. **Befehl holen** (FETCH):
