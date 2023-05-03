@@ -85,7 +85,7 @@ PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregist
 |Branch if positive|	BRP|	8xx|	If the value in the Accumulator is positive (including zero), then branch to the instruction at the given memory address (xx)|Wenn im AR 0 oder eine positive Zahl steht, dann schreibe die Zahl die im SR steht in das PZ.
 |Branch if zero|	BRZ|	7xx|	If the value in the Accumulator is zero, then branch to the instruction at the given memory address (xx)|Wenn im AR 0 steht dann schreibe die Zahl die im SR steht in das PZ.
 |Halt|	HLT|	000|	Stop execution of the program|Beende die Programmausführung.
-|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value 
+|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value | Bedeutet, dass die aktuelle Speicheradresse einen Datenwert enthält.
 
 ### Programmausführung
 Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
@@ -110,7 +110,7 @@ Tabellenvorlage:
 |12|[ _______ ]|
 |13|[ _______ ]|
 |14|[ _______ ]|
-|15|v|
+|15|[ _______ ]|
 |16|[ _______ ]|
 |...|....|
 
