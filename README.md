@@ -3,7 +3,7 @@
 # Plan für den ersten VO-Termin
 1. Handlungsanleitungen
    1. Dijkstra
-   2. Compuerspielen
+   2. Computerspielen
 2. Programmieren mit Python und Blockbasiert
    1. Problemstellung BMI
    2. Umsetzung in Excel
@@ -388,6 +388,7 @@ Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, da
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ## Python problem- und konzeptorientiert:
 - https://www.inf-schule.de/imperative-programmierung/python
+- https://www.programmierkonzepte.ch/index.php?inhalt_links=navigation.inc.php&inhalt_mitte=home/home.inc.php
 
 ## Programmieren in Python Universität Regensburg
 - https://www.uni-regensburg.de/assets/physik/fakultaet/IT/- Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
