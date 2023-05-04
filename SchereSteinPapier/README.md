@@ -77,7 +77,104 @@ print("*****************************************")
 ![](/SchereSteinPapier/bilder/sspmicrobit.png)
 (Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 29 - S. 30, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
 
-### Implementierung für Micro:bit
+### Tutorial dazu
 Tutorial auf Englisch: https://github.com/microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
 
-todo
+### Implementierung dazu:
+![](/SchereSteinPapier/bilder/sspmicrobitcodev1.png)
+
+```python
+zufallszahl = 0
+def on_gesture_shake():
+    global zufallszahl
+    zufallszahl = randint(1, 3)
+    basic.show_number(zufallszahl)
+    if zufallszahl == 1:
+        basic.show_leds("""
+            . . . . #
+                        # # . # .
+                        # # # . .
+                        # # . # .
+                        . . . . #
+        """)
+    elif zufallszahl == 2:
+        basic.show_leds("""
+            # # # # #
+                        # . . . #
+                        # . . . #
+                        # . . . #
+                        # # # # #
+        """)
+    else:
+        basic.show_leds("""
+            . # # # #
+                        . # # # #
+                        # # # # .
+                        # # # # #
+                        . # # # .
+        """)
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+```
+
+
+## Aufgaben-Variante 2 für Micro:bit
+Wir möchten ein Schere-Stein-Papier Match gegen den micro:bit spielen können.
+
+### Implementierung
+![](/SchereSteinPapier/bilder/sspmicrobitcodev2.png)
+
+```python
+zufallszahl = 0
+spielerGewinne = 0
+microbitGewinne = 0
+
+def on_gesture_shake():
+    global zufallszahl, spielerGewinne, microbitGewinne
+    zufallszahl = randint(1, 3)
+    basic.pause(2000)
+    if zufallszahl == 1:
+        basic.show_leds("""
+            . . . . #
+                        # # . # .
+                        # # # . .
+                        # # . # .
+                        . . . . #
+        """)
+        if input.button_is_pressed(Button.B):
+            spielerGewinne = spielerGewinne + 1
+            music.play_melody("E F G A B C5 - - ", 420)
+        elif input.logo_is_pressed():
+            microbitGewinne = microbitGewinne + 1
+            music.play_melody("F E D C - - - - ", 419)
+    elif zufallszahl == 2:
+        basic.show_leds("""
+            . # # # #
+                        . # # # #
+                        # # # # .
+                        # # # # #
+                        . # # # .
+        """)
+        if input.logo_is_pressed():
+            spielerGewinne = spielerGewinne + 1
+            music.play_melody("E F G A B C5 - - ", 420)
+        elif input.button_is_pressed(Button.A):
+            microbitGewinne = microbitGewinne + 1
+            music.play_melody("F E D C - - - - ", 419)
+    else:
+        basic.show_leds("""
+            # # # # #
+                        # . . . #
+                        # . . . #
+                        # . . . #
+                        # # # # #
+        """)
+        if input.button_is_pressed(Button.A):
+            spielerGewinne = spielerGewinne + 1
+            music.play_melody("E F G A B C5 - - ", 420)
+        elif input.button_is_pressed(Button.B):
+            microbitGewinne = microbitGewinne + 1
+            music.play_melody("F E D C - - - - ", 419)
+    basic.show_string("P:" + str(spielerGewinne))
+    basic.show_string("M:" + str(microbitGewinne))
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+```
