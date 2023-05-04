@@ -1,7 +1,7 @@
 # Tamagotchi ePet
 
 
-## Aufgabe für Microbit
+## Aufgabe für micro:bit
 
 ![](/Tamagotchi/bilder/tamagotchiMicrobitAufgabe.png)
 (Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 73 - S. 74, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
@@ -43,7 +43,7 @@ loops.every_interval(1000, on_every_interval)
 
 ```
 
-## Komplexere Version für Python (ohne Microbit)
+## Komplexere Version für Python (ohne micro:bit)
 
 Die folgende Version eines Tamagotchi ePets ist etwas komplexer. Das ePet kann müde, gelangweilt oder hungrig sein. Es gibt verschiedene Tendenzen für die einzelnen Zustände (Tendenz meint eine Wahrscheinlichkeit für die Verschlechterung des jeweiligen Zustands).
 
