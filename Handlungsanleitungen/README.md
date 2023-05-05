@@ -25,8 +25,11 @@ https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
 
 ## Rollenspiel "Bubblesort"
 
-Algorithmus: https://de.wikipedia.org/wiki/Bubblesort
+### Algorithmus
 
+https://de.wikipedia.org/wiki/Bubblesort
+
+### Rollenspiel
 Einstimmung: Die Lehrperson bringt eine Flasche Limonade oder Mineralwasser und ein paar Gläser in den Unterricht mit. Die Lernenden sollen einschenken und bevor sie trinken, die Bläschen (Bubbles) im Glas beobachten. 
 
 Vorbereitung: Einige Schüler:innen stellen sich als Teilnehmer:innen des Rollenspiels in einer beliebigen Reihenfolge nebeneinander auf.
@@ -39,9 +42,12 @@ Vorbereitung: Einige Schüler:innen stellen sich als Teilnehmer:innen des Rollen
 
 Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt BubbleSort diesen Namen?
 
-## Kürzeste-Wege-Algorithmus von Dijkstra
+### Enaktive Erkundung
+Enaktive Erkundung von Bubblesort und anderen (Sortier-)Algorithmen: https://visualgo.net/en/sorting
 
-Algorithmus: https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
+## Kürzeste-Wege-Algorithmus von Dijkstra
+### Algorithmus und Dijkstra
+https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
 
 Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
 
@@ -65,10 +71,8 @@ Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Dis
    - Wenn es nicht besuchte Knoten gibt, suchst du denjenigen mit der aktuell kleinsten Entfernung aus. Markiere diesen Knoten als besucht. Dieser Knoten wird der aktuelle Knoten. Fahre mit Schritt 2 fort.
    - Wenn es keine nicht besuchten Knoten mehr gibt (alle Knoten sind grün), dann ist der Algorithmus zu Ende. Du hast nun die kürzesten Wege vom Startknoten aus zu allen restlichen Knoten des Graphen berechnet.
 
-### Der kürzeste Weg für alle zum Startknoten
-
 Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Starknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
-### Beispiel-Ablauf:
+### Beispiel-Ablauf
 
 ![image](./bilder/dijkstra.gif)
 
@@ -82,26 +86,9 @@ Schüler:innen übernehmen im Rahmen der folgenden Aufgabenreihe die Rolle eines
 
 Den Befehlssatz sowie die Vorgangsweise zur Programmausführung ist im Folgenden abgebildet. Schüler:innen werden einige Programme selbst laden, ausführen, analysieren, diskutieren und auch schreiben. Dadurch werden sie ein Verständnis dafür bekommen, wie Computer, Handys, Spielkonsolen etc. arbeiten, was sie wirklich können und tun. Sie müssen zur Lösung Handlungsanleitungen genau befolgen.
 
-Ein Grundverständnis für die Arbeitsweise von Von- Neumann-Architekturen hilft bei der Problembewältigung in verschiedensten Alltagssituationen Jungendlicher, in denen entsprechende Informatiksysteme wie Computer, Handys oder auch Spielkonsolen zur Anwendung kommen. Über die Verwendung (Erstellung, Änderung, Interpretation) verschiedener Tabellen werden die Lernenden diese Arbeitsweise kennen lernen und selbst nachvollziehen. Genaues Lesen sowie entsprechend lückenloses Leseverständnis ist zur Lösung der Aufgaben dabei unabdingbar – eine wichtige allgemeinbildende Kompetenz, die der Informatikunterricht vermitteln und überprüfen kann. Verschiedene Aufgabenvarianten sollen es dem Schüler je nach Interessenslage (Individualisierung) zudem ermöglichen, sich nach der Basisaufgabenreihe in verschiedenen Bereichen der Informatik zu vertiefen und die dabei gewonnenen Erkenntnisse auszutauschen.
+Ein Grundverständnis für die Arbeitsweise von Von- Neumann-Architekturen hilft bei der Problembewältigung in verschiedensten Alltagssituationen Jungendlicher, in denen entsprechende Informatiksysteme wie Computer, Handys oder auch Spielkonsolen zur Anwendung kommen. Über die Verwendung (Erstellung, Änderung, Interpretation) verschiedener Tabellen werden die Lernenden diese Arbeitsweise kennenlernen und selbst nachvollziehen. Genaues Lesen sowie entsprechend lückenloses Leseverständnis ist zur Lösung der Aufgaben dabei unabdingbar – eine wichtige allgemeinbildende Kompetenz, die der Informatikunterricht vermitteln und überprüfen kann. Verschiedene Aufgabenvarianten sollen es dem Schüler je nach Interessenslage (Individualisierung) zudem ermöglichen, sich nach der Basisaufgabenreihe in verschiedenen Bereichen der Informatik zu vertiefen und die dabei gewonnenen Erkenntnisse auszutauschen.
 
-### Abkürzungen
-PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregister, SR – Speicheradressenregister, E – Eingabe, A – Ausgabe;
-### Befehlssatz
-|Instruction|Mnemonic|Machine Code|Explanation|Handlungsanleitung|
-|-----------|--------|------------|-----------|-----------------|
-|Load Accumulator|LDA|5xx|Load the contents of the given memory address (xx) into the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und kopiere den Wert von dort in das AR.
-|Store Accumulator|STA|	3xx|	Store the contents of the Accumulator at the given memory address (xx)|Schreibe den Wert aus dem AR in die Speicherstelle mit der Adresse die im SR angegeben ist.|
-|Add|	ADD|	1xx|	Add the contents of the given memory address (xx) to the value in the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und lies dort die Zahl. Addiere dann diese Zahl zur Zahl im AR und schreibe das Ergebnis wieder zurück in das AR.
-|Subtract|	SUB|	2xx|	Subtract the contents of the given memory address (xx) from the value in the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und lies dort die Zahl. Subtrahiere dann diese Zahl von der Zahl im AR und schreibe das Ergebnis wieder zurück in das AR.
-|Input|	INP|	901|	Copy the value from the Input 'mailbox' into the Accumulator|Überlege dir eine Zahl zwischen 0 und 99 und leg die Zahl in E ab. Kopiere dann den Wert aus E in das AR.
-|Output|	OUT|	902|	Copy the value from the Accumulator into the Output 'mailbox'| Kopiere den Wert aus dem AR nach A.
-|Branch|	BRA|	6xx|	Branch (jump) to the instruction at the given memory address (xx)|Schreibe die Zahl die im SR steht in das PZ.
-|Branch if positive|	BRP|	8xx|	If the value in the Accumulator is positive (including zero), then branch to the instruction at the given memory address (xx)|Wenn im AR 0 oder eine positive Zahl steht, dann schreibe die Zahl die im SR steht in das PZ.
-|Branch if zero|	BRZ|	7xx|	If the value in the Accumulator is zero, then branch to the instruction at the given memory address (xx)|Wenn im AR 0 steht dann schreibe die Zahl die im SR steht in das PZ.
-|Halt|	HLT|	000|	Stop execution of the program|Beende die Programmausführung.
-|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value | Du kannst die aktuelle Speicheradresse als Datenwert interpertieren.
-
-### FETCH-DECODE-EXECUTE Zyklus
+### Handlungsanleitung (FETCH-DECODE-EXECUTE Zyklus)
 
 Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
 
@@ -124,8 +111,23 @@ was zu tun ist.
    1. Erhöhe PZ um +1.
    2. Führe jetzt den Befehl entsprechend den Angaben in der
 Befehlssatz-Tabelle aus.
-4. **Beginne wieder mit Punkt 1** falls du nicht an einem ENDE-Befehl
-   angelangt bist.
+1. **Beginne wieder mit 1.** falls du nicht an einem HLT-Befehl angelangt bist.
+### Abkürzungen
+PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregister, SR – Speicheradressenregister, E – Eingabe, A – Ausgabe;
+### Befehlssatz
+|Instruction|Mnemonic|Machine Code|Explanation|Handlungsanleitung|
+|-----------|--------|------------|-----------|-----------------|
+|Load Accumulator|LDA|5xx|Load the contents of the given memory address (xx) into the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und kopiere den Wert von dort in das AR.
+|Store Accumulator|STA|	3xx|	Store the contents of the Accumulator at the given memory address (xx)|Schreibe den Wert aus dem AR in die Speicherstelle mit der Adresse die im SR angegeben ist.|
+|Add|	ADD|	1xx|	Add the contents of the given memory address (xx) to the value in the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und lies dort die Zahl. Addiere dann diese Zahl zur Zahl im AR und schreibe das Ergebnis wieder zurück in das AR.
+|Subtract|	SUB|	2xx|	Subtract the contents of the given memory address (xx) from the value in the Accumulator|Gehe zur Speicherstelle mit der Adresse die im SR angegeben ist und lies dort die Zahl. Subtrahiere dann diese Zahl von der Zahl im AR und schreibe das Ergebnis wieder zurück in das AR.
+|Input|	INP|	901|	Copy the value from the Input 'mailbox' into the Accumulator|Überlege dir eine Zahl zwischen 0 und 99 und leg die Zahl in E ab. Kopiere dann den Wert aus E in das AR.
+|Output|	OUT|	902|	Copy the value from the Accumulator into the Output 'mailbox'| Kopiere den Wert aus dem AR nach A.
+|Branch|	BRA|	6xx|	Branch (jump) to the instruction at the given memory address (xx)|Schreibe die Zahl die im SR steht in das PZ.
+|Branch if positive|	BRP|	8xx|	If the value in the Accumulator is positive (including zero), then branch to the instruction at the given memory address (xx)|Wenn im AR 0 oder eine positive Zahl steht, dann schreibe die Zahl die im SR steht in das PZ.
+|Branch if zero|	BRZ|	7xx|	If the value in the Accumulator is zero, then branch to the instruction at the given memory address (xx)|Wenn im AR 0 steht dann schreibe die Zahl die im SR steht in das PZ.
+|Halt|	HLT|	000|	Stop execution of the program|Beende die Programmausführung.
+|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value | Du kannst die aktuelle Speicheradresse als Datenwert interpertieren.
 
 ### Aufgabe 1: Arbeitstabelle
 Erstelle zunächst eine Tabelle wie in der folgenden Abbildung gezeigt. Mit Hilfe dieser Tabelle wirst du später „Computer spielen“, d.h. in die Computerrolle schlüpfen und diverse Befehle, Zahlen etc. festhalten und ändern.
@@ -252,7 +254,7 @@ Auf den folgenden Websites gibt es LMC-Implementierungen, mit denen man die Ausf
 
 Weiter Details dazu siehe https://en.wikipedia.org/wiki/Little_man_computer
 
-### Aditum-Aufgaben “Computerhirn“
+### Additum-Aufgaben “Computerhirn“
 Diskutiere mit deinen Klassenkollegen und mit dei- nem Lehrer folgende Fragestellungen und fasse die Ergebnisse der Diskussion zu den einzelnen Punkten in einem kurzen Protokoll zusammen.
 1. Obwohl während der Programmausführung nie- mand wusste was das Programm eigentlich macht, ist am Ende - bei korrekter Ausführung - eine kor- rekte Ausgabe erfolgt. Wie kommt das?
 2. Was bedeutet das für die Denkleistung von Com- putern / Handys / Spielkonsolen usw., die als Von- Neumann-Architekturen ähnlich arbeiten?
