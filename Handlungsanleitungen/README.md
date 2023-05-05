@@ -50,7 +50,7 @@ Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
 Vorbereitung: Mit Kreide wird ein Wegenetz in Form eines Graphen (Knoten + Kanten + Kantengewichte + Daten pro Knoten) auf den Asphalt im Schulhof oder auf die Tafel gezeichnet. Auf dieser Datenstruktur werden nun der folgende Algorithmus ausgeführt.
 
 **Beispiel**:
-![image](/ProgrammierenOhneComputer/bilder/wegenetz.png)
+![image](/Handlungsanleitungen/bilder/wegenetz.png)
 
 Der folgende Algorithmus berechnet die kürzesten Wege in diesem Wegenetz ausgehend von einem definierten Startknoten.
 
@@ -70,7 +70,7 @@ Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Dis
 Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Starknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
 ### Beispiel-Ablauf:
 
-![image](/ProgrammierenOhneComputer/bilder/dijkstra.gif)
+![image](./bilder/dijkstra.gif)
 
 ## Algorithmenvisualisierungen mit Visualgo
 Auf dieser Plattform können viele weitere Algorithmen und Datenstrukturen erkundet werden (enaktiv, ikonisch, symbolisch):
@@ -185,14 +185,13 @@ Addition von zwei Zahlen:
 
 |Zeile|Label|Befehl|Operand|
 |-----|-----|------|-------|
-|00|start||
-|01||STA|A|
-|02||INP||
-|03||ADD|A|
-|04||OUT||
-|05||HLT||
-|06||||
-|07|A|DAT|0|
+|00||STA|A|
+|01||INP||
+|02||ADD|A|
+|03||OUT||
+|04||HLT||
+|05||||
+|06|A|DAT|0|
 ...
 
 Welche ist die größere Zahl?
@@ -217,16 +216,16 @@ Countdown:
 
 |Zeile|Label|Befehl|Operand|
 |-----|-----|------|-------|
-|01|    | INP||
-|02|LOOP  |  OUT||
-|03|   |   STA| COUNT
-|04|   |     SUB| ONE
-|05|   |     STA| COUNT
-|06|    |    BRP| LOOP
-|07|     |   HLT
-|08|		
-|09| ONE|     DAT | 1
-|10| COUNT|   DAT 
+|00|    | INP||
+|01|LOOP  |  OUT||
+|02|   |   STA| COUNT
+|03|   |     SUB| ONE
+|04|   |     STA| COUNT
+|05|    |    BRP| LOOP
+|06|     |   HLT
+|07|		
+|08| ONE|     DAT | 1
+|09| COUNT|   DAT 
 
 Weitere mögliche Beispielaufgaben:
 
