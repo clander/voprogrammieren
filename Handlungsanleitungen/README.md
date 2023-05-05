@@ -12,9 +12,13 @@ Die Schülerinnen und Schüler können
 Anwendungsbereiche: Sequenzen und einfache Schleifen
 
 ## Idee
-Schüler:innen befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme.
+Schüler:innen verstehen und befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme.
 
-Wichtig ist, dass die Handlungsanleitungen  neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, Wiederholungen und bedingte Anweisungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
+Algorithmus: 
+Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt.
+(https://de.wikipedia.org/wiki/Algorithmus)
+
+Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, Wiederholungen und bedingte Anweisungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
 
 ## Steuerung von Akteuren (z.B. Robotern, Klassenkamerad:innen etc,)
 https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
