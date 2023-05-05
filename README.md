@@ -9,9 +9,9 @@
 2. Thema Basiskonzepte der Programmierung
    1. BMI in verschiedenen Iterationen (blockbasiert + Python)
    2. Einführung der Teilkonzepte ggf. mit Turtle (= Roboter) oder Kara
-   3. Zahlen raten (blockbasiert + Python)
+   3. Zahlenraten (blockbasiert + Python)
    4. Schere-Stein-Papier mit micro:bit
-   5. Unterlagen
+   5. Tamagotchi mit micro:bit
 
 ## Zusatzunterlagen Python
 1. Offizielles Python Tutorial (de): https://py-tutorial-de.readthedocs.io/de/python-3.3/
