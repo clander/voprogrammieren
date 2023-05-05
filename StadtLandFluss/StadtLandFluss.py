@@ -13,14 +13,15 @@ durchlaufnummer = 1
 
 while durchlaufnummer <= anzahlDurchlaeufe:
     zufallszahl = random.randint(0,laenge-1)
+    print("--------------------------------")
+    print("Runde " + str(durchlaufnummer))
     print("Der Buchstabe von Runde " + str(durchlaufnummer) + " ist: "+ str(alphabet[zufallszahl]))
     vergangeneSekunden = 0
-    t0 = time.time()
     while vergangeneSekunden < dauerDurchlauf:
-        print("\a.", end="")#\a. spielt einen Beep per Standard-Out, danach folgt der Punkt und damit kein Absatzzeichen gemacht wird, endet die Ausgabe mit dem leeren String
         time.sleep(1)
         t1 = time.time()
-        vergangeneSekunden = t1-t0
-    input("\nDurchlauf beendet! Weiter mit einer beliebigen Taste ...  ")
+        print('>', flush="True", end='')
+        vergangeneSekunden = vergangeneSekunden + 1
+    input("\nDurchlauf für Buchstaben " + alphabet[zufallszahl] + " ist beendet! Weiter mit einer beliebigen Taste ...  ")
     durchlaufnummer = durchlaufnummer + 1
 print("Danke dass du mit mir gespielt hast. Bis bald!")
