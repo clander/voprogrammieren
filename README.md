@@ -8,9 +8,10 @@
    4. Von-Neumann: Computer spielen
 2. Thema Basiskonzepte der Programmierung
    1. BMI in verschiedenen Iterationen (blockbasiert + Python)
-   2. Zahlen raten (blockbasiert + Python)
-   3. Schere-Stein-Papier mit micro:bit
-   4. Unterlagen
+   2. Einführung der Teilkonzepte ggf. mit Turtle
+   3. Zahlen raten (blockbasiert + Python)
+   4. Schere-Stein-Papier mit micro:bit
+   5. Unterlagen
 
 ## Zusatzunterlagen Python
 1. Offizielles Python Tutorial (de): https://py-tutorial-de.readthedocs.io/de/python-3.3/
