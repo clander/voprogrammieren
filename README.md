@@ -1,19 +1,21 @@
-# VO-Einheit 1
+# VO-Plan
 
-## TOC
+## TOC Einheit 1
 1. Thema Handlungsanleitungen nachvollziehen
    1. Einfache Anleitungen / Robotersteuerung
    2. Algorithmen: Beispiel Rollenspiel Bubblesort, Visualisierung auf Visualgo
    3. Algorithmen: Dijkstra nachgespielt
    4. Von-Neumann: Computer spielen
 2. Thema Basiskonzepte der Programmierung
-   1. BMI in verschiedenen Iterationen (blockbasiert + Python)
-   2. Einführung der Teilkonzepte ggf. mit Turtle (= Roboter) oder Kara
-   3. Zahlenraten (blockbasiert + Python)
-   4. Schere-Stein-Papier mit micro:bit
-   5. Tamagotchi mit micro:bit
+   1. Einführung der Teilkonzepte ggf. mit Turtle (= Roboter) oder Kara
+   2. Verweis auf konzeptorientierte Tutorials (deutsch) zum Lernen in Ergänzung zur VO
+   3. BMI in verschiedenen Iterationen (blockbasiert + textuell)
+   4. Zahlenraten (blockbasiert + textuell)
+      - Hinweis auf schwierigere Variante ("KI" mit binärer Suche)
+   5. Tamagotchi mit micro:bit und OER-Schulbuch
+   6. Schere-Stein-Papier mit micro:bit und OER-Schulbuch (incl. Online Tutorial dazu)
 
-## Zusatzunterlagen Python
+### Zusatzunterlagen Python
 1. Offizielles Python Tutorial (de): https://py-tutorial-de.readthedocs.io/de/python-3.3/
 2. Python Sprachreferenz: https://docs.python.org/3/reference/index.html
 3. Python Einführung auf W3C: https://www.w3schools.com/python/default.asp 
@@ -37,5 +39,22 @@
 12. Schulbuch mit Projekten für den micro:bit
    - https://microbit.eeducation.at/wiki/Hauptseite
 
-## Tutorials / Beispiele für micro:bit auf makecode
+### Tutorials / Beispiele für micro:bit auf makecode
 - https://makecode.microbit.org
+
+## TOC Einheit 2
+Weitere Konzepte der Programmierung, darunter: Prozeduren, Funktionen, Events, Listen
+
+Mögliche Beispiele dazu:
+* Schere-Stein-Papier Variante mit Arrays
+* Turtle-Vieleck-Beispiel mit Farben-Array und Zufallsfarben
+* Worte raten (Listenverarbeitung)
+* Textadventure (Prozeduren)
+* Stadt-Land-Fluss (mit microbit und ohne)
+
+## TOC Einheit 3
+Didaktik
+
+
+
+
