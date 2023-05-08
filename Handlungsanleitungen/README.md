@@ -20,8 +20,121 @@ Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Pr
 
 Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, Wiederholungen und bedingte Anweisungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
 
-## Steuerung von Akteuren (z.B. Robotern, Klassenkamerad:innen etc,)
-https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
+## Steuerung von Akteuren in Miniwelten (Überblick)
+
+- https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
+- Roboter Karol: https://karol.arrrg.de (online) bzw. http://cgd.zum.de/wiki/Programmieren_lernen_mit_Robot_Karol
+- Kara Marienkäfer: https://www.swisseduc.ch/informatik/karatojava/kara/
+- Logo-Turtle (in verschiedenen Versionen)
+- etc.
+
+## Beispiele mit LOGO (in Python)
+Die folgenden Beispile können in https://blockpy.cis.udel.edu/ oder in https://app.edublocks.org/editor oder in jeder anderen Python-Umgebung ausprobiert werden. 
+
+Quadrate einfach
+```python
+import turtle
+turtle.forward(40)
+turtle.right(90)
+turtle.pencolor("red")
+turtle.forward(40)
+turtle.right(90)
+turtle.pencolor("green")
+turtle.forward(40)
+turtle.right(90)
+turtle.pencolor("blue")
+turtle.forward(40)
+turtle.right(90)
+```
+Quadrat (verallgemeinert, Muster automatisiert)
+
+```python
+import turtle
+seitenlaenge = int(input('Seitenlänge?'))
+i=0
+while i < 4:
+    turtle.forward(seitenlaenge)
+    turtle.right(90)
+    i = i + 1
+```
+
+Vieleck (weitere Verallgemeinerung)
+
+```python
+import turtle
+ecken = int(input("Wieviele Ecken?"))
+seitenlaenge = int(input("Seitenlänge?"))
+i = 0
+while i < ecken:
+    turtle.forward(seitenlaenge)
+    turtle.right(360/ecken)
+    i = i +1
+```
+
+Vieleck mit zwei Farben
+
+```python
+import turtle
+ecken = int(input("Wieviele Ecken?"))
+seitenlaenge = int(input("Seitenlänge?"))
+i = 0
+while i < ecken:
+    if i % 2 == 0:
+        farbe = "red"
+    else:
+        farbe = "black"
+    turtle.pencolor(farbe)
+    turtle.forward(seitenlaenge)
+    turtle.right(360/ecken)
+    i = i +1
+```
+Vieleck mit verschiedenen, zufälligen Farben (Array-Random-Variante)
+
+```python
+import turtle, random
+ecken = int(input('Wieviele Ecken?'))
+seitenlaenge = int(input('Seitenlänge?'))
+farben = ['blue', 'red', 'green', 'yellow', 'black']
+i = 0
+while i < ecken:
+    zufallFarbe = farben[random.randint(0, 4)]
+    turtle.pencolor(zufallFarbe)
+    turtle.forward(seitenlaenge)
+    turtle.right(360 / ecken)
+    i = i + 1
+```
+
+Spirale
+
+```python
+import turtle
+seitenlaenge = 10
+while seitenlaenge < 100:
+    seiten = 2
+    while seiten > 0:
+        turtle.forward(seitenlaenge)
+        turtle.right(90)
+        seiten = seiten - 1
+    seitenlaenge = seitenlaenge + 5
+```
+Fibonacci-Beispiel:
+
+```python
+import turtle
+schritteAnzahl = 13
+nMinus2 = 0
+nMinus1 = 1
+while schritteAnzahl > 0:
+    schritteAnzahl = schritteAnzahl - 1
+    n = nMinus2 + nMinus1
+    i = 0
+    while i < 4:
+        turtle.forward(n)
+        turtle.right(90)
+        i = i + 1
+    nMinus2 = nMinus1
+    nMinus1 = n
+```
 
 ## Rollenspiel "Bubblesort"
 
