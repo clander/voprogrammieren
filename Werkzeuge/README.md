@@ -48,7 +48,7 @@ https://www.python.org
   - https://app.edublocks.org (online, blockbasiert, textuell, viele Bibliotheken, Tutorials, etc)
   - https://thonny.org (spezielle offline IDEs mit didaktischen Spezialfunktionen im Bereich "visuelles Debugging")
   - https://www.tigerjython.ch/de/products/tigerjython-ide (online und offline, sehr viele Unterlagen, viele Zielsysteme)
-    - Webversion: https://webtigerjython.ethz.ch
+    - Webversion: https://webtigerjython.ethz.ch (incl. gutem Debug-Modus in den Einstellungen)
   - https://guipy.de/doku.php (Python-Programmierung textuelle, mit Struktogrammen, UML-Klassendiagrammen, GUI-Designer)
 
 ## Microsoft makecode
