@@ -14,11 +14,11 @@ Der Benutzer / die Benutzerin möchte gegen das Programm ein Schere-Stein-Papier
 ## Implementierungen
 
 ### Blockbasierte Implementierung
-![](/SchereSteinPapier/bilder/ssp1.png)
-![](/SchereSteinPapier/bilder/ssp2.png)
-![](/SchereSteinPapier/bilder/ssp3.png)
-![](/SchereSteinPapier/bilder/ssp4.png)
-![](/SchereSteinPapier/bilder/ssp5.png)
+![](./bilder/ssp1.png)
+![](./bilder/ssp2.png)
+![](./bilder/ssp3.png)
+![](./bilder/ssp4.png)
+![](./bilder/ssp5.png)
 
 ### Python-Implementierung
 
@@ -74,14 +74,14 @@ print("*****************************************")
 ## Aufgaben-Variante für Micro:bit
 
 
-![](/SchereSteinPapier/bilder/sspmicrobit.png)
+![](./bilder/sspmicrobit.png)
 (Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 29 - S. 30, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
 
 ### Tutorial dazu
 Tutorial auf Englisch: https://github.com/microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
 
 ### Implementierung dazu:
-![](/SchereSteinPapier/bilder/sspmicrobitcodev1.png)
+![](./bilder/sspmicrobitcodev1.png)
 
 ```python
 zufallszahl = 0
@@ -121,7 +121,7 @@ input.on_gesture(Gesture.SHAKE, on_gesture_shake)
 Wir möchten ein Schere-Stein-Papier Match gegen den micro:bit spielen können.
 
 ### Implementierung
-![](/SchereSteinPapier/bilder/sspmicrobitcodev2.png)
+![](./bilder/sspmicrobitcodev2.png)
 
 ```python
 zufallszahl = 0
