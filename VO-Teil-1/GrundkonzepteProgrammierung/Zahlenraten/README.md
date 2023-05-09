@@ -34,8 +34,8 @@ In einer erweiterten Version der Software könnte man einen Discord-Bot implemen
 # Implementierungen
 ## Blockbasierte Implementierung Basisvariante
 
-![](/Zahlenraten/bilder/zahlenraten1.png)
-![](/Zahlenraten/bilder/zahlenraten2.png)
+![](./bilder/zahlenraten1.png)
+![](./bilder/zahlenraten2.png)
 ## Python-Implementierung Basisvariante
 ```python
 import random
@@ -62,9 +62,9 @@ print('Auf Wiedersehen!')
 ```
 
 ## Blockbasierte Implementierung KI-Variante
-![](/Zahlenraten/bilder/zahlenratenki1.png)
-![](/Zahlenraten/bilder/zahlenratenki2.png)
-![](/Zahlenraten/bilder/zahlenratenki3.png)
+![](./bilder/zahlenratenki1.png)
+![](./bilder/zahlenratenki2.png)
+![](./bilder/zahlenratenki3.png)
 ## Python-Implementierung KI-Variante
 
 ```python
