@@ -8,7 +8,7 @@
    - Von-Neumann: Computer spielen
    - Algorithmen: Binäre Suche
 2. Thema Basiskonzepte der Programmierung
-   - Einführung der Teilkonzepte ggf. mit Turtle (= Roboter) und einfachem Countdown
+   - Einführung der betroffenen Teilkonzepte ggf. mit Turtle (= Roboter) und einfachem Countdown
    - Verweis auf konzeptorientierte Tutorials (deutsch) zum Lernen in Ergänzung zur VO
    - BMI in verschiedenen Iterationen (blockbasiert + textuell)
    - Zahlenraten (blockbasiert + textuell)
