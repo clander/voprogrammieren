@@ -1,6 +1,8 @@
 import turtle
 ecken = int(input("Wieviele Ecken?"))
 seitenlaenge = int(input("Seitenlänge?"))
+stiftdicke = int(input("Wie dick sollen die Linien sein?"))
+turtle.pensize(stiftdicke)
 i = 0
 while i < ecken:
     if i % 2 == 0:

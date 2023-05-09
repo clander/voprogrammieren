@@ -44,6 +44,7 @@ Die folgenden Beispiele können in https://blockpy.cis.udel.edu/ oder in https:/
 Quadrate einfach
 ```python
 import turtle
+turtle.pensize(5)
 turtle.forward(40)
 turtle.right(90)
 turtle.pencolor("red")
@@ -87,6 +88,8 @@ Vieleck mit zwei Farben
 import turtle
 ecken = int(input("Wieviele Ecken?"))
 seitenlaenge = int(input("Seitenlänge?"))
+stiftdicke = int(input("Wie dick sollen die Linien sein?"))
+turtle.pensize(stiftdicke)
 i = 0
 while i < ecken:
     if i % 2 == 0:
