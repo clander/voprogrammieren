@@ -35,7 +35,9 @@ Mögliche Beispiele dazu:
 * Worte raten (Listenverarbeitung)
 * Text-Adventure (Prozeduren)
 * Stadt-Land-Fluss (mit micro:bit und ohne)
-* BMI (Iterative Entwicklung, Kombination von Kontrollstrukturen, verschiedene Darstellungsformen wie Diagramme, Pseudocode und Code)
+* micro:bit-Beispiele mit weiteren Ereignissen
+* BMI (iterative Entwicklung, Kombination von Kontrollstrukturen, verschiedene Darstellungsformen wie Diagramme, Pseudocode und Code, )
+* BMI-GUI-Variante mit Ereignissen
 
 ### TOC Einheit 3
 Didaktische Grundüberlegungen
