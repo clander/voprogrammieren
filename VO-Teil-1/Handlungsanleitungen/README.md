@@ -145,11 +145,12 @@ while schritteAnzahl > 0:
     nMinus2 = nMinus1
     nMinus1 = n
 ```
-## Effiziente Suche mit Zahlenratespiel
-Herausforderung: Ich wette, dass ich mit maximal 7 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und 100 erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist.
+## Binäre Suche mit Zahlenratespiel
+"Ich wette, dass ich mit maximal 7 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und 100 erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist." 
+
+Wie funktioniert der Trick? Entwickle einen Algorithmus!
 
 Hinweis: https://de.wikipedia.org/wiki/Binäre_Suche
-
 ## Rollenspiel "Bubblesort"
 
 ### Algorithmus

@@ -3,37 +3,48 @@
 ## TOC
 ### TOC Einheit 1
 1. Thema Handlungsanleitungen nachvollziehen
-   - Einfache Anleitungen / Robotersteuerung
-   - Algorithmen: Beispiel Rollenspiel Bubblesort, Visualisierung auf Visualgo
-   - Algorithmen: Dijkstra nachgespielt
+   - Einfache Anleitungen
+     - "Roboter"-Steuerung (Beispiel aus dem micro:bit Schulbuch)
+   - Algorithmen: 
+     - Rollenspiel Bubblesort, Visualisierung auf Visualgo
+     - Dijkstra nachgespielt
+     - Binäre Suche
    - Von-Neumann: Computer spielen
-   - Algorithmen: Binäre Suche
 2. Thema Basiskonzepte der Programmierung
-   - Einführung der betroffenen Teilkonzepte ggf. mit Turtle (= Roboter) und einfachem Countdown
-   - Verweis auf konzeptorientierte Tutorials (deutsch) zum Lernen in Ergänzung zur VO
-   - BMI in verschiedenen Iterationen (blockbasiert + textuell)
+   - Einführung der betroffenen Teilkonzepte mit Karol (blockbasiert und textuell)
+   - Einführung der betroffenen Teilkonzepte mit Turtle (blockbasiert und textuell)
+   - Einführung der Konzepte mit Countdown (blockbasiert + textuell)
+   - Verweis auf didaktisch gute Unterlagen (didaktisch gute Tutorials, OER-Schulbuch)
    - Zahlenraten (blockbasiert + textuell)
      - Hinweis auf schwierigere Variante ("KI" mit binärer Suche)
-   - Tamagotchi mit micro:bit und Verweis auf OER-Schulbuch
+   - BMI in verschiedenen Iterationen (blockbasiert + textuell)
    - Schere-Stein-Papier mit micro:bit und OER-Schulbuch (incl. Online Tutorial dazu)
-
+   - Tamagotchi mit micro:bit und Verweis auf OER-Schulbuch
 ### TOC Einheit 2
-Weitere Konzepte der Programmierung, darunter: Prozeduren, Funktionen, Events, Listen
+Weitere Konzepte der Programmierung, darunter: 
+- Prozeduren / Funktionen / Methoden
+- Events / Listeners
+- Listen
+- Arrays
+- verschiedene Darstellungsformen
+- Iterativer Entwicklungszyklus
 
 Mögliche Beispiele dazu:
 * Schere-Stein-Papier Variante mit Arrays
 * Turtle-Vieleck-Beispiel mit Farben-Array und Zufallsfarben
 * Worte raten (Listenverarbeitung)
-* Textadventure (Prozeduren)
-* Stadt-Land-Fluss (mit microbit und ohne)
+* Text-Adventure (Prozeduren)
+* Stadt-Land-Fluss (mit micro:bit und ohne)
+* BMI (Iterative Entwicklung, Kombination von Kontrollstrukturen, verschiedene Darstellungsformen wie Diagramme, Pseudocode und Code)
 
 ### TOC Einheit 3
-Didaktik
+Didaktische Grundüberlegungen
 
 
 ## Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
+### Inhalte Modul 3
 Im Hochschullehrgang erwerben die Studierenden Kompetenzen und Wissen in Bezug auf mediendidaktische, individuelle und gesellschaftliche Aspekte, Programmierung, Computer- Systeme und Anwendungen. Dabei erarbeiten sie sich Kompetenzen zu den drei zentralen Perspektiven des Frankfurt Dreiecks (technisch-medial, gesellschaftlich-kulturell und interaktionsbezogen) und kombinieren diese mit den nötigen Grundlagen der Medienbildung und Informatik.
 
 Zudem bauen die Studierenden Wissensinhalte und Kompetenzen in Bezug auf wesentliche Themenbereiche des Unterrichts der Digitalen Grundbildung (DigiKomp Kategorien) auf. Sie thematisieren die fachdidaktische Umsetzung dieser Kenntnisse und Fähigkeiten, üben diese ein und bereiten sich auf den Unterricht vor.
@@ -41,7 +52,7 @@ Zudem bauen die Studierenden Wissensinhalte und Kompetenzen in Bezug auf wesentl
 Absolvent*innen sind nach Abschluss des Hochschullehrgangs Digitale Grundbildung u.a. in der Lage 
 ... grundlegende Kenntnisse, Methoden und Fähigkeiten zu entwickeln, die für die Vermittlung von Programmierkompetenzen und das Erarbeiten von Informatischem Denken benötigt werden ...
 
-Modul 3
+### Ziele Modul 3
 
 Ziel dieses Moduls ist es, grundlegende Kenntnisse, Methoden und Fähigkeiten zu entwickeln, die für die Vermittlung von Programmierkompetenzen und das Erarbeiten von informatischem Denken benötigt werden. Dabei sollen insbesondere Kompetenzen vermittelt werden, welche das Arbeiten an Projekten in Teams unterstützen und welche die Relevanz von Programmiersprachen und Werkzeugen im schulischen Kontext beurteilen helfen.
 
