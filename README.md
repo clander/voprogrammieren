@@ -124,6 +124,3 @@ Die Schülerinnen und Schüler können
 - Projektplanung inklusive Aufgabenverteilung und Zeitplan
 (Graphische) Notationen, Pseudocode
 - Ästhetische und technische Kompetenzen von Medienkulturen in Projekten
-
-## Werkzeuge
-[Werkzeuge](Werkzeuge.md)
