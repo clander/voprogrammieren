@@ -11,15 +11,16 @@
      - Binäre Suche
    - Von-Neumann: Computer spielen
 2. Thema Basiskonzepte der Programmierung
+   - Einführung der Konzepte mit Countdown (blockbasiert + textuell)
    - Einführung der betroffenen Teilkonzepte mit Karol (blockbasiert und textuell)
    - Einführung der betroffenen Teilkonzepte mit Turtle (blockbasiert und textuell)
-   - Einführung der Konzepte mit Countdown (blockbasiert + textuell)
    - Verweis auf didaktisch gute Unterlagen (didaktisch gute Tutorials, OER-Schulbuch)
    - Zahlenraten (blockbasiert + textuell)
      - Hinweis auf schwierigere Variante ("KI" mit binärer Suche)
    - BMI in verschiedenen Iterationen (blockbasiert + textuell)
    - Schere-Stein-Papier mit micro:bit und OER-Schulbuch (incl. Online Tutorial dazu)
    - Tamagotchi mit micro:bit und Verweis auf OER-Schulbuch
+   - Ggf. noch ein Beispiel mit makecode arcade (ggf. Tamagotchi mit Arcade)
 ### TOC Einheit 2
 Weitere Konzepte der Programmierung, darunter: 
 - Prozeduren / Funktionen / Methoden
