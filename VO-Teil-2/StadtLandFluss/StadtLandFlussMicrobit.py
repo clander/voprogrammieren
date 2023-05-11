@@ -18,7 +18,7 @@ input.on_button_pressed(Button.A, on_button_pressed_a)
 zufallBuchstabe = ""
 alphabet: List[str] = []
 basic.show_leds("""
-    . . # . .
+        . . # . .
         . # # . .
         # # # . .
         . # # . .
