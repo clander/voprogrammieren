@@ -3,23 +3,20 @@
 ## Idee
 Schüler:innen verstehen und befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme. Schüler finden Lösungen zu gegebenen Problemen und entwickeln Handlungsanleitungen bzw. Algorithmen.
 
-Algorithmus: 
+Algorithmus:
 Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt.
 (https://de.wikipedia.org/wiki/Algorithmus)
 
 Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, bedingte Anweisungen sowie (bedingte) Wiederholungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
-## Binäre Suche mit Zahlenratespiel
-"Ich wette, dass ich mit maximal 7 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und 100 erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist." 
+## Suchen mit der Binären Suche
+"Ich wette, dass ich mit maximal 20 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und einer Million erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist." 
 
 Wie funktioniert der Trick? Entwickle einen Algorithmus!
-
-Hinweis: https://de.wikipedia.org/wiki/Binäre_Suche
-## Rollenspiel "Bubblesort"
-
 ### Algorithmus
+* https://de.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search
+* https://de.wikipedia.org/wiki/Binäre_Suche
 
-https://de.wikipedia.org/wiki/Bubblesort
-
+## Sortieren mit Bubblesort
 ### Rollenspiel
 Einstimmung: Die Lehrperson bringt eine Flasche Limonade oder Mineralwasser und ein paar Gläser in den Unterricht mit. Die Lernenden sollen einschenken und bevor sie trinken, die Bläschen (Bubbles) im Glas beobachten. 
 
@@ -32,16 +29,11 @@ Vorbereitung: Einige Schüler:innen stellen sich als Teilnehmer:innen des Rollen
   - Hat der/die Tauschüberwacher:in nach einem Durchlauf die Hand nicht oben, ist der Vorgang beendet und die Schüler:innenreihe sortiert. 
 
 Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt BubbleSort diesen Namen?
-
-### Enaktive Erkundung
-Enaktive Erkundung von Bubblesort und anderen (Sortier-)Algorithmen: https://visualgo.net/en/sorting
+### Algorithmus
+* https://de.wikipedia.org/wiki/Bubblesort
+* Enaktive Erkundung von Bubblesort und anderen (Sortier-)Algorithmen: https://visualgo.net/en/sorting -> Bubble-Sort auswählen
 
 ## Kürzeste-Wege-Algorithmus von Dijkstra
-### Algorithmus
-https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
-
-Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
-
 ### Handlungsanleitung
 
 Vorbereitung: Mit Kreide wird ein Wegenetz in Form eines Graphen (Knoten + Kanten + Kantengewichte + Daten pro Knoten) auf den Asphalt im Schulhof oder auf die Tafel gezeichnet. Auf dieser Datenstruktur werden nun der folgende Algorithmus ausgeführt.
@@ -66,6 +58,10 @@ Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewä
 ### Beispiel-Ablauf
 
 ![image](./bilder/dijkstra.gif)
+
+### Algorithmus
+* https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
+* Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
 
 ## Algorithmenvisualisierungen mit Visualgo
 Auf dieser Plattform können viele weitere Algorithmen und Datenstrukturen erkundet werden (enaktiv, ikonisch, symbolisch):

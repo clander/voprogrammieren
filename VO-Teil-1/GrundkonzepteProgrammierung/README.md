@@ -3,14 +3,13 @@
 1. (Didaktische) Grundlagen: 
    1. Zentrale Ideen
    2. Werkzeuge
-2. Thhema: Handlungsanleitungen nachvollziehen
-   - Einfache Anleitungen
-     - "Roboter"-Steuerung (Beispiel aus dem micro:bit Schulbuch)
+2. Handlungsanleitungen nachvollziehen
    - Algorithmen: 
      - Rollenspiel Bubblesort, Visualisierung auf Visualgo
      - Dijkstra nachgespielt
      - Binäre Suche
    - Von-Neumann: Computer spielen
+   - Miniwelten
 3. Thema Basiskonzepte der Programmierung
    - Einführung der Konzepte mit Countdown (blockbasiert + textuell)
    - Einführung der betroffenen Teilkonzepte mit Karol (blockbasiert und textuell)
