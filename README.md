@@ -1,49 +1,4 @@
 # VO Programmieren
-
-## TOC
-### TOC Einheit 1
-1. Thema Handlungsanleitungen nachvollziehen
-   - Einfache Anleitungen
-     - "Roboter"-Steuerung (Beispiel aus dem micro:bit Schulbuch)
-   - Algorithmen: 
-     - Rollenspiel Bubblesort, Visualisierung auf Visualgo
-     - Dijkstra nachgespielt
-     - Binäre Suche
-   - Von-Neumann: Computer spielen
-2. Thema Basiskonzepte der Programmierung
-   - Einführung der Konzepte mit Countdown (blockbasiert + textuell)
-   - Einführung der betroffenen Teilkonzepte mit Karol (blockbasiert und textuell)
-   - Einführung der betroffenen Teilkonzepte mit Turtle (blockbasiert und textuell)
-   - Verweis auf didaktisch gute Unterlagen (didaktisch gute Tutorials, OER-Schulbuch)
-   - Zahlenraten (blockbasiert + textuell)
-     - Hinweis auf schwierigere Variante ("KI" mit binärer Suche)
-   - BMI in verschiedenen Iterationen (blockbasiert + textuell)
-   - Schere-Stein-Papier mit micro:bit und OER-Schulbuch (incl. Online Tutorial dazu)
-   - Tamagotchi mit micro:bit und Verweis auf OER-Schulbuch
-   - Ggf. noch ein Beispiel mit makecode arcade (ggf. Tamagotchi mit Arcade)
-### TOC Einheit 2
-Weitere Konzepte der Programmierung, darunter: 
-- Prozeduren / Funktionen / Methoden
-- Events / Listeners
-- Listen
-- Arrays
-- verschiedene Darstellungsformen
-- Iterativer Entwicklungszyklus
-
-Mögliche Beispiele dazu:
-* Schere-Stein-Papier Variante mit Arrays
-* Turtle-Vieleck-Beispiel mit Farben-Array und Zufallsfarben
-* Worte raten (Listenverarbeitung)
-* Text-Adventure (Prozeduren)
-* Stadt-Land-Fluss (mit micro:bit und ohne)
-* micro:bit-Beispiele mit weiteren Ereignissen
-* BMI (iterative Entwicklung, Kombination von Kontrollstrukturen, verschiedene Darstellungsformen wie Diagramme, Pseudocode und Code, )
-* BMI-GUI-Variante mit Ereignissen
-
-### TOC Einheit 3
-Didaktische Grundüberlegungen
-
-
 ## Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
@@ -90,13 +45,13 @@ RIS: https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2022_II_267/BGBLA_2022_I
 Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
 
 Die Schülerinnen und Schüler können
-- (T) eindeutige Handlungsanleitungen (Algorithmen) nachvollziehen, ausführen sowie selbstständig formulieren.
+- **(T) eindeutige Handlungsanleitungen (Algorithmen) nachvollziehen, ausführen sowie selbstständig formulieren.**
 - (G) verschiedene Darstellungsformen von Inhalten und die Wirkung auf sich und andere beschreiben.
 - (I) mit Daten einfache Berechnungen durchführen sowie in verschiedenen (visuellen) Formaten sammeln und präsentieren.
 - (I) einzeln und gemeinsam Texte und Präsentationen (unter Einbeziehung von Bildern, Grafiken und anderen Objekten) strukturieren und formatieren.
 
 #### Anwendungsbereiche
-- Sequenzen und einfache Schleifen
+- **Sequenzen und einfache Schleifen**
 - Planung, Gestaltung und Auswertung von Umfragen
 
 ### 2. Klasse
@@ -104,8 +59,8 @@ Die Schülerinnen und Schüler können
 Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
 
 Die Schülerinnen und Schüler können
-- (T) darstellen, wie Programme Daten speichern und verarbeiten, indem sie Zahlen oder andere Symbole zur Darstellung von Informationen verwenden.
-- (T) unter Nutzung einer geeigneten Entwicklungsumgebung einfache Programme erstellen, diese testen und debuggen (Fehler erkennen und beheben).
+- **(T) darstellen, wie Programme Daten speichern und verarbeiten, indem sie Zahlen oder andere Symbole zur Darstellung von Informationen verwenden.**
+- **(T) unter Nutzung einer geeigneten Entwicklungsumgebung einfache Programme erstellen, diese testen und debuggen (Fehler erkennen und beheben).**
 - (G) die Rechte am geistigen Eigentum beachten und bei der Erstellung oder beim Remixen von Programmen die entsprechenden Urheberrechte angeben.
 - (I) visuelle/audiovisuelle/auditive Inhalte erzeugen, adaptieren und analysieren. Sie können Möglichkeiten der Veröffentlichung benennen.
 
@@ -114,7 +69,7 @@ Die Schülerinnen und Schüler können
 Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
 
 Die Schülerinnen und Schüler können
-- (T) an Beispielen Elemente des Computational Thinkings nachvollziehen und diese zur Lösung von Problemen einsetzen. Sie wissen, wie sie Lösungswege in Programmiersprache umsetzen können.
+- **(T) an Beispielen Elemente des Computational Thinkings nachvollziehen und diese zur Lösung von Problemen einsetzen. Sie wissen, wie sie Lösungswege in Programmiersprache umsetzen können.**
 - (G) verschiedene populäre Medienkulturen benennen sowie Möglichkeiten verschiedener Darstellungsformen von Inhalten erproben.
 - (I) ihre eigenen medialen Produktionen auf Barrierefreiheit überprüfen und ggf. Barrieren beseitigen.
 - (I) Einstellungen in Softwareapplikationen den persönlichen Bedürfnissen entsprechend anpassen.
@@ -128,13 +83,12 @@ Die Schülerinnen und Schüler können
 Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
 
 Die Schülerinnen und Schüler können
-- (T) Programme entwerfen und iterativ entwickeln, die Kontrollstrukturen kombinieren, einschließlich verschachtelter Schleifen und zusammengesetzter Konditionale.
+- **(T) Programme entwerfen und iterativ entwickeln, die Kontrollstrukturen kombinieren, einschließlich verschachtelter Schleifen und zusammengesetzter Konditionale.**
 - (G) Möglichkeiten verschiedener Darstellungsformen von Inhalten erproben und deren Einfluss auf die Wahrnehmung des Inhalts hinterfragen.
 - (I) mit bereitgestellten Medien und Software-Applikationen zielgerichtet und kreativ gestaltend kooperieren.
 - (I) einfache Programme oder Webanwendungen mit geeigneten Werkzeugen erstellen, um ein bestimmtes Problem zu lösen oder eine bestimmte Aufgabe zu erfüllen.
  
 #### Anwendungsbereiche
-- Dokumentation von Programmen
-- Projektplanung inklusive Aufgabenverteilung und Zeitplan
-(Graphische) Notationen, Pseudocode
+- **Dokumentation von Programmen**
+- **Projektplanung inklusive Aufgabenverteilung und Zeitplan (Graphische) Notationen, Pseudocode**
 - Ästhetische und technische Kompetenzen von Medienkulturen in Projekten

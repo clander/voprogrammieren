@@ -1,153 +1,13 @@
-# Handlungsanleitungen nachvollziehen
-
-## Lehrplanbezug
-
-Erste Klasse
-
-Kompetenzbereich Produktion: Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren
-Die Schülerinnen und Schüler können
-
-(T) eindeutige Handlungsanleitungen (Algorithmen) nachvollziehen, ausführen sowie selbstständig formulieren.
-
-Anwendungsbereiche: Sequenzen und einfache Schleifen
+# Handlungsanleitungen nachvollziehen und entwickeln
 
 ## Idee
-Schüler:innen verstehen und befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme.
+Schüler:innen verstehen und befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme. Schüler finden Lösungen zu gegebenen Problemen und entwickeln Handlungsanleitungen bzw. Algorithmen.
 
 Algorithmus: 
 Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt.
 (https://de.wikipedia.org/wiki/Algorithmus)
 
-Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, Wiederholungen und bedingte Anweisungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
-
-## Steuerung von Akteuren in Miniwelten (Überblick)
-
-- https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
-- Roboter Karol: https://karol.arrrg.de (online) bzw. http://cgd.zum.de/wiki/Programmieren_lernen_mit_Robot_Karol
-- Kara Marienkäfer: https://www.swisseduc.ch/informatik/karatojava/kara/ (incl. vielen Tutorial-Beispielen direkt in der Umgebung)
-- Logo-Turtle (in verschiedenen Versionen)
-- etc.
-
-### Beispiele mit Roboter Karol
-
-- Siehe Tutorial in der entsprechenden Online-Umgebung: https://karol.arrrg.de
-
-### Beispiele mit LOGO (in Python)
-Logo ist die älteste Form der Realisierung des Miniwelt-Konzepts für die die einführende Programmierung und wurde über die Jahre immer wieder weiterentwickelt sowie in den verschiedensten Versionen herausgebracht. 
-
-Die sogenannte Logo-Turtle lässt sich in jeder Python-Standarddistribution programmieren. Es gibt aber auch unzählige andere Varianten. Viele der später aufgekommenen Miniwelten (Kara, Karol, Scratch etc.) basieren auf dem Konzept der Miniwelt.
-
-Hintergrund: https://de.wikipedia.org/wiki/Logo_%28Programmiersprache%29
-
-Die folgenden Beispiele können in https://blockpy.cis.udel.edu/ oder in https://app.edublocks.org/editor oder in jeder anderen Python-Umgebung ausprobiert werden. 
-
-Quadrate einfach
-```python
-import turtle
-turtle.pensize(5)
-turtle.forward(40)
-turtle.right(90)
-turtle.pencolor("red")
-turtle.forward(40)
-turtle.right(90)
-turtle.pencolor("green")
-turtle.forward(40)
-turtle.right(90)
-turtle.pencolor("blue")
-turtle.forward(40)
-turtle.right(90)
-```
-Quadrat (verallgemeinert, Muster automatisiert)
-
-```python
-import turtle
-seitenlaenge = int(input('Seitenlänge?'))
-i=0
-while i < 4:
-    turtle.forward(seitenlaenge)
-    turtle.right(90)
-    i = i + 1
-```
-
-Vieleck (weitere Verallgemeinerung)
-
-```python
-import turtle
-ecken = int(input("Wieviele Ecken?"))
-seitenlaenge = int(input("Seitenlänge?"))
-i = 0
-while i < ecken:
-    turtle.forward(seitenlaenge)
-    turtle.right(360/ecken)
-    i = i +1
-```
-
-Vieleck mit zwei Farben
-
-```python
-import turtle
-ecken = int(input("Wieviele Ecken?"))
-seitenlaenge = int(input("Seitenlänge?"))
-stiftdicke = int(input("Wie dick sollen die Linien sein?"))
-turtle.pensize(stiftdicke)
-i = 0
-while i < ecken:
-    if i % 2 == 0:
-        farbe = "red"
-    else:
-        farbe = "black"
-    turtle.pencolor(farbe)
-    turtle.forward(seitenlaenge)
-    turtle.right(360/ecken)
-    i = i +1
-```
-Vieleck mit verschiedenen, zufälligen Farben (Array-Random-Variante)
-
-```python
-import turtle, random
-ecken = int(input('Wieviele Ecken?'))
-seitenlaenge = int(input('Seitenlänge?'))
-farben = ['blue', 'red', 'green', 'yellow', 'black']
-i = 0
-while i < ecken:
-    zufallFarbe = farben[random.randint(0, 4)]
-    turtle.pencolor(zufallFarbe)
-    turtle.forward(seitenlaenge)
-    turtle.right(360 / ecken)
-    i = i + 1
-```
-
-Spirale
-
-```python
-import turtle
-seitenlaenge = 10
-while seitenlaenge < 100:
-    seiten = 2
-    while seiten > 0:
-        turtle.forward(seitenlaenge)
-        turtle.right(90)
-        seiten = seiten - 1
-    seitenlaenge = seitenlaenge + 5
-```
-Fibonacci-Beispiel:
-
-```python
-import turtle
-schritteAnzahl = 13
-nMinus2 = 0
-nMinus1 = 1
-while schritteAnzahl > 0:
-    schritteAnzahl = schritteAnzahl - 1
-    n = nMinus2 + nMinus1
-    i = 0
-    while i < 4:
-        turtle.forward(n)
-        turtle.right(90)
-        i = i + 1
-    nMinus2 = nMinus1
-    nMinus1 = n
-```
+Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, bedingte Anweisungen sowie (bedingte) Wiederholungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
 ## Binäre Suche mit Zahlenratespiel
 "Ich wette, dass ich mit maximal 7 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und 100 erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist." 
 
@@ -177,7 +37,7 @@ Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt
 Enaktive Erkundung von Bubblesort und anderen (Sortier-)Algorithmen: https://visualgo.net/en/sorting
 
 ## Kürzeste-Wege-Algorithmus von Dijkstra
-### Algorithmus und Dijkstra
+### Algorithmus
 https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
 
 Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
@@ -223,6 +83,15 @@ Ein Grundverständnis für die Arbeitsweise von Von- Neumann-Architekturen hilft
 
 Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
 
+Es gelten folgende Abkürzungen:
+
+* PZ – Programmzählerregister
+* AR – Akkumulatorregister
+* BR – Befehlsregister
+* SR – Speicheradressenregister
+* E – Eingabe
+* A – Ausgabe
+
 **Vor jedem Programmstart** machst du folgendes:
 1. Schreib den Wert 0 in das PZ.
 2. Lösche den Inhalt aller sonstigen Register (AR, BR, SR).
@@ -233,18 +102,15 @@ Führe das Programm nach folgenden Angaben aus:
 1. **Befehl holen** (FETCH):
    1. Lies die Zahl im PZ.
    2. Gehe in deiner Arbeitsspeicher-Tabelle in die Zeile mit der Speicheradresse die der gelesenen Zahl entspricht.
-   3. Schreibe den Befehl der an dieser Speicherstelle angegeben ist in das BR.
+   3. Schreibe den Befehl, der an dieser Speicherstelle angegeben ist, in das BR.
    4. Schreibe die hinter dem Befehl angegebene Speicheradresse in das SR. Wenn hinter dem Befehl nichts angegeben ist, lösche den Inhalt von SR.
 2. **Befehl dekodieren** (DECODE):
-   1. Lies den Befehl im BR und lies in der Befehlssatz-Tabelle nach
-was zu tun ist. 
+   1. Lies den Befehl im BR und lies in der Befehlssatz-Tabelle nach, was zu tun ist. 
 3. **Befehl ausführen** (EXECUTE):
-   1. Erhöhe PZ um +1.
-   2. Führe jetzt den Befehl entsprechend den Angaben in der
-Befehlssatz-Tabelle aus.
-1. **Beginne wieder mit 1.** falls du nicht an einem HLT-Befehl angelangt bist.
-### Abkürzungen
-PZ – Programmzählerregister, AR – Akkumulatorregister, BR – Befehlsregister, SR – Speicheradressenregister, E – Eingabe, A – Ausgabe;
+   1. Erhöhe PZ um 1.
+   2. Führe jetzt den Befehl entsprechend den Angaben in der Befehlssatz-Tabelle aus.
+4. **Beginne wieder mit 1.** falls du nicht an einem HLT-Befehl angelangt bist.
+
 ### Befehlssatz
 |Instruction|Mnemonic|Machine Code|Explanation|Handlungsanleitung|
 |-----------|--------|------------|-----------|-----------------|
@@ -401,6 +267,147 @@ ne folgende Begrifflichkeiten den entsprechenden Elementen aus den bearbeiteten 
 1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über das EVA-Prinzip (Eingabe- Verarbeitung-Ausgabe).
 2. Finde heraus, wie in den durchgespielten Program- men (A, B, C) das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest
 3. Finde heraus, wie in den folgenden Programmkate- gorien das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest: Tabellenkalkulation, Computerspiel, Wörterbuch am Handy, Fenstersteuerung in Microsoft Windows, Google-Suche.
+
+## Steuerung von Akteuren in Miniwelten (Überblick)
+Die Steuerung von Akteuren in Miniwelten ist eine beliebte Form des einführenden Programmmierunterrichts. Die Lernenden definieren Algorithmen zur Steuerung der Akteure und lösen damit die definierten Aufgaben.
+
+Beispielwerkzeuge dafür sind:
+
+- Turtle-Grafik (Logo, in verschiedenen Versionen)
+- Roboter Karol: https://karol.arrrg.de (online) bzw. http://cgd.zum.de/wiki/Programmieren_lernen_mit_Robot_Karol
+- Kara Marienkäfer: https://www.swisseduc.ch/informatik/karatojava/kara/ (incl. vielen Tutorial-Beispielen direkt in der Umgebung)
+- Hamster-Modell (http://www.java-hamster-modell.de/index2.html)
+- Open Roberta Sim (https://www.open-roberta.org)
+- Pen and Paper Varianten wie hier beschrieben: https://microbit.eeducation.at/wiki/Hauptseite, Version 2, S. 11 bis S. 18
+
+Hintergrund: https://de.wikipedia.org/wiki/Bildungsorientierte_Programmiersprache
+
+### Beispiele mit Roboter Karol
+
+- Siehe Tutorial in der entsprechenden Online-Umgebung: https://karol.arrrg.de
+
+### Beispiele mit LOGO (in Python)
+Logo ist die älteste Form der Realisierung des Miniwelt-Konzepts für die einführende Programmierung. Logo wurde von Seymour Papert in den 60er Jahren entwickelt und ist über die Jahre in immer wieder neuen Varianten herausgekommen. In Logo wird eine Schildkröte die zeichnen kann (Turtle) auf einer Zeichenfläche bewegt (Turtle-Grafik). Die Steuerung der Schildkröte erfolgt über eine Programmiersprache. Programmieraufgaben in Logo betreffen meist die Produktion von geometrischen Figuren (Turtle-Grafik).
+
+Hinweis: Eine stark weiterentwickelte Form des Turtle-Grafik-Konzeptes stellt https://processing.org dar. Über Processing werden ebenfalls über die Verwendung einer Programmiersprache multimediale Kunstwerke erzeugt.
+
+Die Logo-Turtle lässt sich in jeder Python-Standarddistribution (und auf entsprechenden Plattformen auch blockbasiert) programmieren. Es gibt aber auch unzählige andere Varianten. 
+
+Hintergrund: https://de.wikipedia.org/wiki/Logo_%28Programmiersprache%29
+
+Viele der später aufgekommenen Miniwelten (Kara, Karol, Scratch etc.) basieren auf dem Konzept der Miniwelt.
+
+Die folgenden Beispiele können in https://blockpy.cis.udel.edu/ oder in https://app.edublocks.org/editor oder in jeder anderen Python-Umgebung ausprobiert werden. 
+
+Quadrat mit verschiedenen Seitenfarben (einfach)
+
+```python
+import turtle
+turtle.pensize(5)
+turtle.forward(40)
+turtle.right(90)
+turtle.pencolor("red")
+turtle.forward(40)
+turtle.right(90)
+turtle.pencolor("green")
+turtle.forward(40)
+turtle.right(90)
+turtle.pencolor("blue")
+turtle.forward(40)
+turtle.right(90)
+```
+
+Quadrat
+
+```python
+import turtle
+seitenlaenge = int(input('Seitenlänge?'))
+i=0
+while i < 4:
+    turtle.forward(seitenlaenge)
+    turtle.right(90)
+    i = i + 1
+```
+
+Vieleck
+
+```python
+import turtle
+ecken = int(input("Wieviele Ecken?"))
+seitenlaenge = int(input("Seitenlänge?"))
+i = 0
+while i < ecken:
+    turtle.forward(seitenlaenge)
+    turtle.right(360/ecken)
+    i = i +1
+```
+
+Vieleck mit zwei Farben
+
+```python
+import turtle
+ecken = int(input("Wieviele Ecken?"))
+seitenlaenge = int(input("Seitenlänge?"))
+stiftdicke = int(input("Wie dick sollen die Linien sein?"))
+turtle.pensize(stiftdicke)
+i = 0
+while i < ecken:
+    if i % 2 == 0:
+        farbe = "red"
+    else:
+        farbe = "black"
+    turtle.pencolor(farbe)
+    turtle.forward(seitenlaenge)
+    turtle.right(360/ecken)
+    i = i +1
+```
+Vieleck mit verschiedenen, zufälligen Farben (Array-Random-Variante)
+
+```python
+import turtle, random
+ecken = int(input('Wieviele Ecken?'))
+seitenlaenge = int(input('Seitenlänge?'))
+farben = ['blue', 'red', 'green', 'yellow', 'black']
+i = 0
+while i < ecken:
+    zufallFarbe = farben[random.randint(0, 4)]
+    turtle.pencolor(zufallFarbe)
+    turtle.forward(seitenlaenge)
+    turtle.right(360 / ecken)
+    i = i + 1
+```
+Spirale
+
+```python
+import turtle
+seitenlaenge = 10
+while seitenlaenge < 100:
+    seiten = 2
+    while seiten > 0:
+        turtle.forward(seitenlaenge)
+        turtle.right(90)
+        seiten = seiten - 1
+    seitenlaenge = seitenlaenge + 5
+```
+
+Fibonacci-Quadrate-Beispiel:
+
+```python
+import turtle
+schritteAnzahl = 13
+nMinus2 = 0
+nMinus1 = 1
+while schritteAnzahl > 0:
+    schritteAnzahl = schritteAnzahl - 1
+    n = nMinus2 + nMinus1
+    i = 0
+    while i < 4:
+        turtle.forward(n)
+        turtle.right(90)
+        i = i + 1
+    nMinus2 = nMinus1
+    nMinus1 = n
+```
 ## Weitere Ressourcen zum Thema "Handlungsanleitungen nachvollziehen"
 - Denken lernen, Probleme lösen / digi.case: https://men.baa.at/?men=digi.case.dlpl
 - Informatik erleben (Uni Klagenfurt): http://informatik-erleben.uni-klu.ac.at
