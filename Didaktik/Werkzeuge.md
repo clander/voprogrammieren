@@ -4,6 +4,8 @@ https://www.python.org
 # Python Referenzen
 - https://www.w3schools.com/python/default.asp
 - https://docs.python.org/3/
+  - Sprachreferenz: https://docs.python.org/3/reference/index.html
+  - Standardbibliothek: https://docs.python.org/3/library/index.html
 
 # Python Bibliotheken
 - Python Turtle Graphics: https://docs.python.org/3/library/turtle.html
@@ -42,13 +44,14 @@ https://www.python.org
 - https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
 
 # Entwicklungsumgebungen und Hilfswerkzeuge
-
 ## (Didaktische) IDEs
   - https://think.cs.vt.edu/blockpy/ (online, blockbasiert, textuell, Datenanalyse, Turtle, ...)
   - https://app.edublocks.org (online, blockbasiert, textuell, viele Bibliotheken, Tutorials, etc)
   - https://thonny.org (spezielle offline IDEs mit didaktischen Spezialfunktionen im Bereich "visuelles Debugging")
   - https://www.tigerjython.ch/de/products/tigerjython-ide (online und offline, sehr viele Unterlagen, viele Zielsysteme)
     - Webversion: https://webtigerjython.ethz.ch (incl. gutem Debug-Modus in den Einstellungen)
+  - Trinket (Online-IDE): https://trinket.io
+    - Gratis-Lektionen: https://hourofpython.com 
   - https://guipy.de/doku.php (Python-Programmierung textuelle, mit Struktogrammen, UML-Klassendiagrammen, GUI-Designer)
 
 ## Microsoft makecode
