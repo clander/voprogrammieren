@@ -23,7 +23,8 @@
 1. Der Countdown läuft (blockbasiert und textuell)
 2. BMI in den ersten 3 Iterationen
 3. Zahlenraten mit Hinweis auf die binäre Suche und KI-Variante
-4. Beispiele zur persönlichen Vertiefung:
+4. Hinweise auf didaktische und konzeptorientierte Einführungen zu Python
+5. Beispiele zur persönlichen Vertiefung:
    - Schere-Stein-Papier
    - Tamagotchi
 
