@@ -180,13 +180,14 @@ Addition von zwei Zahlen:
 
 |Zeile|Label|Befehl|Operand|
 |-----|-----|------|-------|
-|00||STA|A|
-|01||INP||
-|02||ADD|A|
-|03||OUT||
-|04||HLT||
-|05||||
-|06|A|DAT|0|
+|00||INP||
+|01||STA|A|
+|02||INP||
+|03||ADD|A|
+|04||OUT||
+|05||HLT||
+|06||||
+|07|A|DAT|0|
 ...
 
 Welche ist die größere Zahl?
