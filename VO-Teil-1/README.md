@@ -20,15 +20,16 @@
 ## Grundkonzepte der Programmierung
 Über folgende Beispiele werden die Grundkonzepte der Programmierung eingeführt:
 
-1. Der Countdown läuft (blockbasiert und textuell)
-2. BMI in den ersten 3 Iterationen
-3. Zahlenraten mit Hinweis auf die binäre Suche und KI-Variante
-4. Hinweise auf didaktische und konzeptorientierte Einführungen zu Python
-5. Beispiele zur persönlichen Vertiefung:
+1. Countdown
+2. BMI als Excel-Lösung
+3. BMI in den ersten 3 Iterationen
+4. Zahlenraten mit Hinweis auf die binäre Suche / KI-Variante
+5. Hinweise auf gute (konzeptorientierte) Lernunterlagen
+6. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
    - Schere-Stein-Papier
    - Tamagotchi
 
-Als Programmiersprache verwenden wir Python. 
+Als Programmiersprache verwenden wir Python.
 
 Als Online-Plattform für die blockbasierte sowie textuelle Programmierung verwenden wir BlockPy (https://blockpy.cis.udel.edu/blockpy/load) oder Edublocks (https://app.edublocks.org) oder die Gratis-Variante der Python-Einführung (incl. Turtle) auf Trinket (https://hourofpython.com) oder TigerJython (https://python-online.ch).
 

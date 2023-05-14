@@ -45,14 +45,16 @@ https://www.python.org
 
 # Entwicklungsumgebungen und Hilfswerkzeuge
 ## (Didaktische) IDEs
-  - https://think.cs.vt.edu/blockpy/ (online, blockbasiert, textuell, Datenanalyse, Turtle, ...)
-  - https://app.edublocks.org (online, blockbasiert, textuell, viele Bibliotheken, Tutorials, etc)
-  - https://thonny.org (spezielle offline IDEs mit didaktischen Spezialfunktionen im Bereich "visuelles Debugging")
+  - BlockPy: https://think.cs.vt.edu/blockpy/ (online, blockbasiert, textuell, Datenanalyse, Turtle, ...)
+    - Editor: https://blockpy.cis.udel.edu/blockpy/load
+    - Authoring-Umgebung für Lehrer: https://blockpy.cis.udel.edu/blockpy/load?settings-display.instructor=true
+  - Edublocks: https://app.edublocks.org (online, blockbasiert, textuell, viele Bibliotheken, Tutorials, etc)
+  - Thonny: https://thonny.org (spezielle offline IDEs mit didaktischen Spezialfunktionen im Bereich "visuelles Debugging")
   - https://www.tigerjython.ch/de/products/tigerjython-ide (online und offline, sehr viele Unterlagen, viele Zielsysteme)
     - Webversion: https://webtigerjython.ethz.ch (incl. gutem Debug-Modus in den Einstellungen)
-  - Trinket (Online-IDE): https://trinket.io
-    - Gratis-Lektionen: https://hourofpython.com 
-  - https://guipy.de/doku.php (Python-Programmierung textuelle, mit Struktogrammen, UML-Klassendiagrammen, GUI-Designer)
+  - Trinket: https://trinket.io (Online Python-Plattform)
+    - Gratis-Lektionen (online, Turtle, blockbased): https://hourofpython.com 
+  - GuiPy: https://guipy.de/doku.php (Python-Programmierung textuelle, mit Struktogrammen, UML-Klassendiagrammen, GUI-Designer)
 
 ## Microsoft makecode
 - https://makecode.microbit.org
@@ -73,7 +75,7 @@ https://www.python.org
 
 ## Structorizer IDE
 - https://help.structorizer.fisch.lu
-- Programmieren mit Structogrammen (incl. Code-Generator für verschiedene Sprachen)
+- Programmieren mit Struktogrammen (incl. Code-Generator für verschiedene Sprachen)
 
 ## Sbide Structogramm IDE
 - https://www.sbide.de/
