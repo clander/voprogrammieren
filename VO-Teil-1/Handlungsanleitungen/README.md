@@ -222,10 +222,37 @@ Countdown:
 |07|		
 |08| ONE|     DAT | 1
 |09| COUNT|   DAT 
+### Additum-Aufgaben “Computerhirn“
+Diskutiere mit deinen Klassenkollegen und mit deinem Lehrer folgende Fragestellungen und fasse die Ergebnisse der Diskussion zu den einzelnen Punkten in einem kurzen Protokoll zusammen.
+1. Obwohl während der Programmausführung niemand wusste, was das Programm eigentlich macht, ist am Ende - bei korrekter Ausführung - eine korrekte Ausgabe erfolgt. Wie kommt das?
+2. Was bedeutet das für die Denkleistung von Computern / Handys / Spielkonsolen usw., die als Von-Neumann-Architekturen ähnlich arbeiten?
+3. Wer denkt eigentlich wirklich, wenn ein Computer Programme verarbeitet?
+4. Überlege, in welchen Fällen die durchgearbeiteten Programme trotz korrekter Ausführung falsche Ergebnisse liefern könnten und erläutere warum!
 
-Weitere mögliche Beispielaufgaben:
+### Additum-Aufgaben „Von-Neumann“
+1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über Aufbau und Abläufe einer Von-Neumann-Architektur.
+2. Lege eine neue zweispaltige Tabelle an und ordne folgende Begrifflichkeiten den entsprechenden Elementen aus den bearbeiteten Basisaufgabenstellungen zu: CPU, Steuerwerk, Rechenwerk, Register, Arbeitsspeicher, Speicheradressen, Ein- und Ausgabeeinheit, Bussystem, Von-Neumann-Zyklus, Programm, Befehl, Daten;
 
-siehe https://www.101computing.net/little-man-computer-mini-challenges/
+### Additum-Aufgaben „EVA“
+1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über das EVA-Prinzip (Eingabe-Verarbeitung-Ausgabe).
+2. Finde heraus, wie in den durchgespielten Programmen (A, B, C) das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest
+3. Finde heraus, wie in den folgenden Programmkategorien das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest: Tabellenkalkulation, Computerspiel, Wörterbuch am Handy, Fenstersteuerung in Microsoft Windows, Google-Suche.
+
+### Additum-Aufgabe "Little-Man-Computersimulatoren"
+Programmiere einen Little-Man-Computersimulator mit den gegebenen Computerprogrammen. Führe die Programme aus und beobachte das Verhalten des Computers. Wie arbeitet der Computer? Liefert er die korrekten / erwarteten Ergebnisse?
+
+Mögliche LMC-Implementierungen, die du verwenden kannst:
+
+* https://wellingborough.github.io/LMC/LMC0.3.html
+* https://peterhigginson.co.uk/LMC/
+* https://www.101computing.net/LMC/
+
+Weiter Details dazu siehe https://en.wikipedia.org/wiki/Little_man_computer
+
+### Additum-Aufgaben "Programmieren"
+Programmiere den Little-Man-Computer! Er soll folgende Aufgabe lösen:
+
+... siehe https://www.101computing.net/little-man-computer-mini-challenges/
 
 * 3 Zahlen addieren und Ergebnis ausgeben
 * Eine Zahl von einer anderen subtrahieren
@@ -238,32 +265,6 @@ siehe https://www.101computing.net/little-man-computer-mini-challenges/
 * Division ganzzahlig
 * Rest bei Division (Mod)
 * etc.
-
-### "Echte" Little-Man-Computersimulatoren
-Auf den folgenden Websites gibt es LMC-Implementierungen, mit denen man die Ausführung von Code wie oben enaktiv erfahrbar machen kann:
-
-* https://wellingborough.github.io/LMC/LMC0.3.html
-* https://peterhigginson.co.uk/LMC/
-* https://www.101computing.net/LMC/
-
-Weiter Details dazu siehe https://en.wikipedia.org/wiki/Little_man_computer
-
-### Additum-Aufgaben “Computerhirn“
-Diskutiere mit deinen Klassenkollegen und mit dei- nem Lehrer folgende Fragestellungen und fasse die Ergebnisse der Diskussion zu den einzelnen Punkten in einem kurzen Protokoll zusammen.
-1. Obwohl während der Programmausführung nie- mand wusste was das Programm eigentlich macht, ist am Ende - bei korrekter Ausführung - eine kor- rekte Ausgabe erfolgt. Wie kommt das?
-2. Was bedeutet das für die Denkleistung von Com- putern / Handys / Spielkonsolen usw., die als Von- Neumann-Architekturen ähnlich arbeiten?
-3. Wer denkt eigentlich wirklich, wenn ein Computer Programme verarbeitet?
-4. Überlege, in welchen Fällen die durchgearbeite- ten Programme trotz korrekter Ausführung falsche Ergebnisse liefern könnten und erläutere warum!
-
-### Additum-Aufgaben „Von-Neumann“
-1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über Aufbau und Abläufe einer Von-Neumann-Architektur.
-2. Lege eine neue zweispaltige Tabelle an und ord-
-ne folgende Begrifflichkeiten den entsprechenden Elementen aus den bearbeiteten Basisaufgabenstel- lungen zu: CPU, Steuerwerk, Rechenwerk, Register, Arbeitsspeicher, Speicheradressen, Ein- und Ausga- beeinheit, Bussystem, Von-Neumann-Zyklus, Pro- gramm, Befehl, Daten;
-
-### Additum-Aufgaben „EVA“
-1. Informiere dich in den Unterlagen deines Lehrers bzw. im Internet über das EVA-Prinzip (Eingabe- Verarbeitung-Ausgabe).
-2. Finde heraus, wie in den durchgespielten Program- men (A, B, C) das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest
-3. Finde heraus, wie in den folgenden Programmkate- gorien das EVA-Prinzip zur Anwendung kommt und halte deine Entdeckungen in einem Protokoll fest: Tabellenkalkulation, Computerspiel, Wörterbuch am Handy, Fenstersteuerung in Microsoft Windows, Google-Suche.
 
 ## Steuerung von Akteuren in Miniwelten (Überblick)
 Die Steuerung von Akteuren in Miniwelten ist eine beliebte Form des einführenden Programmmierunterrichts. Die Lernenden definieren Algorithmen zur Steuerung der Akteure und lösen damit die definierten Aufgaben.
