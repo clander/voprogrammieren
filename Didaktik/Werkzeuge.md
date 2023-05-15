@@ -33,16 +33,11 @@ https://www.python.org
 - Python Bakery (Kompletter Online-Kurs mit Videos, Unterlagen, Beispielen): 
   - https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37
 ## Weitere gute Tutorials
-### Offizielles Python Tutorial (de)
-- https://py-tutorial-de.readthedocs.io/de/python-3.3/
-### Python 3 - Das umfassende Handbuch
-- https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
-### Python lernen in 4 Stunden
-- https://youtu.be/RBpK8C3N-Y8
-### EinfachInfo Pythonkurs
-- https://youtube.com/playlist?list=PLywzm7Lq4JoKvxNR7ROv_gJ09roJ-UDRt
-### Socratia Python Tutorials:
-- https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
+1. Offizielles Python Tutorial (de): https://py-tutorial-de.readthedocs.io/de/python-3.3/
+2. Python 3 - Das umfassende Handbuch: https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
+3. Python lernen in 4 Stunden: https://youtu.be/RBpK8C3N-Y8
+4. EinfachInfo Pythonkurs: https://youtube.com/playlist?list=PLywzm7Lq4JoKvxNR7ROv_gJ09roJ-UDRt
+5. Socratia Python Tutorials: https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
 
 ## (Didaktische) IDEs
   - BlockPy: https://think.cs.vt.edu/blockpy/ (online, blockbasiert, textuell, Datenanalyse, Turtle, ...)
@@ -57,36 +52,32 @@ https://www.python.org
   - GuiPy: https://guipy.de/doku.php (Python-Programmierung textuelle, mit Struktogrammen, UML-Klassendiagrammen, GUI-Designer)
 
 ## Microsoft makecode
-- https://makecode.microbit.org
-  - Blockbasierte Programmierung und Programmierung in Python (und JavaScript)
-  - Viele Tutorials zum Mitmachen / Lernen
-  - Varianten:
-    - Programmierung von Micro:bit incl. Emulator: https://makecode.microbit.org/#
-    - Minecraft: https://minecraft.makecode.com/#
-    - Arcade (Spieleentwicklung): https://arcade.makecode.com
-  - Schulbuch mit vielen Projekten für die micro:bit-Programmmierung: https://microbit.eeducation.at/wiki/Hauptseite  
+https://makecode.microbit.org
+- Blockbasierte Programmierung und Programmierung in Python (und JavaScript)
+- Viele Tutorials zum Mitmachen / Lernen
+- Varianten:
+  - Programmierung von Micro:bit incl. Emulator: https://makecode.microbit.org/
+  - Minecraft: https://minecraft.makecode.com/
+  - Arcade (Spieleentwicklung): https://arcade.makecode.com
+- Schulbuch mit vielen Projekten für die micro:bit-Programmmierung: https://microbit.eeducation.at/wiki/Hauptseite  
 
 ## Miniwelten mit Python
-### Python Kara
+1. Python Kara
 - https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
 - In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
-
-### Python Hamstermodell
+2. Python Hamstermodell
 - http://www.java-hamster-modell.de/python.html
 - In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
 
 ## Spezielle Werkzeuge
-### Structorizer IDE
+1. Structorizer IDE
 - https://help.structorizer.fisch.lu
 - Programmieren mit Struktogrammen (incl. Code-Generator für verschiedene Sprachen)
-
-### Sbide Structogramm IDE
+2. Sbide Structogramm IDE
 - https://www.sbide.de/
-
-### Python Tutor
+3. Python Tutor
 - https://pythontutor.com
 - Ausführung und visuelles Debugging von Python-Programmen (Was passiert zur Laufzeit?)
-
-### Diagramme zeichnen
+4. Diagramme zeichnen
 - Mermaid: https://mermaid.live
 - PlantUML: https://plantuml.com
