@@ -70,5 +70,6 @@ Alternativen:
 Als didaktisch ausgefeilte offline IDE verwenden wir Thonny (https://thonny.org).
 
 ### Zentrale Lernunteralge für das persönliche Studium
+
 Als zentrale Unterlagen zum Lernen der Konzepte:
 - https://www.inf-schule.de/imperative-programmierung/python
