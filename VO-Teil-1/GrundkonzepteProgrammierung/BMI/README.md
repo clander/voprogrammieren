@@ -202,16 +202,14 @@ flowchart TD
     J -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']
     K --> R
 
-    J -- Nein --> L{BMI >= 18 und BMI < 26}
+    J -- Nein --> L{BMI < 26}
     L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']
     L -- Nein --> N
     
     M --> R
-    N{BMI >= 26 und BMI < 31} -- Ja --> O[Interpretationsergebnis ist 'Uebergewicht']
+    N{BMI < 31} -- Ja --> O[Interpretationsergebnis ist 'Uebergewicht']
     O --> R
-    N -- Nein --> P
-
-    P{BMI >= 31} -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']
+    N -- Nein --> Q[Interpretationsergebnis ist 'Adipositas']
     Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
 
     R --> S(Programmende)
