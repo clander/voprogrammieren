@@ -47,7 +47,7 @@ Solange die Benutzerin die Zufallszahl noch nicht erraten hat:
         Wir erhöhten die Anzahl der Versuche um 1
         Wir informieren den Benutzer darüber, dass er zu klein geraten hat.
     Sonst: Wenn
-        Wir erhöhjen die Anzahl der Versuche um 1
+        Wir erhöhen die Anzahl der Versuche um 1
         Wir informieren den Benutzer darüber, dass er zu groß geraten hat.
 ```
 ### Ablaufplan / Flussdiagramm
@@ -56,7 +56,7 @@ flowchart TD
     A(Start) --> B[Bereichsminimum festelegen und merken] --> C[Bereichsmaximum festelegen und merken]-->D[Anzahl Versuche auf 0 setzen] -->E[Zufallszahl zwischen Min und Max ermitteln und merken] --> F[erraten auf Nein/False setzen]
     F-->G{erraten?}
     G-->|Nein|H[/Benutzer Zahl eingeben lassen/]
-    H-->I{Eingegebene Zahl == der Zufallszahl?}
+    H-->I{Entspricht die eingegebene Zahl der Zufallszahl?}
     I-->|Ja|M[Ausgabe: Zahl in x Versuchen gefunden]
     M-->N[erraten auf JA/True setzen]
     N-->G
