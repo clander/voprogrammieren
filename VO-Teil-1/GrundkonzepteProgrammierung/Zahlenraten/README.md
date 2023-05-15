@@ -1,22 +1,23 @@
 # Zahlenraten
 (siehe dazu auch: https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/beispiel_zahlenraten)
 ## Worum gehts? (Goal)
-Auf dem Discord-Server deiner Klasse hat der User IAmLegend behauptet, dass er es schafft, jede ausgedachte Zahl innerhalb des Zahlenraumes 1 bis 100 in maximal 7 Versuchen zu erraten. 
+Auf dem Discord-Server deiner Klasse hat der User *IAmLegend* behauptet, dass er es schafft, jede ausgedachte Zahl innerhalb des Zahlenraumes 1 bis 100 in maximal 7 Versuchen zu erraten. 
 
 ## Deine Rolle? (Role)
-Du bist an diesem Trick interessiert und möchtest herausfinden, wie IAmLegend das macht.
+Du bist an diesem Trick interessiert und möchtest herausfinden, wie *IAmLegend* das macht.
 
 ## Für wen? (Audience)
 Du möchtest im Discord-Channel mit der Auflösung des Tricks glänzen.
 ## Die Situation? (Situation)
-Du überlegst dir, dass es hilfreich wäre, einen Discord-Bot in Python zu schreiben, der sich zufällig eine Zahl ausdenkt und dann die Benutzer im Channel nach der Zahl fragt. Du gibst die Zahl ein und bekommst vom Bot dann den Hinweis, ob die gesucht Zahl kleiner, größer oder korrekt ist. Damit kannst du und deine Kollegen trainieren und prüfen, mit welcher Strategie du ebenfalls in maximal 7 Versuchen zur Lösung kommen kannst.
+Du überlegst dir, dass es hilfreich wäre, einen Discord-Bot in Python zu schreiben, der sich zufällig eine Zahl ausdenkt und dann die Benutzer im Channel nach der Zahl fragt. Du gibst die Zahl ein und bekommst vom Bot dann den Hinweis, ob die gesuchte Zahl kleiner, größer oder korrekt ist. Damit können du und deine Kolleg:innen trainieren und prüfen, mit welcher Strategie ihr ebenfalls in maximal 7 Versuchen zur Lösung kommen könnt.
 
-Außerdem könnt ihr damit prüfen, ob IAmLegend den Trick wirklich beherrscht.
+Außerdem könnt ihr damit prüfen, ob *IAmLegend* den Trick wirklich beherrscht.
 
 Bevor du den Bot aktivierst, möchtest du das Programm jedoch lokal bei dir in Python implementieren.
 
 ## Funktionale Anforderungen? (Product)
 Für die Software gelten folgende funktionale Anforderungen:
+
 - Das Programm denkt sich eine zufällige Zahl zwischen 1 und 100 aus.
 - Das Programm fragt dich nach der korrekten Zahl.
 - Das Programm gibt den Hinweis "Kleiner" oder "Größer" aus, wenn du die Zahl nicht erraten hast.
