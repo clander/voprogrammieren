@@ -53,6 +53,7 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
 5. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
    - [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
    - [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
+   - [Weitere Logo-Turtle Beispiele](./GrundkonzepteProgrammierung/TurtleBeispiele/)
 
 [Alle Beispiele](./GrundkonzepteProgrammierung/)
 ## Verwendete Werkzeuge und Unterlagen
