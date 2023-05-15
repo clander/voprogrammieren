@@ -131,7 +131,8 @@ Folgende funktionalen Anforderungen werden im zweiten Sprint implementiert:
 
 - Benutzer:innen bekommen eine Interpretation des BMI als Ergebnis.
 
-## Pseudocode
+## Lösung Variante 1 (ohne ElseIf)
+### Pseudocode 
 Zur Interpretation des berechneten BMI wird wie folgt vorgegangen:
 ```pseudocode
 - Wenn der berechnete BMI < 18:
@@ -144,20 +145,9 @@ Zur Interpretation des berechneten BMI wird wie folgt vorgegangen:
     * Interpretationsergebnis ist "Adipositas"
 - Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
 ```
-Variante:
-```pseudocode
-- Wenn der berechnete BMI < 18:
-    * Interpretationsergebnis ist "Untergewicht"
-- Wenn der berechnete BMI zwischen 18 und 26 (excl.):
-    * Interpretationsergebnis ist "Normalgewicht"
-- Wenn der berechnete BMI zwischen 26 und 31 (excl.):
-    * Interpretationsergebnis ist "Übergewicht"
-- Wenn der berechnete BMI größer oder gleich 31:
-    * Interpretationsergebnis ist "Adipositas"
-- Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
-```
 
-## Ablaufplan
+
+### Ablaufplan
 <!---
 ![](./bilder/sprint2_1.png)
 -->
@@ -192,46 +182,13 @@ flowchart TD
     R --> S(Programmende)
 ```
 
-Alternativer Ablaufplan mit Else-If:
-<!---
-![](./bilder/sprint2_2.png)
--->
-```mermaid
-flowchart TD
-    A(... bis BMI-Berechnung wie oben ... dann ...) --> J{BMI < 18}
-    J -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']
-    K --> R
+### Blockbasierte Implementierung
 
-    J -- Nein --> L{BMI < 26}
-    L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']
-    L -- Nein --> N
-    
-    M --> R
-    N{BMI < 31} -- Ja --> O[Interpretationsergebnis ist 'Uebergewicht']
-    O --> R
-    N -- Nein --> Q[Interpretationsergebnis ist 'Adipositas']
-    Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
-
-    R --> S(Programmende)
-```
-
-
-## Blockbasierte Implementierung
-
-### Variante mit einfachem If:
 ![](./bilder/bmiIteration2_1.png)
 ![](./bilder/bmiIteration2_2.png)
 
+### Python-Implementierung
 
-### Variante mit Else-If:
-
-... wie oben, jedoch mit folgender If-Struktur:
-
-![](./bilder/bmiIteration2_2_V2.png)
-
-## Python-Implementierung
-
-### Variante mit einfachem If:
 ```python
 print('************ BMI-Berechnung ************')
 eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
@@ -253,9 +210,50 @@ ausgabe = 'Der berechnete BMI beträgt ' + str(bmiGerundet) + ' --> ' + interpre
 print(ausgabe)
 ```
 
+## Lösung Variante 2 (mit ElseIf)
+Die folgenden Auszüge zeigen, wie man den Lösungsteil bezüglich der Interpretation des berechneten BMI-Wertes mihilfe einer If-Else-Anweisung etwas eleganter erledigen kann:
+### Pseudocde
+```pseudocode
+- Wenn der berechnete BMI < 18:
+    * Interpretationsergebnis ist "Untergewicht"
+- Wenn der berechnete BMI zwischen 18 und 26 (excl.):
+    * Interpretationsergebnis ist "Normalgewicht"
+- Wenn der berechnete BMI zwischen 26 und 31 (excl.):
+    * Interpretationsergebnis ist "Übergewicht"
+- Wenn der berechnete BMI größer oder gleich 31:
+    * Interpretationsergebnis ist "Adipositas"
+- Ausgabe des BMI-Ergebnisses (gerundet) zusammen mit dem Interpretationsergebnis.
+```
 
-### Variante mit Else-If:
+### Ablaufplan
+Alternativer Ablaufplan mit Else-If:
+<!---
+![](./bilder/sprint2_2.png)
+-->
 
+```mermaid
+flowchart TD
+    A(... bis BMI-Berechnung wie oben ... dann ...) --> J{BMI < 18}
+    J -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']
+    K --> R
+
+    J -- Nein --> L{BMI < 26}
+    L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']
+    L -- Nein --> N
+    
+    M --> R
+    N{BMI < 31} -- Ja --> O[Interpretationsergebnis ist 'Uebergewicht']
+    O --> R
+    N -- Nein --> Q[Interpretationsergebnis ist 'Adipositas']
+    Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
+
+    R --> S(Programmende)
+```
+
+### Blockbasierte Implementierung
+![](./bilder/bmiIteration2_2_V2.png)
+
+### Python-Implementierung
 ```python
 print('************ BMI-Berechnung ************')
 eingabeKilogramm = input('Bitte geben Sie ihr Gewicht in Kilogramm an: ')
@@ -276,7 +274,6 @@ else:
 ausgabe = 'Der berechnete BMI beträgt ' + str(bmiGerundet) + ' --> ' + interpretation
 print(ausgabe)
 ```
-
 # Sprint 3
 
 ## Sprint Backlog
