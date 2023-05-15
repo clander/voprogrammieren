@@ -56,7 +56,7 @@ Der BMI wird im Fitness-Bereich verwendet.
 Der BMI wird im Bereich der Ernährungsberatung verwendet.
 Der BMI wird in der Model-Szene verwendet.
 
-Der BMI weißt für Frauen und Männer leicht unterschiedliche Werte auf.
+Der BMI weißt für Frauen und Männer leicht unterschiedliche Werte auf und liefert in der hier recherchierten Version nur für Erwachsene aussagekräftige Ergebnisse.
 
 Interpretation (im Groben):
 
