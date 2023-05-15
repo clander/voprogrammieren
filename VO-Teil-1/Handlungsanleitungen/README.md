@@ -44,7 +44,7 @@ Vorbereitung: Mit Kreide wird ein Wegenetz in Form eines Graphen (Knoten + Kante
 Der folgende Algorithmus berechnet die kürzesten Wege in diesem Wegenetz ausgehend von einem definierten Startknoten.
 
 1. Schritt: **Startaufstellung**:
-Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Distanz zum Starknoten mit 0 ein. Dieser Startknoten wird zum aktuellen Knoten.
+Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Distanz zum Startknoten mit 0 ein. Dieser Startknoten wird zum aktuellen Knoten.
 
 1. Schritt: **Distanzen zu den Nachbarknoten (Relaxierung)**: Für alle Nachbarknoten des aktuellen Knotens, die noch nicht als besucht markiert sind (also noch nicht grün sind), erledigst du folgende Punkte:
       - Berechne die Entfernung zum Startknoten: Entfernung zum aktuellen Knoten + Entfernung zum Nachbarn.
@@ -54,7 +54,7 @@ Markiere im Graphen zunächst den Startknoten als besucht (grün). Trage die Dis
    - Wenn es nicht besuchte Knoten gibt, suchst du denjenigen mit der aktuell kleinsten Entfernung aus. Markiere diesen Knoten als besucht. Dieser Knoten wird der aktuelle Knoten. Fahre mit Schritt 2 fort.
    - Wenn es keine nicht besuchten Knoten mehr gibt (alle Knoten sind grün), dann ist der Algorithmus zu Ende. Du hast nun die kürzesten Wege vom Startknoten aus zu allen restlichen Knoten des Graphen berechnet.
 
-Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Starknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
+Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewählten Startknoten wissen möchtest, dann kannst du von diesem Knoten aus über die jeweiligen Vorgänger den kürzesten Weg zum Startknoten finden.
 ### Beispiel-Ablauf
 
 ![image](./bilder/dijkstra.gif)
@@ -73,11 +73,11 @@ Schüler:innen übernehmen im Rahmen der folgenden Aufgabenreihe die Rolle eines
 
 Den Befehlssatz sowie die Vorgangsweise zur Programmausführung ist im Folgenden abgebildet. Schüler:innen werden einige Programme selbst laden, ausführen, analysieren, diskutieren und auch schreiben. Dadurch werden sie ein Verständnis dafür bekommen, wie Computer, Handys, Spielkonsolen etc. arbeiten, was sie wirklich können und tun. Sie müssen zur Lösung Handlungsanleitungen genau befolgen.
 
-Ein Grundverständnis für die Arbeitsweise von Von- Neumann-Architekturen hilft bei der Problembewältigung in verschiedensten Alltagssituationen Jungendlicher, in denen entsprechende Informatiksysteme wie Computer, Handys oder auch Spielkonsolen zur Anwendung kommen. Über die Verwendung (Erstellung, Änderung, Interpretation) verschiedener Tabellen werden die Lernenden diese Arbeitsweise kennenlernen und selbst nachvollziehen. Genaues Lesen sowie entsprechend lückenloses Leseverständnis ist zur Lösung der Aufgaben dabei unabdingbar – eine wichtige allgemeinbildende Kompetenz, die der Informatikunterricht vermitteln und überprüfen kann. Verschiedene Aufgabenvarianten sollen es dem Schüler je nach Interessenslage (Individualisierung) zudem ermöglichen, sich nach der Basisaufgabenreihe in verschiedenen Bereichen der Informatik zu vertiefen und die dabei gewonnenen Erkenntnisse auszutauschen.
+Ein Grundverständnis für die Arbeitsweise von Von-Neumann-Architekturen hilft bei der Problembewältigung in verschiedensten Alltagssituationen Jungendlicher, in denen entsprechende Informatiksysteme wie Computer, Handys oder auch Spielkonsolen zur Anwendung kommen. Über die Verwendung (Erstellung, Änderung, Interpretation) verschiedener Tabellen werden die Lernenden diese Arbeitsweise kennenlernen und selbst nachvollziehen. Genaues Lesen sowie entsprechend lückenloses Leseverständnis ist zur Lösung der Aufgaben dabei unabdingbar – eine wichtige allgemeinbildende Kompetenz, die der Informatikunterricht vermitteln und überprüfen kann. Verschiedene Aufgabenvarianten sollen es dem Schüler je nach Interessenslage (Individualisierung) zudem ermöglichen, sich nach der Basisaufgabenreihe in verschiedenen Bereichen der Informatik zu vertiefen und die dabei gewonnenen Erkenntnisse auszutauschen.
 
 ### Handlungsanleitung (FETCH-DECODE-EXECUTE Zyklus)
 
-Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmsauführung relevanten Daten.
+Die folgenden Anweisungen sagen dir im Detail wie die Ausführung jedes Programms ablaufen muss. Halte dich bei der Ausführung der Programme ganz genau an diese Anweisungen. Verwende die erstellte Tabellenvorlage für die Speicherung aller während der Programmausführung relevanten Daten.
 
 Es gelten folgende Abkürzungen:
 
@@ -118,9 +118,9 @@ Führe das Programm nach folgenden Angaben aus:
 |Output|	OUT|	902|	Copy the value from the Accumulator into the Output 'mailbox'| Kopiere den Wert aus dem AR nach A.
 |Branch|	BRA|	6xx|	Branch (jump) to the instruction at the given memory address (xx)|Schreibe die Zahl die im SR steht in das PZ.
 |Branch if positive|	BRP|	8xx|	If the value in the Accumulator is positive (including zero), then branch to the instruction at the given memory address (xx)|Wenn im AR 0 oder eine positive Zahl steht, dann schreibe die Zahl die im SR steht in das PZ.
-|Branch if zero|	BRZ|	7xx|	If the value in the Accumulator is zero, then branch to the instruction at the given memory address (xx)|Wenn im AR 0 steht dann schreibe die Zahl die im SR steht in das PZ.
+|Branch if zero|	BRZ|	7xx|	If the value in the Accumulator is zero, then branch to the instruction at the given memory address (xx)|Wenn im AR 0 steht, dann schreibe die Zahl die im SR steht in das PZ.
 |Halt|	HLT|	000|	Stop execution of the program|Beende die Programmausführung.
-|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value | Du kannst die aktuelle Speicheradresse als Datenwert interpertieren.
+|Data|	DAT|	value of the data|	Indicates that the current memory address holds a data value | Du kannst die aktuelle Speicheradresse als Datenwert interpretieren.
 
 ### Aufgabe 1: Arbeitstabelle
 Erstelle zunächst eine Tabelle wie in der folgenden Abbildung gezeigt. Mit Hilfe dieser Tabelle wirst du später „Computer spielen“, d.h. in die Computerrolle schlüpfen und diverse Befehle, Zahlen etc. festhalten und ändern.
