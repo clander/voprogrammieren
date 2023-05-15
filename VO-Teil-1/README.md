@@ -1,25 +1,23 @@
-# Termin 1
+# Inhalte VO Grundlagen der Programmierung (Termin 1)
 ## Einführung in die didaktischen Grundlagen
 1. Zentrale Ideen der Programmierung
 2. Werkzeuge
 ## Handlungsanleitungen nachvollziehen und entwickeln
-1. Beispiele:
+1. Algorithmen:
   - Dijkstra (durchspielen)
   - Computer spielen einmal anders (durchspielen)
-  - Alternativen und deren Eigenschaften: Suchen, Sortieren, Anleitungen aus dem Alltag etc.
-2. Steuerung von Akteuren in Miniwelten am Beispiel Logo
-  - Erstkontakt mit Programmiersprache Python (textuell, blockbasiert)
-3. Beispiele für die persönliche Vertiefung (für die eigenen Unterrichtsprojekte)
+2. Steuerung von Akteuren in Miniwelten:
+  - Erstkontakt mit der Logo-Turtle mit Python (textuell, blockbasiert)
+3. Beispiele für die persönliche Vertiefung (für die eigenen Unterrichtsprojekte):
     - Weitere Algorithmen:
       - Bubble Sort
       - Binary Search
-    - Computer Spielen einmal anders:
-      - Selbst Computer spielen (Fetch-Decode-Execute) und dabei lernen, wie Computer bzw. CPUs funktionieren und wie man sie auf ganz hardwarenaher Ebene programmieren kann.
     - Alternative Miniwelten
       - Karel
       - Kara
       - Hamster-Modell
       - ...
+    - Pen-And-Paper-Varianten
 ## Grundkonzepte der Programmierung
 Über folgende Beispiele werden die Grundkonzepte der Programmierung eingeführt:
 
