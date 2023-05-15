@@ -58,7 +58,7 @@
 
 ### Programmiersprache und Plattformen
 
-Als Programmiersprache verwenden wir Python.
+Als Programmiersprache verwenden wir Python (https://www.python.org).
 
 Als Online-Plattform für die blockbasierte sowie textuelle Programmierung verwenden wir BlockPy (https://blockpy.cis.udel.edu/blockpy/load). 
 
