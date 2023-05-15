@@ -32,11 +32,43 @@ In einer erweiterten Version der Software könnte man einen Discord-Bot implemen
 - ...
 
 # Implementierungen
-## Blockbasierte Implementierung Basisvariante
+## Basisvariante
+
+### Pseudocode
+```python
+Wir ermitteln eine Zufallszahl im definierten Zahlenbereich
+Solange die Benutzerin die Zufallszahl noch nicht erraten hat:
+    Die Benutzerin ratet ein Zahl
+    Wenn die geratete Zahl der Zufallszahl entspricht:
+        Wir erhöhen die Anzahl der Versuche um 1
+        Wir informieren den Benutzer, dass er die Zahl in [x] Versuchen erraten hat
+        Wir merken uns, dass der Benutzer die Zahl erraten hat und beenden das Programm.
+    Sonst: Wenn die vom Benutzer geratene Zahl kleiner als die Zufallszahl ist:
+        Wir erhöhten die Anzahl der Versuche um 1
+        Wir informieren den Benutzer darüber, dass er zu klein geraten hat.
+    Sonst: Wenn
+        Wir erhöhjen die Anzahl der Versuche um 1
+        Wir informieren den Benutzer darüber, dass er zu groß geraten hat.
+```
+### Ablaufplan / Flussdiagramm
+```mermaid
+flowchart TD
+    A(Start) --> B[Bereichsminimum festelegen und merken] --> C[Bereichsmaximum festelegen und merken]-->D[Anzahl Versuche auf 0 setzen] -->E[Zufallszahl zwischen Min und Max ermitteln und merken] --> F[erraten auf Nein/False setzen]
+    F-->G{erraten?}
+    G-->|Nein|H[/Benutzer Zahl eingeben lassen/]
+    H-->I{Eingegebene Zahl == der Zufallszahl?}
+    I-->|Ja|M[Ausgabe: Zahl in x Versuchen gefunden]
+    M-->N[erraten auf JA/True setzen]
+    N-->G
+    I-->|Nein|J{Eingegebene Zahl < Zufallszahl?}
+    J-->|Ja|L[Ausgabe: Gesuchte Zahl ist größer]-->G
+    J-->|Nein|K[Ausgabe: Gesuchte Zahl ist kleiner]-->G
+```
+### Blockbasierte Implementierung
 
 ![](./bilder/zahlenraten1.png)
 ![](./bilder/zahlenraten2.png)
-## Python-Implementierung Basisvariante
+### Python-Implementierung
 ```python
 import random
 min = 1
@@ -60,12 +92,12 @@ while not gefunden:
             anzahlVersuche += 1
 print('Auf Wiedersehen!')
 ```
-
-## Blockbasierte Implementierung KI-Variante
+## KI-Variante (Binäre Suche)
+### Blockbasierte Implementierung
 ![](./bilder/zahlenratenki1.png)
 ![](./bilder/zahlenratenki2.png)
 ![](./bilder/zahlenratenki3.png)
-## Python-Implementierung KI-Variante
+### Python-Implementierung KI-Variante (Binäre Suche)
 
 ```python
 def binaersuche_rekursiv(werte, start, ende, anzahlVersuche):
