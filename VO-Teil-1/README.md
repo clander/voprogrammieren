@@ -1,7 +1,8 @@
 # Inhalte VO Grundlagen der Programmierung (Termin 1)
 
 ## Handlungsanleitungen nachvollziehen und entwickeln
-[Unterlagen zum Thema Handlungsanleitungen](./Handlungsanleitungen/)
+Es werden folgende Aspekte in der LV behandelt:
+
 1. Kürzeste Wege mit Dijkstra:
    - Der Algorithmus als Handlungsanleitung zum selber Probieren
      - Kennenlernen eines der wichtigsten Algorithmen der Informatik
@@ -24,12 +25,15 @@
    - Bubble Sort (Rollenspiel)
    - Binary Search
 
+[Alle Unterlagen zum Thema Handlungsanleitungen](./Handlungsanleitungen/)
 ## Didaktische Grundlagen
+Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werden auf folgenden Seiten beschrieben und im Rahmen der LV eingestreut:
+
 1. [Zentrale Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
 2. [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
 ## Grundkonzepte der Programmierung
 
-Über folgende Beispiele werden die Grundkonzepte der Programmierung eingeführt:
+Über folgende Beispiele werden die Grundkonzepte der Programmierung in der LV eingeführt:
 
 1. Steuerung von Akteuren in Miniwelten am Beispiel Logo-Turtle (Urvater der Miniwelten)
    - [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
@@ -41,7 +45,7 @@
      - Snap! (https://scratch.mit.edu)
      - ... siehe auch [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
    - Pen-And-Paper-Spiele (Robotersteuerung am Papier, siehe z.B. ![micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite), S. 11 bis S. 18)
-2. Countdown in Python
+2. [Countdown](./GrundkonzepteProgrammierung/Countdown/) in Python
 3. [BMI](./GrundkonzepteProgrammierung/BMI/README.md) - Body Mass Index
    - BMI als [Excel-Lösung](./GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx) 
    - BMI in den ersten 3 Iterationen
