@@ -1,5 +1,5 @@
 # Zahlenraten
-
+(siehe dazu auch: https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/beispiel_zahlenraten)
 ## Worum gehts? (Goal)
 Auf dem Discord-Server deiner Klasse hat der User IAmLegend behauptet, dass er es schafft, jede ausgedachte Zahl innerhalb des Zahlenraumes 1 bis 100 in maximal 7 Versuchen zu erraten. 
 
