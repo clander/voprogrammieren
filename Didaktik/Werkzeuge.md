@@ -1,13 +1,14 @@
-# Offizielle Python-Website
+# Werkzeuge, Unterlagen
+## Offizielle Python-Website
 https://www.python.org
 
-# Python Referenzen
+## Python Referenzen
 - https://www.w3schools.com/python/default.asp
 - https://docs.python.org/3/
   - Sprachreferenz: https://docs.python.org/3/reference/index.html
   - Standardbibliothek: https://docs.python.org/3/library/index.html
 
-# Python Bibliotheken
+## Python Bibliotheken
 - Python Turtle Graphics: https://docs.python.org/3/library/turtle.html
 - PyGame (Game Development): https://www.pygame.org/news
 - TkInter (GUI): https://docs.python.org/3/library/tkinter.html
@@ -17,7 +18,7 @@ https://www.python.org
 - Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
 - Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
-# Spezielle didaktische Angebote
+## Spezielle didaktische Angebote
 - Inf-Schule (TU Kaiserslautern): https://www.inf-schule.de/imperative-programmierung/python
 - Programmierkonzepte.ch (PH Bern): https://www.programmierkonzepte.ch/
 - Uni Regensburg: https://www.uni-regensburg.de/physik/fakultaet/studium/it-ausbildung/python/index.html
@@ -32,18 +33,18 @@ https://www.python.org
   - https://open.hpi.de/courses/pythonjunior-schule2023
 - Python Bakery (Kompletter Online-Kurs mit Videos, Unterlagen, Beispielen): 
   - https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37
-## Offizielles Python Tutorial (de)
+## Einige interessante Tutorials
+### Offizielles Python Tutorial (de)
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
-## Python 3 - Das umfassende Handbuch
+### Python 3 - Das umfassende Handbuch
 - https://openbook.rheinwerk-verlag.de/python/01_001.html#u1
-## Python lernen in 4 Stunden
+### Python lernen in 4 Stunden
 - https://youtu.be/RBpK8C3N-Y8
-## EinfachInfo Pythonkurs
+### EinfachInfo Pythonkurs
 - https://youtube.com/playlist?list=PLywzm7Lq4JoKvxNR7ROv_gJ09roJ-UDRt
-## Socratia Python Tutorials:
+### Socratia Python Tutorials:
 - https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-
 
-# Entwicklungsumgebungen und Hilfswerkzeuge
 ## (Didaktische) IDEs
   - BlockPy: https://think.cs.vt.edu/blockpy/ (online, blockbasiert, textuell, Datenanalyse, Turtle, ...)
     - Editor: https://blockpy.cis.udel.edu/blockpy/load
@@ -66,25 +67,27 @@ https://www.python.org
     - Arcade (Spieleentwicklung): https://arcade.makecode.com
   - Schulbuch mit vielen Projekten für die micro:bit-Programmmierung: https://microbit.eeducation.at/wiki/Hauptseite  
 
-## Python Kara
+## Miniwelten mit Python
+### Python Kara
 - https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
 - In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
 
-## Python Hamstermodell
+### Python Hamstermodell
 - http://www.java-hamster-modell.de/python.html
 - In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
 
-## Structorizer IDE
+## Spezielle Werkzeuge
+### Structorizer IDE
 - https://help.structorizer.fisch.lu
 - Programmieren mit Struktogrammen (incl. Code-Generator für verschiedene Sprachen)
 
-## Sbide Structogramm IDE
+### Sbide Structogramm IDE
 - https://www.sbide.de/
 
-## Python Tutor
+### Python Tutor
 - https://pythontutor.com
 - Ausführung und visuelles Debugging von Python-Programmen (Was passiert zur Laufzeit?)
 
-## Diagramme zeichnen
+### Diagramme zeichnen
 - Mermaid: https://mermaid.live
 - PlantUML: https://plantuml.com
