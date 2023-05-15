@@ -1,27 +1,35 @@
 # Inhalte VO Grundlagen der Programmierung (Termin 1)
-## Einführung in die didaktischen Grundlagen
 
 ## Handlungsanleitungen nachvollziehen und entwickeln
+[Unterlagen zum Thema Handlungsanleitungen](./Handlungsanleitungen/)
 1. Kürzeste Wege mit Dijkstra:
-   - Menschliche / historische Komponente (Dijkstra, Turing-Award)
-   - Auswirkungen auf die Realität: 
-     - Satellitennavigation in Autos, Handies, Smart-Watches etc. 
-     - Navigationssysteme als soziotechnische Systeme und ihre Auswirkungen (Verkehr, Orientierungsvermögen, Hausverstand ...)
-   - Der Algorithmus als Handlungsanleitung
+   - Der Algorithmus als Handlungsanleitung zum selber Probieren
+     - Kennenlernen eines der wichtigsten Algorithmen der Informatik
+     - Starker Lebensweltbezug
+     - Effizienz: Greedy-Algorithmus (in jedem Teilschritt die aktuell beste Teillösung finden)
+   - Aspekt Mensch-Computer-Gesellschaft:
+     - Menschliche / historische Komponente (Dijkstra, Turing-Award)
+     - Auswirkungen auf die Realität: 
+       - Routenplaner und GPS-Navigation in Autos, Handies, Smart-Watches, Militär etc. 
+       - Routenplaner und GPS-Navigation als soziotechnische Systeme und ihre Auswirkungen (Verkehr, Orientierungsvermögen, Hausverstand ...)
 2. Computer spielen einmal anders:
-   - Wie funktioniert ein Computer?
-   - Wie wird ein Computer programmiert?
-   - Was kann ein Computer?
-   - 
+   - Arbeitsweise einer Von-Neumann-Architektur als Handlungsanleitung zum selber Probieren
+   - Zentrale Ideen:
+     - (komplexere) Handlungsanleitungen genau lesen und befolgen
+     - Lernen wie eine Von-Neumann-Architektur funktioniert
+     - Lernen, mit man einen Computer programmiert
+     - Lernen, was ein Computer eigentlich bei der Ausführung von Programmen denkt
+     - ...
 3. Beispiele für die persönliche Vertiefung (für die eigenen Unterrichtsprojekte):
-    - Weitere Algorithmen:
-      - Bubble Sort (Rollenspiel)
-      - Binary Search
-## Grundkonzepte der Programmierung
+   - Bubble Sort (Rollenspiel)
+   - Binary Search
 
-### Didaktische Grundlagen
+## Didaktische Grundlagen
 1. [Zentrale Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
 2. [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
+## Grundkonzepte der Programmierung
+
+[Beispiele Thema Grundkonzepte der Programmierung](./GrundkonzepteProgrammierung/)
 ### Beispiele
 
 Über folgende Beispiele werden die Grundkonzepte der Programmierung eingeführt:
@@ -46,10 +54,11 @@
    - [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
    - [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
 
+## Verwendete Werkzeuge und Unterlagen
 ### Programmiersprache und Plattformen
 
 Als Programmiersprache verwenden wir Python (https://www.python.org).
-
+### Plattformen
 - Dokumentation: https://docs.python.org/3/
 - Sprachreferenz: https://docs.python.org/3/reference/index.html
 - Standardbibliothek: https://docs.python.org/3/library/index.html
@@ -71,3 +80,6 @@ Als zentrale Unterlagen zum Lernen der Konzepte und Prozesse anhand von Beispiel
 Als inhaltlich ausgezeichnete Videokurse werden empfohlen:
 - Python-Kurs auf openHPI: https://open.hpi.de/courses/pythonjunior-schule2023
 - Python Bakery (Kompletter Online-Kurs mit Videos, Unterlagen, Beispielen): https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37
+
+
+[Gesamtliste für Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
