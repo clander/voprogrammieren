@@ -174,24 +174,22 @@ flowchart TD
     H --> I[BMI auf 2 Stellen runden und Ergebnis in Variable speichern]
 
     I --> J{BMI < 18}
-    J:::neu -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']:::neu
-    K --> L:::neu
+    J -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']
+    K --> L
 
     J -- Nein --> L{BMI >= 18 und BMI < 26}
-    L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']:::neu
-    L:::neu -- Nein --> N:::neu
+    L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']
+    L -- Nein --> N
     
     M --> N{BMI >= 26 und BMI < 31}
     N -- Ja --> O[Interpretationsergebnis ist 'Uebergewicht']
-    O:::neu --> P:::neu
+    O --> P
     N -- Nein --> P{BMI >= 31}
 
-    P -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']:::neu
+    P -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']
     P -- Nein --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
-    Q --> R:::neu
+    Q --> R
     R --> S(Programmende)
-
-    classDef neu fill:#bbb
 ```
 
 Alternativer Ablaufplan mit Else-If:
@@ -201,24 +199,22 @@ Alternativer Ablaufplan mit Else-If:
 ```mermaid
 flowchart TD
     A(... bis BMI-Berechnung wie oben ... dann ...) --> J{BMI < 18}
-    J:::neu -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']:::neu
-    K --> R:::neu
+    J -- Ja --> K[Interpretationsergebnis ist 'Untergewicht']
+    K --> R
 
     J -- Nein --> L{BMI >= 18 und BMI < 26}
-    L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']:::neu
-    L:::neu -- Nein --> N:::neu
+    L -- Ja --> M[Interpretationsergebnis ist 'Normalgewicht']
+    L -- Nein --> N
     
     M --> R
     N{BMI >= 26 und BMI < 31} -- Ja --> O[Interpretationsergebnis ist 'Uebergewicht']
-    O:::neu --> R
+    O --> R
     N -- Nein --> P
 
-    P{BMI >= 31}:::neu -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']:::neu
-    Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]:::neu
+    P{BMI >= 31} -- Ja --> Q[Interpretationsergebnis ist 'Adipositas']
+    Q --> R[Gerundeten BMI und Interpretationsergebnis ausgeben]
 
     R --> S(Programmende)
-
-    classDef neu fill:#bbb
 ```
 
 
