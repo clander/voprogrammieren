@@ -29,9 +29,6 @@
 2. [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
 ## Grundkonzepte der Programmierung
 
-[Beispiele Thema Grundkonzepte der Programmierung](./GrundkonzepteProgrammierung/)
-### Beispiele
-
 Über folgende Beispiele werden die Grundkonzepte der Programmierung eingeführt:
 
 1. Steuerung von Akteuren in Miniwelten am Beispiel Logo-Turtle (Urvater der Miniwelten)
@@ -54,6 +51,7 @@
    - [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
    - [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
 
+[Alle Beispiele](./GrundkonzepteProgrammierung/)
 ## Verwendete Werkzeuge und Unterlagen
 ### Programmiersprache und Plattformen
 
