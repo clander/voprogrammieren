@@ -38,7 +38,7 @@ In einer erweiterten Version der Software könnte man einen Discord-Bot implemen
 Wir ermitteln eine Zufallszahl im definierten Zahlenbereich
 Solange die Benutzerin die Zufallszahl noch nicht erraten hat:
     Die Benutzerin ratet eine Zahl
-    Wenn die geratete Zahl der Zufallszahl entspricht:
+    Wenn die geratene Zahl der Zufallszahl entspricht:
         Wir erhöhen die Anzahl der Versuche um 1
         Wir informieren den Benutzer, dass er die Zahl in [x] Versuchen erraten hat
         Wir merken uns, dass der Benutzer die Zahl erraten hat und beenden das Programm.
@@ -55,7 +55,8 @@ flowchart TD
     A(Start) --> B[Bereichsminimum festelegen und merken] --> C[Bereichsmaximum festelegen und merken]-->D[Anzahl Versuche auf 0 setzen] -->E[Zufallszahl zwischen Min und Max ermitteln und merken] --> F[erraten auf Nein/False setzen]
     F-->G{erraten?}
     G-->|Nein|H[/Benutzer Zahl eingeben lassen/]
-    H-->I{Entspricht die eingegebene Zahl der Zufallszahl?}
+    G-->|Ja|O[Programmende]
+    H-->I{Eingegebene Zahl == Zufallszahl?}
     I-->|Ja|M[Ausgabe: Zahl in x Versuchen gefunden]
     M-->N[erraten auf JA/True setzen]
     N-->G
@@ -123,4 +124,90 @@ moeglicheWerte = list(range(min,max+1))
 binaersucheKi(moeglicheWerte)
 
 ```
+
+## Microsoft MakeCode Arcade Variante
+
+### Blöcke
+![](./bilder/zahlenraten-arcade.png)
+
+### Python Code (für)
+```python
+ratezahl = 0
+game.splash("*** ZAHLEN RATEN ***", "")
+zufallszahl = randint(0, 10)
+erraten = False
+versuche = 0
+game.splash(zufallszahl)
+while not (erraten):
+    ratezahl = game.ask_for_number("Rate!")
+    if ratezahl == zufallszahl:
+        versuche += 1
+        erraten = True
+        game.splash("Erraten, in " + str(versuche) + " Versuchen!")
+    elif ratezahl < zufallszahl:
+        game.splash("Größer!")
+        versuche += 1
+    else:
+        game.splash("Kleiner!")
+        versuche += 1
+game.set_game_over_effect(True, effects.confetti)
+game.game_over(True)
+
+```
+## Microsoft MakeCode micro:bit Variante
+
+### Blöcke
+![](./bilder/zahlenraten-microbit.png)
+### Python Code für micro:bit
+```python
+def on_button_pressed_a():
+    global ratezahl
+    ratezahl += -1
+    if ratezahl < 0:
+        ratezahl = 0
+    basic.show_number(ratezahl)
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
+def on_gesture_shake():
+    global versuche
+    if ratezahl == zufallszahl:
+        basic.show_icon(IconNames.HAPPY)
+        basic.pause(1000)
+        versuche += 1
+        basic.show_string("" + convert_to_text(versuche) + " x")
+        control.reset()
+    elif ratezahl < zufallszahl:
+        basic.show_leds("""
+            . . . . .
+                        . . # . .
+                        . # # # .
+                        # # # # #
+                        . . . . .
+        """)
+        versuche += 1
+    else:
+        basic.show_leds("""
+            . . . . .
+                        # # # # #
+                        . # # # .
+                        . . # . .
+                        . . . . .
+        """)
+        versuche += 1
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+
+def on_button_pressed_b():
+    global ratezahl
+    ratezahl += 1
+    basic.show_number(ratezahl)
+input.on_button_pressed(Button.B, on_button_pressed_b)
+
+versuche = 0
+zufallszahl = 0
+ratezahl = 0
+ratezahl = 0
+zufallszahl = randint(0, 10)
+
+```
+
 
