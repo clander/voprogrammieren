@@ -21,8 +21,6 @@ Für die Software gelten folgende funktionale Anforderungen:
 - Das Programm fragt dich nach der korrekten Zahl.
 - Das Programm gibt den Hinweis "Kleiner" oder "Größer" aus, wenn du die Zahl nicht erraten hast.
 - Das Programm gibt die Anzahl der Versuche aus, wenn du die Zahl erraten hast.
-- ...
-- 
 ## Funktionale Anforderungen Discord-Bot-KI
 In einer erweiterten Version der Software könnte man einen Discord-Bot implementieren, der in einem zweiten Modus eine von den Usern des Discord-Channels ausgedachte Zahl zwischen 1 und 100 mit maximal 7 Versuchen finden kann ... eine kleine KI sozusagen.
 ## Die Bewertungsstandards? (Standards)
