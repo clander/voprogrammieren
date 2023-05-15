@@ -67,9 +67,8 @@ Alternativen:
 - Gratis-Variante der Python-Einführung (incl. Turtle) auf Trinket (https://hourofpython.com)
 - TigerJython (https://python-online.ch).
 
-Als didaktisch ausgefeilte offline IDE verwenden wir Thonny (https://thonny.org).
-
+Als didaktische offline-IDE verwenden wir Thonny (https://thonny.org).
 ### Zentrale Lernunteralge für das persönliche Studium
 
-Als zentrale Unterlagen zum Lernen der Konzepte:
+Als zentrale Unterlagen zum Lernen der Konzepte anhand von Beispielen wird empfohlen:
 - https://www.inf-schule.de/imperative-programmierung/python
