@@ -46,10 +46,10 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
      - ... siehe auch [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
    - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus diesem[micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
 2. [Countdown](./GrundkonzepteProgrammierung/Countdown/) in Python
-3. [BMI](./GrundkonzepteProgrammierung/BMI/README.md) - Body Mass Index
+3. [Zahlenraten](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
+4. [BMI](./GrundkonzepteProgrammierung/BMI/README.md) - Body Mass Index
    - BMI als [Excel-Lösung](./GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx) 
    - BMI in den ersten 3 Iterationen
-4. [Zahlenraten](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
 5. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
    - [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
    - [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
