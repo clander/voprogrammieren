@@ -3,7 +3,7 @@
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
 ### Inhalte Modul 3
-Im Hochschullehrgang erwerben die Studierenden Kompetenzen und Wissen in Bezug auf mediendidaktische, individuelle und gesellschaftliche Aspekte, Programmierung, Computer- Systeme und Anwendungen. Dabei erarbeiten sie sich Kompetenzen zu den drei zentralen Perspektiven des Frankfurt Dreiecks (technisch-medial, gesellschaftlich-kulturell und interaktionsbezogen) und kombinieren diese mit den nötigen Grundlagen der Medienbildung und Informatik.
+Im Hochschullehrgang erwerben die Studierenden Kompetenzen und Wissen in Bezug auf mediendidaktische, individuelle und gesellschaftliche Aspekte, Programmierung, Computer-Systeme und Anwendungen. Dabei erarbeiten sie sich Kompetenzen zu den drei zentralen Perspektiven des Frankfurt Dreiecks (technisch-medial, gesellschaftlich-kulturell und interaktionsbezogen) und kombinieren diese mit den nötigen Grundlagen der Medienbildung und Informatik.
 
 Zudem bauen die Studierenden Wissensinhalte und Kompetenzen in Bezug auf wesentliche Themenbereiche des Unterrichts der Digitalen Grundbildung (DigiKomp Kategorien) auf. Sie thematisieren die fachdidaktische Umsetzung dieser Kenntnisse und Fähigkeiten, üben diese ein und bereiten sich auf den Unterricht vor.
 
