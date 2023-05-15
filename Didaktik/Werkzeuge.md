@@ -63,21 +63,21 @@ https://makecode.microbit.org
 
 ## Miniwelten mit Python
 1. Python Kara
-- https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
-- In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
+   - https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
+   - In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
 2. Python Hamstermodell
-- http://www.java-hamster-modell.de/python.html
-- In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
+   - http://www.java-hamster-modell.de/python.html
+   - In der IDE verbaut sind sehr viele Problemstellungen unterschiedlichen Schwierigkeitsgrades
 
 ## Spezielle Werkzeuge
 1. Structorizer IDE
-- https://help.structorizer.fisch.lu
-- Programmieren mit Struktogrammen (incl. Code-Generator für verschiedene Sprachen)
+   - https://help.structorizer.fisch.lu
+   - Programmieren mit Struktogrammen (incl. Code-Generator für verschiedene Sprachen)
 2. Sbide Structogramm IDE
-- https://www.sbide.de/
+   - https://www.sbide.de/
 3. Python Tutor
-- https://pythontutor.com
-- Ausführung und visuelles Debugging von Python-Programmen (Was passiert zur Laufzeit?)
+   - https://pythontutor.com
+   - Ausführung und visuelles Debugging von Python-Programmen (Was passiert zur Laufzeit?)
 4. Diagramme zeichnen
-- Mermaid: https://mermaid.live
-- PlantUML: https://plantuml.com
+   - Mermaid: https://mermaid.live
+   - PlantUML: https://plantuml.com
