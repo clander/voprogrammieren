@@ -64,6 +64,7 @@ https://www.python.org
     - Programmierung von Micro:bit incl. Emulator: https://makecode.microbit.org/#
     - Minecraft: https://minecraft.makecode.com/#
     - Arcade (Spieleentwicklung): https://arcade.makecode.com
+  - Schulbuch mit vielen Projekten für die micro:bit-Programmmierung: https://microbit.eeducation.at/wiki/Hauptseite  
 
 ## Python Kara
 - https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
