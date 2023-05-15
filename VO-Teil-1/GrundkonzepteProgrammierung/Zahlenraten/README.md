@@ -130,7 +130,7 @@ binaersucheKi(moeglicheWerte)
 ### Blöcke
 ![](./bilder/zahlenraten-arcade.png)
 
-### Python Code (für)
+### Python Code (MakeCode Arcade)
 ```python
 ratezahl = 0
 game.splash("*** ZAHLEN RATEN ***", "")
@@ -158,7 +158,7 @@ game.game_over(True)
 
 ### Blöcke
 ![](./bilder/zahlenraten-microbit.png)
-### Python Code für micro:bit
+### Python Code (MakeCode micro:bit)
 ```python
 def on_button_pressed_a():
     global ratezahl
