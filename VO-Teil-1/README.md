@@ -50,7 +50,6 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
    - BMI als [Excel-Lösung](./GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx) 
    - BMI in den ersten 3 Iterationen
 4. [Zahlenraten](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
-   - Siehe dazu auch: https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/beispiel_zahlenraten 
 5. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
    - [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
    - [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
