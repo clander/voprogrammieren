@@ -3,7 +3,10 @@
 1. Zentrale Ideen der Programmierung
 2. Werkzeuge
 ## Handlungsanleitungen nachvollziehen und entwickeln
-1. Algorithmen nachvollziehen am Beispiel Dijkstra
+1. Beispiele:
+  - Dijkstra (durchspielen)
+  - Computer spielen einmal anders (durchspielen)
+  - Alternativen und deren Eigenschaften: Suchen, Sortieren, Anleitungen aus dem Alltag etc.
 2. Steuerung von Akteuren in Miniwelten am Beispiel Logo
   - Erstkontakt mit Programmiersprache Python (textuell, blockbasiert)
 3. Beispiele für die persönliche Vertiefung (für die eigenen Unterrichtsprojekte)

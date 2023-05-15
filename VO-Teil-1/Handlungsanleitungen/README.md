@@ -164,8 +164,10 @@ Tabellenvorlage:
 ### Aufgabe 2: Laden und Ausführung beobachten
 Nun wird dein Lehrer „Computer spielen“, indem er ein Programm lädt und ausführt. Er wird seine Vorgangsweise genau erklären. Beobachte ihn ganz genau, mache dir wo nötig Notizen und stelle nach der Ausführung deine offenen
 Fragen.
+
 ### Aufgabe 3: Programm übertragen 
 Übertrage eines der folgenden Programme in deine Arbeitsspeicher-Tabelle.
+
 ### Aufgabe 4: Programm ausführen
 1. Ausführung des Programms: Führe das in die Tabelle übertragene Programm entsprechend den Anweisungen (BEFEHLSSATZ, FETCH-DECODE-EXECUTE) bzw. entsprechend der Vorgangsweise deines Lehrers selbst aus.
 2. Zweck des Programms herausfinden: Versuche den Zweck des Programms herauszufinden. Folgende Teilaufgaben helfen dir dabei:
@@ -188,7 +190,6 @@ Addition von zwei Zahlen:
 |05||HLT||
 |06||||
 |07|A|DAT|0|
-...
 
 Welche ist die größere Zahl?
 
