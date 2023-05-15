@@ -19,9 +19,8 @@ https://www.python.org
 - Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
 
 ## Spezielle didaktische Angebote
-- Inf-Schule (TU Kaiserslautern): https://www.inf-schule.de/imperative-programmierung/python
-- Programmierkonzepte.ch (PH Bern): https://www.programmierkonzepte.ch/
-- Uni Regensburg: https://www.uni-regensburg.de/physik/fakultaet/studium/it-ausbildung/python/index.html
+- Imperative Programmierung mit Python (TU Kaiserslautern): https://www.inf-schule.de/imperative-programmierung/python
+- Skript "Programmieren in Python" der Uni Regensburg:
   - https://www.uni-regensburg.de/assets/physik/fakultaet/IT/Tutorials-Installation-Programming-Environment/Programmieren_in_Python.pdf
 - TigerJython-Projekt: https://www.tigerjython.ch/de/tutorials
     - TigerJython for Kids: https://www.tigerjython4kids.ch
@@ -33,7 +32,7 @@ https://www.python.org
   - https://open.hpi.de/courses/pythonjunior-schule2023
 - Python Bakery (Kompletter Online-Kurs mit Videos, Unterlagen, Beispielen): 
   - https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37
-## Einige interessante Tutorials
+## Weitere gute Tutorials
 ### Offizielles Python Tutorial (de)
 - https://py-tutorial-de.readthedocs.io/de/python-3.3/
 ### Python 3 - Das umfassende Handbuch
