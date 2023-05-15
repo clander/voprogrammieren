@@ -37,7 +37,7 @@ In einer erweiterten Version der Software könnte man einen Discord-Bot implemen
 ```python
 Wir ermitteln eine Zufallszahl im definierten Zahlenbereich
 Solange die Benutzerin die Zufallszahl noch nicht erraten hat:
-    Die Benutzerin ratet ein Zahl
+    Die Benutzerin ratet eine Zahl
     Wenn die geratete Zahl der Zufallszahl entspricht:
         Wir erhöhen die Anzahl der Versuche um 1
         Wir informieren den Benutzer, dass er die Zahl in [x] Versuchen erraten hat
