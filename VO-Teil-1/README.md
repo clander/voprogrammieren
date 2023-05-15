@@ -44,7 +44,7 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
      - Scratch (https://scratch.mit.edu)
      - Snap! (https://scratch.mit.edu)
      - ... siehe auch [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
-   - Pen-And-Paper-Spiele (Robotersteuerung am Papier, siehe z.B. ![micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite), S. 11 bis S. 18)
+   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier wie in diesem ![micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
 2. [Countdown](./GrundkonzepteProgrammierung/Countdown/) in Python
 3. [BMI](./GrundkonzepteProgrammierung/BMI/README.md) - Body Mass Index
    - BMI als [Excel-Lösung](./GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx) 
