@@ -101,17 +101,17 @@ print('Auf Wiedersehen!')
 
 ### Python Code (MakeCode Arcade)
 ```python
+versuche = 0
 ratezahl = 0
 game.splash("*** ZAHLEN RATEN ***", "")
 zufallszahl = randint(0, 10)
 erraten = False
-versuche = 0
 while not (erraten):
     ratezahl = game.ask_for_number("Rate!")
     if ratezahl == zufallszahl:
         versuche += 1
         erraten = True
-        game.splash("Erraten, in " + str(versuche) + " Versuchen!")
+        game.splash("Erraten, in " + ("" + str(versuche)) + " Versuchen!")
     elif ratezahl < zufallszahl:
         game.splash("Größer!")
         versuche += 1
@@ -120,7 +120,6 @@ while not (erraten):
         versuche += 1
 game.set_game_over_effect(True, effects.confetti)
 game.game_over(True)
-
 ```
 ## Lösung als Spiel mit Microsoft MakeCode micro:bit
 
