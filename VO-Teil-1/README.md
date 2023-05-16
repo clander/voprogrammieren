@@ -5,14 +5,7 @@ Es werden folgende Aspekte in der LV behandelt:
 
 1. Kürzeste Wege mit Dijkstra:
    - Der Algorithmus als Handlungsanleitung zum selber Probieren
-     - Kennenlernen eines der wichtigsten Algorithmen der Informatik
-     - Starker Lebensweltbezug
-     - Effizienz: Greedy-Algorithmus (in jedem Teilschritt die aktuell beste Teillösung finden)
-   - Aspekt Mensch-Computer-Gesellschaft:
-     - Menschliche / historische Komponente (Dijkstra, Turing-Award)
-     - Auswirkungen auf die Realität: 
-       - Routenplaner und GPS-Navigation in Autos, Handies, Smart-Watches, Militär etc. 
-       - Routenplaner und GPS-Navigation als soziotechnische Systeme und ihre Auswirkungen (Verkehr, Orientierungsvermögen, Hausverstand ...)
+
 2. Computer spielen einmal anders:
    - Arbeitsweise einer Von-Neumann-Architektur als Handlungsanleitung zum selber Probieren
    - Zentrale Ideen:

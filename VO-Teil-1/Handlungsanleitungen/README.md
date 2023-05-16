@@ -8,11 +8,12 @@ Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Pr
 (https://de.wikipedia.org/wiki/Algorithmus)
 
 Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, bedingte Anweisungen sowie (bedingte) Wiederholungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
-## Suchen mit der Binären Suche
+## Suchen mit der binären Suche
 "Ich wette, dass ich mit maximal 20 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und einer Million erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist." 
 
 Wie funktioniert der Trick? Entwickle einen Algorithmus!
-### Algorithmus
+
+**Algorithmus**
 * https://de.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search
 * https://de.wikipedia.org/wiki/Binäre_Suche
 
@@ -34,13 +35,43 @@ Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt
 * Enaktive Erkundung von Bubblesort und anderen (Sortier-)Algorithmen: https://visualgo.net/en/sorting -> Bubble-Sort auswählen
 
 ## Kürzeste-Wege-Algorithmus von Dijkstra
-### Handlungsanleitung
 
-Vorbereitung: Mit Kreide wird ein Wegenetz in Form eines Graphen (Knoten + Kanten + Kantengewichte + Daten pro Knoten) auf den Asphalt im Schulhof oder auf die Tafel gezeichnet. Auf dieser Datenstruktur werden nun der folgende Algorithmus ausgeführt.
+### Algorithmus
+* https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
+* Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
+### Ebenen der Betrachtung
+- Routenplaner als soziotechnische Systeme: 
+  - Anwendungsgebiete: 
+    - Routenplanung (Verkehr)
+    - Routing im Internet
+  - Verwendung in Autos, Handies, Smart-Watches, Militär etc. 
+  - Auswirkungen auf Verkehr, Militär, Wirtschaft, Orientierungsvermögen, Hausverstand ...
+- Menschliche / historische Komponente 
+  - Dijkstra und seine Leistungen in der Informatik
+  - Turing Award
+- Algorithmen und Datenstrukturen
+  - Algorithmenkategorie (Greedy-Algorithmus)
+    - In jedem Teilschritt das optimalste Ergebnis finden
+  - Laufzeitkomplexität:
+    - Hängt ab von der Anzahl der Knoten |E| und der Anzahl der Kanten |V| und der verwendeten Datenstruktur Q für die Verspeicherung der Knoten 
+    -  Falls ein einfaches Array für Q verwendet wird: O(|V|^2)
+    -  Falls eine Vorrangwarteschlange in Form eines Fibonacci Heap für Q verwendet wird: O(|V|log(|V|)+|E|)
+  - Benötigte Datenstrukturen
+    - Graphen
+    - Listen / Warteschlangen / Bäume
+  - Handlungsanleitung (Algorithmus)
+### Datenstruktur
+
+Vorbereitung: Mit Kreide wird ein Wegenetz in Form eines Graphen (Knoten + Kanten) mit einigen Zusatzinformationen (Kantengewichte, Daten pro Knoten) auf den Asphalt im Schulhof oder auf die Tafel gezeichnet. 
+
+Das Konzept des Graphen als Datenstruktur für die Darstellung von Wegenetzen wird eingeführt. Auf dieser 
+
+Datenstruktur wird nun der folgende Algorithmus ausgeführt.
 
 **Beispiel**:
 ![image](./bilder/wegenetz.png)
 
+### Handlungsanleitung
 Der folgende Algorithmus berechnet die kürzesten Wege in diesem Wegenetz ausgehend von einem definierten Startknoten.
 
 1. Schritt: **Startaufstellung**:
@@ -58,10 +89,6 @@ Wenn du nun den kürzesten Weg von einem beliebigen Knoten des Graphen zum gewä
 ### Beispiel-Ablauf
 
 ![image](./bilder/dijkstra.gif)
-
-### Algorithmus
-* https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
-* Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
 
 ## Algorithmenvisualisierungen mit Visualgo
 Auf dieser Plattform können viele weitere Algorithmen und Datenstrukturen erkundet werden (enaktiv, ikonisch, symbolisch):
