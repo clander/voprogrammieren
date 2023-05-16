@@ -5,18 +5,13 @@ Es werden folgende Aspekte in der LV behandelt:
 
 1. Kürzeste Wege mit Dijkstra:
    - Der Algorithmus als Handlungsanleitung zum selber Probieren
-
 2. Computer spielen einmal anders:
    - Arbeitsweise einer Von-Neumann-Architektur als Handlungsanleitung zum selber Probieren
-   - Zentrale Ideen:
-     - (komplexere) Handlungsanleitungen genau lesen und befolgen
-     - Lernen wie eine Von-Neumann-Architektur funktioniert
-     - Lernen, mit man einen Computer programmiert
-     - Lernen, was ein Computer eigentlich bei der Ausführung von Programmen denkt
-     - ...
-3. Beispiele für die persönliche Vertiefung (für die eigenen Unterrichtsprojekte):
+3. Beispiele für die persönliche Vertiefung (auch für die eigenen Unterrichtsprojekte):
    - Bubble Sort (Rollenspiel)
-   - Binary Search
+   - Binäre Suche
+   - Lineare Suche
+   - ...
 
 [Alle Unterlagen zum Thema Handlungsanleitungen](./Handlungsanleitungen/)
 ## Didaktische Grundlagen
@@ -40,20 +35,20 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
    - Codierung in Python
    - Variante als Computerspiele für einen Handheld
    - Variante als Microcontroller-Programm
-4. [Body Mass Index (BMI)](./GrundkonzepteProgrammierung/BMI/README.md)
-   - BMI als Excel-Lösung
-   - BMI in 3 Iterationen mit Python
 5. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
+   - [Body Mass Index (BMI)](./GrundkonzepteProgrammierung/BMI/README.md)
+     - BMI als Excel-Lösung
+     - BMI in 3 Iterationen mit Python
    - [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
    - [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
    - [Weitere Logo-Turtle Beispiele](./GrundkonzepteProgrammierung/TurtleBeispiele/)
 
 [Alle Beispiele](./GrundkonzepteProgrammierung/)
 ## Verwendete Werkzeuge und Unterlagen
-### Programmiersprache und Plattformen
+### Programmiersprache
 
 Als Programmiersprache verwenden wir Python: https://www.python.org
-### Plattformen
+
 - Dokumentation: https://docs.python.org/3/
 - Sprachreferenz: https://docs.python.org/3/reference/index.html
 - Standardbibliothek: https://docs.python.org/3/library/index.html
@@ -67,6 +62,9 @@ Alternativen:
 - Gratis-Variante der Python-Einführung (incl. Turtle) auf Trinket (https://hourofpython.com)
 - TigerJython (https://python-online.ch).
 
+### Online-IDE für Microcontroller-Programmierung und Spieleprogrammierung
+- Microsoft MakeCode Arcade (https://arcade.makecode.com)
+- Microsoft MakeCode micro:bit (https://makecode.microbit.org)
 ### Didaktische offline IDE
 Als didaktische ausgereifte IDE wird Thonny (https://thonny.org) empfohlen.
 ### Zentrale Lernunterlagen für das persönliche Studium

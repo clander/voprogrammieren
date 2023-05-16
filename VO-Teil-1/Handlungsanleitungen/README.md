@@ -35,20 +35,19 @@ Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt
 * Enaktive Erkundung von Bubblesort und anderen (Sortier-)Algorithmen: https://visualgo.net/en/sorting -> Bubble-Sort auswählen
 
 ## Kürzeste-Wege-Algorithmus von Dijkstra
-
 ### Algorithmus
-* https://de.wikipedia.org/wiki/Dijkstra-Algorithmus
-* Dijkstra: https://de.wikipedia.org/wiki/Edsger_W._Dijkstra
+Der Algorithmus von Dijkstra (nach seinem Erfinder Edsger W. Dijkstra) ist ein Algorithmus aus der Klasse der Greedy-Algorithmen und löst das Problem der kürzesten Pfade für einen gegebenen Startknoten. Er berechnet somit einen kürzesten Pfad zwischen dem gegebenen Startknoten und einem der (oder allen) übrigen Knoten in einem kantengewichteten Graphen (sofern dieser keine Negativkanten enthält). (Quelle: https://de.wikipedia.org/wiki/Dijkstra-Algorithmus)
 ### Ebenen der Betrachtung
 - Routenplaner als soziotechnische Systeme: 
+  - Digitales Artefakt Routenplaner als Untersuchungsgegenstand zur multiperspektivischen Betrachtung
   - Anwendungsgebiete: 
-    - Routenplanung (Verkehr)
+    - Digiatle Routenplanung in Autos, Handies, Smart-Watches
     - Routing im Internet
-  - Verwendung in Autos, Handies, Smart-Watches, Militär etc. 
-  - Auswirkungen auf Verkehr, Militär, Wirtschaft, Orientierungsvermögen, Hausverstand ...
+    - Anwendung in Verkehr, Militär, Wirtschaft, Tourismus, Computernetzwerken (OSPF)
+    - Auswirkungen (auch etwa auf Orientierungsvermögen, Hausverstand ...)
 - Menschliche / historische Komponente 
-  - Dijkstra und seine Leistungen in der Informatik
-  - Turing Award
+  - Edsger W. Dijkstra und seine Leistungen in der Informatik (https://de.wikipedia.org/wiki/Edsger_W._Dijkstra)
+  - Turing Award (https://de.wikipedia.org/wiki/Turing_Award)
 - Algorithmen und Datenstrukturen
   - Algorithmenkategorie (Greedy-Algorithmus)
     - In jedem Teilschritt das optimalste Ergebnis finden
@@ -61,16 +60,10 @@ Nachbereitung: Am Ende kommt man nochmals auf die Limonade zurück. Warum trägt
     - Listen / Warteschlangen / Bäume
   - Handlungsanleitung (Algorithmus)
 ### Datenstruktur
-
-Vorbereitung: Mit Kreide wird ein Wegenetz in Form eines Graphen (Knoten + Kanten) mit einigen Zusatzinformationen (Kantengewichte, Daten pro Knoten) auf den Asphalt im Schulhof oder auf die Tafel gezeichnet. 
-
-Das Konzept des Graphen als Datenstruktur für die Darstellung von Wegenetzen wird eingeführt. Auf dieser 
-
-Datenstruktur wird nun der folgende Algorithmus ausgeführt.
+Für den Dijkstra-Algorithmus wird als Datenstruktur ein Graph verwendet. Mit Graphen lassen sich Wegenetze in Form von Knoten und Kanten mit Kantengewichten (die die verschiedene Knoten miteinander verbinden) darstellen. Für den Algorithmus werden z.B. Listen oder auch Heaps (insb. der Fibonacci-Heap) als Datenstrukturen für die Verspeicherung der Knoten verwendet.
 
 **Beispiel**:
 ![image](./bilder/wegenetz.png)
-
 ### Handlungsanleitung
 Der folgende Algorithmus berechnet die kürzesten Wege in diesem Wegenetz ausgehend von einem definierten Startknoten.
 

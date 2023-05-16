@@ -20,7 +20,7 @@ Konkret haben wir es im gewählten Werkzeugkasten u. A. mit folgenden Ideen und 
 * Eingabe - Verarbeitung - Ausgabe (EVA)
 * Werte (Literale)
 * Operatoren und Operanden
-* Ausdrücke (Expression; z. B. arithmetische oder bool‘sche Ausdrücke)
+* Ausdrücke (Expression; arithmetische oder bool‘sche Ausdrücke)
 * Anweisungen (Statements)
 * Sequenzen von Anweisungen
 * Anweisungsblöcke und Einrückung
@@ -31,9 +31,9 @@ Konkret haben wir es im gewählten Werkzeugkasten u. A. mit folgenden Ideen und 
 * Bedingte Verzweigungen (Conditionals)
 * Schleifen (Loops)
 * Komplexere Datentypen (Listen, Tupel, Dictionaries)
-* Modularisierung mit Funktionen
+* Modularisierung
 * Ereignisse (Events)
-* Ereignisbehandlung (Handler bzw. Callbacks)
+* Ereignisbehandlung (Callbacks)
 
 Wichtig für die Vermittlung solcher Ideen sind u. A. folgende methodisch-didaktische Prinzipien:
 
