@@ -22,17 +22,18 @@ Für die Software gelten folgende funktionale Anforderungen:
 - Das Programm fragt dich nach der korrekten Zahl.
 - Das Programm gibt den Hinweis "Kleiner" oder "Größer" aus, wenn du die Zahl nicht erraten hast.
 - Das Programm gibt die Anzahl der Versuche aus, wenn du die Zahl erraten hast.
-## Funktionale Anforderungen Discord-Bot-KI
-In einer erweiterten Version der Software könnte man einen Discord-Bot implementieren, der in einem zweiten Modus eine von den Usern des Discord-Channels ausgedachte Zahl zwischen 1 und 100 mit maximal 7 Versuchen finden kann ... eine kleine KI sozusagen.
+
 ## Die Bewertungsstandards? (Standards)
 - Funktionalität der Software lt. Anforderungen
 - Qualität des Codes
 - Zeitmanagement
 - ...
 
-# Implementierungen
-## Basisvariante
+## Varianten auf anderen Plattformen
+- Implementierung als Computerspiel für Handhelds
+- Implementierung auf einem Microcontroller
 
+## Lösung (Python-Variante)
 ### Pseudocode
 ```python
 Wir ermitteln eine Zufallszahl im definierten Zahlenbereich
@@ -64,11 +65,13 @@ flowchart TD
     J-->|Ja|L[Ausgabe: Gesuchte Zahl ist größer]-->G
     J-->|Nein|K[Ausgabe: Gesuchte Zahl ist kleiner]-->G
 ```
-### Blockbasierte Implementierung
+### Blöcke
 
 ![](./bilder/zahlenraten1.png)
 ![](./bilder/zahlenraten2.png)
-### Python-Implementierung
+
+### Python
+
 ```python
 import random
 min = 1
@@ -92,41 +95,7 @@ while not gefunden:
             anzahlVersuche += 1
 print('Auf Wiedersehen!')
 ```
-## KI-Variante (Binäre Suche)
-### Blockbasierte Implementierung
-![](./bilder/zahlenratenki1.png)
-![](./bilder/zahlenratenki2.png)
-![](./bilder/zahlenratenki3.png)
-### Python-Implementierung KI-Variante (Binäre Suche)
-
-```python
-def binaersuche_rekursiv(werte, start, ende, anzahlVersuche):
-    if ende < start:
-        print('Ich kann deine Zahl nicht gefunden! Ich glaube du schwindelst!')
-        return
-    mitte = (start + ende) // 2
-    print("Ich rate ... " + str(werte[mitte])) 
-    feedback = ""
-    while feedback not in ("r","k","g"):
-        feedback = input("(r)ichtig (k)leiner oder (g)rößer? ")
-    if feedback == "r":
-        print("Zahl gefunden. Anzahl versuche: " + str(anzahlVersuche))
-        return
-    elif feedback == "g":
-        return binaersuche_rekursiv(werte, mitte + 1, ende, anzahlVersuche+1)
-    elif feedback == "k":
-        return binaersuche_rekursiv(werte, start, mitte - 1, anzahlVersuche+1)
-def binaersucheKi(werte):
-    return binaersuche_rekursiv(werte, 0, len(werte) - 1, 1)
-min = int(input("Minimum: "))
-max = int(input("Maximum: "))
-moeglicheWerte = list(range(min,max+1))
-binaersucheKi(moeglicheWerte)
-
-```
-
-## Microsoft MakeCode Arcade Variante
-
+## Lösung als Spiel mit Microsoft MakeCode Arcade
 ### Blöcke
 ![](./bilder/zahlenraten-arcade.png)
 
@@ -137,7 +106,6 @@ game.splash("*** ZAHLEN RATEN ***", "")
 zufallszahl = randint(0, 10)
 erraten = False
 versuche = 0
-game.splash(zufallszahl)
 while not (erraten):
     ratezahl = game.ask_for_number("Rate!")
     if ratezahl == zufallszahl:
@@ -154,7 +122,7 @@ game.set_game_over_effect(True, effects.confetti)
 game.game_over(True)
 
 ```
-## Microsoft MakeCode micro:bit Variante
+## Lösung als Spiel mit Microsoft MakeCode micro:bit
 
 ### Blöcke
 ![](./bilder/zahlenraten-microbit.png)
@@ -209,5 +177,3 @@ ratezahl = 0
 zufallszahl = randint(0, 10)
 
 ```
-
-
