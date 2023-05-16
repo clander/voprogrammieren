@@ -2,7 +2,6 @@
 
 ## Handlungsanleitungen nachvollziehen und entwickeln
 Es werden folgende Aspekte in der LV behandelt:
-
 1. Kürzeste Wege mit Dijkstra:
    - Der Algorithmus als Handlungsanleitung zum selber Probieren
 2. Computer spielen einmal anders:
@@ -44,6 +43,7 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
    - [Weitere Logo-Turtle Beispiele](./GrundkonzepteProgrammierung/TurtleBeispiele/)
 
 [Alle Beispiele](./GrundkonzepteProgrammierung/)
+
 ## Verwendete Werkzeuge und Unterlagen
 ### Programmiersprache
 

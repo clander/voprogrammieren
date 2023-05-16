@@ -1,7 +1,7 @@
 # Handlungsanleitungen nachvollziehen und entwickeln
 
 ## Idee
-Schüler:innen verstehen und befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Probleme. Schüler finden Lösungen zu gegebenen Problemen und entwickeln Handlungsanleitungen bzw. Algorithmen.
+Schüler:innen verstehen und befolgen Handlungsanleitungen / Algorithmen und lösen damit bestimmte Herausforderungen. Schüler finden Lösungen zu gegebenen Problemen und entwickeln selbst Handlungsanleitungen.
 
 Algorithmus:
 Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt.
@@ -9,8 +9,10 @@ Ein Algorithmus ... ist eine eindeutige Handlungsvorschrift zur Lösung eines Pr
 
 Wichtig im Sinne der zentralen betroffenen Konzepte ist, dass die Handlungsanleitungen neben einfachen Anweisungen und Sequenzen von Anweisungen auch Bedingungen, bedingte Anweisungen sowie (bedingte) Wiederholungen enthalten. Auch sollte die Notwendigkeit der Verwendung von Variablen bzw. Datenstrukturen gegeben sein.
 
+Außerdem sollen bereits in diesem Rahmen zentrale Ideen des Computational Thinkings thematisiert werden, darunter Abstraktion, Generalisierung, Mustererkennung, Entwurfsparadigmen wie Divide And Conquer oder die Greedy-Methode und auch Algorithmisierung.
+
 ## Suchen mit der binären Suche
-"Ich wette, dass ich mit maximal 20 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und einer Million erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist." 
+"Ich wette, dass ich mit maximal 20 Rateversuchen eine beliebig ausgedachte Zahl zwischen 1 und einer Million erraten kann. Du musst mir nur immer ganz ehrlich sagen, ob die gesuchte Zahl größer, kleiner oder gleich meinem Rateversuch ist."
 
 Wie funktioniert der Trick? Entwickle einen Algorithmus!
 
