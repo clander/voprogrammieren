@@ -35,18 +35,18 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
 
 Über folgende Beispiele werden die Grundkonzepte der Programmierung in der LV eingeführt:
 
-1. Steuerung von Akteuren in Miniwelten am Beispiel Logo-Turtle (Urvater der Miniwelten)
+1. Steuerung von Akteuren in Miniwelten am Beispiel der Logo-Turtle
    - [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
-   - Alternative Miniwelten:
-     - Karol (https://karol.arrrg.de)
-     - Kara (https://www.swisseduc.ch/informatik/karatojava/pythonkara/)
-     - Hamster-Modell (http://www.java-hamster-modell.de/python.html)
-     - Scratch (https://scratch.mit.edu)
-     - Snap! (https://scratch.mit.edu)
-     - ... siehe auch [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
-   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus diesem[micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
+   - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
+   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
 2. [Countdown](./GrundkonzepteProgrammierung/Countdown/)
+   - Problemanalyse
+   - Codierung in Python
 3. [Zahlenraten](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
+   - Problemanalyse
+   - Codierung in Python
+   - Variante als Computerspiele für einen Handheld
+   - Variante als Microcontroller-Programm
 4. [Body Mass Index (BMI)](./GrundkonzepteProgrammierung/BMI/README.md)
    - BMI als Excel-Lösung
    - BMI in 3 Iterationen mit Python
