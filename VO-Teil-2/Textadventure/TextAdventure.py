@@ -1,19 +1,21 @@
 import random, sys
+
 rucksack = {
   "schluessel": False ,
   "schwert": False
 }
+
 def eingangshalle():
     print("*********************")
     print("*** Eingangshalle ***")
     print("*********************")
     while(True):
-        eingabe = input("Was möchtest du tun? u) Raum untersuchen  n) Tür im Norden nutzen  s) Tür im Süden nutzen ... ")
+        eingabe = input("Was möchtest du tun? u) Raum untersuchen  n) Tür im Norden nutzen  s) Tür im Süden nutzen r) Rucksack öffnen ... ")
         if eingabe == "u":
             print("Du findest nichts.")
         elif eingabe == "n":
             if rucksack["schluessel"]:
-                print("Du verwendest den Schlüssel und gehst durch die Tür im Norden")
+                print("--> Du verwendest den Schlüssel und gehst durch die Tür im Norden")
                 rittersaal()
                 break
             else:
@@ -22,6 +24,8 @@ def eingangshalle():
             print("Du gehst durch die Tür im Süden und kommst in den ... ")
             speisesaal()
             break
+        elif eingabe == "r":
+            rucksackAusgeben()
         else:
             print("Eingabe nicht korrekt. Bitte versuche es erneut.")
 def speisesaal():
@@ -29,23 +33,73 @@ def speisesaal():
     print("*** Speisesaal ***")
     print("******************")
     while(True):
-        eingabe = input("Was möchtest du tun? u) Raum untersuchen  n) Tür im Norden nutzen ... ")
+        eingabe = input("Was möchtest du tun? u) Raum untersuchen n) Tür im Norden nutzen r) Rucksack öffnen ... ")
         if eingabe == "u":
-            print("Du siehst dich um und entdeckst hinter einem Brett einen Schlüssel am Boden. Du nimmst den Schlüssel auf!")
-            rucksack["schluessel"]=True 
+            if not rucksack["schluessel"]:
+                print("Du entdeckst einen goldenen Schlüssel auf der langen gedeckten Tafel.")
+                print("""
+         000000
+        00  F  00
+        00  I  00
+         000B000
+         00
+         00
+         00
+         00000
+         0000
+         0000000
+       """)      
+                print("Du versuchst den Schlüssel zu greifen. Sofort beginnt deine Hand stark an zu brennen. Du ziehst die Hand erschrocken zurück. Der Schlüssel scheint mit einer magischen Barriere geschützt zu sein.")      
+                print("Du bemerkst, dass einige Ziegelsteine in der Mauer des Speisesaals eine andere Farbe aufweisen. Du versuchst ein Muster zu erkennen ...")
+                zufallszahl = random.randint(6,15)
+                fibPrint(zufallszahl)
+                fibGesucht = fibCalc(zufallszahl+1)
+                ziegelNummer = int(input("Welchen Ziegel in der Reihe möchtest du untersuchen?"))
+                if fibGesucht==ziegelNummer:
+                    print("Der Zeigel bewegt sich. Die magische Barriere um den Schüssel löst sich auf. Du nimmst den Schlüssel auf der Tafel.")
+                    rucksack["schluessel"]=True 
+            else:
+                print("Du errinerst dich ... hier hast du den Schlüssel gefunden.")
         elif eingabe == "n":
             print("Du gehst durch die Tür im Norden und kommst in die ... ")
             eingangshalle()
             break
+        elif eingabe == "r":
+            rucksackAusgeben()
         else:
             print("Eingabe nicht korrekt. Bitte versuche es erneut.")
+
+def fibPrint(n:int):
+    a=0
+    b=1
+    while b<n:
+        print(b)
+        temp = a
+        a = b
+        b = temp + b
+
+def fibCalc(n:int)->int:
+    a=0
+    b=1
+    while b<n:
+        temp = a
+        a = b
+        b = temp + b
+    return b
+
+def rucksackAusgeben():
+    print("------- Rucksackinhalt --------")
+    if rucksack["schluessel"]:
+        print("Schlüssel")
+    if rucksack["schwert"]:
+        print("Schwert")
 
 def rittersaal():
     print("******************")
     print("*** Rittersaal ***")
     print("******************")
     while(True):
-        eingabe = input("Was möchtest du tun? u) Raum untersuchen  s) Tür im Süden nutzen  t) Treppe in das Untergeschoss benutzen ... ")
+        eingabe = input("Was möchtest du tun? u) Raum untersuchen  s) Tür im Süden nutzen  t) Treppe in das Untergeschoss benutzen r) Rucksack öffnen... ")
         if eingabe == "u":
             if rucksack["schwert"]:
                 print("Du siehst die bereits geöffnete und jetzt leere Truhe!")
@@ -91,6 +145,8 @@ def rittersaal():
             print("Du gehst durch die Tür im Süden und kommst in die ... ")
             eingangshalle()
             break
+        elif eingabe == "r":
+            rucksackAusgeben()
         else:
             print("Eingabe nicht korrekt. Bitte versuche es erneut.")
 def kerker():
@@ -113,7 +169,7 @@ def kerker():
                      \\          
                   \\     
 """)
-    eingabe = input("Was möchtest du tun? a) Drache angreifen  w) Tür im Westen benutzen ... ")
+    eingabe = input("Was möchtest du tun? a) Drache angreifen  w) Tür im Westen benutzen r) Rucksack öffnen... ")
     if eingabe == "a":
         print("Du greifst den Drachen an!")
         if rucksack["schwert"]:
@@ -128,6 +184,8 @@ def kerker():
     elif eingabe == "w":
         print("Du gehst durch die Tür im Westen und kommst in den ...")
         rittersaal()
+    elif eingabe == "r":
+            rucksackAusgeben()
     else:
         print("Eingabe nicht korrekt. Bitte versuche es erneut.")
 eingangshalle()
