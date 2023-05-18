@@ -92,6 +92,7 @@ Ein weiteres Muster betrifft außerdem die Farbe. Laut Spezifikation müssen wir
 4. Seite: Farbe Blau
 5. ...
 
+
 ## POLYGONIX Version 0.1
 
 ### Algorithmisierung
