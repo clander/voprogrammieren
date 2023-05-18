@@ -23,6 +23,7 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
 Über folgende Beispiele werden die Grundkonzepte der Programmierung in der LV eingeführt:
 
 1. Steuerung von Akteuren in Miniwelten am Beispiel der Logo-Turtle
+    - **[POLYGONIX](./GrundkonzepteProgrammierung/Polygonix/) Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.**
    - [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
    - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
    - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
