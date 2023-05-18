@@ -23,15 +23,16 @@ Die App soll folgende Funktionen aufweisen:
 ### Erwünschte Lösung (Spezifikation)
 Für Version 1.0 der App POLYGONIX soll der LERNMODUS implementiert werden.
 
-Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.). Zusammen mit dem jeweiligen Polygon wird der Name des Polygons und die Anzahl der Ecken angezeigt.
+Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.).
 
 ### Eingabe - Verarbeitung - Ausgabe:
 Die Schüler:innen starten die App.
+
 Sofort werden sie aufgefordert, eine Anzahl von gewünschten Ecken einzugeben.
 
 Die Eingabe muss eine positive Zahl größer gleich 3 sein.
 
-Auf dem Bildschirm wird ein regelmäßiges Polygon ausgegeben, zusammen mit der Anzahl der Ecken.
+Auf dem Bildschirm wird ein regelmäßiges Polygon ausgegeben.
 
 ### Abstraktion:
 Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen.
