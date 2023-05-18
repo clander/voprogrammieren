@@ -55,10 +55,12 @@ https://makecode.microbit.org
    - Programmieren mit Struktogrammen (incl. Code-Generator für verschiedene Sprachen)
 2. Sbide Structogramm IDE
    - https://www.sbide.de/
-3. Python Tutor
+3. Structog.
+   - https://dditools.inf.tu-dresden.de/dev/struktog/
+4. Python Tutor
    - https://pythontutor.com
    - Ausführung und visuelles Debugging von Python-Programmen (Was passiert zur Laufzeit?)
-4. Diagramme zeichnen
+5. Diagramme zeichnen
    - Mermaid: https://mermaid.live
    - PlantUML: https://plantuml.com
 
