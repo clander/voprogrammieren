@@ -34,12 +34,12 @@ Die Eingabe muss eine positive Zahl größer gleich 3 sein.
 
 Auf dem Bildschirm wird ein regelmäßiges Polygon ausgegeben.
 
-### Abstraktion:
+### Abstraktion
 Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen.
 Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem bestimmen Winkel zueinander stehen.
 
 Mit Hilfe der Turtle-Grafik-Bibliothek können wir mit einem Zeichenstift (Turtle) Linien zeichnen, Farben für die Linien definieren, den Zeichenstift eine bestimmte Anzahl an Grad (Winkel) zu drehen und gezeichnete Figuren mit Farben ausfüllen.
-### Generalisierung:
+### Generalisierung
 Es gilt folgende Regel: In einem regelmäßigen Polygon muss die Summe aller Winkel 360 Grad ergeben.
 
 Für ein Dreieck (3 Seiten) zeichnen wir 3 Kanten, jeweils in einem Winkel von 360 : 3 = 120 Grad zueinander.
@@ -47,7 +47,7 @@ Für ein Quadrat (4 Seiten) zeichnen wir 4 Kanten, jeweils in einem Winkel von 3
 Für ein Fünfeck (5 Seiten) zeichnen wir 5 Kanten, jeweils in einem Winkel von 360 : 5 = 72 Grad zueinander.
 Für ein Sechsecke (6 Seiten) zeichnen wir 6 Kanten, jeweils in einem Winkel von 360 : 6 = 60 Grad zueinander.
 
-### Mustererkennung:
+### Mustererkennung
 Die Grad in einem regelmäßigen Polygon sind also Abhänging von der Anzahl der Ecken. 
 
 Die Anzahl der Ecken spielt außerdem auch eine wichtige Rolle, beim Zeichnen der Polygone.
