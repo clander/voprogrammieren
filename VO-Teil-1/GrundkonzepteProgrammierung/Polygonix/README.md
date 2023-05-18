@@ -21,7 +21,7 @@ Die App soll folgende Funktionen aufweisen:
 ## POLYGONIX 1.0
 
 ### Erwünschte Lösung (Spezifikation)
-Für Version 1.0 der App POLYGONIX 1.0 soll der LERNMODUS implementiert werden.
+Für Version 1.0 der App POLYGONIX soll der LERNMODUS implementiert werden.
 
 Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.). Zusammen mit dem jeweiligen Polygon wird der Name des Polygons und die Anzahl der Ecken angezeigt.
 
