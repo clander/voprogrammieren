@@ -93,7 +93,9 @@ Ein weiteres Muster betrifft außerdem die Farbe. Laut Spezifikation müssen wir
 5. ...
 
 ### Dekomposition
-Zunächst gehen wir in Iterationen (Versionen) vor. Wir lösen kleiner Teilprobleme und tasten uns nach und nach an die Lösung des Gesamtproblems heran.
+
+Wir gehen in mehreren Iterationen (Versionen) vor. Wir lösen kleinere Teilprobleme und tasten uns nach und nach an die Lösung des Gesamtproblems heran. Außerdem verwenden wir bestehnde Teillösungen für Teilprobleme etwa in Form von fertigen Python-Modulen für das Zeichnen von Primitiven oder die Ein- und Ausgabe.
+
 - Version 0.1: 
   - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe;
   - Teillösung: Wir verwenden das Turtle-Modul für das Zeichnen (zeichnen von Linien, Drehung des Stiftes, Stiftfarbe)

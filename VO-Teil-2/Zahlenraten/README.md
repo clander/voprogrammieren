@@ -60,3 +60,43 @@ min = int(input("Minimum: "))
 max = int(input("Maximum: "))
 moeglicheWerte = list(range(min,max+1))
 binaersucheKi(moeglicheWerte)
+```
+
+## Implementierung für Microbit (Microsoft MakeCode)
+```python
+def on_gesture_shake():
+    global list2
+    list2 = range(1, 101)
+    binaersuche_rekursiv(list2, 0, len(list2) - 1, 1)
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+
+def binaersuche_rekursiv(werte: List[number], start: number, ende: number, anzahlVersuche: number):
+    global mitte, feedback
+    if ende < start:
+        basic.show_icon(IconNames.NO)
+        basic.pause(2000)
+        control.reset()
+    mitte = Math.idiv(start + ende, 2)
+    basic.show_number(werte[mitte])
+    while True:
+        if input.button_is_pressed(Button.A):
+            feedback = "k"
+            break
+        elif input.button_is_pressed(Button.B):
+            feedback = "g"
+            break
+        elif input.logo_is_pressed():
+            feedback = "r"
+            break
+    if feedback == "r":
+        basic.show_icon(IconNames.HAPPY)
+        basic.pause(2000)
+        control.reset()
+    elif feedback == "g":
+        binaersuche_rekursiv(werte, mitte + 1, ende, anzahlVersuche + 1)
+    elif feedback == "k":
+        binaersuche_rekursiv(werte, start, mitte - 1, anzahlVersuche + 1)
+feedback = ""
+mitte = 0
+list2: List[number] = []
+```
