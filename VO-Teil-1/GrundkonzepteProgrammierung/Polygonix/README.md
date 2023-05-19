@@ -92,7 +92,23 @@ Ein weiteres Muster betrifft außerdem die Farbe. Laut Spezifikation müssen wir
 4. Seite: Farbe Blau
 5. ...
 
-
+### Dekomposition
+Zunächst gehen wir in Iterationen (Versionen) vor. Wir lösen kleiner Teilprobleme und tasten uns nach und nach an die Lösung des Gesamtproblems heran.
+- Version 0.1: 
+  - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe;
+  - Teillösung: Wir verwenden das Turtle-Modul für das Zeichnen (zeichnen von Linien, Drehung des Stiftes, Stiftfarbe)
+- Version 0.2: 
+  - Eingabe des Benutzers für 3 oder 4 Ecken, entsprechende Ausgabe von Dreieck und Quadrat, Fehlermeldung
+  - Teillösung: Wir verwenden die Print-Funktion für Ausgaben an den Benutzer
+  - Teillösung: Wir verwenden die Input-Funktion für Eingaben des Benutzers
+- Version 0.3: 
+  - Generalisierung der Lösung für beliebig viele Ecken, ohne Farben
+- Version 0.4: 
+  - Wir zeichnen jede zweite Linie der Figuren abwechselnd mit einer anderen Farbe
+  - Teillösung: Wir prüfen den Schleifenzähler. Wenn der Schleifenzähler dividiert durch 2 den Rest 0 ergibt, dann verwenden wir eine andere Farbe.
+- Version 1.0:
+  - Wir stellen sicher, dass der Benutzer nur Zaheln >= 3 eingeben kann.
+  - Teillösung: Benutzereingabe prüfen mit Probe auf Umwandlung der Texteingabe und Check auf >= 3
 ## POLYGONIX Version 0.1
 
 ### Algorithmisierung

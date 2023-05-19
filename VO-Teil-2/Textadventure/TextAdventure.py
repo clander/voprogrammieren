@@ -169,23 +169,24 @@ def kerker():
                      \\          
                   \\     
 """)
-    eingabe = input("Was möchtest du tun? a) Drache angreifen  w) Tür im Westen benutzen r) Rucksack öffnen... ")
-    if eingabe == "a":
-        print("Du greifst den Drachen an!")
-        if rucksack["schwert"]:
-            print("Du bekämpfst den Drachen mit dem Schwert und kannst ihn besiegen. Hinter dem Drachen findest du einen Schatz, du wirst reich und setzt dich zur Ruhe!")     
-            print("******************")
-            print("Spiel gewonnen")
-            print("******************")
-            exit()
-        else:
-            print("Du bekämpfst den Drachen mit deinen bloßen Händen und kannst ihn nicht besiegen. Du tritts daher den Rückzug an und gehst zurück durch den Raum im Westen!")
+    while(True):
+        eingabe = input("Was möchtest du tun? a) Drache angreifen  w) Tür im Westen benutzen r) Rucksack öffnen... ")
+        if eingabe == "a":
+            print("Du greifst den Drachen an!")
+            if rucksack["schwert"]:
+                print("Du bekämpfst den Drachen mit dem Schwert und kannst ihn besiegen. Hinter dem Drachen findest du einen Schatz, du wirst reich und setzt dich zur Ruhe!")     
+                print("******************")
+                print("Spiel gewonnen")
+                print("******************")
+                exit()
+            else:
+                print("Du bekämpfst den Drachen mit deinen bloßen Händen und kannst ihn nicht besiegen. Du tritts daher den Rückzug an und gehst zurück durch den Raum im Westen!")
+                rittersaal()
+        elif eingabe == "w":
+            print("Du gehst durch die Tür im Westen und kommst in den ...")
             rittersaal()
-    elif eingabe == "w":
-        print("Du gehst durch die Tür im Westen und kommst in den ...")
-        rittersaal()
-    elif eingabe == "r":
+        elif eingabe == "r":
             rucksackAusgeben()
-    else:
-        print("Eingabe nicht korrekt. Bitte versuche es erneut.")
+        else:
+            print("Eingabe nicht korrekt. Bitte versuche es erneut.")
 eingangshalle()
