@@ -389,7 +389,7 @@ Teillösungen für Teilprobleme:
 Wir definieren eine Variable eingabe_ok und setzen diese auf False
 Solange eingabe_ok nicht auf True gesetzt ist:
     Der Benutzer wird aufgefordert, eine Zahl größer gleich 3 einzugeben.
-    Wir fersuchen die Eingabe in eine Zahl zu konvertieren.
+    Wir versuchen die Eingabe in eine Zahl zu konvertieren.
     Wenn die Konvertierung gelingt:
         Wenn die Zahl größer gleich 3 ist:
             Es liegt eine korrekte Benutzereingabe vor. Wir setzen die Variable eingabe_ok auf True und verlassen damit die Schleife
