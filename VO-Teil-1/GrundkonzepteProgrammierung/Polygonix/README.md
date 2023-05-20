@@ -208,19 +208,20 @@ else:
 ## POLYGONIX Version 0.3
 ### Problemanalyse
 #### Dekomposition
-Funktionen von Version 0.1: 
-  - Generalisierung der Lösung für beliebig viele Ecken, ohne Farben
+Funktionen: 
+  - Wir generalisieren unsere Lösung, sodass sie mit beliebig vielen Ecken zurechtkommt, d.h. beliebige regelmäßige Polygone (gleichseitige Dreicke, Vierecke, Fünfecke etc.) zeichnen kann.
+  - Einschränkung: Wir zeichnen vorerst alle Seiten in der selben Farbe
 #### Generalisierung
 Es gilt folgende Regel: In einem regelmäßigen Polygon muss die Summe aller Winkel 360 Grad ergeben.
 
-Für ein Dreieck (3 Seiten) zeichnen wir 3 Kanten, jeweils in einem Winkel von 360 : 3 = 120 Grad zueinander.
-Für ein Quadrat (4 Seiten) zeichnen wir 4 Kanten, jeweils in einem Winkel von 360 : 4 = 90 Grad zueinander.
-Für ein Fünfeck (5 Seiten) zeichnen wir 5 Kanten, jeweils in einem Winkel von 360 : 5 = 72 Grad zueinander.
-Für ein Sechsecke (6 Seiten) zeichnen wir 6 Kanten, jeweils in einem Winkel von 360 : 6 = 60 Grad zueinander.
+* Für ein Dreieck (3 Seiten) zeichnen wir 3 Kanten, jeweils in einem Winkel von 360 : 3 = 120 Grad zueinander.
+* Für ein Quadrat (4 Seiten) zeichnen wir 4 Kanten, jeweils in einem Winkel von 360 : 4 = 90 Grad zueinander.
+* Für ein Fünfeck (5 Seiten) zeichnen wir 5 Kanten, jeweils in einem Winkel von 360 : 5 = 72 Grad zueinander.
+* Für ein Sechsecke (6 Seiten) zeichnen wir 6 Kanten, jeweils in einem Winkel von 360 : 6 = 60 Grad zueinander.
 #### Mustererkennung
-Die Grad in einem regelmäßigen Polygon sind also abhänging von der Anzahl der Ecken. 
+Die **Grad** in einem regelmäßigen Polygon offensichtlich abhänging von der Anzahl der Ecken. 
 
-Die Anzahl der Ecken spielt außerdem auch eine wichtige Rolle, beim Zeichnen der Polygone.
+Die Anzahl der Ecken spielt außerdem auch eine wichtige Rolle, beim Zeichnen der Polygone, weil sie auch die **Anzahl der zu zeichnenden Seiten** bestimmt.
 
 Für ein Dreieck gehen wir wie folgt vor:
 1. Wir zeichnen eine Linie in einer bestimmten Farbe
@@ -253,14 +254,6 @@ Für ein Fünfeck gehen wir wie folgt vor:
    Wir drehen uns um 72 Grad
 
 usw.
-
-Ein weiteres Muster betrifft außerdem die Farbe. Laut Spezifikation müssen wir zumindest jede zwei aneinander grenzende Seiten in einer anderen Farbe ausgeben, also z.B.: 
-
-1. Seite: Farbe Schwarz
-2. Seite: Farbe Blau
-3. Seite: Farbe Schwarz
-4. Seite: Farbe Blau
-5. ...
 ### Algorithmisierung
 
 #### Neue Konzepte
@@ -310,6 +303,17 @@ Funktionen:
 
 Lösung des Teilproblems Gerade/Ungerade: 
   - Wir prüfen den Schleifenzähler. Wenn der Schleifenzähler dividiert durch 2 den Rest 0 ergibt, dann verwenden wir eine andere Farbe.
+
+#### Mustererkennung
+Laut Spezifikation müssen wir zumindest jede zweite Seite in einer anderen Farbe ausgeben, also z.B.: 
+
+1. Seite: Farbe Schwarz
+2. Seite: Farbe Blau
+3. Seite: Farbe Schwarz
+4. Seite: Farbe Blau
+5. ...
+
+Die Farbe wechselt also mit jeder Seite, die wir zeichnen.
 ### Algorithmisierung
 #### Neue Konzepte
 keine
@@ -326,6 +330,24 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
     Wir drehen uns um (360 : anzahl_ecken) Grad
     Wir zählen den Zähler um 1 hoch.
 ```
+Für die Lösung der Farbenthematik wäre auch folgender Lösungsansatz (ohne Rest-Berechnung) möglich:
+
+```python
+Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
+Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
+Wir definieren eine Variable farbenwechsel als Wahrheitswert (True/False) und setzen diese auf False
+Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
+    Wenn farbenwechsel True ist:
+        Wir setzen die Linienfarbe "blue"
+        Wir ändern farbenwechsel auf False
+    Ansonsten:
+        Wir setzen die Linienfarbe "black"
+        Wir ändern farbenwechsel auf True
+    Wir zeichnen eine Linie der Länge 100
+    Wir drehen uns um (360 : anzahl_ecken) Grad
+    Wir zählen den Zähler um 1 hoch.
+```
+
 #### Struktogramm
 
 ![](bilder/polygonix_0_4.png)
