@@ -14,24 +14,29 @@ Ein etablierter Werkzeugkasten ist der Imperative (prozedural / objektorientiert
 
 Konkret haben wir es im gewählten Werkzeugkasten u. A. mit folgenden Ideen und Konzepten zu tun:
 
-* Quellcode (Compilezeit) und Syntax
-* Ausgeführtes Programm (Laufzeit) und Semantik
-* Kompilieren und Interpretieren
-* Eingabe - Verarbeitung - Ausgabe (EVA)
+Die beteiligten Konzepte sind:
+
+* [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
+  * Kompilieren und interpretieren
+  * [Syntaxfehler](https://www.inf-schule.de/imperative-programmierung/python/konzepte/fehler/exkurs_syntaxfehler)
+  * [Laufzeitfehler](https://www.inf-schule.de/imperative-programmierung/python/konzepte/fehler/exkurs_laufzeitfehler)
+  * [Logische Fehler](https://www.inf-schule.de/imperative-programmierung/python/konzepte/fehler/exkurs_logischefehler)
+* [Eingabe - Verarbeitung - Ausgabe (EVA)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_eva) in [Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/exkurs_eingabeausgabe)
+* [Bedingungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/bedingungen/konzept_bedingungen)
+* [Logische Verknüpfungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/bedingungen/konzept_logischeverknuepfungen)
+* [Variablen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_variable) / Sichtbarkeit / Gültigkeit
 * Werte (Literale)
-* Operatoren und Operanden
-* Ausdrücke (Expression; arithmetische oder bool‘sche Ausdrücke)
-* Anweisungen (Statements)
-* Sequenzen von Anweisungen
-* Anweisungsblöcke und Einrückung
-* Variablen
-* Zuweisung (Assignment)
-* Datentypen (Ganzzahlen, Kommazahlen, Texte)
-* Sichtbarkeit (Scope) und Gültigkeit (Lifetime)
-* Bedingte Verzweigungen (Conditionals)
-* Schleifen (Loops)
-* Komplexere Datentypen (Listen, Tupel, Dictionaries)
-* Modularisierung
+* [Zuweisung (Assignment)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_zuweisung)
+* [Datentypen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/konzept_datentyp)
+  * [Zahlen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zahlen)
+  * [Zeichenketten](https://www.inf-schule.de/imperative-programmierung/python/konzepte/zeichenketten/konzept_zeichenkette) in [Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zeichenketten)
+  * [Wahrheitswerte in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_wahrheitswerte)
+  * [Typumwandlung in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_typumwandlungen)
+* [Konstrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
+  * Sequenzen von Anweisungen
+  * [Fallunterscheidung (bedingte Verzweigungen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/konzept_fallunterscheidungen)
+  * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
+* [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion)
 * Ereignisse (Events)
 * Ereignisbehandlung (Callbacks)
 
@@ -77,7 +82,8 @@ flowchart TD
     --> |Nein| G
     J -->|Ja| K[/kompiliertes Programm/] 
     K --> L[Programm ausführen]
-    --> N{Semantik korrekt?} 
+    L --> Q{Laufzeitfehler?}-->|Ja|M
+    Q-->|Nein|N{Logische Fehler?} 
     -->|Ja| O[/Fertige Lösung/]
     N --> |Nein| M[Debugging]-->|Code anpassen|G
     M -->|Lösungsansatz anpassen|C
@@ -115,8 +121,9 @@ Der Ablauf lässt sich also wie folgt kurz beschreiben:
 * In kurzen Zyklen werden wir nach jeder kurzen Programmiertätigkeit immer wieder das Programm versuchen auszuführen. 
 * Wenn sich das Programm nicht starten lässt, analysieren wir die Fehlermeldungen des Compilers und bessern Syntaxfehler aus. Wir müssen uns an die Syntax der gewählten Programmiersprache ganz genau halten, sonst versteht der Computer nicht, was er für uns tun soll. 
 * Wenn sich das Programm jedoch starten lässt, können wir kontrollieren, ob das Programm die richtigen (Teil-)Ergebnisse im Sinne unserer Lösungsspezifikation liefert. Dazu benötigen wir Techniken, die es uns ermöglichen in die Laufzeit eines Programmes hineinzuschauen bzw. Ergebnisse des Programmes anzuzeigen (Debugging-Strategien). 
-* Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert, haben wir es ggf. mit einem Bug zu tun, die Semantik passt also nicht. 
-* Dann können Modifikation in der Problemanalyse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. 
+* Es ist möglich, dass an irgendwelchen Stellen während der Ausführung des Programms Laufzeitfehler auftreten, die das Programm auch zum Absturz bringen. Der Code muss debugt werden.
+* Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert, haben wir es ggf. mit einem Bug zu tun. Der Code muss debugt werden.
+* Debugging: Es können Modifikation in der Problemanalyse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. 
 * Eine Modifikation im Algorithmus führt zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
 * Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
 
