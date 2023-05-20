@@ -28,22 +28,20 @@ Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen a
 4. Wenn die Eingabe korrekt war, wird auf dem Bildschirm ein regelmäßiges Polygon mit der erwünschten Anzahl von Ecken ausgegeben.
 
 #### Didaktische Hinweise zur Vorgangsweise
-Wir gehen in mehreren Iterationen (Versionen) vor. Wir lösen kleinere Teilprobleme (Dekomposition) und tasten uns nach und nach an die Lösung des Gesamtproblems heran. Außerdem verwenden wir bestehende Teillösungen für Teilprobleme etwa in Form von fertigen Python-Modulen für das Zeichnen von Primitiven oder die Ein- und Ausgabe.
-
 Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 
 * Problemanaylse (geistige Techniken, Lösungsansatz finden)
   * Abstraktion: Reduktion auf das für den Lösungsansatez Wesentliche
   * Generalisierung: Verallgemeinerung des Lösungsansatzes um Klassen von Problemen lösen zu können
-  * Dekomposition: Teilprobleme in Iterationen identifizieren; Teillösungen zu komplexeren Lösungen zusammenbauen
+  * Dekomposition: Gesamtproblem in Teilprobleme aufteilen, Teilprobleme lösen, Teilprobleme zu Gesamtlösung zusammenbauen; Teillösungen für Teilprobleme in Form von Programmbibliotheken nutzen
   * Mustererkennung: Muster im Lösungsansatz erkennen, die Automatisierungspotential enthalten
 * Algorithmisierung (geistige Techniken, Algorithmus finden)
   * Nötige Konzepte identifizieren
-  * Algorithmus in Pseudocode
-  * Algorithmus als Struktogrammf
+  * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
+  * Algorithmus als [Struktogramm](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
 * Implementierung (praktische Techniken, Computerprogramm finden und testen)
   * Blockbasiert
-  * Python 
+  * Python
 
 ## POLYGONIX Version 0.1
 
