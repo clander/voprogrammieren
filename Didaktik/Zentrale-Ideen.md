@@ -36,7 +36,8 @@ Die beteiligten Konzepte sind:
   * Sequenzen von Anweisungen
   * [Fallunterscheidung (bedingte Verzweigungen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/konzept_fallunterscheidungen)
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
-* [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion)
+  * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
+* [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion) als Modularisierungstechnik
 * Ereignisse (Events)
 * Ereignisbehandlung (Callbacks)
 
@@ -72,7 +73,7 @@ flowchart TD
     A[/Authentische Problemstellung/] 
     --> |Perzeption|B[Problem verstehen] 
     --> C[Problemanalyse] 
-    --> |Generalisierung, Dekomposition, Mustererkennung|D[/Lösungsansatz/] 
+    --> |Abstraktion, Generalisierung, Dekomposition, Mustererkennung|D[/Lösungsansatz/] 
     --> E[Algorithmisierung] 
     --> |Algorithmische Grundbausteine, Datenstrukturen| F[/Algorithmus textuell, graphisch/] 
     --> G[Implementieren / Codieren] 
@@ -93,7 +94,7 @@ flowchart TD
 ## Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu werden Techniken wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
-* Abstraktion: Wir fokussieren auf die für die Lösung absolut notwendigen Lösungselemente und lassen alles andere weg. 
+* Abstraktion: Wir fokussieren auf die für die Lösung absolut notwendigen Lösungselemente und lassen alles andere weg.
 * Generalisierung: Wir versuchen eine Lösung zu finden, die nicht nur Spezialfälle von Problemen, sondern eine Problemkategorie löst. 
 * Dekomposition: Wir teilen das Problem in verschiedene Teilprobleme. Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
 * Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau. Immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
