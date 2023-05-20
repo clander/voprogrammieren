@@ -60,9 +60,9 @@ Methodisch liegt der Fokus weiters auf Problemlösen durch Modellbildung und Sim
 
 Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses sieht mit Bezug auf die zentralen Ideen des Computational Thinkings dann wie folgt aus:
 
-1. Problemanalyse
-2. Algorithmisierung
-3. Implementierung und Test
+1. Problemanalyse (Lösungsansatz finden)
+2. Algorithmisierung (Algorithmus finden)
+3. Implementierung und Test (Computerprogramen finden und testen)
 
 Wichtig ist zu verstehen, dass es sich bei den oben genannten drei Punkten um einen Zyklus handelt, der immer wieder durchlaufen wird, solange, bis das Problem gelöst ist. Ausgehend vom Problem (Startzustand), über einen Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand) ergibt sich damit eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise. 
 
