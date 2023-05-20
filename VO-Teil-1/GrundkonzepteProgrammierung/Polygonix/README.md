@@ -26,26 +26,40 @@ Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen a
 2. Es folgt eine Aufforderung zur Eingabe der gewünschten Ecken-Anzahl. 
 3. Die Eingabe muss eine positive Zahl größer gleich 3 sein. Falls das nicht der Fall ist, muss ein Hinweis erscheinen und die Schüler:innen müssen die Möglichkeit haben, erneut einzugeben (solange, bis eine korrekte Zahl eingegeben wurde). Das Programm darf nicht abstürzen.
 4. Wenn die Eingabe korrekt war, wird auf dem Bildschirm ein regelmäßiges Polygon mit der erwünschten Anzahl von Ecken ausgegeben.
-### Computational Thinking [Dekomposition]
 
-Wir gehen in mehreren Iterationen (Versionen) vor. Wir lösen kleinere Teilprobleme und tasten uns nach und nach an die Lösung des Gesamtproblems heran. Außerdem verwenden wir bestehende Teillösungen für Teilprobleme etwa in Form von fertigen Python-Modulen für das Zeichnen von Primitiven oder die Ein- und Ausgabe.
+#### Didaktische Hinweise zur Vorgangsweise
+Wir gehen in mehreren Iterationen (Versionen) vor. Wir lösen kleinere Teilprobleme (Dekomposition) und tasten uns nach und nach an die Lösung des Gesamtproblems heran. Außerdem verwenden wir bestehende Teillösungen für Teilprobleme etwa in Form von fertigen Python-Modulen für das Zeichnen von Primitiven oder die Ein- und Ausgabe.
+
+Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
+
+* Problemanaylse (geistige Techniken, Lösungsansatz finden)
+  * Abstraktion: Reduktion auf das für den Lösungsansatez Wesentliche
+  * Generalisierung: Verallgemeinerung des Lösungsansatzes um Klassen von Problemen lösen zu können
+  * Dekomposition: Teilprobleme in Iterationen identifizieren; Teillösungen zu komplexeren Lösungen zusammenbauen
+  * Mustererkennung: Muster im Lösungsansatz erkennen, die Automatisierungspotential enthalten
+* Algorithmisierung (geistige Techniken, Algorithmus finden)
+  * Nötige Konzepte identifizieren
+  * Algorithmus in Pseudocode
+  * Algorithmus als Struktogrammf
+* Implementierung (praktische Techniken, Computerprogramm finden und testen)
+  * Blockbasiert
+  * Python 
 
 ## POLYGONIX Version 0.1
 
 ### Problemanalyse
 
-#### Computational Thinking [Abstraktion]
+#### Abstraktion
 Wir reduzieren das Problem zunächst auf das Zeichnen von Linien in verschiedenen Winkeln zueinander.
 
 Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem bestimmen Winkel zueinander stehen.
-#### Computational Thinking [Dekomposition]
+#### Dekomposition
 Funktionen von Version 0.1: 
   - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe;
 
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
   - Wir verwenden das Turtle-Modul für das Zeichnen (Zeichnen von Linien, Drehung des Stiftes, Stiftfarbe)
 ### Algorithmisierung
-
 #### Neue Konzepte
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
   * Kompilieren und interpretieren
@@ -95,7 +109,7 @@ turtle.right(120)
 ## POLYGONIX Version 0.2
 
 ### Problemanalyse
-#### Computational Thinking [Dekomposition]
+#### Dekomposition
 Funktionen: 
   - Benutzer:in gibt 3 oder 4 ein
   - Es folgt eine entsprechende Ausgabe eiens gleichseitigen Dreiecks oder eines Quadrats.
@@ -104,10 +118,9 @@ Funktionen:
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
   - Teillösung: Wir verwenden die Print-Funktion für Ausgaben an den Benutzer
   - Teillösung: Wir verwenden die Input-Funktion für Eingaben des Benutzers
-#### Computational Thinking [Abstraktion]
+#### Abstraktion
 Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen. Auf Basis dieser Zahl entscheiden wir, ob wir ein Dreieck oder ein Viereck ausgeben.
 ### Algorithmisierung
-
 #### Neue Konzepte
 
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
@@ -158,13 +171,10 @@ Sonst:
 ![](bilder/polygonix_0_2.png)
 
 ### Implementierung
-
 #### Blöcke 
 ![](bilder/polygonix_blocks_0_2_1.png)
 ![](bilder/polygonix_blocks_0_2_2.png)
-
 #### Python
-
 ```python
 import turtle
 eingabe = input("Wieviele Ecken soll die Figur haben?")
@@ -198,19 +208,18 @@ else:
         print("Das Programm unterstützt aktuell nur Dreiecke oder Vierecke.")
 ```
 ## POLYGONIX Version 0.3
-
 ### Problemanalyse
-#### Computational Thinking [Dekomposition]
+#### Dekomposition
 Funktionen von Version 0.1: 
   - Generalisierung der Lösung für beliebig viele Ecken, ohne Farben
-#### Computational Thinking [Generalisierung]
+#### Generalisierung
 Es gilt folgende Regel: In einem regelmäßigen Polygon muss die Summe aller Winkel 360 Grad ergeben.
 
 Für ein Dreieck (3 Seiten) zeichnen wir 3 Kanten, jeweils in einem Winkel von 360 : 3 = 120 Grad zueinander.
 Für ein Quadrat (4 Seiten) zeichnen wir 4 Kanten, jeweils in einem Winkel von 360 : 4 = 90 Grad zueinander.
 Für ein Fünfeck (5 Seiten) zeichnen wir 5 Kanten, jeweils in einem Winkel von 360 : 5 = 72 Grad zueinander.
 Für ein Sechsecke (6 Seiten) zeichnen wir 6 Kanten, jeweils in einem Winkel von 360 : 6 = 60 Grad zueinander.
-#### Computational Thinking [Mustererkennung]
+#### Mustererkennung
 Die Grad in einem regelmäßigen Polygon sind also abhänging von der Anzahl der Ecken. 
 
 Die Anzahl der Ecken spielt außerdem auch eine wichtige Rolle, beim Zeichnen der Polygone.
@@ -297,16 +306,13 @@ while zaehler < eingabe_zahl:
 
 ## POLYGONIX Version 0.4
 ### Problemanalyse
-
-#### Computational Thinking [Dekomposition]
+#### Dekomposition
 Funktionen: 
   - Wir zeichnen jede zweite Linie der Figuren abwechselnd mit einer anderen Farbe
 
 Lösung des Teilproblems Gerade/Ungerade: 
   - Wir prüfen den Schleifenzähler. Wenn der Schleifenzähler dividiert durch 2 den Rest 0 ergibt, dann verwenden wir eine andere Farbe.
-
 ### Algorithmisierung
-
 #### Neue Konzepte
 keine
 #### Pseudocode
@@ -348,10 +354,10 @@ while zaehler < eingabe_zahl:
 ```
 ## POLYGONIX VERSION 1.0
 ### Problemanalyse
-#### Computational Thinking [Dekomposition]
-Funktionen
+#### Dekomposition
+Funktionen:
   - Wir stellen sicher, dass der Benutzer nur Zaheln >= 3 eingeben kann.
-- 
+  
 Teillösungen für Teilprobleme:
   - Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. 
 ### Algorithmisierung
