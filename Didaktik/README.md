@@ -1,0 +1,6 @@
+# Didaktik
+Dieser Abschnitt beschäftigt sich mit einigen didaktischen Aspekten der Programmierung im Unterricht und enthält folgende Inhalte:
+
+* [Zentrale Ideen und zentrale Prozesse](Zentrale-Ideen.md)
+* [Werkzeuge](Werkzeuge.md)
+* [Lerntheorie](Lerntheorie.md)
