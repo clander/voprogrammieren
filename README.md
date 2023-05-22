@@ -1,4 +1,9 @@
 # VO Programmieren
+
+## Inhalte
+*  In [VO-Teil-1](./VO-Teil-1/) finden sich die Unterlagen für den ersten Vorlesungstermin.
+*  In [Didaktik](./Didaktik/) finden sich die Unterlagen für die didaktischen Aspekte.
+
 ## Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
 
