@@ -47,7 +47,7 @@ def on_every_interval():
         basic.pause(1000000)
 loops.every_interval(1000, on_every_interval)
 ```
-JavaScript Code
+#### JavaScript Code
 ```javascript
 input.onLogoEvent(TouchButtonEvent.Touched, function on_logo_touched() {
     
