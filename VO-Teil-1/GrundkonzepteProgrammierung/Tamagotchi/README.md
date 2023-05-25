@@ -104,7 +104,7 @@ Weder zum Erstellen noch zum Teilen der Tutorials ist keine Anmeldung nötig. Es
 Für das Tamagotchi Beispiel wurde ein Tutorial zum Ausprobieren erstellt.
 
 - Markdown-Code für das Tutorial: [Tutorial.md](Tutorial.md)
-- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:71416-94855-77441-69581
+- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:73316-48480-43058-55764
 
 ## Komplexere Version für Python (ohne micro:bit)
 
