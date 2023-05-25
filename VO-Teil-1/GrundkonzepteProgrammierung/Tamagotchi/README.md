@@ -1,20 +1,19 @@
 # Tamagotchi ePet
 
-
 ## Aufgabe für micro:bit
 
 ![](./bilder/tamagotchiMicrobitAufgabe.png)
 (Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 73 - S. 74, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
 
-### Implementierung
+### Implementierung micro:bit
 ![](./bilder/tamagotchiMicrobitLoesung.png)
 
 ```python
-def on_logo_pressed():
+def on_logo_touched():
     global timer
     timer = 0
     basic.show_icon(IconNames.HAPPY)
-input.on_logo_event(TouchButtonEvent.PRESSED, on_logo_pressed)
+input.on_logo_event(TouchButtonEvent.TOUCHED, on_logo_touched)
 
 def on_gesture_shake():
     global timer
@@ -24,24 +23,53 @@ input.on_gesture(Gesture.SHAKE, on_gesture_shake)
 
 timer = 0
 timer = 0
-basic.show_icon(IconNames.ASLEEP)
+basic.show_icon(IconNames.MEH)
+music.play_sound_effect(music.builtin_sound_effect(soundExpression.hello),
+    SoundExpressionPlayMode.UNTIL_DONE)
 
 def on_every_interval():
     global timer
     timer += 1
-    if timer == 10:
-        basic.show_icon(IconNames.ASLEEP)
-    elif timer == 20:
+    if timer == 20:
         basic.show_icon(IconNames.SAD)
+        music.play_sound_effect(music.builtin_sound_effect(soundExpression.sad),
+            SoundExpressionPlayMode.UNTIL_DONE)
     elif timer == 30:
         basic.show_icon(IconNames.SURPRISED)
-        basic.show_string("z z z")
+        basic.show_icon(IconNames.ASLEEP)
+        music.play_sound_effect(music.builtin_sound_effect(soundExpression.yawn),
+            SoundExpressionPlayMode.UNTIL_DONE)
     elif timer == 40:
         basic.show_icon(IconNames.SKULL)
-        control.reset()
+        music.start_melody(music.built_in_melody(Melodies.FUNERAL), MelodyOptions.ONCE)
+        basic.pause(1000000)
 loops.every_interval(1000, on_every_interval)
-
 ```
+
+
+## Tamagotchi-Tutorial
+
+### MakeCode Tutorial Editor
+Auf der Microsoft MakeCode Plattform können auch sehr einfach Selbstlern-Tutorials für den Unterricht erstellt und geteilt werden.
+
+Das Tool selbst ist erreichbar über: https://makecode.com/tutorial-tool
+
+Über Markdown können die Tutorials geschrieben werden.
+
+Beispiele für Tutorials finden sich z.B. auf:
+
+- Flasing-Hearts: https://github.com/Microsoft/pxt-microbit/blob/master/docs/projects/flashing-heart.md
+- Schere-Stein-Papier: https://github.com/Microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
+- https://github.com/Microsoft/pxt-microbit/tree/master/docs/projects
+
+Wenn ein Tutorial über den Editor erstellt wurde, kann über den Teilen-Button ein Link erzeugt werden, der zum Teilen des Tutorials im Unterricht verwendet werden kann. 
+
+Weder zum Erstellen noch zum Teilen der Tutorials ist keine Anmeldung nötig. Es ist allerdings ratsam, sich den Markdown-Code für das Tutorials abzuspeichern (falls später Änderungen platziert werden müssen oder der Tutorial-Link aus irgendeinem Grund später einmal nicht mehr funktionieren sollte).
+### Tamagotchi-Tutorial
+Für das Tamagotchi Beispiel wurde ein Tutorial zum Ausprobieren erstellt.
+
+- Markdown-Code für das Tutorial: [Tutorial.md](Tutorial.md)
+- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:71416-94855-77441-69581
 
 ## Komplexere Version für Python (ohne micro:bit)
 
