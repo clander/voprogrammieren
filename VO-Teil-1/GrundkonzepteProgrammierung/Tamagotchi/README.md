@@ -6,8 +6,10 @@
 (Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 73 - S. 74, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
 
 ### Implementierung micro:bit
+#### Blöcke
 ![](./bilder/tamagotchiMicrobitLoesung.png)
 
+#### Python-Code
 ```python
 def on_logo_touched():
     global timer
@@ -45,7 +47,40 @@ def on_every_interval():
         basic.pause(1000000)
 loops.every_interval(1000, on_every_interval)
 ```
-
+JavaScript Code
+```javascript
+input.onLogoEvent(TouchButtonEvent.Touched, function on_logo_touched() {
+    
+    timer = 0
+    basic.showIcon(IconNames.Happy)
+})
+input.onGesture(Gesture.Shake, function on_gesture_shake() {
+    
+    timer = 0
+    basic.showIcon(IconNames.Happy)
+})
+let timer = 0
+timer = 0
+basic.showIcon(IconNames.Meh)
+music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
+loops.everyInterval(1000, function on_every_interval() {
+    
+    timer += 1
+    if (timer == 20) {
+        basic.showIcon(IconNames.Sad)
+        music.playSoundEffect(music.builtinSoundEffect(soundExpression.sad), SoundExpressionPlayMode.UntilDone)
+    } else if (timer == 30) {
+        basic.showIcon(IconNames.Surprised)
+        basic.showIcon(IconNames.Asleep)
+        music.playSoundEffect(music.builtinSoundEffect(soundExpression.yawn), SoundExpressionPlayMode.UntilDone)
+    } else if (timer == 40) {
+        basic.showIcon(IconNames.Skull)
+        music.startMelody(music.builtInMelody(Melodies.Funeral), MelodyOptions.Once)
+        basic.pause(1000000)
+    }
+    
+})
+```
 
 ## Tamagotchi-Tutorial
 
