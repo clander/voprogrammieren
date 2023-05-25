@@ -108,7 +108,9 @@ Für das Tamagotchi Beispiel wurde ein Tutorial zum Ausprobieren erstellt.
 
 ## Komplexere Version für Python (ohne micro:bit)
 
-Die folgende Version eines Tamagotchi ePets ist etwas komplexer. Das ePet kann müde, gelangweilt oder hungrig sein. Es gibt verschiedene Tendenzen für die einzelnen Zustände (Tendenz meint eine Wahrscheinlichkeit für die Verschlechterung des jeweiligen Zustands).
+Die folgende Version eines Tamagotchi ePets ist etwas komplexer und kann als Anregung für die Erweiterung des oben dargestellten Beispiels dienen. 
+
+Diese Variante des ePets kann müde, gelangweilt oder hungrig sein. Es gibt verschiedene Tendenzen für die einzelnen Zustände (Tendenz meint eine Wahrscheinlichkeit für die Verschlechterung des jeweiligen Zustands).
 
 Zwischen jeder Aktion, die mit dem Tier durchgeführt werden kann, vergeht ein wenig Zeit (zufällig immer eine etwas andere Zeitspanne).
 
