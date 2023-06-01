@@ -33,12 +33,17 @@ def on_every_interval():
     global timer
     timer += 1
     if timer == 20:
-        basic.show_icon(IconNames.SAD)
+        for index in range(3):
+            basic.show_icon(IconNames.HAPPY)
+            basic.pause(100)
+            basic.show_icon(IconNames.SAD)
         music.play_sound_effect(music.builtin_sound_effect(soundExpression.sad),
             SoundExpressionPlayMode.UNTIL_DONE)
     elif timer == 30:
-        basic.show_icon(IconNames.SURPRISED)
-        basic.show_icon(IconNames.ASLEEP)
+        for index2 in range(3):
+            basic.show_icon(IconNames.SURPRISED)
+            basic.pause(100)
+            basic.show_icon(IconNames.ASLEEP)
         music.play_sound_effect(music.builtin_sound_effect(soundExpression.yawn),
             SoundExpressionPlayMode.UNTIL_DONE)
     elif timer == 40:
@@ -49,13 +54,11 @@ loops.every_interval(1000, on_every_interval)
 ```
 #### JavaScript Code
 ```javascript
-input.onLogoEvent(TouchButtonEvent.Touched, function on_logo_touched() {
-    
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
     timer = 0
     basic.showIcon(IconNames.Happy)
 })
-input.onGesture(Gesture.Shake, function on_gesture_shake() {
-    
+input.onGesture(Gesture.Shake, function () {
     timer = 0
     basic.showIcon(IconNames.Happy)
 })
@@ -63,22 +66,27 @@ let timer = 0
 timer = 0
 basic.showIcon(IconNames.Meh)
 music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
-loops.everyInterval(1000, function on_every_interval() {
-    
+loops.everyInterval(1000, function () {
     timer += 1
     if (timer == 20) {
-        basic.showIcon(IconNames.Sad)
+        for (let index = 0; index < 3; index++) {
+            basic.showIcon(IconNames.Happy)
+            basic.pause(100)
+            basic.showIcon(IconNames.Sad)
+        }
         music.playSoundEffect(music.builtinSoundEffect(soundExpression.sad), SoundExpressionPlayMode.UntilDone)
     } else if (timer == 30) {
-        basic.showIcon(IconNames.Surprised)
-        basic.showIcon(IconNames.Asleep)
+        for (let index = 0; index < 3; index++) {
+            basic.showIcon(IconNames.Surprised)
+            basic.pause(100)
+            basic.showIcon(IconNames.Asleep)
+        }
         music.playSoundEffect(music.builtinSoundEffect(soundExpression.yawn), SoundExpressionPlayMode.UntilDone)
     } else if (timer == 40) {
         basic.showIcon(IconNames.Skull)
         music.startMelody(music.builtInMelody(Melodies.Funeral), MelodyOptions.Once)
         basic.pause(1000000)
     }
-    
 })
 ```
 
@@ -100,11 +108,12 @@ Beispiele für Tutorials finden sich z.B. auf:
 Wenn ein Tutorial über den Editor erstellt wurde, kann über den Teilen-Button ein Link erzeugt werden, der zum Teilen des Tutorials im Unterricht verwendet werden kann. 
 
 Weder zum Erstellen noch zum Teilen der Tutorials ist keine Anmeldung nötig. Es ist allerdings ratsam, sich den Markdown-Code für das Tutorials abzuspeichern (falls später Änderungen platziert werden müssen oder der Tutorial-Link aus irgendeinem Grund später einmal nicht mehr funktionieren sollte).
+
 ### Tamagotchi-Tutorial
 Für das Tamagotchi Beispiel wurde ein Tutorial zum Ausprobieren erstellt.
 
 - Markdown-Code für das Tutorial: [Tutorial.md](Tutorial.md)
-- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:73316-48480-43058-55764
+- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:38348-31184-79431-66366
 
 ## Komplexere Version für Python (ohne micro:bit)
 
@@ -185,6 +194,4 @@ while True:
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 print("Ich mag nicht mehr dein Haustier sein, ich renne jetzt weg ...")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-
-
 ```

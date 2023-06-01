@@ -1,32 +1,34 @@
-def on_logo_touched():
-    global timer
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
     timer = 0
-    basic.show_icon(IconNames.HAPPY)
-input.on_logo_event(TouchButtonEvent.TOUCHED, on_logo_touched)
-
-def on_gesture_shake():
-    global timer
+    basic.showIcon(IconNames.Happy)
+})
+input.onGesture(Gesture.Shake, function () {
     timer = 0
-    basic.show_icon(IconNames.HAPPY)
-input.on_gesture(Gesture.SHAKE, on_gesture_shake)
-
+    basic.showIcon(IconNames.Happy)
+})
+let timer = 0
 timer = 0
-timer = 0
-basic.show_icon(IconNames.MEH)
-music.play_sound_effect(music.builtin_sound_effect(soundExpression.hello),SoundExpressionPlayMode.UNTIL_DONE)
-
-def on_every_interval():
-    global timer
+basic.showIcon(IconNames.Meh)
+music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
+loops.everyInterval(1000, function () {
     timer += 1
-    if timer == 20:
-        basic.show_icon(IconNames.SAD)
-        music.play_sound_effect(music.builtin_sound_effect(soundExpression.sad), SoundExpressionPlayMode.UNTIL_DONE)
-    elif timer == 30:
-        basic.show_icon(IconNames.SURPRISED)
-        basic.show_icon(IconNames.ASLEEP)
-        music.play_sound_effect(music.builtin_sound_effect(soundExpression.yawn),SoundExpressionPlayMode.UNTIL_DONE)
-    elif timer == 40:
-        basic.show_icon(IconNames.SKULL)
-        music.start_melody(music.built_in_melody(Melodies.FUNERAL), MelodyOptions.ONCE)
+    if (timer == 20) {
+        for (let index = 0; index < 3; index++) {
+            basic.showIcon(IconNames.Happy)
+            basic.pause(100)
+            basic.showIcon(IconNames.Sad)
+        }
+        music.playSoundEffect(music.builtinSoundEffect(soundExpression.sad), SoundExpressionPlayMode.UntilDone)
+    } else if (timer == 30) {
+        for (let index = 0; index < 3; index++) {
+            basic.showIcon(IconNames.Surprised)
+            basic.pause(100)
+            basic.showIcon(IconNames.Asleep)
+        }
+        music.playSoundEffect(music.builtinSoundEffect(soundExpression.yawn), SoundExpressionPlayMode.UntilDone)
+    } else if (timer == 40) {
+        basic.showIcon(IconNames.Skull)
+        music.startMelody(music.builtInMelody(Melodies.Funeral), MelodyOptions.Once)
         basic.pause(1000000)
-loops.every_interval(1000, on_every_interval)
+    }
+})

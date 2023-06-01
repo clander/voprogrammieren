@@ -46,6 +46,7 @@ basic.showIcon(IconNames.Meh)
 Konzepte:
 - [Was sind Variablen?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_variable)
 - [Was ist eine Zuweisung?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_zuweisung)
+
 MakeCode:
 - [Variablen in MakeCode](https://makecode.microbit.org/blocks/variables)
 
@@ -76,6 +77,7 @@ Dieser Block wird wie in einer Schleife (Wiederholung) immer wieder ausgeführt,
 
 Konzept:
 - [Was ist ein Ereignis / Ereignisbehandlung?](https://www.python-online.ch/turtle.php?inhalt_links=turtle/navigation.inc.php&inhalt_mitte=turtle/ereignisse.inc.php)
+
 MakeCode:
 - [Ereignisbehandlung](https://makecode.microbit.org/reference/event-handler)
 
@@ -119,6 +121,7 @@ loops.everyInterval(1000, function () {
 Konzept:
 - [Was ist eine bedingte Verzweigung?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/konzept_fallunterscheidungen)
 - [Was ist eine Bedingung?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/bedingungen/konzept_bedingungen)
+
 MakeCode:
 - [Verzweigungen in MakeCode](https://makecode.microbit.org/blocks/logic/if)
 - [Bedingungen in MakeCode](https://makecode.microbit.org/blocks/logic/boolean)
@@ -211,6 +214,7 @@ loops.everyInterval(1000, function () {
 
 Konzept:
 - [Was sind Schleifen?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
+
 MakeCode:
 - [Schleifen in MakeCode](https://makecode.microbit.org/blocks/loops)
 
