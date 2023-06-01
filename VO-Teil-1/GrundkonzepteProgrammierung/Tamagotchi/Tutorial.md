@@ -167,8 +167,11 @@ loops.everyInterval(1000, function () {
 })
 ```
 
-## Fertiger Code 
-Hier nochmals der fertige Code ...
+## Erweiterung
+Die Symbole für die Anzeige des Gemütszustandes von Betty sollen animiert werden.
+
+Verwende dazu eine Schleife ``||loops: mache 3-mal wiederholen||`` und verschiedene  Symbole (``||basic: zeige Symbol||``) zur Anzeige auf dem Display. Du kannst die Ausführung auch kurz Anhalten:  ``||basic: pausiere (ms) 100||``
+
 ```blocks
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
     timer = 0
@@ -185,11 +188,18 @@ music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpr
 loops.everyInterval(1000, function () {
     timer += 1
     if (timer == 20) {
-        basic.showIcon(IconNames.Sad)
+        for (let index = 0; index < 3; index++) {
+            basic.showIcon(IconNames.Happy)
+            basic.pause(100)
+            basic.showIcon(IconNames.Sad)
+        }
         music.playSoundEffect(music.builtinSoundEffect(soundExpression.sad), SoundExpressionPlayMode.UntilDone)
     } else if (timer == 30) {
-        basic.showIcon(IconNames.Surprised)
-        basic.showIcon(IconNames.Asleep)
+        for (let index = 0; index < 3; index++) {
+            basic.showIcon(IconNames.Surprised)
+            basic.pause(100)
+            basic.showIcon(IconNames.Asleep)
+        }
         music.playSoundEffect(music.builtinSoundEffect(soundExpression.yawn), SoundExpressionPlayMode.UntilDone)
     } else if (timer == 40) {
         basic.showIcon(IconNames.Skull)
@@ -199,14 +209,10 @@ loops.everyInterval(1000, function () {
 })
 ```
 
-## Erweiterung
-Die Symbole für die Anzeige des Gemütszustandes von Betty sollen animiert werden.
-
-Verwende dazu eine Schleife und mehrere Symbole zur Anzeige auf dem Display
-```blocks
-
-```
-
+Konzept:
+- [Was sind Schleifen?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
+MakeCode:
+- [Schleifen in MakeCode](https://makecode.microbit.org/blocks/loops)
 
 ## Gratulation @showdialog
 Gratulation, du hast das dein eigenes Tamagotchi programmiert! Lade es nun auf deinen micro:bit Microcontroller und teste es aus!
