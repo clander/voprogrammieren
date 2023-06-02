@@ -444,6 +444,7 @@ while zaehler < eingabe_zahl:
 
 ## Ideen für das eigene Portfolio-Projekt
  - Suche dir zunächst eine passende Problemstellung:
+   - POLYGONIX 2.0 (siehe oben): Lernmodus und Startbildschirm
    - [Projekte aus der VO]([../../README.md])
    - [Miniprojekte auf Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/projekte)
    - Beispielprojekte aus programmierkonzepte.ch
