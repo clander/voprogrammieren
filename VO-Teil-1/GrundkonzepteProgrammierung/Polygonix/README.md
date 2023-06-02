@@ -441,3 +441,53 @@ while zaehler < eingabe_zahl:
     turtle.right(360/eingabe_zahl)
     zaehler = zaehler + 1
 ```
+
+## Ideen für das eigene Portfolio-Projekt
+ - Suche dir zunächst eine passende Problemstellung:
+   - [Projekte aus der VO]([../../README.md])
+   - [Miniprojekte auf Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/projekte)
+   - Beispielprojekte aus programmierkonzepte.ch
+     - [TigerJython-Projekt](https://www.tigerjython.ch/de/tutorials)
+     - [TigerJython for Kids](https://www.tigerjython4kids.ch)
+     - [Programmierkonzepte] (https://programmierkonzepte.ch)
+     - [Grafik, Robotik, Datenbanken, Spiele](https://www.jython.ch)
+     - [Python online](https://python-online.ch)
+   - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
+   - [Unterlagen für weitere Projektideen](../../../Didaktik/README.md)
+   - Die Problemstellung soll es erlauben, die für den Lehrplan nötigen Konzepte im Unterricht zu thematisieren.
+ - Tutorial erstellen:
+   - Erstelle eine fertige Anleitung zur Lösung der Problemstellung im Format des in dieser Datei beschriebenen POLYGONIX-Beispiels.
+     - Die Lösung soll iterativ in mehreren Teillösungen / Versionen erfolgen
+     - Für jede Teillösung / Version / Iteration wird folgender Zyklus durchlaufen (siehe dazu auch [die zentralen Ideen der Programmierung im Unterricht](../../../Didaktik/Zentrale-Ideen.md))
+       - Problemanalyse
+         - Dekomposition
+         - Abstraktion
+         - Mustererkennung
+         - Generalisierung
+       - Algorithmisierung
+         - Sprachkonzepte thematisieren
+         - Pseudocode formulieren
+       - Implementierung und Test
+         - mit IDE und Sprache der Wahl Pseudocode umsetzen
+         - Testen
+         - Debuggen
+ - Erstelle eine kleine Unterrichtsplanung dazu:
+   - Zielehierarchie
+     - ausgehend vom Lehrplan
+     - zentrale Konzepte / Ideen ableiten
+     - Transferziel, Erkenntnisziel, Fakten, Fertigkeiten ableiten
+   - Lernzielkontrolle 
+     - in Form einer ähnlichen Problemstellung (Fokus Transfer)
+     - Fokussiert auf die umfassende Kontrolle der Zieldimension
+   - Stundenverlauf
+     - Kern ist die fertige Anleitung oben
+     - Eingebettet wird diese Anleitung in ein klassisches didaktisches Design, z.B [Gagné](https://www.niu.edu/citl/resources/guides/instructional-guide/gagnes-nine-events-of-instruction.shtml).
+        1. Aufmerksamkeit erregen
+        2. Ziele bekannt geben
+        3. Vorwissen aktivieren
+        4. Input (Konzepte + Werkzeuge)
+        5. Lerngerüste
+        6. Übungsphasen
+        7. Feedback
+        8. Kompetenzcheck
+        9. Transfer einüben
