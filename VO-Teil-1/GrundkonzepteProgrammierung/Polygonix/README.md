@@ -52,7 +52,7 @@ Wir reduzieren das Problem zunächst auf das Zeichnen von Linien in verschiedene
 
 Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem bestimmen Winkel zueinander stehen.
 #### Dekomposition
-Funktionen von Version 0.1: 
+Funktionen: 
   - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe;
 
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
