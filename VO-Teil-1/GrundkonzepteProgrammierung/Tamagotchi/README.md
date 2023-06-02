@@ -1,15 +1,15 @@
-# Tamagotchi ePet
+# Tamagotchi ePet BETTY
 
 ## Aufgabe für micro:bit
 
 ![](./bilder/tamagotchiMicrobitAufgabe.png)
-(Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 73 - S. 74, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf)
+(Quelle: Denken lernen -Probleme lösen mit BBC micro:bit V1 + V2, S. 73 - S. 74, https://microbit.eeducation.at/images/c/c7/Buch_microbit_sek_i-Auflage_2022_20220905_30MB.pdf, https://microbit.eeducation.at/wiki/Hauptseite)
 
-### Implementierung micro:bit
-#### Blöcke
+## Implementierung micro:bit
+### Blöcke
 ![](./bilder/tamagotchiMicrobitLoesung.png)
 
-#### Python-Code
+### Python-Code
 ```python
 def on_logo_touched():
     global timer
@@ -52,58 +52,15 @@ def on_every_interval():
         basic.pause(1000000)
 loops.every_interval(1000, on_every_interval)
 ```
-#### JavaScript Code
-```javascript
-input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    timer = 0
-    basic.showIcon(IconNames.Happy)
-})
-input.onGesture(Gesture.Shake, function () {
-    timer = 0
-    basic.showIcon(IconNames.Happy)
-})
-let timer = 0
-timer = 0
-basic.showIcon(IconNames.Meh)
-music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
-loops.everyInterval(1000, function () {
-    timer += 1
-    if (timer == 20) {
-        for (let index = 0; index < 3; index++) {
-            basic.showIcon(IconNames.Happy)
-            basic.pause(100)
-            basic.showIcon(IconNames.Sad)
-        }
-        music.playSoundEffect(music.builtinSoundEffect(soundExpression.sad), SoundExpressionPlayMode.UntilDone)
-    } else if (timer == 30) {
-        for (let index = 0; index < 3; index++) {
-            basic.showIcon(IconNames.Surprised)
-            basic.pause(100)
-            basic.showIcon(IconNames.Asleep)
-        }
-        music.playSoundEffect(music.builtinSoundEffect(soundExpression.yawn), SoundExpressionPlayMode.UntilDone)
-    } else if (timer == 40) {
-        basic.showIcon(IconNames.Skull)
-        music.startMelody(music.builtInMelody(Melodies.Funeral), MelodyOptions.Once)
-        basic.pause(1000000)
-    }
-})
-```
-
-## Tamagotchi-Tutorial
+## Tamagotchi Tutorial
 
 ### MakeCode Tutorial Editor
 Auf der Microsoft MakeCode Plattform können auch sehr einfach Selbstlern-Tutorials für den Unterricht erstellt und geteilt werden.
 
-Das Tool selbst ist erreichbar über: https://makecode.com/tutorial-tool
+- Das Tool selbst ist erreichbar über: https://makecode.com/tutorial-tool
+- Die Dokumentation zum Tool: https://makecode.com/writing-docs/tutorials
 
 Über Markdown können die Tutorials geschrieben werden.
-
-Beispiele für Tutorials finden sich z.B. auf:
-
-- Flasing-Hearts: https://github.com/Microsoft/pxt-microbit/blob/master/docs/projects/flashing-heart.md
-- Schere-Stein-Papier: https://github.com/Microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
-- https://github.com/Microsoft/pxt-microbit/tree/master/docs/projects
 
 Wenn ein Tutorial über den Editor erstellt wurde, kann über den Teilen-Button ein Link erzeugt werden, der zum Teilen des Tutorials im Unterricht verwendet werden kann. 
 
@@ -113,8 +70,43 @@ Weder zum Erstellen noch zum Teilen der Tutorials ist keine Anmeldung nötig. Es
 Für das Tamagotchi Beispiel wurde ein Tutorial zum Ausprobieren erstellt.
 
 - Markdown-Code für das Tutorial: [Tutorial.md](Tutorial.md)
-- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:38348-31184-79431-66366
+- Link auf das geteilte Tutorial zum Ausprobieren: https://makecode.microbit.org/#tutorial:33078-39730-51032-39734
 
+### Weitere Tutorials
+Beispiele für Tutorials (verfasst in MarkDown) finden sich z.B. auf den folgenden Seiten. 
+
+- Flasing-Hearts: https://github.com/Microsoft/pxt-microbit/blob/master/docs/projects/flashing-heart.md
+- Schere-Stein-Papier: https://github.com/Microsoft/pxt-microbit/blob/master/docs/projects/rock-paper-scissors.md
+- Viele weitere: https://github.com/Microsoft/pxt-microbit/tree/master/docs/projects
+
+## Ideen für das eigene Portfolio-Projekt
+ - Passende Problemstellung suchen:
+   - Suche dir ein Beispiel-Projekt, z.B. aus [diesem Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
+   - Das Projekt soll es erlauben, die für den Lehrplan nötigen Konzepte im Unterricht zu thematisieren.
+ - Tutorial erstellen:
+   - Erstelle ein fertiges MakeCode-Tutorial, das Schüler:innen an die Hand nimmt und mit ihnen Schritt für Schritt die Programmierung des Projektes durchführt.
+   - Das Tutorial soll die auf MakeCode nötigen Bausteine Schritt für Schritt einführen und zur Lösung verwenden
+   - Das Tutorial soll auf die wesentlichen Konzepte der Programmierung referenzieren (Links), die für einen verwendeten MakeCode-Baustein passen.
+ - Erstelle eine kleine Unterrichtsplanung dazu:
+   - Zielehierarchie
+     - ausgehend vom Lehrplan
+     - zentrale Konzepte / Ideen ableiten
+     - Transferziel, Erkenntnisziel, Fakten, Fertigkeiten ableiten
+   - Lernzielkontrolle 
+     - in Form einer ähnlichen Problemstellung (Fokus Transfer)
+     - Fokussiert auf die umfassende Kontrolle der Zieldimension
+   - Stundenverlauf
+     - Kern ist das Tutorial
+     - Eingebettet wird das Tutorial in ein klassisches didaktisches Design, z.B [Gagné](https://www.niu.edu/citl/resources/guides/instructional-guide/gagnes-nine-events-of-instruction.shtml).
+        1. Aufmerksamkeit erregen
+        2. Ziele bekannt geben
+        3. Vorwissen aktivieren
+        4. Input (Konzepte + Werkzeuge)
+        5. Lerngerüste
+        6. Übungsphasen
+        7. Feedback
+        8. Kompetenzcheck
+        9. Transfer einüben
 ## Komplexere Version für Python (ohne micro:bit)
 
 Die folgende Version eines Tamagotchi ePets ist etwas komplexer und kann als Anregung für die Erweiterung des oben dargestellten Beispiels dienen. 

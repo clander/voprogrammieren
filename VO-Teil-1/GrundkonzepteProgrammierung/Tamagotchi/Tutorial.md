@@ -14,7 +14,7 @@ Ksenia grübelt kurz und sagt: „Warte, ich habe doch den neuen BBC micro:bit V
 
 
 ## Aufgabenstellung
-Was soll unser Tamagotchi-Nachbau alles können?
+Was soll unser Tamagotchi-Nachbau BETTY alles können?
 
 - Wenn der BBC micro:bit V2 eingeschaltet wird, zeigt er ein neutrales Gesicht und spielt den Hallo-Sound ab.
 - In einer Dauerschleife (Dauerhaft-Schleife) wird der Timer jede Sekunde hinaufgezählt.
@@ -22,6 +22,7 @@ Was soll unser Tamagotchi-Nachbau alles können?
 - Wenn der Timer auf 20 steht, zeigt Betty ein trauriges Gesicht und macht ein trauriges Geräusch.
 - Wenn der Timer auf 30 steht, gähnt Betty und schläft ein.
 - Wenn der Timer auf 40 steht, wird ein trauriger Sound abgespielt und Betty stirbt.
+- Die angezeigten Symbole für den Gemütszustand von Betty sollen animiert werden.
 
 ## Variable erstellen
 Erstelle eine ``||variables:Variable||`` mit dem Namen **timer**. 
@@ -34,6 +35,11 @@ timer = 0
 ```
 Konzepte:
 - [Was ist ein Computerprogramm?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
+- [Was sind Variablen?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_variable)
+- [Was ist eine Zuweisung?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_zuweisung)
+
+MakeCode:
+- [Variablen in MakeCode](https://makecode.microbit.org/blocks/variables)
 
 ## Smiley anzeigen
 Mit ``||basic: zeige Symbol||`` wird ``||basic:beim Start||`` außerdem ein neutrales Gesicht angezeigt.
@@ -43,12 +49,8 @@ let timer = 0
 timer = 0
 basic.showIcon(IconNames.Meh)
 ```
-Konzepte:
-- [Was sind Variablen?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_variable)
-- [Was ist eine Zuweisung?](https://www.inf-schule.de/imperative-programmierung/python/konzepte/variablen/konzept_zuweisung)
-
 MakeCode:
-- [Variablen in MakeCode](https://makecode.microbit.org/blocks/variables)
+- [Symbole am Display anzeigen](https://makecode.microbit.org/reference/basic/show-icon)
 
 ## Musik abspielen
 Es soll außerdem ``||basic:beim Start||`` ein Hallo-Sound  ``||music: spiele Ton Hallo bis zum Ende||`` abgespielt werden.
@@ -60,10 +62,9 @@ basic.showIcon(IconNames.Meh)
 music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
 ```
 MakeCode:
-- [Symbole am Display anzeigen](https://makecode.microbit.org/reference/basic/show-icon)
 - [Musik abspielen](https://makecode.microbit.org/reference/music)
 
-## Dauerschleife
+## Events und Event-Handling
 
 ``||loops:Alle 1000 Millisekunden||`` soll der Timer um eins erhöht werden.
 
@@ -72,9 +73,6 @@ loops.everyInterval(1000, function () {
     timer += 1
 })
 ```
-
-Dieser Block wird wie in einer Schleife (Wiederholung) immer wieder ausgeführt, wenn die eingestellte Zeit verstrichen ist.
-
 Konzept:
 - [Was ist ein Ereignis / Ereignisbehandlung?](https://www.python-online.ch/turtle.php?inhalt_links=turtle/navigation.inc.php&inhalt_mitte=turtle/ereignisse.inc.php)
 
@@ -169,6 +167,9 @@ loops.everyInterval(1000, function () {
     }
 })
 ```
+
+MakeCode:
+- [Programm pausieren](https://makecode.microbit.org/reference/basic/pause)
 
 ## Erweiterung
 Die Symbole für die Anzeige des Gemütszustandes von Betty sollen animiert werden.
