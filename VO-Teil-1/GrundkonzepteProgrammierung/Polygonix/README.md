@@ -449,7 +449,7 @@ while zaehler < eingabe_zahl:
    - Beispielprojekte aus programmierkonzepte.ch
      - [TigerJython-Projekt](https://www.tigerjython.ch/de/tutorials)
      - [TigerJython for Kids](https://www.tigerjython4kids.ch)
-     - [Programmierkonzepte] (https://programmierkonzepte.ch)
+     - [Programmierkonzepte](https://programmierkonzepte.ch)
      - [Grafik, Robotik, Datenbanken, Spiele](https://www.jython.ch)
      - [Python online](https://python-online.ch)
    - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)

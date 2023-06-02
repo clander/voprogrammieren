@@ -35,7 +35,7 @@ Für die Software gelten folgende funktionale Anforderungen:
 ![](./bilder/zahlenratenki1.png)
 ![](./bilder/zahlenratenki2.png)
 ![](./bilder/zahlenratenki3.png)
-## Python-Implementierung KI-Variante (Binäre Suche)
+## Python-Implementierung
 
 ```python
 def binaersuche_rekursiv(werte, start, ende, anzahlVersuche):
@@ -63,6 +63,11 @@ binaersucheKi(moeglicheWerte)
 ```
 
 ## Implementierung für Microbit (Microsoft MakeCode)
+
+### Blöcke
+![Zahlenraten mit KI in microbit](./bilder/zahlenraten-ki-microbit.png)
+
+### Python
 ```python
 def on_gesture_shake():
     global list2
