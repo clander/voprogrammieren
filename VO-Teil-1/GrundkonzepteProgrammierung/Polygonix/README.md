@@ -465,7 +465,8 @@ while zaehler < eingabe_zahl:
          - Mustererkennung
          - Generalisierung
        - Algorithmisierung
-         - Sprachkonzepte thematisieren
+         - Sprachkonzepte identifizieren und einführen
+         - Struktogramm / Flussdiagramm zeichnen
          - Pseudocode formulieren
        - Implementierung und Test
          - mit IDE und Sprache der Wahl Pseudocode umsetzen
