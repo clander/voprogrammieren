@@ -87,7 +87,7 @@ Suche dir eine passende Problemstellung:
    - Beispiel-Problemstellung aus [diesem Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
    - Das Projekt soll es erlauben, die für den Lehrplan nötigen Konzepte im Unterricht zu thematisieren.
 ### Tutorial
-Entwickle ein Tutorial mit dem Tutorial-Tool, das die Lösung der Problemstellung mithilfe von Microsoft MakeCode micro:bit Schritt für Schritt vorzeigt:
+Entwickle ein Tutorial mit dem [Tutorial-Tool](https://makecode.com/tutorial-tool), das die Lösung der Problemstellung mithilfe von Microsoft MakeCode micro:bit Schritt für Schritt vorzeigt:
 
    - Das Tutorial soll die auf MakeCode nötigen Bausteine Schritt für Schritt einführen und zur Lösung verwenden
    - Das Tutorial soll auf die wesentlichen Konzepte der Programmierung referenzieren (Links), die für einen verwendeten MakeCode-Baustein passen.
