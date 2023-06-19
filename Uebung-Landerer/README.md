@@ -11,6 +11,10 @@ Problemstellung dazu: https://microbit.eeducation.at/wiki/Tamagotchi
 
 Hier findet ihr das [fertige Tamagotchi-Beispiel](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md).
 
+## Ersatzleistung für die Übung
+1. Arbeite das [das Tamagotchi-micro:bit-Tutorial](https://makecode.microbit.org/#tutorial:33078-39730-51032-39734) selbst durch und dokumentiere alles per Screenshots.
+2. Arbeite das [Polygonix](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)-Beispiel durch und entwickle eine [Concept-Map](https://de.wikipedia.org/wiki/Concept-Map) zusammen mit einem Glossar über die betroffenen zentralen Konzepte und Prozesse der Programmierung, die in diesem Beispiel aufgegriffen werden.
+
 ## Weitere Beispiele zur Vertiefung
 
 Die folgenden Beispiele können zur weiteren Vertiefung sowie als Grundlage für die Portfolio-Arbeit dienen:
