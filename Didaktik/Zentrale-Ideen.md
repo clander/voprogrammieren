@@ -85,8 +85,8 @@ flowchart TD
     K --> L[Programm ausführen]
     L --> Q{Laufzeitfehler?}-->|Ja|M
     Q-->|Nein|N{Logische Fehler?} 
-    -->|Ja| O[/Fertige Lösung/]
-    N --> |Nein| M[Debugging]-->|Code anpassen|G
+    -->|Nein| O[/Fertige Lösung/]
+    N --> |Ja| M[Debugging]-->|Code anpassen|G
     M -->|Lösungsansatz anpassen|C
     M --> |Algorithmus anpassen|E
 ```
