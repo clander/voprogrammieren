@@ -8,18 +8,23 @@ laengeAlphabet = len(alphabet)
 
 durchlauf = 1
 
-while durchlauf <= anzahlDurchlauefe:
+def wartenMitPfeil(sekunden):
+    vergangeneSekunden = 1
+    while vergangeneSekunden <= sekunden:
+        time.sleep(1)
+        print(vergangeneSekunden*'>')
+        vergangeneSekunden = vergangeneSekunden + 1
+
+def durchlaufStarten():
     zufallszahl = random.randint(0, laengeAlphabet-1)
     print("-----------------------")
     print("Runde " + str(durchlauf))
     print("Buchstabe: " + str(alphabet[zufallszahl]))
-    vergangeneSekunden = 0
-    print("*"*dauerDurchlauf)
-    while vergangeneSekunden < dauerDurchlauf:
-        time.sleep(1)
-        print('>', flush="True", end="")
-        vergangeneSekunden = vergangeneSekunden + 1
-    print("")
-    input("Durchlauf beendet. Nächster Durchlauf mit Enter")
+    wartenMitPfeil(dauerDurchlauf)
+
+while durchlauf <= anzahlDurchlauefe:
+    durchlaufStarten()
     durchlauf = durchlauf + 1
+    input("Durchlauf beendet. Nächster Durchlauf mit Enter")
+
 print("Danke für's Spielen!")
