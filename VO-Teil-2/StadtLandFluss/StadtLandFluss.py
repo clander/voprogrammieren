@@ -6,7 +6,7 @@ dauerDurchlauf = int(input("Wieviele Sekunden soll ein Durchlauf dauern?"))
 alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 laengeAlphabet = len(alphabet)
 
-durchlauf = 1
+durchlauf = 1 
 
 def wartenMitPfeil(sekunden):
     vergangeneSekunden = 1
