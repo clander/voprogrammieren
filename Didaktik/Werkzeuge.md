@@ -42,6 +42,7 @@ https://makecode.microbit.org
   - Minecraft-Progarmmierung: https://minecraft.makecode.com/
   - Spieleentwicklung mit Arcade: https://arcade.makecode.com
 - Schulbuch mit vielen Projekten für die micro:bit-Programmmierung: https://microbit.eeducation.at/wiki/Hauptseite  
+  
 ## Miniwelten mit Python
 1. Python Kara
    - https://www.swisseduc.ch/informatik/karatojava/pythonkara/index.html
@@ -81,3 +82,6 @@ https://www.python.org
 - Pygal (Charting) https://www.pygal.org/en/stable/
 - Requests (API-Requests): https://www.w3schools.com/python/module_requests.asp
 - Processing (Interaktive-Drawing-And-Multimedia): https://py.processing.org
+
+## OpenRoberta
+- [OpenRoberta](https://www.open-roberta.org) OpenRoberta Programmierplattform für die Programmierung von Robotern und Microcontrollern, neuerdings mit der Unterstützung von Neuronalen Netzen, incl. Online-Simulation.
