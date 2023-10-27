@@ -15,6 +15,7 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 * informatische Arbeitsprinzipien zu erklären und damit Probleme zu analysieren, Problemlösungen unter Benutzung geeigneter Methoden zu beschreiben und diese zu realisieren.
 * unterschiedliche Programmiersprachen-Paradigma und Darstellungsformen sowie deren Vor- und Nachteile im Schulunterricht zu benennen.
 * unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren.
+  
 In den **Übungen zur VO** werden die Inhalte der VO anhand eines durchgängingen Beispiels und mit einem passenden Werkzeug illustriert. Dazu werden folgende Bildungsinhalte wiederholt: 
 
 ### Übungen zur Vorlesung
@@ -33,7 +34,7 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 * klassische und agile Entwicklungsmethoden zu nennen und diese im Schulunterricht mit den Schüler*innen in Projekten umzusetzen.
 * ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
 
-## Eigenleistung für die Übungen
+### Eigenleistung für die Übungen
 Als Eigenleistung für die Übung wäre z.B. die Entwicklung eines durchgängigen Beispiels für den Schulunterricht sinnvoll. 
 
 Eigenschaften:
@@ -48,30 +49,34 @@ Eigenschaften:
 Das Beispiel soll die wesentlichen Konzepte aus der VO Teil 1 und Teil 2 aufgreifen und mit einem Werkzeug implementiert werden, das in einer der Übungen verwendet wurde.
 
 ## Script zur VO Teil 2
-1. [Zentrale Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
-2. [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
-3. [POLYGONIX](./GrundkonzepteProgrammierung/Polygonix/) (Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.)
-4. [Vieleck mit Farben](../VO-Teil-2/TurtleBeispiele/) (zur Illustration eines neuen Konzeptes: Listen)
+1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
+2. Verweis auf [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
+   1. Hinweis auf [Thonny](https://thonny.org)
+   2. Hinweis auf [StructoG] (https://dditools.inf.tu-dresden.de/dev/struktog/)
+3. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
+   1. Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
+   2. Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.
+4. [Vieleck mit Farben](../VO-Teil-2/TurtleBeispiele/) (Listen, eigene Methoden und Bibliotheksklassen werden als neue Konzepte eingeführt)
 
 ## Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
 
-1. [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
+1. [Quadrat / Vielecke](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
    - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
    - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
-2. [Countdown](./GrundkonzepteProgrammierung/Countdown/)
+2. [Countdown](../VO-Teil-1/GrundkonzepteProgrammierung/Countdown/)
    - Problemanalyse
    - Codierung in Python
-3. [Zahlenraten](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
+3. [Zahlenraten](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - Problemanalyse
    - Codierung in Python
    - Variante als Computerspiele für einen Handheld
    - Variante als Microcontroller-Programm
-4. [Body Mass Index (BMI)](./GrundkonzepteProgrammierung/BMI/README.md)
+4. [Body Mass Index (BMI)](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
    - BMI als Excel-Lösung
    - BMI in 3 Iterationen mit Python
-5. [Schere-Stein-Papier](./GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
-6. [Tamagotchi](./GrundkonzepteProgrammierung/Tamagotchi/README.md)
+5. [Schere-Stein-Papier](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
+6. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md)
 
 ## Fortgeschrittene Beispiele zur Anregung
 * [BMI extended](./BMI/)
