@@ -2,13 +2,11 @@
 
 Die folgende Idee stammt aus einem c't-Artikel in der Ausgabe 24/2023 vom 21.10.2023 (Autoren: Michael Langwald, Florian Schuppan, artin Tilmans).
 
-Das komplette Unterrichtsmaterial ist über folgenden Link verfügbar:
+Das komplette Unterrichtsmaterial ist über folgenden c't-Link verfügbar:
 
 [Materialien für den Unterricht auf c't Ausgabe 24 vom 21.10.2023](https://ct.de/ycc9)
 
-Grundidee: Es werden neuronale Netze konfiguriert. Die Eingangswerte für die Nezte liefert der Roboter über seine Sensoren, die berechneten Werte der Neuronen steuern die Motoren des Roboters.
-
-Der Roboter wird also nicht über klasse Programmierung programmiert, sondern er wird über das neuronale Netz gesteuert.
+Grundidee: Ein Roboter wird  nicht über klassische Programmierung programmiert, sondern  über ein neuronales Netz gesteuert. Dazu wird ein neuronales Netz konfiguriert. Die Eingangswerte für das Nezt liefert der Roboter über seine Sensoren, die berechneten Werte der Neuronen steuern die Motoren des Roboters.
 
 ## Annäherung an den Line-Follower:
 Als Endergebnis programmieren die Kinder einen Line-Follower.
