@@ -56,7 +56,9 @@ Das Beispiel soll die wesentlichen Konzepte aus der VO Teil 1 und Teil 2 aufgrei
 3. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
    1. Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    2. Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine "Lern-App" mit Turtle-Grafik erzeugt.
-4. [POLYGONIX-Varianten mit Listen, Methoden und Zufall](../VO-Teil-2/TurtleBeispiele/) Beispiel mit Array (Liste) und Zufall
+4. POLYGONIX-Varianten
+   1.  [Mit Listen und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
+   2.  [Mit Listen, Zufall und Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
 5. [Events mit Turtle](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
 6. [Events mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
 7. Todo: Events und Methoden am Beispiel Arcade-Game-Textadventure
