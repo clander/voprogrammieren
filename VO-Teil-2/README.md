@@ -55,8 +55,10 @@ Das Beispiel soll die wesentlichen Konzepte aus der VO Teil 1 und Teil 2 aufgrei
    2. Hinweis auf [StructoG] (https://dditools.inf.tu-dresden.de/dev/struktog/)
 3. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
    1. Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
-   2. Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.
-4. [Vieleck mit Farben](../VO-Teil-2/TurtleBeispiele/) (Listen, eigene Methoden und Bibliotheksklassen werden als neue Konzepte eingeführt)
+   2. Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine "Lern-App" mit Turtle-Grafik erzeugt.
+4. [Vieleck mit Farben](../VO-Teil-2/TurtleBeispiele/) (Listen, eigene Methoden und Bibliotheksklassen (Random) und Events incl. Event-Handling (GUI) werden als neue Konzepte eingeführt)
+5. [Events mit Turtle](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Dieses Python-Beispiel zeigt, wie man mit der Turtle-Funktionalität mit Events programmiert.
+6. [Events mit GUI](../VO-Teil-2/BMI/BmiV7.py) Dieses Beispiel zeigt GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
 
 ## Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
@@ -80,6 +82,7 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 
 ## Fortgeschrittene Beispiele zur Anregung
 * [BMI extended](./BMI/)
+  * In Mehreren weiteren "Iterationen" werden etwa die Konzepte Methoden und Events eingeführt.
 * [Stadt-Land-Fluss](./StadtLandFluss/)
 * [Textadventure](./Textadventure/)
 * [Vieleck](./TurtleBeispiele/)

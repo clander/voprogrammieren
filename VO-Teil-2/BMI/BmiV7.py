@@ -35,7 +35,7 @@ def bmiRechnenUndInterpretieren():
     try:
         kg = float(kgTextBinding.get())
         m = float(mTextBinding.get())
-        bmi = kg / m**m
+        bmi = kg / (m * m)
         ergebnisTextBinding.set(str(round(bmi,2)))
         if bmi <= 18:
             interpretation = "Untergewicht"
@@ -46,8 +46,8 @@ def bmiRechnenUndInterpretieren():
         else:
             interpretation = "Adipositas"
         ergebnisInterpretationBinding.set(interpretation)
-    except:
-        messagebox.showerror(title="Falscheingabe", message="Bitte Zahlen eingeben!")
+    except Exception as e:
+        messagebox.showerror(title="Ein Problem ist aufgetreten:", message=e)
 
 # Hauptprogramm
 

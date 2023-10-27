@@ -4,7 +4,7 @@ from tkinter import messagebox
 def bmiRechnenUndInterpretieren():
     kg = float(kgTextBinding.get())
     m = float(mTextBinding.get())
-    bmi = kg / m**m
+    bmi = kg / (m * m)
     messagebox.showinfo(title="BMI", message=f"Dein BMI beträgt {bmi}")
 
 root = tk.Tk() # Hauptfenster
