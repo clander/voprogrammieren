@@ -59,6 +59,7 @@ Das Beispiel soll die wesentlichen Konzepte aus der VO Teil 1 und Teil 2 aufgrei
 4. [Vieleck mit Farben](../VO-Teil-2/TurtleBeispiele/) (Listen, eigene Methoden und Bibliotheksklassen (Random) und Events incl. Event-Handling (GUI) werden als neue Konzepte eingeführt)
 5. [Events mit Turtle](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Dieses Python-Beispiel zeigt, wie man mit der Turtle-Funktionalität mit Events programmiert.
 6. [Events mit GUI](../VO-Teil-2/BMI/BmiV7.py) Dieses Beispiel zeigt GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
+7. Todo: Events und Methoden am Beispiel Arcade-Game-Textadventure
 
 ## Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
