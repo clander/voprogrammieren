@@ -88,6 +88,5 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
   * In Mehreren weiteren "Iterationen" werden etwa die Konzepte Methoden und Events eingeführt.
 * [Stadt-Land-Fluss](./StadtLandFluss/)
 * [Textadventure](./Textadventure/)
-* [Vieleck-Beispiele gesammelt](./TurtleBeispiele/)
 * [Worteraten](./Worteraten/)
 * [Zahlenraten mit Intelligenz](./ZahlenratenKI/)
