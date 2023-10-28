@@ -34,19 +34,21 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 
 ## Script zur VO Teil 2
 1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
-2. Verweis auf [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
-   1. Hinweis auf [Thonny](https://thonny.org)
-   2. Hinweis auf [StructoG](https://dditools.inf.tu-dresden.de/dev/struktog/)
-3. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
-   - Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
-   - Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine "Lern-App" mit Turtle-Grafik erzeugt.
-   - Code einiger POLYGONIX-Varianten:
-      - [Mit Listen und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
-      - [Mit Listen, Zufall und Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
-4. [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
-5. Chase The Pizza Tutorial: https://arcade.makecode.com/-> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
-6. [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-7. [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Ein Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
+   - [Turtle Ausgangsbeispiel zur Wiederholung](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleck.py)
+2. Neues Konzept: Arrays
+   - [Turtle Beispiel mit Array und Zufall](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
+3. Neues Konzept: Methoden
+   - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py)
+   - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
+4. Neues Konzept: Ereignisse und Ereignisbehandlung
+   - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
+   - Chase The Pizza Tutorial: https://arcade.makecode.com/-> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
+   - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
+5. Neue Unterrichtsidee / neue Umgebung: KI zur Steuerung von Robotern
+   - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
+6. Informatische Denk- und Arbeitsweisen: Computational Thinking
+   [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
+   - Das Beispiel zeigt anhand einer realweltlichen Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
 
 ## Weitere Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
