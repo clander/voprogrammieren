@@ -25,6 +25,14 @@ def booleanEingabe(ausgabetext: str) -> bool:
     else:
         return False
 
+def farbenEingabe(farben:list[str]) -> str:
+    for i in range(1,len(farben)):
+        print(str(i) +') ' + farben[i])
+    eingabe = ''
+    while eingabe not in farben:
+        eingabe = input('Bitte Farbe eingeben:')
+    return eingabe
+
 def zufallsfarbe(farben:list[str])->str:
     zufallFarbe = farben[random.randint(0, len(farben)-1)]
     return zufallFarbe
@@ -44,14 +52,6 @@ def polygonZeichnenMitFarbe(anzahlEcken: int, seitenlaenge: int, dicke: int, far
         turtle.pencolor(farbe)
         turtle.forward(seitenlaenge)
         turtle.right(360 / ecken)
-
-def farbenEingabe(farben:list[str]) -> str:
-    for i in range(1,len(farben)):
-        print(str(i) +') ' + farben[i])
-    eingabe = ''
-    while eingabe not in farben:
-        eingabe = input('Bitte Farbe eingeben:')
-    return eingabe
     
 #Eingaben des Benutzers:
 zufallsfarbenWahl = booleanEingabe('Zufallsfarben?')

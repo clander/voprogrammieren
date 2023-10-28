@@ -3,7 +3,7 @@
 ## Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
 
 ### Vorlesung
-Es werden schwerpunktmäßig folgende Bildungsinhalte des Curriculums in der Vorlesung behandelt:
+Schwerpunktmäßig werden in der VO folgende Bildungsinhalte des Curriculums behandelt:
 
 * informatisches Denken und Informatische Arbeitsprinzipien (etwa Entwurfsprinzipien, strukturierte Programmierung, abstrakte Datentypen, Modularisierung, Hierarchisierung, Prototyping, Debugging)
 * Entwicklungsprozesse (insbesondere agile Projekte)
@@ -14,9 +14,7 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 * Teilbereiche des Informatischen Denkens benennen und Bezüge zur Lebenswelt von Schüler*innen herzustellen.
 * informatische Arbeitsprinzipien zu erklären und damit Probleme zu analysieren, Problemlösungen unter Benutzung geeigneter Methoden zu beschreiben und diese zu realisieren.
 * unterschiedliche Programmiersprachen-Paradigma und Darstellungsformen sowie deren Vor- und Nachteile im Schulunterricht zu benennen.
-* unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren.
-  
-In den **Übungen zur VO** werden die Inhalte der VO anhand eines durchgängingen Beispiels und mit einem passenden Werkzeug illustriert. Dazu werden folgende Bildungsinhalte wiederholt: 
+* unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren. 
 
 ### Übungen zur Vorlesung
 In den Übungen zur Vorlesung Teil 2 werden die Inhalte der VO aufgegriffen und anhand eines durchgängigen Beispiels sowie einer passenden Entwicklungsumgebung zur Anwendung gebracht.
@@ -33,20 +31,6 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 * Programmiersprachen in kreativer Art und Weise zur Verwirklichung von Projekten zu nutzen.
 * klassische und agile Entwicklungsmethoden zu nennen und diese im Schulunterricht mit den Schüler*innen in Projekten umzusetzen.
 * ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
-
-### Eigenleistung für die Übungen
-Als Eigenleistung für die Übung wäre z.B. die Entwicklung eines durchgängigen Beispiels für den Schulunterricht sinnvoll. 
-
-Eigenschaften:
-
-* Unterrichtsplanung zur Einbettung des Beispiels im T-G-I-Rahmen mit Schwerpunkt auf:
-  * Ziele lt. DGB-Curriculum
-  * Lernzielkontrolle
-  * Verlaufsplan / Methodik
-* Beispiel (Angaben für Schüler:innen)
-* Vollständige Implementierung / Lösung
-
-Das Beispiel soll die wesentlichen Konzepte aus der VO Teil 1 und Teil 2 aufgreifen und mit einem Werkzeug implementiert werden, das in einer der Übungen verwendet wurde.
 
 ## Script zur VO Teil 2
 1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
@@ -86,8 +70,77 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 
 ## Fortgeschrittene Beispiele zur Anregung
 * [BMI extended](./BMI/)
-  * In Mehreren weiteren "Iterationen" werden etwa die Konzepte Methoden und Events eingeführt.
+  * In weiteren "Iterationen" werden etwa die Konzepte Methoden und Events eingeführt.
 * [Stadt-Land-Fluss](./StadtLandFluss/)
 * [Textadventure](./Textadventure/)
 * [Worteraten](./Worteraten/)
 * [Zahlenraten mit Intelligenz](./ZahlenratenKI/)
+
+## Anregungen für die Eigenleistung
+1. Problemstellung:
+   - Suche eine passende Problemstellung (passend zum gewählten Werkzeug, passend zum Transport der Konzepte und Prozesse der VO / des DGB-Lehrplanes)
+   - Beispiele:
+     - Anregungen für Projekte siehe VO / siehe oben, weiters:
+     - [Miniprojekte auf Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/projekte)
+     - Beispielprojekte aus programmierkonzepte.ch
+       - [TigerJython-Projekt](https://www.tigerjython.ch/de/tutorials)
+       - [TigerJython for Kids](https://www.tigerjython4kids.ch)
+       - [Programmierkonzepte](https://programmierkonzepte.ch)
+       - [Grafik, Robotik, Datenbanken, Spiele](https://www.jython.ch)
+       - [Python online](https://python-online.ch)
+     - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
+     - [Unterlagen für weitere Projektideen](../../../Didaktik/README.md)
+2. Tutorial:
+   - Erstelle eine fertige Anleitung zur Lösung der ersten Problemstellung.
+   - Die Lösung soll iterativ in mehreren Teillösungen / Versionen erfolgen.
+   - Die Lösung soll die zentralen Konzepte verwenden, darunter:
+     - Anweisungen
+     - Blöcke
+     - Variablen
+     - Operatoren
+     - Bedingungen
+     - Verzweigungen
+     - Schleifen
+     - evtl. Listen
+     - evtl. Funktionen
+     - evtl. Zufallszahlen
+     - evtl. Events
+     - usw ... siehe POLYGONIX-Beispiel, siehe aber auch die Liste mit den [Zentralen Konzepten und Prozessen](../Didaktik/Zentrale-Ideen.md)
+   - Evtl. findet sich eine Problemstellung im Bereich KI?
+   - Für jede Teillösung / Version / Iteration wird folgender Zyklus durchlaufen (siehe dazu auch [die zentralen Ideen der Programmierung im Unterricht](../../../Didaktik/Zentrale-Ideen.md))
+     - Problemanalyse
+       - Dekomposition
+       - Abstraktion
+       - Mustererkennung
+       - Generalisierung
+     - Algorithmisierung
+       - Sprachkonzepte identifizieren und einführen
+       - Struktogramm / Flussdiagramm zeichnen
+       - Pseudocode formulieren
+     - Implementierung und Test
+       - mit IDE und Sprache der Wahl Pseudocode umsetzen
+       - Testen
+       - Debuggen
+3. Zweite Problemstellung:
+   - Das zweite Beispiel soll mit denselben Konzepten und Prozessen lösbar sein, jedoch eine völlig andere Fachdomäne betreffen. Es soll weniger Hilfestellungen beinhalten.
+   - Dieses Beispiel dient dem Einüben von Transfer.
+4. Erstelle eine kleine Unterrichtsplanung dazu:
+   - Zielehierarchie
+     - ausgehend vom Lehrplan
+     - zentrale Konzepte / Ideen ableiten
+     - Transferziel, Erkenntnisziel, Fakten, Fertigkeiten ableiten
+   - Lernzielkontrolle 
+     - in Form einer ähnlichen Problemstellung (Fokus Transfer)
+     - Fokussiert auf die umfassende Kontrolle der Zieldimension
+   - Stundenverlauf
+     - Kern des Stundenverlaufs ist die Bearbeitung der beiden Beispiele / Problemstellungen.
+     - Die didaktische Einbettung kann z. B. über ein klassisches didaktisches Design erfolgen, z.B [Gagné](https://www.niu.edu/citl/resources/guides/instructional-guide/gagnes-nine-events-of-instruction.shtml).
+        1. Aufmerksamkeit erregen
+        2. Ziele bekannt geben
+        3. Vorwissen aktivieren
+        4. Input (Konzepte + Werkzeuge)
+        5. Lerngerüste
+        6. Übungsphasen
+        7. Feedback
+        8. Kompetenzcheck
+        9. Transfer einüben
