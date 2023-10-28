@@ -32,11 +32,12 @@ Die beteiligten Konzepte sind:
   * [Zeichenketten](https://www.inf-schule.de/imperative-programmierung/python/konzepte/zeichenketten/konzept_zeichenkette) in [Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zeichenketten)
   * [Wahrheitswerte in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_wahrheitswerte)
   * [Typumwandlung in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_typumwandlungen)
-* Listen / Arrays in Python:
-  - https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen
-  - https://docs.python.org/3/tutorial/introduction.html#lists
-* Weitere Datenstrukturen in Python:
-  - https://docs.python.org/3/tutorial/datastructures.html
+* Listen und andere Datenstrukturen in Python:
+  - Listen: https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen
+  - Listen: https://docs.python.org/3/tutorial/introduction.html#lists (Lists)
+  - Sequence Types Lists, Tuples, Range: https://docs.python.org/3/library/stdtypes.html#typesseq
+  - Sequence Type String: https://docs.python.org/3/library/stdtypes.html#textseq ()
+  - Sets, Dictionaries: https://docs.python.org/3/tutorial/datastructures.html
 * [Konstrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * Sequenzen von Anweisungen
   * [Fallunterscheidung (bedingte Verzweigungen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/konzept_fallunterscheidungen)
