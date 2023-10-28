@@ -1,4 +1,4 @@
-# VO Programmieren Teil 2
+# VO PROGRAMMIEREN
 
 ## Inhalte
 *  In [VO-Teil-1](./VO-Teil-1/) finden sich die Unterlagen für den ersten Vorlesungstermin.
