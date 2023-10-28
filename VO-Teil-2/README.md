@@ -35,8 +35,9 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 ## Script zur VO Teil 2
 1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
    - [Turtle Ausgangsbeispiel zur Wiederholung](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleck.py)
+   - [Turtle Beispiel mit einfachem Farbwechsel](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
 2. Neues Konzept: Arrays
-   - [Turtle Beispiel mit Array und Zufall](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
+   - [Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
 3. Neues Konzept: Methoden
    - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py)
    - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
