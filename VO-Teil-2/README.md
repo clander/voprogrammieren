@@ -58,8 +58,8 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 7. Weitere interessante Tools:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
-   - [Open Roberta Lab](https://www.roberta-home.de/lab/)
-   - 
+   - [Open Roberta Lab](https://www.roberta-home.de/lab/) Online-Ide für die Programmierung von Robotern und Microcontrollern (incl. Online-Sim und Unterstützung für Neuronale Netze)
+   - [Thonny IDE](https://thonny.org) Spezielle Pyhton-IDE für Anfänger
 
 ## Weitere Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
