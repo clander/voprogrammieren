@@ -39,21 +39,20 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 2. Neue Konzepte: Arrays und Zufall
    - [Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
-   - [Worteraten](../VO-Teil-2/Worteraten/)
+   - [Worteraten](../VO-Teil-2/Worteraten/HangMan.py)
    - [Stadt-Land-Fluss](../VO-Teil-2/StadtLandFluss/)
    - [Schere-Stein-Papier-Array-Variante](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
 3. Neues Konzept: Methoden
    - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
-   -  [Textadventure](./Textadventure/) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
+   -  [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
 4. Neues Konzept: Ereignisse und Ereignisbehandlung
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Chase The Pizza Tutorial: https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
 5. Neue Unterrichtsidee / neue Umgebung: KI zur Steuerung von Robotern
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
-6. Informatische Denk- und Arbeitsweisen: Computational Thinking
-   [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
+6. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md): Informatische Denk- und Arbeitsweisen: Computational Thinking
    - Das Beispiel zeigt anhand einer realweltlichen Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
 
 ## Weitere Beispiele zur Anregung
@@ -66,7 +65,7 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
    - Problemanalyse
    - Codierung in Python
 3. [Body Mass Index (BMI)](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
-   - BMI als Excel-Lösung
+   - [BMI als Excel-Lösung](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx)
    - BMI in 3 Iterationen mit Python
 5. [BMI extended](./BMI/) In weiteren "Iterationen" werden etwa die Konzepte "Funktionen" "GUIs" oder "Events" eingeführt.
 6. [Textadventure](./Textadventure/)
