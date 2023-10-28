@@ -15,7 +15,7 @@ Im Fach Digitale Grundbildung lernst du, wie man kleine Computerprogramme schrei
 #### Funktionale Anforderungen (Endausbau)
 Die App soll im Endausbau folgende Funktionen aufweisen:
 
-1. LERNMODUS: Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.). Damit die Schüler:innen sich beim Zählen leichter tun, soll jede zweite Seite eine andere Farbe aufweisen.
+1. LERNMODUS: Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.). Damit die Schüler:innen sich beim Zählen leichter tun, soll jede Seite eine andere Farbe aufweisen.
 2. ÜBUNGSMODUS: Im Übungsmodus der App bekommen die Schüler:innen ein zufälliges Polygon angezeigt, und sie müssen korrekt beantworten, um welche Art von Polygon es sich handelt.
 3. STARTBILDSCHIRM: Nach dem Start der App, sollen die Kinder mit einem schönen Startbildschirm aus lauter geometrischen Figuren begrüßt werden.
 
@@ -23,9 +23,11 @@ Die App soll im Endausbau folgende Funktionen aufweisen:
 Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). Folgender Ablauf ist erwünscht (Eingabe - Verarbeitung - Ausgabe):
 
 1. Die Schüler:innen starten die App.
-2. Es folgt eine Aufforderung zur Eingabe der gewünschten Ecken-Anzahl. 
-3. Die Eingabe muss eine positive Zahl größer gleich 3 sein. Falls das nicht der Fall ist, muss ein Hinweis erscheinen und die Schüler:innen müssen die Möglichkeit haben, erneut einzugeben (solange, bis eine korrekte Zahl eingegeben wurde). Das Programm darf nicht abstürzen.
-4. Wenn die Eingabe korrekt war, wird auf dem Bildschirm ein regelmäßiges Polygon mit der erwünschten Anzahl von Ecken ausgegeben.
+2. Es folgt eine Aufforderung zur Eingabe der gewünschten Ecken-Anzahl. Die Eingabe muss eine positive Zahl größer gleich 3 sein. Falls das nicht der Fall ist, muss ein Hinweis erscheinen und die Schüler:innen müssen die Möglichkeit haben, erneut einzugeben (solange, bis eine korrekte Zahl eingegeben wurde). Das Programm darf nicht abstürzen.
+3. Es folgt eine Aufforderung zur Eingabe der gewünschten Seitenlänge. Die Eingabe muss wieder eine positive Zahl sein.
+4. Es folgt die Frage, ober Benutzer zufällige Farben für die Kanten möchte, oder selbst eine Farbe bestimmen möchte. 
+   1. Wenn selbst eine Farbe bestimmt werden möchte, dann wird eine Liste mit den möglichen Farben angezeigt. Die gewünschte Farbe muss eingegeben werden.
+5. Wenn alle Eingaben erledigt sind, wird ein entsprechendes Polygon am Bildschirm gezeichnet.
 
 #### Didaktische Hinweise zur Vorgangsweise
 Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
@@ -110,7 +112,7 @@ turtle.right(120)
 #### Dekomposition
 Funktionen: 
   - Benutzer:in gibt 3 oder 4 ein
-  - Es folgt eine entsprechende Ausgabe eiens gleichseitigen Dreiecks oder eines Quadrats.
+  - Es folgt eine entsprechende Ausgabe eines gleichseitigen Dreiecks oder eines Quadrats.
   - Es folgt eine Fehlermeldung, falls der Benutzer nicht die Zahlen 3 oder 4 eingegeben hat.
 
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
@@ -372,48 +374,107 @@ while zaehler < eingabe_zahl:
     turtle.right(360/eingabe_zahl)
     zaehler = zaehler + 1
 ```
-## POLYGONIX VERSION 1.0
+
+## POLYGONIX Version 0.5
+### Problemanalyse
+#### Dekomposition
+Funktionen: 
+  - Das Programm soll nun auch nach der Seitenlänge der Polygone fragen.
+
+Lösung des Teilproblems Gerade/Ungerade: 
+  - Analog zur Abfrage und Verwendung der Anzahl der Ecken.
+  
+### Algorithmisierung
+#### Neue Konzepte
+- keine
+#### Pseudocode
+```python
+Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
+Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
+Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
+Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
+    Wenn der Zähler durch 2 teilbar ist (ergibt also Zähler dividiert durch 2 den Rest 0):
+        Wir setzen die Linienfarbe "blue"
+    Ansonsten:
+        Wir setzen die Linienfarbe "black"
+    Wir zeichnen eine Linie mit der Länge, die der eingegebenen Seitenlänge entspricht.
+    Wir drehen uns um (360 : anzahl_ecken) Grad
+    Wir zählen den Zähler um 1 hoch.
+```
+
+#### Struktogramm
+
+... an der Struktur ändert sich zur Vorgängerversion nichts ...
+
+### Implementierung
+#### Blöcke
+![](bilder/polygonix_blocks_0_5.png)
+
+#### Python
+```python
+import turtle
+eingabeEckenanzahl = input("Wieviele Ecken soll die Figur haben?")
+eckenanzahl = int(eingabeEckenanzahl)
+eingabeSeitenlaenge = input("Welche Seitenlänge möchtest du?")
+seitenlaenge = int(eingabeSeitenlaenge)
+zaehler = 0
+turtle.pensize(4)
+while zaehler < eckenanzahl:
+    if zaehler % 2 == 0: # Rest bei Division durch 2 gleich 0?
+        turtle.pencolor('blue')
+    else:
+        turtle.pencolor('black')
+    turtle.forward(seitenlaenge)
+    turtle.right(360/eckenanzahl)
+    zaehler = zaehler + 1
+```
+
+## POLYGONIX VERSION 0.6
 ### Problemanalyse
 #### Dekomposition
 Funktionen:
-  - Wir stellen sicher, dass der Benutzer nur Zaheln >= 3 eingeben kann.
+  - Wir stellen sicher, dass der Benutzer nur Zahlen >= 3 eingeben kann.
   
 Teillösungen für Teilprobleme:
   - Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. 
+  
 ### Algorithmisierung
 #### Neue Konzepte
 * [Konstrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
-  * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
+* [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
 #### Pseudocode
+
 ```python
 Wir definieren eine Variable eingabe_ok und setzen diese auf False
 Solange eingabe_ok nicht auf True gesetzt ist:
     Der Benutzer wird aufgefordert, eine Zahl größer gleich 3 einzugeben.
     Wir versuchen die Eingabe in eine Zahl zu konvertieren.
-    Wenn die Konvertierung gelingt:
-        Wenn die Zahl größer gleich 3 ist:
-            Es liegt eine korrekte Benutzereingabe vor. Wir setzen die Variable eingabe_ok auf True und verlassen damit die Schleife
-        Sonst:
-            Wir informieren den Benutzer darüber, dass nur Zahlen größer gleich 3 erlaubt sind
-    Sonst:
-        Konvertierung ist fehlgeschlagen. Wir informieren den Benutzer darüber, dass nur Zahlen erlaubt sind.
+      Wenn die Konvertierung gelingt:
+          Wenn die Zahl größer gleich 3 ist:
+              Es liegt eine korrekte Benutzereingabe vor. Wir setzen die Variable eingabe_ok auf True und verlassen damit die Schleife
+          Sonst:
+              Wir informieren den Benutzer darüber, dass nur Zahlen größer gleich 3 erlaubt sind
+      Sonst:
+          Konvertierung ist fehlgeschlagen. Wir informieren den Benutzer darüber, dass nur Zahlen erlaubt sind.
+Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
 Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
 Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
     Wenn der Zähler durch 2 teilbar ist:
         Wir setzen die Linienfarbe "blue"
     Ansonsten:
         Wir setzen die Linienfarbe "black"
-    Wir zeichnen eine Linie der Länge 100
+    Wir zeichnen eine Linie mit der eingegebenen Seitenlänge
     Wir drehen uns um (360 : anzahl_ecken) Grad
     Wir zählen den Zähler um 1 hoch.
 ```
 #### Struktogramm
-![](bilder/polygonix_1_0.png)
+Es folgt das Struktogramm für die Eingabevalidierung (der Rest bleibt gleich):
+
+![](bilder/polygonix_0_6.png)
 
 ### Implementierung
 #### Blöcke
-![](bilder/polybonix_blocks_1_0_1.png)
-![](bilder/polybonix_blocks_1_0_2.png)
+![](bilder/polygonix_blocks_0_6.png)
 
 #### Python
 ```python
@@ -441,6 +502,132 @@ while zaehler < eingabe_zahl:
     turtle.right(360/eingabe_zahl)
     zaehler = zaehler + 1
 ```
+
+## POLYGONIX VERSION X (Ideen für weitere Iterationen)
+### Problemanalyse
+Funktionen:
+  - Das Programm soll auch die Strichdicke durch den Benutzer bestimmen lassen.
+  - Das Programm soll alle Benutzereingaben validieren.
+  - Das Programm soll einen Modus für zufällige Farben anbieten. Wenn der Benutzer diesen Modus wählt, werden für das Zeichnen der Polygone abwechselnd unterschiedlichen Farben aus einer vordefinierten Liste von mehreren Farben verwendet.
+Refactoring (nicht funktionale Anforderungen):
+  - Das Programm soll mit Funktionen besser wartbar und besser erweiterbar gehalten werden.
+### Algorithmisierung
+#### Neue Konzepte
+  * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
+  * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
+  * [Zufallszahlen als Ganzzahlen](https://www.w3schools.com/python/ref_random_randint.asp)
+
+#### Lösungsidee für das Refactoring mit Funktionen
+Wir identifizieren Teillösungen (Komponenten) in unserem Code, die wir mehrfach verwenden. Um Codeduplikate zu vermeiden und die Wiederverwendbarkeit von Code zu ermöglichen, extrahieren wir für diese Teillösungen eigene Funktionen, die wir dann immer wieder wenn sie benötigt werden aufrufen.
+
+Kandidaten von Teillösungen, die für die Extraktion in Form von Funktionen infrage kommen:
+- Zahleneingabe incl. Validierung (Min, Max)
+- Eingabe von Ja/Nein
+- Farbeneingabe
+- Polygon in einer bestimmten Farbe mit einer bestimmten Seitenlänge, Eckenanzahl, Strichdicke zeichnen
+- Polygon mit zufälligen, abwechselnden Farben, einer bestimmten Seitenlänge, Eckenanzahl und Strichdicke zeichnen.
+
+#### Lösungsidee für den Zufallsfarbenmodus
+Wir definieren eine Liste von möglichen Farben (als Strings). Wir ermitteln eine Zufallszahl zwischen 0 (erste Listenposition) bis Listenlänge-1 (letzte Listenposition). Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht.
+
+#### Lösungsidee für die Benutzereingaben incl. Validierung
+Das Schema ist für jede Eingabevalidierung dasselbe. Zunächst setzen wir die eingabeKorrekt-Schaltervariable auf False und führen eine Schleife aus, die solange läuft, solange dieser Schalter nicht True ist. 
+
+Wir holen uns dann die Benutzereingabe und versuchen sie entsprechend zu konvertieren. Diese Konvertierung wird über Try-Catch (Ausnahmebehandlung) überwacht. 
+
+Wenn die Konvertierung möglich ist, dann prüfen wir fachlich, ob die Werte den gewnüschten Grenzen entsprechen (z.B. Minimum oder Maximum für Zahlen). 
+
+Wenn auch die fachliche Validierung ok ist, dann wurde alles korrekt eingeben und wir können die Schalter-Variable auf True setzen, sodurch die Schleife abbricht.
+
+Zum Schluss geben wird den eingegebenen Wert zurück.
+
+Falls bei der Konvertierung oder der fachlichen Validierung etwas schiefgeht / etwas nicht passt, bleiben wir in der Schleife und der Benutzer muss alles wieder von vorne eingeben.
+
+### Lösungsvorschlag für POLYGON VERSION X
+#### Blöcke
+![](bilder/polybonix_blocks_x_1.png)
+![](bilder/polybonix_blocks_x_2.png)
+![](bilder/polybonix_blocks_x_3.png)
+![](bilder/polybonix_blocks_x_4.png)
+![](bilder/polybonix_blocks_x_5.png)
+![](bilder/polybonix_blocks_x_6.png)
+
+#### Python
+```python
+import turtle, random
+
+def zahlenEingabe(ausgabetext: str, minimum: int, maximum: int) -> int:
+    eingabeKorrekt = False
+    while not eingabeKorrekt:
+        print(ausgabetext + ' Bitte Zahlen zwischen ' + str(minimum) + ' und ' + str(maximum) + ' eingeben!')
+        try:
+            eingabe = int(input())
+            if eingabe >= minimum and eingabe <= maximum:
+                eingabeKorrekt = True
+        except Exception as e:
+            pass # Hier könnte man auf die Exception reagieren
+            
+    return eingabe
+
+def booleanEingabe(ausgabetext: str) -> bool:
+    eingabe = ''
+    while eingabe != 'j' and eingabe != 'n':
+        print(ausgabetext + ' [j] für Ja, [n] für Nein')
+        eingabe = input()
+    if eingabe == 'j':
+        return True
+    elif eingabe == 'n':
+        return False
+    else:
+        return False
+
+def zufallsfarbe(farben:list[str])->str:
+    zufallFarbe = farben[random.randint(0, len(farben)-1)]
+    return zufallFarbe
+                    
+def polygonZeichnenMitZufallsfarbe(anzahlEcken: int, seitenlaenge: int,dicke: int, farbenliste:list[str]):
+    turtle.pensize(dicke)
+    i = 0
+    while i < anzahlEcken:
+        turtle.pencolor(zufallsfarbe(farbenliste))
+        turtle.forward(seitenlaenge)
+        turtle.right(360 / ecken)
+        i = i + 1
+
+def polygonZeichnenMitFarbe(anzahlEcken: int, seitenlaenge: int, dicke: int, farbe: str):
+    turtle.pensize(dicke)
+    for i in range(0,anzahlEcken):##Alternative zu While, insb. wenn man i als Zähler braucht
+        turtle.pencolor(farbe)
+        turtle.forward(seitenlaenge)
+        turtle.right(360 / ecken)
+
+def farbenEingabe(farben:list[str]) -> str:
+    for i in range(1,len(farben)):
+        print(str(i) +') ' + farben[i])
+    eingabe = ''
+    while eingabe not in farben:
+        eingabe = input('Bitte Farbe eingeben:')
+    return eingabe
+    
+#Eingaben des Benutzers:
+zufallsfarbenWahl = booleanEingabe('Zufallsfarben?')
+ecken = zahlenEingabe('Wieviele Ecken?',3 , 50)
+laenge = zahlenEingabe('Seitenlänge? ',10,100)
+strichdicke = zahlenEingabe('Strich-Dicke?',1,10)
+
+#Polygon auf Basis der Eingaben Zeichnen:
+farbenArray = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
+
+if zufallsfarbenWahl:
+    polygonZeichnenMitZufallsfarbe(ecken,laenge,strichdicke,farbenArray)
+else:
+    farbwahl = farbenEingabe(farbenArray)
+    polygonZeichnenMitFarbe(ecken,laenge,strichdicke,farbwahl)
+```
+
+
+
+
 
 ## Ideen für das eigene Portfolio-Projekt
  - Suche dir zunächst eine passende Problemstellung:

@@ -59,10 +59,10 @@ Das Beispiel soll die wesentlichen Konzepte aus der VO Teil 1 und Teil 2 aufgrei
 4. POLYGONIX-Varianten
    1.  [Mit Listen und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    2.  [Mit Listen, Zufall und Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
-5. [Events mit Turtle](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
-6. [Events mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-7. [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Ein Beispiel für die Steuerung eines Roboters mit einem Neuronalen Netz
-8. Todo: Events und Methoden am Beispiel Arcade-Game-Textadventure
+5. [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
+6. Chase The Pizza Tutorial: https://arcade.makecode.com/-> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
+7. [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
+8. [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Ein Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
 
 ## Weitere Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:

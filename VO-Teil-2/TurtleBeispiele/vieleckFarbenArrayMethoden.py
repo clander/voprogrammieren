@@ -3,10 +3,9 @@ import turtle, random
 def zahlenEingabe(ausgabetext: str, minimum: int, maximum: int) -> int:
     eingabeKorrekt = False
     while not eingabeKorrekt:
-        print('Bitte Zahlen dzwischen ' + str(minimum) + ' und ' + str(maximum) + ' eingeben!')
+        print(ausgabetext + ' Bitte Zahlen zwischen ' + str(minimum) + ' und ' + str(maximum) + ' eingeben!')
         try:
-            eingabe = int(input(ausgabetext))
-            print(type(eingabe))
+            eingabe = int(input())
             if eingabe >= minimum and eingabe <= maximum:
                 eingabeKorrekt = True
         except Exception as e:
@@ -17,9 +16,8 @@ def zahlenEingabe(ausgabetext: str, minimum: int, maximum: int) -> int:
 def booleanEingabe(ausgabetext: str) -> bool:
     eingabe = ''
     while eingabe != 'j' and eingabe != 'n':
-        print('j für Ja, n für Nein')
-        eingabe = input(ausgabetext)
-        print('Eingabe: ' + eingabe)
+        print(ausgabetext + ' [j] für Ja, [n] für Nein')
+        eingabe = input()
     if eingabe == 'j':
         return True
     elif eingabe == 'n':
