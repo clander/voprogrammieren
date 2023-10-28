@@ -36,11 +36,16 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
    - [Turtle Ausgangsbeispiel zur Wiederholung](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleck.py)
    - [Turtle Beispiel mit einfachem Farbwechsel](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
-2. Neues Konzept: Arrays
+2. Neue Konzepte: Arrays und Zufall
    - [Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
+   - [Zahlenraten](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
+   - [Worteraten](../VO-Teil-2/Worteraten/)
+   - [Stadt-Land-Fluss](../VO-Teil-2/Worteraten/)
+   - [Schere-Stein-Papier-Array-Variante](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
 3. Neues Konzept: Methoden
    - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
+   -  [Textadventure](./Textadventure/) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
 4. Neues Konzept: Ereignisse und Ereignisbehandlung
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Chase The Pizza Tutorial: https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
@@ -60,24 +65,13 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 2. [Countdown](../VO-Teil-1/GrundkonzepteProgrammierung/Countdown/)
    - Problemanalyse
    - Codierung in Python
-3. [Zahlenraten](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
-   - Problemanalyse
-   - Codierung in Python
-   - Variante als Computerspiele für einen Handheld
-   - Variante als Microcontroller-Programm
-4. [Body Mass Index (BMI)](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
+3. [Body Mass Index (BMI)](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
    - BMI als Excel-Lösung
    - BMI in 3 Iterationen mit Python
-5. [Schere-Stein-Papier](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
-6. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md) ... dieses Beispiel zeigt neben der Implementierung auch die Erstellung eines Selbstlerntutorials mithilfe des Microsoft Makecode Tutorial Editors.
-
-... und hier noch einige fortgeschrittene Beispiele zur Anregung ...
-
-7. [BMI extended](./BMI/) In weiteren "Iterationen" werden etwa die Konzepte "Funktionen" "GUIs" oder "Events" eingeführt.
-1. [Stadt-Land-Fluss](./StadtLandFluss/)
-2. [Textadventure](./Textadventure/)
-3.  [Worteraten](./Worteraten/)
-4.  [Zahlenraten mit Intelligenz](./ZahlenratenKI/)
+5. [BMI extended](./BMI/) In weiteren "Iterationen" werden etwa die Konzepte "Funktionen" "GUIs" oder "Events" eingeführt.
+6. [Textadventure](./Textadventure/)
+7. [Zahlenraten mit Intelligenz](./ZahlenratenKI/) Man spielt gegen eine KI Zahlen raten. Die KI rät möglichst effizient (binäre Suche).
+8. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md) Dieses Beispiel zeigt neben der Implementierung auch die Erstellung eines Selbstlerntutorials mithilfe des Microsoft Makecode Tutorial Editors.
 
 ## Anregungen für die Eigenleistung
 1. Problemstellung:
