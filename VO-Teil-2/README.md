@@ -36,7 +36,7 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
 2. Verweis auf [Werkzeuge und Unterlagen](../Didaktik/Werkzeuge.md)
    1. Hinweis auf [Thonny](https://thonny.org)
-   2. Hinweis auf [StructoG] (https://dditools.inf.tu-dresden.de/dev/struktog/)
+   2. Hinweis auf [StructoG](https://dditools.inf.tu-dresden.de/dev/struktog/)
 3. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
    1. Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    2. Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine "Lern-App" mit Turtle-Grafik erzeugt.
