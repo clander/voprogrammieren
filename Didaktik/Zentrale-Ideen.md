@@ -36,7 +36,7 @@ Die beteiligten Konzepte sind:
   - Listen: https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen
   - Listen: https://docs.python.org/3/tutorial/introduction.html#lists (Lists)
   - Sequence Types Lists, Tuples, Range: https://docs.python.org/3/library/stdtypes.html#typesseq
-  - Sequence Type String: https://docs.python.org/3/library/stdtypes.html#textseq ()
+  - Sequence Type String: https://docs.python.org/3/library/stdtypes.html#textseq
   - Sets, Dictionaries: https://docs.python.org/3/tutorial/datastructures.html
 * [Konstrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * Sequenzen von Anweisungen
