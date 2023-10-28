@@ -39,11 +39,11 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 2. Neues Konzept: Arrays
    - [Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
 3. Neues Konzept: Methoden
-   - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py)
+   - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
 4. Neues Konzept: Ereignisse und Ereignisbehandlung
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
-   - Chase The Pizza Tutorial: https://arcade.makecode.com/-> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
+   - Chase The Pizza Tutorial: https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
 5. Neue Unterrichtsidee / neue Umgebung: KI zur Steuerung von Robotern
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
@@ -69,7 +69,7 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
    - BMI als Excel-Lösung
    - BMI in 3 Iterationen mit Python
 5. [Schere-Stein-Papier](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
-6. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md)
+6. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md) ... dieses Beispiel zeigt neben der Implementierung auch die Erstellung eines Selbstlerntutorials mithilfe des Microsoft Makecode Tutorial Editors.
 
 ... und hier noch einige fortgeschrittene Beispiele zur Anregung ...
 
@@ -93,7 +93,7 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
        - [Python online](https://python-online.ch)
      - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
      - [Unterlagen für weitere Projektideen](../../../Didaktik/README.md)
-2. Tutorial:
+2. Tutorial (siehe dazu auch das [Tamagotchi Tutorial aus der ersten Übung](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/)):
    - Erstelle eine fertige Anleitung zur Lösung der ersten Problemstellung.
    - Die Lösung soll iterativ in mehreren Teillösungen / Versionen erfolgen.
    - Die Lösung soll die zentralen Konzepte verwenden, darunter:

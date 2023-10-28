@@ -6,22 +6,22 @@ turtle.setup(400,500)
 wn = turtle.Screen()
 wn.title("Handling keypresses!")
 wn.bgcolor("lightgreen")
-tess = turtle.Turtle()
+schildi = turtle.Turtle()
 
 def forward():
-    tess.forward(30)
+    schildi.forward(30)
     
 def left():
-    tess.left(45)
+    schildi.left(45)
     
 def right():
-    tess.right(45)
+    schildi.right(45)
     
 def pen():
-    if tess.isdown():
-        tess.penup()
+    if schildi.isdown():
+        schildi.penup()
     else:
-        tess.pendown()    
+        schildi.pendown()    
 def exit():
     wn.bye()
     
