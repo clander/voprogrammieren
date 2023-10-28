@@ -32,15 +32,18 @@ Die beteiligten Konzepte sind:
   * [Zeichenketten](https://www.inf-schule.de/imperative-programmierung/python/konzepte/zeichenketten/konzept_zeichenkette) in [Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zeichenketten)
   * [Wahrheitswerte in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_wahrheitswerte)
   * [Typumwandlung in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_typumwandlungen)
-  * [Listen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
+* Listen / Arrays in Python:
+  - https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen
+  - https://docs.python.org/3/tutorial/introduction.html#lists
+* Weitere Datenstrukturen in Python:
+  - https://docs.python.org/3/tutorial/datastructures.html
 * [Konstrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * Sequenzen von Anweisungen
   * [Fallunterscheidung (bedingte Verzweigungen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/konzept_fallunterscheidungen)
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
   * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
 * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion) als Modularisierungstechnik
-* Ereignisse (Events)
-* Ereignisbehandlung (Callbacks)
+* Ereignisse (Events) und Ereignisbehandlung (Callbacks)
 
 Wichtig für die Vermittlung solcher Ideen sind u. A. folgende methodisch-didaktische Prinzipien:
 
