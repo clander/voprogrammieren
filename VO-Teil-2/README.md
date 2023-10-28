@@ -40,7 +40,7 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
    - [Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worteraten](../VO-Teil-2/Worteraten/)
-   - [Stadt-Land-Fluss](../VO-Teil-2/Worteraten/)
+   - [Stadt-Land-Fluss](../VO-Teil-2/StadtLandFluss/)
    - [Schere-Stein-Papier-Array-Variante](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
 3. Neues Konzept: Methoden
    - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
