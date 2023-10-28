@@ -38,15 +38,15 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
    1. Hinweis auf [Thonny](https://thonny.org)
    2. Hinweis auf [StructoG](https://dditools.inf.tu-dresden.de/dev/struktog/)
 3. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md) 
-   1. Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
-   2. Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine "Lern-App" mit Turtle-Grafik erzeugt.
-4. POLYGONIX-Varianten
-   1.  [Mit Listen und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
-   2.  [Mit Listen, Zufall und Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
-5. [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
-6. Chase The Pizza Tutorial: https://arcade.makecode.com/-> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
-7. [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-8. [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Ein Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
+   - Das Beispiel zeigt die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
+   - Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine "Lern-App" mit Turtle-Grafik erzeugt.
+   - Code einiger POLYGONIX-Varianten:
+      - [Mit Listen und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
+      - [Mit Listen, Zufall und Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
+4. [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
+5. Chase The Pizza Tutorial: https://arcade.makecode.com/-> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
+6. [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
+7. [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Ein Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
 
 ## Weitere Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
@@ -68,9 +68,10 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 5. [Schere-Stein-Papier](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/README.md)
 6. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md)
 
-## Fortgeschrittene Beispiele zur Anregung
+... und hier noch einige fortgeschrittene Beispiele zur Anregung ...
+
 * [BMI extended](./BMI/)
-  * In weiteren "Iterationen" werden etwa die Konzepte Methoden und Events eingeführt.
+  * In weiteren "Iterationen" werden etwa die Konzepte Methoden und GUIs sowie Events eingeführt.
 * [Stadt-Land-Fluss](./StadtLandFluss/)
 * [Textadventure](./Textadventure/)
 * [Worteraten](./Worteraten/)
