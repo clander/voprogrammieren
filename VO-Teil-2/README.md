@@ -85,7 +85,8 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
        - [Grafik, Robotik, Datenbanken, Spiele](https://www.jython.ch)
        - [Python online](https://python-online.ch)
      - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
-     - [Unterlagen für weitere Projektideen](../../../Didaktik/README.md)
+     - [Open Roberta Lab](https://www.roberta-home.de/lab/)
+     - siehe Übungsmaterial im Rahmen der verschiedenen [Werkzeuge-Webseiten](../Didaktik/Werkzeuge.md)
 2. Tutorial (siehe dazu auch das [Tamagotchi Tutorial aus der ersten Übung](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/)):
    - Erstelle eine fertige Anleitung zur Lösung der ersten Problemstellung.
    - Die Lösung soll iterativ in mehreren Teillösungen / Versionen erfolgen.
