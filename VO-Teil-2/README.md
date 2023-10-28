@@ -70,12 +70,11 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 
 ... und hier noch einige fortgeschrittene Beispiele zur Anregung ...
 
-* [BMI extended](./BMI/)
-  * In weiteren "Iterationen" werden etwa die Konzepte Methoden und GUIs sowie Events eingeführt.
-* [Stadt-Land-Fluss](./StadtLandFluss/)
-* [Textadventure](./Textadventure/)
-* [Worteraten](./Worteraten/)
-* [Zahlenraten mit Intelligenz](./ZahlenratenKI/)
+7. [BMI extended](./BMI/) In weiteren "Iterationen" werden etwa die Konzepte "Funktionen" "GUIs" oder "Events" eingeführt.
+1. [Stadt-Land-Fluss](./StadtLandFluss/)
+2. [Textadventure](./Textadventure/)
+3.  [Worteraten](./Worteraten/)
+4.  [Zahlenraten mit Intelligenz](./ZahlenratenKI/)
 
 ## Anregungen für die Eigenleistung
 1. Problemstellung:
