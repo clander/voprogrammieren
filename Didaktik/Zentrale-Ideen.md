@@ -14,8 +14,13 @@ Ein etablierter Werkzeugkasten ist der Imperative (prozedural / objektorientiert
 
 Konkret haben wir es im gewählten Werkzeugkasten u. A. mit folgenden Ideen und Konzepten zu tun:
 
-Die beteiligten Konzepte sind:
+Online-Ressourcen zu den Python-Konzepten:
+  - [Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/)
+  - [Programmierkonzepte](https://programmierkonzepte.ch)
+  - [PythonGeeks](https://pythongeeks.org/learn-python-tutorial/)
+  - [W3Schools](https://www.w3schools.com/python/)
 
+Betroffene Konzepte (Auszug):
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
   * Kompilieren und interpretieren
   * [Syntaxfehler](https://www.inf-schule.de/imperative-programmierung/python/konzepte/fehler/exkurs_syntaxfehler)

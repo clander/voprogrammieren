@@ -55,6 +55,11 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
 6. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md): Informatische Denk- und Arbeitsweisen: Computational Thinking
    - Das Beispiel zeigt anhand einer realweltlichen Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
+7. Weitere interessante Tools:
+   - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
+   - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
+   - [Open Roberta Lab](https://www.roberta-home.de/lab/)
+   - 
 
 ## Weitere Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:
