@@ -381,7 +381,7 @@ while zaehler < eingabe_zahl:
 Funktionen: 
   - Das Programm soll nun auch nach der Seitenlänge der Polygone fragen.
 
-Lösung des Teilproblems Gerade/Ungerade: 
+Lösungsansatz: 
   - Analog zur Abfrage und Verwendung der Anzahl der Ecken.
   
 ### Algorithmisierung
@@ -435,10 +435,23 @@ while zaehler < eckenanzahl:
 Funktionen:
   - Wir stellen sicher, dass der Benutzer nur Zahlen >= 3 eingeben kann.
   
-Teillösungen für Teilprobleme:
+Lösungsidee:
   - Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. 
+  - Es können zwei Probleme auftreten:
+    - Es könnte sein, dass der Benutzer keine Zahl eingibt, womit der Eingabetext nicht in eine Zahl umgewandelt werden kann.
+    - Es könnte sein, dass der Benutzer zwar eine Zahl eingibt, dass diese aber im Sinne der Fachlogik nicht sinnvoll ist. So macht es z.B. keinen Sinn, eine Eckenanzahl von kleiner als 3 zuzulassen.
+  - Vorgansweise:
+    - Wir prüfen also zuerst, ob die Zahl von Text in Zahl umgewandelt werden kann. Wenn das nicht der Fall ist, geben wir dem Benutzer einen Hinweis.
+    - Wenn umgewandelt werden konnte, prüfen wir, ob die Fachlogik erfüllt ist. Wenn das nicht der Fall ist, geben wir dem Benutzer einen entsprechenden Hinweis.
+    - Solange auch nur eine der beiden Voraussetzungen oben nicht erfüllt ist, muss der Benutzer die Eingabe wiederholen.
+    - Wenn alle Bedingungen für die Eingabe erfüllt sind, setzt das Programm fort.
+
+Generalisierung:
+  - Offensichtlich ist diese Art der Prüfung für viele verschiedene Benutzereingaben immer wieder gleich anwendbar. 
+  - Man sollte für die Zukunft eine Lösung finden, um Benutzereingaben einheitlich zu behandeln (Codeduplikation vermeiden, Fehleranfälligkeit des Codes reduzieren, Wiederverwendbarkeit von Codeteilen ermöglichen)
   
 ### Algorithmisierung
+
 #### Neue Konzepte
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
 * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
@@ -511,31 +524,24 @@ Funktionen:
   - Das Programm soll einen Modus für zufällige Farben anbieten. Wenn der Benutzer diesen Modus wählt, werden für das Zeichnen der Polygone abwechselnd unterschiedlichen Farben aus einer vordefinierten Liste von mehreren Farben verwendet.
 Refactoring (nicht funktionale Anforderungen):
   - Das Programm soll mit Funktionen besser wartbar und besser erweiterbar gehalten werden.
-### Algorithmisierung
-#### Neue Konzepte
-  * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
-  * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
-  * [Zufallszahlen als Ganzzahlen](https://www.w3schools.com/python/ref_random_randint.asp)
 
-#### Lösungsidee für das Refactoring mit Funktionen
-Wir identifizieren Teillösungen (Komponenten) in unserem Code, die wir mehrfach verwenden. Um Codeduplikate zu vermeiden und die Wiederverwendbarkeit von Code zu ermöglichen, extrahieren wir für diese Teillösungen eigene Funktionen, die wir dann immer wieder wenn sie benötigt werden aufrufen.
+#### Lösungsideen für das Refactoring mit Funktionen (Dekomposition, Generalisierung mit Funktionen)
+Wir identifizieren Teillösungen (Komponenten) in unserem Code, die wir mehrfach verwenden. Um Codeduplikate zu vermeiden und die Wiederverwendbarkeit von Code zu ermöglichen, extrahieren wir für diese Teillösungen eigene Funktionen, die wir dann immer wieder wenn, sie benötigt werden, aufrufen. Ein Aufruf erfolgt unter Übergabe verschiedener benötigter Informationen (Parameter) wodurch die Funktionen entsprechend variabel gehalten werden können. Funktionen können Werte zurückgeben oder einfach nur ihre Arbeit verrichten und nichts zurückgeben.
 
 Kandidaten von Teillösungen, die für die Extraktion in Form von Funktionen infrage kommen:
-- Zahleneingabe incl. Validierung (Min, Max)
-- Eingabe von Ja/Nein
-- Farbeneingabe
+
+- Benutzereingabe von Zahlen incl. Validierung (Min, Max)
+- Benutzereingabe von Ja/Nein incl. Validierung
+- Benutzereingabe von Farben incl. Validierung
 - Polygon in einer bestimmten Farbe mit einer bestimmten Seitenlänge, Eckenanzahl, Strichdicke zeichnen
 - Polygon mit zufälligen, abwechselnden Farben, einer bestimmten Seitenlänge, Eckenanzahl und Strichdicke zeichnen.
 
-#### Lösungsidee für den Zufallsfarbenmodus
-Wir definieren eine Liste von möglichen Farben (als Strings). Wir ermitteln eine Zufallszahl zwischen 0 (erste Listenposition) bis Listenlänge-1 (letzte Listenposition). Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht.
-
-#### Lösungsidee für die Benutzereingaben incl. Validierung
+#### Lösungsidee für Benutzereingaben incl. Validierung (Dekomposition, Generalisierung)
 Das Schema ist für jede Eingabevalidierung dasselbe. Zunächst setzen wir die eingabeKorrekt-Schaltervariable auf False und führen eine Schleife aus, die solange läuft, solange dieser Schalter nicht True ist. 
 
 Wir holen uns dann die Benutzereingabe und versuchen sie entsprechend zu konvertieren. Diese Konvertierung wird über Try-Catch (Ausnahmebehandlung) überwacht. 
 
-Wenn die Konvertierung möglich ist, dann prüfen wir fachlich, ob die Werte den gewnüschten Grenzen entsprechen (z.B. Minimum oder Maximum für Zahlen). 
+Wenn die Konvertierung möglich ist, dann prüfen wir fachlich, ob die Werte den gewünschten Grenzen entsprechen (z.B. Minimum oder Maximum für Zahlen). 
 
 Wenn auch die fachliche Validierung ok ist, dann wurde alles korrekt eingeben und wir können die Schalter-Variable auf True setzen, sodurch die Schleife abbricht.
 
@@ -543,7 +549,18 @@ Zum Schluss geben wird den eingegebenen Wert zurück.
 
 Falls bei der Konvertierung oder der fachlichen Validierung etwas schiefgeht / etwas nicht passt, bleiben wir in der Schleife und der Benutzer muss alles wieder von vorne eingeben.
 
-### Lösungsvorschlag für POLYGON VERSION X
+#### Lösungsidee für den Zufallsfarbenmodus (Dekomposition)
+Wir definieren in eine Liste mit Farben (Strings). Wir ermitteln mittels Zufallszahlengenerator eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge-1 (letzte Listenposition). Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht und liefern diese ausgesuchte Farbe zurück, die dann für das Zeichnen einer Seite verwendet wird. Jedes Mal, wenn dann eine neue Seite gezeichnet werden soll, wird wieder eine zufällige Farbe ermittelt.
+
+#### Lösungsidee die Farbauswahl (Dekomposition)
+Wir geben einer Liste von Farben zur Auswahl aus. Die Eingabe der Benutzer muss einer dieser Farben entsprechen (Validierung). Wenn eine passende Farbe eingegeben wurde, wird diese zurückgeliefert. 
+
+### Algorithmisierung
+Für die Umsetzung oben genannter Lösungsideen / Optimierungen wenden wir die folgenden Konzepte an:
+  * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
+  * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
+  * [Zufallszahlen (Ganzzahlen)](https://www.w3schools.com/python/ref_random_randint.asp)
+
 #### Blöcke
 ![](bilder/polybonix_blocks_x_1.png)
 ![](bilder/polybonix_blocks_x_2.png)
@@ -624,56 +641,3 @@ else:
     farbwahl = farbenEingabe(farbenArray)
     polygonZeichnenMitFarbe(ecken,laenge,strichdicke,farbwahl)
 ```
-
-
-## Ideen für das eigene Portfolio-Projekt
- - Suche dir zunächst eine passende Problemstellung:
-   - POLYGONIX 2.0 (siehe oben): Lernmodus und Startbildschirm
-   - [Projekte aus der VO]([../../README.md])
-   - [Miniprojekte auf Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/projekte)
-   - Beispielprojekte aus programmierkonzepte.ch
-     - [TigerJython-Projekt](https://www.tigerjython.ch/de/tutorials)
-     - [TigerJython for Kids](https://www.tigerjython4kids.ch)
-     - [Programmierkonzepte](https://programmierkonzepte.ch)
-     - [Grafik, Robotik, Datenbanken, Spiele](https://www.jython.ch)
-     - [Python online](https://python-online.ch)
-   - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
-   - [Unterlagen für weitere Projektideen](../../../Didaktik/README.md)
-   - Die Problemstellung soll es erlauben, die für den Lehrplan nötigen Konzepte im Unterricht zu thematisieren.
- - Tutorial erstellen:
-   - Erstelle eine fertige Anleitung zur Lösung der Problemstellung im Format des in dieser Datei beschriebenen POLYGONIX-Beispiels.
-     - Die Lösung soll iterativ in mehreren Teillösungen / Versionen erfolgen
-     - Für jede Teillösung / Version / Iteration wird folgender Zyklus durchlaufen (siehe dazu auch [die zentralen Ideen der Programmierung im Unterricht](../../../Didaktik/Zentrale-Ideen.md))
-       - Problemanalyse
-         - Dekomposition
-         - Abstraktion
-         - Mustererkennung
-         - Generalisierung
-       - Algorithmisierung
-         - Sprachkonzepte identifizieren und einführen
-         - Struktogramm / Flussdiagramm zeichnen
-         - Pseudocode formulieren
-       - Implementierung und Test
-         - mit IDE und Sprache der Wahl Pseudocode umsetzen
-         - Testen
-         - Debuggen
- - Erstelle eine kleine Unterrichtsplanung dazu:
-   - Zielehierarchie
-     - ausgehend vom Lehrplan
-     - zentrale Konzepte / Ideen ableiten
-     - Transferziel, Erkenntnisziel, Fakten, Fertigkeiten ableiten
-   - Lernzielkontrolle 
-     - in Form einer ähnlichen Problemstellung (Fokus Transfer)
-     - Fokussiert auf die umfassende Kontrolle der Zieldimension
-   - Stundenverlauf
-     - Kern ist die fertige Anleitung oben
-     - Eingebettet wird diese Anleitung in ein klassisches didaktisches Design, z.B [Gagné](https://www.niu.edu/citl/resources/guides/instructional-guide/gagnes-nine-events-of-instruction.shtml).
-        1. Aufmerksamkeit erregen
-        2. Ziele bekannt geben
-        3. Vorwissen aktivieren
-        4. Input (Konzepte + Werkzeuge)
-        5. Lerngerüste
-        6. Übungsphasen
-        7. Feedback
-        8. Kompetenzcheck
-        9. Transfer einüben
