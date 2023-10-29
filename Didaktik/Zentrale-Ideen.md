@@ -1,12 +1,13 @@
 # Zentrale Prozesse und Konzepte der Programmierung im Unterricht
 ## Modellbildung
 Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wir lösen ein Problem mithilfe des Computers, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen Werkzeuge der Informatik, um Lösungen für das Problem zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. Das wiederum ermöglicht uns Chancen und Grenzen der Nutzung von Informationssystemen zu erkennen, ein korrektes Weltbild aufzubauen, in einer mit IT durchsetzten Welt zu partizipieren sowie vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
-## Zentrale Konzepte der Programmierung
+
+## Zentrale Konzepte der Programmierung im Unterricht
 Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich jedoch insbesondere Programmiersprachen.
 
 Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen und damit Lösungen auf unterschiedliche Arten ermöglichen. 
 
-Ein etablierter Werkzeugkasten ist der Imperative (prozedural / objektorientiert). Er enthält viele fundamentale Ideen der Informatik, 
+Ein etablierter Werkzeugkasten ist der Imperative. Er enthält viele fundamentale Ideen der Informatik, 
 * die schon über sehr lange Zeit Gültigkeit haben,
 * in vielen Teilgebieten des Faches (und auch in anderen Fachgebieten) verwendet werden,
 * sich gut in der Lebenswelt unserer Schüler zeigen lassen, und
@@ -51,28 +52,19 @@ Betroffene Konzepte (Auszug):
 * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion) als Modularisierungstechnik
 * Ereignisse (Events) und Ereignisbehandlung (Callbacks)
 
-Wichtig für die Vermittlung solcher Ideen sind u. A. folgende methodisch-didaktische Prinzipien:
+## Zentrale Prozesse der Programmierung im Unterricht
+Methodisch liegt der Fokus auf Problemlösen durch Modellbildung und Simulation. Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses sieht mit Bezug auf die zentralen Ideen des Computational Thinkings wie folgt aus:
 
-* Authentische Problemstellungen mit verschiedenen Kontexten
-* Lernen am Modell
-* Lerngerüste (und deren Ausblenden)
-* Einüben von Transfer (primär durch Analogiebildung)
-* Vom Abstrakten zum Konkreten wieder zum Abstrakten (Kontextualisierung vs. Abstraktion)
-* Verhältnis zwischen Konzept, realisierendem Werkzeug und Anwendung im Rahmen der Problemlösung explizieren
-* Hinweis auf historische Relevanz (zusammen mit den Personen dazu)
-* Spiralprinzip, und damit
-    * Multiple (d.h. symbolische, ikonische und enaktive) Repräsentation
-    * Vorwegnehmendes Lernen
-    * Fortsetzbarkeit auf immer komplexeren Niveaus
+1. Problemanalyse (Lösungsansatz entwickeln)
+2. Algorithmisierung (Algorithmus entwickeln)
+3. Implementierung und Test (Computerprogramm erstellen und testen)
 
-## Zentrale Prozesse der Programmierung
-Methodisch liegt der Fokus weiters auf Problemlösen durch Modellbildung und Simulation.
+> Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
 
-Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses sieht mit Bezug auf die zentralen Ideen des Computational Thinkings dann wie folgt aus:
-
-1. Problemanalyse (Lösungsansatz finden)
-2. Algorithmisierung (Algorithmus finden)
-3. Implementierung und Test (Computerprogramen finden und testen)
+> Referenzen zum Thema Computational Thinking:
+> * https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
+> * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
+> * http://www.icompute-uk.com/news/computational-thinking-2/
 
 Wichtig ist zu verstehen, dass es sich bei den oben genannten drei Punkten um einen Zyklus handelt, der immer wieder durchlaufen wird, solange, bis das Problem gelöst ist. Ausgehend vom Problem (Startzustand), über einen Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand) ergibt sich damit eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise. 
 
@@ -115,18 +107,22 @@ Es folgt die Beschreibung eines Lösungsalgorithmus. Wir verwenden dazu algorith
 
 > Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt. (https://de.wikipedia.org/wiki/Algorithmus)
 
-Die Beschreibung des Algorithmus erfolgt über formlose (aber konzeptorientierte) Texte, Pseudocode oder auch ikonische / grafische Darstellungen. Im Bereich der imperativ-prozeduralen Programmierung eigenen sich z. B.
+Die Beschreibung des Algorithmus erfolgt über:
 
-* Aktivitätsdiagramme (Flussdiagramme)
-* Struktogramme
-* Zustandsdiagramme
+* Texte (formlos, konzeptorientiert)
+* Pseudocode 
+* ikonische / grafische Darstellungen, darunter:
+  * Aktivitätsdiagramme (Flussdiagramme)
+  * Struktogramme
+  * Zustandsdiagramme
   
 ## Implementierung und Test
+
 Nachdem wir unseren Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir ein Werkzeug, das es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglicht, den Algorithmus umzusetzen, auszuführen und zu testen. 
 
 Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es zu Anpassungen des Lösungsansatzes sowie des Algorithmus kommen, was zu weiteren Zyklen führt. Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
 
-Der Ablauf lässt sich also wie folgt kurz beschreiben:
+Der Ablauf lässt sich also wie folgt kurz beschreiben (siehe dazu auch das Diagramm oben):
 
 * Wir beginnen mit der Implementierung des Programms mithilfe des gewählten Werkzeugs (bestimmte Programmiersprache, bestimmte Entwicklungsumgebung). 
 * In kurzen Zyklen werden wir nach jeder kurzen Programmiertätigkeit immer wieder das Programm versuchen auszuführen. 
@@ -138,13 +134,24 @@ Der Ablauf lässt sich also wie folgt kurz beschreiben:
 * Eine Modifikation im Algorithmus führt zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
 * Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
 
-## Referenzen zum Thema Computational Thinking
+## Anhang 1: Methodische Prinzipien
 
-* https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
-* https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
-* http://www.icompute-uk.com/news/computational-thinking-2/
+Für den Unterricht sind neben der Problemorientierung und der informatischen Modellbildung und Simulation u. A. folgende methodisch-didaktischen Ideen relevant:
 
-## Beispiele für Mini-Projekte für Anfänger
+* Cognitive Apprenticeship:
+  * Authentische Problemstellungen in verschiedenen Kontexten
+  * Lernen am Modell
+  * Lerngerüste (und deren Ausblenden)
+  * Einüben von Transfer (etwa durch Analogiebildung)
+  * Reflexion, Artikulation, Exploration
+* Kontext vs. Abstraktion: Vom Abstrakten zum Konkreten und wieder zum Abstrakten (Kontextualisierung vs. Abstraktion); Explikation von Verhältnis zwischen Konzept, realisierendem Werkzeug und Anwendung im Rahmen der Problemlösung explizieren
+* Genetischer Ansatz: Hinweis auf historische Relevanz / Genese der Inhalte
+* Spiralprinzip (immer wieder Aufgreifen derselben Konzepte in höheren Komplexitätsstufen) und damit:
+    * multiple (d.h. symbolische, ikonische und enaktive) Repräsentationen
+    * vorwegnehmendes Lernen
+    * Fortsetzbarkeit auf immer komplexeren Niveaus
+
+## Anhang 2: Beispiele für Mini-Projekte für Anfänger
 
 Für den einführenden Programmierunterricht eigenen sich Projekte zur Umsetzung im Unterricht wie die folgenden:
 
@@ -158,4 +165,3 @@ Für den einführenden Programmierunterricht eigenen sich Projekte zur Umsetzung
 * Einfache Microcontroller-Projekte (z.B. mit dem Micro:bit, siehe dazu das Schulbuch https://microbit.eeducation.at/wiki/Hauptseite)
 
 Auf vielen Online-Programmierplattformen (wie etwa auf der Makecode-Plattform) oder auch in vielen Entwicklungsumgebungen sind außerdem oft auch Tutorials, Beispiele, kleine Projektaufgaben integriert.
-
