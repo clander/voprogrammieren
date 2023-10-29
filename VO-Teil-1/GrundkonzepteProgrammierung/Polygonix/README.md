@@ -453,7 +453,7 @@ Generalisierung:
 ### Algorithmisierung
 
 #### Neue Konzepte
-* [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
+* [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
 * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
 #### Pseudocode
 

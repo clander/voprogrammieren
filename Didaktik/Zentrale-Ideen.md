@@ -110,11 +110,11 @@ Es folgt die Beschreibung eines Lösungsalgorithmus. Wir verwenden dazu algorith
 Die Beschreibung des Algorithmus erfolgt über:
 
 * Texte (formlos, konzeptorientiert)
-* Pseudocode 
+* [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
 * ikonische / grafische Darstellungen, darunter:
-  * Aktivitätsdiagramme (Flussdiagramme)
-  * Struktogramme
-  * Zustandsdiagramme
+  * [Flussdiagramme](https://en.wikipedia.org/wiki/Flowchart) bzw.[Programmablaufpläne] (https://de.wikipedia.org/wiki/Programmablaufplan)
+  * [Struktogramme](https://www.inf-schule.de/) bzw. [Nassi-Shneidermann-Diagramm](https://de.wikipedia.org/wiki/Nassi-Shneiderman-Diagramm)
+  * [Zustandsdiagramme](https://de.wikipedia.org/wiki/Zustandsdiagramm_(UML))
   
 ## Implementierung und Test
 
@@ -126,13 +126,13 @@ Der Ablauf lässt sich also wie folgt kurz beschreiben (siehe dazu auch das Diag
 
 * Wir beginnen mit der Implementierung des Programms mithilfe des gewählten Werkzeugs (bestimmte Programmiersprache, bestimmte Entwicklungsumgebung). 
 * In kurzen Zyklen werden wir nach jeder kurzen Programmiertätigkeit immer wieder das Programm versuchen auszuführen. 
-* Wenn sich das Programm nicht starten lässt, analysieren wir die Fehlermeldungen des Compilers und bessern Syntaxfehler aus. Wir müssen uns an die Syntax der gewählten Programmiersprache ganz genau halten, sonst versteht der Computer nicht, was er für uns tun soll. 
-* Wenn sich das Programm jedoch starten lässt, können wir kontrollieren, ob das Programm die richtigen (Teil-)Ergebnisse im Sinne unserer Lösungsspezifikation liefert. Dazu benötigen wir Techniken, die es uns ermöglichen in die Laufzeit eines Programmes hineinzuschauen bzw. Ergebnisse des Programmes anzuzeigen (Debugging-Strategien). 
-* Es ist möglich, dass an irgendwelchen Stellen während der Ausführung des Programms Laufzeitfehler auftreten, die das Programm auch zum Absturz bringen. Der Code muss debugt werden.
-* Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert, haben wir es ggf. mit einem Bug zu tun. Der Code muss debugt werden.
-* Debugging: Es können Modifikation in der Problemanalyse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. 
-* Eine Modifikation im Algorithmus führt zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
-* Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
+  * Wenn sich das Programm nicht starten lässt, analysieren wir die Fehlermeldungen des Compilers und bessern Syntaxfehler aus. Wir müssen uns an die Syntax der gewählten Programmiersprache ganz genau halten, sonst versteht der Computer nicht, was er für uns tun soll. 
+  * Wenn sich das Programm jedoch starten lässt, können wir kontrollieren, ob das Programm die richtigen (Teil-)Ergebnisse im Sinne unserer Lösungsspezifikation liefert. Dazu benötigen wir Techniken, die es uns ermöglichen in die Laufzeit eines Programmes hineinzuschauen bzw. Ergebnisse des Programmes anzuzeigen (Debugging-Strategien). 
+    * Es ist möglich, dass an irgendwelchen Stellen während der Ausführung des Programms Laufzeitfehler auftreten, die das Programm auch zum Absturz bringen. Der Code muss debugt werden.
+    * Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert, haben wir es ggf. mit einem Bug zu tun. Der Code muss debugt werden.
+    * Debugging: Es können Modifikation in der Problemanalyse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. 
+    * Eine Modifikation im Algorithmus führt zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
+  * Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
 
 ## Anhang 1: Methodische Prinzipien
 
