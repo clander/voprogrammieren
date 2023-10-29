@@ -1,5 +1,18 @@
 # Inhalte VO Grundlagen der Programmierung (Termin 2)
 
+## Ablauf
+1. Wiederholung wesentlicher Konzepte:
+   - Turtle-Vieleck
+   - Turtle-Vieleck mit einfachem Farbwechsel
+   - Identifikation der Konzepte auch in anderen Werkzeugen
+2. Zentrale Konzepte und Prozesse (Theorie)
+3. Zentrale Konzepte und Prozesse (Praxis)
+  - Polygonix: Durchbesprechung komplett mit Bezug zu den zentralen Konzepten und Prozessen
+4. Einführung neuer Konzepte:
+  - Arrays, Funktionen, Ereignisse
+  - jeweils blockbasiert und mit Python und mit Verweis auf Realisierung der Konzepte in anderen Sprachen
+5. KI und Roboter-Programmierung
+
 ## Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
 
 ### Vorlesung
@@ -33,33 +46,44 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 * ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
 
 ## Script zur VO Teil 2
-1. Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
-   - [Turtle Ausgangsbeispiel zur Wiederholung](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleck.py)
-   - [Turtle Beispiel mit einfachem Farbwechsel](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
-2. Neue Konzepte: Arrays und Zufall
-   - [Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
-   - [Zahlenraten](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
-   - [Worteraten](../VO-Teil-2/Worteraten/HangMan.py)
-   - [Stadt-Land-Fluss](../VO-Teil-2/StadtLandFluss/)
-   - [Schere-Stein-Papier-Array-Variante](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
+1. (**V**)Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
+   - (**V**) [Turtle Ausgangsbeispiel zur Wiederholung](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleck.py)
+   - (**V**) [Turtle Beispiel mit einfachem Farbwechsel](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
+2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+   - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
+3. Neue Konzepte: Arrays und Zufall
+   - (**V**)[Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
+   - [Zahlenraten (auch mit microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
+   - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
+   - (**UE**)[Stadt-Land-Fluss (auch mit microBit)](../VO-Teil-2/StadtLandFluss/)
+   - [Schere-Stein-Papier Variante mit Arrays](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
-3. Neues Konzept: Methoden
-   - [Turtle Beispiel mit zwei Methoden](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
+   - (**UE**)[Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
+4. Neues Konzept: Funktionen
+   - (**V**) [Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
-   -  [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
-4. Neues Konzept: Ereignisse und Ereignisbehandlung
-   - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
-   - Chase The Pizza Tutorial: https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
+   - (**UE**) [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
+5. Neues Konzept: Ereignisse und Ereignisbehandlung
+   - (**V**)Ereignisse und deren Behandlung sind in vielen blockbasierten Entwicklungsumgebungen für Programmieranfänger (MakeCode, Scratch, AppInventor etc.) als eigene Blöcke / Kategorien verfügbar(siehe z.B. in Scratch die Kategorie "Ereignisse")
+   - (**V**)[Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
+   - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-5. Neue Unterrichtsidee / neue Umgebung: KI zur Steuerung von Robotern
-   - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
-6. [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md): Informatische Denk- und Arbeitsweisen: Computational Thinking
-   - Das Beispiel zeigt anhand einer realweltlichen Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
-7. Weitere interessante Tools:
+  
+6. Neue Unterrichtsidee / neue Umgebung: OpenRoberta und KI
+   - (**V** und **UE**)[Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
+  
+7. Hinweise auf einige Tools und Online-Unterlagen:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
    - [Open Roberta Lab](https://www.roberta-home.de/lab/) Online-Ide für die Programmierung von Robotern und Microcontrollern (incl. Online-Sim und Unterstützung für Neuronale Netze)
    - [Thonny IDE](https://thonny.org) Spezielle Pyhton-IDE für Anfänger
+   - [Microsoft MakeCode Arcade](https://arcade.makecode.com):
+     - [Einführung in die Informatik 1](https://arcade.makecode.com/courses/csintro1)
+     - [Einführung in die Informatik 2](https://arcade.makecode.com/courses/csintro2)
+     - [Einführung in die Informatik 3](https://arcade.makecode.com/courses/csintro3)
+   - [Microsoft MakeCode microBit](https://microbit.makecode.com):
+     - [Einführung in die Informatik](https://makecode.microbit.org/courses/csintro)
+   - [inf-schule.de](https://www.inf-schule.de/imperative-programmierung/python) Python, Fachkonzepte, Miniprojekte
 
 ## Weitere Beispiele zur Anregung
 Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigenen Projekte genutzt werden:

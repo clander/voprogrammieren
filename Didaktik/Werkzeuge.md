@@ -40,7 +40,12 @@ https://makecode.microbit.org
 - Varianten:
   - Programmierung von Micro:bit-Microcontroller incl. Emulator: https://makecode.microbit.org/
   - Minecraft-Progarmmierung: https://minecraft.makecode.com/
+    - [Dokumentation, Übungen, Projekte](https://makecode.microbit.org/docs)
   - Spieleentwicklung mit Arcade: https://arcade.makecode.com
+    - [Dokumentation](https://arcade.makecode.com/docs)
+    - [Einführung in die Informatik 1](https://arcade.makecode.com/courses/csintro1)
+    - [Einführung in die Informatik 2](https://arcade.makecode.com/courses/csintro2)
+    - [Einführung in die Informatik 3](https://arcade.makecode.com/courses/csintro3)
 - Schulbuch mit vielen Projekten für die micro:bit-Programmmierung: https://microbit.eeducation.at/wiki/Hauptseite  
   
 ## Miniwelten mit Python
