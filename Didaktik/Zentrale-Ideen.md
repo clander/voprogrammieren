@@ -25,11 +25,12 @@ Wir lösen ein Problem mithilfe des Computers, indem wir geistige und praktische
 * sowie vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
 
 ## Zentrale Konzepte der Programmierung im Unterricht
-Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich jedoch insbesondere Programmiersprachen.
+Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen.
 
-Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen und damit Lösungen auf unterschiedliche Arten ermöglichen. 
+Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen. 
 
-Ein etablierter Werkzeugkasten ist der Imperative. Er enthält viele fundamentale Ideen der Informatik, 
+Ein etablierter Werkzeugkasten ist der Imperative. Er enthält viele fundamentale Ideen (siehe unten) der Informatik, 
+
 * die schon über sehr lange Zeit Gültigkeit haben,
 * in vielen Teilgebieten des Faches (und auch in anderen Fachgebieten) verwendet werden,
 * sich gut in der Lebenswelt unserer Schüler zeigen lassen, und
@@ -77,16 +78,19 @@ Betroffene Konzepte (Auszug):
 ## Zentrale Prozesse der Programmierung im Unterricht
 Nicht nur inhaltlich, sondern auch methodisch liegt der Fokus auf Problemlösen durch Modellbildung und Simulation. Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses kann mit Bezug auf die zentralen Ideen des Computational Thinkings wie folgt umrissen werden:
 
-1. Problemanalyse:
-  * Problemspezifikation
-  * Abstraktion
-  * Generalisierung
-  * Mustererkennung
-2. Algorithmisierung:
-  * (graphische) Modellierungstechnik anwenden (z.B. Ablaufmodellierung, Zustandsmodellierung, funktionale Modellierung, objektorientierte Modellierung etc.)
-  * Algorithmische Grundbausteine
-  * Datenstrukturen
-3. Implementierung und Test (Computerprogramm erstellen und testen)
+1. Problemanalyse, etwa durch:
+   * Problemspezifikation
+   * Abstraktion
+   * Generalisierung
+   * Mustererkennung
+2. Algorithmisierung, etwa durch:
+   * (grafische) Modellierungstechniken (z.B. Ablaufmodellierung, Zustandsmodellierung, funktionale Modellierung, objektorientierte Modellierung etc.)
+   * Algorithmische Grundbausteine
+   * Datenstrukturen
+3. Implementierung und Test, etwa mit:
+   * IDE
+   * Programmiersprache
+   * Laufzeitumgebungen und Compiler
 
 Ausgehend vom Problem (Startzustand) führt der Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand). Damit ergibt sich eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise, die sich in Form einer Ablaufmodellierung wie folgt darstellen lässt:
 
@@ -131,21 +135,22 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 > * http://www.icompute-uk.com/news/computational-thinking-2/
 
 ### Exkurs: Fundamentale Ideen der Softwareentwicklung
-> Es gibt viele weitere zentrale Ideen der Informatik, die im Rahmen des Entwurfs von Softwaresystemen zum Einsatz kommen können. Schwill Andreas identifizierte etwa einen Katalog von sogenannten Fundamentalen Ideen. 
-> 
+Es gibt viele weitere **Fundamentale Ideen** der Softwareentwicklung, die im Rahmen des Entwurfs von Softwaresystemen und auch für die weiter unten folgende Algorithmisierung zum Einsatz kommen können: 
+ 
 > "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
 > 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder er- kennbar ist (Horizontalkriterium)
 > 2. auf jedem intellektuellen Niveau aufgezeigt und vermittelt werden kann (Vertikalkriterium)
 > 3. zur Annäherung an eine gewisse idealisierte Zielvorstellung dient, die jedoch faktisch möglicherweise unerreichbar ist (Zielkriterium)
 > 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
 > 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" (Schwill, 1993)
-> 
-> Schwill identifiziert weiters auf Basis dieses Kriteriensatzes folgende konkrete Ideen (hier in einer kleinen Modifikation nach Modrow für die Masteridee der Formalisierung):
+
+Schwill identifiziert auf Basis dieses Kriteriensatzes folgende konkrete Ideen (hier in einer kleinen Modifikation nach Modrow für die Masteridee der Formalisierung), die für die Phase der Problemanalyse (siehe besonders Masteridee "Strukturierte Zerlegung") und auch für die Phase die Algorithmisierung (siehe besonders Materidee der Algorithmisierung) zur Anwendung kommen können:
+
 > ![](./Bilder/fundamentaleideen.png)
 > (Schwill/Schubert/Modrow)
 
 ## Algorithmisierung 
-Es folgt die Beschreibung des Systems und eines dazu passenden Lösungsalgorithmus. Wir verwenden dazu (grafische) Methoden verschiedener Modellierungsparadigmen (Ablaufmodellierung, zustandsorientierte Modellierung, funktionale Modellierung, objektorientierte Modellierung), sowie dazu passende algorithmische Grundbausteine und Datenstrukturen (siehe Thema "Werkzeugkasten" oben). 
+Im Rahmen der Algorithmisierung folgt die Beschreibung des Systems und eines dazu passenden Lösungsalgorithmus. Wir verwenden dazu (grafische) Methoden verschiedener Modellierungsparadigmen (darunter Datenmodellierung, Ablaufmodellierung, zustandsorientierte Modellierung, funktionale Modellierung, objektorientierte Modellierung), sowie dazu passende algorithmische Grundbausteine bzw. Datenstrukturen (siehe Thema "Zentrale Ideen" bzw. "Konzepte" weiter oben). 
 
 > Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt. (https://de.wikipedia.org/wiki/Algorithmus)
 
@@ -161,21 +166,9 @@ Die Beschreibung des Algorithmus erfolgt z.B. über:
 
 ## Implementierung und Test
 
-Nachdem wir unseren Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir Werkzeuge (IDE, Programmiersprache, Compiler etc.), das es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglicht, den Algorithmus umzusetzen, auszuführen und zu testen. 
+Nachdem wir den Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir Werkzeuge (IDE, Programmiersprache, Compiler etc.), die es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglichen, den Algorithmus als Computerprogramm umzusetzen, auszuführen und zu testen. 
 
-Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es zu Anpassungen des Lösungsansatzes sowie des Algorithmus kommen, was zu weiteren Zyklen führt. Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
-
-Der Ablauf lässt sich also wie folgt kurz beschreiben (siehe dazu auch das Diagramm oben):
-
-* Wir beginnen mit der Implementierung des Programms mithilfe des gewählten Werkzeugs (bestimmte Programmiersprache, bestimmte Entwicklungsumgebung). 
-* In kurzen Zyklen werden wir nach jeder kurzen Programmiertätigkeit immer wieder das Programm versuchen auszuführen. 
-  * Wenn sich das Programm nicht starten lässt, analysieren wir die Fehlermeldungen des Compilers und bessern Syntaxfehler aus. Wir müssen uns an die Syntax der gewählten Programmiersprache ganz genau halten, sonst versteht der Computer nicht, was er für uns tun soll. 
-  * Wenn sich das Programm jedoch starten lässt, können wir kontrollieren, ob das Programm die richtigen (Teil-)Ergebnisse im Sinne unserer Lösungsspezifikation liefert. Dazu benötigen wir Techniken, die es uns ermöglichen in die Laufzeit eines Programmes hineinzuschauen bzw. Ergebnisse des Programmes anzuzeigen (Debugging-Strategien). 
-    * Es ist möglich, dass an irgendwelchen Stellen während der Ausführung des Programms Laufzeitfehler auftreten, die das Programm auch zum Absturz bringen. Der Code muss debugt werden.
-    * Falls das Programm beim Ausführen noch keine korrekten Lösungen / Lösungsteile liefert, haben wir es ggf. mit einem Bug zu tun. Der Code muss debugt werden.
-    * Debugging: Es können Modifikation in der Problemanalyse, im Algorithmus oder auch im Code nötig werden (zyklische Natur). Eine Modifikation der Problemanalyse führt zu Modifikation des Algorithmus und der Implementierung. 
-    * Eine Modifikation im Algorithmus führt zu einer Modifikation der Implementierung. Jedenfalls wird es also immer Modifikationen in der Implementierung brauchen, um den Bug zu beheben.
-  * Wenn das Programm im Sinne Lösungsspezifikation korrekte Ergebnisse liefert, dann sind wir fertig. Handelt es sich nur um eine Teillösung, gehen wir zur Bearbeitung des nächsten Lösungsteils über. Ggf. müssen gegen Ende mehrere Lösungsteile miteinander verbunden werden, um zur Gesamtlösung zu kommen.
+Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es aufgrund von Syntaxfehlern, Laufzeitfehlern oder auch logischen Fehlern zu Anpassungen des Lösungsansatzes sowie des Algorithmus kommen, was zu weiteren Zyklen führt (siehe Diagramm oben). Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
 
 ## Anhang 1: Methodische Prinzipien
 
