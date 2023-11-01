@@ -263,6 +263,7 @@ usw.
   * [Zahlen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zahlen) - rechnen und vergleichen von Zahlen
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
+
 #### Pseudocode
 
 ```python
@@ -390,14 +391,14 @@ Lösungsansatz:
 #### Pseudocode
 ```python
 Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
-Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
+**Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.**
 Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
 Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
     Wenn der Zähler durch 2 teilbar ist (ergibt also Zähler dividiert durch 2 den Rest 0):
         Wir setzen die Linienfarbe "blue"
     Ansonsten:
         Wir setzen die Linienfarbe "black"
-    Wir zeichnen eine Linie mit der Länge, die der eingegebenen Seitenlänge entspricht.
+    Wir zeichnen eine Linie mit der Länge, die der **eingegebenen Seitenlänge** entspricht.
     Wir drehen uns um (360 : anzahl_ecken) Grad
     Wir zählen den Zähler um 1 hoch.
 ```

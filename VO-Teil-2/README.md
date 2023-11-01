@@ -1,17 +1,15 @@
 # Inhalte VO Grundlagen der Programmierung (Termin 2)
 
 ## Ablauf
-1. Wiederholung wesentlicher Konzepte:
-   - Turtle-Vieleck
-   - Turtle-Vieleck mit einfachem Farbwechsel
-   - Identifikation der Konzepte auch in anderen Werkzeugen
+1. Zentrale Konzepte und Prozesse (Praxis)
+  - POLYGONIX: Durchbesprechung bis zur Zwei-Farben-Lösung
+  - Identifikation der Konzepte auch in anderen Werkzeugen
 2. Zentrale Konzepte und Prozesse (Theorie)
-3. Zentrale Konzepte und Prozesse (Praxis)
-  - Polygonix: Durchbesprechung komplett mit Bezug zu den zentralen Konzepten und Prozessen
-4. Einführung neuer Konzepte:
-  - Arrays, Funktionen, Ereignisse
-  - jeweils blockbasiert und mit Python und mit Verweis auf Realisierung der Konzepte in anderen Sprachen
-5. KI und Roboter-Programmierung
+3. Neue Konzepte:
+  - Arrays, Funktionen, Ereignisse anhand von weiteren POLYGONIX-Versionen
+  - jeweils blockbasiert und mit Python und 
+  - mit Verweis auf Realisierung der Konzepte in anderen Werkzeugen
+4. Exkurs: KI und Roboter-Programmierung
 
 ## Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
 
@@ -46,13 +44,13 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
 * ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
 
 ## Script zur VO Teil 2
-1. (**V**)Wiederholung der [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
-   - (**V**) [Turtle Ausgangsbeispiel zur Wiederholung](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleck.py)
-   - (**V**) [Turtle Beispiel mit einfachem Farbwechsel](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/vieleckFarben.py)
-2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+1. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
+   - [POLYGONIX und Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
+   - [POLYGONIX und Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
+2. (**V**) [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
 3. Neue Konzepte: Arrays und Zufall
-   - (**V**)[Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
+   - (**V**) [POLYGONIX: Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten (auch mit microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
    - (**UE**)[Stadt-Land-Fluss (auch mit microBit)](../VO-Teil-2/StadtLandFluss/)
@@ -60,8 +58,8 @@ Betroffene Kompetenzen aus dem HLG-Curriculum:
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
    - (**UE**)[Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
 4. Neues Konzept: Funktionen
-   - (**V**) [Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
-   - [Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
+   - (**V**) [POLYGONIX: Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
+   - (**V**) [POLYGONIX: Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
    - (**UE**) [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
 5. Neues Konzept: Ereignisse und Ereignisbehandlung
    - (**V**)Ereignisse und deren Behandlung sind in vielen blockbasierten Entwicklungsumgebungen für Programmieranfänger (MakeCode, Scratch, AppInventor etc.) als eigene Blöcke / Kategorien verfügbar(siehe z.B. in Scratch die Kategorie "Ereignisse")
