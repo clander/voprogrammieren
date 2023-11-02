@@ -2,7 +2,7 @@
 ## Modellbildung
 Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. 
 
-> Ein Modell ist eine abstrahierte Beschreibung eines realen oder geplanten Systems, das die für eine bestimmte Zielsetzung wesentlichen Eingenschaften des Systems erhält. Modellbildung ist die Beschreibung eines solchen Systems.
+> Ein Modell ist eine abstrahierte Beschreibung eines realen oder geplanten Systems, das die für eine bestimmte Zielsetzung wesentlichen Eingenschaften des Systems erhält. Modellbildung ist die Beschreibung eines solchen Systems, z. B. mittels:
 >
 > * Systembeschreibungen
 > * Verarbeitungsvorschriften
@@ -11,6 +11,7 @@ Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur L�
 > Modellierungstechniken:
 >
 > * Datenmodellierung
+> * Ablaufmodellierung
 > * Zustandsorientierte Modellierung
 > * Funktionale Modellierung
 > * Objektorientierte Modellierung
@@ -21,22 +22,15 @@ Wir lösen ein Problem mithilfe des Computers, indem wir geistige und praktische
 
 * Chancen und Grenzen der Nutzung von Informationssystemen zu erkennen, 
 * ein korrektes Weltbild aufzubauen, 
-* in einer mit IT durchsetzten Welt zu partizipieren 
-* sowie vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
+* in einer mit IT durchsetzten Welt zu partizipieren,
+* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
 
-## Zentrale Konzepte der Programmierung im Unterricht
 Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen.
 
+## Zentrale Konzepte
 Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen. 
 
-Ein etablierter Werkzeugkasten ist der Imperative. Er enthält viele fundamentale Ideen (siehe unten) der Informatik, 
-
-* die schon über sehr lange Zeit Gültigkeit haben,
-* in vielen Teilgebieten des Faches (und auch in anderen Fachgebieten) verwendet werden,
-* sich gut in der Lebenswelt unserer Schüler zeigen lassen, und
-* in verschiedenen Komplexitätsniveaus (von der Primarstufe bis in die Tertiärstufe) vermittelt werden können
-
-Konkret haben wir es im gewählten Werkzeugkasten u. A. mit folgenden Ideen und Konzepten zu tun:
+Ein etablierter Werkzeugkasten ist der imperativ-prozedurale. Er enthält viele wichtige Konzepte, von denen einige sogar als **Fundamentale Ideen der Informatik** (siehe unten) gesehen werden, darunter:
 
 Online-Ressourcen zu den Python-Konzepten:
   - [Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/)
@@ -75,7 +69,7 @@ Betroffene Konzepte (Auszug):
 * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion) als Modularisierungstechnik
 * Ereignisse (Events) und Ereignisbehandlung (Callbacks)
 
-## Zentrale Prozesse der Programmierung im Unterricht
+## Zentrale Prozesse
 Nicht nur inhaltlich, sondern auch methodisch liegt der Fokus auf Problemlösen durch Modellbildung und Simulation. Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses kann mit Bezug auf die zentralen Ideen des Computational Thinkings wie folgt umrissen werden:
 
 1. Problemanalyse, etwa durch:
@@ -125,7 +119,7 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 * Dekomposition: Wir teilen das Problem in verschiedene Teilprobleme. Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
 * Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau. Immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
 
-### Exkurs: Computational Thinkin (CT)
+### Exkurs: Computational Thinking (CT)
 
 >Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
 
@@ -144,7 +138,7 @@ Es gibt viele weitere **Fundamentale Ideen** der Softwareentwicklung, die im Rah
 > 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
 > 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" (Schwill, 1993)
 
-Schwill identifiziert auf Basis dieses Kriteriensatzes folgende konkrete Ideen (hier in einer kleinen Modifikation nach Modrow für die Masteridee der Formalisierung), die für die Phase der Problemanalyse (siehe besonders Masteridee "Strukturierte Zerlegung") und auch für die Phase die Algorithmisierung (siehe besonders Materidee der Algorithmisierung) zur Anwendung kommen können:
+Schwill identifiziert auf Basis dieses Kriteriensatzes folgende konkrete Ideen (hier in einer kleinen Modifikation nach Modrow für die Masteridee der Formalisierung), die für die Phase der Problemanalyse (siehe besonders Masteridee "Strukturierte Zerlegung") und auch für die Phase der Algorithmisierung (siehe besonders Materidee der Algorithmisierung) zur Anwendung kommen können:
 
 > ![](./Bilder/fundamentaleideen.png)
 > (Schwill/Schubert/Modrow)
@@ -168,7 +162,7 @@ Die Beschreibung des Algorithmus erfolgt z.B. über:
 
 Nachdem wir den Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir Werkzeuge (IDE, Programmiersprache, Compiler etc.), die es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglichen, den Algorithmus als Computerprogramm umzusetzen, auszuführen und zu testen. 
 
-Die Implementierung wird immer wieder ausgeführt, getestet und modifiziert, solange bis die Lösung fertig ist. Im Rahmen der Modifikation kann / wird es aufgrund von Syntaxfehlern, Laufzeitfehlern oder auch logischen Fehlern zu Anpassungen des Lösungsansatzes sowie des Algorithmus kommen, was zu weiteren Zyklen führt (siehe Diagramm oben). Die Lösung soll außerdem so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
+Die Implementierung erfolgt iterativ in Zyklen. D.h. es werden Schritt für Schritt (weitere) Teile der Lösung implementiert und immer wieder getestet. Im Rahmen der Implementierung wird es aufgrund von Syntaxfehlern, Laufzeitfehlern oder auch logischen Fehlern im Ansatz zu Anpassungen des Lösungsansatzes, des Algorithmus und damit der Implementierung kommen. Die Lösung soll so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
 
 ## Anhang 1: Methodische Prinzipien
 
