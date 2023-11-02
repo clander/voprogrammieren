@@ -481,6 +481,23 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
     Wir drehen uns um (360 : anzahl_ecken) Grad
     Wir zählen den Zähler um 1 hoch.
 ```
+
+#### Zustandsdiagramm
+Das folgende Zustandsdidagramm zeigt die Eingabevalidierung:
+
+```mermaid
+stateDiagram-v2
+    [*] --> Benutzereingabe
+    Benutzereingabe --> Konvertierung
+    Konvertierung --> PrüfungGrößerGleich3
+    Konvertierung --> Konvertierungsfehler
+    Konvertierungsfehler --> Benutzereingabe
+    PrüfungGrößerGleich3 --> KorrekteEingabe
+    PrüfungGrößerGleich3 --> FehlerZahlKleiner3
+    FehlerZahlKleiner3 --> Benutzereingabe
+    KorrekteEingabe --> [*]
+```
+
 #### Struktogramm
 Es folgt das Struktogramm für die Eingabevalidierung (der Rest bleibt gleich):
 

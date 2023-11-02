@@ -2,7 +2,7 @@ ende = False
 temperaturen = []
 summe = 0
 
-print("Bitte Temperaturdaten eingeben (Ende der Eingabe mit x")
+print("Bitte Temperaturdaten eingeben (Ende der Eingabe mit x)")
 
 while not ende:
     eingabe = input()
