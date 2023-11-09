@@ -86,6 +86,11 @@ Nicht nur inhaltlich, sondern auch methodisch liegt der Fokus auf Problemlösen 
    * Programmiersprache
    * Laufzeitumgebungen und Compiler
 
+
+> Hinweis: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des
+> informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben,analog mit Papier und Schere, analog / haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
+
+
 Ausgehend vom Problem (Startzustand) führt der Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand). Damit ergibt sich eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise, die sich in Form einer Ablaufmodellierung wie folgt darstellen lässt:
 
 ```mermaid
