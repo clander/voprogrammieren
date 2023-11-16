@@ -401,7 +401,7 @@ Für die Umsetzung oben genannter Lösungsideen wenden wir die folgenden neuen K
 
   * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
   * [Zufallszahlen (Ganzzahlen)](https://www.w3schools.com/python/ref_random_randint.asp)
-  * [Mehrfach-Fachllunterscheidung](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/exkurs_mehrfachfallunterscheidungen)
+  * [Mehrfach-Fallunterscheidung](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/exkurs_mehrfachfallunterscheidungen)
  
 #### Pseudocode
 ```python
