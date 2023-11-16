@@ -319,7 +319,7 @@ Laut Spezifikation müssen wir zumindest jede zweite Seite in einer anderen Farb
 Die Farbe wechselt also mit jeder Seite, die wir zeichnen.
 ### Algorithmisierung
 #### Neue Konzepte
-keine
+- keine
 #### Pseudocode
 ```python
 Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
@@ -381,31 +381,58 @@ while zaehler < eingabe_zahl:
 #### Dekomposition
 Funktionen: 
   - Das Programm soll nun auch nach der Seitenlänge der Polygone fragen.
+  - Das Programm soll einen Modus für zufällige Farben anbieten. Wenn der Benutzer diesen Modus wählt, werden für das Zeichnen der Polygone abwechselnd unterschiedlichen Farben aus einer vordefinierten Liste von mehreren Farben verwendet.
 
-Lösungsansatz: 
-  - Analog zur Abfrage und Verwendung der Anzahl der Ecken.
+#### Lösungsansatz für die Seitenlänge
+Analog zur Abfrage und Verwendung der Anzahl der Ecken erfolgt nun die Abfrage und Verwendung der Seitenlänge.
+
+#### Lösungsidee für den Zufallsfarbenmodus (Dekomposition)
+Der Benutzer bekommt die Möglichkeit zur Wahl zwischen Zufallsmodus und Standardmodus. 
+
+Im Standardmodus werden aufeinanderfolgende Seiten wie bisher in wechselweise zwei verschiedenen Fraben dargestellt.
+
+Für die Implementierung des Zufallsfarbenmodus gehen wir wie folgt vor: Wir definieren eine indexbasierte Liste (Array) mit Farben (Strings). Wir ermitteln mittels Zufallszahlengenerator eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge-1 (letzte Listenposition). Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht und liefern diese ausgesuchte Farbe zurück, die dann für das Zeichnen einer Seite verwendet wird. Jedes Mal, wenn dann eine neue Seite gezeichnet werden soll, wird wieder eine zufällige Farbe ermittelt.
   
 ### Algorithmisierung
+
 #### Neue Konzepte
-- keine
+
+Für die Umsetzung oben genannter Lösungsideen wenden wir die folgenden neuen Konzepte an:
+
+  * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
+  * [Zufallszahlen (Ganzzahlen)](https://www.w3schools.com/python/ref_random_randint.asp)
+  * [Mehrfach-Fachllunterscheidung](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/exkurs_mehrfachfallunterscheidungen)
+ 
 #### Pseudocode
 ```python
 Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
-**Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.**
+Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
+Wir fragen den Benutzer ob er den Standardfarbenmodus s) oder den Zufallsfarbenmodus z) wählen möchte.
 Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
-Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
-    Wenn der Zähler durch 2 teilbar ist (ergibt also Zähler dividiert durch 2 den Rest 0):
-        Wir setzen die Linienfarbe "blue"
-    Ansonsten:
-        Wir setzen die Linienfarbe "black"
-    Wir zeichnen eine Linie mit der Länge, die der **eingegebenen Seitenlänge** entspricht.
-    Wir drehen uns um (360 : anzahl_ecken) Grad
-    Wir zählen den Zähler um 1 hoch.
+Wenn der Benutzer den Standardmodus s gewählt hat:
+  Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
+      Wenn der Zähler durch 2 teilbar ist (ergibt also Zähler dividiert durch 2 den Rest 0):
+          Wir setzen die Linienfarbe "blue"
+      Ansonsten:
+          Wir setzen die Linienfarbe "black"
+      Wir zeichnen eine Linie mit der Länge, die der **eingegebenen Seitenlänge** entspricht.
+      Wir drehen uns um (360 : anzahl_ecken) Grad
+      Wir zählen den Zähler um 1 hoch.
+Wenn der Benutzer den Zufallsfarbenmodus z gewählt hat:
+  Wir definieren eine indexbasierte Liste (ein Array) mit Farb-Strings, die von der Python-Turtle-Bibliothek verstanden werden.
+  Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
+      Wir holen uns an einer zufälligen Position eine Farbe aus der Liste. Dazu ermitteln wir eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge-1 (letzter Listenposition) und holen uns jene Farbe aus der Liste, die an dieser zufälligen Stelle gespeichert ist.
+      Wir setzen die Linienfarbe auf die zufällig ermittelt Farbe.
+      Wir zeichnen eine Linie mit der Länge, die der **eingegebenen Seitenlänge** entspricht.
+      Wir drehen uns um (360 : anzahl_ecken) Grad
+      Wir zählen den Zähler um 1 hoch.
+Wenn der Benutzer weder z und s wählt:
+  Wir informieren den Benutzer, dass nur z oder s als Auswahl möglich ist und beenden das Programm.
 ```
 
 #### Struktogramm
 
-... an der Struktur ändert sich zur Vorgängerversion nichts ...
+![](bilder/polygonix_0_5.png)
 
 ### Implementierung
 #### Blöcke
@@ -413,28 +440,40 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 
 #### Python
 ```python
-import turtle
+import turtle, random
 eingabeEckenanzahl = input("Wieviele Ecken soll die Figur haben?")
 eckenanzahl = int(eingabeEckenanzahl)
 eingabeSeitenlaenge = input("Welche Seitenlänge möchtest du?")
 seitenlaenge = int(eingabeSeitenlaenge)
+eingabeModus = input("Welchen Modus möchtest du wählen? s) Standardfarben z) Zufallsfarben")
 zaehler = 0
 turtle.pensize(4)
-while zaehler < eckenanzahl:
-    if zaehler % 2 == 0: # Rest bei Division durch 2 gleich 0?
-        turtle.pencolor('blue')
-    else:
-        turtle.pencolor('black')
-    turtle.forward(seitenlaenge)
-    turtle.right(360/eckenanzahl)
-    zaehler = zaehler + 1
+if eingabeModus == "s":
+    while zaehler < eckenanzahl:
+        if zaehler % 2 == 0: # Rest bei Division durch 2 gleich 0?
+            turtle.pencolor('blue')
+        else:
+            turtle.pencolor('black')
+        turtle.forward(seitenlaenge)
+        turtle.right(360/eckenanzahl)
+        zaehler = zaehler + 1
+elif eingabeModus == "z":
+    farben = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
+    while zaehler < eckenanzahl:
+        zufallFarbe = farben[random.randint(0, len(farben)-1)]
+        turtle.pencolor(zufallFarbe)
+        turtle.forward(seitenlaenge)
+        turtle.right(360/eckenanzahl)
+        zaehler = zaehler + 1
+else:
+    print("Für die Wahl des Modus ist nur z oder s erlaub!")
 ```
 
 ## POLYGONIX VERSION 0.6
 ### Problemanalyse
 #### Dekomposition
 Funktionen:
-  - Wir stellen sicher, dass der Benutzer nur Zahlen >= 3 eingeben kann.
+  - Benutzereingabevalidierung: Wir stellen sicher, dass der Benutzer nur Zahlen >= 3 eingeben kann.
   
 Lösungsidee:
   - Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. 
@@ -454,9 +493,11 @@ Generalisierung:
 ### Algorithmisierung
 
 #### Neue Konzepte
-* [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
+
 * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
+  
 #### Pseudocode
+Es folgt der Pseudocode nur für den Teil der Eingabevalidierung (der Rest bleibt wie in der vorhergehenden Version).
 
 ```python
 Wir definieren eine Variable eingabe_ok und setzen diese auf False
@@ -470,47 +511,39 @@ Solange eingabe_ok nicht auf True gesetzt ist:
               Wir informieren den Benutzer darüber, dass nur Zahlen größer gleich 3 erlaubt sind
       Sonst:
           Konvertierung ist fehlgeschlagen. Wir informieren den Benutzer darüber, dass nur Zahlen erlaubt sind.
-Wir fragen den Benutzer nach der Seitenlänge, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
-Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
-Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
-    Wenn der Zähler durch 2 teilbar ist:
-        Wir setzen die Linienfarbe "blue"
-    Ansonsten:
-        Wir setzen die Linienfarbe "black"
-    Wir zeichnen eine Linie mit der eingegebenen Seitenlänge
-    Wir drehen uns um (360 : anzahl_ecken) Grad
-    Wir zählen den Zähler um 1 hoch.
+... 
+Rest wie vorher
+...
 ```
 
+#### Struktogramm
+Es folgt das Struktogramm für die Eingabevalidierung (der Rest der App bleibt gleich):
+
+![](bilder/polygonix_0_6.png)
 #### Zustandsdiagramm
-Das folgende Zustandsdidagramm zeigt die Eingabevalidierung:
+Als alternative grafische Modellierungstechnik zu einem Struktogramm eigenne sich manchmal auch Zustandsdiagramme.
+
+Das folgende Zustandsdidagramm modelliert ebenfalls die oben beschriebene Eingabevalidierung:
 
 ```mermaid
 stateDiagram-v2
     [*] --> Benutzereingabe
-    Benutzereingabe --> Konvertierung
-    Konvertierung --> PrüfungGrößerGleich3
-    Konvertierung --> Konvertierungsfehler
-    Konvertierungsfehler --> Benutzereingabe
-    PrüfungGrößerGleich3 --> KorrekteEingabe
-    PrüfungGrößerGleich3 --> FehlerZahlKleiner3
-    FehlerZahlKleiner3 --> Benutzereingabe
+    Benutzereingabe --> Konvertierung : Benutzer hat Eingabe getätigt
+    Konvertierung --> PrüfungGrößerGleich3 : Zahl eingegeben
+    Konvertierung --> Benutzereingabe : Keine Zahl eingegeben
+    PrüfungGrößerGleich3 --> KorrekteEingabe : Zahl passt
+    PrüfungGrößerGleich3 --> Benutzereingabe: Zahl zu klein
     KorrekteEingabe --> [*]
 ```
 
-#### Struktogramm
-Es folgt das Struktogramm für die Eingabevalidierung (der Rest bleibt gleich):
-
-![](bilder/polygonix_0_6.png)
-
-### Implementierung
+### Implementierung (Variante entsprechend dem Struktogramm)
 #### Blöcke
-![](bilder/polygonix_blocks_0_6.png)
+![](bilder/polygonix_blocks_0_6_1.png)
 
 #### Python
+
 ```python
 import turtle
-zaehler = 0
 eingabe_ok = False
 eingabe_zahl = 0
 while not eingabe_ok:
@@ -523,15 +556,41 @@ while not eingabe_ok:
             print("Es sind nur Zahlen größer oder gleich 3 erlaubt!")
     except:
         print("Bitte eine Zahl eingeben!")
-turtle.pensize(4)
-while zaehler < eingabe_zahl:
-    if zaehler % 2 == 0:
-        turtle.pencolor('blue')
-    else:
-        turtle.pencolor('black')
-    turtle.forward(100)
-    turtle.right(360/eingabe_zahl)
-    zaehler = zaehler + 1
+print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
+```
+
+### Implementierung (Variante als Automat entsprechend dem Zustandsdiagramm)
+#### Blöcke
+![](bilder/polygonix_blocks_0_6_2.png)
+
+#### Python
+Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidierung als prototypische Umsetzung des Zustandsdiagramms in Form eines endlichen Automaten:
+
+```python
+import turtle
+zustand = "Benutzereingabe"
+eingabe = ""
+eingabe_zahl = 0
+while zustand != "Ende":
+    if zustand == "Benutzereingabe":
+        eingabe = input("Wieviele Ecken soll die Figur haben?")
+        zustand = "Konvertierung"
+    elif zustand == "Konvertierung":
+        try:
+            eingabe_zahl = int(eingabe)
+            zustand = "PruefungGroesserGleich3"
+        except:
+            print("Bitte eine Zahl eingeben!")
+            zustand = "Benutzereingabe"
+    elif zustand == "PruefungGroesserGleich3":
+        if eingabe_zahl >= 3:
+            zustand = "KorrekteEingabe"
+        else:
+            print("Es sind nur Zahlen größer oder gleich 3 erlaubt!")
+            zustand = "Benutzereingabe"
+    elif zustand == "KorrekteEingabe":
+        zustand = "Ende"
+print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 ```
 
 ## POLYGONIX VERSION X (Ideen für weitere Iterationen)
@@ -539,7 +598,8 @@ while zaehler < eingabe_zahl:
 Funktionen:
   - Das Programm soll auch die Strichdicke durch den Benutzer bestimmen lassen.
   - Das Programm soll alle Benutzereingaben validieren.
-  - Das Programm soll einen Modus für zufällige Farben anbieten. Wenn der Benutzer diesen Modus wählt, werden für das Zeichnen der Polygone abwechselnd unterschiedlichen Farben aus einer vordefinierten Liste von mehreren Farben verwendet.
+  - Das Programm soll ergänzend zum Zufallsfarbenmodus auch die Möglichkeit bieten, eine Farbe aus einer Liste von Farben auszuwählen. In dieser Farbe wird dann das Polygon gezeichnet.
+  
 Refactoring (nicht funktionale Anforderungen):
   - Das Programm soll mit Funktionen besser wartbar und besser erweiterbar gehalten werden.
 
@@ -567,17 +627,13 @@ Zum Schluss geben wird den eingegebenen Wert zurück.
 
 Falls bei der Konvertierung oder der fachlichen Validierung etwas schiefgeht / etwas nicht passt, bleiben wir in der Schleife und der Benutzer muss alles wieder von vorne eingeben.
 
-#### Lösungsidee für den Zufallsfarbenmodus (Dekomposition)
-Wir definieren in eine Liste mit Farben (Strings). Wir ermitteln mittels Zufallszahlengenerator eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge-1 (letzte Listenposition). Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht und liefern diese ausgesuchte Farbe zurück, die dann für das Zeichnen einer Seite verwendet wird. Jedes Mal, wenn dann eine neue Seite gezeichnet werden soll, wird wieder eine zufällige Farbe ermittelt.
-
 #### Lösungsidee die Farbauswahl (Dekomposition)
 Wir geben einer Liste von Farben zur Auswahl aus. Die Eingabe der Benutzer muss einer dieser Farben entsprechen (Validierung). Wenn eine passende Farbe eingegeben wurde, wird diese zurückgeliefert. 
 
 ### Algorithmisierung
+#### Neue Konzepte
 Für die Umsetzung oben genannter Lösungsideen / Optimierungen wenden wir die folgenden Konzepte an:
   * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
-  * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
-  * [Zufallszahlen (Ganzzahlen)](https://www.w3schools.com/python/ref_random_randint.asp)
 
 #### Blöcke
 ![](bilder/polybonix_blocks_x_1.png)
