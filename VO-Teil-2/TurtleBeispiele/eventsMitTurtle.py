@@ -6,30 +6,29 @@ turtle.setup(400,500)
 wn = turtle.Screen()
 wn.title("Handling keypresses!")
 wn.bgcolor("lightgreen")
-schildi = turtle.Turtle()
 
-def forward():
-    schildi.forward(30)
+def onForward():
+    turtle.forward(30)
     
-def left():
-    schildi.left(45)
+def onLeft():
+    turtle.left(45)
     
-def right():
-    schildi.right(45)
+def onRight():
+    turtle.right(45)
     
-def pen():
-    if schildi.isdown():
-        schildi.penup()
+def onPen():
+    if turtle.isdown():
+        turtle.penup()
     else:
-        schildi.pendown()    
-def exit():
+        turtle.pendown()    
+def onExit():
     wn.bye()
     
 
-wn.onkeypress(forward, "Up")
-wn.onkeypress(left, "Left")
-wn.onkeypress(right, "Right")
-wn.onkeypress(pen, "p")
-wn.onkeypress(exit, "q")
+wn.onkeypress(onForward, "Up")
+wn.onkeypress(onLeft, "Left")
+wn.onkeypress(onRight, "Right")
+wn.onkeypress(onPen, "p")
+wn.onkeypress(onExit, "q")
 
 wn.listen()
