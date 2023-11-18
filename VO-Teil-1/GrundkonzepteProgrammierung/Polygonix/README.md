@@ -40,7 +40,11 @@ Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 * Algorithmisierung (geistige Techniken, Algorithmus finden)
   * Nötige Konzepte identifizieren
   * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
-  * Algorithmus als [Struktogramm](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
+  * Algorithmus als 
+    * [Struktogramm](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
+    * [Ablaufdiagramm](https://en.wikipedia.org/wiki/Flowchart)
+    * [Zustandsdiagramm](https://de.wikipedia.org/wiki/Zustandsübergangsdiagramm)
+    * etc.
 * Implementierung (praktische Techniken, Computerprogramm finden und testen)
   * Blockbasiert
   * Python
@@ -53,12 +57,16 @@ Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 Wir reduzieren das Problem zunächst auf das Zeichnen von Linien in verschiedenen Winkeln zueinander.
 
 Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem bestimmen Winkel zueinander stehen.
+
 #### Dekomposition
 Funktionen: 
   - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe;
 
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
-  - Wir verwenden das Turtle-Modul für das Zeichnen (Zeichnen von Linien, Drehung des Stiftes, Stiftfarbe)
+  - Wir verwenden das Turtle-Modul für das Zeichnen von Linien, 
+  - die Drehung des Stiftes, 
+  - das Setzen der Stiftfarbe.
+  
 ### Algorithmisierung
 #### Neue Konzepte
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
@@ -109,6 +117,7 @@ turtle.right(120)
 ## POLYGONIX Version 0.2
 
 ### Problemanalyse
+
 #### Dekomposition
 Funktionen: 
   - Benutzer:in gibt 3 oder 4 ein
@@ -118,9 +127,15 @@ Funktionen:
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
   - Teillösung: Wir verwenden die Print-Funktion für Ausgaben an den Benutzer
   - Teillösung: Wir verwenden die Input-Funktion für Eingaben des Benutzers
+  
 #### Abstraktion
-Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen. Auf Basis dieser Zahl entscheiden wir, ob wir ein Dreieck oder ein Viereck ausgeben.
+
+Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen. Auf Basis dieser Zahl entscheiden wir, ob wir ein Dreieck oder ein Viereck ausgeben. 
+
+Für die Verarbeitung von Entscheidungen des Benutzers verwenden wir bedingte Verzweigungen (If). Diese ermöglichen uns in Abhängigkeit bestimmter Bedingungen Codeblöcke auszuführen oder nicht.
+
 ### Algorithmisierung
+
 #### Neue Konzepte
 
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
@@ -208,22 +223,28 @@ else:
         print("Das Programm unterstützt aktuell nur Dreiecke oder Vierecke.")
 ```
 ## POLYGONIX Version 0.3
+
 ### Problemanalyse
+
 #### Dekomposition
+
 Funktionen: 
-  - Wir generalisieren unsere Lösung, sodass sie mit beliebig vielen Ecken zurechtkommt, d.h. beliebige regelmäßige Polygone (gleichseitige Dreicke, Vierecke, Fünfecke etc.) zeichnen kann.
-  - Einschränkung: Wir zeichnen vorerst alle Seiten in der selben Farbe
+  - Das Programm kann mit beliebig vielen Ecken zurechtkommen, d.h. beliebige regelmäßige Polygone (gleichseitige Dreicke, Vierecke, Fünfecke etc.).
+  - Einschränkung: Wir zeichnen vorerst alle Seiten in derselben Farbe.
+
 #### Generalisierung
-Es gilt folgende Regel: In einem regelmäßigen Polygon muss die Summe aller Winkel 360 Grad ergeben.
+Zur Verallgemeinerung der vorhergehenden Lösung beobachten wir folgenden Zusammenhang:
 
 * Für ein Dreieck (3 Seiten) zeichnen wir 3 Kanten, jeweils in einem Winkel von 360 : 3 = 120 Grad zueinander.
 * Für ein Quadrat (4 Seiten) zeichnen wir 4 Kanten, jeweils in einem Winkel von 360 : 4 = 90 Grad zueinander.
 * Für ein Fünfeck (5 Seiten) zeichnen wir 5 Kanten, jeweils in einem Winkel von 360 : 5 = 72 Grad zueinander.
 * Für ein Sechsecke (6 Seiten) zeichnen wir 6 Kanten, jeweils in einem Winkel von 360 : 6 = 60 Grad zueinander.
-#### Mustererkennung
-Die **Grad** in einem regelmäßigen Polygon offensichtlich abhänging von der Anzahl der Ecken. 
 
-Die Anzahl der Ecken spielt außerdem auch eine wichtige Rolle, beim Zeichnen der Polygone, weil sie auch die **Anzahl der zu zeichnenden Seiten** bestimmt.
+Die Grad in einem regelmäßigen Polygon sind also abhängig von der Anzahl der Ecken.
+
+#### Mustererkennung
+
+Die Anzahl der Ecken spielt außerdem auch eine wichtige Rolle beim Zeichnen der Polygone, weil sie auch die Anzahl der zu zeichnenden Seiten bestimmt.
 
 Für ein Dreieck gehen wir wie folgt vor:
 1. Wir zeichnen eine Linie in einer bestimmten Farbe
@@ -256,6 +277,9 @@ Für ein Fünfeck gehen wir wie folgt vor:
    Wir drehen uns um 72 Grad
 
 usw.
+
+Die Anzahl der Ecken bestimmt also auch die Anzahl der auszugebenden Seiten incl. Drehung.
+
 ### Algorithmisierung
 
 #### Neue Konzepte
@@ -299,13 +323,22 @@ while zaehler < eingabe_zahl:
 ```
 
 ## POLYGONIX Version 0.4
+
 ### Problemanalyse
+
 #### Dekomposition
 Funktionen: 
-  - Wir zeichnen jede zweite Linie der Figuren abwechselnd mit einer anderen Farbe
+  - Wir zeichnen jede zweite Linie der Figuren abwechselnd mit einer anderen Farbe.
 
-Lösung des Teilproblems Gerade/Ungerade: 
-  - Wir prüfen den Schleifenzähler. Wenn der Schleifenzähler dividiert durch 2 den Rest 0 ergibt, dann verwenden wir eine andere Farbe.
+Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
+  - Wir verwenden erneut die Funktion pencolor, um die Stiftfarbe zu ändern.
+
+#### Abstraktion
+Wir benötigen eine Möglichkeit, um in einem Computerprogramm Gerade/Ungerade darzustellen. Dazu können wir folgenden Trick anwenden. Eine Zahl ist genau dann gerade, wenn sie bei einer Division durch 2 den Rest 0 ergibt. 
+
+In unserer vorhergehenden Lösung haben wir die Seiten der Polygone in einer Schleife gezeichnet. Diese Schleife enthält auch einen Zähler. Wir können diesen Zähler nutzen, um gerade und ungerade Schleifendurchläufe zu unterscheiden und dementsprechend die Farbe zu wechseln.
+
+Eine alternative Vorgangsweise (ohne Mathematik / Rest-Operation) wäre, eine bool'sche Variable in Kombination mit der bestehenden Schleife zu verwenden. Wenn die bool'sche Variable true ist, dann setzen wir Farbe A und wechseln den Wert der bool'schen Variable auf false. Wenn die bool'sche Variable auf false ist, dann setzen wir Farbe B und wechseln den Wert der bool'schen Variable auf true, usw.
 
 #### Mustererkennung
 Laut Spezifikation müssen wir zumindest jede zweite Seite in einer anderen Farbe ausgeben, also z.B.: 
@@ -317,6 +350,7 @@ Laut Spezifikation müssen wir zumindest jede zweite Seite in einer anderen Farb
 5. ...
 
 Die Farbe wechselt also mit jeder Seite, die wir zeichnen.
+
 ### Algorithmisierung
 #### Neue Konzepte
 - keine
@@ -333,7 +367,8 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
     Wir drehen uns um (360 : anzahl_ecken) Grad
     Wir zählen den Zähler um 1 hoch.
 ```
-Für die Lösung der Farbenthematik wäre auch folgender Lösungsansatz (ohne Rest-Berechnung) möglich:
+
+Für die Lösung der Farben-Thematik wäre auch folgender Lösungsansatz (ohne Rest-Berechnung) unter Verwendung der einer bool'schen Variable möglich:
 
 ```python
 Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
@@ -351,15 +386,16 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
     Wir zählen den Zähler um 1 hoch.
 ```
 
-#### Struktogramm
+#### Struktogramm (Variante mit Rest-Berechnung)
 
 ![](bilder/polygonix_0_4.png)
 
 ### Implementierung
-#### Blöcke
+
+#### Blöcke (Variante mit Rest-Berechnung)
 ![](bilder/polygonix_blocks_0_4.png)
 
-#### Python
+#### Python (beide Varianten)
 ```python
 import turtle
 eingabe = input("Wieviele Ecken soll die Figur haben?")
@@ -376,6 +412,27 @@ while zaehler < eingabe_zahl:
     zaehler = zaehler + 1
 ```
 
+Alternative Implementierung mit einer bool'schen Variable:
+
+```python
+import turtle
+eingabe = input("Wieviele Ecken soll die Figur haben?")
+eingabe_zahl = int(eingabe)
+zaehler = 0
+turtle.pensize(4)
+schalter = True;
+while zaehler < eingabe_zahl:
+    if schalter:
+        turtle.pencolor('blue')
+        schalter = not schalter
+    else:
+        turtle.pencolor('black')
+        schalter = not schalter
+    turtle.forward(100)
+    turtle.right(360/eingabe_zahl)
+    zaehler = zaehler + 1
+```
+
 ## POLYGONIX Version 0.5
 ### Problemanalyse
 #### Dekomposition
@@ -383,15 +440,23 @@ Funktionen:
   - Das Programm soll nun auch nach der Seitenlänge der Polygone fragen.
   - Das Programm soll einen Modus für zufällige Farben anbieten. Wenn der Benutzer diesen Modus wählt, werden für das Zeichnen der Polygone abwechselnd unterschiedlichen Farben aus einer vordefinierten Liste von mehreren Farben verwendet.
 
+Neue Funktionen der Python-Bibliothek:
+- Für die Berechnung einer Zufallszahl innerhalb eines bestimmten Zahlenbereichs verwenden wir ein fertiges Modul.
+- Die Farben speichern wir in einer durchnummerierten Liste von Farben-Strings. Wir können auf die Farben dann per (zufälliger) Listenposition zugreifen.
+
 #### Lösungsansatz für die Seitenlänge
 Analog zur Abfrage und Verwendung der Anzahl der Ecken erfolgt nun die Abfrage und Verwendung der Seitenlänge.
 
-#### Lösungsidee für den Zufallsfarbenmodus (Dekomposition)
+#### Lösungsansatz für den Zufallsfarbenmodus (Abstraktion)
 Der Benutzer bekommt die Möglichkeit zur Wahl zwischen Zufallsmodus und Standardmodus. 
 
-Im Standardmodus werden aufeinanderfolgende Seiten wie bisher in wechselweise zwei verschiedenen Fraben dargestellt.
+Im Standardmodus werden aufeinanderfolgende Seiten wie bisher in wechselweise zwei verschiedenen Farben dargestellt.
 
-Für die Implementierung des Zufallsfarbenmodus gehen wir wie folgt vor: Wir definieren eine indexbasierte Liste (Array) mit Farben (Strings). Wir ermitteln mittels Zufallszahlengenerator eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge-1 (letzte Listenposition). Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht und liefern diese ausgesuchte Farbe zurück, die dann für das Zeichnen einer Seite verwendet wird. Jedes Mal, wenn dann eine neue Seite gezeichnet werden soll, wird wieder eine zufällige Farbe ermittelt.
+Für die Implementierung des Zufallsfarbenmodus gehen wir wie folgt vor: 
+  1) Wir definieren eine indexbasierte (durchnummerierte) Liste mit Farben-Strings. 
+  2) Solange eine Seite gezeichnet werden soll:
+     1) Wir ermitteln mittels Zufallszahlengenerator eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge - 1 (letzte Listenposition). 
+     2) Wir holen uns die Farbe aus der Liste, die an der Position der Zufallszahl steht und liefern diese ausgesuchte Farbe zurück, die dann für das Zeichnen einer Seite verwendet wird. 
   
 ### Algorithmisierung
 
@@ -470,23 +535,25 @@ else:
 ```
 
 ## POLYGONIX VERSION 0.6
+
 ### Problemanalyse
+
 #### Dekomposition
 Funktionen:
-  - Benutzereingabevalidierung: Wir stellen sicher, dass der Benutzer nur Zahlen >= 3 eingeben kann.
-  
-Lösungsidee:
-  - Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. 
-  - Es können zwei Probleme auftreten:
-    - Es könnte sein, dass der Benutzer keine Zahl eingibt, womit der Eingabetext nicht in eine Zahl umgewandelt werden kann.
-    - Es könnte sein, dass der Benutzer zwar eine Zahl eingibt, dass diese aber im Sinne der Fachlogik nicht sinnvoll ist. So macht es z.B. keinen Sinn, eine Eckenanzahl von kleiner als 3 zuzulassen.
-  - Vorgansweise:
-    - Wir prüfen also zuerst, ob die Zahl von Text in Zahl umgewandelt werden kann. Wenn das nicht der Fall ist, geben wir dem Benutzer einen Hinweis.
-    - Wenn umgewandelt werden konnte, prüfen wir, ob die Fachlogik erfüllt ist. Wenn das nicht der Fall ist, geben wir dem Benutzer einen entsprechenden Hinweis.
-    - Solange auch nur eine der beiden Voraussetzungen oben nicht erfüllt ist, muss der Benutzer die Eingabe wiederholen.
-    - Wenn alle Bedingungen für die Eingabe erfüllt sind, setzt das Programm fort.
+  - Benutzereingabevalidierung: Wir stellen sicher, dass der Benutzer nur Zahlen größer oder gleich 3 eingeben kann.
 
-Generalisierung:
+Neues Feature:
+  - Ausnahmebehandlung: In Programmiersprachen gibt es eine spezielle Art von "Kontrollstruktur", die Codeblöcke ausführen kann, wenn es während der Programmausführung, d.h. also zur Laufzeit, zu Ausnahmen (sog. Exceptions) kommt.
+
+#### Abstraktion
+
+Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. Es können zwei Probleme auftreten:
+  1) Konvertierungsproblem: Es könnte sein, dass der Benutzer keine Zahl eingibt, womit der Eingabetext nicht in eine Zahl umgewandelt werden kann.
+  2) Fachliches Problem: Es könnte sein, dass der Benutzer zwar eine Zahl eingibt ( 1) trifft also nicht zu), dass diese aber im Sinne der Fachlogik nicht sinnvoll ist. So macht es z.B. keinen Sinn, eine Eckenanzahl von kleiner als 3 zuzulassen.
+
+In beiden Fällen wäre es hilfreich, den Benutzer über das Problem zu informieren und ihn neu eingeben zu lassen. 
+
+#### Generalisierung (Ausblick)
   - Offensichtlich ist diese Art der Prüfung für viele verschiedene Benutzereingaben immer wieder gleich anwendbar. 
   - Man sollte für die Zukunft eine Lösung finden, um Benutzereingaben einheitlich zu behandeln (Codeduplikation vermeiden, Fehleranfälligkeit des Codes reduzieren, Wiederverwendbarkeit von Codeteilen ermöglichen)
   
@@ -595,7 +662,7 @@ print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 
 ## POLYGONIX VERSION X (Ideen für weitere Iterationen)
 ### Problemanalyse
-Funktionen:
+Weiter mögliche Funktionen:
   - Das Programm soll auch die Strichdicke durch den Benutzer bestimmen lassen.
   - Das Programm soll alle Benutzereingaben validieren.
   - Das Programm soll ergänzend zum Zufallsfarbenmodus auch die Möglichkeit bieten, eine Farbe aus einer Liste von Farben auszuwählen. In dieser Farbe wird dann das Polygon gezeichnet.
@@ -603,7 +670,9 @@ Funktionen:
 Refactoring (nicht funktionale Anforderungen):
   - Das Programm soll mit Funktionen besser wartbar und besser erweiterbar gehalten werden.
 
-#### Lösungsideen für das Refactoring mit Funktionen (Dekomposition, Generalisierung mit Funktionen)
+### Lösungsideen
+
+#### Lösungsideen für das Refactoring mit Funktionen (Dekomposition)
 Wir identifizieren Teillösungen (Komponenten) in unserem Code, die wir mehrfach verwenden. Um Codeduplikate zu vermeiden und die Wiederverwendbarkeit von Code zu ermöglichen, extrahieren wir für diese Teillösungen eigene Funktionen, die wir dann immer wieder wenn, sie benötigt werden, aufrufen. Ein Aufruf erfolgt unter Übergabe verschiedener benötigter Informationen (Parameter) wodurch die Funktionen entsprechend variabel gehalten werden können. Funktionen können Werte zurückgeben oder einfach nur ihre Arbeit verrichten und nichts zurückgeben.
 
 Kandidaten von Teillösungen, die für die Extraktion in Form von Funktionen infrage kommen:
@@ -614,28 +683,33 @@ Kandidaten von Teillösungen, die für die Extraktion in Form von Funktionen inf
 - Polygon in einer bestimmten Farbe mit einer bestimmten Seitenlänge, Eckenanzahl, Strichdicke zeichnen
 - Polygon mit zufälligen, abwechselnden Farben, einer bestimmten Seitenlänge, Eckenanzahl und Strichdicke zeichnen.
 
-#### Lösungsidee für Benutzereingaben incl. Validierung (Dekomposition, Generalisierung)
-Das Schema ist für jede Eingabevalidierung dasselbe. Zunächst setzen wir die eingabeKorrekt-Schaltervariable auf False und führen eine Schleife aus, die solange läuft, solange dieser Schalter nicht True ist. 
+#### Lösungsidee für Benutzereingaben incl. Validierung (Generalisierung, Mustererkennung, Dekomposition)
 
-Wir holen uns dann die Benutzereingabe und versuchen sie entsprechend zu konvertieren. Diese Konvertierung wird über Try-Catch (Ausnahmebehandlung) überwacht. 
+Das Muster für viele Arten der Eingabevalidierung ist immer wieder dasselbe und kann daher wie folgt skizziert werden:
 
-Wenn die Konvertierung möglich ist, dann prüfen wir fachlich, ob die Werte den gewünschten Grenzen entsprechen (z.B. Minimum oder Maximum für Zahlen). 
+  - Zunächst setzen wir die eingabeKorrekt-Schaltervariable auf False und führen eine Schleife aus, die so lange läuft, solange dieser Schalter nicht True ist. 
+  - Wir holen uns dann die Benutzereingabe als Text und versuchen diesen Text, falls nötig, entsprechend in einen anderen Datentype zu konvertieren. Diese Konvertierung wird über Try-Catch (Ausnahmebehandlung) überwacht. 
+    - Wenn die Konvertierung möglich ist, dann prüfen wir fachlich, ob die Werte den gewünschten Grenzen entsprechen (z.B. Minimum oder Maximum für Zahlen, bestimmte vordefinierte Texte, etc.).
+        - Wenn auch die fachliche Validierung ok ist, dann wurde alles korrekt eingeben und wir können die Schalter-Variable auf True setzen, wodurch die Schleife endet.
+        - Wenn die fachliche Validierung fehlschlägt, geben wir dem Benutzer einen Hinweis, und beginnen die Schleife und damit die Benutzereingabe von vorne.
+    - Wenn die Konvertierung fehlschlägt, geben wir dem Benutzer einen Hinweis, und beginnen die Schleife und damit die Benutzereingabe von vorne.
+  - Nach der Schleife geben wird den eingegebenen Wert zurück.
 
-Wenn auch die fachliche Validierung ok ist, dann wurde alles korrekt eingeben und wir können die Schalter-Variable auf True setzen, sodurch die Schleife abbricht.
-
-Zum Schluss geben wird den eingegebenen Wert zurück.
-
-Falls bei der Konvertierung oder der fachlichen Validierung etwas schiefgeht / etwas nicht passt, bleiben wir in der Schleife und der Benutzer muss alles wieder von vorne eingeben.
-
-#### Lösungsidee die Farbauswahl (Dekomposition)
-Wir geben einer Liste von Farben zur Auswahl aus. Die Eingabe der Benutzer muss einer dieser Farben entsprechen (Validierung). Wenn eine passende Farbe eingegeben wurde, wird diese zurückgeliefert. 
+#### Lösungsidee die Farbauswahl
+Wir geben einer Liste von Farben zur Auswahl aus. Die Eingabe der Benutzer muss einer dieser Farben entsprechen (Eingabevalidierung siehe oben). Wenn eine passende Farbe eingegeben wurde, wird diese zurückgeliefert. 
 
 ### Algorithmisierung
+
+Im folgenden wird eine Gesamt-Lösung mittels Funktionen realisiert, die die meisten der oben genannten Ideen umsetzt.
+
+Viel Erfolg bei der Analyse :thumbsup:
+
 #### Neue Konzepte
-Für die Umsetzung oben genannter Lösungsideen / Optimierungen wenden wir die folgenden Konzepte an:
+Für die Umsetzung oben genannter Lösungsideen / Optimierungen wenden wir die folgenden neuen Konzepte an:
   * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
 
 #### Blöcke
+
 ![](bilder/polybonix_blocks_x_1.png)
 ![](bilder/polybonix_blocks_x_2.png)
 ![](bilder/polybonix_blocks_x_3.png)
