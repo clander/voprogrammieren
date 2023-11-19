@@ -99,7 +99,7 @@ Wir drehen uns um 120 Grad
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_1.png" width="60%" />
+<img src="bilder/polygonix_blocks_0_1.png" width="40%" />
 
 #### Python-Code
 ```python
@@ -517,7 +517,7 @@ Wenn der Benutzer weder z und s wählt:
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_5.png" width="60%" />
+<img src="bilder/polygonix_blocks_0_5.png" width="80%" />
 
 #### Python
 ```python
@@ -636,7 +636,7 @@ stateDiagram-v2
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_6_1.png" width="60%" />
+<img src="bilder/polygonix_blocks_0_6_1.png" width="80%" />
 
 #### Python
 
