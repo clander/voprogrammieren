@@ -99,6 +99,9 @@ Wir drehen uns um 120 Grad
 
 #### Blöcke
 ![](bilder/polygonix_blocks_0_1.png)
+
+<img src="bilder/polygonix_blocks_0_1.png" width="50%" />
+
 #### Python-Code
 ```python
 import turtle
