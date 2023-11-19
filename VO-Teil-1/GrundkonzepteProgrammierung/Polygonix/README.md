@@ -1,7 +1,6 @@
 # POLYGONIX (Version 1.0 - Lernmodus)
 
 ## Problemstellung
-
 ### Ziel
 Für die Volksschule Urgen soll eine Geometrie-App Namens POLYGONIX entwickelt werden, mit der Kinder geometrische Figuren kennenlernen können.
 ### Deine Rolle
@@ -19,25 +18,26 @@ Die App soll im Endausbau folgende Funktionen aufweisen:
 2. ÜBUNGSMODUS: Im Übungsmodus der App bekommen die Schüler:innen ein zufälliges Polygon angezeigt, und sie müssen korrekt beantworten, um welche Art von Polygon es sich handelt.
 3. STARTBILDSCHIRM: Nach dem Start der App, sollen die Kinder mit einem schönen Startbildschirm aus lauter geometrischen Figuren begrüßt werden.
 
-#### POLYGONIX 1.0 (erster Prototyp)
-Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). Folgender Ablauf ist erwünscht (Eingabe - Verarbeitung - Ausgabe):
+#### POLYGONIX (erster Prototyp)
+Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). 
+
+Folgender Ablauf ist erwünscht (Eingabe - Verarbeitung - Ausgabe):
 
 1. Die Schüler:innen starten die App.
 2. Es folgt eine Aufforderung zur Eingabe der gewünschten Ecken-Anzahl. Die Eingabe muss eine positive Zahl größer gleich 3 sein. Falls das nicht der Fall ist, muss ein Hinweis erscheinen und die Schüler:innen müssen die Möglichkeit haben, erneut einzugeben (solange, bis eine korrekte Zahl eingegeben wurde). Das Programm darf nicht abstürzen.
 3. Es folgt eine Aufforderung zur Eingabe der gewünschten Seitenlänge. Die Eingabe muss wieder eine positive Zahl sein.
-4. Es folgt die Frage, ober Benutzer zufällige Farben für die Kanten möchte, oder selbst eine Farbe bestimmen möchte. 
-   1. Wenn selbst eine Farbe bestimmt werden möchte, dann wird eine Liste mit den möglichen Farben angezeigt. Die gewünschte Farbe muss eingegeben werden.
+4. Es folgt die Frage, ober Benutzer zufällige Farben für die Kanten möchte, oder selbst eine Farbe bestimmen möchte. Wenn selbst eine Farbe bestimmt werden möchte, dann wird eine Liste mit den möglichen Farben angezeigt. Die gewünschte Farbe muss eingegeben werden.
 5. Wenn alle Eingaben erledigt sind, wird ein entsprechendes Polygon am Bildschirm gezeichnet.
 
 #### Didaktische Hinweise zur Vorgangsweise
 Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 
-* Problemanaylse (geistige Techniken, Lösungsansatz finden)
+* Problemanaylse (geistige Techniken der Informatik, Lösungsansatz entwickeln)
   * Abstraktion: Reduktion auf das für den Lösungsansatez Wesentliche
   * Generalisierung: Verallgemeinerung des Lösungsansatzes um Klassen von Problemen lösen zu können
   * Dekomposition: Gesamtproblem in Teilprobleme aufteilen, Teilprobleme lösen, Teilprobleme zu Gesamtlösung zusammenbauen; Teillösungen für Teilprobleme in Form von Programmbibliotheken nutzen
   * Mustererkennung: Muster im Lösungsansatz erkennen, die Automatisierungspotential enthalten
-* Algorithmisierung (geistige Techniken, Algorithmus finden)
+* Algorithmisierung (geistige Techniken der Informatik, Algorithmus entwickeln)
   * Nötige Konzepte identifizieren
   * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
   * Algorithmus als 
@@ -45,18 +45,13 @@ Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
     * [Ablaufdiagramm](https://en.wikipedia.org/wiki/Flowchart)
     * [Zustandsdiagramm](https://de.wikipedia.org/wiki/Zustandsübergangsdiagramm)
     * etc.
-* Implementierung (praktische Techniken, Computerprogramm finden und testen)
-  * Blockbasiert
+* Implementierung (praktische Techniken, Programm entwickeln und testen)
+  * blockbasiert
   * Python
 
 ## POLYGONIX Version 0.1
 
 ### Problemanalyse
-
-#### Abstraktion
-Wir reduzieren das Problem zunächst auf das Zeichnen von Linien in verschiedenen Winkeln zueinander.
-
-Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem bestimmen Winkel zueinander stehen.
 
 #### Dekomposition
 Funktionen: 
@@ -66,7 +61,12 @@ Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwen
   - Wir verwenden das Turtle-Modul für das Zeichnen von Linien, 
   - die Drehung des Stiftes, 
   - das Setzen der Stiftfarbe.
-  
+
+#### Abstraktion
+Wir reduzieren das Problem zunächst auf das Zeichnen von Linien in verschiedenen Winkeln zueinander.
+
+Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem bestimmen Winkel zueinander stehen. 
+
 ### Algorithmisierung
 #### Neue Konzepte
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
@@ -119,6 +119,7 @@ turtle.right(120)
 ### Problemanalyse
 
 #### Dekomposition
+
 Funktionen: 
   - Benutzer:in gibt 3 oder 4 ein
   - Es folgt eine entsprechende Ausgabe eines gleichseitigen Dreiecks oder eines Quadrats.
@@ -127,7 +128,7 @@ Funktionen:
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
   - Teillösung: Wir verwenden die Print-Funktion für Ausgaben an den Benutzer
   - Teillösung: Wir verwenden die Input-Funktion für Eingaben des Benutzers
-  
+
 #### Abstraktion
 
 Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen. Auf Basis dieser Zahl entscheiden wir, ob wir ein Dreieck oder ein Viereck ausgeben. 
@@ -334,11 +335,7 @@ Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwen
   - Wir verwenden erneut die Funktion pencolor, um die Stiftfarbe zu ändern.
 
 #### Abstraktion
-Wir benötigen eine Möglichkeit, um in einem Computerprogramm Gerade/Ungerade darzustellen. Dazu können wir folgenden Trick anwenden. Eine Zahl ist genau dann gerade, wenn sie bei einer Division durch 2 den Rest 0 ergibt. 
-
-In unserer vorhergehenden Lösung haben wir die Seiten der Polygone in einer Schleife gezeichnet. Diese Schleife enthält auch einen Zähler. Wir können diesen Zähler nutzen, um gerade und ungerade Schleifendurchläufe zu unterscheiden und dementsprechend die Farbe zu wechseln.
-
-Eine alternative Vorgangsweise (ohne Mathematik / Rest-Operation) wäre, eine bool'sche Variable in Kombination mit der bestehenden Schleife zu verwenden. Wenn die bool'sche Variable true ist, dann setzen wir Farbe A und wechseln den Wert der bool'schen Variable auf false. Wenn die bool'sche Variable auf false ist, dann setzen wir Farbe B und wechseln den Wert der bool'schen Variable auf true, usw.
+Wir benötigen eine Möglichkeit, um in einem Computerprogramm Gerade/Ungerade darzustellen. Dazu können wir folgenden Trick anwenden. Eine Zahl ist genau dann gerade, wenn sie bei einer Division durch 2 den Rest 0 ergibt.
 
 #### Mustererkennung
 Laut Spezifikation müssen wir zumindest jede zweite Seite in einer anderen Farbe ausgeben, also z.B.: 
@@ -350,6 +347,11 @@ Laut Spezifikation müssen wir zumindest jede zweite Seite in einer anderen Farb
 5. ...
 
 Die Farbe wechselt also mit jeder Seite, die wir zeichnen.
+
+#### Lösungsansatz
+In unserer vorhergehenden Lösung haben wir die Seiten der Polygone in einer Schleife gezeichnet. Diese Schleife enthält auch einen Zähler. Wir können diesen Zähler nutzen, um gerade und ungerade Schleifendurchläufe zu unterscheiden und dementsprechend die Farbe zu wechseln.
+
+Eine alternative Vorgangsweise (ohne Mathematik / Rest-Operation) wäre, eine bool'sche Variable in Kombination mit der bestehenden Schleife zu verwenden. Wenn die bool'sche Variable true ist, dann setzen wir Farbe A und wechseln den Wert der bool'schen Variable auf false. Wenn die bool'sche Variable auf false ist, dann setzen wir Farbe B und wechseln den Wert der bool'schen Variable auf true, usw.
 
 ### Algorithmisierung
 #### Neue Konzepte
@@ -434,25 +436,30 @@ while zaehler < eingabe_zahl:
 ```
 
 ## POLYGONIX Version 0.5
+
 ### Problemanalyse
+
 #### Dekomposition
 Funktionen: 
   - Das Programm soll nun auch nach der Seitenlänge der Polygone fragen.
   - Das Programm soll einen Modus für zufällige Farben anbieten. Wenn der Benutzer diesen Modus wählt, werden für das Zeichnen der Polygone abwechselnd unterschiedlichen Farben aus einer vordefinierten Liste von mehreren Farben verwendet.
 
-Neue Funktionen der Python-Bibliothek:
+Neue Funktionen aus der Python-Bibliothek:
 - Für die Berechnung einer Zufallszahl innerhalb eines bestimmten Zahlenbereichs verwenden wir ein fertiges Modul.
 - Die Farben speichern wir in einer durchnummerierten Liste von Farben-Strings. Wir können auf die Farben dann per (zufälliger) Listenposition zugreifen.
 
 #### Lösungsansatz für die Seitenlänge
 Analog zur Abfrage und Verwendung der Anzahl der Ecken erfolgt nun die Abfrage und Verwendung der Seitenlänge.
 
-#### Lösungsansatz für den Zufallsfarbenmodus (Abstraktion)
+#### Lösungsansatz und Abstraktion für den Zufallsfarbenmodus
 Der Benutzer bekommt die Möglichkeit zur Wahl zwischen Zufallsmodus und Standardmodus. 
 
 Im Standardmodus werden aufeinanderfolgende Seiten wie bisher in wechselweise zwei verschiedenen Farben dargestellt.
 
-Für die Implementierung des Zufallsfarbenmodus gehen wir wie folgt vor: 
+Für die Implementierung des Zufallsfarbenmodus gehen wir wie folgt kombinieren wir eine indexbasierte  (durchnummerierte) Liste, die alle möglichen Farben als Zeichenketten enthält. In Kombination mit einem Zufallszahlengenerator wählen wir jedes Mal eine Farbe an einer zufälligen Position aus. Die Stiftfarbe setzen wir dann mit dieser ermittelten Farbe und zeichnen eine Seite des Polygons damit.
+
+Wir gehen also wie folgt vor:
+
   1) Wir definieren eine indexbasierte (durchnummerierte) Liste mit Farben-Strings. 
   2) Solange eine Seite gezeichnet werden soll:
      1) Wir ermitteln mittels Zufallszahlengenerator eine Zufallszahl zwischen 0 (erste Listenposition) und Listenlänge - 1 (letzte Listenposition). 
@@ -534,6 +541,18 @@ else:
     print("Für die Wahl des Modus ist nur z oder s erlaub!")
 ```
 
+Hinweis: Die zufällige Auswahl eines Element aus einer Liste funktioniert in Python auch etwas einfacher über die choice-Methode. Die Zeile 
+
+```python 
+zufallFarbe = farben[random.randint(0, len(farben)-1)]
+```
+kann dazu ersetzt werden durch:
+
+```python
+zufallFarbe = random.choice(farben)
+```
+Didaktischer Hinweis: Manchmal muss man sich im (Programmier-)Unterricht zwischen dem Einsatz von mächtigeren High-Level-Funktionen und deren geplante Vermeidung zum Zwecke des erwünschten Erkenntnisgewinnes entscheiden.
+
 ## POLYGONIX VERSION 0.6
 
 ### Problemanalyse
@@ -545,11 +564,11 @@ Funktionen:
 Neues Feature:
   - Ausnahmebehandlung: In Programmiersprachen gibt es eine spezielle Art von "Kontrollstruktur", die Codeblöcke ausführen kann, wenn es während der Programmausführung, d.h. also zur Laufzeit, zu Ausnahmen (sog. Exceptions) kommt.
 
-#### Abstraktion
+#### Lösungsansatz
 
 Wir benötigen eine Teillösung für die Prüfung der Korrektheit der Benutzereingabe. Es können zwei Probleme auftreten:
   1) Konvertierungsproblem: Es könnte sein, dass der Benutzer keine Zahl eingibt, womit der Eingabetext nicht in eine Zahl umgewandelt werden kann.
-  2) Fachliches Problem: Es könnte sein, dass der Benutzer zwar eine Zahl eingibt ( 1) trifft also nicht zu), dass diese aber im Sinne der Fachlogik nicht sinnvoll ist. So macht es z.B. keinen Sinn, eine Eckenanzahl von kleiner als 3 zuzulassen.
+  2) Fachliches Problem: Es könnte sein, dass der Benutzer zwar eine Zahl eingibt (Punkt 1) trifft also nicht zu), dass diese aber im Sinne der Fachlogik nicht sinnvoll ist. So macht es z.B. keinen Sinn, eine Eckenanzahl für Polygone von kleiner als 3 zuzulassen.
 
 In beiden Fällen wäre es hilfreich, den Benutzer über das Problem zu informieren und ihn neu eingeben zu lassen. 
 
@@ -604,6 +623,7 @@ stateDiagram-v2
 ```
 
 ### Implementierung (Variante entsprechend dem Struktogramm)
+
 #### Blöcke
 ![](bilder/polygonix_blocks_0_6_1.png)
 
@@ -627,11 +647,13 @@ print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 ```
 
 ### Implementierung (Variante als Automat entsprechend dem Zustandsdiagramm)
+Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidierung als prototypische Umsetzung des Zustandsdiagramms in Form eines endlichen Automaten
+
 #### Blöcke
 ![](bilder/polygonix_blocks_0_6_2.png)
 
 #### Python
-Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidierung als prototypische Umsetzung des Zustandsdiagramms in Form eines endlichen Automaten:
+
 
 ```python
 import turtle
