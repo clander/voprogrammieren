@@ -99,7 +99,7 @@ Wir drehen uns um 120 Grad
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_1.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_1.png" width="60%" />
 
 #### Python-Code
 ```python
@@ -190,8 +190,8 @@ Sonst:
 
 ### Implementierung
 #### Blöcke 
-<img src="bilder/polygonix_blocks_0_2_1.png" width="50%" />
-<img src="bilder/polygonix_blocks_0_2_2.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_2_1.png" width="60%" />
+<img src="bilder/polygonix_blocks_0_2_2.png" width="60%" />
 
 #### Python
 ```python
@@ -309,7 +309,7 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 ### Implementierung
 
 #### Blöcke
-<img src="bilder/polygonix_blocks_0_3.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_3.png" width="60%" />
 
 #### Python
 
@@ -399,7 +399,7 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 
 #### Blöcke (Variante mit Rest-Berechnung)
 
-<img src="bilder/polygonix_blocks_0_4.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_4.png" width="60%" />
 
 #### Python
 
@@ -517,7 +517,7 @@ Wenn der Benutzer weder z und s wählt:
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_5.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_5.png" width="60%" />
 
 #### Python
 ```python
@@ -636,7 +636,7 @@ stateDiagram-v2
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_6_1.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_6_1.png" width="60%" />
 
 #### Python
 
@@ -662,7 +662,7 @@ Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidier
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_6_2.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_6_2.png" width="60%" />
 
 #### Python
 
