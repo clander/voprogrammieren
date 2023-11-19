@@ -662,7 +662,7 @@ Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidier
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_6_2.png" width="60%" />
+<img src="bilder/polygonix_blocks_0_6_2.png" width="80%" />
 
 #### Python
 
