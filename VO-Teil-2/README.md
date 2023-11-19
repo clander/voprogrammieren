@@ -1,47 +1,15 @@
 # Inhalte VO Grundlagen der Programmierung (Termin 2)
 
-## Ablauf
+## TOC
 1. Zentrale Konzepte und Prozesse (Praxis)
   - POLYGONIX: Durchbesprechung bis zur Zwei-Farben-Lösung
   - Identifikation der Konzepte auch in anderen Werkzeugen
-2. Zentrale Konzepte und Prozesse (Theorie)
-3. Neue Konzepte:
-  - Arrays, Funktionen, Ereignisse anhand von weiteren POLYGONIX-Versionen
+  - Zentrale Konzepte und Prozesse (Theorie)
+2. Neue Konzepte:
+  - Arrays, Funktionen, Ereignisse, Ausnahmebehandlung anhand von weiteren POLYGONIX-Versionen
   - jeweils blockbasiert und mit Python und 
   - mit Verweis auf Realisierung der Konzepte in anderen Werkzeugen
-4. Exkurs: KI und Roboter-Programmierung
-
-## Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
-
-### Vorlesung
-Schwerpunktmäßig werden in der VO folgende Bildungsinhalte des Curriculums behandelt:
-
-* informatisches Denken und Informatische Arbeitsprinzipien (etwa Entwurfsprinzipien, strukturierte Programmierung, abstrakte Datentypen, Modularisierung, Hierarchisierung, Prototyping, Debugging)
-* Entwicklungsprozesse (insbesondere agile Projekte)
-* Programmierkonzepte (Variablen, Schleifen, Verzweigungen, Ereignisse, Prozeduren, Funktionen)
-
-Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO behandelt: 
-
-* Teilbereiche des Informatischen Denkens benennen und Bezüge zur Lebenswelt von Schüler*innen herzustellen.
-* informatische Arbeitsprinzipien zu erklären und damit Probleme zu analysieren, Problemlösungen unter Benutzung geeigneter Methoden zu beschreiben und diese zu realisieren.
-* unterschiedliche Programmiersprachen-Paradigma und Darstellungsformen sowie deren Vor- und Nachteile im Schulunterricht zu benennen.
-* unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren. 
-
-### Übungen zur Vorlesung
-In den Übungen zur Vorlesung Teil 2 werden die Inhalte der VO aufgegriffen und anhand eines durchgängigen Beispiels sowie einer passenden Entwicklungsumgebung zur Anwendung gebracht.
-
-Betroffene Bildungsinhalte des HLG-Curriculums:
-
-* Entwicklungsumgebungen im schulischen Kontext und deren Unterrichtsrelevanz
-* blockorientierte und textbasierte Programmiersprachen
-* Roboter, Ein-Platinen-Rechner und andere elektronischen Materialien des informatischen Denkens
-
-Betroffene Kompetenzen aus dem HLG-Curriculum:
-
-* gängige Entwicklungsumgebungen zu nennen, und wissen über deren Vor- und Nachteile Bescheid.
-* Programmiersprachen in kreativer Art und Weise zur Verwirklichung von Projekten zu nutzen.
-* klassische und agile Entwicklungsmethoden zu nennen und diese im Schulunterricht mit den Schüler*innen in Projekten umzusetzen.
-* ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
+3. Exkurs: KI und Roboter-Programmierung
 
 ## Script zur VO Teil 2
 1. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
@@ -169,3 +137,35 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
         7. Feedback
         8. Kompetenzcheck
         9. Transfer einüben
+
+## ANHANG: Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
+
+### Vorlesung
+Schwerpunktmäßig werden in der VO folgende Bildungsinhalte des Curriculums behandelt:
+
+* informatisches Denken und Informatische Arbeitsprinzipien (etwa Entwurfsprinzipien, strukturierte Programmierung, abstrakte Datentypen, Modularisierung, Hierarchisierung, Prototyping, Debugging)
+* Entwicklungsprozesse (insbesondere agile Projekte)
+* Programmierkonzepte (Variablen, Schleifen, Verzweigungen, Ereignisse, Prozeduren, Funktionen)
+
+Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO behandelt: 
+
+* Teilbereiche des Informatischen Denkens benennen und Bezüge zur Lebenswelt von Schüler*innen herzustellen.
+* informatische Arbeitsprinzipien zu erklären und damit Probleme zu analysieren, Problemlösungen unter Benutzung geeigneter Methoden zu beschreiben und diese zu realisieren.
+* unterschiedliche Programmiersprachen-Paradigma und Darstellungsformen sowie deren Vor- und Nachteile im Schulunterricht zu benennen.
+* unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren. 
+
+### Übungen zur Vorlesung
+In den Übungen zur Vorlesung Teil 2 werden die Inhalte der VO aufgegriffen und anhand eines durchgängigen Beispiels sowie einer passenden Entwicklungsumgebung zur Anwendung gebracht.
+
+Betroffene Bildungsinhalte des HLG-Curriculums:
+
+* Entwicklungsumgebungen im schulischen Kontext und deren Unterrichtsrelevanz
+* blockorientierte und textbasierte Programmiersprachen
+* Roboter, Ein-Platinen-Rechner und andere elektronischen Materialien des informatischen Denkens
+
+Betroffene Kompetenzen aus dem HLG-Curriculum:
+
+* gängige Entwicklungsumgebungen zu nennen, und wissen über deren Vor- und Nachteile Bescheid.
+* Programmiersprachen in kreativer Art und Weise zur Verwirklichung von Projekten zu nutzen.
+* klassische und agile Entwicklungsmethoden zu nennen und diese im Schulunterricht mit den Schüler*innen in Projekten umzusetzen.
+* ein im Kontext der Modulinhalte zu verortendes, didaktisch und fachdidaktisch begründetes Projekt mit Robotern, Ein-Platinen-Rechner oder anderen elektronischen Materialien des informatischen Denkens, zu planen, umzusetzen und die erstellten Unterrichtsszenarien kritisch zu reflektieren.
