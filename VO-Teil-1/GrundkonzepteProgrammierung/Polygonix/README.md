@@ -98,7 +98,6 @@ Wir drehen uns um 120 Grad
 ### Implementierung
 
 #### Blöcke
-![](bilder/polygonix_blocks_0_1.png)
 
 <img src="bilder/polygonix_blocks_0_1.png" width="50%" />
 
@@ -191,8 +190,9 @@ Sonst:
 
 ### Implementierung
 #### Blöcke 
-![](bilder/polygonix_blocks_0_2_1.png)
-![](bilder/polygonix_blocks_0_2_2.png)
+<img src="bilder/polygonix_blocks_0_2_1.png" width="50%" />
+<img src="bilder/polygonix_blocks_0_2_2.png" width="50%" />
+
 #### Python
 ```python
 import turtle
@@ -309,7 +309,7 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 ### Implementierung
 
 #### Blöcke
-![](bilder/polygonix_blocks_0_3.png)
+<img src="bilder/polygonix_blocks_0_3.png" width="50%" />
 
 #### Python
 
@@ -398,9 +398,13 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 ### Implementierung
 
 #### Blöcke (Variante mit Rest-Berechnung)
-![](bilder/polygonix_blocks_0_4.png)
 
-#### Python (beide Varianten)
+<img src="bilder/polygonix_blocks_0_4.png" width="50%" />
+
+#### Python
+
+Implementierung mit Rest-Operation:
+
 ```python
 import turtle
 eingabe = input("Wieviele Ecken soll die Figur haben?")
@@ -510,8 +514,10 @@ Wenn der Benutzer weder z und s wählt:
 ![](bilder/polygonix_0_5.png)
 
 ### Implementierung
+
 #### Blöcke
-![](bilder/polygonix_blocks_0_5.png)
+
+<img src="bilder/polygonix_blocks_0_5.png" width="50%" />
 
 #### Python
 ```python
@@ -609,6 +615,7 @@ Rest wie vorher
 Es folgt das Struktogramm für die Eingabevalidierung (der Rest der App bleibt gleich):
 
 ![](bilder/polygonix_0_6.png)
+
 #### Zustandsdiagramm
 Als alternative grafische Modellierungstechnik zu einem Struktogramm eigenne sich manchmal auch Zustandsdiagramme.
 
@@ -628,7 +635,8 @@ stateDiagram-v2
 ### Implementierung (Variante entsprechend dem Struktogramm)
 
 #### Blöcke
-![](bilder/polygonix_blocks_0_6_1.png)
+
+<img src="bilder/polygonix_blocks_0_6_1.png" width="50%" />
 
 #### Python
 
@@ -653,10 +661,10 @@ print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidierung als prototypische Umsetzung des Zustandsdiagramms in Form eines endlichen Automaten
 
 #### Blöcke
-![](bilder/polygonix_blocks_0_6_2.png)
+
+<img src="bilder/polygonix_blocks_0_6_2.png" width="50%" />
 
 #### Python
-
 
 ```python
 import turtle
