@@ -34,11 +34,9 @@ Folgende Benutzer:innen-Erfahrung soll für den LERNMODUS realisiert werden:
 5. Wenn alle Eingaben erledigt sind, wird ein entsprechendes Polygon am Bildschirm gezeichnet.
 
 #### Didaktische Hinweise zur Vorgangsweise
-Wir entwickeln das den POLYGONIX LERNMODUS in mehreren Iterationen. Am Ende einer Iteration entsteht jeweils eine ausprobiere Version unserer Software, die Teile der gewünschten Gesamtfunktionalität realisiert. 
+Wir entwickeln den POLYGONIX LERNMODUS in mehreren Iterationen. Am Ende einer Iteration entsteht jeweils eine ausprobierbare Version unserer Software, die Teile der gewünschten Gesamtfunktionalität realisiert. 
 
-Für jede Iteration wählen wir dazu Teilfunktionalitäten der oben dargestellten gesamtheitlichen Benutzererfahrung aus, planen deren Implementierung und realisieren die Implementierung.
-
-Für jede Iteration durchlaufen wir (iterativ) dazu die folgenden Phasen:
+Für jede Iteration wählen wir dazu Teilfunktionalitäten der oben dargestellten gesamtheitlichen Benutzererfahrung aus, planen deren Implementierung und realisieren diese. Wir durchlaufen dann (iterativ) folgende Phasen:
 
 1. **Problemanaylse** und **Lösungsansätze** entwickeln:
   * Abstraktion: Reduktion auf das für den Lösungsansatz Wesentliche
