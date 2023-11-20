@@ -1,3 +1,5 @@
+<link href="style.css" rel="stylesheet"></link> 
+
 # POLYGONIX (Version 1.0 - Lernmodus)
 
 ## Problemstellung
@@ -32,11 +34,12 @@ Folgender Ablauf ist erwünscht (Eingabe - Verarbeitung - Ausgabe):
 #### Didaktische Hinweise zur Vorgangsweise
 Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 
-* Problemanaylse (geistige Techniken der Informatik, Lösungsansatz entwickeln)
+* Problemanaylse (geistige Techniken der Informatik) und Lösungsansatz entwickeln
   * Abstraktion: Reduktion auf das für den Lösungsansatez Wesentliche
   * Generalisierung: Verallgemeinerung des Lösungsansatzes um Klassen von Problemen lösen zu können
   * Dekomposition: Gesamtproblem in Teilprobleme aufteilen, Teilprobleme lösen, Teilprobleme zu Gesamtlösung zusammenbauen; Teillösungen für Teilprobleme in Form von Programmbibliotheken nutzen
   * Mustererkennung: Muster im Lösungsansatz erkennen, die Automatisierungspotential enthalten
+  * Lösungsansätze
 * Algorithmisierung (geistige Techniken der Informatik, Algorithmus entwickeln)
   * Nötige Konzepte identifizieren
   * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
@@ -51,7 +54,7 @@ Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 
 ## POLYGONIX Version 0.1
 
-### Problemanalyse
+### Problemanalyse / Lösungsansätze 
 
 #### Dekomposition
 Funktionen: 
@@ -118,7 +121,7 @@ turtle.right(120)
 ```
 ## POLYGONIX Version 0.2
 
-### Problemanalyse
+### Problemanalyse / Lösungsansätze
 
 #### Dekomposition
 
@@ -228,7 +231,7 @@ else:
 ```
 ## POLYGONIX Version 0.3
 
-### Problemanalyse
+### Problemanalyse / Lösungsansätze
 
 #### Dekomposition
 
@@ -328,7 +331,7 @@ while zaehler < eingabe_zahl:
 
 ## POLYGONIX Version 0.4
 
-### Problemanalyse
+### Problemanalyse / Lösungsansätze
 
 #### Dekomposition
 Funktionen: 
@@ -444,7 +447,7 @@ while zaehler < eingabe_zahl:
 
 ## POLYGONIX Version 0.5
 
-### Problemanalyse
+### Problemanalyse / Lösungsansätze
 
 #### Dekomposition
 Funktionen: 
@@ -564,7 +567,7 @@ Didaktischer Hinweis: Manchmal muss man sich im (Programmier-)Unterricht zwische
 
 ## POLYGONIX VERSION 0.6
 
-### Problemanalyse
+### Problemanalyse / Lösungsansätze
 
 #### Dekomposition
 Funktionen:
@@ -694,7 +697,7 @@ print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 ```
 
 ## POLYGONIX VERSION X (Ideen für weitere Iterationen)
-### Problemanalyse
+### Problemanalyse / Lösungsansätze
 Weiter mögliche Funktionen:
   - Das Programm soll auch die Strichdicke durch den Benutzer bestimmen lassen.
   - Das Programm soll alle Benutzereingaben validieren.

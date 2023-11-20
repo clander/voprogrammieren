@@ -124,6 +124,8 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 * Dekomposition: Wir teilen das Problem in verschiedene Teilprobleme. Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
 * Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau. Immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
 
+Auf Basis der Problemanalyse können dann erste Lösungsansätze entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
+
 ### Exkurs: Computational Thinking (CT)
 
 >Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
