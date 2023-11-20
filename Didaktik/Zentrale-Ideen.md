@@ -77,6 +77,7 @@ Nicht nur inhaltlich, sondern auch methodisch liegt der Fokus auf Problemlösen 
    * Abstraktion
    * Generalisierung
    * Mustererkennung
+   * Lösungsansätze
 2. Algorithmisierung, etwa durch:
    * (grafische) Modellierungstechniken (z.B. Ablaufmodellierung, Zustandsmodellierung, funktionale Modellierung, objektorientierte Modellierung etc.)
    * Algorithmische Grundbausteine
@@ -124,7 +125,7 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 * Dekomposition: Wir teilen das Problem in verschiedene Teilprobleme. Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
 * Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau. Immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
 
-Auf Basis der Problemanalyse können dann erste Lösungsansätze entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
+Auf Basis der Problemanalyse können dann **erste Lösungsansätze** entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
 
 ### Exkurs: Computational Thinking (CT)
 
@@ -157,24 +158,34 @@ Im Rahmen der Algorithmisierung folgt die Beschreibung des Systems und eines daz
 
 Die Beschreibung des Algorithmus erfolgt z.B. über:
 
-* ikonische / grafische Darstellungen zur Systembeschreibung, darunter:
+* Textuelle Beschreibung des Algorithmus (formlos, konzeptorientiert)
+* [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
+* grafische Darstellungen zur Systembeschreibung, darunter:
   * [Flussdiagramme](https://en.wikipedia.org/wiki/Flowchart) bzw.[Programmablaufpläne] (https://de.wikipedia.org/wiki/Programmablaufplan)
   * [Struktogramme](https://www.inf-schule.de/) bzw. [Nassi-Shneidermann-Diagramm](https://de.wikipedia.org/wiki/Nassi-Shneiderman-Diagramm)
   * [Zustandsdiagramme](https://de.wikipedia.org/wiki/Zustandsdiagramm_(UML))
   * weitere [UML-Diagrammarten](https://de.wikipedia.org/wiki/Unified_Modeling_Language)
-* textuelle Beschreibung des Algorithmus (formlos, konzeptorientiert)
-* [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
 
 ## Implementierung und Test
 
-Nachdem wir den Lösungsalgorithmus geplant haben, gehen wir in die Umsetzung über. Dazu suchen wir Werkzeuge (IDE, Programmiersprache, Compiler etc.), die es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglichen, den Algorithmus als Computerprogramm umzusetzen, auszuführen und zu testen. 
+Nachdem wir den Lösungsalgorithmus entworfen haben, gehen wir in die Umsetzung über. Dazu suchen wir Werkzeuge (IDE, Programmiersprache, Compiler etc.), die es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglichen, den Algorithmus als Computerprogramm umzusetzen, auszuführen und zu testen. 
 
-Die Implementierung erfolgt iterativ in Zyklen. D.h. es werden Schritt für Schritt (weitere) Teile der Lösung implementiert und immer wieder getestet. Im Rahmen der Implementierung wird es aufgrund von Syntaxfehlern, Laufzeitfehlern oder auch logischen Fehlern im Ansatz zu Anpassungen des Lösungsansatzes, des Algorithmus und damit der Implementierung kommen. Die Lösung soll so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
+Die Implementierung erfolgt iterativ in Zyklen. D.h. es werden Schritt für Schritt (weitere) Teile der Lösung implementiert und immer wieder getestet. 
+
+Im Rahmen der Implementierung wird es aufgrund von Syntaxfehlern, Laufzeitfehlern oder auch logischen Fehlern im Ansatz zu Anpassungen des Lösungsansatzes, des Algorithmus und damit der Implementierung kommen. 
+
+Die Lösung soll so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
 
 ## Anhang 1: Methodische Prinzipien
 
 Für den Unterricht sind neben der Problemorientierung und der informatischen Modellbildung und Simulation u. A. folgende methodisch-didaktischen Ideen relevant:
 
+* Standardablauf (angelehnt an das Konzept der direkten Instruktion):
+  * Motivationale Basis schaffen (Advance Organizer, Anknüpfung an Lebenswelt, Lernziele etc.)
+  * Instruktion (etwa in Form von Materialien zum geleiteten entdeckenden Lernen)
+  * Übungsmöglichkeiten
+  * Transfer
+  * Lernzielkontrolle
 * Cognitive Apprenticeship:
   * Authentische Problemstellungen in verschiedenen Kontexten
   * Lernen am Modell
@@ -187,6 +198,7 @@ Für den Unterricht sind neben der Problemorientierung und der informatischen Mo
     * multiple (d.h. symbolische, ikonische und enaktive) Repräsentationen
     * vorwegnehmendes Lernen
     * Fortsetzbarkeit auf immer komplexeren Niveaus
+* ... usw ...
 
 ## Anhang 2: Beispiele für Mini-Projekte für Anfänger
 
