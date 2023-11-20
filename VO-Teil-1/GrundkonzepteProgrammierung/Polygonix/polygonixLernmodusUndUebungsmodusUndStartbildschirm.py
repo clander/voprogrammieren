@@ -92,9 +92,9 @@ while modus != 'x':
         print("**** LERNMODUS ***")
         #Eingaben des Benutzers:
         zufallsfarbenWahl = booleanEingabe('Zufallsfarben?')
-        ecken = zahlenEingabe('Wieviele Ecken?',3 , 50)
-        laenge = zahlenEingabe('Seitenlänge? ',10,100)
-        strichdicke = zahlenEingabe('Strich-Dicke?',1,10)
+        ecken = zahlenEingabe('Wieviele Ecken?',3 , 10)
+        laenge = zahlenEingabe('Seitenlänge? ',40,100)
+        strichdicke = zahlenEingabe('Strich-Dicke?',1,4)
 
         #Polygon auf Basis der Eingaben Zeichnen:
         farbenArray = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
@@ -108,7 +108,13 @@ while modus != 'x':
     elif modus == 'u':
         reset()
         print("**** Übungsmodus ***")
-        print("TODO...")
+        zufall = random.randint(3,10)
+        polygonZeichnenMitFarbe(zufall,80,4,"black")
+        antwort = zahlenEingabe("Um welche Art von geometrischer Figur handelt es sich? 3) Dreieck 4) Viereck 5) Fünfeck usw.",3,10)
+        if antwort == zufall:
+            print("Richtig!")
+        else:
+            print("Leider noch nicht richtig. Versuche es nochmal und zähle genau!")
         modus = moduswahl()
 
 print("Auf wiedersehen")

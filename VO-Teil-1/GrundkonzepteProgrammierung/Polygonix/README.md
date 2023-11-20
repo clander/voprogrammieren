@@ -838,9 +838,9 @@ def polygonZeichnenMitFarbe(anzahlEcken: int, seitenlaenge: int, dicke: int, far
     
 #Eingaben des Benutzers:
 zufallsfarbenWahl = booleanEingabe('Zufallsfarben?')
-ecken = zahlenEingabe('Wieviele Ecken?',3 , 50)
-laenge = zahlenEingabe('Seitenlänge? ',10,100)
-strichdicke = zahlenEingabe('Strich-Dicke?',1,10)
+ecken = zahlenEingabe('Wieviele Ecken?',3 , 10)
+laenge = zahlenEingabe('Seitenlänge? ',40,100)
+strichdicke = zahlenEingabe('Strich-Dicke?',1,4)
 
 #Polygon auf Basis der Eingaben Zeichnen:
 farbenArray = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
