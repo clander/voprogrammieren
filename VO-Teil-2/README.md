@@ -2,8 +2,8 @@
 
 ## TOC
 1. Zentrale Konzepte und Prozesse
-  - Zentrale Konzepte und Prozesse (Theorie)
-  - POLYGONIX: Durchbesprechung bis zur Zwei-Farben-Lösung
+  - Kurze WH der Theorie
+  - Praktische Umsetzung mit POLYGONIX
 2. Neue Konzepte:
   - Arrays
   - Zufall
