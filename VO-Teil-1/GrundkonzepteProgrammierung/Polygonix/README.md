@@ -159,7 +159,9 @@ Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwen
 
 Wir benötigen als Eingabe lediglich eine Zahl, die wir uns für das Zeichnen des Polygons merken müssen. Auf Basis dieser Zahl entscheiden wir, ob wir ein Dreieck oder ein Viereck ausgeben. 
 
-Für die Verarbeitung von Entscheidungen des Benutzers verwenden wir bedingte Verzweigungen (If). Diese ermöglichen uns in Abhängigkeit bestimmter Bedingungen Codeblöcke auszuführen oder nicht.
+#### Lösungsansatz
+
+Für die Verarbeitung von Entscheidungen des Benutzers (in Form von Benutzereingaben) verwenden wir bedingte Verzweigungen. Diese ermöglichen uns in Abhängigkeit bestimmter Bedingungen Codeblöcke auszuführen oder nicht.
 
 ### Algorithmisierung
 
@@ -312,7 +314,7 @@ Die Anzahl der Ecken bestimmt also auch die Anzahl der auszugebenden Seiten incl
 
 #### Neue Konzepte
 * [Datentypen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/konzept_datentyp)
-  * [Zahlen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zahlen) - rechnen und vergleichen von Zahlen
+  * [Zahlen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zahlen) - rechnen und vergleichen mit Zahlen
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
 
@@ -324,7 +326,7 @@ Wir definieren die Linienfarbe "black".
 Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
 Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken ist:
     Wir zeichnen eine Linie der Länge 100
-    Wir drehen uns um (360 : anzahl_ecken) Grad
+    Wir drehen uns um (360 dividiert durch die anzahl_ecken) Grad
     Wir zählen den Zähler um 1 hoch.
 ```
 #### Struktogramm
@@ -574,16 +576,8 @@ else:
     print("Für die Wahl des Modus ist nur z oder s erlaub!")
 ```
 
-**Hinweis**: Die zufällige Auswahl eines Element aus einer Liste funktioniert in Python auch etwas einfacher über die choice-Methode. Die Zeile 
+**Hinweis**: Die zufällige Auswahl eines Elements aus einer Liste funktioniert in Python auch etwas einfacher über die choice-Funktion. Das Statement `zufallFarbe = farben[random.randint(0, len(farben)-1)]` kann dazu ersetzt werden durch: `zufallFarbe = random.choice(farben)`
 
-```python 
-zufallFarbe = farben[random.randint(0, len(farben)-1)]
-```
-kann dazu ersetzt werden durch:
-
-```python
-zufallFarbe = random.choice(farben)
-```
 **Didaktischer Hinweis**: Manchmal muss man sich im (Programmier-)Unterricht zwischen dem Einsatz von mächtigeren High-Level-Funktionen und deren geplante Vermeidung zum Zwecke des erwünschten Erkenntnisgewinnes entscheiden.
 
 ## POLYGONIX VERSION 0.6
