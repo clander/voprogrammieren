@@ -87,10 +87,8 @@ Nicht nur inhaltlich, sondern auch methodisch liegt der Fokus auf Problemlösen 
    * Programmiersprache
    * Laufzeitumgebungen und Compiler
 
-
 > Hinweis: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des
 > informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben,analog mit Papier und Schere, analog / haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
-
 
 Ausgehend vom Problem (Startzustand) führt der Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand). Damit ergibt sich eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise, die sich in Form einer Ablaufmodellierung wie folgt darstellen lässt:
 
@@ -116,7 +114,7 @@ flowchart TD
     M -->|Lösungsansatz anpassen|C
     M --> |Algorithmus anpassen|E
 ```
-## Problemanalyse
+### Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B. Techniken des Computational Thinkings wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
 * Lösungsspezifikation: Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung
@@ -127,7 +125,7 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 
 Auf Basis der Problemanalyse können dann **erste Lösungsansätze** entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
 
-### Exkurs: Computational Thinking (CT)
+#### Exkurs: Computational Thinking (CT)
 
 >Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
 
@@ -136,7 +134,7 @@ Auf Basis der Problemanalyse können dann **erste Lösungsansätze** entwickelt 
 > * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
 > * http://www.icompute-uk.com/news/computational-thinking-2/
 
-### Exkurs: Fundamentale Ideen der Softwareentwicklung
+#### Exkurs: Fundamentale Ideen der Softwareentwicklung
 Es gibt viele weitere **Fundamentale Ideen** der Softwareentwicklung, die im Rahmen des Entwurfs von Softwaresystemen und auch für die weiter unten folgende Algorithmisierung zum Einsatz kommen können: 
  
 > "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
@@ -151,7 +149,7 @@ Schwill identifiziert auf Basis dieses Kriteriensatzes folgende konkrete Ideen (
 > ![](./Bilder/fundamentaleideen.png)
 > (Schwill/Schubert/Modrow)
 
-## Algorithmisierung 
+### Algorithmisierung 
 Im Rahmen der Algorithmisierung folgt die Beschreibung des Systems und eines dazu passenden Lösungsalgorithmus. Wir verwenden dazu (grafische) Methoden verschiedener Modellierungsparadigmen (darunter Datenmodellierung, Ablaufmodellierung, zustandsorientierte Modellierung, funktionale Modellierung, objektorientierte Modellierung), sowie dazu passende algorithmische Grundbausteine bzw. Datenstrukturen (siehe Thema "Zentrale Ideen" bzw. "Konzepte" weiter oben). 
 
 > Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in ein Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt. (https://de.wikipedia.org/wiki/Algorithmus)
@@ -166,7 +164,7 @@ Die Beschreibung des Algorithmus erfolgt z.B. über:
   * [Zustandsdiagramme](https://de.wikipedia.org/wiki/Zustandsdiagramm_(UML))
   * weitere [UML-Diagrammarten](https://de.wikipedia.org/wiki/Unified_Modeling_Language)
 
-## Implementierung und Test
+### Implementierung und Test
 
 Nachdem wir den Lösungsalgorithmus entworfen haben, gehen wir in die Umsetzung über. Dazu suchen wir Werkzeuge (IDE, Programmiersprache, Compiler etc.), die es uns aufgrund der unterstützten Konzepte bzw. aufgrund des gewählten Modellierungsparadigmas ermöglichen, den Algorithmus als Computerprogramm umzusetzen, auszuführen und zu testen. 
 
