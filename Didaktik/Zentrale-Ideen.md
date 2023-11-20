@@ -20,7 +20,7 @@ Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur L�
 
 Wir lösen ein (authentisches) Problem im Rahmen des informatischen Modellbildungsprozesses also, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen charakteristische Werkzeuge der Informatik, um Lösungen für Probleme zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. 
 
-## Allgemeinbildung
+### Allgemeinbildung
 Das wiederum ermöglicht uns im Sinne der Allgemeindlung ...
 
 * ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
@@ -34,7 +34,7 @@ Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte M
 
 Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht weiters nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung. 
 
-## KI
+### KI
 Dieser Erkenntnisgewinn bezüglich echter informatischer Konzepte ist insbesondere vor dem Hintergrund der aktuellen Entwicklungen im Bereich der KI von ganz besonderer Bedeutung.
 
    * Wir selbst (nicht die KI, auch wenn wir diese für unsere Lösungen nutzen) tragen die Verantwortung für unser Tun und - wenn wir Informatiksysteme produzieren und nutzen - auch für andere.
