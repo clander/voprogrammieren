@@ -1,14 +1,18 @@
-<link href="style.css" rel="stylesheet"></link> 
-
 # POLYGONIX
 
 ## Problemstellung
+
 ### Ziel
 Für die Volksschule Urgen soll eine Geometrie-App Namens POLYGONIX entwickelt werden, mit der Kinder geometrische Figuren kennenlernen können.
+
+**Hinweis**: Als Beispiel für ein ähnliches reales Projekt, das Online-Lernspiele für Volksschüler:innen implementiert, kann z. B. auf das [Wiki-Projekt](https://wiki-imst.tsn.at/spiele/web/lernspiele/index) der HAK Imst verwiesen werden.
+
 ### Deine Rolle
-Du bist Schüler:in im Fach Digitale Grundbildung.
+Du bist Schüler:in im Fach Digitale Grundbildung. Du setzte die Kompetenzen aus dem Unterricht ein, um eine hilfreiche App für Volksschulkinder zu entwickeln.
+
 ### Zielgruppe
-Die Zielgruppe für die App sind Volksschulkinder der 3. und 4. Klasse.
+Die Zielgruppe für die App sind Kinder der 3. und 4. Klasse Volksschule.
+
 ### Situation
 Im Fach Digitale Grundbildung lernst du, wie man kleine Computerprogramme schreibt, mit denen man geometrische Figuren mittels Turtle-Grafik zeichnen kann. Nutze die erlangten Kompetenzen und hilf bei der Entwicklung der App.
 
@@ -22,9 +26,9 @@ Die App soll im Endausbau folgende Modi bzw. Module aufweisen:
 3. STARTBILDSCHIRM: Nach dem Start der App, sollen die Kinder mit einem schönen Startbildschirm aus lauter geometrischen Figuren begrüßt werden.
 
 #### Funktionale Anforderungen LERNMODUS
-Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). 
+Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert nur den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). 
 
-Folgende User-Journey soll realisiert werden:
+Folgende Benutzer:innen-Erfahrung soll für den LERNMODUS realisiert werden:
 
 1. Die Schüler:innen starten die App.
 2. Es folgt eine Aufforderung zur Eingabe der gewünschten Ecken-Anzahl. Die Eingabe muss eine positive Zahl größer gleich 3 sein. Falls das nicht der Fall ist, muss ein Hinweis erscheinen und die Schüler:innen müssen die Möglichkeit haben, erneut einzugeben (solange, bis eine korrekte Zahl eingegeben wurde). Das Programm darf nicht abstürzen.
@@ -33,25 +37,33 @@ Folgende User-Journey soll realisiert werden:
 5. Wenn alle Eingaben erledigt sind, wird ein entsprechendes Polygon am Bildschirm gezeichnet.
 
 #### Didaktische Hinweise zur Vorgangsweise
-Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
+Wir entwickeln das den POLYGONIX LERNMODUS in mehreren Iterationen. Am Ende einer Iteration entsteht jeweils eine ausprobiere Version unserer Software, die Teile der gewünschten Gesamtfunktionalität realisiert. 
 
-* Problemanaylse (geistige Techniken der Informatik) und Lösungsansatz entwickeln
-  * Abstraktion: Reduktion auf das für den Lösungsansatez Wesentliche
+Für jede Iteration wählen wir dazu Teilfunktionalitäten der oben dargestellten gesamtheitlichen Benutzererfahrung aus, planen deren Implementierung und realisieren die Implementierung.
+
+Für jede Iteration durchlaufen wir (iterativ) dazu die folgenden Phasen:
+
+1. **Problemanaylse** und **Lösungsansätze** entwickeln:
+  * Abstraktion: Reduktion auf das für den Lösungsansatz Wesentliche
   * Generalisierung: Verallgemeinerung des Lösungsansatzes um Klassen von Problemen lösen zu können
-  * Dekomposition: Gesamtproblem in Teilprobleme aufteilen, Teilprobleme lösen, Teilprobleme zu Gesamtlösung zusammenbauen; Teillösungen für Teilprobleme in Form von Programmbibliotheken nutzen
+  * Dekomposition: 
+    * Gesamtproblem in Teilprobleme aufteilen, Teilprobleme lösen, Teilprobleme zu Gesamtlösung zusammenbauen
+    * Teillösungen für Teilprobleme in Form von Programmbibliotheken nutzen
   * Mustererkennung: Muster im Lösungsansatz erkennen, die Automatisierungspotential enthalten
-  * Lösungsansätze
-* Algorithmisierung (geistige Techniken der Informatik, Algorithmus entwickeln)
-  * Identifikation der nötigen Konzepte
-  * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
-  * Algorithmus grafisch, d.h. z.B. als:
+  * Lösungsansätze beschreiben
+2. **Algorithmisierung**
+  * Identifikation der nötigen Konzepte aus dem gewählten Werkzeugkasten / Paradigma
+  * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode) beschreiben
+  * Algorithmus grafisch darstellen, d.h. z.B. als:
     * [Struktogramm](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
     * [Ablaufdiagramm](https://en.wikipedia.org/wiki/Flowchart)
     * [Zustandsdiagramm](https://de.wikipedia.org/wiki/Zustandsübergangsdiagramm)
     * etc.
-* Implementierung (praktische Techniken der Informatik, Programm entwickeln und testen)
+3. **Implementierung** und **Test**
   * blockbasiert
   * Python-Code
+
+**Hinweis**: In der Softwareentwicklung sind agile Vorgehensmodelle wie etwa [SCRUM](https://de.wikipedia.org/wiki/Scrum) üblich. Unsere Vorgangsweise einer schrittweisen Implementierung von Software im Rahmen von Iterationen, in denen jeweils Teilfunktionalitäten zur Implementierung ausgewählt werden, die dann in einem ausprobierbaren Prototypen resultieren, stellt eine vereinfachte Form eines solchen Vorgehensmodells dar und kann auch als Methodik für den Unterricht verwendet werden.
 
 ## POLYGONIX Version 0.1
 
@@ -121,9 +133,9 @@ turtle.forward(100)
 turtle.right(120)
 ```
 
-Hinweis: je nach Pyhton-Ausführungsumgebung muss am Ende der Scripte die mit der Turtle-Bibliothek arbeiten, das Statement der Art `turtle.mainloop()` platziert werden, damit das Turtle-Fenster nicht sofort nach Ende des Python-Scriptes schließt.
+**Hinweis**: Je nach Pyhton-Ausführungsumgebung muss am Ende der Scripte die mit der Turtle-Bibliothek arbeiten, das Statement der Art `turtle.mainloop()` platziert werden, damit das Turtle-Fenster nicht sofort nach Ende des Python-Scriptes schließt.
 
-Hinweis 2: die Turtle-Funktionen können in Python auch objektorientiert verwendet werden. Dazu geht man wie folgt vor:
+**Hinweis**: Die Turtle-Funktionen können in Python auch objektorientiert verwendet werden. Dazu geht man wie folgt vor:
 
 ```pyhton
 from turtle import Turtle
@@ -568,7 +580,7 @@ else:
     print("Für die Wahl des Modus ist nur z oder s erlaub!")
 ```
 
-Hinweis: Die zufällige Auswahl eines Element aus einer Liste funktioniert in Python auch etwas einfacher über die choice-Methode. Die Zeile 
+**Hinweis**: Die zufällige Auswahl eines Element aus einer Liste funktioniert in Python auch etwas einfacher über die choice-Methode. Die Zeile 
 
 ```python 
 zufallFarbe = farben[random.randint(0, len(farben)-1)]
@@ -578,7 +590,7 @@ kann dazu ersetzt werden durch:
 ```python
 zufallFarbe = random.choice(farben)
 ```
-Didaktischer Hinweis: Manchmal muss man sich im (Programmier-)Unterricht zwischen dem Einsatz von mächtigeren High-Level-Funktionen und deren geplante Vermeidung zum Zwecke des erwünschten Erkenntnisgewinnes entscheiden.
+**Didaktischer Hinweis**: Manchmal muss man sich im (Programmier-)Unterricht zwischen dem Einsatz von mächtigeren High-Level-Funktionen und deren geplante Vermeidung zum Zwecke des erwünschten Erkenntnisgewinnes entscheiden.
 
 ## POLYGONIX VERSION 0.6
 
