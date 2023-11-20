@@ -12,12 +12,12 @@
 3. Exkurs: KI und Roboter-Programmierung
 
 ## Script
-1. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+1. (**V**) [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
+2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
-   - [POLYGONIX und Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
-   - [POLYGONIX und Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
-2. (**V**) [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
-3. Neue Konzepte: Arrays und Zufall
+   - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
+   - [Weitere Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
+3. Beispiele für neue Konzepte: Arrays und Zufall
    - (**V**) [POLYGONIX: Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten (auch mit microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
@@ -25,7 +25,7 @@
    - [Schere-Stein-Papier Variante mit Arrays](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
    - (**UE**)[Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
-4. Neues Konzept: Funktionen
+4. Beispiele für neues Konzept: Funktionen
    - (**V**) [POLYGONIX: Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - (**V**) [POLYGONIX: Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
    - (**UE**) [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
