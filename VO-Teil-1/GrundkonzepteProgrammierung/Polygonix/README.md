@@ -852,9 +852,9 @@ else:
     polygonZeichnenMitFarbe(ecken,laenge,strichdicke,farbwahl)
 ```
 
-## Alle POLYGONIX-Versionen
+## Alle weiteren POLYGONIX-Versionen
 
-[Version 1.0 mit Lernmodus](./polygonixLernmodus.py)
-[Version 2.0 mit Lernmodus und Übungsmodus](./polygonixLernmodusUndUebungsmodus.py)
-[Version 3.0 mit Lernmodus, Übungsmodus und Startbildschirm](./polygonixLernmodusUndUebungsmodusUndStartbildschirm.py)
+* [Version 1.0 mit Lernmodus](./polygonixLernmodus.py)
+* [Version 2.0 mit Lernmodus und Übungsmodus](./polygonixLernmodusUndUebungsmodus.py)
+* [Version 3.0 mit Lernmodus, Übungsmodus und Startbildschirm](./polygonixLernmodusUndUebungsmodusUndStartbildschirm.py)
 
