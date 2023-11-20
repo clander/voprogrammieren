@@ -121,7 +121,6 @@ Wir drehen uns um 120 Grad
 ```python
 import turtle
 turtle.pensize(4)
-turtle.fillcolor('yellow')
 turtle.pencolor('black')
 turtle.forward(100)
 turtle.right(120)
