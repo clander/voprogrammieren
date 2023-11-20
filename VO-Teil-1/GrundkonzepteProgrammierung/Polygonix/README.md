@@ -636,7 +636,7 @@ Solange eingabe_ok nicht auf True gesetzt ist:
       Sonst:
           Konvertierung ist fehlgeschlagen. Wir informieren den Benutzer darüber, dass nur Zahlen erlaubt sind.
 ... 
-Rest wie vorher
+Rest wie vorher ...
 ...
 ```
 
@@ -722,8 +722,11 @@ while zustand != "Ende":
 print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 ```
 
-## POLYGONIX VERSION X (Ideen für weitere Iterationen)
-### Problemanalyse / Lösungsansätze
+## POLYGONIX VERSION 1.0 (Anregungen für weitere Iterationen)
+
+### Problemanalyse
+
+#### Dekomposition
 Weiter mögliche Funktionen:
   - Das Programm soll auch die Strichdicke durch den Benutzer bestimmen lassen.
   - Das Programm soll alle Benutzereingaben validieren.
@@ -732,7 +735,6 @@ Weiter mögliche Funktionen:
 Refactoring (nicht funktionale Anforderungen):
   - Das Programm soll mit Funktionen besser wartbar und besser erweiterbar gehalten werden.
 
-### Lösungsideen
 
 #### Lösungsideen für das Refactoring mit Funktionen (Dekomposition)
 Wir identifizieren Teillösungen (Komponenten) in unserem Code, die wir mehrfach verwenden. Um Codeduplikate zu vermeiden und die Wiederverwendbarkeit von Code zu ermöglichen, extrahieren wir für diese Teillösungen eigene Funktionen, die wir dann immer wieder wenn, sie benötigt werden, aufrufen. Ein Aufruf erfolgt unter Übergabe verschiedener benötigter Informationen (Parameter) wodurch die Funktionen entsprechend variabel gehalten werden können. Funktionen können Werte zurückgeben oder einfach nur ihre Arbeit verrichten und nichts zurückgeben.
@@ -762,7 +764,7 @@ Wir geben einer Liste von Farben zur Auswahl aus. Die Eingabe der Benutzer muss 
 
 ### Algorithmisierung
 
-Im folgenden wird eine Gesamt-Lösung mittels Funktionen realisiert, die die meisten der oben genannten Ideen umsetzt.
+Im Folgenden wird eine Gesamt-Lösung mittels Python-Funktionen realisiert, die die meisten der oben genannten Ideen umsetzt.
 
 Viel Erfolg bei der Analyse :thumbsup:
 
@@ -780,81 +782,11 @@ Für die Umsetzung oben genannter Lösungsideen / Optimierungen wenden wir die f
 ![](bilder/polybonix_blocks_x_6.png)
 
 #### Python
-```python
-import turtle, random
 
-def zahlenEingabe(ausgabetext: str, minimum: int, maximum: int) -> int:
-    eingabeKorrekt = False
-    while not eingabeKorrekt:
-        print(ausgabetext + ' Bitte Zahlen zwischen ' + str(minimum) + ' und ' + str(maximum) + ' eingeben!')
-        try:
-            eingabe = int(input())
-            if eingabe >= minimum and eingabe <= maximum:
-                eingabeKorrekt = True
-        except Exception as e:
-            pass # Hier könnte man auf die Exception reagieren
-            
-    return eingabe
+* [Version 1.0 mit Lernmodus](./polygonixLernmodus.py).
 
-def booleanEingabe(ausgabetext: str) -> bool:
-    eingabe = ''
-    while eingabe != 'j' and eingabe != 'n':
-        print(ausgabetext + ' [j] für Ja, [n] für Nein')
-        eingabe = input()
-    if eingabe == 'j':
-        return True
-    elif eingabe == 'n':
-        return False
-    else:
-        return False
+## Weitere POLYGONIX-Versionen
 
-def farbenEingabe(farben:list[str]) -> str:
-    for i in range(1,len(farben)):
-        print(str(i) +') ' + farben[i])
-    eingabe = ''
-    while eingabe not in farben:
-        eingabe = input('Bitte Farbe eingeben:')
-    return eingabe
-
-def zufallsfarbe(farben:list[str])->str:
-    zufallFarbe = farben[random.randint(0, len(farben)-1)]
-    return zufallFarbe
-                    
-def polygonZeichnenMitZufallsfarbe(anzahlEcken: int, seitenlaenge: int,dicke: int, farbenliste:list[str]):
-    turtle.pensize(dicke)
-    i = 0
-    while i < anzahlEcken:
-        turtle.pencolor(zufallsfarbe(farbenliste))
-        turtle.forward(seitenlaenge)
-        turtle.right(360 / anzahlEcken)
-        i = i + 1
-
-def polygonZeichnenMitFarbe(anzahlEcken: int, seitenlaenge: int, dicke: int, farbe: str):
-    turtle.pensize(dicke)
-    for i in range(0,anzahlEcken):##Alternative zu While, insb. wenn man i als Zähler braucht
-        turtle.pencolor(farbe)
-        turtle.forward(seitenlaenge)
-        turtle.right(360 / anzahlEcken)
-    
-#Eingaben des Benutzers:
-zufallsfarbenWahl = booleanEingabe('Zufallsfarben?')
-ecken = zahlenEingabe('Wieviele Ecken?',3 , 10)
-laenge = zahlenEingabe('Seitenlänge? ',40,100)
-strichdicke = zahlenEingabe('Strich-Dicke?',1,4)
-
-#Polygon auf Basis der Eingaben Zeichnen:
-farbenArray = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
-
-if zufallsfarbenWahl:
-    polygonZeichnenMitZufallsfarbe(ecken,laenge,strichdicke,farbenArray)
-else:
-    farbwahl = farbenEingabe(farbenArray)
-    polygonZeichnenMitFarbe(ecken,laenge,strichdicke,farbwahl)
-```
-
-## Alle weiteren POLYGONIX-Versionen
-
-* [Version 1.0 mit Lernmodus](./polygonixLernmodus.py)
 * [Version 2.0 mit Lernmodus und Übungsmodus](./polygonixLernmodusUndUebungsmodus.py)
 * [Version 3.0 mit Lernmodus, Übungsmodus und Startbildschirm](./polygonixLernmodusUndUebungsmodusUndStartbildschirm.py)
 
