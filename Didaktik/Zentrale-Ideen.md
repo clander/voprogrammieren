@@ -18,27 +18,37 @@ Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur L�
 >
 > (nach Hubwieser, Didaktik der Informatik)
 
-Wir lösen ein Problem mithilfe des Computers, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen Werkzeuge der Informatik, um Lösungen für das Problem zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. Das wiederum ermöglicht uns 
+Wir lösen ein (authentisches) Problem im Rahmen des informatischen Modellbildungsprozesses also, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen charakteristische Werkzeuge der Informatik, um Lösungen für Probleme zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. 
 
-* Chancen und Grenzen der Nutzung von Informationssystemen zu erkennen, 
-* ein korrektes Weltbild aufzubauen, 
-* in einer mit IT durchsetzten Welt zu partizipieren,
-* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den Technologien umzugehen.
+## Allgemeinbildung
+Das wiederum ermöglicht uns im Sinne der Allgemeindlung ...
 
-Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen.
+* ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
+* Chancen, Grenzen und Risiken der Nutzung von Informationssystemen zu erkennen, 
+* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich etablieren,
+* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den informatischen Technologien umzugehen.
+
+Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen und ihre Anwendung im Rahmen von authentischen Problemlösungsprozessen.
+
+Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte Modellbildungsprozess im Vordergrund, bei dem Coding nur einen Teilaspekt darstellt.
+
+Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht weiters nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung. 
+
+## KI
+Dieser Erkenntnisgewinn bezüglich echter informatischer Konzepte ist insbesondere vor dem Hintergrund der aktuellen Entwicklungen im Bereich der KI von ganz besonderer Bedeutung.
+
+   * Wir selbst (nicht die KI, auch wenn wir diese für unsere Lösungen nutzen) tragen die Verantwortung für unser Tun und - wenn wir Informatiksysteme produzieren und nutzen - auch für andere.
+   * Wir selbst müssen in der Lage sein, KI-Outputs zu kontrollieren. Nur wir selbst als Menschen können bezogen auf unseren lebensweltlichen Kontext und damit eingebettet in eine gesellschaftliche, politische, ökonomische und ökologische Realität über Korrektheit / Plausibilität / Angemessenheit / Ethik / Vernunft oder Moral entscheiden. 
+   * Wir dürfen uns der Technologie nicht ausliefern. Wir müssen die Oberhand behalten.
+   * Kreativität, Kritisches Denken, Teamwork, Kommunikation, unsere Erfahrungen als Menschen, die in der Realität leben, eingebettet in einen sozialen Kontext sind menschliche Stärken, die die KI so nicht leisten kann.
+   * KI liefert bereits imposante Ergebnisse. Die komplexen und immer wieder neuen Herausforderungen unserer Zeit erfordern in Zukunft jedoch noch viel stärker als bisher menschliche Analyse- und Problemlösekompetenz.
+   * KIs können als Assistenten bereits jetzt sehr gute Dienste leisten und die Produktivität von Domänen-Experten enorm steigern. Sie benötigten aber detaillierte menschliche Anleitung und Kontrolle, d. h. viel Kontext, Anleitung zur Lösung von kleineren Teilproblemen, Anfragen für Korrekturen und Anpassungen usw.
 
 ## Zentrale Konzepte
 Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen. 
 
-Ein etablierter Werkzeugkasten ist der imperativ-prozedurale. Er enthält viele wichtige Konzepte, von denen einige sogar als **Fundamentale Ideen der Informatik** (siehe unten) gesehen werden, darunter:
+Ein etablierter Werkzeugkasten ist der imperativ-prozedurale. Er enthält viele wichtige informatische Konzepte, von denen einige sogar als **Fundamentale Ideen der Informatik** (siehe unten) gesehen werden, darunter (Auszug):
 
-Online-Ressourcen zu den Python-Konzepten:
-  - [Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/)
-  - [Programmierkonzepte](https://programmierkonzepte.ch)
-  - [PythonGeeks](https://pythongeeks.org/learn-python-tutorial/)
-  - [W3Schools](https://www.w3schools.com/python/)
-
-Betroffene Konzepte (Auszug):
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
   * Kompilieren und interpretieren
   * [Syntaxfehler](https://www.inf-schule.de/imperative-programmierung/python/konzepte/fehler/exkurs_syntaxfehler)
@@ -69,28 +79,14 @@ Betroffene Konzepte (Auszug):
 * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion/konzept_funktion) als Modularisierungstechnik
 * Ereignisse (Events) und Ereignisbehandlung (Callbacks)
 
+Online-Ressourcen zu den Python-Konzepten:
+  - [Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/)
+  - [Programmierkonzepte](https://programmierkonzepte.ch)
+  - [PythonGeeks](https://pythongeeks.org/learn-python-tutorial/)
+  - [W3Schools](https://www.w3schools.com/python/)
+
 ## Zentrale Prozesse
-Nicht nur inhaltlich, sondern auch methodisch liegt der Fokus auf Problemlösen durch Modellbildung und Simulation. Die Vorgangsweise im Rahmen des informatischen Modellbildungsprozesses kann mit Bezug auf die zentralen Ideen des Computational Thinkings wie folgt umrissen werden:
-
-1. Problemanalyse, etwa durch:
-   * Problemspezifikation
-   * Abstraktion
-   * Generalisierung
-   * Mustererkennung
-   * Lösungsansätze
-2. Algorithmisierung, etwa durch:
-   * (grafische) Modellierungstechniken (z.B. Ablaufmodellierung, Zustandsmodellierung, funktionale Modellierung, objektorientierte Modellierung etc.)
-   * Algorithmische Grundbausteine
-   * Datenstrukturen
-3. Implementierung und Test, etwa mit:
-   * IDE
-   * Programmiersprache
-   * Laufzeitumgebungen und Compiler
-
-> Hinweis: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des
-> informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben,analog mit Papier und Schere, analog / haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
-
-Ausgehend vom Problem (Startzustand) führt der Weg durch den Problemraum (Zwischenzustände) hin zur fertigen Lösung (erwünschter Endzustand). Damit ergibt sich eine an den Softwareentwicklungszyklus angelehnte zyklische Vorgehensweise, die sich in Form einer Ablaufmodellierung wie folgt darstellen lässt:
+Auch methodisch liegt der Fokus im Unterricht auf Problemlösen durch Modellbildung und Simulation. Die iterative Vorgehensweise ist dabei an den Softwareentwicklungprozess angelehnt:
 
 ```mermaid
 flowchart TD
@@ -114,7 +110,35 @@ flowchart TD
     M -->|Lösungsansatz anpassen|C
     M --> |Algorithmus anpassen|E
 ```
-### Problemanalyse
+
+Die im Diagramm dargestellte Vorgehensweise vermischt den traditionellen Softwareentwicklungsprozess mit den zentralen Aspekten des Computational Thinkings:
+
+1. Problemanalyse, etwa durch:
+   * Problemspezifikation
+   * Abstraktion
+   * Generalisierung
+   * Mustererkennung
+   * Lösungsansätze
+2. Algorithmisierung, etwa durch:
+   * (grafische) Modellierungstechniken (z.B. Ablaufmodellierung, Zustandsmodellierung, funktionale Modellierung, objektorientierte Modellierung etc.)
+   * Algorithmische Grundbausteine
+   * Datenstrukturen
+3. Implementierung und Test, etwa mit:
+   * IDE
+   * Programmiersprache
+   * Laufzeitumgebungen und Compiler
+
+**Hinweise zu Computational Thinking**
+>Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
+
+> Referenzen zum Thema Computational Thinking:
+> * https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
+> * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
+> * http://www.icompute-uk.com/news/computational-thinking-2/
+
+**Hinweis zu Denken lernen, Probleme lösen**: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben, analog mit Papier und Schere, analog / haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
+
+### CT: Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B. Techniken des Computational Thinkings wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
 * Lösungsspezifikation: Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung
@@ -125,17 +149,8 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 
 Auf Basis der Problemanalyse können dann **erste Lösungsansätze** entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
 
-#### Exkurs: Computational Thinking (CT)
-
->Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
-
-> Referenzen zum Thema Computational Thinking:
-> * https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
-> * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
-> * http://www.icompute-uk.com/news/computational-thinking-2/
-
 #### Exkurs: Fundamentale Ideen der Softwareentwicklung
-Es gibt viele weitere **Fundamentale Ideen** der Softwareentwicklung, die im Rahmen des Entwurfs von Softwaresystemen und auch für die weiter unten folgende Algorithmisierung zum Einsatz kommen können: 
+In der Informatikdidaktikk existiert das Konzept der **Fundamentale Ideen**, die im Rahmen des Entwurfs von Softwaresystemen und auch für die weiter unten folgende Algorithmisierung zum Einsatz kommen können: 
  
 > "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
 > 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder er- kennbar ist (Horizontalkriterium)
@@ -144,10 +159,10 @@ Es gibt viele weitere **Fundamentale Ideen** der Softwareentwicklung, die im Rah
 > 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
 > 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" (Schwill, 1993)
 
-Schwill identifiziert auf Basis dieses Kriteriensatzes folgende konkrete Ideen (hier in einer kleinen Modifikation nach Modrow für die Masteridee der Formalisierung), die für die Phase der Problemanalyse (siehe besonders Masteridee "Strukturierte Zerlegung") und auch für die Phase der Algorithmisierung (siehe besonders Materidee der Algorithmisierung) zur Anwendung kommen können:
+Schwill identifiziert auf Basis dieses Kriteriensatzes folgende konkrete Ideen (hier in einer Modifikation nach Modrow für die Masteridee der Formalisierung), die für die Phase der Problemanalyse (siehe besonders Masteridee "Strukturierte Zerlegung") und auch für die Phase der Algorithmisierung (siehe besonders Masteridee der Algorithmisierung) zur Anwendung kommen können:
 
-> ![](./Bilder/fundamentaleideen.png)
-> (Schwill/Schubert/Modrow)
+![](./Bilder/fundamentaleideen.png)
+(Schwill/Schubert/Modrow)
 
 ### Algorithmisierung 
 Im Rahmen der Algorithmisierung folgt die Beschreibung des Systems und eines dazu passenden Lösungsalgorithmus. Wir verwenden dazu (grafische) Methoden verschiedener Modellierungsparadigmen (darunter Datenmodellierung, Ablaufmodellierung, zustandsorientierte Modellierung, funktionale Modellierung, objektorientierte Modellierung), sowie dazu passende algorithmische Grundbausteine bzw. Datenstrukturen (siehe Thema "Zentrale Ideen" bzw. "Konzepte" weiter oben). 
