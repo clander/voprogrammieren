@@ -1,15 +1,17 @@
 # VO Grundlagen der Programmierung (Termin 2)
 
 ## TOC
-1. Zentrale Konzepte und Prozesse (Praxis)
-  - POLYGONIX: Durchbesprechung bis zur Zwei-Farben-Lösung
-  - Identifikation der Konzepte auch in anderen Werkzeugen
+1. Zentrale Konzepte und Prozesse
   - Zentrale Konzepte und Prozesse (Theorie)
+  - POLYGONIX: Durchbesprechung bis zur Zwei-Farben-Lösung
 2. Neue Konzepte:
-  - Arrays, Funktionen, Ereignisse, Ausnahmebehandlung anhand von weiteren POLYGONIX-Versionen
-  - jeweils blockbasiert und mit Python und 
-  - mit Verweis auf Realisierung der Konzepte in anderen Werkzeugen
-3. Exkurs: KI und Roboter-Programmierung
+  - Arrays
+  - Zufall
+  - Funktionen
+  - Ereignisse
+  - Ausnahmebehandlung
+3. Exkurs: 
+  - KI und Roboter-Programmierung
 
 ## Script
 1. (**V**) [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
@@ -34,10 +36,8 @@
    - (**V**)[Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-  
 6. Neue Unterrichtsidee / neue Umgebung: OpenRoberta und KI
    - (**V** und **UE**)[Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
-  
 7. Hinweise auf einige Tools und Online-Unterlagen:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
