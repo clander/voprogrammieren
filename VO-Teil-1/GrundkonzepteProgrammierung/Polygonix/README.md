@@ -23,7 +23,7 @@ Die App soll im Endausbau folgende Modi bzw. Module aufweisen:
 
 1. LERNMODUS: Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.). Damit die Schüler:innen sich beim Zählen leichter tun, soll jede Seite eine andere Farbe aufweisen.
 2. ÜBUNGSMODUS: Im Übungsmodus der App bekommen die Schüler:innen ein zufälliges Polygon angezeigt, und sie müssen korrekt beantworten, um welche Art von Polygon es sich handelt.
-3. STARTBILDSCHIRM: Nach dem Start der App, sollen die Kinder mit einem schönen Startbildschirm aus lauter geometrischen Figuren begrüßt werden.
+3. STARTBILDSCHIRM: Nach dem Start der App, sollen die Kinder mit einem schönen Startbildschirm aus lauter geometrischen Figuren begrüßt werden. Mit L sollen sie in den Lernmodus wechseln können, mit U in den Übungsmodus. Mit X wird das Programm beendet. In den jeweiligen Modi sollen die Kinder nach jeder "Runde" eine Möglichkeit haben, zurück zum Startbildschirm zu gelangen.
 
 #### Funktionale Anforderungen LERNMODUS
 Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert nur den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). 
@@ -826,7 +826,7 @@ def polygonZeichnenMitZufallsfarbe(anzahlEcken: int, seitenlaenge: int,dicke: in
     while i < anzahlEcken:
         turtle.pencolor(zufallsfarbe(farbenliste))
         turtle.forward(seitenlaenge)
-        turtle.right(360 / ecken)
+        turtle.right(360 / anzahlEcken)
         i = i + 1
 
 def polygonZeichnenMitFarbe(anzahlEcken: int, seitenlaenge: int, dicke: int, farbe: str):
@@ -834,7 +834,7 @@ def polygonZeichnenMitFarbe(anzahlEcken: int, seitenlaenge: int, dicke: int, far
     for i in range(0,anzahlEcken):##Alternative zu While, insb. wenn man i als Zähler braucht
         turtle.pencolor(farbe)
         turtle.forward(seitenlaenge)
-        turtle.right(360 / ecken)
+        turtle.right(360 / anzahlEcken)
     
 #Eingaben des Benutzers:
 zufallsfarbenWahl = booleanEingabe('Zufallsfarben?')
@@ -851,3 +851,10 @@ else:
     farbwahl = farbenEingabe(farbenArray)
     polygonZeichnenMitFarbe(ecken,laenge,strichdicke,farbwahl)
 ```
+
+## Alle POLYGONIX-Versionen
+
+[Version 1.0 mit Lernmodus](./polygonixLernmodus.py)
+[Version 2.0 mit Lernmodus und Übungsmodus](./polygonixLernmodusUndUebungsmodus.py)
+[Version 3.0 mit Lernmodus, Übungsmodus und Startbildschirm](./polygonixLernmodusUndUebungsmodusUndStartbildschirm.py)
+

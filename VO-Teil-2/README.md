@@ -1,4 +1,4 @@
-# Inhalte VO Grundlagen der Programmierung (Termin 2)
+# VO Grundlagen der Programmierung (Termin 2)
 
 ## TOC
 1. Zentrale Konzepte und Prozesse (Praxis)
@@ -11,7 +11,7 @@
   - mit Verweis auf Realisierung der Konzepte in anderen Werkzeugen
 3. Exkurs: KI und Roboter-Programmierung
 
-## Script zur VO Teil 2
+## Script
 1. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [POLYGONIX und Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
