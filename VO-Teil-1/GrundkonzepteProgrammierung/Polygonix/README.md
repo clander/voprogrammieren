@@ -1,6 +1,6 @@
 <link href="style.css" rel="stylesheet"></link> 
 
-# POLYGONIX (Version 1.0 - Lernmodus)
+# POLYGONIX
 
 ## Problemstellung
 ### Ziel
@@ -13,17 +13,18 @@ Die Zielgruppe für die App sind Volksschulkinder der 3. und 4. Klasse.
 Im Fach Digitale Grundbildung lernst du, wie man kleine Computerprogramme schreibt, mit denen man geometrische Figuren mittels Turtle-Grafik zeichnen kann. Nutze die erlangten Kompetenzen und hilf bei der Entwicklung der App.
 
 ### Produkt POLYGONIX
-#### Funktionale Anforderungen (Endausbau)
-Die App soll im Endausbau folgende Funktionen aufweisen:
+
+#### Funktionale Anforderungen ENDAUSBAU
+Die App soll im Endausbau folgende Modi bzw. Module aufweisen:
 
 1. LERNMODUS: Im Lernmodus der App sollen die Schüler:innen über eine Auswahl die Möglichkeit haben, verschiedene regelmäßige Polygone auf dem Bildschirm anzuzeigen (Quadrate, Dreiecke, Fünfecke etc.). Damit die Schüler:innen sich beim Zählen leichter tun, soll jede Seite eine andere Farbe aufweisen.
 2. ÜBUNGSMODUS: Im Übungsmodus der App bekommen die Schüler:innen ein zufälliges Polygon angezeigt, und sie müssen korrekt beantworten, um welche Art von Polygon es sich handelt.
 3. STARTBILDSCHIRM: Nach dem Start der App, sollen die Kinder mit einem schönen Startbildschirm aus lauter geometrischen Figuren begrüßt werden.
 
-#### POLYGONIX (erster Prototyp)
+#### Funktionale Anforderungen LERNMODUS
 Wie in der Softwareentwicklung üblich, wird das Produkt in mehreren Versionen ausgeliefert. **POLYGONIX 1.0** implementiert den LERNMODUS (nicht jedoch den STARTBILDSCHIRM oder den ÜBUNGSMODUS). 
 
-Folgender Ablauf ist erwünscht (Eingabe - Verarbeitung - Ausgabe):
+Folgende User-Journey soll realisiert werden:
 
 1. Die Schüler:innen starten die App.
 2. Es folgt eine Aufforderung zur Eingabe der gewünschten Ecken-Anzahl. Die Eingabe muss eine positive Zahl größer gleich 3 sein. Falls das nicht der Fall ist, muss ein Hinweis erscheinen und die Schüler:innen müssen die Möglichkeit haben, erneut einzugeben (solange, bis eine korrekte Zahl eingegeben wurde). Das Programm darf nicht abstürzen.
@@ -41,16 +42,16 @@ Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
   * Mustererkennung: Muster im Lösungsansatz erkennen, die Automatisierungspotential enthalten
   * Lösungsansätze
 * Algorithmisierung (geistige Techniken der Informatik, Algorithmus entwickeln)
-  * Nötige Konzepte identifizieren
+  * Identifikation der nötigen Konzepte
   * Algorithmus in [Pseudocode](https://de.wikipedia.org/wiki/Pseudocode)
-  * Algorithmus als 
+  * Algorithmus grafisch, d.h. z.B. als:
     * [Struktogramm](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
     * [Ablaufdiagramm](https://en.wikipedia.org/wiki/Flowchart)
     * [Zustandsdiagramm](https://de.wikipedia.org/wiki/Zustandsübergangsdiagramm)
     * etc.
-* Implementierung (praktische Techniken, Programm entwickeln und testen)
+* Implementierung (praktische Techniken der Informatik, Programm entwickeln und testen)
   * blockbasiert
-  * Python
+  * Python-Code
 
 ## POLYGONIX Version 0.1
 
@@ -58,11 +59,11 @@ Für jede Iteration durchlaufen wir die folgenden Phasen (ggf. auch iterativ):
 
 #### Dekomposition
 Funktionen: 
-  - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe;
+  - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe
 
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
-  - Wir verwenden das Turtle-Modul für das Zeichnen von Linien, 
-  - die Drehung des Stiftes, 
+  - Wir verwenden die Funktionen des [Python-Turtle-Moduls](https://docs.python.org/3/library/turtle.html) für das Zeichnen von Linien, 
+  - die Drehung des Stiftes,
   - das Setzen der Stiftfarbe.
 
 #### Abstraktion
@@ -119,6 +120,20 @@ turtle.pencolor('black')
 turtle.forward(100)
 turtle.right(120)
 ```
+
+Hinweis: je nach Pyhton-Ausführungsumgebung muss am Ende der Scripte die mit der Turtle-Bibliothek arbeiten, das Statement der Art `turtle.mainloop()` platziert werden, damit das Turtle-Fenster nicht sofort nach Ende des Python-Scriptes schließt.
+
+Hinweis 2: die Turtle-Funktionen können in Python auch objektorientiert verwendet werden. Dazu geht man wie folgt vor:
+
+```pyhton
+from turtle import Turtle
+myTurtle = Turtle()
+myTurtle.forward(100)
+#... usw. ...
+myTurtle.screen.mainloop()
+```
+Details zum Turtle-Modul sind auf der offiziellen Dokumentation des [Python-Turtle-Moduls](https://docs.python.org/3/library/turtle.html) zu finden.
+
 ## POLYGONIX Version 0.2
 
 ### Problemanalyse / Lösungsansätze
