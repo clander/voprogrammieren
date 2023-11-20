@@ -136,10 +136,12 @@ Die im Diagramm dargestellte Vorgehensweise vermischt den traditionellen Softwar
 > * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
 > * http://www.icompute-uk.com/news/computational-thinking-2/
 
-**Hinweis zu Denken lernen, Probleme lösen**: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben, analog mit Papier und Schere, analog / haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
+**Hinweise zur Initiative "Denken lernen, Probleme lösen"**
 
-### CT: Problemanalyse
-Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B. Techniken des Computational Thinkings wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
+Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben, in analoger Form mit Papier und Schere, haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
+
+### Problemanalyse
+Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z. B. Techniken des Computational Thinkings wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
 * Lösungsspezifikation: Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung
 * Abstraktion: Wir fokussieren auf die für die Lösung absolut notwendigen Lösungselemente und lassen alles andere weg.
@@ -150,10 +152,10 @@ Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z.B
 Auf Basis der Problemanalyse können dann **erste Lösungsansätze** entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
 
 #### Exkurs: Fundamentale Ideen der Softwareentwicklung
-In der Informatikdidaktikk existiert das Konzept der **Fundamentale Ideen**, die im Rahmen des Entwurfs von Softwaresystemen und auch für die weiter unten folgende Algorithmisierung zum Einsatz kommen können: 
+In der Informatikdidaktikk existiert das Konzept der **Fundamentalen Ideen**, die im Rahmen des Entwurfs von Softwaresystemen und auch für die weiter unten folgende Algorithmisierung zum Einsatz kommen können: 
  
 > "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
-> 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder er- kennbar ist (Horizontalkriterium)
+> 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder erkennbar ist (Horizontalkriterium)
 > 2. auf jedem intellektuellen Niveau aufgezeigt und vermittelt werden kann (Vertikalkriterium)
 > 3. zur Annäherung an eine gewisse idealisierte Zielvorstellung dient, die jedoch faktisch möglicherweise unerreichbar ist (Zielkriterium)
 > 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
