@@ -69,7 +69,7 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 
 ## Anregungen für die Eigenleistung / Übungsinhalte
 - siehe [Methodik-Teil](../Didaktik/Methodik.md)
-- 
+
 ## ANHANG: Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
 
 ### Vorlesung
