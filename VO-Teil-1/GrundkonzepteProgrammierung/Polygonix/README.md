@@ -630,11 +630,11 @@ Rest wie vorher ...
 ```
 
 #### Struktogramm
-Es folgt das Struktogramm für den Teil der Eingabevalidierung für die Eckenanzahl (der Rest der App bleibt gleich):
+Es folgt das Struktogramm für den Teil der Eingabevalidierung für die Eckenanzahl. Das Struktogramm für den Rest der App bleibt gleich (siehe vorherige Polygonix-Version).
 
 ![](bilder/polygonix_0_6.png)
 
-#### Zustandsdiagramm
+#### Exkurs: Zustandsdiagramm
 Als alternative grafische Modellierungstechnik zu einem Struktogramm eignen sich manchmal auch Zustandsdiagramme.
 
 Das folgende Zustandsdidagramm modelliert ebenfalls die oben beschriebene Eingabevalidierung:
@@ -655,32 +655,60 @@ stateDiagram-v2
 #### Blöcke
 
 <img src="bilder/polygonix_blocks_0_6_1.png" width="80%" />
+<img src="bilder/polygonix_blocks_0_6_2.png" width="80%" />
 
 #### Python
 
+Das folgende Python-Programm zeigt das gesamte Programm, nun jedoch mit Eingabevalidierung für Zahlen.
+
 ```python
-import turtle
-eingabe_ok = False
-eingabe_zahl = 0
-while not eingabe_ok:
+import turtle, random
+eingabeOk = False
+eckenanzahl = 0
+while not eingabeOk:
     try:
         eingabe = input("Wieviele Ecken soll die Figur haben?")
-        eingabe_zahl = int(eingabe)
-        if eingabe_zahl >= 3:
-            eingabe_ok = True
+        eckenanzahl = int(eingabe)
+        if eckenanzahl >= 3:
+            eingabeOk = True
         else:
             print("Es sind nur Zahlen größer oder gleich 3 erlaubt!")
     except:
         print("Bitte eine Zahl eingeben!")
-print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
+eingabeSeitenlaenge = input("Welche Seitenlänge möchtest du?")
+seitenlaenge = int(eingabeSeitenlaenge)
+eingabeModus = input("Welchen Modus möchtest du wählen? s) Standardfarben z) Zufallsfarben")
+zaehler = 0
+turtle.pensize(4)
+if eingabeModus == "s":
+    while zaehler < eckenanzahl:
+        if zaehler % 2 == 0: # Rest bei Division durch 2 gleich 0?
+            turtle.pencolor('blue')
+        else:
+            turtle.pencolor('black')
+        turtle.forward(seitenlaenge)
+        turtle.right(360/eckenanzahl)
+        zaehler = zaehler + 1
+elif eingabeModus == "z":
+    farben = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
+    while zaehler < eckenanzahl:
+        zufallFarbe = farben[random.randint(0, len(farben)-1)]
+        turtle.pencolor(zufallFarbe)
+        turtle.forward(seitenlaenge)
+        turtle.right(360/eckenanzahl)
+        zaehler = zaehler + 1
+else:
+    print("Für die Wahl des Modus ist nur z oder s erlaub!")
+
+
 ```
 
-### Implementierung (Variante als Automat entsprechend dem Zustandsdiagramm)
+### Exkurs: Implementierung (Variante als Automat entsprechend dem Zustandsdiagramm)
 Die folgende Variante zeigt eine alternative Implementierung der Eingabevalidierung als prototypische Umsetzung des Zustandsdiagramms in Form eines endlichen Automaten
 
 #### Blöcke
 
-<img src="bilder/polygonix_blocks_0_6_2.png" width="80%" />
+<img src="bilder/polygonix_blocks_0_6_2_nur_validierung.png" width="80%" />
 
 #### Python
 
@@ -710,10 +738,6 @@ while zustand != "Ende":
         zustand = "Ende"
 print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 ```
-
-
-
-
 
 ## POLYGONIX VERSION 0.7
 
