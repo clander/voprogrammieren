@@ -191,34 +191,8 @@ Im Rahmen der Implementierung wird es aufgrund von Syntaxfehlern, Laufzeitfehler
 
 Die Lösung soll so weit wie möglich generalisiert werden, d.h. sie soll eine Klasse von Problemen und nicht nur ein spezifisches Problem mit bestimmten spezifischen Daten lösen.
 
-## Anhang 1: Methodische Prinzipien
-
-Für den Unterricht sind neben der Problemorientierung und der informatischen Modellbildung und Simulation u. A. folgende methodisch-didaktischen Ideen relevant:
-
-* Standardablauf (angelehnt an das Konzept der direkten Instruktion):
-  * Motivationale Basis schaffen (Advance Organizer, Anknüpfung an Lebenswelt, Lernziele etc.)
-  * Instruktion (etwa in Form von Materialien zum geleiteten entdeckenden Lernen)
-  * Übungsmöglichkeiten
-  * Transfer
-  * Lernzielkontrolle
-* Cognitive Apprenticeship:
-  * Authentische Problemstellungen in verschiedenen Kontexten
-  * Lernen am Modell
-  * Lerngerüste (und deren Ausblenden)
-  * Einüben von Transfer (etwa durch Analogiebildung)
-  * Reflexion, Artikulation, Exploration
-* Transferlernen mit 3 - 4 Beispielen, die sich in der Tiefenstruktur ähneln, in der Oberlächenstruktur jedoch deutlich unterscheiden (unterschiedlicher Kontext):
-  * Modelling Example (Tutorial, Videotraining)
-  * Completion Example (Teile der Modellkette einer Iteration werden ausgelassen)
-  * Conventional Example (alles wird durch die Lernenden erledigt, Lehrer ist Coach)
-  * Transfer und Exploration (alle )
-* Kontext vs. Abstraktion: Vom Abstrakten zum Konkreten und wieder zum Abstrakten (Kontextualisierung vs. Abstraktion); Explikation von Verhältnis zwischen Konzept, realisierendem Werkzeug und Anwendung im Rahmen der Problemlösung explizieren
-* Genetischer Ansatz: Hinweis auf historische Relevanz / Genese der Inhalte
-* Spiralprinzip (immer wieder Aufgreifen derselben Konzepte in höheren Komplexitätsstufen) und damit:
-    * multiple (d.h. symbolische, ikonische und enaktive) Repräsentationen
-    * vorwegnehmendes Lernen
-    * Fortsetzbarkeit auf immer komplexeren Niveaus
-* ... usw ...
+## Methodische Prinzipien
+siehe [Methodik](./Methodik.md)
 
 ## Anhang 2: Beispiele für Mini-Projekte für Anfänger
 

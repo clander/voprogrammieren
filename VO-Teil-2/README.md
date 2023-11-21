@@ -14,12 +14,11 @@
   - KI und Roboter-Programmierung
 
 ## Script
-1. (**V**) [Zentralen Ideen und Prozesse](../Didaktik/Zentrale-Ideen.md)
-2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+1. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
    - [Weitere Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
-3. Beispiele für neue Konzepte: Arrays und Zufall
+2. Beispiele für neue Konzepte: Arrays und Zufall
    - (**V**) [POLYGONIX: Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten (auch mit microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
@@ -27,18 +26,18 @@
    - [Schere-Stein-Papier Variante mit Arrays](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
    - (**UE**)[Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
-4. Beispiele für neues Konzept: Funktionen
+3. Beispiele für neues Konzept: Funktionen
    - (**V**) [POLYGONIX: Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - (**V**) [POLYGONIX: Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
    - (**UE**) [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
-5. Neues Konzept: Ereignisse und Ereignisbehandlung
-   - (**V**)Ereignisse und deren Behandlung sind in vielen blockbasierten Entwicklungsumgebungen für Programmieranfänger (MakeCode, Scratch, AppInventor etc.) als eigene Blöcke / Kategorien verfügbar(siehe z.B. in Scratch die Kategorie "Ereignisse")
-   - (**V**)[Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
+4. Neues Konzept: Ereignisse und Ereignisbehandlung
+   - Ereignisse und deren Behandlung sind in vielen blockbasierten Entwicklungsumgebungen für Programmieranfänger (MakeCode, Scratch, AppInventor etc.) als eigene Blöcke / Kategorien verfügbar(siehe z.B. in Scratch die Kategorie "Ereignisse")
+   - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-6. Neue Unterrichtsidee / neue Umgebung: OpenRoberta und KI
-   - (**V** und **UE**)[Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
-7. Hinweise auf einige Tools und Online-Unterlagen:
+5. Exkurs: OpenRoberta und KI
+   - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
+6. Hinweise auf einige Tools und Online-Unterlagen:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
    - [Open Roberta Lab](https://www.roberta-home.de/lab/) Online-Ide für die Programmierung von Robotern und Microcontrollern (incl. Online-Sim und Unterstützung für Neuronale Netze)
@@ -68,76 +67,9 @@ Die Liste der folgenden Beispiele kann als Anregung / Teillösung für die eigen
 7. [Zahlenraten mit Intelligenz](./ZahlenratenKI/) Man spielt gegen eine KI Zahlen raten. Die KI rät möglichst effizient (binäre Suche).
 8. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md) Dieses Beispiel zeigt neben der Implementierung auch die Erstellung eines Selbstlerntutorials mithilfe des Microsoft Makecode Tutorial Editors.
 
-## Anregungen für die Eigenleistung
-1. Problemstellung:
-   - Suche eine passende Problemstellung (passend zum gewählten Werkzeug, passend zum Transport der Konzepte und Prozesse der VO / des DGB-Lehrplanes)
-   - Beispiele:
-     - Anregungen für Projekte siehe VO / siehe oben, weiters:
-     - [Miniprojekte auf Inf-Schule.de](https://www.inf-schule.de/imperative-programmierung/python/projekte)
-     - Beispielprojekte aus programmierkonzepte.ch
-       - [TigerJython-Projekt](https://www.tigerjython.ch/de/tutorials)
-       - [TigerJython for Kids](https://www.tigerjython4kids.ch)
-       - [Programmierkonzepte](https://programmierkonzepte.ch)
-       - [Grafik, Robotik, Datenbanken, Spiele](https://www.jython.ch)
-       - [Python online](https://python-online.ch)
-     - [Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite)
-     - [Open Roberta Lab](https://www.roberta-home.de/lab/)
-     - siehe Übungsmaterial im Rahmen der verschiedenen [Werkzeuge-Webseiten](../Didaktik/Werkzeuge.md)
-2. Tutorial (siehe dazu auch das [Tamagotchi Tutorial aus der ersten Übung](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/)):
-   - Erstelle eine fertige Anleitung zur Lösung der ersten Problemstellung.
-   - Die Lösung soll iterativ in mehreren Teillösungen / Versionen erfolgen.
-   - Die Lösung soll die zentralen Konzepte verwenden, darunter:
-     - Anweisungen
-     - Blöcke
-     - Variablen
-     - Operatoren
-     - Bedingungen
-     - Verzweigungen
-     - Schleifen
-     - evtl. Listen
-     - evtl. Funktionen
-     - evtl. Zufallszahlen
-     - evtl. Events
-     - usw ... siehe POLYGONIX-Beispiel, siehe aber auch die Liste mit den [Zentralen Konzepten und Prozessen](../Didaktik/Zentrale-Ideen.md)
-   - Evtl. findet sich eine Problemstellung im Bereich KI?
-   - Für jede Teillösung / Version / Iteration wird folgender Zyklus durchlaufen (siehe dazu auch [die zentralen Ideen der Programmierung im Unterricht](../../../Didaktik/Zentrale-Ideen.md))
-     - Problemanalyse
-       - Dekomposition
-       - Abstraktion
-       - Mustererkennung
-       - Generalisierung
-     - Algorithmisierung
-       - Sprachkonzepte identifizieren und einführen
-       - Struktogramm / Flussdiagramm zeichnen
-       - Pseudocode formulieren
-     - Implementierung und Test
-       - mit IDE und Sprache der Wahl Pseudocode umsetzen
-       - Testen
-       - Debuggen
-3. Zweite Problemstellung:
-   - Das zweite Beispiel soll mit denselben Konzepten und Prozessen lösbar sein, jedoch eine völlig andere Fachdomäne betreffen. Es soll weniger Hilfestellungen beinhalten.
-   - Dieses Beispiel dient dem Einüben von Transfer.
-4. Erstelle eine kleine Unterrichtsplanung dazu:
-   - Zielehierarchie
-     - ausgehend vom Lehrplan
-     - zentrale Konzepte / Ideen ableiten
-     - Transferziel, Erkenntnisziel, Fakten, Fertigkeiten ableiten
-   - Lernzielkontrolle 
-     - in Form einer ähnlichen Problemstellung (Fokus Transfer)
-     - Fokussiert auf die umfassende Kontrolle der Zieldimension
-   - Stundenverlauf
-     - Kern des Stundenverlaufs ist die Bearbeitung der beiden Beispiele / Problemstellungen.
-     - Die didaktische Einbettung kann z. B. über ein klassisches didaktisches Design erfolgen, z.B [Gagné](https://www.niu.edu/citl/resources/guides/instructional-guide/gagnes-nine-events-of-instruction.shtml).
-        1. Aufmerksamkeit erregen
-        2. Ziele bekannt geben
-        3. Vorwissen aktivieren
-        4. Input (Konzepte + Werkzeuge)
-        5. Lerngerüste
-        6. Übungsphasen
-        7. Feedback
-        8. Kompetenzcheck
-        9. Transfer einüben
-
+## Anregungen für die Eigenleistung / Übungsinhalte
+- siehe [Methodik-Teil](../Didaktik/Methodik.md)
+- 
 ## ANHANG: Betroffene Bildungsinhalte und Kompetenzen lt. HLG-Curriculum
 
 ### Vorlesung
