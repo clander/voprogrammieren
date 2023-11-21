@@ -207,6 +207,11 @@ Für den Unterricht sind neben der Problemorientierung und der informatischen Mo
   * Lerngerüste (und deren Ausblenden)
   * Einüben von Transfer (etwa durch Analogiebildung)
   * Reflexion, Artikulation, Exploration
+* Transferlernen mit 3 - 4 Beispielen, die sich in der Tiefenstruktur ähneln, in der Oberlächenstruktur jedoch deutlich unterscheiden (unterschiedlicher Kontext):
+  * Modelling Example (Tutorial, Videotraining)
+  * Completion Example (Teile der Modellkette einer Iteration werden ausgelassen)
+  * Conventional Example (alles wird durch die Lernenden erledigt, Lehrer ist Coach)
+  * Transfer und Exploration (alle )
 * Kontext vs. Abstraktion: Vom Abstrakten zum Konkreten und wieder zum Abstrakten (Kontextualisierung vs. Abstraktion); Explikation von Verhältnis zwischen Konzept, realisierendem Werkzeug und Anwendung im Rahmen der Problemlösung explizieren
 * Genetischer Ansatz: Hinweis auf historische Relevanz / Genese der Inhalte
 * Spiralprinzip (immer wieder Aufgreifen derselben Konzepte in höheren Komplexitätsstufen) und damit:

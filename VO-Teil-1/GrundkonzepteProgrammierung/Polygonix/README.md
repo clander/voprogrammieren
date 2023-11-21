@@ -586,7 +586,7 @@ else:
 
 #### Dekomposition
 Funktionen:
-  - Benutzereingabevalidierung: Wir stellen sicher, dass der Benutzer nur Zahlen größer oder gleich 3 eingeben kann.
+  - Benutzereingabevalidierung: Wir stellen sicher, dass der Benutzer für die Anzahl der Ecken nur Zahlen größer oder gleich 3 eingeben kann.
 
 Neues Feature:
   - Ausnahmebehandlung: In Programmiersprachen gibt es eine spezielle Art von "Kontrollstruktur", die Codeblöcke ausführen kann, wenn es während der Programmausführung, d.h. also zur Laufzeit, zu Ausnahmen (sog. Exceptions) kommt.
@@ -610,7 +610,7 @@ In beiden Fällen wäre es hilfreich, den Benutzer über das Problem zu informie
 * [Ausnahmebehandlung](https://www.w3schools.com/python/python_try_except.asp)
   
 #### Pseudocode
-Es folgt der Pseudocode nur für den Teil der Eingabevalidierung (der Rest bleibt wie in der vorhergehenden Version).
+Es folgt der Pseudocode nur für den Teil der Eingabevalidierung für die Eckenanzahl (der Rest bleibt wie in der vorhergehenden Version).
 
 ```python
 Wir definieren eine Variable eingabe_ok und setzen diese auf False
@@ -630,12 +630,12 @@ Rest wie vorher ...
 ```
 
 #### Struktogramm
-Es folgt das Struktogramm für die Eingabevalidierung (der Rest der App bleibt gleich):
+Es folgt das Struktogramm für den Teil der Eingabevalidierung für die Eckenanzahl (der Rest der App bleibt gleich):
 
 ![](bilder/polygonix_0_6.png)
 
 #### Zustandsdiagramm
-Als alternative grafische Modellierungstechnik zu einem Struktogramm eigenne sich manchmal auch Zustandsdiagramme.
+Als alternative grafische Modellierungstechnik zu einem Struktogramm eignen sich manchmal auch Zustandsdiagramme.
 
 Das folgende Zustandsdidagramm modelliert ebenfalls die oben beschriebene Eingabevalidierung:
 
@@ -711,6 +711,111 @@ while zustand != "Ende":
 print("Eingabe ok ... weiter geht's: " + str(eingabe_zahl))
 ```
 
+
+
+
+
+## POLYGONIX VERSION 0.7
+
+### Problemanalyse / Lösungsansätze
+
+#### Dekomposition 
+
+Nicht funktionale Anforderung (Refactoring):
+  - Wir stellen die Eingabevalidierung für Zahlen als eigene Funktion (= eigene Teillösung) bereit, die an allen Stellen im Code immer wieder aufgerufen werden kann (Verwendung der Teillösung in der Gesamtlösung), wenn sie gebraucht wird. Damit ermöglichen wir die Wiederverwendung von Code, vermeiden Codeduplikate und damit Fehlerquellen.
+  - Wir können die Anzahl der Ecken, die Seitenlänge oder auch die gewünschte Strichdicke auf diese Art und Weise abfragen.
+
+#### Generalisierung
+Wir stellen eine Funktion zur Eingabevalidierung bereit, die sicherstellt, dass nur Zahlen für einen bestimmen Zahlenbereich eingegeben werden. Der Zahlenbereich kann durch den Aufrufer der Validierung immer wieder neu paramterisiert werden.
+
+
+#### Lösungsansatz
+Die eigentliche Logik für die Implementierung der Benutzereingabe haben wir in der vorhergehenden Iteration schon implementiert. Wir nehmen diesen Teil der Lösung nun, lagern ihn als eigene Teillösung aus und rufen diese Teillösung immer genau dann wieder auf, wenn wir sie im Code benötigen (Eingabe mit Validierung für die Anzahl der Ecken, für die Seitenlänge und für die gewünschte Strichdicke).
+  
+### Algorithmisierung
+
+#### Neue Konzepte
+
+  * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
+  
+#### Pseudocode
+
+Wir definieren eine neue Funktion zur Eingabevalidierung. Diese nimmt eine Benutzeraufforderung als String, sowie ein Minimum und ein Maximum als Ganzzahl entgegen und liefert als Ergebnis die vom Benutzer eingegebene Zahl, die innerhalb dieser Grenzen liegt.
+
+```python
+Wir definieren eine Variable eingabe_ok und setzen diese auf False
+Solange eingabe_ok nicht auf True gesetzt ist:
+    Der Benutzer wird aufgefordert, eine Zahl größer gleich min und kleiner gleich max einzugeben.
+    Wir merken uns die Zahl.
+    Wir versuchen die Eingabe in eine Zahl zu konvertieren.
+      Wenn die Konvertierung gelingt:
+          Wenn die Zahl größer gleich min und kleiner gleich max ist:
+              Es liegt eine korrekte Benutzereingabe vor. Wir setzen die Variable eingabe_ok auf True und verlassen damit die Schleife
+          Sonst:
+              Wir informieren den Benutzer darüber, dass nur Zahlen größer gleich 3 erlaubt sind
+      Sonst:
+          Konvertierung ist fehlgeschlagen. Wir informieren den Benutzer darüber, dass nur Zahlen erlaubt sind.
+Wir geben die eingegebene Zahl zurück an den Aufrufer der Funktion.
+```
+An allen Stellen im Code, an denen wir nun eine validierte Zahleneingabe innerhalb eines bestimmten Minimums und Maximums benötigen, wenden wir obige Funktion mit den entpsprechenden Parametern für die Benutzeraufforderung, das Minimum und das Maximum an.
+
+#### Struktogramm
+
+![](bilder/polygonix_0_7.png)
+
+### Implementierung (Variante entsprechend dem Struktogramm)
+
+#### Blöcke
+
+<img src="bilder/polygonix_blocks_0_7_1.png" width="80%" />
+<img src="bilder/polygonix_blocks_0_7_2.png" width="80%" />
+
+#### Python
+
+```python
+import turtle, random
+
+def zahlenEingabe(ausgabetext: str, minimum: int, maximum: int) -> int:
+    eingabeKorrekt = False
+    while not eingabeKorrekt:
+        print(ausgabetext + ' Bitte Zahlen zwischen ' + str(minimum) + ' und ' + str(maximum) + ' eingeben!')
+        try:
+            eingabe = int(input())
+            if eingabe >= minimum and eingabe <= maximum:
+                eingabeKorrekt = True
+        except Exception as e:
+            pass # Hier könnte man auf die Exception reagieren
+            
+    return eingabe
+
+eckenanzahl = zahlenEingabe("Anzahl der Ecken?",3,10)
+seitenlaenge = zahlenEingabe("Seitenlänge?",20,40)
+strichdicke = zahlenEingabe("Strichdicke?",1,4)
+eingabeModus = input("Welchen Modus möchtest du wählen? s) Standardfarben z) Zufallsfarben")
+zaehler = 0
+turtle.pensize(strichdicke)
+if eingabeModus == "s":
+    while zaehler < eckenanzahl:
+        if zaehler % 2 == 0: # Rest bei Division durch 2 gleich 0?
+            turtle.pencolor('blue')
+        else:
+            turtle.pencolor('black')
+        turtle.forward(seitenlaenge)
+        turtle.right(360/eckenanzahl)
+        zaehler = zaehler + 1
+elif eingabeModus == "z":
+    farben = ['blue', 'red', 'green', 'yellow', 'black', 'orange','violet','pink','brown']
+    while zaehler < eckenanzahl:
+        zufallFarbe = farben[random.randint(0, len(farben)-1)]
+        turtle.pencolor(zufallFarbe)
+        turtle.forward(seitenlaenge)
+        turtle.right(360/eckenanzahl)
+        zaehler = zaehler + 1
+else:
+    print("Für die Wahl des Modus ist nur z oder s erlaub!")
+
+```
+
 ## POLYGONIX VERSION 1.0 (Anregungen für weitere Iterationen)
 
 ### Problemanalyse
@@ -758,8 +863,7 @@ Im Folgenden wird eine Gesamt-Lösung mittels Python-Funktionen realisiert, die 
 Viel Erfolg bei der Analyse :thumbsup:
 
 #### Neue Konzepte
-Für die Umsetzung oben genannter Lösungsideen / Optimierungen wenden wir die folgenden neuen Konzepte an:
-  * [Funktionen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/funktion)
+- keine
 
 #### Blöcke
 
