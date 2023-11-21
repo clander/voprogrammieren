@@ -891,12 +891,12 @@ Viel Erfolg bei der Analyse :thumbsup:
 
 #### Blöcke
 
-![](bilder/polybonix_blocks_x_1.png)
-![](bilder/polybonix_blocks_x_2.png)
-![](bilder/polybonix_blocks_x_3.png)
-![](bilder/polybonix_blocks_x_4.png)
-![](bilder/polybonix_blocks_x_5.png)
-![](bilder/polybonix_blocks_x_6.png)
+![](bilder/polygonix_blocks_x_1.png)
+![](bilder/polygonix_blocks_x_2.png)
+![](bilder/polygonix_blocks_x_3.png)
+![](bilder/polygonix_blocks_x_4.png)
+![](bilder/polygonix_blocks_x_5.png)
+![](bilder/polygonix_blocks_x_6.png)
 
 #### Python
 
