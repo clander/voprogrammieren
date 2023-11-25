@@ -1,4 +1,4 @@
-# SHARADE
+# SCHARADE
 
 ## Problemstellung (GRASPS-Schema)
 
@@ -66,6 +66,19 @@ Wenn der A-Knopf gedrückt wird:
 #### Blöcke in Makecode Micro:bit
 ![](./Bilder/sharade_blocks_0_1.png)
 
+#### Python
+```python
+def on_button_pressed_a():
+    global aktuellesWort
+    aktuellesWort = Wortliste[randint(0, len(Wortliste) - -1)]
+    basic.show_string("" + (aktuellesWort))
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
+aktuellesWort = ""
+Wortliste: List[str] = []
+Wortliste = ["Katze", "Haus", "Wald", "Fernseher"]
+```
+
 ## V 0.2
 ### Problemanalyse und Lösungsansatz
 #### Dekomposition
@@ -97,6 +110,23 @@ Wenn der A-Knopf gedrückt wird:
 ### Implementierung
 #### Blöcke in Makecode Micro:bit
 ![](./Bilder/sharade_blocks_0_2.png)
+
+#### Python
+```python
+def on_button_pressed_a():
+    global aktuellesWort, aktuelleDarstellungsart
+    aktuellesWort = wortliste[randint(0, len(wortliste) - 1)]
+    aktuelleDarstellungsart = darstellungsarten[randint(0, len(darstellungsarten) - 1)]
+    basic.show_string(".." + aktuelleDarstellungsart + ".." + aktuellesWort)
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
+aktuelleDarstellungsart = ""
+aktuellesWort = ""
+darstellungsarten: List[str] = []
+wortliste: List[str] = []
+wortliste = ["Katze", "Haus", "Wald", "Fernseher"]
+darstellungsarten = ["Z", "P", "E"]
+```
 
 ## V 0.3
 ### Problemanalyse und Lösungsansatz
@@ -156,6 +186,53 @@ Wenn der B-Knopf gedrückt wird (Signal für Wort erraten):
 ### Implementierung
 #### Blöcke in Makecode Micro:bit
 ![](./Bilder/sharade_blocks_0_3.png)
+
+#### Python
+```python
+def on_button_pressed_a():
+    global aktuellesWort, aktuelleDarstellungsart, timer
+    aktuellesWort = wortliste[randint(0, len(wortliste) - 1)]
+    aktuelleDarstellungsart = darstellungsarten[randint(0, len(darstellungsarten) - 1)]
+    basic.show_string(".." + aktuelleDarstellungsart + ".." + aktuellesWort)
+    timer = 5
+    startCoundown()
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
+def on_button_pressed_b():
+    global timer
+    if timer > 0:
+        timer = -1
+        basic.show_icon(IconNames.HAPPY)
+    else:
+        timer = -1
+        basic.show_icon(IconNames.SAD)
+input.on_button_pressed(Button.B, on_button_pressed_b)
+
+def startCoundown():
+    global timer
+    while timer >= 0:
+        basic.show_number(timer)
+        basic.pause(100)
+        timer += -1
+    music.play(music.tone_playable(262, music.beat(BeatFraction.WHOLE)),
+        music.PlaybackMode.UNTIL_DONE)
+aktuelleDarstellungsart = ""
+aktuellesWort = ""
+timer = 0
+darstellungsarten: List[str] = []
+wortliste: List[str] = []
+wortliste = ["Katze", "Haus", "Wald", "Fernseher"]
+darstellungsarten = ["Z", "P", "E"]
+timer = -1
+basic.show_leds("""
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    """)
+
+```
 
 ## V 0.4
 ### Problemanalyse und Lösungsansatz
@@ -347,6 +424,8 @@ def startCountdown():
         basic.show_string("" + str((timer)))
         basic.pause(1000)
         timer += -1
+    music.play(music.tone_playable(262, music.beat(BeatFraction.WHOLE)),
+        music.PlaybackMode.UNTIL_DONE)
 punkteT2 = 0
 punkteT1 = 0
 timerLaenge = 0
@@ -357,9 +436,7 @@ aktuelleDarstellungsart = ""
 wortliste: List[str] = []
 aktuellesWort = ""
 initialisieren()
-
 ```
-
 
 ## V 0.5
 ### Problemanalyse und Lösungsansatz
@@ -371,47 +448,4 @@ Teilfunktionen (Sprint Backlog V 0.5):
   * Für eine erfolgreiche leichte Runde bekommt ein Team 1 Punkt.
   * ...
 
-Teilfunktionen:
-
 ...
-
-# Anhang mit Test-Prototypen (wird später gelöscht)
-
-## Blöcke
-![](./scharademicrobit.png)
-
-## Python Code
-
-```python
-def on_button_pressed_a():
-    global index
-    if index >= 0 and index < len(woerter):
-        countdownAnzeigen(3)
-        basic.show_string("..." + woerter[index])
-        index += 1
-    else:
-        basic.show_string("Ende")
-input.on_button_pressed(Button.A, on_button_pressed_a)
-
-def countdownAnzeigen(startenVon: number):
-    global i
-    basic.show_leds("""
-        . # # # .
-        . . . # .
-        . . # # .
-        . . . . .
-        . . # . .
-        """)
-    basic.pause(200)
-    i = startenVon
-    while i >= 0:
-        basic.pause(100)
-        basic.show_number(i)
-        i += -1
-i = 0
-woerter: List[str] = []
-index = 0
-index = 0
-woerter = ["Katze", "Gitarre"]
-```
-
