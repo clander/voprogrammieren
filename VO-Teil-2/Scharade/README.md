@@ -1,6 +1,6 @@
 # SCHARADE
 
-## Problemstellung (GRASPS-Schema)
+## Problemstellung
 
 ### Ziel (Goal)
 Implementiere [Scharade](https://de.wikipedia.org/wiki/Scharade_(Pantomimespiel)) mit dem Micro:bit.
