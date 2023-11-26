@@ -47,9 +47,13 @@ Teilfunktionen (Sprint Backlog V 0.1):
 
 ### Algorithmisierung
 #### Konzepte
-* Arrays / indexbasierte Listen
+* Variablen / globale Variablen
+* Zuweisungsoperation
+* Arithmetische Operation
+* Definition und Zugriff auf Arrays (indexbasierte Listen)
+* Listenfunktion len()
 * Events / Eventhandling
-* Zufallszahlengeneratoren
+* Zufallszahlengenerator
 
 #### Pseudocode
 ```python
@@ -70,13 +74,13 @@ Wenn der A-Knopf gedrückt wird:
 ```python
 def on_button_pressed_a():
     global aktuellesWort
-    aktuellesWort = Wortliste[randint(0, len(Wortliste) - -1)]
+    aktuellesWort = wortliste[randint(0, len(wortliste) - -1)]
     basic.show_string("" + (aktuellesWort))
 input.on_button_pressed(Button.A, on_button_pressed_a)
 
 aktuellesWort = ""
-Wortliste: List[str] = []
-Wortliste = ["Katze", "Haus", "Wald", "Fernseher"]
+wortliste: List[str] = []
+wortliste = ["Katze", "Haus", "Wald", "Fernseher"]
 ```
 
 ## V 0.2
@@ -91,7 +95,8 @@ Analog zur zufälligen Auswahl aus dem Array mit den Ratewörtern können wir au
 
 ### Algorithmisierung
 #### Konzepte
-- keine neuen Konzepte
+* Stringkonkatenation
+  
 #### Pseudocode
 ```python
 Beim Start:
@@ -151,8 +156,11 @@ Teilfunktionen (Sprint Backlog V 0.3):
 
 #### Konzepte
 - Globale Variablen / Sichtbarkeit von Variablen
-- Funktionen
-- Seiteneffekte und Parallelität
+- Funktionen: Definition und Aufruf
+- Seiteneffekte und Parallelität  (inbs. bei Dauerhaft-Block und Event-Handler-Blöcken)
+- Bedingte Verzweigung
+- Schleifen
+- Bool'sche Ausdrücke
   
 #### Pseudocode
 ```python
@@ -251,6 +259,11 @@ Teilfunktionen (Sprint Backlog V 0.4):
   * Wir definieren verschiedene Funktionen (siehe unten), die ihre Aufgabe unter Verwendung dieser Variablen realisieren.
 
 ### Algorithmisierung
+#### Konzepte
+* Intensiver Einsatz von Funktionen als Modularisierungskonzept
+* Noch stärkere Problematik: Globale Variablen
+* Spaghetti-Code (Nachvollziehbarkeit des Ablaufs)
+
 
 #### Funktionen
 Wir führen für folgende Lösungsteile eigene Funktionen mit folgenden Zuständigkeiten ein:
@@ -341,10 +354,10 @@ flowchart LR
 ![](./Bilder/sharade_blocks_0_4.png)
 
 Hinweise: 
-* Statements in startCoundown etwas umgereiht -> Aufgrund der Pausierung wird sonst manchmal der Timerwert -1 noch ausgegeben, wenn nähmlich während der Pausierung z.B. B gedrückt wird, und der Timer dann vermindert wird --> Frage des scheinbar parallelen Ablaufs von Event-Handler-Funktionen.
-* Programmcode, der beim Eintreten von Events (A-Button gedrückt, Logo gedrückt etc.) ausgeführt weden soll, wurde aufgrund der Übersichtlichkeit und der besseren Lesbarkeit von Code (durch die sprechenden Funktionsnamen) in separate Funktionen ausgelagert.
-* Die Timerlänge wurde in dier Initialisierung als Variable definiert. Damit kann die Länge zentral an einer Stelle des Codes schnell geändert werden.
-* Die zufällige Auswahl des Rateworts und der Darstellungsart wurde durch die Verwendung des Blocks "erhalte zufälligen Wert von Liste" vereinfacht.
+* Reihenfolge der Statements in startCoundown: Aufgrund der Pausierung kann manchmal der Timerwert -1  ausgegeben, wenn während der Pausierung z.B. B gedrückt wird und der Timer dann vermindert wird. Daran lässt sich die Frage des scheinbar parallelen Ablaufs von Event-Handler-Funktionen zeigen.
+* Programmcode, der beim Eintreten von Events (A-Button gedrückt, Logo gedrückt etc.) ausgeführt werden soll, wurde aufgrund der Übersichtlichkeit und der besseren Lesbarkeit von Code (etwa durch die sprechenden Funktionsnamen) in separate Funktionen ausgelagert.
+* Die Timerlänge wurde als Variable definiert. Damit kann die Länge zentral an einer Stelle des Codes schnell geändert werden.
+* Die zufällige Auswahl des Rateworts und der Darstellungsart wurde durch die Verwendung des Blocks "erhalte zufälligen Wert von Liste" vereinfacht. Dieser Block stellt also die Funktionalität bereit, die wir bisher "händisch" über die Verwendung des Zufallszahlengenerators und des indexbasierten Zugriffs auf das Array realisiert haben.
 
 #### Python
 
