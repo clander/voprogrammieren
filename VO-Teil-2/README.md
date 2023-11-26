@@ -14,7 +14,7 @@
    - KI und Roboter-Programmierung
 
 ## Script
-1. (**V**) [Zentrale Prozesse und zentrale Konzepte](../Didaktik/Methodik.md)
+1. (**V**) [Zentrale Prozesse und zentrale Konzepte](../Didaktik/Zentrale-Ideen.md)
 2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
