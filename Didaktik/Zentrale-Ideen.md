@@ -86,7 +86,7 @@ Online-Ressourcen zu den Python-Konzepten:
   - [W3Schools](https://www.w3schools.com/python/)
 
 ## Zentrale Prozesse
-Auch methodisch liegt der Fokus im Unterricht auf Problemlösen durch Modellbildung und Simulation. Die iterative Vorgehensweise ist dabei an den Softwareentwicklungprozess angelehnt:
+Auch methodisch liegt der Fokus im Unterricht auf Problemlösen durch Modellbildung und Simulation. Die iterative Vorgehensweise ist an den Softwareentwicklungprozess angelehnt:
 
 ```mermaid
 flowchart TD

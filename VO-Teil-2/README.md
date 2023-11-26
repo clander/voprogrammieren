@@ -2,23 +2,24 @@
 
 ## TOC
 1. Zentrale Konzepte und Prozesse
-  - Kurze WH der Theorie
-  - Praktische Umsetzung mit POLYGONIX
+   - Kurze WH der Theorie
+   - Praktische Umsetzung mit POLYGONIX (incl. WH der Inhalte vom VO Termin 1)
 2. Neue Konzepte:
-  - Arrays
-  - Zufall
-  - Funktionen
-  - Ereignisse
-  - Ausnahmebehandlung
-3. Exkurs: 
-  - KI und Roboter-Programmierung
+   - Arrays
+   - Zufall
+   - Funktionen
+   - Ereignisse
+   - Ausnahmebehandlung
+3. Exkurs:
+   - KI und Roboter-Programmierung
 
 ## Script
-1. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+1. (**V**) [Zentrale Prozesse und zentrale Konzepte](../Didaktik/Methodik.md)
+2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
    - [Weitere Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
-2. Beispiele für neue Konzepte: Arrays und Zufall
+3. Beispiele für neue Konzepte: Arrays und Zufall
    - (**V**) [POLYGONIX: Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten (auch mit microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
@@ -26,18 +27,19 @@
    - [Schere-Stein-Papier Variante mit Arrays](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
    - (**UE**)[Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
-3. Beispiele für neues Konzept: Funktionen
+4. Beispiele für neues Konzept: Funktionen
    - (**V**) [POLYGONIX: Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - (**V**) [POLYGONIX: Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
    - (**UE**) [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
-4. Neues Konzept: Ereignisse und Ereignisbehandlung
+5. Neues Konzept: Ereignisse und Ereignisbehandlung
    - Ereignisse und deren Behandlung sind in vielen blockbasierten Entwicklungsumgebungen für Programmieranfänger (MakeCode, Scratch, AppInventor etc.) als eigene Blöcke / Kategorien verfügbar(siehe z.B. in Scratch die Kategorie "Ereignisse")
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-5. Exkurs: OpenRoberta und KI
+6. Exkurs: OpenRoberta und KI
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
-6. Hinweise auf einige Tools und Online-Unterlagen:
+   - [Orange Datamining](https://orangedatamining.com)
+7. Hinweise auf einige Tools und Online-Unterlagen:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
    - [Open Roberta Lab](https://www.roberta-home.de/lab/) Online-Ide für die Programmierung von Robotern und Microcontrollern (incl. Online-Sim und Unterstützung für Neuronale Netze)
