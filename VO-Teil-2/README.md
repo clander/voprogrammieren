@@ -39,6 +39,9 @@
 6. Exkurs: OpenRoberta und KI
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
    - [Orange Datamining](https://orangedatamining.com)
+   - KI Lern- und Kursplattformen:
+     - https://www.deeplearning.ai/courses/
+     - https://course.fast.ai
 7. Hinweise auf einige Tools und Online-Unterlagen:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Python Tutor](https://pythontutor.com) Visualisierung von Python-Code-Ausführung
