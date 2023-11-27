@@ -480,6 +480,7 @@ Funktionen:
 Neue Funktionen aus der Python-Bibliothek:
 - Für die Berechnung einer Zufallszahl innerhalb eines bestimmten Zahlenbereichs verwenden wir ein fertiges Modul.
 - Die Farben speichern wir in einer durchnummerierten Liste von Farben-Strings. Wir können auf die Farben dann per (zufälliger) Listenposition zugreifen.
+- Die Funktion len() liefert uns die Länge einer Liste (= Anzahl der Einträge).
 
 #### Lösungsansatz für die Seitenlänge
 Analog zur Abfrage und Verwendung der Anzahl der Ecken erfolgt nun die Abfrage und Verwendung der Seitenlänge.
@@ -577,6 +578,8 @@ else:
 ```
 
 **Hinweis**: Die zufällige Auswahl eines Elements aus einer Liste funktioniert in Python auch etwas einfacher über die choice-Funktion. Das Statement `zufallFarbe = farben[random.randint(0, len(farben)-1)]` kann dazu ersetzt werden durch: `zufallFarbe = random.choice(farben)`
+
+**Hinweis zu den Farben**: Die möglichen Farben sind in der Pyhton-Dokumentation [hier](https://docs.python.org/3/library/turtle.html#color-control) spezifiziert.
 
 **Didaktischer Hinweis**: Manchmal muss man sich im (Programmier-)Unterricht zwischen dem Einsatz von mächtigeren High-Level-Funktionen und deren geplante Vermeidung zum Zwecke des erwünschten Erkenntnisgewinnes entscheiden.
 
