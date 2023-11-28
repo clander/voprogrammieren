@@ -38,7 +38,7 @@ Wir entwickeln den POLYGONIX LERNMODUS in mehreren Iterationen. Am Ende einer It
 
 Für jede Iteration wählen wir dazu Teilfunktionalitäten der oben dargestellten gesamtheitlichen Benutzererfahrung aus, planen deren Implementierung und realisieren diese. Wir durchlaufen dann (iterativ) folgende Phasen:
 
-1. **Problemanaylse** und **Lösungsansätze** entwickeln:
+1. **Problemanalyse** und **Lösungsansätze** entwickeln:
   * Abstraktion: Reduktion auf das für den Lösungsansatz Wesentliche
   * Generalisierung: Verallgemeinerung des Lösungsansatzes um Klassen von Problemen lösen zu können
   * Dekomposition: 
