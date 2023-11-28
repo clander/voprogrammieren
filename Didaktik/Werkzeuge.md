@@ -69,6 +69,7 @@ https://makecode.microbit.org
 5. Diagramme zeichnen
    - Mermaid: https://mermaid.live
    - PlantUML: https://plantuml.com
+   - Draw.io: https://www.drawio.com
 
 ## Offizielle Python-Website
 https://www.python.org
