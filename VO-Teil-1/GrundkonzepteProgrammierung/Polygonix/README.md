@@ -66,7 +66,7 @@ Für jede Iteration wählen wir dazu Teilfunktionalitäten der oben dargestellte
 
 #### Dekomposition
 Funktionen: 
-  - Ausgabe eines Quadrates mit Linien einer bestimmten Farbe
+  - Ausgabe eines gleichseitigen Dreiecks mit Linien einer bestimmten Farbe
 
 Es werden folgende vorgefertigte Module (Teillösungen für Teilprobleme) verwendet: 
   - Wir verwenden die Funktionen des [Python-Turtle-Moduls](https://docs.python.org/3/library/turtle.html) für das Zeichnen von Linien, 
