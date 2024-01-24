@@ -93,7 +93,7 @@ Für den Unterricht sind neben der Problemorientierung und der informatischen Mo
    - Dieses Beispiel dient dem Einüben von Transfer.
 3. Conventional Example:
    - wie zweite Problemstellung, jetzt jedoch ohne Hilfestllung.
-4. Erstelle eine kleine Unterrichtsplanung dazu:
+4. Skizze für Unterrichtsplanung dazu:
    - Zielehierarchie
      - ausgehend vom Lehrplan
      - zentrale Konzepte / Ideen ableiten
