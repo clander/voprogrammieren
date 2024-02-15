@@ -143,11 +143,19 @@ Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift
 ### Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z. B. Techniken des Computational Thinkings wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
 
-* Lösungsspezifikation: Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung
-* Abstraktion: Wir fokussieren auf die für die Lösung absolut notwendigen Lösungselemente und lassen alles andere weg.
-* Generalisierung: Wir versuchen eine Lösung zu finden, die nicht nur Spezialfälle von Problemen, sondern eine Problemkategorie löst. 
-* Dekomposition: Wir teilen das Problem in verschiedene Teilprobleme. Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
-* Mustererkennung: Wir halten nach Mustern und damit nach Automatisierungspotential Ausschau. Immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
+* Lösungsspezifikation: 
+  * Wir definieren möglichst genaue "Abnahmekriterien" für eine Lösung.
+* Abstraktion: 
+  * Im Bereich Modellbildung: Wir fokussieren auf die für die Lösung absolut notwendigen Lösungselemente und lassen alles andere weg.
+  * In Bezug zur Dekomposition: Wir verwenden vorgefertigte Teillösungen im Kontext größerer Lösungen (als Black-Box) weiter, ohne uns über die Implementierungsdetails Gedanken zu machen.
+* Generalisierung: 
+  * Wir versuchen eine Lösung zu finden, die nicht nur Spezialfälle von Problemen, sondern eine ganze Problemkategorie löst.
+* Dekomposition: 
+  * Wir teilen das Problem in verschiedene Teilprobleme. 
+  * Wir überlegen uns, wie wir diese Teillösungen wieder zu einer Gesamtlösung zusammenbauen müssen.
+* Mustererkennung: 
+  * Wir halten nach Mustern im Bereich der verwendeten Daten oder auch in Bezug auf die Ablaufstruktur und damit nach Automatisierungspotential Ausschau. 
+  * Immer wiederkehrende Lösungsteile lassen sich durch Programmiersprachen sehr effizient implementieren.
 
 Auf Basis der Problemanalyse können dann **erste Lösungsansätze** entwickelt werden, die dann im Rahmen der Algorithmisierung (siehe unten) aufgegriffen und als Algorithmus umgesetzt werden.
 
