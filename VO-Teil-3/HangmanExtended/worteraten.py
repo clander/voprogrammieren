@@ -7,42 +7,53 @@ def wortliste_laden(path:str):
         wortliste = file.read().splitlines()
         return wortliste 
 
+def hinweis(ratewort:str,zufallswort:str):
+    for index in range(0,len(zufallswort)):
+       if ratewort[index] == "_":
+           print(zufallswort[index]) 
+
 worteliste = wortliste_laden("nouns.txt")
 zufallswort = random.choice(worteliste)
 ratewort = list("_"*len(zufallswort))
 print("Hinweis: " + zufallswort)
-rateversuche = 0
 fehlversuche = 0
 max_fehlversuche = 10
 wort_erraten = False
 zuviele_fehlversuche = False
+
 while not wort_erraten and not zuviele_fehlversuche:
     print(ratewort)
     eingabe = input("Rate einen Buchstaben ...")
-    rateversuche = rateversuche + 1
-    treffer = False
-    for index in range(0,len(zufallswort)):
-        if ratewort[index] == "_" and eingabe.lower() == zufallswort[index].lower():
-            ratewort[index] = zufallswort[index]
-            treffer = True
-    if treffer:
-        print("Treffer!")
+    if(eingabe.lower()=="hinweis"):
+        hinweis(ratewort,zufallswort)
+        fehlversuche = fehlversuche + 2
     else:
-        fehlversuche = fehlversuche + 1
-        if fehlversuche == max_fehlversuche:
-            print("-------------------------------------------------------")
-            print("Du hast zuviele Fehlversuche! Spiel leider verloren 8-(")
-            print("-------------------------------------------------------")
-            zuviele_fehlversuche = True
+        treffer = False
+        for index in range(0,len(zufallswort)):
+            if ratewort[index] == "_" and eingabe.lower() == zufallswort[index].lower():
+                ratewort[index] = zufallswort[index]
+                treffer = True
+        if treffer:
+            print("Treffer!")
+            if ratewort.count("_")==0:
+                wort_erraten = True
         else:
-            print(f"Ups. Falsch. Du hast noch {max_fehlversuche-fehlversuche} Fehlversuch(e) ...")
-    if ratewort.count("_")==0:
-        gewonnen = """
-         __*_______*___ 
-        |  ____*___*_  |
-        | | Gewonnen | |
-        | |_*________| |
-        |_____*___*____|
-        """
-        print(gewonnen)
-        wort_erraten = True
+            fehlversuche = fehlversuche + 1
+            if fehlversuche == max_fehlversuche:
+                zuviele_fehlversuche = True
+            else:
+                print(f"Ups. Falsch. Du hast noch {max_fehlversuche-fehlversuche} Fehlversuch(e) ...")
+
+if(wort_erraten and not zuviele_fehlversuche):
+    print(ratewort)
+    print("""
+    __*_______*___ 
+    |  ____*___*_  |
+    | | Gewonnen | |
+    | |_*________| |
+    |_____*___*____|
+    """)
+else:
+    print("-------------------------------------------------------")
+    print("Zuviele Fehlversuche! Spiel leider verloren 8-(")
+    print("-------------------------------------------------------")
