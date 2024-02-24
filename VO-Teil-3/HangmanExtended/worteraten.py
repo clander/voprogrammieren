@@ -7,10 +7,11 @@ def wortliste_laden(path:str):
         wortliste = file.read().splitlines()
         return wortliste 
 
-def hinweis(ratewort:str,zufallswort:str):
+def hinweis(ratewort:list,zufallswort:str):
     for index in range(0,len(zufallswort)):
        if ratewort[index] == "_":
-           print(zufallswort[index]) 
+           print(zufallswort[index])
+           return
 
 worteliste = wortliste_laden("nouns.txt")
 zufallswort = random.choice(worteliste)
