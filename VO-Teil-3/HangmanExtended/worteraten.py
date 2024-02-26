@@ -1,19 +1,34 @@
 from pathlib import Path
 import random
 
-def wortliste_laden(path:str):
-    path = Path(__file__).with_name('nomen.txt')
+def wortliste_laden(dateiname:str):
+    path = Path(__file__).with_name(dateiname)
     with path.open(mode='r',encoding='utf-8') as file:
         wortliste = file.read().splitlines()
         return wortliste 
 
-def hinweis(ratewort:list,zufallswort:str):
-    for index in range(0,len(zufallswort)):
-       if ratewort[index] == "_":
-           print(zufallswort[index])
-           return
+def hinweis(hinweis_ratewort:list,hinweis_zufallswort:str):
+    for index in range(0,len(hinweis_zufallswort)):
+        if hinweis_ratewort[index] == "_":
+            print(zufallswort[index])
+            return
 
-worteliste = wortliste_laden("nouns.txt")
+def fehlerbalken_ausgeben(maximum:int, fuellstand:int):
+    if fuellstand > maximum:
+        fuellstand = maximum
+       
+    print('[', end="")
+    
+    for _ in range(fuellstand):
+        print('x', end="")
+    
+    for _ in range(maximum-fuellstand):
+        print('_', end="")
+    
+    print(']')
+    
+
+worteliste = wortliste_laden("nomen.txt")
 zufallswort = random.choice(worteliste)
 ratewort = list("_"*len(zufallswort))
 print("Hinweis: " + zufallswort)
@@ -43,18 +58,21 @@ while not wort_erraten and not zuviele_fehlversuche:
             if fehlversuche == max_fehlversuche:
                 zuviele_fehlversuche = True
             else:
-                print(f"Ups. Falsch. Du hast noch {max_fehlversuche-fehlversuche} Fehlversuch(e) ...")
+                print(f"Ups. Falsch. Du hast noch {max_fehlversuche-fehlversuche} Fehlversuch(e) ... ", end="")
+                fehlerbalken_ausgeben(max_fehlversuche,fehlversuche)
 
 if(wort_erraten and not zuviele_fehlversuche):
-    print(ratewort)
+    print("".join(ratewort))
     print("""
-    __*_______*___ 
-    |  ____*___*_  |
-    | | Gewonnen | |
-    | |_*________| |
-    |_____*___*____|
+     Du hast das gesuchte Wort erraten!
+     __*_____*________ 
+    |  ____*___*____  |
+    | | GRATULATION | |
+    | |_*___________| |
+    |_____*___*_______|
     """)
 else:
     print("-------------------------------------------------------")
     print("Zuviele Fehlversuche! Spiel leider verloren 8-(")
+    print("Das gesuchte Wort: "+ zufallswort)
     print("-------------------------------------------------------")

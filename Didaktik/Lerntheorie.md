@@ -1,13 +1,52 @@
 # Lerntheorie und Programmierunterricht
-## Programmieren lernen und Piaget
+
 Die Berücksichtigung der kognitiven Entwicklungsstufen nach Piaget können im Rahmen der Gestaltung von Programmierunterricht didaktisch hilfreich sein.
 
-Dazu ist die Theorie von Raymond Lister interessant, der seine Findings in folgendem Paper publiziert hat: Raymond Lister. 2016. Toward a Developmental Epistemology of Computer Programming. In Proceedings of the 11th Workshop in Primary and Secondary Computing Education (WiPSCE '16). Association for Computing Machinery, New York, NY, USA, 5–16. https://doi.org/10.1145/2978249.2978251
+## Piaget's genetische Epistemologie (Erkenntnistheorie)
 
-Eine zusammenfassende Darstellung des Papers wird hier geboten (incl. Video):
-https://textbooks.cs.ksu.edu/cis400/a-learning-programming/
+### Begriffsdefinitionen
+  - Epistemologie = Erkenntnistheorie: Studium des menschlichen Wissens / Erkenntnisgewinnungsprozesses / Lernens
+  - Genese: Das Entstehen von etwas; im Sinne von Ursprung und Entwicklung
+### Zwei Lernmechanismen
+  - Assimilation: 
+    - Neues Wissen wird generiert, indem man an bestehende Strukturen (Vorwissen) im Gedächtnis andockt.
+    - Beispiel: Lernende haben verstanden, wie While-Schleifen funktionieren. Der Weg zum Verständnis eines weiteren Schleifentyps ist über Assimilation möglich.
+  - Akkomodation (deutlich aufwändiger als Assimilation): 
+    - Neues Wissen generieren, für das es noch keine Aknüpfungspunkte im Gedächtnis gibt.
+    - Bauen von neuen strukturierenden Elementen / neuen Schemata
+    - Gleichbedeutend mit dem Aufbau und der Verstärkung von neuen Verbindungen zwischen Nervenzellen (Neurodidaktik).
+    - Beispiel: Lernende wissen noch nichts von Schleifen und müssen für ein Verständnis der Funktionsweise von Schleifen (insb. incl. des Zusammenwirkens der konstitutiven Teile) völlig neue Strukturen aufbauen.
+### Akkomodation und Assimilation
+  - Akkomodation erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
+    - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
+    - soziale Stimuli
+  - Akkomodation erfordert entsprechende Haltung und Motivation
+    - lernen wollen, verstehen wollen, weiterkommen wollen
+    - intensive Beschäftigung, Fehlschläge, viel Arbeit
+    - Motivation und Willen zur intensiven Beschäftigung
+  - Lernen kann als Verschärfungsprozess verstanden werden (Modrow).  
+    - Zunächst nebelhafte, unzureichende Vorstellungen der Welt (Ungleichgewicht in Bezug auf das eigene Verständnis) wird durch intensive Beschäftigung in die bestehenden Erfahrungen eingpasst (Gleichgewicht herstellen).
+    - EUREKA-Moment: Das Gleichgewicht in den kognitiven Strukturen ist wieder hergestellt.
+    - CLT: Ein neues Schema ist ausgebildet.
+    - Üben - üben - üben: 
+      - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitives Ungleichgewichts.
+      - Das wiederum ist als Anreiz Voraussetzung für Akkomodation.
+### Neo-Piaget'sche Stufentheorie
 
-Kurz beschrieben geht es darum, den Fortschritt, den die Lernenden bei der Nutzung von Programmiersprachen zur Lösung von Problemstellungen in verschiedene Entwicklungsphasen machen, methodisch-didaktisch zu nutzen:
+Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon aus, dass Lernende unabhängig ihres Alters und unabhängig vom zu lernenden Inhalt im Rahmen des Lernprozesses die 4 Stufen der kognitiven Entwicklung nach Piaget durchlaufen, um neue Fähigkeiten und Konzepte über Akkomodation und Assimilation zu erlernen (d.h. angepasste oder neue kognitive Strukturen dafür auszubilden).
+
+1. Sensomotorische Stufe
+2. Präoperationale Stufe
+3. konkret operationale Stufe
+4. Stufe der formalen Operationen
+   
+Diese 4 Stufen gehen fließend eineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913).
+
+## Developmental Epistemology of Computer Programming (Raymond Lister und Donna M. Teague)
+Lister und Teague wenden die Stufentheorie nach Piaget auf die Computerprogrammierung im Unterricht an [Artikel](https://www.academia.edu/110073788/Toward_a_Developmental_Epistemology_of_Computer_Programming). Sie beschreiben in ihrer Theorie Eigenschaften von Lernenden, die sich in den einzelnen Entwicklungsstufen und damit in den entsprechenden Phasen des Lernprozesses für einen neuen Inhalt befinden. Sie beschreiben damit auch einen Weg, den Lernende beim Lernen dieser Inhalte beschreiten.
+
+Eine zusammenfassende Darstellung der zugrundegelegten Ideen (incl. Video) bietet Nathan Bean auf
+https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei primär um die Frage, wie Lernende Code erklären (= Tracing = Verständnis zur Ablaufverfolgung von Programmcode).
 
 <table>
     <tr>
@@ -24,13 +63,13 @@ Kurz beschrieben geht es darum, den Fortschritt, den die Lernenden bei der Nutzu
         </td>
     </tr>
     <tr> 
-        <td>Präoperationale Phase (Tracing-Phase)</td><td>
+        <td>Präoperationale Phase (Pre-Tracing-Phase)</td><td>
             <ul>
                 <li>Zeilenweise Codeerklärungen zu > 50 % ok</li>
-                <li>Zeilenweise Codeerklärungen ohne Bezug zur Semantik des gesamten Programmteils</li>
+                <li>Zeilenweise Codeerklärungen ohne Abstraktion von den einzelnen Zeilen weg und damit ohne Bezug zur Semantik des gesamten Programmteils</li>
                 <li>Keine Beziehungen zwischen den Codezeilen interpretierbar</li>
                 <li>Ikonische Repräsentationen von Code (Diagramme) können nicht sinnbringend eingesetzt werden</li>
-                <li>Vorherschende Problemlösunsstrategie: Zufällige Codeänderungen und intensives Testen der Ergebnisse</li>
+                <li>Vorherschende Problemlösunsstrategie: Zufällige Codeänderungen und intensives Ausprobieren der Ergebnisse</li>
             </ul>
         </td>
     </tr>
@@ -39,7 +78,7 @@ Kurz beschrieben geht es darum, den Fortschritt, den die Lernenden bei der Nutzu
             <ul>
                 <li>Vorherschende Problemlösunsstrategie: Copy-Paste mit Lösungsidee; da und dort ausbessern</li>
                 <li>Auf die Semantik des Codes (und damit auch schon ansatzweise die Beziehungen zwischen den Zeilen) kann durch intensive Beschäftigung mit der Laufzeit und den Ausführungsergebnissen geschlossen werden</li>
-                <li>Beschäftigung auf mit der Lösung sehr kontextualisiert; Abstraktionsfähigkeit noch eingeschränkt</li>
+                <li>Beschäftigung mit der Lösung sehr kontextualisiert; Abstraktionsfähigkeit noch eingeschränkt</li>
             </ul>
         </td>
     </tr>
@@ -47,42 +86,112 @@ Kurz beschrieben geht es darum, den Fortschritt, den die Lernenden bei der Nutzu
         <td>Phase der formalen Operationen (Post-Tracing-Phase)</td><td>
             <ul>
                 <li>Hypothetisches und deduktives Denken ist ausgeprägt</li>
-                <li>Code kann "gelesen" werden -> es geht nicht mehr um die Interpretation der einzelnen Zeilen und ihrer Beziehungen sondern um das Gesamtkonstrukt -> Schema</li>
+                <li>Deduktiv: vom Allgemeinen (=Schema / Konzept) auf das Konkrete (= kontextualisierte Anwendung des Schemas) schließen
+                <li>Code kann "gelesen" werden -> es geht nicht mehr um die Interpretation der einzelnen Zeilen und ihrer Beziehungen sondern um das Gesamtkonstrukt</li>
+                <li>Schema (CLT) ist ausgebaut und wird getriggert</li>
+                <li>Akkomodation ist durchgeführt</li>
             </ul>
         </td>
     </tr>
 </table>
 
-(https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
+Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen durchlaufen und letztendlich neues Wissen durch Akkomodation aufbauen bzw. entsprechend der Cognitive Load Theorie entsprechende Schemata aufbauen. Ein Experte hat solche Schemata bereits ausgebildet. Ein Anfänger muss hingegen Code zeilenweise interpretieren, die einzelnen Codezeilen zueinander in Beziehung bringen und dann im Gesamten ableiten, was der Code macht. Ein Experte liest Code durch Applikation seiner Schemata auf Teilstrukturen im Code, ohne darüber nachdenken zu müssen, was einzelne Zeilen bedeuten, wie sie syntaktisch genau aufgebaut sind, wie sie zueinander in Beziehung stehen etc. [Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
 
-Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen durchlaufen und letztendlich neues Wissen durch Akkomodation aufbauen bzw. entsprechend der Cognitive Load Theorie entsprechende Schemata aufbauen. Ein Experte hat solche Schemata bereits ausgebildet. Ein Anfänger muss hingegen Code zeilenweise interpretieren, die einzelnen Codezeilen zueinander in Beziehung bringen und dann im Gesamten ableiten, was der Code macht. Ein Experte liest code durch Applikation seiner Schemata auf Teilstrukturen im Code, ohne darüber nachzudenken zu müssen, was einzelne Zeilen bedeuten, wie sie syntaktisch genau aufgebaut sind, wie sie zueinander in Beziehung stehen etc.
+Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. [Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
 
-Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen.
+## Hinweis: Seymour Papert
+Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionsismus" weiterentwickelt:
 
-(https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
-## Parallelen zur CLT und zu SOLO
-Es fallen zwei offensichtliche Parallelen zu weiteren bekannten Theorien auf: Die Cognitive Load Theorie nach Sweller argumentiert im Rahmen der Theorie der Elementinteraktion sowie der Schemakonstruktion den Lernprozess auf ähnliche Art und Weise.
+- Wissensrekonstruktion durch die Lernenden selbst
+- Herstellen (Konstruktion) von Lernproduktion (Artefakten) durch intensive Beschäftitung / Lernendenaktivität
+- Interesse an Produkten und Stolz auf Produkte als Motivation
 
-Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von im Prinzip vielen kleinen Lösungselementen. Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern. 
+Papert steht für:
 
-Ein Schema nach Sweller ist ein kognitives Konstrukt mit Hilfe dessen Informationen organisiert, strukturiert und (im Arbeitsgedächtnis) schnell verarbeitet werden können. Im Arbeitsgedächtnis wird ein automatisiertes Schema dabei als ein einziges Element betrachtet, selbst wenn das Schema eine Vielzahl von interagierenden Elementen betreffen kann. Durch die (automatisierte) Anwendung von Schemata können damit komplexe Herausforderungen mit relativ geringer Belastung des Arbeitsgedächtnisses gemeistert werden.
+- Situiertes Lernen 
+  - Problemorientierung in authentischen Situationen
+  - verschiedene Kontexte
+  - Artikulation und Reflexion zum Zwecke der individuelle Abstraktion
+  - sozialer Kontext
+- Frühes Eröffnen von konkret operativen (siehe Piaget) Zugangsmöglichkeiten zu den neuen Technologien
+- Entdeckendes Lernen mit Computerunterstützung
 
-Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. das Prinzip der Elementinteraktivität nach Sweller ebenfalls auf:
+Papert entwickelte die Programmiersprache LOGO (incl. Miniwelt-Konzept) und gilt aufgrund der in LOGO realisierten Ideen auch als geistiger Vater von Scratch.
 
-* prästrukturelle Problemlösungen: Die Lösung des Lernenden zeigt, dass er noch nichts verstanden hat. Versuch und Irrtum sind vorherrschend.
-* unistrukturelle Problemlösungen: Die Lösung zeigt, dass einzelne Programmzeilen passen, zueinander aber in keinem sinnvollen Verhältnis stehen.
-* multistrukturelle Problemlösungen: Die Lösung zeigt, dass mehrere Programmzeilen zusammenpassen und auch zusammen erklärt werden können. Die Erklärungen zu den Lösungen zeigen aber auch, dass die Lernenden Probleme bei der weiteren Abstraktion der Lösung etwa im Sinne der kreativen Zusammensetzung von Lösungsteilen oder im Sinne der Verallgemeinerung der Lösung auf ganze Problemklassen haben.
-* erweitert abstrakte Problemlösungen: Die Lösung entspricht einer Lösung, die auch Experten so erstellen und erklären würden. Die Lösung wird auf Ebene der zentralen betroffenen Schemata erklärt. Sie ist allgemein gültig und kann auf Problemklassen angewendet werden.
+## Parallelen der Theorie von Lister zur CLT
+Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von vielen kleinen Lösungselementen (incl. deren Abstraktion in weiterer Folge). Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern (= Schemakonstruktion). Entsprechend der CLT ist es wichtig, beim Aufbau der Schemata das Arbeitsgedächtnis nicht zu überlasten.
+
+Ein Schema nach Sweller ist ein kognitives Konstrukt mithilfe dessen Informationen organisiert, strukturiert und (im Arbeitsgedächtnis) schnell verarbeitet werden können. Im Arbeitsgedächtnis wird ein automatisiertes Schema dabei als ein einziges Element betrachtet, selbst wenn das Schema eine Vielzahl von interagierenden Elementen betreffen kann. Durch die (automatisierte) Anwendung von Schemata können damit komplexe Herausforderungen mit relativ geringer Belastung des Arbeitsgedächtnisses gemeistert werden.
+
+Ziel entsprechenden Unterrichts ist es, das Arbeitsgedächtnis beim Aufbau der Schemata nicht zu überbelasten. Dazu muss der extrinsische Cognitive Load (bedingt durch die Komplexität der Lernumgebung) sowie der instrinsische Cognitive Load (dem Lerngegenstand inhärenter CL) soweit reduziert werden, dass er vom Arbeitsgedächtnis bewältigt werden kann. Speziell im Bereich der Programmierung ist dabei Vorsicht geboten, weil der ICL aufgrund der hohen Elementinteraktivität der Inhalte ohne enstprechend ausgebildete Schemata sehr schnell überhand nimmt.
+
+## Parallelen der Theorie von Lister zur SOLO-Taxonomie
+Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. das Prinzip der Elementinteraktivität nach Sweller ebenfalls auf. SOLO ist ein Akronym und bedeutet "Structure of Observed Learning Outcome". SOLO ist also an sich ein hierarchisches Kategorienschema für die Klassifizierung von beobachteten Schüler:innen-Leistungen, das aber auch für Entwicklung von Lernzielhierarchien oder auch für die Entwicklung von Aufgabenstellungen (verschiedener Komplexitätsgrade) verwendet werden kann.
+
+* Prästrukturell (Misserfolg, Inkompetenz, Kernpunkte nicht verstanden, zusammenhangslos): Die Aufgabe wurde nicht korrekt angegangen, die Lernenden haben den Kern der Aufgabe nicht verstanden.
+* Unistrukturell (identifizieren, benennen, nachmachen): Ein Aspekt oder einige wenige Aspekte einer (komplexeren) Aufgabe wurden aufgegriffen und bearbeitet.
+* Multistrukturell (kombinieren, beschreiben, aufzählen, einfache Fertigkeiten, auflisten): Mehrere Aspekte der Aufgabe wurden gelernt, aber separat behandelt und können nicht integriert werden.
+* Relational (verstehen, analysieren, anwenden, argumentieren, vergleichen, kritisieren, in Beziehung setzen, rechtfertigen): Die Teilkomponenten der Aufgabe wurden gelernt und (unter Anwendung entsprechender Konzepte) zusammen verwendet, um ein großes Ganzes zu bilden. Die Anwendung erfolgte durch (nahen) Transfer.
+* Erweitert abstrakt (erzeugen, formulieren, generieren, Hypothesen bilden, reflektieren, Theoriebildung): Eine Lösung aus der vorhergehenden Stufe wurde abstrahiert und auf ein neues Thema angewendet bzw. reflektiert (nicht spezifischer Transfer).
+
+## Bezug zum Konzepte der Fundamentalen Ideen (Jerome Bruner)
+Jerome Bruner gilt einerseits als einer der Väter der konstruktivisitischen Lerntheorie, andererseits begründete er die Theorie der Fundamentalen Ideen (FI), das für Informatikunterricht ganz besonders relevant ist. Die Relevanz der Fundamentalen Ideen für unser Fach begründet sich u.A. auf der Erfüllung der verschiedenen Kriterien, die für FI gelten müssen:
+
+- Informatische Inhalte scheinen an der Oberfläche oft sehr kurzlebig zu sein, die FI dahinter haben jedoch Bestand (Zeitkriterium)
+- Informatische Inhalte haben genau dann besonderen allgemeinbildenden Wert, wenn sie aufgrund der zugrundegelegten FIn auf andere Disziplinen übertragbar sind (Horizontalkriterium)
+- Informatische Inhalte sind oft abstrakt, nicht sichtbar, schwer greifbar. Sie müssen daher früh eingeführt und dann später in immer wieder abstrakteren Versionen thematisiert werden (Vertikalkriterium, Curriculumspirale)
+- Informatische Inhalte lassen genau dann einen direkten Bezug zur Lebenswelt der Lernenden zu, wenn sie auf den zugrundegelegten FIn basieren (Sinnkriterium).
+- FIn ermöglich es, 
+
+Wiggins und McTighe beschreiben die Eigenschaften FIn so:
+
+- FIn sind der Kern eines Faches und daher für den Erkenntnisgewinn in einer Fachdisziplin besonders wichtig,
+- sind Denkweisen und Wahrnehmungsweisen von Experten,
+- sind abstrakt und für Novizen oft nicht sofort eingängig, nicht intuitiv, führen oft zu Misskonzeptionen,
+- ermöglichen eine konzeptorientierte, priorisierende und reduzierende Sicht auf die wesentlichen Aspekte eines Faches und zwar durch die Verbindung von Fakten, Fertigkeiten, Erfahrungen zu einem größeren Ganzen
+- ermöglichen Transfer (sowohl vertikal über die Zeit als auch horizontal über die Teilbereichs- und Fachgrenzen hinweg).
+- können nicht gelehrt werden, sondern müssen durch lehrergelenkten, entdeckenden Unterricht von den Lernenden selbst entdeckt werden.
+
+Wiggins und McTighe identifizieren folgende Erscheigunsformen von FIn:
+
+- Konzepte (die Verbindungen zwischen einzelnen Inhalten eines Faches herstellen)
+- Themen (die ein Fach strukturieren)
+- Kernstrategien
+- Faustregeln
+- fortwährende Debatten und Streitfragen
+- Paradoxons, Dilemmas
+- langlebige Problemfelder und Herausforderungen
+- wichtige Theorien
+- Kernannahmen, Kernperspektiven
+- Erkenntnisse
+- Prinzipien
+
+Im Kern geht es in Bruners Theorie (siehe dazu das Standardwerk "The Process of Education") darum, die Lernenden im Unterricht dazu zu befähigen, das Erlernte in immer wieder neuen Problemsituationen effektiv zur Anwendung zu bringen. Bruner plädiert dafür, den kognitiven Rekonstruktionsprozess von "Fundamentale Ideen" ins Zentrum einer jeden Ausbildung zu stellen. Lernende sollen damit dazu behäfigt werden, das im Unterricht gelernte auf immer wieder neue Problemsituationen des Alltags, des späteren Lebens etc. umzulegen. Es geht also im Kern um die Befähigung zum Wissenstransfer (vgl. dazu insb. auch die österreichische Leistungsbeurteilungsverordnung, deren Notenstufen an genau diesem Aspekt ausgerichtet sind).
+
+> The first object of any act of learning, over and beyond the pleasure it may give, is that it should serve us in the future. Learning should not only take us somewhere; it should allow us later to go further more easily. There are two ways in which learning serves the future.
+One is through its specific applicability to tasks that are highly similar to tho- se we originally learned to perform. Psychologists refer to this phenomenon as specific transfer of training; perhaps it should be called the extension of habits or associations. Its utility appears to be limited in the main to what we usually speak of as skills. Learning in school undoubtedly creates skills of a kind that transfers to activities encountered later, either in school or after. A second way in which earlier learning renders later performance more effi- cient is through what is conveniently called nonspecific transfer or, more accurately, the transfer of principles and attitudes. In essence, it consists of learning initially not a skill but a general idea, which can then be used as a basis for recognizing subsequent problems as special cases of the idea originally mastered. This type of transfer is at the heart of the educational process – the continual broadening and deepening of knowledge in terms of basic and general ideas. ([Bru60, Seite 17])
+
+Die Eigenschaften dieser Fundamentalen Ideen definiert Andreas Schwill mit Bezug auf Bruner (und andere) für die Informatikdidaktik wie folgt: 
+
+> "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
+> 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder erkennbar ist (Horizontalkriterium)
+> 2. auf jedem intellektuellen Niveau aufgezeigt und vermittelt werden kann (Vertikalkriterium)
+> 3. zur Annäherung an eine gewisse idealisierte Zielvorstellung dient, die jedoch faktisch möglicherweise unerreichbar ist (Zielkriterium)
+> 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
+> 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" 
+> (Schwill, 1993)
+
+In Bezug auf Methodik können nach Bruner folgende Schwerpunkte identifiziert werden:
+
+- Spiralcurriculum
+  - Vorwegnehmendes Lernen (Inhalte werden möglichst früh didaktisch reduziert, aber inhaltlich redlich eingeführt)
+  - Fortsetzbarkeit (Inhalte werden im Laufe des Curriculums immer wieder aufgegriffen, auf immer neuen kognitiven Niveaus, in immer komplexerer Art und Weise)
+  - Präfiguration (Inhalte werden in unterschiedlichen Darstellungsformen, darunter ikonisch, symbolisch und enaktiv präsentiert)
+- Projektunterricht
+- Entdeckendes Lernen
+
 ## Gemäßigt konstruktivistische Sicht auf den Lernprozess
-Lernende konstruieren nach konstruktivistischer Auffasung des Lernprozesses aktiv ihre eigene Wirklichkeit indem sie auf kognitive Konflikte mit Assimilation und Akkommodation reagieren und so kognitive Konflikte auflösen. 
-
-* Assimilation: Neues Wissen generieren indem man an bestehende Strukturen im Gedächtnis andockt 
-Akkomodation: Neues Wissen generieren, für das es noch keine Aknüpfungspunkte im Gedächtnis gibt.
-* Akkomodation erfordert entsprechende Stimuli (intensive Beschäftigung, Fehlschläge, viel Arbeit, Informationen versuchen zu verarbeiten, soziale Stimuli) UND eine entsprechende Haltung zum Lernen (lernen wollen, verstehen wollen, weiterkommen wollen etc.).
-
-Modrow spricht von „Verschärfungsprozess“: nebelhafte, unzureichende Vorstellung der Welt wird durch intensive Beschäftigung den Erfahrungen angepasst.
-
-Für die Informatikdidaktik ist die konstruktivistische Sicht auf den Lernprozess besonders wichtig. Jerome Bruner gilt als einer der Urväter des Konstruktivismus UND als Urvater des didaktischen Konzeptes der Fundamentalen Ideen.
+Insgesamt ist die Sicht auf den Lernprozess vor dem Hintergrud der Lehre von Piaget, Papert und auch jener von Jerome Bruner stark konstruktivistisch geprägt. Lernende konstruieren nach konstruktivistischer Auffassung des Lernprozesses aktiv ihre eigene Wirklichkeit, indem sie auf kognitive Konflikte mit Assimilation und Akkommodation reagieren und so kognitive Konflikte auflösen.
 
 * Lernen erfolgt durch kognitive Konflikte / Kollisionen
     * können nur auftreten, wenn sich Lernende aktiv mit dem Gegenstand auseinandersetzen, sich dafür interessieren, ihn für relevant halten, soziale Aspekte damit verbinden ...
@@ -95,7 +204,8 @@ Für die Informatikdidaktik ist die konstruktivistische Sicht auf den Lernprozes
     * konfrontieren die Lernenden mit ihrem unvollständigen Verständnis zu den Inhalten 
     * müssen fachlich / fachdidaktisch souverän reagieren, um individuell zugeschnittene Anregungen geben zu können
 
-Das bedeutet also für konstruktivistische Settings (Hubwieser): 
+Das bedeutet also für konstruktivistische Settings (Hubwieser):
+
 * Aktive Beteiligung, Motivation und Interesse sind die Grundvoraussetzungen für das Lernen.
 * Die Lernenden übernehmen bis zu einem gewissen Grad selbst die Steuerung und Kontrolle über den Lernprozess.
 * Lernen kann nur mit Bezug auf die Erfahrungen, auf das Vorwissen und durch Interpretationen der Lernenden selbst erfolgen.
@@ -116,7 +226,7 @@ Charakteristika für konstruktivistische Settings:
 * Instruktionsteile nicht vernachlässigen (denn fachspezifisches Vorwissen fördert den Lernprozess nachweislich am stärksten)
 * neue Lehrendenrolle als Coach wahrnehmen
 
-Instruktion ist aber trotzdem (oder gerade deswegen) wichtig (auch weil Instruktion entlastet -> siehe Cognitive Load Theorie bzw. Modeling, Scaffoling, Fading, Coaching im ID Cognitive Apprenticeship):
+Instruktion ist aber trotzdem (oder gerade deswegen) wichtig, auch weil Instruktion entlastet (vgl. dazu die Grundaussagen der Cognitive Load Theorie):
 
 * Unterricht muss Instruktion und Konstruktion bieten 
 * hängt auch mit den verschiedenen Zieldimensionen und Constructive Alignment zusammen
