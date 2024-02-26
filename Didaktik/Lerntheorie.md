@@ -1,12 +1,13 @@
 # Lerntheorie und Programmierunterricht
 
-Die Berücksichtigung der kognitiven Entwicklungsstufen nach Piaget können im Rahmen der Gestaltung von Programmierunterricht didaktisch hilfreich sein.
-
 ## Piaget's genetische Epistemologie (Erkenntnistheorie)
+
+Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
 
 ### Begriffsdefinitionen
   - Epistemologie = Erkenntnistheorie: Studium des menschlichen Wissens / Erkenntnisgewinnungsprozesses / Lernens
   - Genese: Das Entstehen von etwas; im Sinne von Ursprung und Entwicklung
+  
 ### Zwei Lernmechanismen
   - Assimilation: 
     - Neues Wissen wird generiert, indem man an bestehende Strukturen (Vorwissen) im Gedächtnis andockt.
@@ -16,6 +17,7 @@ Die Berücksichtigung der kognitiven Entwicklungsstufen nach Piaget können im R
     - Bauen von neuen strukturierenden Elementen / neuen Schemata
     - Gleichbedeutend mit dem Aufbau und der Verstärkung von neuen Verbindungen zwischen Nervenzellen (Neurodidaktik).
     - Beispiel: Lernende wissen noch nichts von Schleifen und müssen für ein Verständnis der Funktionsweise von Schleifen (insb. incl. des Zusammenwirkens der konstitutiven Teile) völlig neue Strukturen aufbauen.
+
 ### Akkomodation und Assimilation
   - Akkomodation erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
     - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
@@ -31,8 +33,8 @@ Die Berücksichtigung der kognitiven Entwicklungsstufen nach Piaget können im R
     - Üben - üben - üben: 
       - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitives Ungleichgewichts.
       - Das wiederum ist als Anreiz Voraussetzung für Akkomodation.
-### Neo-Piaget'sche Stufentheorie
 
+### Neo-Piaget'sche Stufentheorie
 Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon aus, dass Lernende unabhängig ihres Alters und unabhängig vom zu lernenden Inhalt im Rahmen des Lernprozesses die 4 Stufen der kognitiven Entwicklung nach Piaget durchlaufen, um neue Fähigkeiten und Konzepte über Akkomodation und Assimilation zu erlernen (d.h. angepasste oder neue kognitive Strukturen dafür auszubilden).
 
 1. Sensomotorische Stufe
@@ -118,7 +120,7 @@ Papert steht für:
 
 Papert entwickelte die Programmiersprache LOGO (incl. Miniwelt-Konzept) und gilt aufgrund der in LOGO realisierten Ideen auch als geistiger Vater von Scratch.
 
-## Parallelen der Theorie von Lister zur CLT
+## Parallelen der Theorie von Lister zur Cognitive Load Theorie (CLT)
 Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von vielen kleinen Lösungselementen (incl. deren Abstraktion in weiterer Folge). Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern (= Schemakonstruktion). Entsprechend der CLT ist es wichtig, beim Aufbau der Schemata das Arbeitsgedächtnis nicht zu überlasten.
 
 Ein Schema nach Sweller ist ein kognitives Konstrukt mithilfe dessen Informationen organisiert, strukturiert und (im Arbeitsgedächtnis) schnell verarbeitet werden können. Im Arbeitsgedächtnis wird ein automatisiertes Schema dabei als ein einziges Element betrachtet, selbst wenn das Schema eine Vielzahl von interagierenden Elementen betreffen kann. Durch die (automatisierte) Anwendung von Schemata können damit komplexe Herausforderungen mit relativ geringer Belastung des Arbeitsgedächtnisses gemeistert werden.
@@ -135,13 +137,16 @@ Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. 
 * Erweitert abstrakt (erzeugen, formulieren, generieren, Hypothesen bilden, reflektieren, Theoriebildung): Eine Lösung aus der vorhergehenden Stufe wurde abstrahiert und auf ein neues Thema angewendet bzw. reflektiert (nicht spezifischer Transfer).
 
 ## Bezug zum Konzepte der Fundamentalen Ideen (Jerome Bruner)
-Jerome Bruner gilt einerseits als einer der Väter der konstruktivisitischen Lerntheorie, andererseits begründete er die Theorie der Fundamentalen Ideen (FI), das für Informatikunterricht ganz besonders relevant ist. Die Relevanz der Fundamentalen Ideen für unser Fach begründet sich u.A. auf der Erfüllung der verschiedenen Kriterien, die für FI gelten müssen:
+Jerome Bruner gilt einerseits als einer der Väter der konstruktivisitischen Lerntheorie, andererseits begründete er die Theorie der Fundamentalen Ideen (FI), das für Informatikunterricht ganz besonders relevant ist. Eine der Kernaussagen:
+
+>"Jedem Kind kann auf jeder Entwicklungsstufe jeder Lehrgegenstand in einer intellektuell ehrlichen Form gelehrt werden"
+
+Die Relevanz der Fundamentalen Ideen für unser Fach begründet sich u.A. auf der Erfüllung der verschiedenen Kriterien, die für FI gelten müssen:
 
 - Informatische Inhalte scheinen an der Oberfläche oft sehr kurzlebig zu sein, die FI dahinter haben jedoch Bestand (Zeitkriterium)
 - Informatische Inhalte haben genau dann besonderen allgemeinbildenden Wert, wenn sie aufgrund der zugrundegelegten FIn auf andere Disziplinen übertragbar sind (Horizontalkriterium)
 - Informatische Inhalte sind oft abstrakt, nicht sichtbar, schwer greifbar. Sie müssen daher früh eingeführt und dann später in immer wieder abstrakteren Versionen thematisiert werden (Vertikalkriterium, Curriculumspirale)
 - Informatische Inhalte lassen genau dann einen direkten Bezug zur Lebenswelt der Lernenden zu, wenn sie auf den zugrundegelegten FIn basieren (Sinnkriterium).
-- FIn ermöglich es, 
 
 Wiggins und McTighe beschreiben die Eigenschaften FIn so:
 
@@ -166,11 +171,6 @@ Wiggins und McTighe identifizieren folgende Erscheigunsformen von FIn:
 - Erkenntnisse
 - Prinzipien
 
-Im Kern geht es in Bruners Theorie (siehe dazu das Standardwerk "The Process of Education") darum, die Lernenden im Unterricht dazu zu befähigen, das Erlernte in immer wieder neuen Problemsituationen effektiv zur Anwendung zu bringen. Bruner plädiert dafür, den kognitiven Rekonstruktionsprozess von "Fundamentale Ideen" ins Zentrum einer jeden Ausbildung zu stellen. Lernende sollen damit dazu behäfigt werden, das im Unterricht gelernte auf immer wieder neue Problemsituationen des Alltags, des späteren Lebens etc. umzulegen. Es geht also im Kern um die Befähigung zum Wissenstransfer (vgl. dazu insb. auch die österreichische Leistungsbeurteilungsverordnung, deren Notenstufen an genau diesem Aspekt ausgerichtet sind).
-
-> The first object of any act of learning, over and beyond the pleasure it may give, is that it should serve us in the future. Learning should not only take us somewhere; it should allow us later to go further more easily. There are two ways in which learning serves the future.
-One is through its specific applicability to tasks that are highly similar to tho- se we originally learned to perform. Psychologists refer to this phenomenon as specific transfer of training; perhaps it should be called the extension of habits or associations. Its utility appears to be limited in the main to what we usually speak of as skills. Learning in school undoubtedly creates skills of a kind that transfers to activities encountered later, either in school or after. A second way in which earlier learning renders later performance more effi- cient is through what is conveniently called nonspecific transfer or, more accurately, the transfer of principles and attitudes. In essence, it consists of learning initially not a skill but a general idea, which can then be used as a basis for recognizing subsequent problems as special cases of the idea originally mastered. This type of transfer is at the heart of the educational process – the continual broadening and deepening of knowledge in terms of basic and general ideas. ([Bru60, Seite 17])
-
 Die Eigenschaften dieser Fundamentalen Ideen definiert Andreas Schwill mit Bezug auf Bruner (und andere) für die Informatikdidaktik wie folgt: 
 
 > "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
@@ -180,6 +180,11 @@ Die Eigenschaften dieser Fundamentalen Ideen definiert Andreas Schwill mit Bezug
 > 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
 > 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" 
 > (Schwill, 1993)
+
+Im Kern geht es in Bruners Theorie (siehe dazu sein Standardwerk "The Process of Education") darum, die Lernenden im Unterricht dazu zu befähigen, das Erlernte in immer wieder neuen Problemsituationen effektiv zur Anwendung zu bringen. Bruner plädiert dafür, den kognitiven Rekonstruktionsprozess von "Fundamentale Ideen" ins Zentrum einer jeden Ausbildung zu stellen. Lernende sollen damit dazu behäfigt werden, das im Unterricht gelernte auf immer wieder neue Problemsituationen des Alltags, des späteren Lebens etc. umzulegen. Es geht also im Kern um die Befähigung zum Wissenstransfer (vgl. dazu insb. auch die österreichische Leistungsbeurteilungsverordnung, deren Notenstufen an genau diesem Aspekt ausgerichtet sind).
+
+> The first object of any act of learning, over and beyond the pleasure it may give, is that it should serve us in the future. Learning should not only take us somewhere; it should allow us later to go further more easily. There are two ways in which learning serves the future.
+One is through its specific applicability to tasks that are highly similar to tho- se we originally learned to perform. Psychologists refer to this phenomenon as specific transfer of training; perhaps it should be called the extension of habits or associations. Its utility appears to be limited in the main to what we usually speak of as skills. Learning in school undoubtedly creates skills of a kind that transfers to activities encountered later, either in school or after. A second way in which earlier learning renders later performance more effi- cient is through what is conveniently called nonspecific transfer or, more accurately, the transfer of principles and attitudes. In essence, it consists of learning initially not a skill but a general idea, which can then be used as a basis for recognizing subsequent problems as special cases of the idea originally mastered. This type of transfer is at the heart of the educational process – the continual broadening and deepening of knowledge in terms of basic and general ideas. ([Bru60, Seite 17])
 
 In Bezug auf Methodik können nach Bruner folgende Schwerpunkte identifiziert werden:
 
