@@ -1,4 +1,15 @@
 # Zentrale Prozesse und Konzepte der Programmierung im Unterricht
+
+## Warum programmieren wir in DGB?
+
+TODO: ***
+
+- Computational Thinking trainieren - NICHT Programmierer ausbilden
+- Es geht darum eine Intuition davon zu vermitteln, wie die Wirkprinzipien aussehen
+- Es geht darum, Türöffner zu sein -> sehen, was ist Programmieren, interessiert mich das, muss ich mich davor fürchten. (Insb. Mädchen), gefällt mir das, möchte ich das später machen …
+- Bussmann-Heymann erfüllen (WICHTIG, insb. Wegen KI!)
+- ... 
+
 ## Modellbildung
 Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. 
 

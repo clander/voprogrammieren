@@ -101,7 +101,7 @@ Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen
 
 Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. [Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
 
-## Hinweis: Seymour Papert
+## Seymour Papert und Mitch Resnick
 Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionsismus" weiterentwickelt:
 
 - Wissensrekonstruktion durch die Lernenden selbst
@@ -119,6 +119,23 @@ Papert steht für:
 - Entdeckendes Lernen mit Computerunterstützung
 
 Papert entwickelte die Programmiersprache LOGO (incl. Miniwelt-Konzept) und gilt aufgrund der in LOGO realisierten Ideen auch als geistiger Vater von Scratch.
+
+Scratch ist nach Mitch Resnick (für die Entwicklung der LEGO Mindstorms und zuammen mit Yasmin Kafai für Scratch verantwortlich) in diesem (konstruktivistischen bzw. konstruktionsistischen) Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
+
+- Product: Lernprodukte erzeugen, aktiv sein, Ideen entwickeln und umsetzen, ...
+- Passion: solz sein, sich engagieren, 
+- Peers: teilen, zusammenarbeiten, diskutieren
+- Play: eigene Lebenswelt, Spieltrieb ausleben, Wirkprinzipien versethen, Herausforderungen designen und bewältigen, ...
+
+Scratch bietet:
+- Miniwelt-Konzept im Geiste von LOGO (visuelles und enaktives Nachverfolgen von Programmierkonzepten)
+- Umsetzung zentraler Konzepte der Programmierung (siehe Blockkategorien)
+- erleichternde Bedingungen (blockbasiert, High-Level-Blöcke, Online-Umgebung ohne lokale Installation)
+- Problemdomäne spezialisiert auf Spiele, Multimedia (siehe Lebenswelt der Schüler)
+- Extensions für Microcontroller, KI, Multimedia, Turtle-Grafik etc.
+- Lernmaterialien
+- Austauschplattform für die Projekte
+- ...
 
 ## Parallelen der Theorie von Lister zur Cognitive Load Theorie (CLT)
 Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von vielen kleinen Lösungselementen (incl. deren Abstraktion in weiterer Folge). Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern (= Schemakonstruktion). Entsprechend der CLT ist es wichtig, beim Aufbau der Schemata das Arbeitsgedächtnis nicht zu überlasten.
