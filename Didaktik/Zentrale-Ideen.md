@@ -4,6 +4,10 @@
 
 TODO: ***
 
+- weil es im Lehrplan steht ... Lehrplanauszüge zusammensuchen
+  - ...
+- weil der Lehrplan in den didaktischen Grundsätzen folgendes festhält:
+  - ...
 - Computational Thinking trainieren - NICHT Programmierer ausbilden
 - Es geht darum eine Intuition davon zu vermitteln, wie die Wirkprinzipien aussehen
 - Es geht darum, Türöffner zu sein -> sehen, was ist Programmieren, interessiert mich das, muss ich mich davor fürchten. (Insb. Mädchen), gefällt mir das, möchte ich das später machen …

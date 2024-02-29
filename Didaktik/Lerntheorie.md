@@ -120,22 +120,45 @@ Papert steht für:
 
 Papert entwickelte die Programmiersprache LOGO (incl. Miniwelt-Konzept) und gilt aufgrund der in LOGO realisierten Ideen auch als geistiger Vater von Scratch.
 
-Scratch ist nach Mitch Resnick (für die Entwicklung der LEGO Mindstorms und zuammen mit Yasmin Kafai für Scratch verantwortlich) in diesem (konstruktivistischen bzw. konstruktionsistischen) Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
+### Das Design von Scratch
+Scratch ist nach Mitch Resnick (der für die Entwicklung der LEGO Mindstorms und zuammen mit Yasmin Kafai für Scratch verantwortlich) in diesem konstruktivistischen bzw. konstruktionsistischen Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
 
-- Product: Lernprodukte erzeugen, aktiv sein, Ideen entwickeln und umsetzen, ...
-- Passion: solz sein, sich engagieren, 
-- Peers: teilen, zusammenarbeiten, diskutieren
-- Play: eigene Lebenswelt, Spieltrieb ausleben, Wirkprinzipien versethen, Herausforderungen designen und bewältigen, ...
+- **Product**: Lernprodukte erzeugen, aktiv sein, Ideen entwickeln und umsetzen, ...
+- **Passion**: solz sein, sich engagieren, 
+- **Peers**: teilen, zusammenarbeiten, diskutieren
+- **Play**: eigene Lebenswelt, Spieltrieb ausleben, Wirkprinzipien versethen, Herausforderungen designen und bewältigen, ...
 
-Scratch bietet:
-- Miniwelt-Konzept im Geiste von LOGO (visuelles und enaktives Nachverfolgen von Programmierkonzepten)
-- Umsetzung zentraler Konzepte der Programmierung (siehe Blockkategorien)
-- erleichternde Bedingungen (blockbasiert, High-Level-Blöcke, Online-Umgebung ohne lokale Installation)
-- Problemdomäne spezialisiert auf Spiele, Multimedia (siehe Lebenswelt der Schüler)
-- Extensions für Microcontroller, KI, Multimedia, Turtle-Grafik etc.
+Scratch greift in der Tradition von LOGO viele Ideen auf und entwickelt diese konsequent und mit weiterhin starkem Fokus auf die konstruktivistische bzw. konstruktionistische Sicht auf den Lernprozess weiter.
+
+- Miniwelt-Konzept im Geiste von LOGO 
+    - visuelles und enaktives Nachverfolgen von Programmierkonzepten 
+    - sofortiges, visuelles und interaktives Feedback
+    - Code für zu sofort sichtbaren Zustandsänderungen in der Miniwelt
+    - damit wird die kognitive Weiterentwicklung im Sinne der Phasen nach Piaget / Lister  unterstützt
+- Konzeptorientierung vs. Werkzeugorientierung
+  - Umsetzung zentraler Konzepte der Programmierung (siehe Blockkategorien)
+  - Blockbasierung vermeidet hohen Zeitaufwand für Training von Syntax
+- Blockbasierung
+  - gehört zum Training-Wheels-Konzept von Scratch
+  - Bockkategoriern konzeptionell gebildet
+  - Andocken, korrektes Einsetzen etc. wird interaktiv / visuell untersützt
+  - Blöcke können interaktiv genutzt werden (Doppelklick auf den Block führt den Block sofort aus)
+  - High-Level-Blöcke (z.B. [Entfernung von Mauszeiger], Sprite-Steuerung etc.)
+  - Lernmaterialien (incl. interaktive Tutorials)
+  - Diese Art der Blockbasierung ist für sich schon ein defacto-Standard geworden
 - Lernmaterialien
-- Austauschplattform für die Projekte
-- ...
+  - Interaktive Tutorials
+  - Beispiele von Peers
+- Lebenswelt der Schüler
+  - Problemdomäne spezialisiert auf Spiele, Multimedia
+  - Extensions für Robotik, Microcontroller, KI, Turtle-Grafik etc.
+  - Konzeptioneller Fokus auf Lebenswelt der Schüler:innen:
+    - Interaktiv vs. EVA
+    - Events vs. Batch
+    - Parallel vs. Sequentiell
+    - Multimedia vs. Kommandozeile
+    - Austauschplattform für die Projekte
+- Keine lokale Installation nötig
 
 ## Parallelen der Theorie von Lister zur Cognitive Load Theorie (CLT)
 Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von vielen kleinen Lösungselementen (incl. deren Abstraktion in weiterer Folge). Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern (= Schemakonstruktion). Entsprechend der CLT ist es wichtig, beim Aufbau der Schemata das Arbeitsgedächtnis nicht zu überlasten.
@@ -147,25 +170,33 @@ Ziel entsprechenden Unterrichts ist es, das Arbeitsgedächtnis beim Aufbau der S
 ## Parallelen der Theorie von Lister zur SOLO-Taxonomie
 Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. das Prinzip der Elementinteraktivität nach Sweller ebenfalls auf. SOLO ist ein Akronym und bedeutet "Structure of Observed Learning Outcome". SOLO ist also an sich ein hierarchisches Kategorienschema für die Klassifizierung von beobachteten Schüler:innen-Leistungen, das aber auch für Entwicklung von Lernzielhierarchien oder auch für die Entwicklung von Aufgabenstellungen (verschiedener Komplexitätsgrade) verwendet werden kann.
 
-* Prästrukturell (Misserfolg, Inkompetenz, Kernpunkte nicht verstanden, zusammenhangslos): Die Aufgabe wurde nicht korrekt angegangen, die Lernenden haben den Kern der Aufgabe nicht verstanden.
-* Unistrukturell (identifizieren, benennen, nachmachen): Ein Aspekt oder einige wenige Aspekte einer (komplexeren) Aufgabe wurden aufgegriffen und bearbeitet.
-* Multistrukturell (kombinieren, beschreiben, aufzählen, einfache Fertigkeiten, auflisten): Mehrere Aspekte der Aufgabe wurden gelernt, aber separat behandelt und können nicht integriert werden.
-* Relational (verstehen, analysieren, anwenden, argumentieren, vergleichen, kritisieren, in Beziehung setzen, rechtfertigen): Die Teilkomponenten der Aufgabe wurden gelernt und (unter Anwendung entsprechender Konzepte) zusammen verwendet, um ein großes Ganzes zu bilden. Die Anwendung erfolgte durch (nahen) Transfer.
-* Erweitert abstrakt (erzeugen, formulieren, generieren, Hypothesen bilden, reflektieren, Theoriebildung): Eine Lösung aus der vorhergehenden Stufe wurde abstrahiert und auf ein neues Thema angewendet bzw. reflektiert (nicht spezifischer Transfer).
+- **Prästrukturell** (Misserfolg, Inkompetenz, Kernpunkte nicht verstanden, zusammenhangslos): Die Aufgabe wurde nicht korrekt angegangen, die Lernenden haben den Kern der Aufgabe nicht verstanden.
+- **Unistrukturell** (identifizieren, benennen, nachmachen): Ein Aspekt oder einige wenige Aspekte einer (komplexeren) Aufgabe wurden aufgegriffen und bearbeitet.
+- **Multistrukturell** (kombinieren, beschreiben, aufzählen, einfache Fertigkeiten, auflisten): Mehrere Aspekte der Aufgabe wurden gelernt, aber separat behandelt und können nicht integriert werden.
+- **Relational** (verstehen, analysieren, anwenden, argumentieren, vergleichen, kritisieren, in Beziehung setzen, rechtfertigen): Die Teilkomponenten der Aufgabe wurden gelernt und (unter Anwendung entsprechender Konzepte) zusammen verwendet, um ein großes Ganzes zu bilden. Die Anwendung erfolgte durch (nahen) Transfer.
+- **Erweitert abstrakt** (erzeugen, formulieren, generieren, Hypothesen bilden, reflektieren, Theoriebildung): Eine Lösung aus der vorhergehenden Stufe wurde abstrahiert und auf ein neues Thema angewendet bzw. reflektiert (nicht spezifischer Transfer).
 
 ## Bezug zum Konzepte der Fundamentalen Ideen (Jerome Bruner)
-Jerome Bruner gilt einerseits als einer der Väter der konstruktivisitischen Lerntheorie, andererseits begründete er die Theorie der Fundamentalen Ideen (FI), das für Informatikunterricht ganz besonders relevant ist. Eine der Kernaussagen:
+Jerome Bruner gilt einerseits als einer der Väter der konstruktivisitischen Lerntheorie, andererseits begründete er die **Theorie der Fundamentalen Ideen (FI)**, das für Informatikunterricht ganz besonders relevant ist. 
 
->"Jedem Kind kann auf jeder Entwicklungsstufe jeder Lehrgegenstand in einer intellektuell ehrlichen Form gelehrt werden"
+Die Eigenschaften von Fundamentalen Ideen definiert Andreas Schwill mit Bezug auf Bruner (und andere) für die Informatikdidaktik in dern 1990er Jahren wie folgt: 
 
-Die Relevanz der Fundamentalen Ideen für unser Fach begründet sich u.A. auf der Erfüllung der verschiedenen Kriterien, die für FI gelten müssen:
+> "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
+> 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder erkennbar ist (Horizontalkriterium)
+> 2. auf jedem intellektuellen Niveau aufgezeigt und vermittelt werden kann (Vertikalkriterium)
+> 3. zur Annäherung an eine gewisse idealisierte Zielvorstellung dient, die jedoch faktisch möglicherweise unerreichbar ist (Zielkriterium)
+> 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
+> 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" 
+> (Schwill, 1993)
 
-- Informatische Inhalte scheinen an der Oberfläche oft sehr kurzlebig zu sein, die FI dahinter haben jedoch Bestand (Zeitkriterium)
-- Informatische Inhalte haben genau dann besonderen allgemeinbildenden Wert, wenn sie aufgrund der zugrundegelegten FIn auf andere Disziplinen übertragbar sind (Horizontalkriterium)
-- Informatische Inhalte sind oft abstrakt, nicht sichtbar, schwer greifbar. Sie müssen daher früh eingeführt und dann später in immer wieder abstrakteren Versionen thematisiert werden (Vertikalkriterium, Curriculumspirale)
-- Informatische Inhalte lassen genau dann einen direkten Bezug zur Lebenswelt der Lernenden zu, wenn sie auf den zugrundegelegten FIn basieren (Sinnkriterium).
+Die Relevanz der Fundamentalen Ideen für unser Fach begründet sich u.A. auf der Erfüllung der verschiedenen Kriterien, die für FI gelten müssen. Informatische Inhalte ...
 
-Wiggins und McTighe beschreiben die Eigenschaften FIn so:
+- scheinen an der Oberfläche oft sehr kurzlebig zu sein, die FI dahinter haben jedoch Bestand (Zeitkriterium)
+- haben genau dann besonderen allgemeinbildenden Wert, wenn sie aufgrund der zugrundegelegten FIn auf andere Disziplinen übertragbar sind (Horizontalkriterium)
+- sind oft abstrakt, nicht sichtbar, schwer greifbar. Sie müssen daher früh eingeführt und dann später in immer wieder abstrakteren Versionen thematisiert werden (Vertikalkriterium, Curriculumspirale)
+- lassen genau dann einen direkten Bezug zur Lebenswelt der Lernenden zu, wenn sie auf den zugrundegelegten FIn basieren (Sinnkriterium).
+
+Wiggins und McTighe (Einstieg zu iherer Understanding-By-Design-Didaktik siehe [hier](https://www.researchgate.net/publication/318021095_Wiggins_G_McTighe_J_2005_Understanding_by_design_2nd_ed_Alexandria_VA_Association_for_Supervision_and_Curriculum_Development_ASCD)) beschreiben die Eigenschaften FIn so:
 
 - FIn sind der Kern eines Faches und daher für den Erkenntnisgewinn in einer Fachdisziplin besonders wichtig,
 - sind Denkweisen und Wahrnehmungsweisen von Experten,
@@ -188,29 +219,28 @@ Wiggins und McTighe identifizieren folgende Erscheigunsformen von FIn:
 - Erkenntnisse
 - Prinzipien
 
-Die Eigenschaften dieser Fundamentalen Ideen definiert Andreas Schwill mit Bezug auf Bruner (und andere) für die Informatikdidaktik wie folgt: 
+Eine weitere Kernaussage aus der Theorie von Bruner:
 
-> "Eine fundamentale Idee bezüglich eines Gegenstandsbereichs (Wissenschaft, Teilgebiet) ist ein Denk-, Handlungs-, Beschreibungs- oder Erklärungsschema, das
-> 1. in verschiedenen Gebieten des Bereichs vielfältig anwendbar oder erkennbar ist (Horizontalkriterium)
-> 2. auf jedem intellektuellen Niveau aufgezeigt und vermittelt werden kann (Vertikalkriterium)
-> 3. zur Annäherung an eine gewisse idealisierte Zielvorstellung dient, die jedoch faktisch möglicherweise unerreichbar ist (Zielkriterium)
-> 4. in der historischen Entwicklung des Bereichs deutlich wahrnehmbar ist und längerfristig relevant bleibt (Zeitkriterium)
-> 5. einen Bezug zur Sprache und Denken des Alltags und der Lebenswelt besitzt (Sinnkriterium)" 
-> (Schwill, 1993)
+>"Jedem Kind kann auf jeder Entwicklungsstufe jeder Lehrgegenstand in einer intellektuell ehrlichen Form gelehrt werden"
+
+Mit dieser provokanten Aussage tritt Jerome Bruner in gewisser Weise in Konkurrenz zu den Ansichten von Piaget, der ja von einer Stufentheorie des Lernens ausgeht und damit imipliziert, dass diese Annahme eben gerade nicht gilt.
 
 Im Kern geht es in Bruners Theorie (siehe dazu sein Standardwerk "The Process of Education") darum, die Lernenden im Unterricht dazu zu befähigen, das Erlernte in immer wieder neuen Problemsituationen effektiv zur Anwendung zu bringen. Bruner plädiert dafür, den kognitiven Rekonstruktionsprozess von "Fundamentale Ideen" ins Zentrum einer jeden Ausbildung zu stellen. Lernende sollen damit dazu behäfigt werden, das im Unterricht gelernte auf immer wieder neue Problemsituationen des Alltags, des späteren Lebens etc. umzulegen. Es geht also im Kern um die Befähigung zum Wissenstransfer (vgl. dazu insb. auch die österreichische Leistungsbeurteilungsverordnung, deren Notenstufen an genau diesem Aspekt ausgerichtet sind).
 
 > The first object of any act of learning, over and beyond the pleasure it may give, is that it should serve us in the future. Learning should not only take us somewhere; it should allow us later to go further more easily. There are two ways in which learning serves the future.
 One is through its specific applicability to tasks that are highly similar to tho- se we originally learned to perform. Psychologists refer to this phenomenon as specific transfer of training; perhaps it should be called the extension of habits or associations. Its utility appears to be limited in the main to what we usually speak of as skills. Learning in school undoubtedly creates skills of a kind that transfers to activities encountered later, either in school or after. A second way in which earlier learning renders later performance more effi- cient is through what is conveniently called nonspecific transfer or, more accurately, the transfer of principles and attitudes. In essence, it consists of learning initially not a skill but a general idea, which can then be used as a basis for recognizing subsequent problems as special cases of the idea originally mastered. This type of transfer is at the heart of the educational process – the continual broadening and deepening of knowledge in terms of basic and general ideas. ([Bru60, Seite 17])
 
-In Bezug auf Methodik können nach Bruner folgende Schwerpunkte identifiziert werden:
+In Bezug auf Methodik können nach Bruner (insb. auch aufgrund seiner These, dass jedes wichtige Konzept auf jeder Altersstufe gelernt weden kann) folgende Schwerpunkte identifiziert werden:
 
 - Spiralcurriculum
-  - Vorwegnehmendes Lernen (Inhalte werden möglichst früh didaktisch reduziert, aber inhaltlich redlich eingeführt)
-  - Fortsetzbarkeit (Inhalte werden im Laufe des Curriculums immer wieder aufgegriffen, auf immer neuen kognitiven Niveaus, in immer komplexerer Art und Weise)
-  - Präfiguration (Inhalte werden in unterschiedlichen Darstellungsformen, darunter ikonisch, symbolisch und enaktiv präsentiert)
-- Projektunterricht
-- Entdeckendes Lernen
+  - Vorwegnehmendes Lernen 
+    - Inhalte werden möglichst früh didaktisch reduziert, aber inhaltlich redlich eingeführt
+  - Fortsetzbarkeit
+    - Inhalte werden im Laufe des Curriculums immer wieder aufgegriffen, auf immer neuen kognitiven Niveaus, in immer komplexerer Art und Weise
+  - Präfiguration
+    - Inhalte werden in unterschiedlichen Darstellungsformen, darunter ikonisch, symbolisch und enaktiv präsentiert (Repräsentationstrias)
+- Projektunterricht / Problemorientierung / Schülerzentrierung
+- (Gelenktes) Entdeckendes Lernen
 
 ## Gemäßigt konstruktivistische Sicht auf den Lernprozess
 Insgesamt ist die Sicht auf den Lernprozess vor dem Hintergrud der Lehre von Piaget, Papert und auch jener von Jerome Bruner stark konstruktivistisch geprägt. Lernende konstruieren nach konstruktivistischer Auffassung des Lernprozesses aktiv ihre eigene Wirklichkeit, indem sie auf kognitive Konflikte mit Assimilation und Akkommodation reagieren und so kognitive Konflikte auflösen.
