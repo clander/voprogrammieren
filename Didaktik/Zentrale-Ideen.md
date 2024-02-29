@@ -2,20 +2,25 @@
 
 ## Warum programmieren wir in DGB?
 
-TODO: ***
+TODO:
+
+
 
 - weil es im Lehrplan steht ... Lehrplanauszüge zusammensuchen
   - ...
 - weil der Lehrplan in den didaktischen Grundsätzen folgendes festhält:
   - ...
+- Bussmann-Heymann erfüllen (WICHTIG, insb. Wegen KI!)
 - Computational Thinking trainieren - NICHT Programmierer ausbilden
+- Denkanstoß: Transhumanismus und Computational Thinking 
+- Denkanstoß: was sollte man stattdessen forcieren --> siehe VO-Unterlagen zu KI
+  - 4K-Kompetenzen (insb. Kreativität, kritisches Denken, Kollaboration, Kommunizieren)
 - Es geht darum eine Intuition davon zu vermitteln, wie die Wirkprinzipien aussehen
 - Es geht darum, Türöffner zu sein -> sehen, was ist Programmieren, interessiert mich das, muss ich mich davor fürchten. (Insb. Mädchen), gefällt mir das, möchte ich das später machen …
-- Bussmann-Heymann erfüllen (WICHTIG, insb. Wegen KI!)
 - ... 
 
 ## Modellbildung
-Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. 
+Im Zentrum des Programmierunterrichts für DGB steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wichtige Konzepte und Werkzeuge der Informatik bzw. der Programmierung sollen zur Lösung von Problemen aus der Lebenswelt der Schüler:innen verwendet werden, um die zentralen Ideen und die zentralen Vorgangsweisen (Prozesse) zu thematisieren.
 
 > Ein Modell ist eine abstrahierte Beschreibung eines realen oder geplanten Systems, das die für eine bestimmte Zielsetzung wesentlichen Eingenschaften des Systems erhält. Modellbildung ist die Beschreibung eines solchen Systems, z. B. mittels:
 >
@@ -36,20 +41,20 @@ Im Zentrum des Unterrichts steht ein informatischer Modellbildungsprozess zur L�
 Wir lösen ein (authentisches) Problem im Rahmen des informatischen Modellbildungsprozesses also, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen charakteristische Werkzeuge der Informatik, um Lösungen für Probleme zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. 
 
 ### Allgemeinbildung
-Das wiederum ermöglicht uns im Sinne der Allgemeindlung ...
+Das wiederum ermöglicht den Lernenden im Sinne der Allgemeindlung ...
 
 * ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
 * Chancen, Grenzen und Risiken der Nutzung von Informationssystemen zu erkennen, 
-* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich etablieren,
+* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich zu etablieren,
 * selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den informatischen Technologien umzugehen.
 
 Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen und ihre Anwendung im Rahmen von authentischen Problemlösungsprozessen.
 
 Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte Modellbildungsprozess im Vordergrund, bei dem Coding nur einen Teilaspekt darstellt.
 
-Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht weiters nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung. 
+Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht weiters nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung.
 
-### KI
+### Bezug zu den aktuellen Entwicklungen im KI-Bereich
 Dieser Erkenntnisgewinn bezüglich echter informatischer Konzepte ist insbesondere vor dem Hintergrund der aktuellen Entwicklungen im Bereich der KI von ganz besonderer Bedeutung.
 
    * Wir selbst (nicht die KI, auch wenn wir diese für unsere Lösungen nutzen) tragen die Verantwortung für unser Tun und - wenn wir Informatiksysteme produzieren und nutzen - auch für andere.
