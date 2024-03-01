@@ -2,25 +2,180 @@
 
 ## Warum programmieren wir in DGB?
 
-TODO:
+### Weil es das Curriculum so vorgibt ...
+
+Im folgenden werden jene Aspekte aus dem [Curriculum](https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2023_II_1/Anlagen_0012_E1BFECE6_7E8B_4ACF_AEFD_3EC871222138.pdfsig) betrachtet, die einen besonderen Bezug zur Programmierung als Inhalt aufweisen.
+
+#### Bildungs- und Lehraufgabe
+...
+- Förderung von informatischen Kompetenzen, um Orientierung und mündiges Handeln im 21. Jahrhundert zu ermöglichen.
+- Digitale Artefakte als Untersuchungsgegenstand
+- Multiperspektivisch: technologisch-medial, gesellschaftlich-kulturell, interaktionsspezifisch
+- Kompetenzen im Umgang mit digitalen Artefakten: Erkundung, Hinterfragen, verantwortungsvoller Umgang, Gestaltung
+  
+...
+
+#### Didaktische Grundsätze
+...
+- Eigenschaften von Methoden:
+  - ko-konstruktiv
+  - erfahrungsorientiert 
+  - gestaltungsorientiert 
+  - reflexionsorientiert  
+  - problemlösungsorientiert
+- Beispiele für Methoden: 
+  - Critical Thinking (vernünftiges reflektierendes Denken)
+  - Design Thinking (iterative Methode für Lösung von komplexen Problemen und Entwicklung neuer Ideen)
+  - Forschendes Lernen
+  - Playful Learning (angelehnt an die Art und Weise, wie Kleinkinder die Welt entdecken)
+- Aspekt "Informatische Bildung":
+  - Analysieren
+  - Interagieren
+  - Modellieren
+  - Codieren
+  - Testen mit Informatiksystemen, Software, Automatisierung, Daten, Vernetzung.
+  - Kompetenzentwicklung über 
+    - [21st Century Skills](https://en.wikipedia.org/wiki/21st_century_skills)
+    - [4 Ks](https://www.iqesonline.net/bildung-digital/digitale-schulentwicklung/modelle-zur-digitalisierung-von-schule-und-unterricht/das-4k-modell/) (kritisches Denken, Kreativität, Kommunikation, Kollaboration)
+    - Computational Thinking (problemorientiertes informatisches Denken)
+  - Lebensweltbezug
+  - Vorwissensbezug
+  - Gendergerechter Zugang
+...
+
+#### Zentrale Fachliche Konzepte
+
+- **(T) Strukturen und Funktionen digitaler informatischer und medialer Systeme und Werkzeuge**
+  - Diese beinhalten **informatische Funktions- und Wirkprinzipien** sowie die Reflexion ihrer nicht unmittelbar sichtbaren Einflüsse auf Kultur, Politik, Gesellschaft und Lebenswelt, Technik und Produktion.
+- (G) Gesellschaftliche Wechselwirkungen durch den Einsatz digitaler Technologien
+  - Diese betreffen etwa soziale Umgangsformen, die politische Organisation, Machtstrukturen, ökonomische Interessen oder die Kommunikation. Die historische Perspektive erlaubt es, Kontinuitäten und Entstehungsprozesse sowie damit verbundene Traditionen zu verstehen.
+- (I) Interaktion in Form von Nutzung, Handlung und Subjektivierung
+  - Sie erlaubt die Analyse, Reflexion und kreative Gestaltung persönlicher und kollektiver Handlungsrepertoires. Dies beinhaltet auch die Frage, wie und mit welchen Zielen Menschen Medien erstellen, gestalten und Systeme nutzen.
+
+#### Kompetenzmodell und Kompetenzbereiche
+- Orientierung: gesellschaftliche Aspekte von Medienwandel und Digitalisierung analysieren und reflektieren
+- ***Information: mit Daten, Informationen und Informationssystemen verantwortungsvoll umgehen***
+- Kommunikation: Kommunizieren und Kooperieren unter Nutzung informatischer, medialer Systeme
+- ***Produktion: Inhalte digital erstellen und veröffentlichen, Algorithmen entwerfen und Programmieren: Zerlegen von Problemen, Muster erkennen, Verallgemeinern/Abstrahieren und Algorithmen entwerfen***
+- Handeln: Angebote und Handlungsmöglichkeiten in einer von Digitalisierung geprägten Welt einschätzen und verantwortungsvoll nutzen
+
+#### Erste Klasse
+
+Orientierung:
+- (T) das Prinzip der Eingabe, Verarbeitung und Ausgabe exemplarisch an den Bestandteilen und der Funktionsweise eines digitalen Endgeräts beschreiben.
+
+Produktion:
+- (T) eindeutige Handlungsanleitungen (Algorithmen) nachvollziehen, ausführen sowie
+selbstständig formulieren.
+
+Anwendungsbereiche:
+- Sequenzen und einfache Schleifen
+  
+#### Zweite Klasse
+
+Produktion:
+- (T) darstellen, wie Programme Daten speichern und verarbeiten, indem sie Zahlen oder andere
+Symbole zur Darstellung von Informationen verwenden
+- (T) unter Nutzung einer geeigneten Entwicklungsumgebung einfache Programme erstellen,
+diese testen und debuggen (Fehler erkennen und beheben).
+
+#### Dritte Klasse
+
+Orientierung:
+- (T) beschreiben, wie künstliche Intelligenz viele Software- und physische Systeme steuert.
+
+Produktion:
+- (T) an Beispielen Elemente des Computational Thinkings nachvollziehen und diese zur
+Lösung von Problemen einsetzen. Sie wissen, wie sie Lösungswege in Programmiersprache
+umsetzen können.
 
 
+#### Vierte Klasse
+Orientierung:
+- (T) die Grenzen und Möglichkeiten von Künstlicher Intelligenz reflektieren.
 
-- weil es im Lehrplan steht ... Lehrplanauszüge zusammensuchen
-  - ...
-- weil der Lehrplan in den didaktischen Grundsätzen folgendes festhält:
-  - ...
-- Bussmann-Heymann erfüllen (WICHTIG, insb. Wegen KI!)
-- Computational Thinking trainieren - NICHT Programmierer ausbilden
-- Denkanstoß: Transhumanismus und Computational Thinking 
-- Denkanstoß: was sollte man stattdessen forcieren --> siehe VO-Unterlagen zu KI
-  - 4K-Kompetenzen (insb. Kreativität, kritisches Denken, Kollaboration, Kommunizieren)
-- Es geht darum eine Intuition davon zu vermitteln, wie die Wirkprinzipien aussehen
-- Es geht darum, Türöffner zu sein -> sehen, was ist Programmieren, interessiert mich das, muss ich mich davor fürchten. (Insb. Mädchen), gefällt mir das, möchte ich das später machen …
-- ... 
+Produktion:
+- (T) Programme entwerfen und iterativ entwickeln, die Kontrollstrukturen kombinieren,
+einschließlich verschachtelter Schleifen und zusammengesetzter Konditionale.
+- (I) einfache Programme oder Webanwendungen mit geeigneten Werkzeugen erstellen, um ein
+bestimmtes Problem zu lösen oder eine bestimmte Aufgabe zu erfüllen.
 
+Anwendungsbereiche:
+- Dokumentation von Programmen
+- (Graphische) Notationen, Pseudocode
+
+### Weil es der allgemeinbildende Charakter des Faches impliziert ...
+Die Auseinandersetzung mit zentralen Prozessen, Konzepten und Ideen der Programmierung im Rahmen der DGB leistet einen wichtigen Beitrag zur Allgemeinbildung.
+
+Wir helfen den Lernenden damit ...
+
+* ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
+* Chancen, Grenzen und Risiken der Nutzung von Informationssystemen zu erkennen, 
+* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich zu etablieren,
+* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den informatischen Technologien umzugehen.
+
+(siehe dazu das Konzepte der Informatischen Bildung im Kontext der Allgemeinbildung nach Bussmann / Heymann)
+
+Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen und ihre Anwendung im Rahmen von authentischen Problemlösungsprozessen.
+
+Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte Modellbildungsprozess im Vordergrund, bei dem Coding nur einen Teilaspekt darstellt.
+
+Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung.
+
+### Weil es die neuen Entwicklungen rund um die KI von uns verlangen ...
+Dieser Erkenntnisgewinn bezüglich echter informatischer Konzepte ist insbesondere vor dem Hintergrund der aktuellen Entwicklungen im Bereich der KI von ganz besonderer Bedeutung:
+
+   * Wir selbst (nicht die KI, auch wenn wir diese für unsere Lösungen nutzen) tragen die Verantwortung für unser Tun und - wenn wir Informatiksysteme produzieren und nutzen - auch für andere.
+   * Wir selbst müssen in der Lage sein, KI-Outputs zu kontrollieren. Nur wir selbst als Menschen können bezogen auf unseren lebensweltlichen Kontext und damit eingebettet in eine gesellschaftliche, politische, ökonomische und ökologische Realität über Korrektheit / Plausibilität / Angemessenheit / Ethik / Vernunft oder Moral entscheiden. 
+   * Wir dürfen uns der Technologie nicht ausliefern. Wir müssen die Oberhand behalten.
+   * Kreativität, Kritisches Denken, Teamwork, Kommunikation, unsere Erfahrungen als Menschen, die in der Realität leben, eingebettet in einen sozialen Kontext sind menschliche Stärken, die die KI so nicht leisten kann.
+   * KI liefert bereits imposante Ergebnisse. Die komplexen und immer wieder neuen Herausforderungen unserer Zeit erfordern in Zukunft jedoch noch viel stärker als bisher menschliche Analyse- und Problemlösekompetenz.
+   * KIs können als Assistenten bereits jetzt sehr gute Dienste leisten und die Produktivität von Domänen-Experten enorm steigern. Sie benötigten aber detaillierte menschliche Anleitung und Kontrolle, d. h. viel Kontext, Anleitung zur Lösung von kleineren Teilproblemen, Anfragen für Korrekturen und Anpassungen usw.
+
+Entscheidungsbaum der KI-Nutzung:
+
+```mermaid
+flowchart TD
+    A[Start] --> E1{Ist es wichtig, \n dass der Output wirklich stimmt?}
+    E1 -->|Nein| B["✅ Nutzung von KI möglich \nund unproblematisch"]:::use
+    E1 -->|Ja| E2{Hast du Expertise um zu entscheiden, \n ob der Output richtig oder falsch ist?}
+    E2 -->|Nein| X["❌ KI sollte NICHT genutzt werden"]:::nouse
+    E2 -->|Ja| E3{Kannst und willst du volle Verantwortung \n - rechtlich, moralisch, etc. - \n für die Nutzung der KI tragen?}
+    E3 -->|Ja| OK["✅ Nutzung von KI möglich"]:::use
+    E3 -->|Nein| X
+
+    classDef nouse fill:#f96, color:#000
+    classDef use fill:#afa, color:#000
+```
+
+Quelle: Sabzalieva, E., & Valentini, A. (2023). ChatGPT and artificial intelligence in higher education: quick start guide.
+
+Insb. vor dem aktuellen KI-Hintergrund scheint ein Fokus auf die Kompetenzentwicklung über [21st Century Skills](https://en.wikipedia.org/wiki/21st_century_skills) und die [4 Ks](https://www.iqesonline.net/bildung-digital/digitale-schulentwicklung/modelle-zur-digitalisierung-von-schule-und-unterricht/das-4k-modell/) (kritisches Denken, Kreativität, Kommunikation, Kollaboration) - wie im Lehrplan vorgesehen - wichtig.
+
+### Weil wir ein Türöffner in die Welt der Informatik sein müssen ...
+DGB soll aufzeigen ...
+
+- was Informatik ist (Intuition über die zentralen Prozesse, Konzepte und Ideen).
+- dass Informatik Spaß macht.
+- dass man sich Informatik zutrauen kann.
+- dass Informatik nicht nur was für Burschen ist.
+- dass Informatik das eigene Leben betrifft wie kaum eine andere Fachdisziplin.
+
+Insb. in Bezug auf die Entwicklung einer Art Intuition, d.h. eines Grundverständnisses für die zentralen Prozesse, Konzepte und Ideen der Informatik, ist der Begriff des Computational Thinkings (siehe Lehrplan) ganz besonders wichtig. 
+
+>Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
+
+> Referenzen zum Thema Computational Thinking:
+> * https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
+> * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
+> * http://www.icompute-uk.com/news/computational-thinking-2/
+
+Wir bilden in der DGB also keine Informatiker:innen oder Programmierer:innen aus und wir möchten insbsondere gerade NICHT, dass die Lernenden beginnen wie Computer zu denken. Wir möchten, dass sie die Möglichkeiten, die ihnen die Informatik bietet, effektiv, kreativ, selbstbestimmt, reflektiert und verantwortungsvoll einsetzen.
+
+Hinweis: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben, in analoger Form mit Papier und Schere, haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
+  
 ## Modellbildung
-Im Zentrum des Programmierunterrichts für DGB steht ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wichtige Konzepte und Werkzeuge der Informatik bzw. der Programmierung sollen zur Lösung von Problemen aus der Lebenswelt der Schüler:innen verwendet werden, um die zentralen Ideen und die zentralen Vorgangsweisen (Prozesse) zu thematisieren.
+Im Zentrum des DGB-Unterrichts, der sich mit den Konzepten, Prozessen und Ideen der Computerprogrammierung beschäftigt, steht aus Sicht der Informatikdidaktik daher ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wichtige Konzepte und Werkzeuge der Informatik bzw. der Programmierung sollen zur Lösung von Problemen aus der Lebenswelt der Schüler:innen verwendet werden, um die zentralen Ideen und die zentralen Vorgangsweisen (Prozesse) zu thematisieren.
 
 > Ein Modell ist eine abstrahierte Beschreibung eines realen oder geplanten Systems, das die für eine bestimmte Zielsetzung wesentlichen Eingenschaften des Systems erhält. Modellbildung ist die Beschreibung eines solchen Systems, z. B. mittels:
 >
@@ -38,31 +193,7 @@ Im Zentrum des Programmierunterrichts für DGB steht ein informatischer Modellbi
 >
 > (nach Hubwieser, Didaktik der Informatik)
 
-Wir lösen ein (authentisches) Problem im Rahmen des informatischen Modellbildungsprozesses also, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen charakteristische Werkzeuge der Informatik, um Lösungen für Probleme zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen. 
-
-### Allgemeinbildung
-Das wiederum ermöglicht den Lernenden im Sinne der Allgemeindlung ...
-
-* ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
-* Chancen, Grenzen und Risiken der Nutzung von Informationssystemen zu erkennen, 
-* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich zu etablieren,
-* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den informatischen Technologien umzugehen.
-
-Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen und ihre Anwendung im Rahmen von authentischen Problemlösungsprozessen.
-
-Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte Modellbildungsprozess im Vordergrund, bei dem Coding nur einen Teilaspekt darstellt.
-
-Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht weiters nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung.
-
-### Bezug zu den aktuellen Entwicklungen im KI-Bereich
-Dieser Erkenntnisgewinn bezüglich echter informatischer Konzepte ist insbesondere vor dem Hintergrund der aktuellen Entwicklungen im Bereich der KI von ganz besonderer Bedeutung.
-
-   * Wir selbst (nicht die KI, auch wenn wir diese für unsere Lösungen nutzen) tragen die Verantwortung für unser Tun und - wenn wir Informatiksysteme produzieren und nutzen - auch für andere.
-   * Wir selbst müssen in der Lage sein, KI-Outputs zu kontrollieren. Nur wir selbst als Menschen können bezogen auf unseren lebensweltlichen Kontext und damit eingebettet in eine gesellschaftliche, politische, ökonomische und ökologische Realität über Korrektheit / Plausibilität / Angemessenheit / Ethik / Vernunft oder Moral entscheiden. 
-   * Wir dürfen uns der Technologie nicht ausliefern. Wir müssen die Oberhand behalten.
-   * Kreativität, Kritisches Denken, Teamwork, Kommunikation, unsere Erfahrungen als Menschen, die in der Realität leben, eingebettet in einen sozialen Kontext sind menschliche Stärken, die die KI so nicht leisten kann.
-   * KI liefert bereits imposante Ergebnisse. Die komplexen und immer wieder neuen Herausforderungen unserer Zeit erfordern in Zukunft jedoch noch viel stärker als bisher menschliche Analyse- und Problemlösekompetenz.
-   * KIs können als Assistenten bereits jetzt sehr gute Dienste leisten und die Produktivität von Domänen-Experten enorm steigern. Sie benötigten aber detaillierte menschliche Anleitung und Kontrolle, d. h. viel Kontext, Anleitung zur Lösung von kleineren Teilproblemen, Anfragen für Korrekturen und Anpassungen usw.
+Wir lösen ein (authentisches) Problem im Rahmen des informatischen Modellbildungsprozesses also, indem wir geistige und praktische Techniken der Informatik zur Anwendung bringen. Wir lernen dabei zentrale informatische Konzepte und Prozesse kennen und wir nutzen charakteristische Werkzeuge der Informatik, um Lösungen für Probleme zu realisieren. Dadurch entwickeln wir ein Verständnis über den Aufbau und die Wirkungsweise von Informatiksystemen (vgl. dazu auch nformatische Allgemeinbildung).
 
 ## Zentrale Konzepte
 Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es verschiedene „Werkzeugkästen“ - auch Paradigmen genannt, die wiederum unterschiedliche Modellierungstechniken betreffen. 
@@ -147,18 +278,6 @@ Die im Diagramm dargestellte Vorgehensweise vermischt den traditionellen Softwar
    * IDE
    * Programmiersprache
    * Laufzeitumgebungen und Compiler
-
-**Hinweise zu Computational Thinking**
->Computational thinking (CT) refers to the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. In education, CT is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It involves automation of processes, but also using computing to explore, analyze, and understand processes (natural and artificial). (Wikipedia)
-
-> Referenzen zum Thema Computational Thinking:
-> * https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
-> * https://towardsdatascience.com/computational-thinking-defined-7806ffc70f5e
-> * http://www.icompute-uk.com/news/computational-thinking-2/
-
-**Hinweise zur Initiative "Denken lernen, Probleme lösen"**
-
-Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben, in analoger Form mit Papier und Schere, haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
 
 ### Problemanalyse
 Das Problem wird analysiert und möglichst präzise formuliert. Dazu können z. B. Techniken des Computational Thinkings wie Abstraktion, Dekomposition oder Mustererkennung angewendet. Außerdem wird genau spezifiziert, wann das Problem als gelöst angesehen wird (Kriterien).
