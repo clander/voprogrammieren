@@ -1,4 +1,4 @@
-# Zentrale Prozesse und Konzepte der Programmierung im Unterricht
+# Zentrale Prozesse und Konzepte der Programmierung im (DGB-)Unterricht
 
 ## Warum programmieren wir in DGB?
 
