@@ -18,6 +18,8 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - Gleichbedeutend mit dem Aufbau und der Verstärkung von neuen Verbindungen zwischen Nervenzellen (Neurodidaktik).
     - Beispiel: Lernende wissen noch nichts von Schleifen und müssen für ein Verständnis der Funktionsweise von Schleifen (insb. incl. des Zusammenwirkens der konstitutiven Teile) völlig neue Strukturen aufbauen.
 
+([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
+
 ### Akkomodation und Assimilation
   - Akkomodation erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
     - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
@@ -33,6 +35,7 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - Üben - üben - üben: 
       - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitives Ungleichgewichts.
       - Das wiederum ist als Anreiz Voraussetzung für Akkomodation.
+([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ### Neo-Piaget'sche Stufentheorie
 Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon aus, dass Lernende unabhängig ihres Alters und unabhängig vom zu lernenden Inhalt im Rahmen des Lernprozesses die 4 Stufen der kognitiven Entwicklung nach Piaget durchlaufen, um neue Fähigkeiten und Konzepte über Akkomodation und Assimilation zu erlernen (d.h. angepasste oder neue kognitive Strukturen dafür auszubilden).
@@ -45,9 +48,9 @@ Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon a
 Diese 4 Stufen gehen fließend eineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913).
 
 ## Developmental Epistemology of Computer Programming (Raymond Lister und Donna M. Teague)
-Lister und Teague wenden die Stufentheorie nach Piaget auf die Computerprogrammierung im Unterricht an [Artikel](https://www.academia.edu/110073788/Toward_a_Developmental_Epistemology_of_Computer_Programming). Sie beschreiben in ihrer Theorie Eigenschaften von Lernenden, die sich in den einzelnen Entwicklungsstufen und damit in den entsprechenden Phasen des Lernprozesses für einen neuen Inhalt befinden. Sie beschreiben damit auch einen Weg, den Lernende beim Lernen dieser Inhalte beschreiten.
+Lister und Teague wenden die Stufentheorie nach Piaget auf die Computerprogrammierung im Unterricht an ([Artikel](https://www.academia.edu/110073788/Toward_a_Developmental_Epistemology_of_Computer_Programming)). Sie beschreiben in ihrer Theorie Eigenschaften von Lernenden, die sich in den einzelnen Entwicklungsstufen und damit in den entsprechenden Phasen des Lernprozesses für einen neuen Inhalt befinden. Sie beschreiben damit auch einen Weg, den Lernende beim Lernen dieser Inhalte beschreiten.
 
-Eine zusammenfassende Darstellung der zugrundegelegten Ideen (incl. Video) bietet Nathan Bean auf
+Eine zusammenfassende Darstellung (siehe die folgende Tabelle) der zugrundegelegten Ideen (incl. Video) bietet Nathan Bean auf
 https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei primär um die Frage, wie Lernende Code erklären (= Tracing = Verständnis zur Ablaufverfolgung von Programmcode).
 
 <table>
@@ -97,9 +100,9 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
     </tr>
 </table>
 
-Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen durchlaufen und letztendlich neues Wissen durch Akkomodation aufbauen bzw. entsprechend der Cognitive Load Theorie entsprechende Schemata aufbauen. Ein Experte hat solche Schemata bereits ausgebildet. Ein Anfänger muss hingegen Code zeilenweise interpretieren, die einzelnen Codezeilen zueinander in Beziehung bringen und dann im Gesamten ableiten, was der Code macht. Ein Experte liest Code durch Applikation seiner Schemata auf Teilstrukturen im Code, ohne darüber nachdenken zu müssen, was einzelne Zeilen bedeuten, wie sie syntaktisch genau aufgebaut sind, wie sie zueinander in Beziehung stehen etc. [Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
+Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen durchlaufen und letztendlich neues Wissen durch Akkomodation aufbauen bzw. entsprechend der Cognitive Load Theorie entsprechende Schemata aufbauen. Ein Experte hat solche Schemata bereits ausgebildet. Ein Anfänger muss hingegen Code zeilenweise interpretieren, die einzelnen Codezeilen zueinander in Beziehung bringen und dann im Gesamten ableiten, was der Code macht. Ein Experte liest Code durch Applikation seiner Schemata auf Teilstrukturen im Code, ohne darüber nachdenken zu müssen, was einzelne Zeilen bedeuten, wie sie syntaktisch genau aufgebaut sind, wie sie zueinander in Beziehung stehen etc. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
-Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. [Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)
+Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ## Seymour Papert und Mitch Resnick
 Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionsismus" weiterentwickelt:
