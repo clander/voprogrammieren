@@ -97,4 +97,4 @@ Die Schülerinnen und Schüler können
 #### Anwendungsbereiche
 - **Dokumentation von Programmen**
 - **Projektplanung inklusive Aufgabenverteilung und Zeitplan (Graphische) Notationen, Pseudocode**
-- Ästhetische und technische Kompetenzen von Medienkulturen in Projekten
+- Ästhetische und technische Kompetenzen von Medienkulturen in Projekten;
