@@ -26,20 +26,24 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
 1. [Zahlenraten in Scratch](./GrundkonzepteProgrammierung/ZahlenratenScratch/README.md)
    - Problemdefinition
    - Lösung mit zentralen Konzepten der Programmierung in Scratch
-2. [Zahlenraten in anderen Programmierumgebungen](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
+2. [Exkurs: Konzepte der Programmierung auf inf-schule.de](https://www.inf-schule.de/imperative-programmierung)
+   - Konzeptorientiere Einführung in die imperative Programmierung
+   - Scratch, Kara, SpaceBug, Python
+   - [Didaktisches Konzept](https://www.inf-schule.de/infschule/konzeption) inklusive
+3. [Zahlenraten in anderen Programmierumgebungen](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - Problemanalyse
    - Codierung in Python
    - Variante als Computerspiele für einen Handheld
    - Variante als Microcontroller-Programm
-3. Steuerung von Akteuren in Miniwelten am Beispiel der Logo-Turtle
+4. Steuerung von Akteuren in Miniwelten am Beispiel der Logo-Turtle
     - **[POLYGONIX](./GrundkonzepteProgrammierung/Polygonix/) Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.**
    - [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
    - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
    - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
-4. [Countdown](./GrundkonzepteProgrammierung/Countdown/)
+5. [Countdown](./GrundkonzepteProgrammierung/Countdown/)
    - Problemanalyse
    - Codierung in Python
-5. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
+6. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
    - [Body Mass Index (BMI)](./GrundkonzepteProgrammierung/BMI/README.md)
      - BMI als Excel-Lösung
      - BMI in 3 Iterationen mit Python
