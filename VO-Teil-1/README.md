@@ -22,19 +22,23 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
 
 Über folgende Beispiele werden die Grundkonzepte der Programmierung in der LV eingeführt:
 
-1. Steuerung von Akteuren in Miniwelten am Beispiel der Logo-Turtle
-    - **[POLYGONIX](./GrundkonzepteProgrammierung/Polygonix/) Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.**
-   - [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
-   - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
-   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
-2. [Countdown](./GrundkonzepteProgrammierung/Countdown/)
-   - Problemanalyse
-   - Codierung in Python
-3. [Zahlenraten](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
+
+1. [Zahlenraten in Scratch](./GrundkonzepteProgrammierung/ZahlenratenScratch/README.md)
+   - Problemdefinition
+   - Lösung mit zentralen Konzepten der Programmierung in Scratch
+2. [Zahlenraten in anderen Programmierumgebungen](./GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - Problemanalyse
    - Codierung in Python
    - Variante als Computerspiele für einen Handheld
    - Variante als Microcontroller-Programm
+3. Steuerung von Akteuren in Miniwelten am Beispiel der Logo-Turtle
+    - **[POLYGONIX](./GrundkonzepteProgrammierung/Polygonix/) Anhand einer realweltlichen Problemstellung wird von der Problemanalyse über die Algorithmisierung bis hin zur Implementierung in Python eine Lern-App mit Turtle-Grafik erzeugt.**
+   - [Quadrat / Vielecke](./GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
+   - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
+   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
+4. [Countdown](./GrundkonzepteProgrammierung/Countdown/)
+   - Problemanalyse
+   - Codierung in Python
 5. Beispiele zur persönlichen Vertiefung (z.B. für die eigenen Unterrichtsprojekte):
    - [Body Mass Index (BMI)](./GrundkonzepteProgrammierung/BMI/README.md)
      - BMI als Excel-Lösung
