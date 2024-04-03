@@ -4,14 +4,13 @@
 Wir entwickeln ein kleines Adventure-Game. In die Rätsel des Spiels sind Ideen aus der Informatik verpackt.
 
 ## Deine Rolle? (Role)
-Du bist ein Spieleentwickler.
+Du bist Spieleentwickler:in.
 
 ## Für wen? (Audience)
-Du entwickelst das Spiel für Volksschüler der 4. Klasse.
+Du entwickelst das Spiel für Volksschüler:innen der 4. Klasse.
 
 ## Die Situation? (Situation)
-Du programmierst ein kleines Adventure-Game in Scratch. Es ist voll mit Rätseln. Die Bewältigung der Rätsel soll den Spieler:innen Konzepte und Ideen der Informatik näher bringen.
-
+Du programmierst ein kleines Adventure-Game in Scratch. Es ist voll mit Rätseln. Die Bewältigung der Rätsel soll Spieler:innen Konzepte und Ideen der Informatik näher bringen.
 
 ## Funktionale Anforderungen? (Product)
 
@@ -37,11 +36,17 @@ Verpacke einige Hinweise dazu, wenn die Spieler den Level nicht schaffen ...
 - Zeitmanagement
 - ...
 
-
 ## Lösung in Scratch
 Lösung zum Download: [ZahlenratenScratch.sb3](ZahlenratenScratch.sb3)
+
 ![](zahlenraten1.png)
 ![](zahlenraten2.png)
 ![](zahlenraten3.png)
 ![](zahlenraten4.png)
 ![](zahlenraten5.png)
+
+# Hinweis: Textadventure für Informatikkonzepte
+
+In diesem Python-Textadventure sind auch Informatik-Konzepte in Rätsel verpackt ...
+
+[Textadventure](../../../VO-Teil-2/Textadventure/TextAdventure.py)
