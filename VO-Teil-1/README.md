@@ -1,18 +1,5 @@
 # Inhalte VO Grundlagen der Programmierung (Termin 1)
 
-## Handlungsanleitungen nachvollziehen und entwickeln
-Es werden folgende Aspekte in der LV behandelt:
-1. Kürzeste Wege mit Dijkstra:
-   - Der Algorithmus als Handlungsanleitung zum selber Probieren
-2. Computer spielen einmal anders:
-   - Arbeitsweise einer Von-Neumann-Architektur als Handlungsanleitung zum selber Probieren
-3. Beispiele für die persönliche Vertiefung (auch für die eigenen Unterrichtsprojekte):
-   - Bubble Sort (Rollenspiel)
-   - Binäre Suche
-   - Lineare Suche
-   - ...
-
-[Alle Unterlagen zum Thema Handlungsanleitungen](./Handlungsanleitungen/)
 ## Didaktische Grundlagen
 Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werden auf folgenden Seiten beschrieben und im Rahmen der LV eingestreut:
 
@@ -53,10 +40,32 @@ Einige wesentliche didaktischen Grundlagen zur Programmierung im Unterricht werd
 
 [Alle Beispiele](./GrundkonzepteProgrammierung/)
 
-## Verwendete Werkzeuge und Unterlagen
-### Programmiersprache
 
-Als Programmiersprache verwenden wir Python: https://www.python.org
+## Handlungsanleitungen nachvollziehen und entwickeln
+Es werden folgende Aspekte in der LV behandelt:
+1. Kürzeste Wege mit Dijkstra:
+   - Der Algorithmus als Handlungsanleitung zum selber Probieren
+2. Computer spielen einmal anders:
+   - Arbeitsweise einer Von-Neumann-Architektur als Handlungsanleitung zum selber Probieren
+3. Beispiele für die persönliche Vertiefung (auch für die eigenen Unterrichtsprojekte):
+   - Bubble Sort (Rollenspiel)
+   - Binäre Suche
+   - Lineare Suche
+   - ...
+
+[Alle Unterlagen zum Thema Handlungsanleitungen](./Handlungsanleitungen/)
+
+## Verwendete Werkzeuge und Unterlagen
+
+### Zentrale Lernunterlagen für das persönliche Studium der imperativen Programmierung
+Als zentrale Unterlagen zum Lernen der Konzepte und Prozesse der Programmierung anhand von konzeptorientierten und didaktisch ausgearbeiteten Unterlagen wird empfohlen: 
+
+https://www.inf-schule.de/imperative-programmierung
+(Varianten: Scratch, Python, SpaceBug, Kara)
+
+### Python Programmiersprache
+
+https://www.python.org
 
 - Dokumentation: https://docs.python.org/3/
 - Sprachreferenz: https://docs.python.org/3/reference/index.html
@@ -74,11 +83,13 @@ Alternativen:
 ### Online-IDE für Microcontroller-Programmierung und Spieleprogrammierung
 - Microsoft MakeCode Arcade (https://arcade.makecode.com)
 - Microsoft MakeCode micro:bit (https://makecode.microbit.org)
+
+
 ### Didaktische offline IDE
 Als didaktische ausgereifte IDE wird Thonny (https://thonny.org) empfohlen.
-### Zentrale Lernunterlagen für das persönliche Studium
-Als zentrale Unterlagen zum Lernen der Konzepte und Prozesse anhand von Beispielen wird empfohlen: https://www.inf-schule.de/imperative-programmierung/python
 
+
+### Zentrale Lernunterlagen für das persönliche Studium von Python
 Als inhaltlich ausgezeichnete Videokurse werden empfohlen:
 - Python-Kurs auf openHPI: https://open.hpi.de/courses/pythonjunior-schule2023
 - Python Bakery (Kompletter Online-Kurs mit Videos, Unterlagen, Beispielen): https://blockpy.cis.udel.edu/assignments/textbook/bakery_textbook?course_id=37
