@@ -49,6 +49,6 @@ Lösung zum Download:
 
 # Hinweis: Textadventure für Informatikkonzepte
 
-In diesem Python-Textadventure sind auch Informatik-Konzepte in Rätsel verpackt ...
+In dem folgenden Python-Textadventure sind auch Informatik-Konzepte in Rätsel verpackt ...
 
 [Textadventure](../../../VO-Teil-2/Textadventure/TextAdventure.py)
