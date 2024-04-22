@@ -73,7 +73,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Präoperationale Phase (Pre-Tracing-Phase)</td><td>
+        <td>Präoperationale Phase (Tracing-Phase 1)</td><td>
             <ul>
                 <li>Zeilenweise Codeerklärungen zu > 50 % ok</li>
                 <li>Zeilenweise Codeerklärungen ohne Abstraktion von den einzelnen Zeilen weg und damit ohne Bezug zur Semantik des gesamten Programmteils</li>
@@ -84,7 +84,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Phase der konkreten Operationen (Tracing-Phase)</td><td>
+        <td>Phase der konkreten Operationen (Tracing-Phase 2)</td><td>
             <ul>
                 <li>Vorherschende Problemlösunsstrategie: Copy-Paste mit Lösungsidee; da und dort ausbessern</li>
                 <li>Auf die Semantik des Codes (und damit auch schon ansatzweise die Beziehungen zwischen den Zeilen) kann durch intensive Beschäftigung mit der Laufzeit und den Ausführungsergebnissen geschlossen werden</li>
