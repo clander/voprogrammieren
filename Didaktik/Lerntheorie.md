@@ -45,7 +45,12 @@ Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon a
 3. konkret operationale Stufe
 4. Stufe der formalen Operationen
    
-Diese 4 Stufen gehen fließend eineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913).
+Diese 4 Stufen gehen fließend eineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913). Folgende drei Annahmen sind dabei zentral:
+1. Zu einem bestimmten Zeitpunkt, haben Kinder immer verschiedene Sichtweisen bzw. verschiedene kognitive Denkweisen auf Phänomene / Konzepte / Inhalte etc.
+2. Diese Sichtweisen auf Phänomene / dieses variantenreiche Denken über Phänomene / Konzepte / Inhalte führt über längere Zeit zu einem inneren Konflikt. Die konkurrierenden Sichtweisen existieren parallel.
+3. Kognitive Entwicklung bedeutet dann, dass ein gradueller Wechsel in der Häufigkeit der Anwendung der entsprechend konkurrierenden Sichtweise auftritt. Ein alte Sicht auf ein Phähomen wird zugunsten einer neuen Sicht (die etwa auf Basis neuer Erkenntnisse zustandekommt) langsam weniger häufig genutzt. Das ist der Entwicklungsprozess.
+
+[(Quelle, S. 7)](https://srcd.onlinelibrary.wiley.com/doi/abs/10.1111/1540-5834.00075)
 
 ## Developmental Epistemology of Computer Programming (Raymond Lister und Donna M. Teague)
 Lister und Teague wenden die Stufentheorie nach Piaget auf die Computerprogrammierung im Unterricht an ([Artikel](https://www.academia.edu/110073788/Toward_a_Developmental_Epistemology_of_Computer_Programming)). Sie beschreiben in ihrer Theorie Eigenschaften von Lernenden, die sich in den einzelnen Entwicklungsstufen und damit in den entsprechenden Phasen des Lernprozesses für einen neuen Inhalt befinden. Sie beschreiben damit auch einen Weg, den Lernende beim Lernen dieser Inhalte beschreiten.
