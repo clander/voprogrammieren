@@ -20,13 +20,13 @@ Im Startlevel des Spiels geht es um Zahlenraten.
 - Das Programm denkt sich eine zufällige Zahl zwischen 1 und 100 aus.
 - Das Programm fragt nach der korrekten Zahl.
 - Das Programm gibt einen Hinweis für "Kleiner" oder "Größer" aus, wenn die Zahl nicht erraten wird.
-- Spieler haben maximal 10 Versuche.
+- Spieler*innen haben maximal 10 Versuche.
 - Werden mehr Versuche verbraucht, ist das Spiel zu ende.
-- Wenn die Spieler die Zahl innerhalb der 10 Versuche erraten, dann wechselt das Spiel zu Level 1.
+- Wenn die Spieler*innen die Zahl innerhalb der 10 Versuche erraten, dann wechselt das Spiel zu Level 1.
 
 Und um welche Idee aus der Informatik dreht sich dieses Spiel? Es geht um "Divide and Conquer" bzw. um einen Algorithmus, der "Binäre Suche" genannt wird.
 
-Verpacke einige Hinweise dazu, wenn die Spieler den Level nicht schaffen ...
+Verpacke einige Hinweise dazu, wenn die Spieler*innen den Level nicht schaffen ...
 
 ### Level 1: ....
 
@@ -39,7 +39,7 @@ Verpacke einige Hinweise dazu, wenn die Spieler den Level nicht schaffen ...
 ## Lösung in Scratch
 Lösung zum Download: 
 
-- [ZahlenratenScratch.sb3](ZahlenratenScratch.sb3)
+- [ZahlenratenScratch652023.sb3](ZahlenratenScratch.sb3)
 
 ![](zahlenraten1.png)
 ![](zahlenraten2.png)
