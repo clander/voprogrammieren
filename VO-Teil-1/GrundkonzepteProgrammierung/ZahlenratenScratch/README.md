@@ -39,7 +39,7 @@ Verpacke einige Hinweise dazu, wenn die Spieler*innen den Level nicht schaffen .
 ## Lösung in Scratch
 Lösung zum Download: 
 
-- [ZahlenratenScratch652023.sb3](ZahlenratenScratch.sb3)
+- [ZahlenratenScratch652023.sb3](ZahlenratenScratch652023.sb3)
 
 ![](zahlenraten1.png)
 ![](zahlenraten2.png)
