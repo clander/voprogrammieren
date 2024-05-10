@@ -200,6 +200,12 @@ Im Rahmen der Nutzung von Programmiersprachen zur Lösung von Problemen gibt es 
 
 Ein etablierter Werkzeugkasten ist der imperativ-prozedurale. Er enthält viele wichtige informatische Konzepte, von denen einige sogar als **Fundamentale Ideen der Informatik** (siehe unten) gesehen werden, darunter (Auszug):
 
+### Konzepte der imperativen Programmierung
+
+* [Scratch, Kara, Python](https://www.inf-schule.de/imperative-programmierung)
+
+### Detaillierte Auflistung für Python
+
 * [Programm / Quellcode / Anweisungen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/programme/konzept_programme)
   * Kompilieren und interpretieren
   * [Syntaxfehler](https://www.inf-schule.de/imperative-programmierung/python/konzepte/fehler/exkurs_syntaxfehler)
