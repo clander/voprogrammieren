@@ -13,7 +13,7 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - Neues Wissen wird generiert, indem man an bestehende Strukturen (Vorwissen) im Gedächtnis andockt.
     - Beispiel: Lernende haben verstanden, wie While-Schleifen funktionieren. Der Weg zum Verständnis eines weiteren Schleifentyps ist über Assimilation möglich.
   - Akkomodation (deutlich aufwändiger als Assimilation): 
-    - Neues Wissen generieren, für das es noch keine Aknüpfungspunkte im Gedächtnis gibt.
+    - Neues Wissen generieren, für das es noch keine Anküpfungspunkte im Gedächtnis gibt.
     - Bauen von neuen strukturierenden Elementen / neuen Schemata
     - Gleichbedeutend mit dem Aufbau und der Verstärkung von neuen Verbindungen zwischen Nervenzellen (Neurodidaktik).
     - Beispiel: Lernende wissen noch nichts von Schleifen und müssen für ein Verständnis der Funktionsweise von Schleifen (insb. incl. des Zusammenwirkens der konstitutiven Teile) völlig neue Strukturen aufbauen.
