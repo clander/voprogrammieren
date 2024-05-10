@@ -13,14 +13,14 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - Neues Wissen wird generiert, indem man an bestehende Strukturen (Vorwissen) im Gedächtnis andockt.
     - Beispiel: Lernende haben verstanden, wie While-Schleifen funktionieren. Der Weg zum Verständnis eines weiteren Schleifentyps ist über Assimilation möglich.
   - Akkomodation (deutlich aufwändiger als Assimilation): 
-    - Neues Wissen generieren, für das es noch keine Anküpfungspunkte im Gedächtnis gibt.
+    - Neues Wissen generieren, für das es noch keine Anknüpfungspunkte im Gedächtnis gibt.
     - Bauen von neuen strukturierenden Elementen / neuen Schemata
     - Gleichbedeutend mit dem Aufbau und der Verstärkung von neuen Verbindungen zwischen Nervenzellen (Neurodidaktik).
     - Beispiel: Lernende wissen noch nichts von Schleifen und müssen für ein Verständnis der Funktionsweise von Schleifen (insb. incl. des Zusammenwirkens der konstitutiven Teile) völlig neue Strukturen aufbauen.
 
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
-### Akkomodation und Assimilation
+### Akkomodation und Lernen im konstruktivistischen Sinne
   - Akkomodation erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
     - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
     - soziale Stimuli
@@ -29,11 +29,13 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - intensive Beschäftigung, Fehlschläge, viel Arbeit
     - Motivation und Willen zur intensiven Beschäftigung
   - Lernen kann als Verschärfungsprozess verstanden werden (Modrow).  
-    - Zunächst nebelhafte, unzureichende Vorstellungen der Welt (Ungleichgewicht in Bezug auf das eigene Verständnis) wird durch intensive Beschäftigung in die bestehenden Erfahrungen eingpasst (Gleichgewicht herstellen).
-    - EUREKA-Moment: Das Gleichgewicht in den kognitiven Strukturen ist wieder hergestellt.
-    - CLT: Ein neues Schema ist ausgebildet.
-    - Üben - üben - üben: 
-      - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitives Ungleichgewichts.
+    - Zunächst nebelhafte, unzureichende Vorstellungen der Welt (Ungleichgewicht in Bezug auf das eigene Verständnis) wird durch intensive Beschäftigung in die bestehenden Erfahrungen eingepasst (Gleichgewicht herstellen).
+    - EUREKA-Moment / Aha-Erlebnisse
+      - Das Gleichgewicht in den kognitiven Strukturen ist wieder hergestellt.
+      - CLT: Ein neues Schema ist ausgebildet.
+      - Aha-Erlebnisse: wichtiges Instrument zur Reflexion
+    - Üben, üben, üben: 
+      - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitiven Ungleichgewichts.
       - Das wiederum ist als Anreiz Voraussetzung für Akkomodation.
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
@@ -45,10 +47,10 @@ Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon a
 3. konkret operationale Stufe
 4. Stufe der formalen Operationen
    
-Diese 4 Stufen gehen fließend eineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913). Folgende drei Annahmen sind dabei zentral:
+Diese 4 Stufen gehen fließend ineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913). Folgende drei Annahmen sind dabei zentral:
 1. Zu einem bestimmten Zeitpunkt, haben Kinder immer verschiedene Sichtweisen bzw. verschiedene kognitive Denkweisen auf Phänomene / Konzepte / Inhalte etc.
 2. Diese Sichtweisen auf Phänomene / dieses variantenreiche Denken über Phänomene / Konzepte / Inhalte führt über längere Zeit zu einem inneren Konflikt. Die konkurrierenden Sichtweisen existieren parallel.
-3. Kognitive Entwicklung bedeutet dann, dass ein gradueller Wechsel in der Häufigkeit der Anwendung der entsprechend konkurrierenden Sichtweise auftritt. Ein alte Sicht auf ein Phähomen wird zugunsten einer neuen Sicht (die etwa auf Basis neuer Erkenntnisse zustandekommt) langsam weniger häufig genutzt. Das ist der Entwicklungsprozess.
+3. Kognitive Entwicklung bedeutet dann, dass ein gradueller Wechsel in der Häufigkeit der Anwendung der entsprechend konkurrierenden Sichtweise auftritt. Eine alte Sicht auf ein Phänomen wird zugunsten einer neuen Sicht (die etwa auf Basis neuer Erkenntnisse zustande kommt) langsam weniger häufig genutzt. Das ist der Entwicklungsprozess.
 
 [(Quelle, S. 7)](https://srcd.onlinelibrary.wiley.com/doi/abs/10.1111/1540-5834.00075)
 
@@ -79,14 +81,14 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
                 <li>Zeilenweise Codeerklärungen ohne Abstraktion von den einzelnen Zeilen weg und damit ohne Bezug zur Semantik des gesamten Programmteils</li>
                 <li>Keine Beziehungen zwischen den Codezeilen interpretierbar</li>
                 <li>Ikonische Repräsentationen von Code (Diagramme) können nicht sinnbringend eingesetzt werden</li>
-                <li>Vorherschende Problemlösunsstrategie: Zufällige Codeänderungen und intensives Ausprobieren der Ergebnisse</li>
+                <li>Vorherrschende Problemlösungsstrategie: Zufällige Codeänderungen und intensives Ausprobieren der Ergebnisse</li>
             </ul>
         </td>
     </tr>
     <tr> 
         <td>Phase der konkreten Operationen (Tracing-Phase 2)</td><td>
             <ul>
-                <li>Vorherschende Problemlösunsstrategie: Copy-Paste mit Lösungsidee; da und dort ausbessern</li>
+                <li>Vorherrschende Problemlösungsstrategie: Copy-Paste mit Lösungsidee; da und dort ausbessern</li>
                 <li>Auf die Semantik des Codes (und damit auch schon ansatzweise die Beziehungen zwischen den Zeilen) kann durch intensive Beschäftigung mit der Laufzeit und den Ausführungsergebnissen geschlossen werden</li>
                 <li>Beschäftigung mit der Lösung sehr kontextualisiert; Abstraktionsfähigkeit noch eingeschränkt</li>
             </ul>
@@ -113,7 +115,7 @@ Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine kla
 Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionsismus" weiterentwickelt:
 
 - Wissensrekonstruktion durch die Lernenden selbst
-- Herstellen (Konstruktion) von Lernproduktion (Artefakten) durch intensive Beschäftitung / Lernendenaktivität
+- Herstellen (Konstruktion) von Lernproduktion (Artefakten) durch intensive Beschäftigung / Lernendenaktivität
 - Interesse an Produkten und Stolz auf Produkte als Motivation
 
 Papert steht für:
@@ -129,7 +131,7 @@ Papert steht für:
 Papert entwickelte die Programmiersprache LOGO (incl. Miniwelt-Konzept) und gilt aufgrund der in LOGO realisierten Ideen auch als geistiger Vater von Scratch.
 
 ### Das Design von Scratch
-Scratch ist nach Mitch Resnick (der für die Entwicklung der LEGO Mindstorms und zuammen mit Yasmin Kafai für Scratch verantwortlich) in diesem konstruktivistischen bzw. konstruktionsistischen Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
+Scratch ist nach Mitch Resnick (der für die Entwicklung der LEGO Mindstorms und zusammen mit Yasmin Kafai für Scratch verantwortlich) in diesem konstruktivistischen bzw. konstruktionsistischen Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
 
 - **Product**: Lernprodukte erzeugen, aktiv sein, Ideen entwickeln und umsetzen, ...
 - **Passion**: solz sein, sich engagieren, 
@@ -148,7 +150,7 @@ Scratch greift in der Tradition von LOGO viele Ideen auf und entwickelt diese ko
   - Blockbasierung vermeidet hohen Zeitaufwand für Training von Syntax
 - Blockbasierung
   - gehört zum Training-Wheels-Konzept von Scratch
-  - Bockkategoriern konzeptionell gebildet
+  - Blockkategorien konzeptionell gebildet
   - Andocken, korrektes Einsetzen etc. wird interaktiv / visuell untersützt
   - Blöcke können interaktiv genutzt werden (Doppelklick auf den Block führt den Block sofort aus)
   - High-Level-Blöcke (z.B. [Entfernung von Mauszeiger], Sprite-Steuerung etc.)
@@ -169,11 +171,11 @@ Scratch greift in der Tradition von LOGO viele Ideen auf und entwickelt diese ko
 - Keine lokale Installation nötig
 
 ## Parallelen der Theorie von Lister zur Cognitive Load Theorie (CLT)
-Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von vielen kleinen Lösungselementen (incl. deren Abstraktion in weiterer Folge). Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungschemata im Langzeitgedächtnis zu verankern (= Schemakonstruktion). Entsprechend der CLT ist es wichtig, beim Aufbau der Schemata das Arbeitsgedächtnis nicht zu überlasten.
+Für die Lösung von Programmierproblemstellungen ist ein hoher Grad an Elementinteraktivität nötig. Lösungen in der Programmierung bestehen aus der zueinander passenden Anwendungen von vielen kleinen Lösungselementen (incl. deren Abstraktion in weiterer Folge). Das Arbeitsgedächtnis kann aber immer nur 3 bis 5 Lösungselemente gleichzeitig verarbeiten. Ziel muss es sein, diese Lösungselemente zusammengenommen als komplette Lösungsschemata im Langzeitgedächtnis zu verankern (= Schemakonstruktion). Entsprechend der CLT ist es wichtig, beim Aufbau der Schemata das Arbeitsgedächtnis nicht zu überlasten.
 
 Ein Schema nach Sweller ist ein kognitives Konstrukt mithilfe dessen Informationen organisiert, strukturiert und (im Arbeitsgedächtnis) schnell verarbeitet werden können. Im Arbeitsgedächtnis wird ein automatisiertes Schema dabei als ein einziges Element betrachtet, selbst wenn das Schema eine Vielzahl von interagierenden Elementen betreffen kann. Durch die (automatisierte) Anwendung von Schemata können damit komplexe Herausforderungen mit relativ geringer Belastung des Arbeitsgedächtnisses gemeistert werden.
 
-Ziel entsprechenden Unterrichts ist es, das Arbeitsgedächtnis beim Aufbau der Schemata nicht zu überbelasten. Dazu muss der extrinsische Cognitive Load (bedingt durch die Komplexität der Lernumgebung) sowie der instrinsische Cognitive Load (dem Lerngegenstand inhärenter CL) soweit reduziert werden, dass er vom Arbeitsgedächtnis bewältigt werden kann. Speziell im Bereich der Programmierung ist dabei Vorsicht geboten, weil der ICL aufgrund der hohen Elementinteraktivität der Inhalte ohne enstprechend ausgebildete Schemata sehr schnell überhand nimmt.
+Ziel entsprechenden Unterrichts ist es, das Arbeitsgedächtnis beim Aufbau der Schemata nicht zu überbelasten. Dazu muss der extrinsische Cognitive Load (bedingt durch die Komplexität der Lernumgebung) sowie der instrinsische Cognitive Load (dem Lerngegenstand inhärenter CL) so weit reduziert werden, dass er vom Arbeitsgedächtnis bewältigt werden kann. Speziell im Bereich der Programmierung ist dabei Vorsicht geboten, weil der ICL aufgrund der hohen Elementinteraktivität der Inhalte ohne entsprechend ausgebildeter Schemata sehr schnell überhandnimmt.
 
 ## Parallelen der Theorie von Lister zur SOLO-Taxonomie
 Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. das Prinzip der Elementinteraktivität nach Sweller ebenfalls auf. SOLO ist ein Akronym und bedeutet "Structure of Observed Learning Outcome". SOLO ist also an sich ein hierarchisches Kategorienschema für die Klassifizierung von beobachteten Schüler:innen-Leistungen, das aber auch für Entwicklung von Lernzielhierarchien oder auch für die Entwicklung von Aufgabenstellungen (verschiedener Komplexitätsgrade) verwendet werden kann.
@@ -184,7 +186,7 @@ Die SOLO-Lernzieltaxonomie nach Biggs nimmt die piaget'schen Grundgedanken bzw. 
 - **Relational** (verstehen, analysieren, anwenden, argumentieren, vergleichen, kritisieren, in Beziehung setzen, rechtfertigen): Die Teilkomponenten der Aufgabe wurden gelernt und (unter Anwendung entsprechender Konzepte) zusammen verwendet, um ein großes Ganzes zu bilden. Die Anwendung erfolgte durch (nahen) Transfer.
 - **Erweitert abstrakt** (erzeugen, formulieren, generieren, Hypothesen bilden, reflektieren, Theoriebildung): Eine Lösung aus der vorhergehenden Stufe wurde abstrahiert und auf ein neues Thema angewendet bzw. reflektiert (nicht spezifischer Transfer).
 
-## Bezug zum Konzepte der Fundamentalen Ideen (Jerome Bruner)
+## Bezug zum Konzept der Fundamentalen Ideen (Jerome Bruner)
 Jerome Bruner gilt einerseits als einer der Väter der konstruktivisitischen Lerntheorie, andererseits begründete er die **Theorie der Fundamentalen Ideen (FI)**, das für Informatikunterricht ganz besonders relevant ist. 
 
 Die Eigenschaften von Fundamentalen Ideen definiert Andreas Schwill mit Bezug auf Bruner (und andere) für die Informatikdidaktik in dern 1990er Jahren wie folgt: 
@@ -251,7 +253,7 @@ In Bezug auf Methodik können nach Bruner (insb. auch aufgrund seiner These, das
 - (Gelenktes) Entdeckendes Lernen
 
 ## Gemäßigt konstruktivistische Sicht auf den Lernprozess
-Insgesamt ist die Sicht auf den Lernprozess vor dem Hintergrud der Lehre von Piaget, Papert und auch jener von Jerome Bruner stark konstruktivistisch geprägt. Lernende konstruieren nach konstruktivistischer Auffassung des Lernprozesses aktiv ihre eigene Wirklichkeit, indem sie auf kognitive Konflikte mit Assimilation und Akkommodation reagieren und so kognitive Konflikte auflösen.
+Insgesamt ist die Sicht auf den Lernprozess vor dem Hintergrud der Lehre von Piaget, Papert und auch jener von Jerome Bruner stark konstruktivistisch geprägt. Lernende konstruieren nach konstruktivistischer Auffassung des Lernprozesses aktiv ihre eigene Wirklichkeit, indem sie auf kognitive Konflikte mit Assimilation und Akkommodation reagieren und so kognitive Konflikte auflösen. Das bedeutet zusammengefasst nach Modrow:
 
 * Lernen erfolgt durch kognitive Konflikte / Kollisionen
     * können nur auftreten, wenn sich Lernende aktiv mit dem Gegenstand auseinandersetzen, sich dafür interessieren, ihn für relevant halten, soziale Aspekte damit verbinden ...
