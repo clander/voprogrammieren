@@ -24,7 +24,11 @@ Im Startlevel des Spiels geht es um Zahlenraten.
 - Werden mehr Versuche verbraucht, ist das Spiel zu ende.
 - Wenn die Spieler*innen die Zahl innerhalb der 10 Versuche erraten, dann wechselt das Spiel zu Level 1.
 
-Und um welche Idee aus der Informatik dreht sich dieses Spiel? Es geht um "Divide and Conquer" bzw. um einen Algorithmus, der "Binäre Suche" genannt wird.
+Und um welche Idee aus der Informatik dreht sich dieses Spiel? Es geht um das Algorithmen-Entwurfsprinzip "Divide and Conquer" sowie um die Algorithmenkategorie "Greedy" bzw. um einen Algorithmus, der "Binäre Suche" genannt wird.
+
+- Binäre Suche auf [Wikipedia](https://de.wikipedia.org/wiki/Binäre_Suche)
+- Erklärung für [Binäre Suche aus CS50-Kurs von Harvard](https://www.youtube.com/watch?v=YzT8zDPihmc)
+- Erklärung für [Binäre Suche von Fireship](https://www.youtube.com/watch?v=MFhxShGxHWc) 
 
 Verpacke einige Hinweise dazu, wenn die Spieler*innen den Level nicht schaffen ...
 
