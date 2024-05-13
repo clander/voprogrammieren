@@ -41,11 +41,18 @@ Lösung zum Download:
 
 - [ZahlenratenScratch652023.sb3](ZahlenratenScratch652023.sb3)
 
+
 ![](zahlenraten1.png)
 ![](zahlenraten2.png)
 ![](zahlenraten3.png)
 ![](zahlenraten4.png)
 ![](zahlenraten5.png)
+
+## Lösungsvariante in Scratch (VO vom 13. Mai 2024)
+- [Zahlenraten-Variante in Scratch aus der VO vom 13. Mai 2024](./Scratch-Zahlenraten-13-Mai-2024.sb3)
+
+![](zahlenraten6.png)
+
 
 # Hinweis: Textadventure für Informatikkonzepte
 
