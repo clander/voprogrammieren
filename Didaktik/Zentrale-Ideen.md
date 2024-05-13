@@ -104,24 +104,6 @@ Anwendungsbereiche:
 - Dokumentation von Programmen
 - (Graphische) Notationen, Pseudocode
 
-### Weil es der allgemeinbildende Charakter des Faches impliziert ...
-Die Auseinandersetzung mit zentralen Prozessen, Konzepten und Ideen der Programmierung im Rahmen der DGB leistet einen wichtigen Beitrag zur Allgemeinbildung.
-
-Wir helfen den Lernenden damit ...
-
-* ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
-* Chancen, Grenzen und Risiken der Nutzung von Informationssystemen zu erkennen, 
-* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich zu etablieren,
-* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den informatischen Technologien umzugehen.
-
-(siehe dazu das Konzepte der Informatischen Bildung im Kontext der Allgemeinbildung nach Bussmann / Heymann)
-
-Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen und ihre Anwendung im Rahmen von authentischen Problemlösungsprozessen.
-
-Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte Modellbildungsprozess im Vordergrund, bei dem Coding nur einen Teilaspekt darstellt.
-
-Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung.
-
 ### Weil es die neuen Entwicklungen rund um die KI von uns verlangen ...
 Dieser Erkenntnisgewinn bezüglich echter informatischer Konzepte ist insbesondere vor dem Hintergrund der aktuellen Entwicklungen im Bereich der KI von ganz besonderer Bedeutung:
 
@@ -173,6 +155,25 @@ Insb. in Bezug auf die Entwicklung einer Art Intuition, d.h. eines Grundverstän
 Wir bilden in der DGB also keine Informatiker:innen oder Programmierer:innen aus und wir möchten insbsondere gerade NICHT, dass die Lernenden beginnen wie Computer zu denken. Wir möchten, dass sie die Möglichkeiten, die ihnen die Informatik bietet, effektiv, kreativ, selbstbestimmt, reflektiert und verantwortungsvoll einsetzen.
 
 Hinweis: Die Initiative [Denken lernen, Probleme lösen](https://dlpl.at) des BMBF greift [zentrale Ideen des informatischen Denkens](https://dlpl.at/informationen-fuer-die-lehrperson/methoden-des-informatischen-denkens-2) auf und unterstüzt die Umsetzung im Unterricht mit Aufgaben, in analoger Form mit Papier und Schere, haptisch mit einem Koffer mit Materialien oder auch digital in Form von Online-Angeboten.
+
+### Weil es der allgemeinbildende Charakter des Faches impliziert ...
+Die Auseinandersetzung mit zentralen Prozessen, Konzepten und Ideen der Programmierung im Rahmen der DGB leistet einen wichtigen Beitrag zur Allgemeinbildung.
+
+Wir helfen den Lernenden damit ...
+
+* ein korrektes Weltbild aufzubauen (indem etwa die Informatik und ihre Ideen, ihre Anwendungsgebiete, ihre gesamtheitlichen Auswirkungen auf unsere Lebenswelt überhaupt erst als solche realisiert werden können),
+* Chancen, Grenzen und Risiken der Nutzung von Informationssystemen zu erkennen, 
+* in einer mit Informatik durchsetzten Welt (auch zum eigenen Vorteil) zu partizipieren und sich zu etablieren,
+* selbstbewusst, vernünftig, verantwortungsvoll und reflektiert mit den informatischen Technologien umzugehen.
+
+(siehe dazu das Konzepte der Informatischen Bildung im Kontext der Allgemeinbildung nach Bussmann / Heymann)
+
+Die Konzepte, Prozesse und Werkzeuge, die wir für die Lösungsfindung nutzen können, sind in der Informatik vielfältig. Zur Vermittlung zentraler geistiger sowie praktischer Techniken der Informatik eignen sich (nicht nur, aber insbesondere auch) Programmiersprachen und ihre Anwendung im Rahmen von authentischen Problemlösungsprozessen.
+
+Dabei geht es nicht nur um Coding im engeren Sinne. Vielmehr steht der gesamte Modellbildungsprozess im Vordergrund, bei dem Coding nur einen Teilaspekt darstellt.
+
+Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht nicht darum, Programmierer auszubilden, sondern um den Erkenntnisgewinn bezüglich der zentralen informatischen Konzepte und Prozesse im Zuge der Beschäftigung mit der Programmierung.
+
   
 ## Modellbildung
 Im Zentrum des DGB-Unterrichts, der sich mit den Konzepten, Prozessen und Ideen der Computerprogrammierung beschäftigt, steht aus Sicht der Informatikdidaktik daher ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wichtige Konzepte und Werkzeuge der Informatik bzw. der Programmierung sollen zur Lösung von Problemen aus der Lebenswelt der Schüler:innen verwendet werden, um die zentralen Ideen und die zentralen Vorgangsweisen (Prozesse) zu thematisieren.
