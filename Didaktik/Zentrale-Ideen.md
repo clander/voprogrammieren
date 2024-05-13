@@ -122,7 +122,7 @@ flowchart TD
     E1 -->|Nein| B["✅ Nutzung von KI möglich \nund unproblematisch"]:::use
     E1 -->|Ja| E2{Hast du Expertise um zu entscheiden, \n ob der Output richtig oder falsch ist?}
     E2 -->|Nein| X["❌ KI sollte NICHT genutzt werden"]:::nouse
-    E2 -->|Ja| E3{Kannst und willst du volle Verantwortung \n - rechtlich, moralisch, etc. - \n für die Nutzung der KI tragen?}
+    E2 -->|Ja| E3{Kannst und willst du volle Verantwortung \n - inhaltlich, technisch, rechtlich, moralisch, etc. - \n für die Nutzung der KI tragen?}
     E3 -->|Ja| OK["✅ Nutzung von KI möglich"]:::use
     E3 -->|Nein| X
 
