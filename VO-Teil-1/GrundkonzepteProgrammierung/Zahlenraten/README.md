@@ -124,7 +124,8 @@ game.game_over(True)
 ## Lösung als Spiel mit Microsoft MakeCode micro:bit
 
 ### Blöcke
-![](./bilder/zahlenraten-microbit.png)
+<img src="./bilder/zahlenraten-microbit.png" width="70%" />
+
 ### Python Code (MakeCode micro:bit)
 ```python
 def on_button_pressed_a():
