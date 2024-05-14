@@ -112,7 +112,7 @@ Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen
 Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ## Seymour Papert und Mitch Resnick
-Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionsismus" weiterentwickelt:
+Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionismus" weiterentwickelt:
 
 - Wissensrekonstruktion durch die Lernenden selbst
 - Herstellen (Konstruktion) von Lernproduktion (Artefakten) durch intensive Beschäftigung / Lernendenaktivität
@@ -131,12 +131,12 @@ Papert steht für:
 Papert entwickelte die Programmiersprache LOGO (incl. Miniwelt-Konzept) und gilt aufgrund der in LOGO realisierten Ideen auch als geistiger Vater von Scratch.
 
 ### Das Design von Scratch
-Scratch ist nach Mitch Resnick (der für die Entwicklung der LEGO Mindstorms und zusammen mit Yasmin Kafai für Scratch verantwortlich) in diesem konstruktivistischen bzw. konstruktionsistischen Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
+Scratch ist nach Mitch Resnick (der für die Entwicklung der LEGO Mindstorms und zusammen mit Yasmin Kafai für Scratch verantwortlich) in diesem konstruktivistischen bzw. konstruktionistischen Geiste als Lernumgebung konzipiert, die folgende didaktische Aspekte in den Vordergrund stellt:
 
 - **Product**: Lernprodukte erzeugen, aktiv sein, Ideen entwickeln und umsetzen, ...
-- **Passion**: solz sein, sich engagieren, 
+- **Passion**: stolz sein, sich engagieren, 
 - **Peers**: teilen, zusammenarbeiten, diskutieren
-- **Play**: eigene Lebenswelt, Spieltrieb ausleben, Wirkprinzipien versethen, Herausforderungen designen und bewältigen, ...
+- **Play**: eigene Lebenswelt, Spieltrieb ausleben, Wirkprinzipien verstehen, Herausforderungen designen und bewältigen, ...
 
 Scratch greift in der Tradition von LOGO viele Ideen auf und entwickelt diese konsequent und mit weiterhin starkem Fokus auf die konstruktivistische bzw. konstruktionistische Sicht auf den Lernprozess weiter.
 
