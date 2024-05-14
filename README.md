@@ -3,7 +3,7 @@
 ## Inhalte
 *  [Erster Vorlesungstermin](./VO-Teil-1/)
 *  [Zweiter Vorlesungstermin](./VO-Teil-2/)
-*  [Dritter Vorlesungstermin](./Didaktik/)
+*  [Dritter Vorlesungstermin](./VO-Teil-3/)
 
 ## Anforderungen an die LV
 Die folgenden Auszüge stammen aus dem [Curriculum](https://ph-tirol.ac.at/sites/default/files/mitteilungsblatt/02_HLG_Digitale_Grundbildung.pdf).
