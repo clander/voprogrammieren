@@ -44,7 +44,7 @@ Die didaktische Einbettung der authentischen Problemstellungen kann auf verschie
 
 Phasen:
    1. Aufmerksamkeit gewinnen (Überraschung, Besonderheit, Kontroverse etc. zum Thema)
-   2. Lernziele klar machen
+   2. Lernziele klarmachen
    3. Vorwissen aktivieren (Lebensweltbezug)
    4. Input / Lernen anleiten (Tutorial)
    5. Üben (Vervollständigungsaufgabe)
@@ -59,7 +59,7 @@ Die Lernenden erledigen im Verlauf des Unterrichts mehrere authentische Problems
 - Die Unterstützung zur Bewältigung ist für die erste Problemstellung sehr hoch und wird in den weiteren Problemstellungen immer weiter ausgeblendet (Fading).
 - Die authentischen Problemstellungen können je nach Untersützungsgrad unterschiedlich ausgestaltet sein:
   1. Tutorial mit Erklärungen (maximale Unterstützung)
-  2. Vervollständigungsaufgabe (mittlere Untersüttzung)
+  2. Vervollständigungsaufgabe (mittlere Unterstützung)
   3. Konventionelle Aufgabe (keine Unterstützung)
 
 ## Ausgestaltung von Problemstellungen
