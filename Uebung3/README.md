@@ -30,7 +30,7 @@ Erstellung eines Teils des abschließenden Lernproduktes:
 #### Lernzielhierarchie
  - ausgehend vom Lehrplan
  - zentrale Konzepte / Ideen ableiten
- - Taxonomie definieren, z. B. Transferziel, Erkenntnisziel, Fakten, Fertigkeiten ableiten
+ - Taxonomie definieren (z. B. Transferziel, Erkenntnisziel, Fakten, Fertigkeiten; SOLO; Bloom)
 
 #### Lernzielkontrolle  
  - Primär: Authentische Problemstellung (fokussiert auf die umfassende Überprüfung aller Ziele)
@@ -103,7 +103,7 @@ Ideen für Themen / Aufgabenstellungen:
  - Siehe dazu das [Polygonix-Beispiel](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/)
 
 #### Aufgabe der Schüler*innen
-- Tutorial und damit Problemstellung incl. Lösung incl. betroffene Konzepte und Prozesse nachvollziehen / nachmachen / immitieren.
+- Tutorial und damit Problemstellung incl. Lösung incl. betroffene Konzepte und Prozesse nachvollziehen / nachmachen / immitieren
 
 ### Vervollständigungsaufgabe
  - Die zweite Problemstellung ist wieder nach GRASPS aufgebaut, 
