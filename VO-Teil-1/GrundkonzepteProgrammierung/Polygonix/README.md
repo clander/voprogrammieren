@@ -350,7 +350,9 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 
 #### Version 0.3 Advanced 
 Diese Version überprüft den Benutzer*innen-Input mit eigenen Funktionsblöcken und einer globalen Variablen.
+
 <img src="bilder/polygonix_scratch_0_3_advanced.png" width="90%" />
+
 <a href="./code/polygonix_scratch_0_3_advanced.sb3">Scratch Code Polygonix V0.3 Advanced zum Download</a>
 
 #### Blöcke
