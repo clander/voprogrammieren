@@ -822,6 +822,11 @@ An allen Stellen im Code, an denen wir nun eine validierte Zahleneingabe innerha
 
 ### Implementierung (Variante entsprechend dem Struktogramm)
 
+
+#### Scratch (Auszug)
+<img src="bilder/polygonix_scratch_0_7.png" width="90%" />
+<a href="./code/polygonix_scratch_0_7.sb3">Scratch Code Polygonix V0.7 zum Download</a>
+
 #### Blöcke
 
 <img src="bilder/polygonix_blocks_0_7_1.png" width="80%" />
