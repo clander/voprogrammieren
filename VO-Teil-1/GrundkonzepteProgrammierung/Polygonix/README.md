@@ -53,7 +53,8 @@ Für jede Iteration wählen wir dazu Teilfunktionalitäten der oben dargestellte
     * [Zustandsdiagramm](https://de.wikipedia.org/wiki/Zustandsübergangsdiagramm)
     * etc.
 3. **Implementierung** und **Test**
-  * blockbasiert
+  * blockbasiert mit Scratch
+  * blockbasiert mit Python
   * Python-Code
 
 **Hinweis**: In der Softwareentwicklung sind agile Vorgehensmodelle wie etwa [SCRUM](https://de.wikipedia.org/wiki/Scrum) üblich. Unsere Vorgangsweise einer schrittweisen Implementierung von Software im Rahmen von Iterationen, in denen jeweils Teilfunktionalitäten zur Implementierung ausgewählt werden, die dann in einem ausprobierbaren Prototypen resultieren, stellt eine vereinfachte Form eines solchen Vorgehensmodells dar und kann auch als Methodik für den Unterricht verwendet werden.
