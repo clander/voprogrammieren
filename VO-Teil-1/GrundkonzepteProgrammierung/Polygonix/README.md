@@ -339,7 +339,6 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 
 ### Implementierung
 
-
 ### Scratch
 #### Version 0.3 Standard 
 <img src="bilder/polygonix_scratch_0_3.png" width="50%" />
@@ -438,6 +437,10 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 ![](bilder/polygonix_0_4.png)
 
 ### Implementierung
+
+### Scratch
+<img src="bilder/polygonix_scratch_0_4.png" width="90%" />
+<a href="./code/polygonix_scratch_0_4.sb3">Scratch Code Polygonix V0.4 zum Download</a>
 
 #### Blöcke (Variante mit Rest-Berechnung)
 
