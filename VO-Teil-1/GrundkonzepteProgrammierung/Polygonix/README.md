@@ -563,7 +563,7 @@ Wenn der Benutzer weder z und s wählt:
 
 #### Scratch
 <img src="bilder/polygonix_scratch_0_5.png" width="90%" />
-<a href="./code/polygonix_scratch_0_5.sb3">Scratch Code Polygonix V0.4 zum Download</a>
+<a href="./code/polygonix_scratch_0_5.sb3">Scratch Code Polygonix V0.5 zum Download</a>
 
 #### Blöcke
 
@@ -677,6 +677,12 @@ stateDiagram-v2
 ```
 
 ### Implementierung (Variante entsprechend dem Struktogramm)
+
+#### Scratch
+<img src="bilder/polygonix_scratch_0_6.png" width="90%" />
+<a href="./code/polygonix_scratch_0_6.sb3">Scratch Code Polygonix V0.5 zum Download</a>
+
+Hinweis zur Prüfung von Zahleneingaben in Scratch (Workaround): Der Verbinde-Block kann in Scratch in Zusammenarbeit mit dem logischen Vergleich (=) verwendet werden, um zu prüfen, ob eine Eingabe eine Zahl ist. Dazu geht man wie folgt vor. Der Verbinde-Block verbindet 0 und die eingegebene Anzahl von Ecken, z.B. also 05 (wenn 5 als Eckenanzahl eingegeben worden ist). Der (Zahlen-)Vergleich (=) vergleicht dann 05 mit 5 und liefert true. Wenn keine Ganzzahl eingegeben wird, also z. B. 'g' dann verbindet der Verbinde-Block 0 mit g zu 0g. Der (String-)Vergleich von 0g mit g liefert dann false.
 
 #### Blöcke
 
