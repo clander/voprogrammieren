@@ -824,8 +824,13 @@ An allen Stellen im Code, an denen wir nun eine validierte Zahleneingabe innerha
 
 
 #### Scratch (Auszug)
+##### Variante 1
 <img src="bilder/polygonix_scratch_0_7.png"/>
 <a href="./code/polygonix_scratch_0_7.sb3">Scratch Code Polygonix V0.7 zum Download</a>
+
+##### Variante 2 (stärker modularisiert mit weiteren Funktionsblöcken)
+<img src="bilder/polygonix_scratch_0_7_advanced.png"/>
+<a href="./code/polygonix_scratch_0_7_advanced.sb3">Scratch Code Polygonix V0.7 zum Download</a>
 
 #### Blöcke
 
