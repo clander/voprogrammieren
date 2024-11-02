@@ -213,14 +213,11 @@ Sonst:
     Sonst:
         Wir geben eine Information aus, dass das noch nicht unterstützt wird.
 ```
-#### Scratch
-<img src="bilder/polygonix_scratch_0_2.png" width="40%" />
-<a href="./code/polygonix_scratch_0_2.sb3">Scratch Code Polygonix V0.2 zum Download</a>
-
 ### Implementierung
 
 #### Scratch
-
+<img src="bilder/polygonix_scratch_0_2.png" width="50%" />
+<a href="./code/polygonix_scratch_0_2.sb3">Scratch Code Polygonix V0.2 zum Download</a>
 
 #### Blöcke 
 <img src="bilder/polygonix_blocks_0_2_1.png" width="60%" />
@@ -324,6 +321,7 @@ Die Anzahl der Ecken bestimmt also auch die Anzahl der auszugebenden Seiten incl
   * [Zahlen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zahlen) - rechnen und vergleichen mit Zahlen
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
+* 
 
 #### Pseudocode
 
@@ -340,6 +338,17 @@ Wir wiederholen solange der Zähler kleiner als die eingegebene Anzahl von Ecken
 ![](bilder/polygonix_0_3.png)
 
 ### Implementierung
+
+
+### Scratch
+#### Version 0.3 Standard 
+<img src="bilder/polygonix_scratch_0_3.png" width="50%" />
+<a href="./code/polygonix_scratch_0_3.sb3">Scratch Code Polygonix V0.3 zum Download</a>
+
+#### Version 0.3 Advanced 
+Diese Version überprüft den Benutzer*innen-Input mit eigenen Funktionsblöcken und einer globalen Variablen.
+<img src="bilder/polygonix_scratch_0_3_advanced.png" width="90%" />
+<a href="./code/polygonix_scratch_0_3_advanced.sb3">Scratch Code Polygonix V0.3 Advanced zum Download</a>
 
 #### Blöcke
 <img src="bilder/polygonix_blocks_0_3.png" width="60%" />
