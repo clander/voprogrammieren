@@ -824,7 +824,7 @@ An allen Stellen im Code, an denen wir nun eine validierte Zahleneingabe innerha
 
 
 #### Scratch (Auszug)
-<img src="bilder/polygonix_scratch_0_7.png" width="90%" />
+<img src="bilder/polygonix_scratch_0_7.png"/>
 <a href="./code/polygonix_scratch_0_7.sb3">Scratch Code Polygonix V0.7 zum Download</a>
 
 #### Blöcke
