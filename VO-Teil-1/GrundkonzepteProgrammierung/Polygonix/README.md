@@ -183,6 +183,9 @@ Für die Verarbeitung von Entscheidungen des Benutzers (in Form von Benutzereing
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen)
   * [Fallunterscheidung (bedingte Verzweigungen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/konzept_fallunterscheidungen)
 
+#### Konzepterklärungen für Scratch
+* [Algorithmisches Problemlösen in Scratch](https://inf-schule.de/imperative-programmierung/scratch)
+
 #### Pseudocode
 ```python
 Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
@@ -321,7 +324,7 @@ Die Anzahl der Ecken bestimmt also auch die Anzahl der auszugebenden Seiten incl
   * [Zahlen in Python](https://www.inf-schule.de/imperative-programmierung/python/konzepte/datentypen/exkurs_zahlen) - rechnen und vergleichen mit Zahlen
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
-* 
+
 
 #### Pseudocode
 
