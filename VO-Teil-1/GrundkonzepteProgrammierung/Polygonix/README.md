@@ -214,7 +214,7 @@ Sonst:
         Wir geben eine Information aus, dass das noch nicht unterstützt wird.
 ```
 #### Scratch
-<img src="bilder/polygonix_scratch_0_2.png" width="70%" />
+<img src="bilder/polygonix_scratch_0_2.png" width="40%" />
 <a href="./code/polygonix_scratch_0_2.sb3">Scratch Code Polygonix V0.2 zum Download</a>
 
 ### Implementierung
