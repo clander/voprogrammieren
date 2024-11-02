@@ -678,7 +678,7 @@ stateDiagram-v2
 
 ### Implementierung (Variante entsprechend dem Struktogramm)
 
-#### Scratch
+#### Scratch (Auszug)
 
 <img src="bilder/polygonix_scratch_0_6.png" width="90%" />
 <a href="./code/polygonix_scratch_0_6.sb3">Scratch Code Polygonix V0.6 zum Download</a>
@@ -731,9 +731,7 @@ elif eingabeModus == "z":
         turtle.right(360/eckenanzahl)
         zaehler = zaehler + 1
 else:
-    print("Für die Wahl des Modus ist nur z oder s erlaub!")
-
-
+    print("Für die Wahl des Modus ist nur z oder s erlaubt!")
 ```
 
 ### Exkurs: Implementierung (Variante als Automat entsprechend dem Zustandsdiagramm)
