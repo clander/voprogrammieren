@@ -561,6 +561,10 @@ Wenn der Benutzer weder z und s wählt:
 
 ### Implementierung
 
+#### Scratch
+<img src="bilder/polygonix_scratch_0_5.png" width="90%" />
+<a href="./code/polygonix_scratch_0_5.sb3">Scratch Code Polygonix V0.4 zum Download</a>
+
 #### Blöcke
 
 <img src="bilder/polygonix_blocks_0_5.png" width="80%" />
