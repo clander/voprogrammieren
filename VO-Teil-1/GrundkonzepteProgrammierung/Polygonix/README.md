@@ -5,10 +5,8 @@
 ### Ziel
 Für die Volksschule Urgen soll eine Geometrie-App Namens POLYGONIX entwickelt werden, mit der Kinder geometrische Figuren kennenlernen können.
 
-**Hinweis**: Als Beispiel für ein ähnliches reales Projekt, das Online-Lernspiele für Volksschüler:innen implementiert, kann z. B. auf das [Wiki-Projekt](https://wiki-imst.tsn.at/spiele/web/lernspiele/index) der HAK Imst verwiesen werden.
-
 ### Deine Rolle / Situation
-Du bist Schüler:in im Fach Digitale Grundbildung. Du setzt die Kompetenzen aus dem Unterricht ein, um als Entwickler bei der Implementierung einer hilfreichen App für Volksschulkinder mitzuwirken.
+Du bist Schüler*in im Fach Digitale Grundbildung. Du setzt die Kompetenzen aus dem Unterricht ein, um als Entwickler*in bei der Implementierung einer hilfreichen App für Volksschulkinder mitzuwirken.
 
 ### Zielgruppe
 Die Zielgruppe für die App sind Kinder der 3. und 4. Klasse Volksschule.
@@ -107,6 +105,12 @@ Wir drehen uns um 120 Grad
 ![](bilder/polygonix_0_1.png)
 
 ### Implementierung
+
+#### Scratch
+<img src="bilder/polygonix_scratch_0_1.png" width="40%" />
+<a href="./code/polygonix_scratch_0_1.sb3">Scratch Code zum Download</a>
+
+
 
 #### Blöcke
 

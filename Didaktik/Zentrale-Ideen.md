@@ -118,11 +118,11 @@ Entscheidungsbaum der KI-Nutzung:
 
 ```mermaid
 flowchart TD
-    A[Start] --> E1{Ist es wichtig, \n dass der Output wirklich stimmt?}
-    E1 -->|Nein| B["✅ Nutzung von KI möglich \nund unproblematisch"]:::use
-    E1 -->|Ja| E2{Hast du Expertise um zu entscheiden, \n ob der Output richtig oder falsch ist?}
+    A[Start] --> E1{Ist es wichtig, dass der Output wirklich stimmt?}
+    E1 -->|Nein| B["✅ Nutzung von KI möglich und unproblematisch"]:::use
+    E1 -->|Ja| E2{Hast du Expertise um zu entscheiden, ob der Output richtig oder falsch ist?}
     E2 -->|Nein| X["❌ KI sollte NICHT genutzt werden"]:::nouse
-    E2 -->|Ja| E3{Kannst und willst du volle Verantwortung \n - inhaltlich, technisch, rechtlich, moralisch, etc. - \n für die Nutzung der KI tragen?}
+    E2 -->|Ja| E3{Kannst und willst du volle Verantwortung - inhaltlich, technisch, rechtlich, moralisch, etc. - für die Nutzung der KI tragen?}
     E3 -->|Ja| OK["✅ Nutzung von KI möglich"]:::use
     E3 -->|Nein| X
 

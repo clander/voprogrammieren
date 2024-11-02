@@ -8,10 +8,8 @@
    - Arrays
    - Zufall
    - Funktionen
-   - Ereignisse
+   - Ereignisse (WH)
    - Ausnahmebehandlung
-3. Exkurs:
-   - KI und Roboter-Programmierung
 
 ## Script
 1. (**V**) [Zentrale Prozesse und zentrale Konzepte](../Didaktik/Zentrale-Ideen.md)
