@@ -108,9 +108,7 @@ Wir drehen uns um 120 Grad
 
 #### Scratch
 <img src="bilder/polygonix_scratch_0_1.png" width="40%" />
-<a href="./code/polygonix_scratch_0_1.sb3">Scratch Code zum Download</a>
-
-
+<a href="./code/polygonix_scratch_0_1.sb3">Scratch Code Polygonix V0.1 zum Download</a>
 
 #### Blöcke
 
@@ -215,10 +213,15 @@ Sonst:
     Sonst:
         Wir geben eine Information aus, dass das noch nicht unterstützt wird.
 ```
-#### Struktogramm
-![](bilder/polygonix_0_2.png)
+#### Scratch
+<img src="bilder/polygonix_scratch_0_2.png" width="70%" />
+<a href="./code/polygonix_scratch_0_2.sb3">Scratch Code Polygonix V0.2 zum Download</a>
 
 ### Implementierung
+
+#### Scratch
+
+
 #### Blöcke 
 <img src="bilder/polygonix_blocks_0_2_1.png" width="60%" />
 <img src="bilder/polygonix_blocks_0_2_2.png" width="60%" />
