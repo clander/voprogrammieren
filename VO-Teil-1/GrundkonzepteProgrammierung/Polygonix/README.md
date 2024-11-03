@@ -90,6 +90,9 @@ Ein Polygon besteht aus Kanten mit einer bestimmten Seitenlänge, die in einem b
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * Sequenzen von Anweisungen
 
+#### Konzepterklärungen für Scratch
+* [Algorithmisches Problemlösen in Scratch](https://inf-schule.de/imperative-programmierung/scratch)
+
 #### Pseudocode
 ```python
 Wir definieren die Linienfarbe "black"
@@ -326,6 +329,8 @@ Die Anzahl der Ecken bestimmt also auch die Anzahl der auszugebenden Seiten incl
 * [Kontrollstrukturen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/ablaufmodellierung/konzept_kontrollstrukturen):
   * [Wiederholung (Schleifen)](https://www.inf-schule.de/imperative-programmierung/python/konzepte/wiederholungen/konzept_wiederholungen)
 
+#### Konzepterklärungen für Scratch
+* [Algorithmisches Problemlösen in Scratch](https://inf-schule.de/imperative-programmierung/scratch)
 
 #### Pseudocode
 
@@ -404,9 +409,13 @@ In unserer vorhergehenden Lösung haben wir die Seiten der Polygone in einer Sch
 Eine alternative Vorgangsweise (ohne Mathematik / Rest-Operation) wäre, eine bool'sche Variable in Kombination mit der bestehenden Schleife zu verwenden. Wenn die bool'sche Variable true ist, dann setzen wir Farbe A und wechseln den Wert der bool'schen Variable auf false. Wenn die bool'sche Variable auf false ist, dann setzen wir Farbe B und wechseln den Wert der bool'schen Variable auf true, usw.
 
 ### Algorithmisierung
+
 #### Neue Konzepte
+
 - keine
+  
 #### Pseudocode
+
 ```python
 Wir fragen den Benutzer nach der Anzahl der Ecken, konvertieren die Texteingabe in eine Zahl und merken uns die Zahl.
 Wir definieren einen Zähler mit dem Startwert 0, der die Anzahl der Wiederholungen enthält.
@@ -533,6 +542,10 @@ Für die Umsetzung oben genannter Lösungsideen wenden wir die folgenden neuen K
   * [Listen](https://www.inf-schule.de/imperative-programmierung/python/konzepte/listen)
   * [Zufallszahlen (Ganzzahlen)](https://www.w3schools.com/python/ref_random_randint.asp)
   * [Mehrfach-Fallunterscheidung](https://www.inf-schule.de/imperative-programmierung/python/konzepte/entscheidungen/exkurs_mehrfachfallunterscheidungen)
+
+#### Konzepterklärungen für Scratch
+* [Algorithmisches Problemlösen in Scratch](https://inf-schule.de/imperative-programmierung/scratch)
+
  
 #### Pseudocode
 ```python
