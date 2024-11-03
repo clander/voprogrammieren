@@ -6,12 +6,12 @@ In diesem Beispiel wird eine Menüführung mithilfe von Events in Scratch gezeig
 
 ## Button "Learn 1"
 
-<img src="bilder/btnLearn1.png" width="50%" />
+<img src="bilder/btnLearn1.png" width="80%" />
 
 ## Button "Learn 2"
 
-<img src="bilder/btnLearn2.png" width="50%" />
+<img src="bilder/btnLearn2.png" width="80%" />
 
 ## Button "Home"
 
-<img src="bilder/btnHome.png" width="50%" />
+<img src="bilder/btnHome.png" width="80%" />
