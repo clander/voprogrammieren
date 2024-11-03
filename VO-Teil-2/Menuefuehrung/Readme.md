@@ -2,7 +2,7 @@
 
 In diesem Beispiel wird eine Menüführung mithilfe von Events in Scratch gezeigt.
 
-<a href="code/scratch_menue_events_example.sb3">Scratch Code der Menüführung zum Download</a>
+<a href="code/scratch_menue_events_example_new.sb3">Scratch Code der Menüführung zum Download</a>
 
 ## Button "Learn 1"
 
