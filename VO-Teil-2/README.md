@@ -9,15 +9,16 @@
    - Zufall
    - Funktionen
    - Ereignisse (WH)
-   - Ausnahmebehandlung
 
 ## Script
 1. (**V**) [Zentrale Prozesse und zentrale Konzepte](../Didaktik/Zentrale-Ideen.md)
-2. (**V**) [POLYGONIX](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+2. (**V**) [Menüführung](Menuefuehrung/Readme.md)
+3. (**V**) [Zauberer (Listen, Funktionen, Ereignisse)](Zauberer_lists_events/Readme.md)
+4. (**V**) [Polygonix](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
    - [Weitere Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
-3. Beispiele für neue Konzepte: Arrays und Zufall
+5. Beispiele für neue Konzepte: Arrays und Zufall
    - (**V**) [POLYGONIX: Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
    - [Zahlenraten (auch mit microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
@@ -25,22 +26,22 @@
    - [Schere-Stein-Papier Variante mit Arrays](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
    - (**UE**)[Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
-4. Beispiele für neues Konzept: Funktionen
+6. Beispiele für neues Konzept: Funktionen
    - (**V**) [POLYGONIX: Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - (**V**) [POLYGONIX: Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
    - (**UE**) [Textadventure](./Textadventure/TextAdventure.py) Ein Textadventure vollständig mit Funktionen modularisiert, das eine kleine Story erzählt, dir nur mit informatischen Kenntnissen gelöst werden kann.
-5. Neues Konzept: Ereignisse und Ereignisbehandlung
+7. Neues Konzept: Ereignisse und Ereignisbehandlung
    - Ereignisse und deren Behandlung sind in vielen blockbasierten Entwicklungsumgebungen für Programmieranfänger (MakeCode, Scratch, AppInventor etc.) als eigene Blöcke / Kategorien verfügbar(siehe z.B. in Scratch die Kategorie "Ereignisse")
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
    - [BMI-Berechnung mit GUI](../VO-Teil-2/BMI/BmiV7.py) Beispiel für GUI-Programmierung mit Events in Python anhand der BMI-Berechnung.
-6. Exkurs: OpenRoberta und KI
+8. Exkurs: OpenRoberta und KI
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
    - [Orange Datamining](https://orangedatamining.com)
    - KI Lern- und Kursplattformen:
      - https://www.deeplearning.ai/courses/
      - https://course.fast.ai
-7. Hinweise auf einige Tools und Online-Unterlagen:
+9. Hinweise auf einige Tools und Online-Unterlagen:
    - [Structog](https://dditools.inf.tu-dresden.de/dev/struktog/) Struktogramm-Editor
    - [Draw.io](https://www.drawio.com) Online Diagramme zeichnen
    - [Mermaid](https://mermaid.live/)
