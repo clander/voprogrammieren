@@ -9,7 +9,7 @@
    - Praktische Umsetzung mit POLYGONIX (incl. WH der Inhalte vom VO Termin 1)
    - Praktische Umsetzung mit weiteren Beispielen (z.B. BMI)
 2. Neue Konzepte:
-   - Arrays
+   - Listen / Arrays
    - Zufall
    - Prozeduren / Funktionen
    - Ereignisse (Events)
