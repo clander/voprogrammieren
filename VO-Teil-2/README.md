@@ -57,7 +57,7 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 3. Beispiele für **Ereignisse** und **Ereignisbehandlung**
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
-4.  Exkurs mit KI: OpenRoberta und KI
+4.  Exkurs mit KI:
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
    - [Orange Datamining](https://orangedatamining.com)
    - KI Lern- und Kursplattformen:
