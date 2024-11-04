@@ -29,9 +29,9 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 * unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren. 
 
 ## Script zur VO
-1. [Zentrale Prozesse und zentrale Konzepte](../Didaktik/Zentrale-Ideen.md)
-2. [Menüführung (Events)](Menuefuehrung/Readme.md)
-3. [Zauberer (Listen, Prozeduren, Ereignisse)](Zauberer_lists_events/Readme.md)
+1. [Menüführung (Events)](Menuefuehrung/Readme.md)
+2. [Zauberer (Listen, Prozeduren, Ereignisse)](Zauberer_lists_events/Readme.md)
+3. [Zentrale Prozesse](../Didaktik/Zentrale-Ideen.md)
 4. [Polygonix](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
