@@ -29,19 +29,19 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 * unterschiedliche Programmierkonzepte in einer blockorientierten bzw. textorientierten Programmiersprache anzuwenden und zu reflektieren. 
 
 ## Script zur VO
-1. [Menüführung mit Scratch (Events)](Menuefuehrung/Readme.md)
-2. [Zauberer mit Scratch (Listen, Prozeduren, Ereignisse)](Zauberer_lists_events/Readme.md)
-3. [Zahlenraten mit Python / microBit / makeCode: Arcade (Zufall)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
-4. [Zentrale Prozesse](../Didaktik/Zentrale-Ideen.md)
+1. [Menüführung mit Scratch **(Events)**](Menuefuehrung/Readme.md)
+2. [Zauberer mit Scratch **(Listen, Prozeduren, Ereignisse)**](Zauberer_lists_events/Readme.md)
+3. [Zahlenraten mit Python / microBit / makeCode: Arcade **(Zufall)**](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
+4. [Theorie: Zentrale Prozesse (**Arbeitsweise, Problemanalyse, Algorithmisierung, Implementierung, Iterationen**)](../Didaktik/Zentrale-Ideen.md)
 5. [Polygonix in mehreren Iterationen mit Scratch / Blöcken / Python](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
    - [Weitere Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
-6. [Scharade-Variante in mehreren Iterationen mit Python / MakeCode micro:bit (Listen und Zufall)](../VO-Teil-2/Scharade/README.md)
+6. [Scharade-Variante in mehreren Iterationen mit Python / MakeCode micro:bit **(Listen und Zufall)**](../VO-Teil-2/Scharade/README.md)
 7. BMI (Body Mass Index)
    - [BMI als Excel-Lösung](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx)
-   - [BMI in mehreren Iterationen](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
-   - [BMI (mit Funktionen, GUIs, Events)](./BMI/) 
+   - [BMI in mehreren Iterationen **(Arbeitsweise)**](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
+   - [BMI (mit **Funktionen, GUIs, Events**)](./BMI/) 
 
 ## Weitere Beispiele (z.B. als Anregung für die Übungen)
 1. Beispiele für die Konzepte **Arrays** und **Zufall**
