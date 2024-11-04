@@ -31,12 +31,14 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 ## Script zur VO
 1. [Menüführung (Events)](Menuefuehrung/Readme.md)
 2. [Zauberer (Listen, Prozeduren, Ereignisse)](Zauberer_lists_events/Readme.md)
-3. [Zentrale Prozesse](../Didaktik/Zentrale-Ideen.md)
-4. [Polygonix](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
+3. [Scharade-Variante mit MakeCode micro:bit (Listen und Zufall)](../VO-Teil-2/Scharade/README.md)
+4. [Zahlenraten (Python und microBit, Zufall)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
+5. [Zentrale Prozesse](../Didaktik/Zentrale-Ideen.md)
+6. [Polygonix](../VO-Teil-1/GrundkonzepteProgrammierung/Polygonix/README.md)
    - Das Beispiel zeigt anhand einer Problemstellung die Anwendung zentraler Denkweisen, Entwicklungsprozesse und Konzepte der Programmierung
    - [Weitere Turtle-Beispiele einfach](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/)
    - [Weitere Turtle-Beispiele komplexer](../VO-Teil-2/TurtleBeispiele/)
-5. BMI (Body Mass Index)
+7. BMI (Body Mass Index)
    - [BMI als Excel-Lösung](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/BmiExcelLoesung.xlsx)
    - [BMI in mehreren Iterationen](../VO-Teil-1/GrundkonzepteProgrammierung/BMI/README.md)
    - [BMI (mit Funktionen, GUIs, Events)](./BMI/) 
@@ -44,12 +46,10 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 ## Weitere Beispiele (z.B. als Anregung für die Übungen)
 1. Beispiele für die Konzepte **Arrays** und **Zufall**
    - [POLYGONIX: Turtle Beispiel mit Array und Zufall](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArray.py)
-   - [Zahlenraten (Python und microBit)](../VO-Teil-1/GrundkonzepteProgrammierung/Zahlenraten/README.md)
    - [Worte erraten](../VO-Teil-2/Worteraten/HangMan.py)
    - [Stadt-Land-Fluss (Python/microBit)](../VO-Teil-2/StadtLandFluss/)
    - [Schere-Stein-Papier (Variante mit Arrays)](../VO-Teil-1/GrundkonzepteProgrammierung/SchereSteinPapier/SchereSteinPapier.py)
    - [Wetterstation](../VO-Teil-2/Wetterstation/Wetterdaten.py)
-   - [Scharade-Variante mit MakeCode micro:bit](../VO-Teil-2/Scharade/README.md)
 2. Beispiele für Konzept **Prozeduren**
    - [POLYGONIX: Turtle Beispiel mit zwei Funktionen](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayZweiMethoden.py) für zufällige Farbe und Eingabe incl. Validierung
    - [POLYGONIX: Turtle Beispiel komplett modularisiert](../VO-Teil-2/TurtleBeispiele/vieleckFarbenArrayMethoden.py)
