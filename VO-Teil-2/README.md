@@ -57,22 +57,22 @@ Es werden schwerpunktmäßig folgende Kompetenzen des Curriculums in der VO beha
 3. Beispiele für **Ereignisse** und **Ereignisbehandlung**
    - [Turtle als Zeichenprogramm](../VO-Teil-2/TurtleBeispiele/eventsMitTurtle.py) Programmierung der Turtle mit Events zur Steuerung der Turtle um ein kleines Zeichenprogramm zu simulieren.
    - Microsoft Arcade: Chase The Pizza Tutorial https://arcade.makecode.com/ -> Anleitungen -> Chase the Pizza: Programmierung eines kleinen Spiels mit der Microsoft Arcade Plattform (Events, Random, High-Level-Funktionen der Arcade-Plattform)
-4. Exkurs mit KI:
+4. [Quadrat / Vielecke](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
+   - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
+   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
+5. [Countdown](../VO-Teil-1/GrundkonzepteProgrammierung/Countdown/)
+   - Problemanalyse
+   - Codierung in Python
+6. [Zahlenraten mit Intelligenz](./ZahlenratenKI/) 
+   - Zahlen raten gegen eine KI Zahlen. Die KI rät möglichst effizient (binäre Suche).
+7. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md) 
+   - Dieses Beispiel zeigt neben der Implementierung auch die Erstellung eines Selbstlerntutorials mithilfe des Microsoft Makecode Tutorial Editors.
+8. Exkurs: Lernen über KI
    - [Neuronale Netze mit OpenRoberta](../VO-Teil-2/OpenRobertaNN/) Beispiel für die Steuerung eines Roboters mit einem neuronalen Netz.
    - [Orange Datamining](https://orangedatamining.com)
    - KI Lern- und Kursplattformen:
      - https://www.deeplearning.ai/courses/
      - https://course.fast.ai
-5. [Quadrat / Vielecke](../VO-Teil-1/GrundkonzepteProgrammierung/TurtleBeispiele/) in Python-Logo (blockbasiert)
-   - Alternative Miniwelten (Karel, Scratch, Swift Playgrounds)
-   - Pen-And-Paper-Spiele, wie z. B. die Robotersteuerung am Papier aus [micro:bit Schulbuch](https://microbit.eeducation.at/wiki/Hauptseite) auf den Seiten 11 bis 18
-6. [Countdown](../VO-Teil-1/GrundkonzepteProgrammierung/Countdown/)
-   - Problemanalyse
-   - Codierung in Python
-7. [Zahlenraten mit Intelligenz](./ZahlenratenKI/) 
-   - Zahlen raten gegen eine KI Zahlen. Die KI rät möglichst effizient (binäre Suche).
-8. [Tamagotchi](../VO-Teil-1/GrundkonzepteProgrammierung/Tamagotchi/README.md) 
-   - Dieses Beispiel zeigt neben der Implementierung auch die Erstellung eines Selbstlerntutorials mithilfe des Microsoft Makecode Tutorial Editors.
 
 ## Miniwelten
 Die Steuerung von Akteuren in Miniwelten ist eine beliebte Form des einführenden Programmmierunterrichts. Die Lernenden definieren Algorithmen zur Steuerung der Akteure und lösen damit die definierten Aufgaben.
