@@ -176,7 +176,21 @@ Es geht im allgemeinbildenden Informatik- bzw. DGB-Unterricht nicht darum, Progr
 
   
 ## Modellbildung
-Im Zentrum des DGB-Unterrichts, der sich mit den Konzepten, Prozessen und Ideen der Computerprogrammierung beschäftigt, steht aus Sicht der Informatikdidaktik daher ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen. Wichtige Konzepte und Werkzeuge der Informatik bzw. der Programmierung sollen zur Lösung von Problemen aus der Lebenswelt der Schüler:innen verwendet werden, um die zentralen Ideen und die zentralen Vorgangsweisen (Prozesse) zu thematisieren.
+DGB-Unterricht setzt sich mit den Konzepten, Prozessen und Ideen der Computerprogrammierung auseinander.
+
+Zentrale **Konzepte** und entsprechende **Werkzeuge** der Informatik bzw. der Programmierung sollen zur **Lösung von Problemen** aus der Lebenswelt der Schüler:innen verwendet werden (Didaktisches Dreieck des Informatikunterrichts nach Hubwieser).
+
+- Konzepte 
+  - liefern abstrahiertes, verallgemeinertes und langlebiges Hintergrundwissen in Bezug auf Werkzeuge der Disziplin,
+  - ermöglichen Überblickswissen und sind Voraussetzung für die Beurteilung, Bewertung, Reflexion von Lösungen.
+- Werkzeuge 
+  - sind die Voraussetzung für die Implementierung von Lösungen,
+  - sind Instanzen bzw. Konkretisierungen von Konzepten und dienen damit insb. der Veranschaulichung dieser Konzepte.
+- Problemlösungen 
+  - geben Konzepten und Werkzeugen Sinn,
+  - rechtfertigen die Auseinandersetzung damit vor dem Hintergrund der Problemorientierung, Anwendungsorientierung, Handlungsorientierung oder Lebensweltorientierung.
+
+Im Zentrum des DGB-Unterrichts, der sich mit den Konzepten, Prozessen und Ideen der Computerprogrammierung beschäftigt, steht aus Sicht der Informatikdidaktik ein informatischer Modellbildungsprozess zur Lösung authentischer Problemsituationen.
 
 > Ein Modell ist eine abstrahierte Beschreibung eines realen oder geplanten Systems, das die für eine bestimmte Zielsetzung wesentlichen Eingenschaften des Systems erhält. Modellbildung ist die Beschreibung eines solchen Systems, z. B. mittels:
 >
