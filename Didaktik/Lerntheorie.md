@@ -28,15 +28,14 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - lernen wollen, verstehen wollen, weiterkommen wollen
     - intensive Beschäftigung, Fehlschläge, viel Arbeit
     - Motivation und Willen zur intensiven Beschäftigung
-  - Lernen kann als Verschärfungsprozess verstanden werden (Modrow).  
+  - Äquilibration:
+    - Durch Äquilibration (Austarieren von Akkomodation und Assimilation) kommen die Lernenden zu stabilisierten Strukturen des Verstehens. 
+    - Lernen bedeutet das Gleichgewicht (Äquilibrium) in den kognitiven Strukturen ist wieder herzustellen.
+    - EUREKA-Moment / Aha-Erlebnisse / Schemakonstruktion (CLT)
+  - Lernen kann dabei auch als Verschärfungsprozess verstanden werden (Modrow).  
     - Zunächst nebelhafte, unzureichende Vorstellungen der Welt (Ungleichgewicht in Bezug auf das eigene Verständnis) wird durch intensive Beschäftigung in die bestehenden Erfahrungen eingepasst (Gleichgewicht herstellen).
-    - EUREKA-Moment / Aha-Erlebnisse
-      - Das Gleichgewicht in den kognitiven Strukturen ist wieder hergestellt.
-      - CLT: Ein neues Schema ist ausgebildet.
-      - Aha-Erlebnisse: wichtiges Instrument zur Reflexion
-    - Üben, üben, üben: 
-      - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitiven Ungleichgewichts.
-      - Das wiederum ist als Anreiz Voraussetzung für Akkomodation.
+  - Üben, üben, üben: 
+    - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitiven Ungleichgewichts (Störung im Gleichgewicht als Voraussetzung für den Lernprozess) und bei der Arbeit in Richtung Gleichgewicht.
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ### Neo-Piaget'sche Stufentheorie
@@ -66,7 +65,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         <th>Beobachtungen (nach Lister)</th>
     </tr>
     <tr>
-        <td>Sensomotorische Phase (Pre-Tracing-Phase)</td>
+        <td>Phase 1: Pre-Tracing</td>
         <td>
             <ul>
                 <li>Zeilenweise Codeerklärungen zu < 50 % ok</li>
@@ -75,7 +74,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Präoperationale Phase (Tracing-Phase 1)</td><td>
+        <td>Phase 2: Tracing basic</td><td>
             <ul>
                 <li>Zeilenweise Codeerklärungen zu > 50 % ok</li>
                 <li>Zeilenweise Codeerklärungen ohne Abstraktion von den einzelnen Zeilen weg und damit ohne Bezug zur Semantik des gesamten Programmteils</li>
@@ -86,7 +85,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Phase der konkreten Operationen (Tracing-Phase 2)</td><td>
+        <td>Phase 3: Tracing extended</td><td>
             <ul>
                 <li>Vorherrschende Problemlösungsstrategie: Copy-Paste mit Lösungsidee; da und dort ausbessern</li>
                 <li>Auf die Semantik des Codes (und damit auch schon ansatzweise die Beziehungen zwischen den Zeilen) kann durch intensive Beschäftigung mit der Laufzeit und den Ausführungsergebnissen geschlossen werden</li>
@@ -95,7 +94,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Phase der formalen Operationen (Post-Tracing-Phase)</td><td>
+        <td>Phase 4: Post-Tracing</td><td>
             <ul>
                 <li>Hypothetisches und deduktives Denken ist ausgeprägt</li>
                 <li>Deduktiv: vom Allgemeinen (=Schema / Konzept) auf das Konkrete (= kontextualisierte Anwendung des Schemas) schließen
