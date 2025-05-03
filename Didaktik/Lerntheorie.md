@@ -8,7 +8,7 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
   - Epistemologie = Erkenntnistheorie: Studium des menschlichen Wissens / Erkenntnisgewinnungsprozesses / Lernens
   - Genese: Das Entstehen von etwas; im Sinne von Ursprung und Entwicklung
   
-### Zwei Lernmechanismen
+### Lernmechanismen
   - Assimilation: 
     - Neues Wissen wird generiert, indem man an bestehende Strukturen (Vorwissen) im Gedächtnis andockt.
     - Beispiel: Lernende haben verstanden, wie While-Schleifen funktionieren. Der Weg zum Verständnis eines weiteren Schleifentyps ist über Assimilation möglich.
@@ -17,25 +17,27 @@ Ausgangspunkt unserer Überlegungen bildet Piaget mit seiner Erkenntnistheorie.
     - Bauen von neuen strukturierenden Elementen / neuen Schemata
     - Gleichbedeutend mit dem Aufbau und der Verstärkung von neuen Verbindungen zwischen Nervenzellen (Neurodidaktik).
     - Beispiel: Lernende wissen noch nichts von Schleifen und müssen für ein Verständnis der Funktionsweise von Schleifen (insb. incl. des Zusammenwirkens der konstitutiven Teile) völlig neue Strukturen aufbauen.
+  - Äquilibration:
+    - Durch Äquilibration (Austarieren von Akkomodation und Assimilation) kommen die Lernenden zu stabilisierten Strukturen des Verstehens. 
+    - Lernen bedeutet das Gleichgewicht (Äquilibrium) in den kognitiven Strukturen wieder herzustellen.
+    - EUREKA-Moment / Aha-Erlebnisse / Schemakonstruktion (CLT)
+    - Lernen kann dabei auch als Verschärfungsprozess verstanden werden (Modrow).  
+      - Zunächst nebelhafte, unzureichende Vorstellungen der Welt (Ungleichgewicht in Bezug auf das eigene Verständnis) wird durch intensive Beschäftigung in die bestehenden Erfahrungen eingepasst (Gleichgewicht herstellen).
 
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
-### Akkomodation und Lernen im konstruktivistischen Sinne
-  - Akkomodation erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
-    - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
-    - soziale Stimuli
-  - Akkomodation erfordert entsprechende Haltung und Motivation
-    - lernen wollen, verstehen wollen, weiterkommen wollen
-    - intensive Beschäftigung, Fehlschläge, viel Arbeit
-    - Motivation und Willen zur intensiven Beschäftigung
-  - Äquilibration:
-    - Durch Äquilibration (Austarieren von Akkomodation und Assimilation) kommen die Lernenden zu stabilisierten Strukturen des Verstehens. 
-    - Lernen bedeutet das Gleichgewicht (Äquilibrium) in den kognitiven Strukturen ist wieder herzustellen.
-    - EUREKA-Moment / Aha-Erlebnisse / Schemakonstruktion (CLT)
-  - Lernen kann dabei auch als Verschärfungsprozess verstanden werden (Modrow).  
-    - Zunächst nebelhafte, unzureichende Vorstellungen der Welt (Ungleichgewicht in Bezug auf das eigene Verständnis) wird durch intensive Beschäftigung in die bestehenden Erfahrungen eingepasst (Gleichgewicht herstellen).
-  - Üben, üben, üben: 
-    - Intensive praktische Beschäftigung hilft beim Bewusstmachen des kognitiven Ungleichgewichts (Störung im Gleichgewicht als Voraussetzung für den Lernprozess) und bei der Arbeit in Richtung Gleichgewicht.
+Lernen erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
+  - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
+  - soziale Stimuli
+
+Lernen erfordert entsprechende Haltung und Motivation
+  - lernen wollen, verstehen wollen, weiterkommen wollen
+  - intensive Beschäftigung, Fehlschläge, viel Arbeit
+  - Motivation und Willen zur intensiven Beschäftigung
+
+Lernen heißt üben und anwenden: 
+  - Die intensive praktische Beschäftigung ist Voraussetzung für das Bewusstwerden des kognitiven Ungleichgewichts (Störung im Gleichgewicht als Voraussetzung für den Lernprozess) und für die Arbeit in Richtung Äquilibrium.
+  - Das didaktische Setting soll dazu z. B. ausgelegt sein auf Schüler:innenzentrierung, Problemorientierung, Handlungsorientierung, Awendungsorientierung, Kooperation, Transferlernen, Vernetzung, geleitet-entdeckendes Lernen.
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ### Neo-Piaget'sche Stufentheorie
