@@ -41,33 +41,29 @@ Lernen heißt üben:
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ### Neo-Piaget'sche Stufentheorie
-Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen weiters davon aus, dass Lernende unabhängig ihres Alters und unabhängig vom zu lernenden Inhalt im Rahmen des Lernprozesses die 4 Stufen der kognitiven Entwicklung nach Piaget durchlaufen, um neue Fähigkeiten und Konzepte über Akkomodation und Assimilation zu erlernen (d.h. angepasste oder neue kognitive Strukturen dafür auszubilden).
+Anhäger der Neo-Piaget'schen Stufentheorie (siehe Lister) gehen davon aus, dass Lernende unabhängig ihres Alters und unabhängig vom zu lernenden Inhalt im Rahmen des Lernprozesses analog zu den Stufen der kognitiven Entwicklung nach Piaget immer wieder (und das lebenslang) verschiedene Wellen von Akkomodation, Assimilation und Äquilibration zu bestimmten Lerngegenständen durchlaufen und dadurch laufend angepasste und immer bessere kognitive Strukturen dazu ausbilden, bis hin zur weitereichenden Expertise in einem Feld. Diese Wellen gehen fließend ineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913). 
 
-1. Sensomotorische Stufe
-2. Präoperationale Stufe
-3. konkret operationale Stufe
-4. Stufe der formalen Operationen
-   
-Diese 4 Stufen gehen fließend ineinander über [Overlapping Waves Model](https://www.researchgate.net/figure/Overlapping-waves-depiction-of-cognitive-development-From-Emerging-Minds-by-Siegler_fig6_274964913). Folgende drei Annahmen sind dabei zentral:
-1. Zu einem bestimmten Zeitpunkt, haben Kinder immer verschiedene Sichtweisen bzw. verschiedene kognitive Denkweisen auf Phänomene / Konzepte / Inhalte etc.
-2. Diese Sichtweisen auf Phänomene / dieses variantenreiche Denken über Phänomene / Konzepte / Inhalte führt über längere Zeit zu einem inneren Konflikt. Die konkurrierenden Sichtweisen existieren parallel.
+Folgende drei Annahmen sind dabei zentral:
+
+1. Zu einem bestimmten Zeitpunkt, haben Kinder immer verschiedene Sichtweisen bzw. verschiedene kognitive Denkweisen auf Phänomene, Konzepte, Werkzeuge, Lösungen, Inhalte etc.
+2. Diese Sichtweisen und das variantenreiche Denken darüber führen über eine längere Zeit der Auseinandersetzung und mit zunehmender Expertise immer wieder zu inneren Konflikten. Die konkurrierenden Sichtweisen existieren parallel.
 3. Kognitive Entwicklung bedeutet dann, dass ein gradueller Wechsel in der Häufigkeit der Anwendung der entsprechend konkurrierenden Sichtweise auftritt. Eine alte Sicht auf ein Phänomen wird zugunsten einer neuen Sicht (die etwa auf Basis neuer Erkenntnisse zustande kommt) langsam weniger häufig genutzt. Das ist der Entwicklungsprozess.
 
 [(Quelle, S. 7)](https://srcd.onlinelibrary.wiley.com/doi/abs/10.1111/1540-5834.00075)
 
 ## Developmental Epistemology of Computer Programming (Raymond Lister und Donna M. Teague)
-Lister und Teague wenden die Stufentheorie nach Piaget auf die Computerprogrammierung im Unterricht an ([Artikel](https://www.academia.edu/110073788/Toward_a_Developmental_Epistemology_of_Computer_Programming)). Sie beschreiben in ihrer Theorie Eigenschaften von Lernenden, die sich in den einzelnen Entwicklungsstufen und damit in den entsprechenden Phasen des Lernprozesses für einen neuen Inhalt befinden. Sie beschreiben damit auch einen Weg, den Lernende beim Lernen dieser Inhalte beschreiten.
+Lister und Teague wenden diese Wellentheorie auf die Computerprogrammierung im Unterricht an ([Artikel](https://www.academia.edu/110073788/Toward_a_Developmental_Epistemology_of_Computer_Programming)). Sie beschreiben in ihrer Theorie Eigenschaften von Lernenden, die sich in den einzelnen Entwicklungsstufen und damit in den entsprechenden Phasen des Lernprozesses für einen neuen Inhalt befinden. Sie beschreiben damit auch einen Weg, den Lernende beim Lernen dieser Inhalte beschreiten.
 
 Eine zusammenfassende Darstellung (siehe die folgende Tabelle) der zugrundegelegten Ideen (incl. Video) bietet Nathan Bean auf
 https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei primär um die Frage, wie Lernende Code erklären (= Tracing = Verständnis zur Ablaufverfolgung von Programmcode).
 
 <table>
     <tr>
-        <th>Stufe</th>
+        <th>Stufe / Welle</th>
         <th>Beobachtungen (nach Lister)</th>
     </tr>
     <tr>
-        <td>Phase 1: Pre-Tracing</td>
+        <td>Welle 1: Pre-Tracing</td>
         <td>
             <ul>
                 <li>Zeilenweise Codeerklärungen zu < 50 % ok</li>
@@ -76,7 +72,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Phase 2: Tracing basic</td><td>
+        <td>Welle 2: Tracing basic</td><td>
             <ul>
                 <li>Zeilenweise Codeerklärungen zu > 50 % ok</li>
                 <li>Zeilenweise Codeerklärungen ohne Abstraktion von den einzelnen Zeilen weg und damit ohne Bezug zur Semantik des gesamten Programmteils</li>
@@ -87,7 +83,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Phase 3: Tracing extended</td><td>
+        <td>Welle 3: Tracing extended</td><td>
             <ul>
                 <li>Vorherrschende Problemlösungsstrategie: Copy-Paste mit Lösungsidee; da und dort ausbessern</li>
                 <li>Auf die Semantik des Codes (und damit auch schon ansatzweise die Beziehungen zwischen den Zeilen) kann durch intensive Beschäftigung mit der Laufzeit und den Ausführungsergebnissen geschlossen werden</li>
@@ -96,7 +92,7 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
         </td>
     </tr>
     <tr> 
-        <td>Phase 4: Post-Tracing</td><td>
+        <td>Welle 4: Post-Tracing</td><td>
             <ul>
                 <li>Hypothetisches und deduktives Denken ist ausgeprägt</li>
                 <li>Deduktiv: vom Allgemeinen (=Schema / Konzept) auf das Konkrete (= kontextualisierte Anwendung des Schemas) schließen
@@ -108,9 +104,11 @@ https://textbooks.cs.ksu.edu/cis400/a-learning-programming/. Es geht dabei prim�
     </tr>
 </table>
 
-Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Phasen durchlaufen und letztendlich neues Wissen durch Akkomodation aufbauen bzw. entsprechend der Cognitive Load Theorie entsprechende Schemata aufbauen. Ein Experte hat solche Schemata bereits ausgebildet. Ein Anfänger muss hingegen Code zeilenweise interpretieren, die einzelnen Codezeilen zueinander in Beziehung bringen und dann im Gesamten ableiten, was der Code macht. Ein Experte liest Code durch Applikation seiner Schemata auf Teilstrukturen im Code, ohne darüber nachdenken zu müssen, was einzelne Zeilen bedeuten, wie sie syntaktisch genau aufgebaut sind, wie sie zueinander in Beziehung stehen etc. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
+Dieses Modell geht also davon aus, dass Lernende beim Programmieren diese Wellen durchlaufen und letztendlich neues Wissen durch Akkomodation, Assimilation und Äquilibration aufbauen bzw. entsprechend der Cognitive Load Theorie  Schemata konstruieren. Ein Experte hat solche Schemata bereits ausgebildet. Ein Anfänger muss hingegen Code zeilenweise interpretieren, die einzelnen Codezeilen zueinander in Beziehung bringen und dann im Gesamten ableiten, was der Code macht. Ein Experte liest Code durch Applikation seiner Schemata auf Teilstrukturen im Code, ohne darüber nachdenken zu müssen, was einzelne Zeilen bedeuten, wie sie syntaktisch genau aufgebaut sind, wie sie zueinander in Beziehung stehen etc. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
-Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
+Beim Codieren selbst hat der Experte bereits vor Beginn der Codierphase eine klare Vorstellung der betroffenen Schemata und implementiert diese zur Problemlösung direkt. Er kennt die Syntax der Sprache. Er kennt die Werkzeuge, die er dabei verwendet. Anfänger müssen sich jede Codezeile sowohl syntaktisch als auch semantisch hart erarbeiten. Sie müssen lernen die Beziehungen zwischen den Zeilen korrekt herzustellen. Sie müssen abschätzen, was ihr Code nun in Bezug auf die Lösung Problemstellung bedeutet und sie müssen darüber nachdenken, wie sie mit ihrem Code dann auch noch eine ganze Klasse von ähnlichen Problemstellungen lösen können (Abstraktion). Sie müssen sich außerdem mit Syntaxproblemen und Tooling-Problemen (Compiler, Kommandozeile, IDEs etc.) auseinandersetzen. ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/)).
+
+Es ist anzumerken, dass das Durchlaufen der beschriebenen Wellen der Entwicklung hinsichtlich eines Fachgegenstandes auch für Experten niemals endet sondern immer wieder zu neuen Erkenntnissen und letzendlich auch zur Weiterentwicklung des Gegenstandes an sich führt.
 
 ## Seymour Papert und Mitch Resnick
 Seymour Papert (Professor für Mathematik und Erziehungswissenschaften am MIT) war Schüler von Piaget. Er hat Piaget's Ideen in die Informatikdidaktik getragen und unter dem Begriff "Konstruktionismus" weiterentwickelt:
