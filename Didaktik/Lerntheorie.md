@@ -30,14 +30,14 @@ Lernen erfordert entsprechende Stimuli / Anreize / kognitive Konflikte:
   - Eigenartiges, Kontroversielles, Unerklärliches, Erstaunliches
   - soziale Stimuli
 
-Lernen erfordert entsprechende Haltung und Motivation
+Lernen erfordert entsprechende Haltung und Motivation:
   - lernen wollen, verstehen wollen, weiterkommen wollen
   - intensive Beschäftigung, Fehlschläge, viel Arbeit
   - Motivation und Willen zur intensiven Beschäftigung
 
-Lernen heißt üben und anwenden: 
+Lernen heißt üben:
   - Die intensive praktische Beschäftigung ist Voraussetzung für das Bewusstwerden des kognitiven Ungleichgewichts (Störung im Gleichgewicht als Voraussetzung für den Lernprozess) und für die Arbeit in Richtung Äquilibrium.
-  - Das didaktische Setting soll dazu z. B. ausgelegt sein auf Schüler:innenzentrierung, Problemorientierung, Handlungsorientierung, Awendungsorientierung, Kooperation, Transferlernen, Vernetzung, geleitet-entdeckendes Lernen.
+
 ([Quelle](https://textbooks.cs.ksu.edu/cis400/a-learning-programming/06-developmental-epistemology/))
 
 ### Neo-Piaget'sche Stufentheorie
